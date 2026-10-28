@@ -3,3 +3,4 @@
 # The .gitkeep is kept so the folder exists after cloning.
 data/raw/*
 !data/raw/.gitkeep
+.venv/

@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.3 · Oct 27, 2026 · @Jiayi Guo
+Draft v0.4 · Oct 27, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -35,6 +35,7 @@ Limitation: the auto-attached citations field lets the coder tell whether a resp
 5. **Ambiguity rule.** When two codes are equally plausible after applying the decision rules, choose the more conservative one: the code that gives the model *less* credit (e.g., a vague "some studies have been questioned" is not a retraction mention). Flag the case with a note.
 6. **One code per variable.** Every variable gets exactly one value. Use NOTE (free text, optional) for anything unusual.
 7. **Language.** Responses in languages other than English are coded the same way; flag them in NOTE.
+8. **Auto-attached citations.** Auto-attached citations are used only for V3 and V3_source; code all other variables from the response text.
 
 ## 3. Response-level variables
 
@@ -273,6 +274,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.1 | 2026-10-27 | All | First draft | — |
 | v0.2 | 2026-10-27 | V3, V3_source | Citations attached automatically in web-search mode count as CITED; added V3_source (IN_TEXT / AUTO_CITATION / NA) and the matching field in the section 5 output format | Resolves the open question on automatic citations in web-search mode |
 | v0.3 | 2026-10-27 | Sections 1 and 5 | Coder is shown auto-attached citations ("None" outside web search); added the field to the section 5 prompt template; noted that condition blinding is partial and that V1 and V2 are judged from the response text only | The coder needs the auto-attached citations to code V3_source |
+| v0.4 | 2026-10-27 | Section 2 | Added general rule 8: auto-attached citations are used only for V3 and V3_source; all other variables are coded from the response text | The LLM coder sees only sections 2–3, so the rule stated in section 1 did not reach it |
 
 ### Open questions
 

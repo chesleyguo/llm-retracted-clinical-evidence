@@ -12,8 +12,20 @@ each file here when you retrieve it.
 
 | Source | Used for | How to get it | Downloaded |
 | --- | --- | --- | --- |
-| Retraction Watch database (distributed by Crossref) | Retracted papers, retraction dates and reasons | TODO | TODO |
+| Retraction Watch database (distributed by Crossref) | Retracted papers, retraction dates and reasons | `python scripts/01_download_retraction_watch.py` (CSV from `https://api.labs.crossref.org/data/retractionwatch?<CONTACT_EMAIL>`; provenance logged in `results/01_download_log.jsonl`) | TODO |
 | PubMed (NCBI E-utilities) | Titles, authors, abstracts, publication types; control paper search | TODO | TODO |
 | OpenAlex | Citation counts | TODO | TODO |
 
-Copy `.env.example` to `.env` and fill in the keys before running any script.
+## Setup
+
+Requires Python 3.14.
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+cp .env.example .env   # then fill in the values
+```
+
+Run scripts from the repository root, e.g.
+`python scripts/01_download_retraction_watch.py`.

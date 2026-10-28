@@ -1,0 +1,341 @@
+File: retraction_watch_2026-10-28.csv
+Encoding: utf-8
+Records: 73399
+Dropped trailing empty column(s) ['Unnamed: 20']; non-empty cells in them: 0
+Columns (20): Record ID, Title, Subject, Institution, Journal, Publisher, Country, Author, URLS, ArticleType, RetractionDate, RetractionDOI, RetractionPubMedID, OriginalPaperDate, OriginalPaperDOI, OriginalPaperPubMedID, RetractionNature, Reason, Paywalled, Notes
+Unique Record ID: 73399 of 73399
+
+========================================================================
+A. How missing values are written (count per column)
+========================================================================
+  column                              ''           '0' 'unavailable'          'na'         'n/a'        'none'        'null'         'nan'           '-'
+  Record ID                            0             0             0             0             0             0             0             0             0
+  Title                                0             0             0             0             0             0             0             0             0
+  Subject                              0             0             0             0             0             0             0             0             0
+  Institution                          1             0           392             0             0             0             0             0             0
+  Journal                              0             0             0             0             0             0             0             0             0
+  Publisher                            0             0             0             0             0             0             0             0             0
+  Country                              0             0             0             0             0             0             0             0             0
+  Author                               0             0             0             0             0             0             0             0             0
+  URLS                             33098             0             0             0             0             0             0             0             0
+  ArticleType                          0             0             0             0             0             0             0             0             0
+  RetractionDate                       0             0             0             0             0             0             0             0             0
+  RetractionDOI                      482             0          4185             0             0             0             0             0             0
+  RetractionPubMedID                5135         34825             0             0             0             0             0             0             0
+  OriginalPaperDate                    0             0             0             0             0             0             0             0             0
+  OriginalPaperDOI                  2522             0          3430             0             0             0             0             0             0
+  OriginalPaperPubMedID             5118         33835             0             0             0             0             0             0             0
+  RetractionNature                     0             0             0             0             0             0             0             0             0
+  Reason                               0             0             0             0             0             0             0             0             0
+  Paywalled                            0             0             0             0             0             0             0             0             0
+  Notes                            52371             0             0             0             0             0             0             0             0
+
+  OriginalPaperDOI: 3430 non-empty values that are not a valid ID. Most common:
+     2235    3.0%  Unavailable
+     1195    1.6%  unavailable
+
+  OriginalPaperPubMedID: 33835 non-empty values that are not a valid ID. Most common:
+    33835   46.1%  0
+
+  RetractionDOI: 4187 non-empty values that are not a valid ID. Most common:
+     2708    3.7%  Unavailable
+     1477    2.0%  unavailable
+        1    0.0%  xx10.1007/978-3-030-00524-5_9
+        1    0.0%  x10.1007/978-3-030-00524-5_9
+
+  RetractionPubMedID: 34825 non-empty values that are not a valid ID. Most common:
+    34825   47.4%  0
+
+========================================================================
+B. Coverage of identifiers (valid values only)
+========================================================================
+
+All records (n = 73399)
+  OriginalPaperDOI           67447   91.9%
+  OriginalPaperPubMedID      34446   46.9%
+  RetractionDOI              68730   93.6%
+  RetractionPubMedID         33439   45.6%
+
+RetractionNature = Retraction (n = 67958)
+  OriginalPaperDOI           62072   91.3%
+  OriginalPaperPubMedID      30549   45.0%
+  RetractionDOI              63411   93.3%
+  RetractionPubMedID         29901   44.0%
+
+Retraction and any (HSC) subject (n = 22145)
+  OriginalPaperDOI           21123   95.4%
+  OriginalPaperPubMedID      17570   79.3%
+  RetractionDOI              20992   94.8%
+  RetractionPubMedID         17308   78.2%
+
+========================================================================
+C. RetractionNature
+========================================================================
+    67958   92.6%  Retraction
+     3733    5.1%  Expression of concern
+     1545    2.1%  Correction
+      163    0.2%  Reinstatement
+
+========================================================================
+D. Subjects
+========================================================================
+Records per subject prefix group (a record can have several):
+    27125   37.0%  (B/T)
+    24813   33.8%  (BLS)
+    24358   33.2%  (HSC)
+    17115   23.3%  (PHY)
+    11578   15.8%  (SOC)
+     5079    6.9%  (ENV)
+     2467    3.4%  (HUM)
+
+Records with any (HSC) subject: 24358
+Top 30 (HSC) subjects:
+     4230    5.8%  (HSC) Medicine - Oncology
+     3517    4.8%  (HSC) Medicine - Pharmacology
+     2722    3.7%  (HSC) Medicine - Surgery
+     2688    3.7%  (HSC) Medicine - Cardiovascular
+     2633    3.6%  (HSC) Medicine - Neurology
+     2186    3.0%  (HSC) Medicine - Obstetrics/Gynecology
+     2004    2.7%  (HSC) Medicine - Gastroenterology
+     1813    2.5%  (HSC) Medicine - Rehabilitation/Therapy
+     1775    2.4%  (HSC) Medicine - Infectious Disease
+     1752    2.4%  (HSC) Radiology/Imaging
+     1682    2.3%  (HSC) Public Health and Safety
+     1622    2.2%  (HSC) Medicine - Orthopedics
+     1583    2.2%  (HSC) Medicine - General
+     1428    1.9%  (HSC) Medicine - Immunology
+     1349    1.8%  (HSC) Medicine - Pulmonology
+     1155    1.6%  (HSC) Medicine - Pathology
+     1135    1.5%  (HSC) Medicine - Pediatrics
+     1067    1.5%  (HSC) Medicine - Urology/Nephrology
+     1059    1.4%  (HSC) Biostatistics/Epidemiology
+     1028    1.4%  (HSC) Medicine - Anesthesia/Anaesthesia
+      895    1.2%  (HSC) Medicine - Cardiology
+      837    1.1%  (HSC) Medicine - Alternative
+      827    1.1%  (HSC) Medicine - Diabetes
+      762    1.0%  (HSC) Medicine - Drug Design
+      706    1.0%  (HSC) Medicine - Endocrinology
+      645    0.9%  (HSC) Medicine - Nursing
+      627    0.9%  (HSC) Medicine - Otorhinolaryngology
+      600    0.8%  (HSC) Medicine - Psychiatry
+      589    0.8%  (HSC) Medicine - Internal
+      521    0.7%  (HSC) Medicine - Dermatology
+
+========================================================================
+E. ArticleType
+========================================================================
+    50455   68.7%  Research Article
+    14130   19.3%  Conference Abstract/Paper
+     3150    4.3%  Clinical Study
+     2891    3.9%  Review Article
+      914    1.2%  Meta-Analysis
+      903    1.2%  Case Report
+      610    0.8%  Book Chapter/Reference Work
+      540    0.7%  Letter
+      535    0.7%  Article in Press
+      467    0.6%  Commentary/Editorial
+      279    0.4%  Revision
+      141    0.2%  Guideline
+      112    0.2%  Preprint
+       54    0.1%  Retracted Article
+       51    0.1%  Retraction Notice
+       45    0.1%  Correction/Erratum/Corrigendum
+       37    0.1%  Other
+       28    0.0%  Trade Magazines
+       16    0.0%  Supplementary Materials
+        8    0.0%  Expression of Concern
+        7    0.0%  Technical Report/White Paper
+        6    0.0%  Auto/Biography
+        5    0.0%  Government Publication
+        3    0.0%  Interview/Q&A
+        2    0.0%  Dissertation/Thesis
+        1    0.0%  Legal Case/Analysis
+
+Types mentioning 'clinical' or 'trial':
+     3150    4.3%  Clinical Study
+
+========================================================================
+F. Reason (among RetractionNature = Retraction)
+========================================================================
+Distinct reasons: 110
+Top 40 (a record can have several):
+    30878   45.4%  Investigation by Journal/Publisher
+    22219   32.7%  Unreliable Results and/or Conclusions
+    17946   26.4%  Investigation by Third Party
+    15157   22.3%  Concerns/Issues about Referencing/Attributions
+    14511   21.4%  Concerns/Issues about Data
+    11986   17.6%  Notice - Limited or No Information
+    11715   17.2%  Paper Mill
+    11506   16.9%  Compromised Peer Review
+    11452   16.9%  Concerns/Issues about Peer Review
+     9481   14.0%  Computer-Aided Content or Computer-Generated Content
+     9392   13.8%  Concerns/Issues about Results and/or Conclusions
+     6909   10.2%  Date of Article and/or Notice Unknown
+     5435    8.0%  Duplication of/in Image
+     4788    7.0%  Breach of Policy by Author
+     4011    5.9%  Objections by Author(s)
+     3994    5.9%  Removed
+     3942    5.8%  Euphemisms for Plagiarism
+     3678    5.4%  Duplication of/in Article
+     3497    5.1%  Author Unresponsive
+     3277    4.8%  Investigation by Company/Institution
+     3240    4.8%  Rogue Editor
+     3174    4.7%  Concerns/Issues about Image
+     2992    4.4%  Plagiarism of/in Article
+     2979    4.4%  Concerns/Issues about Authorship/Affiliation
+     2660    3.9%  Lack of IRB/IACUC Approval and/or Compliance
+     2497    3.7%  Original Data and/or Images not Provided and/or not Available
+     2488    3.7%  Upgrade/Update of Prior Notice(s)
+     2390    3.5%  Unreliable Data
+     2323    3.4%  Euphemisms for Duplication
+     2200    3.2%  Plagiarism of Text
+     1936    2.8%  Error in Data
+     1848    2.7%  Misconduct by Author
+     1836    2.7%  Concerns/Issues about Third Party Involvement
+     1814    2.7%  Concerns/Issues about Article
+     1710    2.5%  Falsification/Fabrication of Data
+     1611    2.4%  Informed/Patient Consent - None/Withdrawn
+     1541    2.3%  Misconduct - Official Investigation(s) and/or Finding(s)
+     1455    2.1%  Error in Results and/or Conclusions
+     1404    2.1%  Error in Analyses
+     1345    2.0%  Manipulation of Images
+
+Number of reasons per record:
+    14820   21.8%  3
+    11638   17.1%  2
+    11591   17.1%  1
+     7241   10.7%  5
+     6119    9.0%  4
+     5118    7.5%  9
+     4557    6.7%  6
+     2998    4.4%  8
+     2305    3.4%  7
+     1123    1.7%  11
+      399    0.6%  10
+       23    0.0%  12
+       10    0.0%  13
+        7    0.0%  14
+        4    0.0%  16
+        3    0.0%  15
+        2    0.0%  17
+
+========================================================================
+G. Dates
+========================================================================
+
+RetractionDate: 73399 parsed, 0 not parsed
+
+OriginalPaperDate: 73399 parsed, 0 not parsed
+
+Retractions per year (RetractionNature = Retraction):
+  1756       1
+  1927       1
+  1960       1
+  1966       1
+  1967       2
+  1968       1
+  1970       7
+  1971       1
+  1975       2
+  1977      31
+  1979       5
+  1980      14
+  1981       3
+  1982       5
+  1983      13
+  1984       8
+  1985      14
+  1986      28
+  1987      12
+  1988       6
+  1989      15
+  1990      19
+  1991      23
+  1992      25
+  1993      28
+  1994      22
+  1995      25
+  1996      26
+  1997      46
+  1998      71
+  1999      51
+  2000      41
+  2001      37
+  2002     124
+  2003      89
+  2004     128
+  2005     140
+  2006     215
+  2007     334
+  2008     450
+  2009    1186
+  2010    5011
+  2011    4937
+  2012    1161
+  2013    1450
+  2014    1115
+  2015    1545
+  2016    1683
+  2017    1712
+  2018    2534
+  2019    2907
+  2020    3080
+  2021    3913
+  2022    5591
+  2023   13368
+  2024    6501
+  2025    6001
+  2026    2198
+
+Years from publication to retraction: median 1.4, IQR 0.4-2.9, negative (retracted before published?): 1
+
+========================================================================
+H. Original papers with more than one record
+========================================================================
+Records with a valid OriginalPaperDOI: 67447
+Distinct original DOIs: 64385
+DOIs with more than one record: 2536 (covering 5598 records)
+
+Records per DOI:
+    61849   96.1%  1
+     2432    3.8%  2
+       91    0.1%  3
+        9    0.0%  4
+        1    0.0%  255
+        1    0.0%  145
+        1    0.0%  19
+        1    0.0%  6
+
+DOIs whose records have different titles (shared DOI, different papers): 15 (covering 447 records)
+    255 records,  255 titles  10.1016/s1873-9946(10)00006-1  [Journal of Crohn's and Colitis]
+    145 records,  145 titles  10.1080/02699052.2023.2194723  [Brain Injury]
+     19 records,   19 titles  10.1093/ecco-jcc/jjab227  [Journal of Crohn's and Colitis]
+      6 records,    6 titles  10.1136/jim-2021-srmc  [Journal of Investigative Medicine: The Official Publication of the American Federation for Clinical Research]
+      2 records,    2 titles  10.1007/s10644-024-09687-w  [Economic Change and Restructuring]
+      2 records,    2 titles  10.1007/s10948-012-1513-5  [Journal of Superconductivity and Novel Magnetism]
+      2 records,    2 titles  10.1007/s11269-021-02891-7  [Water Resources Management]
+      2 records,    2 titles  10.1016/j.envres.2024.118783  [Environmental Research]
+      2 records,    2 titles  10.1016/j.toxrep.2021.07.020  [Toxicology Reports]
+      2 records,    2 titles  10.1039/c9ra00521h  [RSC Advances]
+
+Combinations of RetractionNature among multi-record DOIs with one title (n = 2521):
+     1650   65.5%  Expression of concern + Retraction
+      652   25.9%  Correction + Retraction
+       60    2.4%  Correction + Expression of concern
+       50    2.0%  Correction + Expression of concern + Retraction
+       23    0.9%  Correction x2
+       18    0.7%  Correction x2 + Retraction
+       17    0.7%  Expression of concern x2
+        9    0.4%  Correction + Expression of concern x2
+        8    0.3%  Retraction x2
+        8    0.3%  Expression of concern x2 + Retraction
+        6    0.2%  Correction x2 + Expression of concern + Retraction
+        5    0.2%  Correction + Reinstatement
+        5    0.2%  Expression of concern + Reinstatement
+        3    0.1%  Expression of concern + Retraction x2
+        2    0.1%  Correction x2 + Expression of concern
+        1    0.0%  Correction x3
+        1    0.0%  Correction + Expression of concern x2 + Retraction
+        1    0.0%  Correction x3 + Retraction
+        1    0.0%  Reinstatement + Retraction
+        1    0.0%  Correction x3 + Expression of concern
