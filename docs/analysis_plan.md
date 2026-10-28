@@ -2,10 +2,8 @@
 
 ## Research questions
 
-**RQ2** *(wording to be completed by the author)*. Pre-specified predictors
-include:
-- pubmed_flagged: whether the paper's PubMed publication types include
-  Retracted Publication (see "Recorded for each included paper" below).
+**RQ2** *(wording to be completed by the author)*. pubmed_flagged is reported
+descriptively only and is not a predictor (see Deviations log).
 
 ## Inclusion criteria
 
@@ -81,7 +79,7 @@ the number of records remaining after each step is reported in a flow diagram.
 **Recorded for each included paper (not inclusion criteria).**
 - pubmed_flagged: whether the paper's PubMed publication types include
   Retracted Publication (TRUE/FALSE). PubMed's retraction flag is not used to
-  decide inclusion; it is a predictor in RQ2.
+  decide inclusion. It is reported descriptively.
 
 **Manual classification tables.** For `data/processed/reason_mapping.csv` and
 `data/processed/duplicate_title_review.csv`, an LLM first proposes a
@@ -93,6 +91,44 @@ in `duplicate_title_review.csv`. The strength column in `reason_mapping.csv`
 was set by the author. The PubMed publication types used for the
 duplicate-title review are stored in `duplicate_title_review.csv`
 (pubmed_pub_types), and the raw PubMed records in `data/raw/`.
+
+### Sampling (draft, not yet run)
+
+*Draft, 2026-10-27. Strata will be revised once the tested models are chosen.*
+
+- **Frame.** Retracted clinical trials in `data/processed/retracted_trials.csv`
+  with an abstract in PubMed (has_abstract = True): 996 of 1,003 trials.
+- **Strata.** Retraction year: ≤2022, 2023, 2024, 2025–2026.
+- **Main sample.** 100 trials. [To decide: equal allocation, 25 per stratum,
+  or another allocation.]
+- **Journal cap.** At most 3 trials from the same journal in the main sample,
+  counted across all strata.
+- **Pilot sample.** 10 further trials for the pilot run, drawn after the main
+  sample from the trials not in it, so the two never overlap. The journal cap
+  also applies within the pilot sample. [To decide: allocation across strata,
+  e.g. 3/3/2/2.]
+- **Procedure.** A single random generator with seed 2026 (logged with the
+  output). Strata are processed in the order listed above. Within each stratum
+  the trials are put in random order and taken one by one, skipping a trial
+  whose journal has already reached the cap, until the stratum quota is met.
+  Because the cap is shared across strata, the processing order is fixed in
+  advance. The same generator, continued, then draws the pilot sample.
+- **Availability** (trials with an abstract, 2026-10-28 snapshot). "With cap"
+  is the most a stratum could supply if each journal contributed at most 3
+  trials to it.
+
+  | Stratum | Trials | Journals | With cap | Largest journal (trials) |
+  | --- | --- | --- | --- | --- |
+  | ≤2022 | 434 | 204 | 303 | Canadian Journal of Anaesthesia (26) |
+  | 2023 | 334 | 40 | 78 | Computational and Mathematical Methods in Medicine (118) |
+  | 2024 | 120 | 42 | 69 | BioMed Research International (25) |
+  | 2025–2026 | 108 | 51 | 76 | J Maternal-Fetal & Neonatal Medicine (20) |
+
+  Every stratum can supply 25 + 3 trials under the cap, so equal allocation
+  with the pilot is feasible. The cap changes the 2023 stratum most: 262 of its
+  334 trials are from Hindawi journals (mass retraction for paper-mill
+  activity), and the cap reduces their weight.
+- Matched control papers are sampled in a later step and are not covered here.
 
 ## Models and conditions
 
@@ -112,3 +148,4 @@ duplicate-title review are stored in `duplicate_title_review.csv`
 | Date | Section | Change | Reason |
 | --- | --- | --- | --- |
 | 2026-10-27 | Inclusion criteria | The paper identifier was changed from OriginalPaperDOI to the PMID (OriginalPaperPubMedID). | Some conference-abstract supplements publish many different papers under one DOI (e.g. 255 records with 255 different titles under one DOI in the 2026-10-28 snapshot), so a DOI does not always identify a single paper. |
+| 2026-10-27 | Research questions (RQ2) | pubmed_flagged was removed from the RQ2 predictors and is reported descriptively only. Made before the experiment started, based on the distribution of the variable. | Only 20 of 1,003 retracted trials (2.0%) are not flagged as Retracted Publication in PubMed, too little variation to serve as a predictor. |

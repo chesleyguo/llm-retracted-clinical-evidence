@@ -29,3 +29,16 @@ cp .env.example .env   # then fill in the values
 
 Run scripts from the repository root, e.g.
 `python scripts/01_download_retraction_watch.py`.
+
+## Regenerating processed data
+
+`data/processed/retractions_eligible.csv` and `data/processed/pubmed_metadata.csv`
+are not committed because of their size. Recreate them with:
+
+```bash
+python scripts/06_filter_retractions.py   # -> retractions_eligible.csv
+python scripts/07_fetch_pubmed.py         # -> pubmed_metadata.csv, retracted_trials.csv
+```
+
+Script 07 reuses the PubMed XML cached in `data/raw/pubmed/` and only queries
+PubMed for PMIDs not requested before.

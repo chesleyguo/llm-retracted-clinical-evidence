@@ -6,3 +6,6 @@ data/raw/*
 .venv/
 .DS_Store
 __pycache__/
+# Large intermediate files; regenerate with scripts/06 and scripts/07 (see README)
+data/processed/retractions_eligible.csv
+data/processed/pubmed_metadata.csv
