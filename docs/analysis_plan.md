@@ -67,6 +67,16 @@ the number of records remaining after each step is reported in a flow diagram.
    cross-check: agreement between the two sources is reported, and it does not
    decide inclusion.
 
+**Manual classification tables.** For `data/processed/reason_mapping.csv` and
+`data/processed/duplicate_title_review.csv`, an LLM first proposes a
+classification (columns suggested_include, suggested_p2 and rationale; and
+suggested_decision and rationale, respectively). The author then reviews every
+row and decides. Only the author's columns are used in the analysis:
+include and p2_category in `reason_mapping.csv`, and decision (KEEP or DROP)
+in `duplicate_title_review.csv`. The PubMed publication types used for the
+duplicate-title review are stored in `duplicate_title_review.csv`
+(pubmed_pub_types), and the raw PubMed records in `data/raw/`.
+
 ## Models and conditions
 
 ## Outcomes
