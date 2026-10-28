@@ -1,0 +1,12 @@
+step,description,n_remaining
+0,All records in snapshot,73399
+1,RetractionNature = Retraction,67958
+2,At least one (HSC) subject,22145
+3a,Valid OriginalPaperPubMedID,17570
+3b,Duplicate-title review: DROP records removed,17567
+3c,"One record per PMID (earliest RetractionDate, then lowest Record ID)",17551
+4a,ArticleType is not Conference Abstract/Paper,17472
+4b,OriginalPaperDOI not shared by records with different titles,17472
+5,At least one INCLUDE reason and no OVERRIDE_EXCLUDE reason,11651
+6a,PubMed record retrieved,11637
+6b,PubMed publication type is Clinical Trial or a subtype,1003

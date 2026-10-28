@@ -1,0 +1,61 @@
+Clinical trials (criterion 6): 1003
+
+Cross-check among 11637 eligible papers with a PubMed record:
+  PubMed trial and RW Clinical Study: 801
+  PubMed trial only:                  202
+  RW Clinical Study only:             925
+  Neither:                            9709
+
+pubmed_flagged = False among trials: 20 of 1003
+Trials with an abstract: 996 (99.3%)
+
+Trials by retraction year:
+  1988      1
+  1990      1
+  1995      4
+  1997      1
+  2000      2
+  2001      1
+  2002      1
+  2003      1
+  2004      3
+  2005      3
+  2006      2
+  2007      4
+  2008      4
+  2009     18
+  2010      7
+  2011     19
+  2012     37
+  2013     78
+  2014     15
+  2015     22
+  2016     21
+  2017     19
+  2018     31
+  2019     23
+  2020     31
+  2021     44
+  2022     47
+  2023    334
+  2024    121
+  2025     63
+  2026     45
+
+p2_category:
+    467   46.6%  OTHER_UNRELIABLE
+    396   39.5%  FABRICATION
+    140   14.0%  ERROR
+
+strength:
+    862   85.9%  STRONG
+    141   14.1%  WEAK
+
+Trial publication types (a paper can have several):
+    900  Randomized Controlled Trial
+    281  Clinical Trial
+     43  Controlled Clinical Trial
+     13  Clinical Trial, Phase II
+      9  Clinical Trial, Phase III
+      4  Clinical Trial, Phase I
+      4  Equivalence Trial

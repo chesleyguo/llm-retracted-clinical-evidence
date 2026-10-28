@@ -13,7 +13,7 @@ each file here when you retrieve it.
 | Source | Used for | How to get it | Downloaded |
 | --- | --- | --- | --- |
 | Retraction Watch database (distributed by Crossref) | Retracted papers, retraction dates and reasons | `python scripts/01_download_retraction_watch.py` (CSV from `https://api.labs.crossref.org/data/retractionwatch?<CONTACT_EMAIL>`; provenance logged in `results/01_download_log.jsonl`) | TODO |
-| PubMed (NCBI E-utilities) | Titles, authors, abstracts, publication types; control paper search | TODO | TODO |
+| PubMed (NCBI E-utilities) | Titles, authors, abstracts, publication types; control paper search | `python scripts/07_fetch_pubmed.py` (efetch, XML, 200 PMIDs per request; cached in `data/raw/pubmed/`, PMIDs requested logged in `data/raw/pubmed/fetch_log.jsonl`) | 2026-10-28 |
 | OpenAlex | Citation counts | TODO | TODO |
 
 ## Setup
