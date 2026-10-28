@@ -1,4 +1,51 @@
-# Candidate models (research notes, not a decision)
+# Candidate models
+
+## Selected for the study (decided 2026-10-27)
+
+Tested models are the default model of each company's consumer app on the
+free plan, called through the API. LLM coder: `deepseek-v4-pro`.
+
+| Company | Free-plan default in the consumer app | API model ID | Official training cutoff | Web search via API | Price per 1M tokens (in / out) |
+| --- | --- | --- | --- | --- | --- |
+| OpenAI | ChatGPT: GPT-5.6 Luna (Free and Go plans) | `gpt-5.6-luna` | Feb 16, 2026 | Yes | $0.20 / $1.20 |
+| Google | Gemini app: "Auto" model selection; "most prompts will go to Flash-Lite"; with smart model selection off, all responses use Flash-Lite | `gemini-3.5-flash-lite` | Not published | Yes (Search grounding) | see Gemini pricing page |
+| Anthropic | Claude: Sonnet 5.5 (Opus 5.5 is not on the free plan) | `claude-sonnet-5-5` | Jun 2026 (training data and reliable knowledge) | Yes | $2 / $10 |
+
+How each default was established, and how strong the evidence is:
+- **ChatGPT.** OpenAI help center article "GPT-6 and other models in ChatGPT"
+  (https://help.openai.com/en/articles/20001354-gpt-6-and-other-models-in-chatgpt)
+  states that the Free and Go default is GPT-5.6 Luna. The page blocks
+  automated fetching (HTTP 403), so this was read from search-engine excerpts
+  of the page, not the page itself. API ID and cutoff from the official model
+  page: https://developers.openai.com/api/docs/models/gpt-5.6-luna
+- **Gemini.** Since Oct 9, 2026, free users can only choose "Auto"; Google
+  says most prompts go to Flash-Lite and harder prompts may go to Flash or Pro
+  (9to5Google, https://9to5google.com/2026/10/09/gemini-auto-free-users/,
+  quoting Google; Google support page
+  https://support.google.com/gemini/answer/17004136 not checked directly).
+  The router itself is not available through the API, so `gemini-3.5-flash-lite`
+  is the closest API equivalent. Official model page:
+  https://ai.google.dev/gemini-api/docs/models/gemini-3.5-flash-lite
+  The last default announced in Google's own release notes
+  (https://gemini.google/release-notes/) is Gemini 3 Flash (Dec 17, 2025).
+- **Claude.** Secondary sources only: Sonnet 5.5 is available to and the
+  default for free users, Opus 5.5 is for paid plans (Notebookcheck,
+  https://www.notebookcheck.net/Claude-Sonnet-5-5-is-available-on-the-free-plan-unlike-Opus-5-5.1411941.0.html;
+  PCWorld, https://www.pcworld.com/article/3246614/claude-sonnet-5-5-is-here-this-prompt-stops-it-from-wasting-your-usage.html).
+  No official Anthropic statement of the free-plan default was found. Model
+  facts from https://platform.claude.com/docs/en/models/sonnet-5-5/overview
+  (the API rejects `temperature`, `top_p` and `top_k` with a 400 error).
+
+Trials in `retracted_trials.csv` retracted on or after each cutoff (these are
+reported descriptively, not used in the RQ2 regression):
+
+| Model | Cutoff used | On or after cutoff | Median years from retraction to cutoff (others) |
+| --- | --- | --- | --- |
+| gpt-5.6-luna | 2026-02-16 | 37 | 2.66 |
+| claude-sonnet-5-5 | Jun 2026 as 2026-06-01 | 15 | 2.93 |
+| claude-sonnet-5-5 | Jun 2026 as 2026-06-30 | 8 | 3.01 |
+
+## All candidates checked (research notes)
 
 Checked 2026-10-27 from official documentation unless stated. Prices are list
 prices per 1M tokens (input / output) for standard, non-batch calls and change

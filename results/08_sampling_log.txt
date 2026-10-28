@@ -1,0 +1,52 @@
+Seed: 2026 (numpy 2.5.4, default_rng)
+Retracted trials: 1003
+With an abstract (sampling frame): 996
+
+Available per stratum (trials / with journal cap):
+  2024        120 /   69
+  2025-2026   108 /   76
+  2023        334 /   78
+  <=2022      434 /  303
+
+Main sample: 100 trials
+  2024        25
+  2025-2026   25
+  2023        25
+  <=2022      25
+  distinct journals: 68
+  trials per journal: 11 journal(s) with 3, 10 journal(s) with 2, 47 journal(s) with 1
+  journals with more than 1 trial:
+    3  Journal of Healthcare Engineering
+    3  European Journal of Contraception & Reproductive Health Care
+    3  Anesthesia & Analgesia
+    3  Archives of Gynecology and Obstetrics
+    3  Scanning
+    3  Computational and Mathematical Methods in Medicine
+    3  BioMed Research International
+    3  The Journal of Maternal-Fetal & Neonatal Medicine
+    3  International Journal of Gynecology & Obstetrics
+    3  Disease Markers
+    3  European Journal of Obstetrics & Gynecology and Reproductive Biology
+    2  Clinical Nutrition
+    2  Acta Anaesthesiologica Scandinavica
+    2  Fertility and Sterility
+    2  BMC Pregnancy and Childbirth
+    2  Journal of Clinical Anesthesia
+    2  The Annals of Thoracic Surgery
+    2  Journal of Obstetrics and Gynaecology
+    2  Climacteric
+    2  Journal of International Medical Research
+    2  Scientific Reports
+  p2_category: OTHER_UNRELIABLE 55, FABRICATION 28, ERROR 17
+  strength: STRONG 87, WEAK 13
+
+Pilot sample: 10 trials
+  2024         2
+  2025-2026    2
+  2023         2
+  <=2022       4
+  distinct journals: 10
+  trials per journal: 10 journal(s) with 1
+  journals with more than 1 trial:
+  p2_category: OTHER_UNRELIABLE 6, FABRICATION 2, ERROR 2
+  strength: STRONG 9, WEAK 1

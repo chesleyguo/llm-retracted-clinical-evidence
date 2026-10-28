@@ -2,8 +2,16 @@
 
 ## Research questions
 
-**RQ2** *(wording to be completed by the author)*. pubmed_flagged is reported
-descriptively only and is not a predictor (see Deviations log).
+**RQ2** *(wording to be completed by the author)*.
+- Time variable: years_since_retraction = model training cutoff date −
+  retraction date, in years (codebook P3), treated as continuous. It is
+  computed only for models with an officially published training cutoff, so
+  Gemini takes part in RQ1 and RQ3 but not in the RQ2 time analysis.
+- Paper × model pairs with the retraction on or after the cutoff are not used
+  in the regression. They are reported descriptively as a "could not have
+  known" baseline.
+- pubmed_flagged is reported descriptively only and is not a predictor (see
+  Deviations log).
 
 ## Inclusion criteria
 
@@ -92,23 +100,24 @@ was set by the author. The PubMed publication types used for the
 duplicate-title review are stored in `duplicate_title_review.csv`
 (pubmed_pub_types), and the raw PubMed records in `data/raw/`.
 
-### Sampling (draft, not yet run)
+### Sampling
 
-*Draft, 2026-10-27. Strata will be revised once the tested models are chosen.*
+*2026-10-27.*
 
 - **Frame.** Retracted clinical trials in `data/processed/retracted_trials.csv`
   with an abstract in PubMed (has_abstract = True): 996 of 1,003 trials.
 - **Strata.** Retraction year: ≤2022, 2023, 2024, 2025–2026.
-- **Main sample.** 100 trials. [To decide: equal allocation, 25 per stratum,
-  or another allocation.]
+- **Main sample.** 100 trials, 25 per stratum.
 - **Journal cap.** At most 3 trials from the same journal in the main sample,
   counted across all strata.
 - **Pilot sample.** 10 further trials for the pilot run, drawn after the main
   sample from the trials not in it, so the two never overlap. The journal cap
-  also applies within the pilot sample. [To decide: allocation across strata,
-  e.g. 3/3/2/2.]
+  also applies within the pilot sample. Allocation: 4 from ≤2022 and 2 from
+  each of the other three strata.
 - **Procedure.** A single random generator with seed 2026 (logged with the
-  output). Strata are processed in the order listed above. Within each stratum
+  output). Strata are processed in order of how many trials they could supply
+  under the journal cap, fewest first: 2024 (69), 2025–2026 (76), 2023 (78),
+  ≤2022 (303). Within each stratum
   the trials are put in random order and taken one by one, skipping a trial
   whose journal has already reached the cap, until the stratum quota is met.
   Because the cap is shared across strata, the processing order is fixed in
@@ -132,6 +141,21 @@ duplicate-title review are stored in `duplicate_title_review.csv`
 
 ## Models and conditions
 
+**Tested models.** One model from each of OpenAI, Google and Anthropic: the
+default model of each company's consumer app on the free plan, called through
+the API. Checked 2026-10-27; sources and details in `docs/model_candidates.md`.
+
+| Company | Consumer app default (free plan) | API model ID | Official training cutoff |
+| --- | --- | --- | --- |
+| OpenAI | ChatGPT: GPT-5.6 Luna | `gpt-5.6-luna` | Feb 16, 2026 |
+| Google | Gemini app: "Auto", which sends most prompts to Flash-Lite (Flash-Lite for all prompts if smart model selection is off) | `gemini-3.5-flash-lite` | Not published |
+| Anthropic | Claude: Sonnet 5.5 | `claude-sonnet-5-5` | Jun 2026 |
+
+The exact version string returned by each API is recorded with every call.
+
+**LLM coder.** deepseek-v4-pro (DeepSeek-V4-Pro-0813 at the time of checking),
+which is not among the tested models.
+
 ## Outcomes
 
 ## Statistical analysis
@@ -149,3 +173,4 @@ duplicate-title review are stored in `duplicate_title_review.csv`
 | --- | --- | --- | --- |
 | 2026-10-27 | Inclusion criteria | The paper identifier was changed from OriginalPaperDOI to the PMID (OriginalPaperPubMedID). | Some conference-abstract supplements publish many different papers under one DOI (e.g. 255 records with 255 different titles under one DOI in the 2026-10-28 snapshot), so a DOI does not always identify a single paper. |
 | 2026-10-27 | Research questions (RQ2) | pubmed_flagged was removed from the RQ2 predictors and is reported descriptively only. Made before the experiment started, based on the distribution of the variable. | Only 20 of 1,003 retracted trials (2.0%) are not flagged as Retracted Publication in PubMed, too little variation to serve as a predictor. |
+| 2026-10-27 | Research questions (RQ2); codebook P3 | The retraction-timing variable was changed from BEFORE / AFTER (with a 3-month BORDERLINE band) to the continuous years_since_retraction. Pairs retracted on or after the cutoff are reported descriptively. Made before the experiment started, based on the distribution of retraction dates. | With 2026 training cutoffs, only 1–5 trials per candidate model were retracted after the cutoff outside the 3-month band, too few for a BEFORE / AFTER comparison. |

@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.5 · Oct 27, 2026 · @Jiayi Guo
+Draft v0.6 · Oct 27, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -24,7 +24,7 @@ Limitation: the auto-attached citations field lets the coder tell whether a resp
 
 **Prompt framings coded:** F1 clinical question, F2 paper question, F3 direct status question. Conditions: C0 no extra information, C1 retraction notice in prompt, C2 web search enabled.
 
-**Variables at a glance:** V1–V5 are coded for every response (section 3); V4 applies only to F3. V6 is a second pass, only for responses with V1 = EXPLICIT. P1–P3 are coded once per paper, before any responses are generated (section 4).
+**Variables at a glance:** V1–V5 are coded for every response (section 3); V4 applies only to F3. V6 is a second pass, only for responses with V1 = EXPLICIT. P1–P2 are coded once per paper, before any responses are generated; P3 is computed for each paper × model pair (section 4).
 
 ## 2. General coding rules
 
@@ -177,9 +177,17 @@ Collapse the Retraction Watch reason field into three categories:
 
 If a record lists several reasons, apply the first matching category in the order above.
 
-### P3. Retraction timing relative to model training cutoff
+### P3. Years since retraction at the model's training cutoff
 
-Computed, not hand-coded. For each paper × model pair: BEFORE if the retraction date is earlier than the model's published training cutoff, AFTER otherwise. Record the cutoff date and its source for each model. Papers retracted within 3 months of a cutoff are flagged as BORDERLINE and dropped from the P3 analysis.
+Computed, not hand-coded, for each paper × model pair, and only for models with an officially published training cutoff:
+
+years_since_retraction = (model training cutoff date − retraction date), in days / 365.25
+
+- Positive values: the paper was retracted before the cutoff. These pairs enter the RQ2 regression.
+- Zero or negative values: the paper was retracted on or after the cutoff, so the model could not have known. These pairs are not used in the regression and are reported descriptively as a baseline.
+- Models without an official cutoff: P3 is not computed.
+
+Record the cutoff date and its source for each model. [To decide: when a cutoff is published as a month only, which day of the month is used.]
 
 ### Other paper-level fields to record (from the data, not coded)
 
@@ -276,9 +284,10 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.3 | 2026-10-27 | Sections 1 and 5 | Coder is shown auto-attached citations ("None" outside web search); added the field to the section 5 prompt template; noted that condition blinding is partial and that V1 and V2 are judged from the response text only | The coder needs the auto-attached citations to code V3_source |
 | v0.4 | 2026-10-27 | Section 2 | Added general rule 8: auto-attached citations are used only for V3 and V3_source; all other variables are coded from the response text | The LLM coder sees only sections 2–3, so the rule stated in section 1 did not reach it |
 | v0.5 | 2026-10-27 | P2 | ERROR now also covers errors in methods or materials, including errors in or contamination of cell lines, tissues or materials | Reasons such as Error in Methods and Contamination of Cell Lines/Tissues are classified as ERROR in data/processed/reason_mapping.csv; the definition did not cover them |
+| v0.6 | 2026-10-27 | P3 | Replaced the BEFORE / AFTER / BORDERLINE categories with a continuous variable, years_since_retraction = training cutoff − retraction date (years); pairs retracted on or after the cutoff are reported descriptively, not used in the regression; not computed for models without an official cutoff | With the tested models' 2026 cutoffs, almost no trials were retracted after a cutoff (1–5 per model outside the 3-month window), so the categorical comparison was not feasible |
 
 ### Open questions
 
 - Who will be the second coder? They need about 3 hours: 1 hour of training plus 2 hours of coding. **Status: open.** Does not block current work.
-- Which model will be the LLM coder? It must not be one of the tested models. **Status: open.** To be chosen after the tested models are fixed.
+- Which model will be the LLM coder? It must not be one of the tested models. **Status: resolved.** deepseek-v4-pro, which is not among the tested models.
 - Do any tested models add citations automatically in web-search mode? If so, decide whether those count as CITED under V3. **Status: resolved in v0.2.** They count as CITED; the source is recorded in V3_source.
