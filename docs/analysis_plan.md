@@ -2,6 +2,11 @@
 
 ## Research questions
 
+**RQ2** *(wording to be completed by the author)*. Pre-specified predictors
+include:
+- pubmed_flagged: whether the paper's PubMed publication types include
+  Retracted Publication (see "Recorded for each included paper" below).
+
 ## Inclusion criteria
 
 *Draft, 2026-10-27, for review.*
@@ -23,6 +28,8 @@ the number of records remaining after each step is reported in a flow diagram.
    When one title has more than one PMID, the PMIDs are treated as the same
    paper if the title, journal and authors all match; in that case the PMID
    that PubMed marks with the publication type Retracted Publication is kept.
+   If several PMIDs of the same paper are all marked Retracted Publication,
+   the lowest PMID is kept.
    These cases are reviewed by hand, and the decision recorded in
    `data/processed/duplicate_title_review.csv` is final.
 4. **Conference abstracts.** Exclude records whose ArticleType includes
@@ -33,6 +40,9 @@ the number of records remaining after each step is reported in a flow diagram.
    classified by hand in `data/processed/reason_mapping.csv`. A record is kept
    if at least one of its reasons is INCLUDE, even if it also has EXCLUDE
    reasons. Records whose reasons are only NEUTRAL and/or EXCLUDE are excluded.
+   Records with any OVERRIDE_EXCLUDE reason (Retract and Replace) are always
+   excluded, even if they also have INCLUDE reasons: a corrected version of the
+   article replaces the retracted one.
 
    Columns of `reason_mapping.csv`:
 
@@ -40,8 +50,9 @@ the number of records remaining after each step is reported in a flow diagram.
    | --- | --- |
    | reason | One reason exactly as written in the Retraction Watch Reason field |
    | count | Number of records with this reason (Retraction, (HSC) subject, valid PMID) |
-   | include | INCLUDE: the reason invalidates the paper's findings. EXCLUDE: the reason does not affect the findings. NEUTRAL: the reason is procedural or gives too little information to judge. |
+   | include | INCLUDE: the reason invalidates the paper's findings. EXCLUDE: the reason does not affect the findings. NEUTRAL: the reason is procedural or gives too little information to judge. OVERRIDE_EXCLUDE: any record with this reason is excluded, overriding INCLUDE. |
    | p2_category | P2 category from the codebook (FABRICATION, ERROR, OTHER_UNRELIABLE) |
+   | strength | INCLUDE reasons only. WEAK: the reason signals a concern rather than an established problem (Concerns/Issues about Data; Concerns/Issues about Results and/or Conclusions; Duplication of/in Image; Unreliable Image). STRONG: all other INCLUDE reasons. |
    | note | Free-text justification |
 6. **Clinical trial.** A paper counts as a clinical trial if its PubMed
    publication types include Clinical Trial (MeSH tree number V03.175.250) or
@@ -67,13 +78,19 @@ the number of records remaining after each step is reported in a flow diagram.
    cross-check: agreement between the two sources is reported, and it does not
    decide inclusion.
 
+**Recorded for each included paper (not inclusion criteria).**
+- pubmed_flagged: whether the paper's PubMed publication types include
+  Retracted Publication (TRUE/FALSE). PubMed's retraction flag is not used to
+  decide inclusion; it is a predictor in RQ2.
+
 **Manual classification tables.** For `data/processed/reason_mapping.csv` and
 `data/processed/duplicate_title_review.csv`, an LLM first proposes a
 classification (columns suggested_include, suggested_p2 and rationale; and
 suggested_decision and rationale, respectively). The author then reviews every
 row and decides. Only the author's columns are used in the analysis:
 include and p2_category in `reason_mapping.csv`, and decision (KEEP or DROP)
-in `duplicate_title_review.csv`. The PubMed publication types used for the
+in `duplicate_title_review.csv`. The strength column in `reason_mapping.csv`
+was set by the author. The PubMed publication types used for the
 duplicate-title review are stored in `duplicate_title_review.csv`
 (pubmed_pub_types), and the raw PubMed records in `data/raw/`.
 
@@ -82,6 +99,13 @@ duplicate-title review are stored in `duplicate_title_review.csv`
 ## Outcomes
 
 ## Statistical analysis
+
+### Pre-specified sensitivity analyses
+
+- **Strong retraction reasons only.** Re-run the main analysis using only
+  papers with at least one STRONG reason in `reason_mapping.csv` (see
+  inclusion criterion 5), to check that the results do not depend on papers
+  retracted only for concerns.
 
 ## Deviations log
 

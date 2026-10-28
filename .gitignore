@@ -4,3 +4,4 @@
 data/raw/*
 !data/raw/.gitkeep
 .venv/
+.DS_Store

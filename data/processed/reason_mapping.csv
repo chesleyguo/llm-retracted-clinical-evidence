@@ -1,109 +1,109 @@
-reason,count,include,p2_category,note,suggested_include,suggested_p2,rationale
-Investigation by Journal/Publisher,8981,,,,NEUTRAL,,"Describes who investigated, not what was found."
-Unreliable Results and/or Conclusions,7149,,,,INCLUDE,OTHER_UNRELIABLE,States directly that the findings are unreliable; cause unstated.
-Investigation by Third Party,6518,,,,NEUTRAL,,"Describes who investigated, not what was found."
-Concerns/Issues about Data,6028,,,,INCLUDE,OTHER_UNRELIABLE,Codebook P2 lists 'concerns about data' under OTHER_UNRELIABLE; question: 'concerns' may be unresolved rather than confirmed.
-Concerns/Issues about Referencing/Attributions,4021,,,,EXCLUDE,,Citation or attribution problem; does not bear on the findings.
-Concerns/Issues about Peer Review,3986,,,,EXCLUDE,,"Problem with the review process, not with the reported results."
-Paper Mill,3553,,,,INCLUDE,FABRICATION,Codebook P2 lists paper mill under FABRICATION; the study may not have been conducted.
-Concerns/Issues about Results and/or Conclusions,3389,,,,INCLUDE,OTHER_UNRELIABLE,Directly about the findings; question: 'concerns' is weaker than 'unreliable' and may be unresolved.
-Computer-Aided Content or Computer-Generated Content,2578,,,,NEUTRAL,,"Question: generated text may contain invented content, but the tag alone does not say the results are wrong."
-Compromised Peer Review,2273,,,,EXCLUDE,,"Problem with the review process, not with the reported results; often co-occurs with Paper Mill, which is INCLUDE."
-Lack of IRB/IACUC Approval and/or Compliance,1823,,,,EXCLUDE,,Ethics approval problem; question: in clinical trials missing approval can signal that the trial did not take place.
-Investigation by Company/Institution,1511,,,,NEUTRAL,,"Describes who investigated, not what was found."
-Duplication of/in Image,1460,,,,INCLUDE,OTHER_UNRELIABLE,"Duplicated images undermine the reported data; question: may be an honest error or manipulation, cause unstated."
-Objections by Author(s),1344,,,,NEUTRAL,,"Describes a dispute over the retraction, not a reason about the findings."
-Author Unresponsive,1069,,,,NEUTRAL,,Describes the process; the authors did not respond.
-Concerns/Issues about Image,1042,,,,NEUTRAL,,Question: unclear whether the concern affects the results or was resolved.
-Informed/Patient Consent - None/Withdrawn,1023,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
-Misconduct by Author,989,,,,NEUTRAL,,Question: type of misconduct unspecified (could be fabrication or plagiarism); look for a co-occurring specific reason.
-Unreliable Data,952,,,,INCLUDE,OTHER_UNRELIABLE,States directly that the data are unreliable; cause unstated.
-Euphemisms for Plagiarism,878,,,,EXCLUDE,,Plagiarism; does not bear on whether the findings are true.
-Duplication of/in Article,876,,,,EXCLUDE,,Duplicate publication; the findings themselves are not challenged.
-Misconduct - Official Investigation(s) and/or Finding(s),873,,,,NEUTRAL,,Question: type of misconduct unspecified; look for a co-occurring specific reason.
-Euphemisms for Duplication,853,,,,EXCLUDE,,Duplicate publication; the findings themselves are not challenged.
-Original Data and/or Images not Provided and/or not Available,827,,,,NEUTRAL,,"Question: results could not be verified, but this does not show they are wrong."
-Error in Data,795,,,,INCLUDE,ERROR,Error in the data the conclusions rest on.
-Falsification/Fabrication of Data,769,,,,INCLUDE,FABRICATION,Fabricated or falsified data.
-Notice - Limited or No Information,716,,,,NEUTRAL,,The notice gives too little information.
-Date of Article and/or Notice Unknown,699,,,,NEUTRAL,,"Bibliographic information, not a reason."
-Concerns/Issues about Authorship/Affiliation,674,,,,EXCLUDE,,Authorship problem; does not bear on the findings.
-Plagiarism of/in Article,637,,,,EXCLUDE,,Plagiarism; does not bear on whether the findings are true.
-Removed,630,,,,NEUTRAL,,Article removed; no reason given.
-Upgrade/Update of Prior Notice(s),621,,,,NEUTRAL,,Procedural: the notice updates an earlier one.
-Error in Analyses,510,,,,INCLUDE,ERROR,Error in the analysis the conclusions rest on.
-Error in Methods,506,,,,INCLUDE,ERROR,"Methods error; question: codebook P2 ERROR lists data, analysis, results and conclusions but not methods."
-Duplication of Data,505,,,,NEUTRAL,,Question: could be reuse of the same data in another paper (findings intact) or recycled data presented as new (findings invalid).
-Concerns/Issues about Human Subject Welfare,464,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
-Error in Results and/or Conclusions,458,,,,INCLUDE,ERROR,Error in the results or conclusions.
-Manipulation of Images,399,,,,INCLUDE,FABRICATION,Codebook P2 lists image manipulation under FABRICATION.
-Plagiarism of Data,398,,,,NEUTRAL,,"Question: data taken from others means the reported study may not have been done as described, but the data may still be real."
-Plagiarism of Text,375,,,,EXCLUDE,,Plagiarism of text; does not bear on the findings.
-False/Forged Authorship,367,,,,EXCLUDE,,Authorship problem; does not bear on the findings.
-Retract and Replace,359,,,,EXCLUDE,,A corrected version replaces the article; question: if it co-occurs with an error reason the record becomes INCLUDE under the any-INCLUDE rule although a corrected version exists.
-Ethical Violations by Author,338,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
-Error in Image,335,,,,NEUTRAL,,Question: unclear whether the image error affects the conclusions.
-Plagiarism of Image,315,,,,EXCLUDE,,Plagiarism; does not bear on whether the findings are true.
-Results Not Reproducible,297,,,,INCLUDE,OTHER_UNRELIABLE,The findings could not be reproduced; cause unstated.
-Withdrawn as Out of Date,246,,,,EXCLUDE,,"Content superseded, not shown to be wrong."
-Duplication of Content through Error by Journal/Publisher,244,,,,EXCLUDE,,Publisher error in publishing; the findings are not challenged.
-Objections by Third Party,234,,,,NEUTRAL,,"Describes who objected, not what was wrong."
-Concerns/Issues about Article,228,,,,NEUTRAL,,Unspecified concern.
-Lack of Approval from Author,196,,,,EXCLUDE,,Authorship consent problem; does not bear on the findings.
-Falsification/Fabrication of Image,182,,,,INCLUDE,FABRICATION,Fabricated or falsified images.
-Concerns/Issues about Third Party Involvement,181,,,,NEUTRAL,,"Question: often signals paper-mill or ghost-writing involvement, but the tag does not say the results are wrong."
-Concerns/Issues about Methods,178,,,,NEUTRAL,,Question: unclear whether the methods concern invalidates the results.
-Copyright Claims,173,,,,EXCLUDE,,Legal or rights issue.
-Lack of Approval from Third Party,173,,,,EXCLUDE,,Permission problem; does not bear on the findings.
-Error in Text,171,,,,NEUTRAL,,"Question: usually minor, but unclear whether it changes the conclusions."
-Conflict of Interest,165,,,,EXCLUDE,,Undisclosed interests; does not by itself show the results are wrong.
-Error by Journal/Publisher,156,,,,EXCLUDE,,Publisher error in publishing; the findings are not challenged.
-Duplication of Text,152,,,,EXCLUDE,,Text duplication; does not bear on the findings.
-Breach of Policy by Author,150,,,,NEUTRAL,,Unspecified policy breach.
-Investigation by ORI,130,,,,NEUTRAL,,"Describes who investigated; question: ORI findings are research misconduct, usually fabrication or falsification, but the tag alone does not say which."
-Notice - Unable to Access via current resources,121,,,,NEUTRAL,,The notice could not be accessed.
-Rogue Editor,121,,,,EXCLUDE,,"Problem with the editorial process, not with the reported results."
-Cites Retracted Work,116,,,,NEUTRAL,,Question: may undermine conclusions that build on the cited work.
-Lack of Approval from Company/Institution,107,,,,EXCLUDE,,Permission problem; does not bear on the findings.
-Unreliable Image,97,,,,INCLUDE,OTHER_UNRELIABLE,States the images are unreliable; cause unstated.
-Error in Materials,63,,,,INCLUDE,ERROR,Wrong materials used; the results do not reflect what was described.
-Falsification/Fabrication of Results,61,,,,INCLUDE,FABRICATION,Fabricated or falsified results.
-Notice - Lack of,60,,,,NEUTRAL,,No retraction notice.
-Contamination of Cell Lines/Tissues,53,,,,INCLUDE,ERROR,Contaminated materials invalidate the results; no misconduct implied.
-Criminal Proceedings,52,,,,NEUTRAL,,Legal process; reason for the retraction unclear.
-Miscommunication with/by Author,50,,,,NEUTRAL,,Describes the process.
-Complaints about Author,46,,,,NEUTRAL,,Unspecified complaint.
-Temporary Removal,46,,,,NEUTRAL,,Article removed temporarily; no reason given.
-Bias Issues or Lack of Balance,45,,,,NEUTRAL,,"Question: concerns presentation (usually reviews or opinion), unclear for original results."
-Taken from Dissertation/Thesis,39,,,,EXCLUDE,,Prior-publication or plagiarism issue; does not bear on the findings.
-Error in Cell Lines/Tissues,38,,,,INCLUDE,ERROR,Wrong cell lines or tissues invalidate the results; no misconduct implied.
-Legal Reasons and/or Threats,38,,,,NEUTRAL,,Legal process; reason for the retraction unclear.
-Doing the Right Thing,35,,,,NEUTRAL,,Retraction Watch label for honest self-retraction; the actual problem is in other reasons.
-Concerns/Issues about Animal Welfare,34,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
-False/Forged Affiliation,34,,,,EXCLUDE,,Affiliation problem; does not bear on the findings.
-Error by Third Party,26,,,,NEUTRAL,,Question: unclear what the error was or whether it affects the results.
-Ethical Violations by Company/Institution/Third Party,23,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
-Manipulation of Results,23,,,,INCLUDE,FABRICATION,Manipulated results.
-Publishing Ban,23,,,,NEUTRAL,,Sanction on the author; reason for this paper unclear.
-Contamination of Materials,22,,,,INCLUDE,ERROR,Contaminated materials invalidate the results; no misconduct implied.
-Misconduct by Third Party,15,,,,NEUTRAL,,Question: type of misconduct unspecified.
-Civil Proceedings,14,,,,NEUTRAL,,Legal process; reason for the retraction unclear.
-Manipulation of Data,14,,,,INCLUDE,FABRICATION,Manipulated data.
-Objections by Company/Institution,13,,,,NEUTRAL,,"Describes who objected, not what was wrong."
-Withdrawn to Publish in Different Journal,13,,,,EXCLUDE,,Withdrawn for publication elsewhere; findings not challenged.
-Salami Slicing,10,,,,EXCLUDE,,Redundant publication; the findings themselves are not challenged.
-Miscommunication with/by Journal/Publisher,9,,,,NEUTRAL,,Describes the process.
-Miscommunication with/by Company/Institution,7,,,,NEUTRAL,,Describes the process.
-Miscommunication with/by Third Party,7,,,,NEUTRAL,,Describes the process.
-Updated to Retraction,6,,,,NEUTRAL,,Procedural: an earlier notice was upgraded.
-Complaints about Third Party,5,,,,NEUTRAL,,Unspecified complaint.
-Nonpayment of Fees and/or Refusal to Pay,5,,,,EXCLUDE,,Administrative reason.
-Hoax Paper,4,,,,INCLUDE,FABRICATION,The paper was deliberately fake.
-Not Presented at Conference,4,,,,EXCLUDE,,Administrative reason (conference papers).
-Taken via Peer Review,4,,,,EXCLUDE,,Content taken from a manuscript under review (plagiarism); does not bear on the findings.
-Complaints about Company/Institution,3,,,,NEUTRAL,,Unspecified complaint.
-Euphemisms for Misconduct,3,,,,NEUTRAL,,Question: type of misconduct unspecified.
-Misconduct by Company/Institution,3,,,,NEUTRAL,,Question: type of misconduct unspecified.
-No Further Action,3,,,,NEUTRAL,,Procedural.
-Taken via Translation,2,,,,EXCLUDE,,Plagiarism via translation; does not bear on the findings.
-Updated to Correction,2,,,,NEUTRAL,,Procedural: the notice was changed to a correction.
+reason,count,include,p2_category,strength,note,suggested_include,suggested_p2,rationale
+Investigation by Journal/Publisher,8981,NEUTRAL,,,,NEUTRAL,,"Describes who investigated, not what was found."
+Unreliable Results and/or Conclusions,7149,INCLUDE,OTHER_UNRELIABLE,STRONG,,INCLUDE,OTHER_UNRELIABLE,States directly that the findings are unreliable; cause unstated.
+Investigation by Third Party,6518,NEUTRAL,,,,NEUTRAL,,"Describes who investigated, not what was found."
+Concerns/Issues about Data,6028,INCLUDE,OTHER_UNRELIABLE,WEAK,,INCLUDE,OTHER_UNRELIABLE,Codebook P2 lists 'concerns about data' under OTHER_UNRELIABLE; question: 'concerns' may be unresolved rather than confirmed.
+Concerns/Issues about Referencing/Attributions,4021,EXCLUDE,,,,EXCLUDE,,Citation or attribution problem; does not bear on the findings.
+Concerns/Issues about Peer Review,3986,EXCLUDE,,,,EXCLUDE,,"Problem with the review process, not with the reported results."
+Paper Mill,3553,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Codebook P2 lists paper mill under FABRICATION; the study may not have been conducted.
+Concerns/Issues about Results and/or Conclusions,3389,INCLUDE,OTHER_UNRELIABLE,WEAK,,INCLUDE,OTHER_UNRELIABLE,Directly about the findings; question: 'concerns' is weaker than 'unreliable' and may be unresolved.
+Computer-Aided Content or Computer-Generated Content,2578,NEUTRAL,,,,NEUTRAL,,"Question: generated text may contain invented content, but the tag alone does not say the results are wrong."
+Compromised Peer Review,2273,EXCLUDE,,,,EXCLUDE,,"Problem with the review process, not with the reported results; often co-occurs with Paper Mill, which is INCLUDE."
+Lack of IRB/IACUC Approval and/or Compliance,1823,EXCLUDE,,,,EXCLUDE,,Ethics approval problem; question: in clinical trials missing approval can signal that the trial did not take place.
+Investigation by Company/Institution,1511,NEUTRAL,,,,NEUTRAL,,"Describes who investigated, not what was found."
+Duplication of/in Image,1460,INCLUDE,OTHER_UNRELIABLE,WEAK,,INCLUDE,OTHER_UNRELIABLE,"Duplicated images undermine the reported data; question: may be an honest error or manipulation, cause unstated."
+Objections by Author(s),1344,NEUTRAL,,,,NEUTRAL,,"Describes a dispute over the retraction, not a reason about the findings."
+Author Unresponsive,1069,NEUTRAL,,,,NEUTRAL,,Describes the process; the authors did not respond.
+Concerns/Issues about Image,1042,NEUTRAL,,,,NEUTRAL,,Question: unclear whether the concern affects the results or was resolved.
+Informed/Patient Consent - None/Withdrawn,1023,EXCLUDE,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
+Misconduct by Author,989,NEUTRAL,,,,NEUTRAL,,Question: type of misconduct unspecified (could be fabrication or plagiarism); look for a co-occurring specific reason.
+Unreliable Data,952,INCLUDE,OTHER_UNRELIABLE,STRONG,,INCLUDE,OTHER_UNRELIABLE,States directly that the data are unreliable; cause unstated.
+Euphemisms for Plagiarism,878,EXCLUDE,,,,EXCLUDE,,Plagiarism; does not bear on whether the findings are true.
+Duplication of/in Article,876,EXCLUDE,,,,EXCLUDE,,Duplicate publication; the findings themselves are not challenged.
+Misconduct - Official Investigation(s) and/or Finding(s),873,NEUTRAL,,,,NEUTRAL,,Question: type of misconduct unspecified; look for a co-occurring specific reason.
+Euphemisms for Duplication,853,EXCLUDE,,,,EXCLUDE,,Duplicate publication; the findings themselves are not challenged.
+Original Data and/or Images not Provided and/or not Available,827,NEUTRAL,,,,NEUTRAL,,"Question: results could not be verified, but this does not show they are wrong."
+Error in Data,795,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Error in the data the conclusions rest on.
+Falsification/Fabrication of Data,769,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Fabricated or falsified data.
+Notice - Limited or No Information,716,NEUTRAL,,,,NEUTRAL,,The notice gives too little information.
+Date of Article and/or Notice Unknown,699,NEUTRAL,,,,NEUTRAL,,"Bibliographic information, not a reason."
+Concerns/Issues about Authorship/Affiliation,674,EXCLUDE,,,,EXCLUDE,,Authorship problem; does not bear on the findings.
+Plagiarism of/in Article,637,EXCLUDE,,,,EXCLUDE,,Plagiarism; does not bear on whether the findings are true.
+Removed,630,NEUTRAL,,,,NEUTRAL,,Article removed; no reason given.
+Upgrade/Update of Prior Notice(s),621,NEUTRAL,,,,NEUTRAL,,Procedural: the notice updates an earlier one.
+Error in Analyses,510,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Error in the analysis the conclusions rest on.
+Error in Methods,506,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,"Methods error; question: codebook P2 ERROR lists data, analysis, results and conclusions but not methods."
+Duplication of Data,505,NEUTRAL,,,,NEUTRAL,,Question: could be reuse of the same data in another paper (findings intact) or recycled data presented as new (findings invalid).
+Concerns/Issues about Human Subject Welfare,464,EXCLUDE,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
+Error in Results and/or Conclusions,458,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Error in the results or conclusions.
+Manipulation of Images,399,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Codebook P2 lists image manipulation under FABRICATION.
+Plagiarism of Data,398,NEUTRAL,,,,NEUTRAL,,"Question: data taken from others means the reported study may not have been done as described, but the data may still be real."
+Plagiarism of Text,375,EXCLUDE,,,,EXCLUDE,,Plagiarism of text; does not bear on the findings.
+False/Forged Authorship,367,EXCLUDE,,,,EXCLUDE,,Authorship problem; does not bear on the findings.
+Retract and Replace,359,OVERRIDE_EXCLUDE,,,,EXCLUDE,,A corrected version replaces the article; question: if it co-occurs with an error reason the record becomes INCLUDE under the any-INCLUDE rule although a corrected version exists.
+Ethical Violations by Author,338,EXCLUDE,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
+Error in Image,335,NEUTRAL,,,,NEUTRAL,,Question: unclear whether the image error affects the conclusions.
+Plagiarism of Image,315,EXCLUDE,,,,EXCLUDE,,Plagiarism; does not bear on whether the findings are true.
+Results Not Reproducible,297,INCLUDE,OTHER_UNRELIABLE,STRONG,,INCLUDE,OTHER_UNRELIABLE,The findings could not be reproduced; cause unstated.
+Withdrawn as Out of Date,246,EXCLUDE,,,,EXCLUDE,,"Content superseded, not shown to be wrong."
+Duplication of Content through Error by Journal/Publisher,244,EXCLUDE,,,,EXCLUDE,,Publisher error in publishing; the findings are not challenged.
+Objections by Third Party,234,NEUTRAL,,,,NEUTRAL,,"Describes who objected, not what was wrong."
+Concerns/Issues about Article,228,NEUTRAL,,,,NEUTRAL,,Unspecified concern.
+Lack of Approval from Author,196,EXCLUDE,,,,EXCLUDE,,Authorship consent problem; does not bear on the findings.
+Falsification/Fabrication of Image,182,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Fabricated or falsified images.
+Concerns/Issues about Third Party Involvement,181,NEUTRAL,,,,NEUTRAL,,"Question: often signals paper-mill or ghost-writing involvement, but the tag does not say the results are wrong."
+Concerns/Issues about Methods,178,NEUTRAL,,,,NEUTRAL,,Question: unclear whether the methods concern invalidates the results.
+Copyright Claims,173,EXCLUDE,,,,EXCLUDE,,Legal or rights issue.
+Lack of Approval from Third Party,173,EXCLUDE,,,,EXCLUDE,,Permission problem; does not bear on the findings.
+Error in Text,171,NEUTRAL,,,,NEUTRAL,,"Question: usually minor, but unclear whether it changes the conclusions."
+Conflict of Interest,165,EXCLUDE,,,,EXCLUDE,,Undisclosed interests; does not by itself show the results are wrong.
+Error by Journal/Publisher,156,EXCLUDE,,,,EXCLUDE,,Publisher error in publishing; the findings are not challenged.
+Duplication of Text,152,EXCLUDE,,,,EXCLUDE,,Text duplication; does not bear on the findings.
+Breach of Policy by Author,150,NEUTRAL,,,,NEUTRAL,,Unspecified policy breach.
+Investigation by ORI,130,NEUTRAL,,,,NEUTRAL,,"Describes who investigated; question: ORI findings are research misconduct, usually fabrication or falsification, but the tag alone does not say which."
+Notice - Unable to Access via current resources,121,NEUTRAL,,,,NEUTRAL,,The notice could not be accessed.
+Rogue Editor,121,EXCLUDE,,,,EXCLUDE,,"Problem with the editorial process, not with the reported results."
+Cites Retracted Work,116,NEUTRAL,,,,NEUTRAL,,Question: may undermine conclusions that build on the cited work.
+Lack of Approval from Company/Institution,107,EXCLUDE,,,,EXCLUDE,,Permission problem; does not bear on the findings.
+Unreliable Image,97,INCLUDE,OTHER_UNRELIABLE,WEAK,,INCLUDE,OTHER_UNRELIABLE,States the images are unreliable; cause unstated.
+Error in Materials,63,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Wrong materials used; the results do not reflect what was described.
+Falsification/Fabrication of Results,61,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Fabricated or falsified results.
+Notice - Lack of,60,NEUTRAL,,,,NEUTRAL,,No retraction notice.
+Contamination of Cell Lines/Tissues,53,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Contaminated materials invalidate the results; no misconduct implied.
+Criminal Proceedings,52,NEUTRAL,,,,NEUTRAL,,Legal process; reason for the retraction unclear.
+Miscommunication with/by Author,50,NEUTRAL,,,,NEUTRAL,,Describes the process.
+Complaints about Author,46,NEUTRAL,,,,NEUTRAL,,Unspecified complaint.
+Temporary Removal,46,NEUTRAL,,,,NEUTRAL,,Article removed temporarily; no reason given.
+Bias Issues or Lack of Balance,45,NEUTRAL,,,,NEUTRAL,,"Question: concerns presentation (usually reviews or opinion), unclear for original results."
+Taken from Dissertation/Thesis,39,EXCLUDE,,,,EXCLUDE,,Prior-publication or plagiarism issue; does not bear on the findings.
+Error in Cell Lines/Tissues,38,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Wrong cell lines or tissues invalidate the results; no misconduct implied.
+Legal Reasons and/or Threats,38,NEUTRAL,,,,NEUTRAL,,Legal process; reason for the retraction unclear.
+Doing the Right Thing,35,NEUTRAL,,,,NEUTRAL,,Retraction Watch label for honest self-retraction; the actual problem is in other reasons.
+Concerns/Issues about Animal Welfare,34,EXCLUDE,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
+False/Forged Affiliation,34,EXCLUDE,,,,EXCLUDE,,Affiliation problem; does not bear on the findings.
+Error by Third Party,26,NEUTRAL,,,,NEUTRAL,,Question: unclear what the error was or whether it affects the results.
+Ethical Violations by Company/Institution/Third Party,23,EXCLUDE,,,,EXCLUDE,,Ethics problem; does not by itself make the results false.
+Manipulation of Results,23,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Manipulated results.
+Publishing Ban,23,NEUTRAL,,,,NEUTRAL,,Sanction on the author; reason for this paper unclear.
+Contamination of Materials,22,INCLUDE,ERROR,STRONG,,INCLUDE,ERROR,Contaminated materials invalidate the results; no misconduct implied.
+Misconduct by Third Party,15,NEUTRAL,,,,NEUTRAL,,Question: type of misconduct unspecified.
+Civil Proceedings,14,NEUTRAL,,,,NEUTRAL,,Legal process; reason for the retraction unclear.
+Manipulation of Data,14,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,Manipulated data.
+Objections by Company/Institution,13,NEUTRAL,,,,NEUTRAL,,"Describes who objected, not what was wrong."
+Withdrawn to Publish in Different Journal,13,EXCLUDE,,,,EXCLUDE,,Withdrawn for publication elsewhere; findings not challenged.
+Salami Slicing,10,EXCLUDE,,,,EXCLUDE,,Redundant publication; the findings themselves are not challenged.
+Miscommunication with/by Journal/Publisher,9,NEUTRAL,,,,NEUTRAL,,Describes the process.
+Miscommunication with/by Company/Institution,7,NEUTRAL,,,,NEUTRAL,,Describes the process.
+Miscommunication with/by Third Party,7,NEUTRAL,,,,NEUTRAL,,Describes the process.
+Updated to Retraction,6,NEUTRAL,,,,NEUTRAL,,Procedural: an earlier notice was upgraded.
+Complaints about Third Party,5,NEUTRAL,,,,NEUTRAL,,Unspecified complaint.
+Nonpayment of Fees and/or Refusal to Pay,5,EXCLUDE,,,,EXCLUDE,,Administrative reason.
+Hoax Paper,4,INCLUDE,FABRICATION,STRONG,,INCLUDE,FABRICATION,The paper was deliberately fake.
+Not Presented at Conference,4,EXCLUDE,,,,EXCLUDE,,Administrative reason (conference papers).
+Taken via Peer Review,4,EXCLUDE,,,,EXCLUDE,,Content taken from a manuscript under review (plagiarism); does not bear on the findings.
+Complaints about Company/Institution,3,NEUTRAL,,,,NEUTRAL,,Unspecified complaint.
+Euphemisms for Misconduct,3,NEUTRAL,,,,NEUTRAL,,Question: type of misconduct unspecified.
+Misconduct by Company/Institution,3,NEUTRAL,,,,NEUTRAL,,Question: type of misconduct unspecified.
+No Further Action,3,NEUTRAL,,,,NEUTRAL,,Procedural.
+Taken via Translation,2,EXCLUDE,,,,EXCLUDE,,Plagiarism via translation; does not bear on the findings.
+Updated to Correction,2,NEUTRAL,,,,NEUTRAL,,Procedural: the notice was changed to a correction.

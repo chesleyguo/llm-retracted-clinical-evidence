@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.4 · Oct 27, 2026 · @Jiayi Guo
+Draft v0.5 · Oct 27, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -172,7 +172,7 @@ Collapse the Retraction Watch reason field into three categories:
 | Code | Includes |
 | --- | --- |
 | FABRICATION | Falsification/fabrication of data or results, image manipulation, paper mill |
-| ERROR | Error in data, analysis, results or conclusions, where no misconduct was found |
+| ERROR | Error in data, analysis, results or conclusions, or in methods or materials (including errors in or contamination of cell lines, tissues or materials), where no misconduct was found |
 | OTHER_UNRELIABLE | Unreliable results or data with the cause unstated, or concerns about data |
 
 If a record lists several reasons, apply the first matching category in the order above.
@@ -275,6 +275,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.2 | 2026-10-27 | V3, V3_source | Citations attached automatically in web-search mode count as CITED; added V3_source (IN_TEXT / AUTO_CITATION / NA) and the matching field in the section 5 output format | Resolves the open question on automatic citations in web-search mode |
 | v0.3 | 2026-10-27 | Sections 1 and 5 | Coder is shown auto-attached citations ("None" outside web search); added the field to the section 5 prompt template; noted that condition blinding is partial and that V1 and V2 are judged from the response text only | The coder needs the auto-attached citations to code V3_source |
 | v0.4 | 2026-10-27 | Section 2 | Added general rule 8: auto-attached citations are used only for V3 and V3_source; all other variables are coded from the response text | The LLM coder sees only sections 2–3, so the rule stated in section 1 did not reach it |
+| v0.5 | 2026-10-27 | P2 | ERROR now also covers errors in methods or materials, including errors in or contamination of cell lines, tissues or materials | Reasons such as Error in Methods and Contamination of Cell Lines/Tissues are classified as ERROR in data/processed/reason_mapping.csv; the definition did not cover them |
 
 ### Open questions
 
