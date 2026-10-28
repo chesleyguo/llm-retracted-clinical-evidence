@@ -1,0 +1,33 @@
+{
+ "query": "\"Pentoxifylline\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2022:2024[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:08:14+00:00",
+ "count": 26,
+ "pmids": [
+  "39725929",
+  "39716387",
+  "39613712",
+  "39499142",
+  "39423312",
+  "39192162",
+  "39182114",
+  "39128677",
+  "38710206",
+  "38604508",
+  "38282138",
+  "38241007",
+  "38169355",
+  "37466276",
+  "37166579",
+  "36856810",
+  "36288885",
+  "35779909",
+  "35716457",
+  "35703373",
+  "35642747",
+  "35340032",
+  "35182288",
+  "35093409",
+  "34775240",
+  "34158133"
+ ]
+}

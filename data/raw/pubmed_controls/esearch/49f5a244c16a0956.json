@@ -1,0 +1,15 @@
+{
+ "query": "\"Graves Ophthalmopathy\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2016:2018[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:09:35+00:00",
+ "count": 8,
+ "pmids": [
+  "30081019",
+  "29450866",
+  "29396246",
+  "29396245",
+  "29026936",
+  "28467880",
+  "28049190",
+  "27853049"
+ ]
+}

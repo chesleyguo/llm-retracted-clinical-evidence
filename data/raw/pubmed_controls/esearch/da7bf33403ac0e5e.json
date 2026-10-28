@@ -1,0 +1,11 @@
+{
+ "query": "\"Gamma Rays\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2018:2020[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:10:33+00:00",
+ "count": 4,
+ "pmids": [
+  "32592381",
+  "31608454",
+  "30628519",
+  "29976736"
+ ]
+}

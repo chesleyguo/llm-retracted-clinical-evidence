@@ -1,0 +1,11 @@
+{
+ "query": "\"Labor Onset\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2017:2019[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:09:04+00:00",
+ "count": 4,
+ "pmids": [
+  "30126064",
+  "29241909",
+  "28750937",
+  "28409530"
+ ]
+}

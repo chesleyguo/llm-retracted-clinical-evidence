@@ -1,0 +1,9 @@
+{
+ "query": "\"Thrombomodulin\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 1995:1997[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:10:25+00:00",
+ "count": 2,
+ "pmids": [
+  "8950781",
+  "8776642"
+ ]
+}

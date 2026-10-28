@@ -1,6 +1,22 @@
 Seed: 2026 (numpy 2.5.4, default_rng)
 Retraction Watch snapshot: retraction_watch_2026-10-28.csv
-Run at (UTC): 2026-10-28T19:43:22+00:00
+Run at (UTC): 2026-10-28T20:11:12+00:00
 
-pilot: replacing 38416549 (stratum 2024, position 1 in the stratum's random order)
-  position 3: 31593299 taken; control 35586638 (level 1, topic Anesthetics, Local)
+main: replacing 38897097, abstract is a retraction notice (stratum 2025-2026, position 2 in the stratum's random order)
+  position 9: 29742942 skipped (journal cap)
+  position 10: 24957533 skipped (journal cap)
+  position 12: 27269410 skipped (journal cap)
+  position 13: 27583685 skipped (journal cap)
+  position 20: 26999688 skipped (journal cap)
+  position 28: 29117764 skipped (journal cap)
+  position 32: 19249048 skipped (journal cap)
+  position 33: 40325365 taken; control 41328546 (level 1, topic Obesity)
+
+main: replacing 20434046, abstract is a retraction notice (stratum <=2022, position 7 in the stratum's random order)
+  position 26: 10193289 taken; control 9706209 (level 1, topic Dexamethasone)
+
+pilot: replacing 38416549, no control found (stratum 2024, position 1 in the stratum's random order)
+  position 3: 31593299 taken; control 30260724 (level 1, topic Anesthetics, Local)
+
+pilot: replacing 26905469, abstract is a retraction notice (stratum <=2022, position 3 in the stratum's random order)
+  position 5: 9809085 taken; control 9787142 (level 1, topic Dexamethasone)

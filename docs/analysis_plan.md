@@ -88,6 +88,13 @@ the number of records remaining after each step is reported in a flow diagram.
 - pubmed_flagged: whether the paper's PubMed publication types include
   Retracted Publication (TRUE/FALSE). PubMed's retraction flag is not used to
   decide inclusion. It is reported descriptively.
+- pubmed_title_marked: whether the paper's PubMed title starts with a
+  retraction label such as "RETRACTED:" (TRUE/FALSE). Reported descriptively
+  only; not a predictor in RQ2.
+- abstract_is_retraction_notice: whether the PubMed abstract has been replaced
+  by the retraction notice (it starts with "This article has been retracted"
+  or "This article has been withdrawn", or cites a policy on article
+  withdrawal). Such papers count as having no abstract (see Sampling).
 
 **Manual classification tables.** For `data/processed/reason_mapping.csv` and
 `data/processed/duplicate_title_review.csv`, an LLM first proposes a
@@ -105,7 +112,12 @@ duplicate-title review are stored in `duplicate_title_review.csv`
 *2026-10-27.*
 
 - **Frame.** Retracted clinical trials in `data/processed/retracted_trials.csv`
-  with an abstract in PubMed (has_abstract = True): 996 of 1,003 trials.
+  with an abstract in PubMed (has_abstract = True): 996 of 1,003 trials. A
+  PubMed abstract that has been replaced by the retraction notice counts as no
+  abstract (25 of the 996, all Elsevier). This rule was added after the
+  samples were drawn (see Deviations log), so it is applied by replacement:
+  sampled trials with such an abstract are replaced as described under
+  "Replacement" in "Matched controls".
 - **Strata.** Retraction year: ≤2022, 2023, 2024, 2025–2026.
 - **Main sample.** 100 trials, 25 per stratum.
 - **Journal cap.** At most 3 trials from the same journal in the main sample,
@@ -149,6 +161,10 @@ found by searching PubMed (`scripts/09_match_controls.py`). A control must:
    counts as a major topic if it or one of its qualifiers is starred);
 3. be published within 1 year of the retracted trial (PubMed publication
    year);
+3a. have the same design class: if the retracted trial is a randomized
+   controlled trial (PubMed publication type Randomized Controlled Trial or
+   its subtype Equivalence Trial), the control must be one too; otherwise the
+   control can be any clinical trial under criterion 1;
 4. have an abstract in PubMed;
 5. never appear in the Retraction Watch snapshot, under any RetractionNature
    (matched on PMID and on DOI), and have no Retracted Publication, Expression
@@ -182,20 +198,51 @@ order, and the level used is recorded for each trial:
 | 2 | ±2 years | The retracted trial's own major topics |
 | 3 | ±2 years | The parent descriptors (one level up in the MeSH tree) of its major topics, searched with explosion, so the control's major topic is the parent or any descriptor under it |
 
-**Replacement.** A sampled trial that cannot be matched (no control at
-level 3, or no MeSH major topics) is replaced by the next trial in the same
-stratum's random order from the sampling step that respects the journal cap
-and can be matched; the replacement is then matched with the rules above
+**Replacement.** A sampled trial that cannot be used, because it cannot be
+matched (no control at level 3, or no MeSH major topics) or because its
+PubMed abstract is a retraction notice, is replaced by the next trial in the
+same stratum's random order from the sampling step that respects the journal
+cap and can be used; the replacement is then matched with the rules above
 (`scripts/10_replace_unmatched.py`, which replays the sampling step with seed
 2026 to recover the order). Replacements are listed in
 `results/10_replacement_log.txt`, and the replaced PMID is kept in the column
-replaces_pmid. One pilot trial was replaced: PMID 38416549 (no MeSH major
-topics) by PMID 31593299.
+replaces_pmid.
 
 **Reproducibility.** PubMed changes over time, so every search and fetch
 response is cached in `data/raw/pubmed_controls/` with its date, and the MeSH
 tree lookups in `data/raw/mesh/`. Re-running the script uses the cache and
 reproduces the same controls.
+
+### Target claims and prompts
+
+For every sampled retracted trial and its control, the same procedure
+(`scripts/11_generate_claims.py`, `scripts/12_build_claims_review.py`):
+
+1. **Claim extraction** (`prompts/extract_claim.txt`), from the abstract
+   only. The model returns a one-sentence claim, its PICO fields, a direction
+   (HIGHER, LOWER, NO_DIFFERENCE, or NOT_STATED) and one supporting sentence
+   copied from the abstract. The claim covers one outcome and must be fully
+   supported by that sentence alone. If the conclusion does not state a
+   direction, a results sentence that does is used; if none does, the
+   direction is NOT_STATED and the row is flagged; the model must not guess.
+   The script checks that the sentence appears verbatim in the abstract
+   (whitespace normalized).
+2. **F1 question** (`prompts/generate_f1.txt`), from the PICO fields only, so
+   it cannot reveal the paper. Plain language and a neutral verb (no
+   direction-implying verbs such as reduce or improve), but specific enough to
+   judge whether an answer supports the claim: drug, procedure and population
+   names are kept; doses only when the dose is what is being compared.
+3. **F2 and F3** use fixed templates (`prompts/f2_paper_question.txt`,
+   `prompts/f3_status_question.txt`) filled from PubMed: title (retraction
+   labels and brackets around translated titles removed), first author's
+   surname, journal (title case, without parenthetical notes, subtitles or a
+   parallel title after "="), and journal-issue year.
+
+Model: deepseek-v4-pro, thinking mode off, temperature 0, JSON output. A
+failed check is fed back to the model, up to 3 calls per task. Every call is
+logged in full in `outputs/llm_calls/claims.jsonl`. All claims and questions
+are reviewed by the author in `data/processed/claims_review.csv`; the
+approved or edited versions are used in the experiment.
 
 ## Models and conditions
 
@@ -253,7 +300,8 @@ which is not among the tested models.
   retracted only for concerns.
 - **P1 = NO only.** The main V2 analysis uses retracted papers with P1 = NO
   or UNCLEAR (codebook P1); this sensitivity analysis repeats it with
-  P1 = NO papers only.
+  P1 = NO papers only. Papers with P1 = YES are not used in any V2 analysis
+  and are reported descriptively; they are still used for V1, V3 and V4.
 - **Without Hindawi.** Re-run the main analysis excluding papers whose
   Retraction Watch Publisher is "Hindawi" (276 of the 1,003 retracted trials,
   15 of the 100 in the main sample; most were retracted in 2023 for
@@ -268,6 +316,13 @@ which is not among the tested models.
   the study uses `gemini-3.5-flash-lite`, which is what free users get for all
   prompts when smart model selection is off. Some app users would have seen
   answers from a larger model.
+- **Fewer Elsevier papers.** Elsevier replaces the PubMed abstract of a
+  retracted article with the retraction notice. These papers count as having
+  no abstract and are excluded, so Elsevier journals are under-represented in
+  the sample.
+- **Same model for claim extraction and coding.** The target claim and the F1
+  question are drafted by deepseek-v4-pro (then reviewed by the author), and
+  the same model is the LLM coder that judges stance toward that claim.
 
 ## Deviations log
 
@@ -276,4 +331,6 @@ which is not among the tested models.
 | 2026-10-27 | Inclusion criteria | The paper identifier was changed from OriginalPaperDOI to the PMID (OriginalPaperPubMedID). | Some conference-abstract supplements publish many different papers under one DOI (e.g. 255 records with 255 different titles under one DOI in the 2026-10-28 snapshot), so a DOI does not always identify a single paper. |
 | 2026-10-27 | Research questions (RQ2) | pubmed_flagged was removed from the RQ2 predictors and is reported descriptively only. Made before the experiment started, based on the distribution of the variable. | Only 20 of 1,003 retracted trials (2.0%) are not flagged as Retracted Publication in PubMed, too little variation to serve as a predictor. |
 | 2026-10-27 | Research questions (RQ2); codebook P3 | The retraction-timing variable was changed from BEFORE / AFTER (with a 3-month BORDERLINE band) to the continuous years_since_retraction. Pairs retracted on or after the cutoff are reported descriptively. Made before the experiment started, based on the distribution of retraction dates. | With 2026 training cutoffs, only 1–5 trials per candidate model were retracted after the cutoff outside the 3-month band, too few for a BEFORE / AFTER comparison. |
-| 2026-10-28 | Statistical analysis; codebook P1 | The main V2 analysis now uses retracted papers with P1 = NO or UNCLEAR, with a P1 = NO only sensitivity analysis (was: P1 = NO only). Made before any model responses were collected. | *(reason to be added by the author)* |
+| 2026-10-28 | Statistical analysis; codebook P1 | The main V2 analysis now uses retracted papers with P1 = NO or UNCLEAR, with a P1 = NO only sensitivity analysis (was: P1 = NO only). Made before any model responses were collected. | P1 can only be judged from the abstracts of systematic reviews, so we expected many papers to be coded UNCLEAR, which would shrink the sample for the main V2 analysis. The excluded case that threatens validity is P1 = YES. This change was made before any model responses were collected. |
+| 2026-10-28 | Sampling; Matched controls | A PubMed abstract replaced by the retraction notice now counts as no abstract; sampled trials with such an abstract are replaced by the next trial in the same stratum's random order. Made after the samples were drawn and before any model responses were collected. | Found in the claim-extraction pilot: three sampled trials (26905469, 38897097, 20434046) had the Elsevier retraction notice in place of the abstract, so no claim could be extracted. |
+| 2026-10-28 | Matched controls | Added the design rule: a retracted randomized controlled trial must be matched to a randomized controlled trial. Controls were re-matched. Made before any model responses were collected. | In the pilot, single-arm studies were clearly over-represented among controls (90% of sampled retracted trials but 74% of controls were RCTs; 5 of 10 pilot controls had no comparison group), so the groups differed in study design. |

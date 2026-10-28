@@ -1,0 +1,23 @@
+{
+ "query": "\"Gestational Age\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2014:2016[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:08:40+00:00",
+ "count": 16,
+ "pmids": [
+  "27769295",
+  "27568682",
+  "27490719",
+  "26865074",
+  "26285178",
+  "26205427",
+  "26204351",
+  "26071920",
+  "25979614",
+  "25592171",
+  "25527661",
+  "25338555",
+  "25123162",
+  "24570400",
+  "24405797",
+  "24402587"
+ ]
+}

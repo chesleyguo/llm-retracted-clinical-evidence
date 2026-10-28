@@ -1,10 +1,11 @@
-"""Step 10: replace sampled trials that could not be matched to a control.
+"""Step 10: replace sampled trials that cannot be used.
 
 Rule (docs/analysis_plan.md, "Matched controls"): a sampled retracted trial
-for which no control can be found (for example because it has no MeSH major
-topics) is replaced by the next trial in the same stratum's random order from
-step 08 that respects the journal cap and can be matched. The replacement is
-then matched to a control with the step-09 rules.
+that cannot be used is replaced by the next trial in the same stratum's random
+order from step 08 that respects the journal cap and can be used. A trial
+cannot be used if no control can be found for it (for example because it has
+no MeSH major topics) or if its PubMed abstract is a retraction notice. The
+replacement is matched to a control with the step-09 rules.
 
 How the random order is recovered: step 08 is replayed with the same seed,
 recording every permutation it draws. The replay must reproduce the saved
@@ -41,8 +42,11 @@ def load_script(filename):
     return module
 
 
+s07 = load_script("07_fetch_pubmed.py")
 s08 = load_script("08_draw_sample.py")
 s09 = load_script("09_match_controls.py")
+# Paper-level flags from step 07, added to the sample files.
+FLAG_COLUMNS = ["abstract_is_retraction_notice", "pubmed_title_marked"]
 
 
 class RecordingRng:
@@ -86,9 +90,20 @@ def main():
                for n in ("main", "pilot")}
     controls = {n: pd.read_csv(PROCESSED / f"controls_{n}.csv", dtype=str, keep_default_na=False)
                 for n in ("main", "pilot")}
-    unmatched = {n: c.loc[c["match_level"] == "NONE", "pmid"].tolist() for n, c in controls.items()}
-    if not any(unmatched.values()):
-        sys.exit("Every sampled trial has a control; nothing to replace.")
+    trials = pd.read_csv(PROCESSED / "retracted_trials.csv", dtype=str, keep_default_na=False)
+    flags = trials.set_index("pmid")[FLAG_COLUMNS]
+    for n in samples:
+        samples[n] = samples[n].drop(columns=FLAG_COLUMNS, errors="ignore").join(flags, on="pmid")
+
+    # Trials to replace, in draw order, with the reason.
+    to_replace = {}
+    for n in ("main", "pilot"):
+        unmatched = set(controls[n].loc[controls[n]["match_level"] == "NONE", "pmid"])
+        notice = set(samples[n].loc[samples[n]["abstract_is_retraction_notice"] == "True", "pmid"])
+        to_replace[n] = [(p, "abstract is a retraction notice" if p in notice else "no control found")
+                         for p in samples[n]["pmid"] if p in unmatched | notice]
+    if not any(to_replace.values()):
+        sys.exit("Every sampled trial can be used; nothing to replace.")
 
     replayed, orders = replay_step08()
     for n in ("main", "pilot"):
@@ -113,23 +128,27 @@ def main():
            f"Run at (UTC): {datetime.now(timezone.utc).isoformat(timespec='seconds')}"]
 
     for n in ("main", "pilot"):
-        for old_pmid in unmatched[n]:
+        for old_pmid, why in to_replace[n]:
             sample, ctrl = samples[n], controls[n]
             old = sample[sample["pmid"] == old_pmid].iloc[0]
             stratum = old["stratum"]
             # Journal counts without the trial being replaced.
             trial_journals = Counter(sample.loc[sample["pmid"] != old_pmid, "journal"]
                                      .str.strip().str.lower())
-            control_journals = Counter(ctrl.loc[ctrl["control_journal"] != "", "control_journal"])
+            keep = (ctrl["pmid"] != old_pmid) & (ctrl["control_journal"] != "")
+            control_journals = Counter(ctrl.loc[keep, "control_journal"])
 
             order = orders[(n, stratum)].reset_index(drop=True)
             start = order.index[order["pmid"] == old_pmid][0] + 1
-            log += ["", f"{n}: replacing {old_pmid} (stratum {stratum}, position "
+            log += ["", f"{n}: replacing {old_pmid}, {why} (stratum {stratum}, position "
                         f"{start} in the stratum's random order)"]
             new_trial, result = None, None
             for pos in range(start, len(order)):
                 cand = order.iloc[pos]
                 if cand["pmid"] in in_any_sample:
+                    continue
+                if s07.is_retraction_notice(cand["pm_abstract"]):
+                    log.append(f"  position {pos + 1}: {cand['pmid']} skipped (abstract is a retraction notice)")
                     continue
                 if trial_journals[cand["journal_key"]] >= s08.JOURNAL_CAP:
                     log.append(f"  position {pos + 1}: {cand['pmid']} skipped (journal cap)")
@@ -157,13 +176,19 @@ def main():
             new_row = {c: new_trial.get(c, "") for c in sample.columns if c != "replaces_pmid"}
             new_row.update({"sample": n, "draw_order": old["draw_order"], "stratum": stratum,
                             "replaces_pmid": old_pmid})
-            sample = sample.assign(replaces_pmid=sample.get("replaces_pmid", ""))
-            samples[n] = pd.concat([sample[sample["pmid"] != old_pmid], pd.DataFrame([new_row])]) \
-                .sort_values("draw_order", key=lambda s: s.astype(int))
+            new_row.update({c: str(new_trial[c]) for c in FLAG_COLUMNS})
+            if "replaces_pmid" not in sample:
+                sample = sample.assign(replaces_pmid="")
+            samples[n] = pd.concat([sample[sample["pmid"] != old_pmid], pd.DataFrame([new_row])],
+                                   ignore_index=True) \
+                .sort_values("draw_order", key=lambda s: s.astype(int), ignore_index=True)
+            # Put the new control row where the old one was (same draw order).
             result["replaces_pmid"] = old_pmid
-            ctrl = ctrl.assign(replaces_pmid=ctrl.get("replaces_pmid", ""))
-            idx = ctrl.index[ctrl["pmid"] == old_pmid][0]
-            controls[n] = pd.concat([ctrl.loc[:idx - 1], pd.DataFrame([result]), ctrl.loc[idx + 1:]])
+            if "replaces_pmid" not in ctrl:
+                ctrl = ctrl.assign(replaces_pmid="")
+            i = ctrl.index[ctrl["pmid"] == old_pmid][0]
+            controls[n] = pd.concat([ctrl.iloc[:i], pd.DataFrame([result]), ctrl.iloc[i + 1:]],
+                                    ignore_index=True)
             in_any_sample.add(new_trial["pmid"])
 
     for n in ("main", "pilot"):

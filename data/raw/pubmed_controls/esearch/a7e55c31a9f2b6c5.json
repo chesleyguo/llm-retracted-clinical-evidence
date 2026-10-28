@@ -1,0 +1,25 @@
+{
+ "query": "\"Goserelin\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2008:2010[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:09:36+00:00",
+ "count": 18,
+ "pmids": [
+  "21176307",
+  "19957549",
+  "19735378",
+  "19307511",
+  "19244174",
+  "19213681",
+  "19168445",
+  "19167733",
+  "19153828",
+  "19047297",
+  "18707821",
+  "18697469",
+  "18353329",
+  "18243498",
+  "18172188",
+  "18164303",
+  "17692108",
+  "17572410"
+ ]
+}

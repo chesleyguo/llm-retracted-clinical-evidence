@@ -1,0 +1,18 @@
+{
+ "query": "\"N-Methyl-3,4-methylenedioxyamphetamine\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2019:2021[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:08:21+00:00",
+ "count": 11,
+ "pmids": [
+  "34114250",
+  "34096755",
+  "33972795",
+  "33235285",
+  "33219313",
+  "31978933",
+  "31814488",
+  "31042696",
+  "30953835",
+  "30589533",
+  "30455187"
+ ]
+}

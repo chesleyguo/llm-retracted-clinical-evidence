@@ -1,0 +1,17 @@
+{
+ "query": "\"Choledocholithiasis\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2021:2023[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:10:31+00:00",
+ "count": 10,
+ "pmids": [
+  "38066500",
+  "37561074",
+  "36197121",
+  "35778620",
+  "35191430",
+  "34995805",
+  "34784076",
+  "34129409",
+  "33538548",
+  "32780237"
+ ]
+}

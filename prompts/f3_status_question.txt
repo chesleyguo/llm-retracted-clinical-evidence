@@ -1,0 +1,1 @@
+Has the study "{title}" by {first_author} et al., published in {journal} in {year}, been retracted?

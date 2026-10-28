@@ -1,30 +1,29 @@
 Seed: 2026 (numpy 2.5.4, default_rng)
 Retraction Watch snapshot: retraction_watch_2026-10-28.csv
-Run at (UTC): 2026-10-28T17:10:17+00:00
+Run at (UTC): 2026-10-28T20:07:57+00:00
 
 == main sample: 100 retracted trials ==
 Match level used:
   1: 100
-Year difference (control - retracted): {-1: 36, 0: 35, 1: 29}
-Control journals: 90 distinct; trials per journal: {1: 82, 2: 6, 3: 2}
-  3  American journal of obstetrics and gynecology
-  3  The Journal of clinical endocrinology and metabolism
-  2  Journal of applied physiology (Bethesda, Md. : 1985)
-  2  The Pan African medical journal
-  2  International journal of gynaecology and obstetrics: the official organ of the International Federation of Gynaecology and Obstetrics
-  2  The Journal of urology
-  2  Fertility and sterility
-  2  The Journal of sports medicine and physical fitness
+Year difference (control - retracted): {-1: 37, 0: 31, 1: 32}
+Control journals: 94 distinct; trials per journal: {1: 89, 2: 4, 3: 1}
+  3  Nutrients
+  2  Gynecological endocrinology : the official journal of the International Society of Gynecological Endocrinology
+  2  Contraception
+  2  The British journal of nutrition
+  2  Supportive care in cancer : official journal of the Multinational Association of Supportive Care in Cancer
 
 == pilot sample: 10 retracted trials ==
 Match level used:
   1: 9
   NONE: 1
   unmatched 38416549: no MeSH major topics
-Year difference (control - retracted): {-1: 3, 0: 3, 1: 3}
-Control journals: 9 distinct; trials per journal: {1: 9}
+Year difference (control - retracted): {-1: 2, 0: 5, 1: 2}
+Control journals: 8 distinct; trials per journal: {1: 7, 2: 1}
+  2  Diabetes, obesity & metabolism
 
 Candidates checked, by outcome (all samples):
      109  chosen
-       9  publication year outside window
-       7  PubMed retraction/concern/erratum marker
+       5  PubMed retraction/concern/erratum marker
+       4  publication year outside window
+       2  journal cap

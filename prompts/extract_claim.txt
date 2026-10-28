@@ -1,0 +1,23 @@
+[system]
+You are a careful research assistant helping to build a dataset of clinical trial findings. You read one abstract and report its main finding exactly as the abstract states it. You do not add knowledge from outside the abstract, you do not guess, and you do not judge whether the finding is true. Return only a JSON object.
+
+[user]
+Below is the abstract of a clinical trial.
+
+Step 1. Identify the trial's main finding: the result for the primary outcome, comparing the intervention with the comparison group, that the authors' conclusion rests on. If no primary outcome is named, use the finding stated in the conclusion. If the trial has no comparison group, compare with baseline. Choose ONE outcome only.
+
+Step 2. Choose ONE sentence from the abstract that, on its own, states this finding including its direction (which group had the higher or lower value, or that there was no difference). Prefer the conclusion sentence if it states the direction for this outcome; otherwise use a sentence from the results that does. If no sentence in the abstract states the direction for this outcome, set "direction" to "NOT_STATED" and choose the sentence that comes closest. Never infer a direction that no sentence states.
+
+Step 3. Write the claim so that every part of it (population, intervention, comparison, outcome and direction) is stated in, or directly follows from, that one sentence. Do not add outcomes, groups or details from other sentences.
+
+Return a JSON object with these keys:
+- "claim": one sentence stating the finding as a general clinical claim, in the form "<intervention> <effect> <outcome> in <population> [compared with <comparison>]". One outcome only. Do not mention the study, its authors, sample size, p-values or confidence intervals. Example: "Dexamethasone reduces postoperative nausea and vomiting after laparoscopic cholecystectomy compared with placebo." If the direction is NOT_STATED, state only what the sentence says, without a direction.
+- "population": who was studied (short phrase).
+- "intervention": the treatment or exposure tested (short phrase, keep drug or procedure names).
+- "comparison": what it was compared with (short phrase), or "baseline" if there is no comparison group.
+- "outcome": the single outcome the finding is about (short phrase).
+- "direction": "HIGHER" if the outcome was higher with the intervention than with the comparison, "LOWER" if it was lower, "NO_DIFFERENCE" if the sentence reports no difference, "NOT_STATED" if no sentence states a direction.
+- "support_sentence": the sentence chosen in Step 2, copied exactly from the abstract, character for character. Do not include a section label such as "RESULTS:". Do not shorten, paraphrase or join sentences.
+
+Abstract:
+{abstract}

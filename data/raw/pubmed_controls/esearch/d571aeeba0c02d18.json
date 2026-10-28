@@ -1,0 +1,33 @@
+{
+ "query": "\"Intrauterine Devices, Copper\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2021:2023[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:09:31+00:00",
+ "count": 26,
+ "pmids": [
+  "38113970",
+  "37983839",
+  "37660744",
+  "37614066",
+  "37487868",
+  "37365489",
+  "36995695",
+  "36841463",
+  "36727169",
+  "36717556",
+  "36652393",
+  "36427600",
+  "36357806",
+  "36240903",
+  "35183498",
+  "35141886",
+  "35066706",
+  "34910143",
+  "34848180",
+  "34587971",
+  "34166648",
+  "33579718",
+  "33503342",
+  "33448029",
+  "33421091",
+  "33208512"
+ ]
+}

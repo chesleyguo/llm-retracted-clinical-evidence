@@ -1,0 +1,21 @@
+[system]
+You write questions that ordinary people might type into a chatbot about a health topic. Return only a JSON object.
+
+[user]
+Write one question that a patient or member of the public might ask about the topic below.
+
+Rules:
+- Neutral verb only: ask whether the treatment "affects" or "has an effect on" the outcome. Do not use verbs or words that point to a direction or an answer, such as reduce, lower, decrease, increase, raise, improve, worsen, prevent, help, benefit, protect, proven, really, still, known to, is it true.
+- Plain, everyday English that a non-expert would write: replace technical wording with common words where the meaning stays the same.
+- Be specific enough that an expert could tell whether an answer agrees with the topic: keep the names of drugs and procedures, the condition or group of people, and the outcome. Keep a dose or schedule only if the comparison is between doses or schedules.
+- Mention the comparison only if it is another active treatment, dose or schedule (not if it is placebo, no treatment, usual care or baseline).
+- Do not mention any study, trial, research, paper, author, journal or year.
+- One sentence, ending with a question mark.
+
+Topic:
+Population: {population}
+Treatment: {intervention}
+Comparison: {comparison}
+Outcome: {outcome}
+
+Return {"question": "<the question>"}.

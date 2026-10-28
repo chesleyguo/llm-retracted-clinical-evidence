@@ -1,0 +1,23 @@
+{
+ "query": "\"Hydrogels\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2008:2010[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:10:22+00:00",
+ "count": 16,
+ "pmids": [
+  "21081553",
+  "20694473",
+  "20656223",
+  "20592230",
+  "20542472",
+  "20079572",
+  "19165109",
+  "18812757",
+  "18785409",
+  "18677241",
+  "18463479",
+  "18346996",
+  "18219530",
+  "18180681",
+  "18073007",
+  "17655723"
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "query": "\"Clomiphene\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 1999:2001[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:08:52+00:00",
+ "count": 16,
+ "pmids": [
+  "11804430",
+  "11473953",
+  "11334921",
+  "11328423",
+  "11278221",
+  "11172832",
+  "11075292",
+  "11020518",
+  "10856472",
+  "10632419",
+  "10599545",
+  "10451805",
+  "10438995",
+  "10352387",
+  "10202871",
+  "10078583"
+ ]
+}

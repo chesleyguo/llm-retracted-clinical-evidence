@@ -1,0 +1,11 @@
+{
+ "query": "\"Uterine Inertia\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2015:2017[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:08:57+00:00",
+ "count": 4,
+ "pmids": [
+  "29141679",
+  "28274173",
+  "27855051",
+  "26534874"
+ ]
+}

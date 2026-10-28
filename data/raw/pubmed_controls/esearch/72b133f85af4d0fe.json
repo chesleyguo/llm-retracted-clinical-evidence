@@ -1,0 +1,12 @@
+{
+ "query": "\"Dobutamine\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 1987:1989[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:08:56+00:00",
+ "count": 5,
+ "pmids": [
+  "2679978",
+  "2736968",
+  "3687783",
+  "3591689",
+  "2434789"
+ ]
+}

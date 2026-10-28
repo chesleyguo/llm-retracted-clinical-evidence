@@ -1,0 +1,211 @@
+"""Step 12: build the claims review table.
+
+Collects the step-11 answers (current prompt files only) from
+outputs/llm_calls/claims.jsonl, fills the fixed F2 and F3 templates
+(prompts/f2_paper_question.txt, prompts/f3_status_question.txt) from PubMed
+metadata, runs simple checks, and adds one row per paper to
+data/processed/claims_review.csv for the author to review.
+
+Rows already in the table are never changed, so the author's entries in
+approved / edited_claim / edited_question are kept; only papers not yet in the
+table are added. Checks are flags for the reviewer, not exclusions.
+
+Template fields, the same rules for both groups:
+- title: PubMed ArticleTitle, with retraction labels such as "RETRACTED:"
+  removed (they would reveal the group), square brackets around a translated
+  title (non-English article) removed, and the final period removed;
+- first_author: surname of the first PubMed author;
+- journal: PubMed journal title without parenthetical notes, a parallel title
+  after "=", or a subtitle after a colon, converted to title case;
+- year: PubMed journal-issue year.
+
+Usage:
+    python scripts/12_build_claims_review.py pilot     # or: main, all
+"""
+
+import importlib.util
+import json
+import re
+import sys
+import xml.etree.ElementTree as ET
+from pathlib import Path
+
+import pandas as pd
+
+ROOT = Path(__file__).resolve().parent.parent
+PROCESSED = ROOT / "data" / "processed"
+PROMPTS = ROOT / "prompts"
+REVIEW_PATH = PROCESSED / "claims_review.csv"
+XML_DIRS = [ROOT / "data" / "raw" / "pubmed", ROOT / "data" / "raw" / "pubmed_controls" / "efetch"]
+
+COLUMNS = ["sample", "pair_pmid", "group", "pmid", "support_sentence", "claim",
+           "population", "intervention", "comparison", "outcome", "direction",
+           "f1_question", "f2_prompt", "f3_prompt", "check_flags",
+           "approved", "edited_claim", "edited_question"]
+
+RETRACTION_LABEL = re.compile(
+    r"^\s*(retracted|withdrawn)(\s+article)?\s*:\s*|\s*[\[(](retracted|retracted article|withdrawn)[\])]",
+    re.IGNORECASE)
+LEADING_WORDS = re.compile(r"\b(proven|really|still|known to|is it true)\b", re.IGNORECASE)
+# Verbs that point to a direction; the F1 prompt forbids them.
+DIRECTION_WORDS = re.compile(
+    r"\b(reduc\w*|lower\w*|decreas\w*|increas\w*|rais\w*|improv\w*|worsen\w*|"
+    r"prevent\w*|help\w*|benefit\w*|protect\w*)\b", re.IGNORECASE)
+# Words kept lower case inside a title-cased journal name.
+SMALL_WORDS = {"a", "an", "and", "as", "at", "de", "des", "du", "et", "for", "in", "la", "le",
+               "of", "on", "or", "the", "to", "und", "with"}
+STUDY_WORDS = re.compile(r"\b(study|studies|trial|trials|research|paper|researchers|journal)\b",
+                         re.IGNORECASE)
+
+
+def load_script(filename):
+    spec = importlib.util.spec_from_file_location(filename[:-3], ROOT / "scripts" / filename)
+    module = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(module)
+    return module
+
+
+s11 = load_script("11_generate_claims.py")
+
+
+def metadata(pmids):
+    """Template fields for each PMID from the cached PubMed XML."""
+    out = {}
+    for d in XML_DIRS:
+        for path in sorted(d.glob("*.xml")):
+            for a in ET.parse(path).getroot().iter("PubmedArticle"):
+                pmid = a.findtext("MedlineCitation/PMID")
+                if pmid not in pmids or pmid in out:
+                    continue
+                art = a.find("MedlineCitation/Article")
+                title = "".join(art.find("ArticleTitle").itertext()).strip()
+                first = art.find("AuthorList/Author")
+                surname = ""
+                if first is not None:
+                    surname = first.findtext("LastName") or first.findtext("CollectiveName") or ""
+                pub_date = art.find("Journal/JournalIssue/PubDate")
+                year = (pub_date.findtext("Year") or (pub_date.findtext("MedlineDate") or "")[:4])
+                out[pmid] = {"raw_title": title, "first_author": surname,
+                             "raw_journal": art.findtext("Journal/Title", ""), "year": year,
+                             "languages": [x.text for x in art.findall("Language")]}
+    return out
+
+
+def clean_title(title):
+    cleaned = RETRACTION_LABEL.sub("", title).strip()
+    label_removed = cleaned != title.strip()
+    cleaned = cleaned.rstrip(".").strip()
+    # PubMed puts the English translation of a non-English title in brackets.
+    if cleaned.startswith("[") and cleaned.endswith("]"):
+        cleaned = cleaned[1:-1].rstrip(".").strip()
+    return cleaned, label_removed
+
+
+def title_case(name):
+    words = name.split()
+    out = []
+    for i, w in enumerate(words):
+        if any(ch.isupper() for ch in w[1:]):        # keep acronyms such as BMC, PLoS
+            out.append(w)
+        elif 0 < i < len(words) - 1 and len(w) > 1 and w.lower() in SMALL_WORDS:
+            out.append(w.lower())
+        else:
+            out.append(w[:1].upper() + w[1:])
+    return " ".join(out)
+
+
+def clean_journal(journal):
+    journal = re.sub(r"\s*\([^)]*\)", "", journal)   # e.g. "(Bethesda, Md. : 1985)"
+    journal = journal.split(" = ")[0]                 # drop a parallel title
+    journal = journal.split(":")[0].strip()           # drop subtitle after a colon
+    return title_case(journal)
+
+
+def latest_answers(papers):
+    """Current-prompt answers for each paper, following step 11's done keys."""
+    done = s11.already_done()
+    extract_p = s11.load_prompt("extract_claim.txt")
+    f1_p = s11.load_prompt("generate_f1.txt")
+    answers = {}
+    for p in papers:
+        ext = done.get(s11.done_key(p["pmid"], "extract_claim", extract_p, {"abstract": p["abstract"]}))
+        f1 = None
+        if ext:
+            pico = {f: ext[f] for f in ("population", "intervention", "comparison", "outcome")}
+            f1 = done.get(s11.done_key(p["pmid"], "generate_f1", f1_p, pico))
+        answers[p["pmid"]] = (ext, f1)
+    return answers
+
+
+def main():
+    which = sys.argv[1] if len(sys.argv) > 1 else ""
+    if which not in ("pilot", "main", "all"):
+        sys.exit("Usage: python scripts/12_build_claims_review.py pilot|main|all")
+
+    existing = (pd.read_csv(REVIEW_PATH, dtype=str, keep_default_na=False)
+                if REVIEW_PATH.exists() else pd.DataFrame(columns=COLUMNS))
+    papers = [p for p in s11.load_papers(which) if p["pmid"] not in set(existing["pmid"])]
+    if not papers:
+        sys.exit("All papers are already in the review table.")
+
+    meta = metadata({p["pmid"] for p in papers})
+    answers = latest_answers(papers)
+    f2 = (PROMPTS / "f2_paper_question.txt").read_text().strip()
+    f3 = (PROMPTS / "f3_status_question.txt").read_text().strip()
+
+    rows, missing = [], []
+    for p in papers:
+        ext, f1 = answers[p["pmid"]]
+        if not ext or not f1:
+            missing.append(p["pmid"])
+            continue
+        m = meta[p["pmid"]]
+        title, label_removed = clean_title(m["raw_title"])
+        fields = {"title": title, "first_author": m["first_author"],
+                  "journal": clean_journal(m["raw_journal"]), "year": m["year"]}
+        question = f1["question"].strip()
+
+        flags = []
+        if label_removed:
+            flags.append(f"retraction label removed from title: {m['raw_title']!r}")
+        if m["languages"] and m["languages"] != ["eng"]:
+            flags.append(f"non-English article ({', '.join(m['languages'])})")
+        if ext["direction"] == "NOT_STATED":
+            flags.append("direction NOT_STATED: no sentence states the direction")
+        if DIRECTION_WORDS.search(question):
+            flags.append("F1 uses a direction word")
+        if not m["first_author"]:
+            flags.append("no first author in PubMed")
+        if ext["comparison"].strip().lower() == "baseline":
+            flags.append("no comparison group (baseline)")
+        if re.search(r"\d", question):
+            flags.append("F1 contains a number")
+        if STUDY_WORDS.search(question):
+            flags.append("F1 mentions a study/trial/research")
+        if LEADING_WORDS.search(question):
+            flags.append("F1 contains leading wording")
+        if m["first_author"] and m["first_author"].lower() in question.lower():
+            flags.append("F1 contains the first author's name")
+        if STUDY_WORDS.search(ext["claim"]) or re.search(r"\d", ext["claim"]):
+            flags.append("claim mentions a study or a number")
+
+        rows.append({
+            "sample": p["sample"], "pair_pmid": p["pair_pmid"], "group": p["group"],
+            "pmid": p["pmid"], "support_sentence": ext["support_sentence"],
+            **{k: ext[k] for k in ("claim", "population", "intervention", "comparison",
+                                   "outcome", "direction")},
+            "f1_question": question,
+            "f2_prompt": s11.fill(f2, fields), "f3_prompt": s11.fill(f3, fields),
+            "check_flags": "; ".join(flags),
+            "approved": "", "edited_claim": "", "edited_question": "",
+        })
+
+    table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)])
+    table.to_csv(REVIEW_PATH, index=False)
+    print(f"Added {len(rows)} rows to {REVIEW_PATH.relative_to(ROOT)} "
+          f"(now {len(table)}); without step-11 answers: {len(missing)} {missing}")
+    print(f"Rows with flags: {(pd.DataFrame(rows)['check_flags'] != '').sum()}")
+
+
+if __name__ == "__main__":
+    main()

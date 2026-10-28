@@ -18,6 +18,7 @@ Usage:
 
 import json
 import os
+import re
 import time
 import xml.etree.ElementTree as ET
 from collections import Counter
@@ -55,6 +56,19 @@ TRIAL_TYPES = {
     "Human Challenge Trials",
     "Pragmatic Clinical Trial",
 }
+
+# Elsevier replaces the PubMed abstract of a retracted article with the
+# retraction notice; such an abstract counts as no abstract (analysis plan,
+# Sampling).
+NOTICE_ABSTRACT = re.compile(
+    r"^\s*this article has been (retracted|withdrawn)|policy on article withdrawal",
+    re.IGNORECASE)
+# A retraction label at the start of the PubMed title, e.g. "RETRACTED: ...".
+TITLE_LABEL = re.compile(r"^\s*(retracted|withdrawn)(\s+article)?\s*:", re.IGNORECASE)
+
+
+def is_retraction_notice(abstract):
+    return bool(NOTICE_ABSTRACT.search(abstract))
 
 
 # ---------------------------------------------------------------- fetching
@@ -173,6 +187,8 @@ def parse_article(article):
         "has_abstract": bool(abstract_parts),
         "pubmed_flagged": "Retracted Publication" in pub_types,
         "is_trial": bool(TRIAL_TYPES & set(pub_types)),
+        "abstract_is_retraction_notice": is_retraction_notice("\n".join(abstract_parts)),
+        "pubmed_title_marked": bool(TITLE_LABEL.search(text_of(art.find("ArticleTitle")))),
     }
 
 
@@ -207,6 +223,10 @@ def summarize(trials, eligible, meta):
         f"of {len(trials)}")
     out(f"Trials with an abstract: {trials['has_abstract'].sum()} "
         f"({trials['has_abstract'].mean():.1%})")
+    out(f"  of which the abstract is a retraction notice: "
+        f"{trials['abstract_is_retraction_notice'].sum()}")
+    out(f"pubmed_title_marked (title starts with a retraction label): "
+        f"{trials['pubmed_title_marked'].sum()} of {len(trials)}")
 
     out("\nTrials by retraction year:")
     years = pd.to_datetime(trials["retraction_date"]).dt.year

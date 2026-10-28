@@ -4,7 +4,8 @@ Follows docs/analysis_plan.md, "Matched controls". For each trial in
 data/processed/sample_main.csv, then data/processed/sample_pilot.csv:
 - its MeSH major topics are read from the cached PubMed XML (step 07) and
   ordered most specific first (deepest MeSH tree number);
-- PubMed is searched for clinical trials with the same major topic, published
+- PubMed is searched for clinical trials (randomized controlled trials only,
+  if the retracted trial is one) with the same major topic, published
   within 1 year; candidates are put in random order (seed 2026) and the first
   one that passes every check is the control;
 - if none is found, the rules are relaxed: level 2 = within 2 years, level 3 =
@@ -63,6 +64,9 @@ TRIAL_TYPES = [
     "Controlled Clinical Trial", "Randomized Controlled Trial", "Equivalence Trial",
     "Human Challenge Trials", "Pragmatic Clinical Trial",
 ]
+# Randomized controlled trial and its subtype (MeSH tree). A retracted RCT
+# must be matched to an RCT (analysis plan, criterion 3a).
+RCT_TYPES = ["Randomized Controlled Trial", "Equivalence Trial"]
 # A control must carry none of these, as a publication type or as a linked
 # notice (CommentsCorrections RefType).
 # PubMed now labels retraction notices "Retraction Notice"; the older name
@@ -253,8 +257,8 @@ def trial_records(pmids):
 
 # ----------------------------------------------------------------- matching
 
-def build_query(term, field, year, window):
-    types = " OR ".join(f'"{t}"[pt]' for t in TRIAL_TYPES)
+def build_query(term, field, year, window, require_rct):
+    types = " OR ".join(f'"{t}"[pt]' for t in (RCT_TYPES if require_rct else TRIAL_TYPES))
     flags = " OR ".join(f'"{t}"[pt]' for t in sorted(FLAG_TYPES))
     return (f'"{term}"[{field}] AND ({types}) AND {year - window}:{year + window}[dp] '
             f"AND hasabstract NOT ({flags})")
@@ -265,6 +269,8 @@ def why_not(c, ctx):
     the log counts are comparable."""
     if not set(c["pub_types"]) & set(TRIAL_TYPES):
         return "not a trial"
+    if ctx["require_rct"] and not set(c["pub_types"]) & set(RCT_TYPES):
+        return "not an RCT (retracted trial is an RCT)"
     if not c["abstract"]:
         return "no abstract"
     if set(c["pub_types"]) & FLAG_TYPES or c["flag_links"]:
@@ -332,18 +338,21 @@ def match_trial(trial, article, tree, rng, ctx_base):
     ctx_base holds the shared state (used controls, journal counts, ...); a
     chosen control is added to it."""
     year = int(trial["pm_pub_date"][:4])
+    require_rct = bool(set(RCT_TYPES) & set(trial["pm_pub_types"].split("; ")))
     own, parents = topic_plan(article, tree) if article is not None else ([], [])
     result = {"pmid": trial["pmid"], "stratum": trial["stratum"],
-              "retracted_year": year, "match_level": "NONE"}
+              "retracted_year": year, "retracted_is_rct": require_rct,
+              "match_level": "NONE"}
     for level, window, use_parent in LEVELS:
         topics = parents if use_parent else own
         for ui, term in topics:
             # Own topics: exact descriptor (noexp). Parents: exploded, so any
             # descriptor under the parent counts.
             field = "majr" if use_parent else "majr:noexp"
-            query = build_query(term, field, year, window)
+            query = build_query(term, field, year, window, require_rct)
             search = esearch(query)
-            ctx = {**ctx_base, "exact_ui": None if use_parent else ui,
+            ctx = {**ctx_base, "require_rct": require_rct,
+                   "exact_ui": None if use_parent else ui,
                    "year": year, "window": window}
             control, checked = find_control(search["pmids"], rng, ctx)
             if control:

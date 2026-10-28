@@ -1,0 +1,28 @@
+{
+ "query": "\"Lymphoma, Large B-Cell, Diffuse\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2011:2013[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T20:09:53+00:00",
+ "count": 21,
+ "pmids": [
+  "24300788",
+  "24117234",
+  "23946328",
+  "23942329",
+  "23835718",
+  "23831920",
+  "23615461",
+  "23578722",
+  "23478060",
+  "23235801",
+  "23149845",
+  "23091101",
+  "22674570",
+  "22408263",
+  "22118442",
+  "21940214",
+  "21895543",
+  "21536860",
+  "21518924",
+  "21463114",
+  "20938662"
+ ]
+}
