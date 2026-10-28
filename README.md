@@ -25,6 +25,21 @@ make `scripts/09_match_controls.py` and `scripts/10_replace_unmatched.py`
 reproduce the same controls. The Retraction Watch CSV and the step-07 PubMed
 cache (`data/raw/pubmed/`) are not committed.
 
+## Reviewing the claims table
+
+`data/processed/claims_review.csv` lists, for every sampled paper, the claim
+and F1 question drafted by the model (`scripts/11_generate_claims.py`,
+`scripts/12_build_claims_review.py`). Rows with verify flags come first. Fill
+in only these columns:
+
+- `approved`: `YES` or `NO`.
+- `edited_claim`: leave empty to use the model's claim; otherwise the corrected claim.
+- `edited_question`: leave empty to use the model's F1 question; otherwise the corrected question.
+
+Re-running step 12 only adds papers that are not yet in the table, so these
+entries are never overwritten. See `docs/analysis_plan.md`, "Target claims and
+prompts".
+
 ## Setup
 
 Requires Python 3.14.

@@ -40,7 +40,7 @@ XML_DIRS = [ROOT / "data" / "raw" / "pubmed", ROOT / "data" / "raw" / "pubmed_co
 
 COLUMNS = ["sample", "pair_pmid", "group", "pmid", "support_sentence", "claim",
            "population", "intervention", "comparison", "outcome", "direction",
-           "f1_question", "f2_prompt", "f3_prompt", "check_flags",
+           "f1_question", "f2_prompt", "f3_prompt", "verify_flags", "check_flags",
            "approved", "edited_claim", "edited_question"]
 
 RETRACTION_LABEL = re.compile(
@@ -126,14 +126,17 @@ def latest_answers(papers):
     done = s11.already_done()
     extract_p = s11.load_prompt("extract_claim.txt")
     f1_p = s11.load_prompt("generate_f1.txt")
+    verify_p = s11.load_prompt("verify_claim.txt")
     answers = {}
     for p in papers:
         ext = done.get(s11.done_key(p["pmid"], "extract_claim", extract_p, {"abstract": p["abstract"]}))
-        f1 = None
+        f1 = verified = None
         if ext:
             pico = {f: ext[f] for f in ("population", "intervention", "comparison", "outcome")}
             f1 = done.get(s11.done_key(p["pmid"], "generate_f1", f1_p, pico))
-        answers[p["pmid"]] = (ext, f1)
+            verified = done.get(s11.done_key(p["pmid"], "verify_claim", verify_p,
+                                             s11.verify_values(ext, p)))
+        answers[p["pmid"]] = (ext, f1, verified)
     return answers
 
 
@@ -155,8 +158,8 @@ def main():
 
     rows, missing = [], []
     for p in papers:
-        ext, f1 = answers[p["pmid"]]
-        if not ext or not f1:
+        ext, f1, verified = answers[p["pmid"]]
+        if not ext or not f1 or not verified:
             missing.append(p["pmid"])
             continue
         m = meta[p["pmid"]]
@@ -178,6 +181,8 @@ def main():
             flags.append("no first author in PubMed")
         if ext["comparison"].strip().lower() == "baseline":
             flags.append("no comparison group (baseline)")
+        if len(question.split()) > 30:
+            flags.append(f"F1 has {len(question.split())} words (over 30)")
         if re.search(r"\d", question):
             flags.append("F1 contains a number")
         if STUDY_WORDS.search(question):
@@ -196,11 +201,21 @@ def main():
                                    "outcome", "direction")},
             "f1_question": question,
             "f2_prompt": s11.fill(f2, fields), "f3_prompt": s11.fill(f3, fields),
+            "verify_flags": "; ".join(
+                f"{k} = NO" for k in s11.VERIFY_KEYS if verified[k] == "NO")
+                + "".join(f" | {x}" for x in verified.get("problems", []) if x),
             "check_flags": "; ".join(flags),
             "approved": "", "edited_claim": "", "edited_question": "",
         })
 
-    table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)])
+    table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)], ignore_index=True)
+    # Rows with verify flags first, then by sample and pair; each pair's
+    # retracted row before its control. Reordering keeps the author's entries.
+    table = table.assign(
+        _flag=table["verify_flags"].eq(""), _sample=table["sample"].ne("pilot"),
+        _group=table["group"].ne("retracted"),
+    ).sort_values(["_flag", "_sample", "pair_pmid", "_group"]).drop(
+        columns=["_flag", "_sample", "_group"])
     table.to_csv(REVIEW_PATH, index=False)
     print(f"Added {len(rows)} rows to {REVIEW_PATH.relative_to(ROOT)} "
           f"(now {len(table)}); without step-11 answers: {len(missing)} {missing}")

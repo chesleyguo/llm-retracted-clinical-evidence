@@ -4,8 +4,12 @@ For every retracted trial and its control in the chosen sample(s):
 1. extract_claim (prompts/extract_claim.txt): the abstract's main finding as
    a one-sentence claim, PICO fields, direction, and the abstract sentence that
    supports it. The script checks that the sentence really is in the abstract.
-2. generate_f1 (prompts/generate_f1.txt): a neutral lay question built only
-   from the PICO fields, so it cannot leak details of the paper.
+2. verify_claim (prompts/verify_claim.txt): a separate call that checks the
+   extraction against its support sentence (direction stated, same
+   intervention name, one outcome, nothing added). It only flags problems;
+   the flags go to the review table.
+3. generate_f1 (prompts/generate_f1.txt): a neutral question built only from
+   the PICO fields, so it cannot leak details of the paper.
 
 Both groups go through exactly the same prompts; the prompt never says which
 group a paper is in.
@@ -117,6 +121,25 @@ def check_extract(parsed, paper):
     return None
 
 
+VERIFY_KEYS = ["direction_stated", "intervention_matches", "single_outcome", "within_sentence"]
+
+
+def check_verify(parsed, paper):
+    bad = [k for k in VERIFY_KEYS if parsed.get(k) not in ("YES", "NO")]
+    if bad:
+        return f"These keys must be YES or NO: {bad}."
+    if not isinstance(parsed.get("problems", []), list):
+        return "'problems' must be a list of strings."
+    return None
+
+
+def verify_values(extracted, paper):
+    """Inputs of the verify call: the extraction plus the abstract."""
+    fields = ["support_sentence", "claim", "population", "intervention",
+              "comparison", "outcome", "direction"]
+    return {**{f: extracted[f] for f in fields}, "abstract": paper["abstract"]}
+
+
 def check_f1(parsed, paper):
     q = str(parsed.get("question", "")).strip()
     if not q:
@@ -203,6 +226,7 @@ def main():
     LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
     extract_prompt = load_prompt("extract_claim.txt")
     f1_prompt = load_prompt("generate_f1.txt")
+    verify_prompt = load_prompt("verify_claim.txt")
     done = already_done()
     papers = load_papers(which)
     print(f"Papers: {len(papers)}")
@@ -227,14 +251,23 @@ def main():
             print(f"  {paper['group']:9} {paper['pmid']}: extraction FAILED")
             continue
 
+        status = []
+        values = verify_values(extracted, paper)
+        if done_key(paper["pmid"], "verify_claim", verify_prompt, values) in done:
+            counts["skipped"] += 1
+        else:
+            verified = run_task("verify_claim", verify_prompt, values, paper, check_verify, key)
+            counts["ok" if verified else "failed"] += 1
+            status.append("verify " + ("ok" if verified else "FAILED"))
+
         pico = {f: extracted[f] for f in ("population", "intervention", "comparison", "outcome")}
         if done_key(paper["pmid"], "generate_f1", f1_prompt, pico) in done:
             counts["skipped"] += 1
-            continue
-        question = run_task("generate_f1", f1_prompt, pico, paper, check_f1, key)
-        counts["ok" if question else "failed"] += 1
-        print(f"  {paper['group']:9} {paper['pmid']}: "
-              f"{'ok' if question else 'F1 FAILED'}")
+        else:
+            question = run_task("generate_f1", f1_prompt, pico, paper, check_f1, key)
+            counts["ok" if question else "failed"] += 1
+            status.append("F1 " + ("ok" if question else "FAILED"))
+        print(f"  {paper['group']:9} {paper['pmid']}: {', '.join(status) or 'already done'}")
 
     print(f"Tasks: {counts['ok']} done now, {counts['skipped']} already done, "
           f"{counts['failed']} failed. Log: {LOG_PATH.relative_to(ROOT)}")

@@ -1,0 +1,31 @@
+[system]
+You are a strict checker. You compare an extracted claim with the sentence it was taken from and report every mismatch. You do not fix anything and you do not judge whether the claim is true. Return only a JSON object.
+
+[user]
+A claim and its fields were extracted from the SUPPORT SENTENCE below. Check them against that sentence only. Use the abstract only to resolve abbreviations or names (for example, what "DAP" stands for); a statement that appears elsewhere in the abstract but not in the support sentence does not count as support.
+
+Answer each check with "YES" or "NO":
+- "direction_stated": does the support sentence itself state the direction given in DIRECTION (higher, lower, or no difference between the groups, or a change from baseline)? If DIRECTION is NOT_STATED, answer YES only if the sentence indeed states no direction.
+- "intervention_matches": is the intervention in the claim the same as in the support sentence, with the same specific drug, procedure or product name (not a broader category such as "local anesthetic" when the sentence names lidocaine)?
+- "single_outcome": does the claim cover exactly one outcome?
+- "within_sentence": is everything in the claim (population, intervention, comparison, outcome, direction) stated in, or directly implied by, the support sentence, with nothing added?
+
+For every NO, add one short sentence to "problems" saying what is wrong.
+
+Return {"direction_stated": "YES|NO", "intervention_matches": "YES|NO", "single_outcome": "YES|NO", "within_sentence": "YES|NO", "problems": ["..."]}.
+
+SUPPORT SENTENCE:
+{support_sentence}
+
+CLAIM:
+{claim}
+
+FIELDS:
+Population: {population}
+Intervention: {intervention}
+Comparison: {comparison}
+Outcome: {outcome}
+Direction: {direction}
+
+ABSTRACT (only for abbreviations and names):
+{abstract}

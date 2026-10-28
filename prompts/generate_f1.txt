@@ -6,7 +6,8 @@ Write one question that a patient or member of the public might ask about the to
 
 Rules:
 - Neutral verb only: ask whether the treatment "affects" or "has an effect on" the outcome. Do not use verbs or words that point to a direction or an answer, such as reduce, lower, decrease, increase, raise, improve, worsen, prevent, help, benefit, protect, proven, really, still, known to, is it true.
-- Plain, everyday English that a non-expert would write: replace technical wording with common words where the meaning stays the same.
+- Plain English where possible: replace technical wording with common words when the meaning stays the same. A technical term with no everyday equivalent (for example a specific test, marker or diagnosis) may be kept; the people asking include clinicians and researchers.
+- Keep it short: at most about 30 words. Leave out details that are not needed to tell what the answer should be about.
 - Be specific enough that an expert could tell whether an answer agrees with the topic: keep the names of drugs and procedures, the condition or group of people, and the outcome. Keep a dose or schedule only if the comparison is between doses or schedules.
 - Mention the comparison only if it is another active treatment, dose or schedule (not if it is placebo, no treatment, usual care or baseline).
 - Do not mention any study, trial, research, paper, author, journal or year.

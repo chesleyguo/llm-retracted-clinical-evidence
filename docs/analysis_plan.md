@@ -227,12 +227,19 @@ For every sampled retracted trial and its control, the same procedure
    direction is NOT_STATED and the row is flagged; the model must not guess.
    The script checks that the sentence appears verbatim in the abstract
    (whitespace normalized).
-2. **F1 question** (`prompts/generate_f1.txt`), from the PICO fields only, so
-   it cannot reveal the paper. Plain language and a neutral verb (no
-   direction-implying verbs such as reduce or improve), but specific enough to
-   judge whether an answer supports the claim: drug, procedure and population
-   names are kept; doses only when the dose is what is being compared.
-3. **F2 and F3** use fixed templates (`prompts/f2_paper_question.txt`,
+2. **Verification** (`prompts/verify_claim.txt`), a separate call that
+   checks the extraction against its support sentence: is the direction stated
+   in the sentence, is the intervention named as in the sentence, is there one
+   outcome only, and does the claim stay within the sentence. It only flags
+   problems (column verify_flags); it changes nothing.
+3. **F1 question** (`prompts/generate_f1.txt`), from the PICO fields only, so
+   it cannot reveal the paper. A neutral verb (no direction-implying verbs
+   such as reduce or improve), plain language where possible, but specific
+   enough to judge whether an answer supports the claim: drug, procedure and
+   population names are kept; doses only when the dose is what is being
+   compared. Technical terms with no everyday equivalent may stay, since
+   clinicians and researchers also use these tools. At most about 30 words.
+4. **F2 and F3** use fixed templates (`prompts/f2_paper_question.txt`,
    `prompts/f3_status_question.txt`) filled from PubMed: title (retraction
    labels and brackets around translated titles removed), first author's
    surname, journal (title case, without parenthetical notes, subtitles or a
@@ -243,6 +250,19 @@ failed check is fed back to the model, up to 3 calls per task. Every call is
 logged in full in `outputs/llm_calls/claims.jsonl`. All claims and questions
 are reviewed by the author in `data/processed/claims_review.csv`; the
 approved or edited versions are used in the experiment.
+
+**Filling in the review table.** Rows with verify flags are listed first.
+The author fills in three columns; all other columns are written by the
+scripts and are not edited.
+
+| Column | How to fill it in |
+| --- | --- |
+| approved | YES if the paper is used with the claim and F1 question (as given, or as edited in the next two columns); NO if it cannot be used (for example, no usable claim can be stated). |
+| edited_claim | Leave empty to use the model's claim. Otherwise write the corrected claim, which replaces it. |
+| edited_question | Leave empty to use the model's F1 question. Otherwise write the corrected question, which replaces it. |
+
+A pair is used only if both the retracted trial and its control are
+approved. [To decide: what happens to a pair when one paper is NO.]
 
 ## Models and conditions
 
