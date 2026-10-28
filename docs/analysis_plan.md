@@ -221,17 +221,23 @@ For every sampled retracted trial and its control, the same procedure
 1. **Claim extraction** (`prompts/extract_claim.txt`), from the abstract
    only. The model returns a one-sentence claim, its PICO fields, a direction
    (HIGHER, LOWER, NO_DIFFERENCE, or NOT_STATED) and one supporting sentence
-   copied from the abstract. The claim covers one outcome and must be fully
-   supported by that sentence alone. If the conclusion does not state a
+   copied from the abstract. The claim covers one outcome; its intervention,
+   outcome and direction must be stated in that sentence (the intervention
+   named as the sentence names it), while the population and comparison may
+   come from elsewhere in the abstract. If the conclusion does not state a
    direction, a results sentence that does is used; if none does, the
    direction is NOT_STATED and the row is flagged; the model must not guess.
    The script checks that the sentence appears verbatim in the abstract
    (whitespace normalized).
 2. **Verification** (`prompts/verify_claim.txt`), a separate call that
-   checks the extraction against its support sentence: is the direction stated
-   in the sentence, is the intervention named as in the sentence, is there one
-   outcome only, and does the claim stay within the sentence. It only flags
-   problems (column verify_flags); it changes nothing.
+   checks the extraction: the support sentence states a direction and it
+   matches the direction field; the intervention is named as in the sentence;
+   one outcome only; intervention, outcome and direction are all in the
+   sentence; population and comparison are found in the abstract; and whether
+   the sentence uses hedged wording (may, might, suggest, appear, ...). It
+   only flags problems (column verify_flags); it changes nothing. The hedging
+   answer is also kept as claim_hedged (YES/NO), a descriptive variable for
+   each paper.
 3. **F1 question** (`prompts/generate_f1.txt`), from the PICO fields only, so
    it cannot reveal the paper. A neutral verb (no direction-implying verbs
    such as reduce or improve), plain language where possible, but specific
@@ -257,12 +263,19 @@ scripts and are not edited.
 
 | Column | How to fill it in |
 | --- | --- |
-| approved | YES if the paper is used with the claim and F1 question (as given, or as edited in the next two columns); NO if it cannot be used (for example, no usable claim can be stated). |
+| approved | YES if the paper is used with the claim and F1 question (as given, or as edited in the next two columns). Try to fix a flawed claim by editing it first; NO only if the abstract has no outcome whose direction is stated. |
 | edited_claim | Leave empty to use the model's claim. Otherwise write the corrected claim, which replaces it. |
 | edited_question | Leave empty to use the model's F1 question. Otherwise write the corrected question, which replaces it. |
 
-A pair is used only if both the retracted trial and its control are
-approved. [To decide: what happens to a pair when one paper is NO.]
+A pair is used only if both papers are approved. When one paper is NO:
+- **Control rejected:** the retracted trial is kept, and the next eligible
+  control in the same random order of candidates (step 09 rules) replaces
+  the rejected one.
+- **Retracted trial rejected:** the whole pair is replaced: the next
+  retracted trial from the same stratum is taken under the step-10 rule and
+  matched to a control.
+
+Replacement papers go through the same extraction, verification and review.
 
 ## Models and conditions
 

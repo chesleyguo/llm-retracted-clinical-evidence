@@ -8,7 +8,7 @@ Step 1. Identify the trial's main finding: the result for the primary outcome, c
 
 Step 2. Choose ONE sentence from the abstract that, on its own, states this finding including its direction (which group had the higher or lower value, or that there was no difference). Prefer the conclusion sentence if it states the direction for this outcome; otherwise use a sentence from the results that does. If no sentence in the abstract states the direction for this outcome, set "direction" to "NOT_STATED" and choose the sentence that comes closest. Never infer a direction that no sentence states.
 
-Step 3. Write the claim so that every part of it (population, intervention, comparison, outcome and direction) is stated in, or directly follows from, that one sentence. Do not add outcomes, groups or details from other sentences.
+Step 3. Write the claim. The intervention, the outcome and the direction must be stated in that one sentence; use the intervention's name exactly as the sentence gives it (for example "lidocaine", not "local anesthetic"). The population and the comparison may be taken from elsewhere in the abstract (usually the methods), because a results sentence rarely repeats them. Do not add other outcomes or details.
 
 Return a JSON object with these keys:
 - "claim": one sentence stating the finding as a general clinical claim, in the form "<intervention> <effect> <outcome> in <population> [compared with <comparison>]". One outcome only. Do not mention the study, its authors, sample size, p-values or confidence intervals. Example: "Dexamethasone reduces postoperative nausea and vomiting after laparoscopic cholecystectomy compared with placebo." If the direction is NOT_STATED, state only what the sentence says, without a direction.

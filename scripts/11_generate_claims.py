@@ -5,9 +5,11 @@ For every retracted trial and its control in the chosen sample(s):
    a one-sentence claim, PICO fields, direction, and the abstract sentence that
    supports it. The script checks that the sentence really is in the abstract.
 2. verify_claim (prompts/verify_claim.txt): a separate call that checks the
-   extraction against its support sentence (direction stated, same
-   intervention name, one outcome, nothing added). It only flags problems;
-   the flags go to the review table.
+   extraction against its support sentence and abstract (direction stated
+   and matching, same intervention name, one outcome, nothing added to the
+   intervention / outcome / direction, population and comparison found in
+   the abstract, hedged wording). It only flags problems; the flags go to
+   the review table.
 3. generate_f1 (prompts/generate_f1.txt): a neutral question built only from
    the PICO fields, so it cannot leak details of the paper.
 
@@ -121,11 +123,15 @@ def check_extract(parsed, paper):
     return None
 
 
-VERIFY_KEYS = ["direction_stated", "intervention_matches", "single_outcome", "within_sentence"]
+# Each verify check and the answer that marks a problem.
+VERIFY_CHECKS = {"direction_stated": "NO", "direction_matches": "NO",
+                 "intervention_matches": "NO", "single_outcome": "NO",
+                 "core_within_sentence": "NO", "population_comparison_supported": "NO",
+                 "hedged_language": "YES"}
 
 
 def check_verify(parsed, paper):
-    bad = [k for k in VERIFY_KEYS if parsed.get(k) not in ("YES", "NO")]
+    bad = [k for k in VERIFY_CHECKS if parsed.get(k) not in ("YES", "NO")]
     if bad:
         return f"These keys must be YES or NO: {bad}."
     if not isinstance(parsed.get("problems", []), list):

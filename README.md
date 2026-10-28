@@ -32,7 +32,7 @@ and F1 question drafted by the model (`scripts/11_generate_claims.py`,
 `scripts/12_build_claims_review.py`). Rows with verify flags come first. Fill
 in only these columns:
 
-- `approved`: `YES` or `NO`.
+- `approved`: `YES` or `NO`. Edit a flawed claim first; `NO` only if the abstract has no outcome whose direction is stated.
 - `edited_claim`: leave empty to use the model's claim; otherwise the corrected claim.
 - `edited_question`: leave empty to use the model's F1 question; otherwise the corrected question.
 

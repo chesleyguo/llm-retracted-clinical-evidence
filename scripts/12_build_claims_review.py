@@ -40,7 +40,7 @@ XML_DIRS = [ROOT / "data" / "raw" / "pubmed", ROOT / "data" / "raw" / "pubmed_co
 
 COLUMNS = ["sample", "pair_pmid", "group", "pmid", "support_sentence", "claim",
            "population", "intervention", "comparison", "outcome", "direction",
-           "f1_question", "f2_prompt", "f3_prompt", "verify_flags", "check_flags",
+           "f1_question", "f2_prompt", "f3_prompt", "claim_hedged", "verify_flags", "check_flags",
            "approved", "edited_claim", "edited_question"]
 
 RETRACTION_LABEL = re.compile(
@@ -201,8 +201,10 @@ def main():
                                    "outcome", "direction")},
             "f1_question": question,
             "f2_prompt": s11.fill(f2, fields), "f3_prompt": s11.fill(f3, fields),
+            # Descriptive variable: the support sentence uses hedged wording.
+            "claim_hedged": verified["hedged_language"],
             "verify_flags": "; ".join(
-                f"{k} = NO" for k in s11.VERIFY_KEYS if verified[k] == "NO")
+                f"{k} = {bad}" for k, bad in s11.VERIFY_CHECKS.items() if verified[k] == bad)
                 + "".join(f" | {x}" for x in verified.get("problems", []) if x),
             "check_flags": "; ".join(flags),
             "approved": "", "edited_claim": "", "edited_question": "",
