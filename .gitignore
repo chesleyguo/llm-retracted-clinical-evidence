@@ -1,0 +1,5 @@
+.env
+# Raw data is downloaded locally, never committed (see README).
+# The .gitkeep is kept so the folder exists after cloning.
+data/raw/*
+!data/raw/.gitkeep
