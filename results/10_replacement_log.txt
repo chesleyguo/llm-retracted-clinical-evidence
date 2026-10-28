@@ -1,0 +1,6 @@
+Seed: 2026 (numpy 2.5.4, default_rng)
+Retraction Watch snapshot: retraction_watch_2026-10-28.csv
+Run at (UTC): 2026-10-28T19:43:22+00:00
+
+pilot: replacing 38416549 (stratum 2024, position 1 in the stratum's random order)
+  position 3: 31593299 taken; control 35586638 (level 1, topic Anesthetics, Local)

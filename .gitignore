@@ -3,6 +3,10 @@
 # The .gitkeep is kept so the folder exists after cloning.
 data/raw/*
 !data/raw/.gitkeep
+# Exceptions: caches used to match controls (step 09) are committed so the
+# controls can be reproduced exactly; PubMed changes over time.
+!data/raw/pubmed_controls/
+!data/raw/mesh/
 .venv/
 .DS_Store
 __pycache__/

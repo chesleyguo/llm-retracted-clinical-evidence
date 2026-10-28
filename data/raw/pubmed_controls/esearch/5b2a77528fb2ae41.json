@@ -1,0 +1,21 @@
+{
+ "query": "\"Graves Ophthalmopathy\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 2016:2018[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:08:23+00:00",
+ "count": 14,
+ "pmids": [
+  "30679116",
+  "30261581",
+  "30081019",
+  "29463244",
+  "29450866",
+  "29396246",
+  "29396245",
+  "29026936",
+  "28887209",
+  "28467880",
+  "28336282",
+  "28049190",
+  "27853049",
+  "26876240"
+ ]
+}

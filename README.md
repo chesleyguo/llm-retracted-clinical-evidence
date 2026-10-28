@@ -18,6 +18,13 @@ each file here when you retrieve it.
 | NLM MeSH RDF (SPARQL, https://id.nlm.nih.gov/mesh/sparql) | MeSH tree numbers and parent descriptors for matching | `python scripts/09_match_controls.py` (cached in `data/raw/mesh/descriptor_tree.json`) | 2026-10-28 |
 | OpenAlex | Citation counts | TODO | TODO |
 
+Exception: `data/raw/pubmed_controls/` (PubMed esearch/efetch responses used
+to choose control trials, with search dates) and `data/raw/mesh/` (MeSH tree
+lookups) are committed. PubMed changes over time, so these caches are what
+make `scripts/09_match_controls.py` and `scripts/10_replace_unmatched.py`
+reproduce the same controls. The Retraction Watch CSV and the step-07 PubMed
+cache (`data/raw/pubmed/`) are not committed.
+
 ## Setup
 
 Requires Python 3.14.

@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.7 · Oct 28, 2026 · @Jiayi Guo
+Draft v0.8 · Oct 28, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -22,7 +22,14 @@ This codebook defines how each LLM response is coded to measure whether models p
 
 Limitation: the auto-attached citations field lets the coder tell whether a response came from the web-search condition, so blinding to condition is only partial. V1 and V2 are judged from the response text only.
 
-**Prompt framings coded:** F1 clinical question, F2 paper question, F3 direct status question. Conditions: C0 no extra information, C1 retraction notice in prompt, C2 web search enabled.
+**Prompt framings coded:** F1 clinical question, F2 paper question, F3 direct status question. Conditions: C0 no extra information, C1 database record in prompt, C2 web search enabled.
+
+**Condition C1.** C1 is used for both groups and simulates the article-status information that a retrieval-augmented system would supply. The record is generated from metadata with a fixed template; the text of the retraction notice is not used:
+
+- Retracted group: "Database record: This article was retracted in {year}. Reasons listed: {reasons}." {year} is the retraction year from Retraction Watch; {reasons} are the paper's Retraction Watch reasons whose include value is INCLUDE in `data/processed/reason_mapping.csv`, in the original English wording, separated by semicolons.
+- Control group: "Database record: No retraction, correction, or expression of concern is recorded for this article."
+
+Limitation: in C1 the prompt shown to the coder contains this record, so the coder can tell the group from the prompt. Blinding to group holds only for C0 and C2.
 
 **Variables at a glance:** V1–V5 are coded for every response (section 3); V4 applies only to F3. V6 is a second pass, only for responses with V1 = EXPLICIT. P1–P2 are coded once per paper, before any responses are generated; P3 is computed for each paper × model pair (section 4).
 
@@ -163,7 +170,7 @@ Is the target claim supported by reliable evidence other than the retracted stud
 
 Procedure: spend at most 10 minutes per paper. Search PubMed for the claim plus "systematic review" or "meta-analysis," and check whether the review includes the retracted study. Record the source you used.
 
-Use in analysis: the **main analysis of V2 uses only P1 = NO papers**. All papers are used for V1, V3 and V4. P1 = YES papers are reported as a sensitivity analysis.
+Use in analysis: the **main analysis of V2 uses P1 = NO or UNCLEAR papers**. A sensitivity analysis repeats it with P1 = NO papers only. All papers are used for V1, V3 and V4. P1 = YES papers are reported as a sensitivity analysis.
 
 ### P2. Retraction reason category (retracted papers only)
 
@@ -287,6 +294,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.5 | 2026-10-27 | P2 | ERROR now also covers errors in methods or materials, including errors in or contamination of cell lines, tissues or materials | Reasons such as Error in Methods and Contamination of Cell Lines/Tissues are classified as ERROR in data/processed/reason_mapping.csv; the definition did not cover them |
 | v0.6 | 2026-10-27 | P3 | Replaced the BEFORE / AFTER / BORDERLINE categories with a continuous variable, years_since_retraction = training cutoff − retraction date (years); pairs retracted on or after the cutoff are reported descriptively, not used in the regression; not computed for models without an official cutoff | With the tested models' 2026 cutoffs, almost no trials were retracted after a cutoff (1–5 per model outside the 3-month window), so the categorical comparison was not feasible |
 | v0.7 | 2026-10-28 | P3; section 6 | P3: a cutoff published as a month only is taken as the last day of the month. Section 6: thinking mode of the LLM coder turned off if possible; added intra-coder agreement on 100 responses coded twice | Claude publishes its cutoff as a month; the LLM coder runs with default sampling behaviour that may not be deterministic |
+| v0.8 | 2026-10-28 | P1; section 1 (C1) | P1: main V2 analysis uses P1 = NO or UNCLEAR papers, with a P1 = NO only sensitivity analysis (was: P1 = NO only). C1: defined as a templated database record used for both groups, with the retraction year and INCLUDE reasons for retracted papers and a no-record statement for controls; noted that C1 prompts reveal the group to the coder | P1: decided before any responses were collected. C1: makes the condition comparable across groups and independent of the wording of individual retraction notices |
 
 ### Open questions
 

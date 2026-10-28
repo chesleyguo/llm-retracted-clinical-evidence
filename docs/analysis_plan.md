@@ -182,8 +182,15 @@ order, and the level used is recorded for each trial:
 | 2 | ±2 years | The retracted trial's own major topics |
 | 3 | ±2 years | The parent descriptors (one level up in the MeSH tree) of its major topics, searched with explosion, so the control's major topic is the parent or any descriptor under it |
 
-A trial with no control at level 3, or with no MeSH major topics, is left
-unmatched and reported.
+**Replacement.** A sampled trial that cannot be matched (no control at
+level 3, or no MeSH major topics) is replaced by the next trial in the same
+stratum's random order from the sampling step that respects the journal cap
+and can be matched; the replacement is then matched with the rules above
+(`scripts/10_replace_unmatched.py`, which replays the sampling step with seed
+2026 to recover the order). Replacements are listed in
+`results/10_replacement_log.txt`, and the replaced PMID is kept in the column
+replaces_pmid. One pilot trial was replaced: PMID 38416549 (no MeSH major
+topics) by PMID 31593299.
 
 **Reproducibility.** PubMed changes over time, so every search and fetch
 response is cached in `data/raw/pubmed_controls/` with its date, and the MeSH
@@ -217,6 +224,20 @@ main-sample prompts (seed 2026) are run 3 times each, under the same model,
 framing and condition. For each coded variable we report the agreement rate
 across the 3 runs (the share of prompts where all 3 runs get the same code).
 
+**Conditions.** C0: no extra information. C1: a database record is added to
+the prompt for both groups, simulating the article-status information a
+retrieval-augmented system would provide. It is generated from metadata with
+a fixed template, not from the text of the retraction notice:
+
+- Retracted: "Database record: This article was retracted in {year}. Reasons
+  listed: {reasons}." ({year}: Retraction Watch retraction year; {reasons}:
+  the paper's reasons with include = INCLUDE in `reason_mapping.csv`, in the
+  original English, separated by semicolons.)
+- Control: "Database record: No retraction, correction, or expression of
+  concern is recorded for this article."
+
+C2: web search enabled.
+
 **LLM coder.** deepseek-v4-pro (DeepSeek-V4-Pro-0813 at the time of checking),
 which is not among the tested models.
 
@@ -230,6 +251,9 @@ which is not among the tested models.
   papers with at least one STRONG reason in `reason_mapping.csv` (see
   inclusion criterion 5), to check that the results do not depend on papers
   retracted only for concerns.
+- **P1 = NO only.** The main V2 analysis uses retracted papers with P1 = NO
+  or UNCLEAR (codebook P1); this sensitivity analysis repeats it with
+  P1 = NO papers only.
 - **Without Hindawi.** Re-run the main analysis excluding papers whose
   Retraction Watch Publisher is "Hindawi" (276 of the 1,003 retracted trials,
   15 of the 100 in the main sample; most were retracted in 2023 for
@@ -252,3 +276,4 @@ which is not among the tested models.
 | 2026-10-27 | Inclusion criteria | The paper identifier was changed from OriginalPaperDOI to the PMID (OriginalPaperPubMedID). | Some conference-abstract supplements publish many different papers under one DOI (e.g. 255 records with 255 different titles under one DOI in the 2026-10-28 snapshot), so a DOI does not always identify a single paper. |
 | 2026-10-27 | Research questions (RQ2) | pubmed_flagged was removed from the RQ2 predictors and is reported descriptively only. Made before the experiment started, based on the distribution of the variable. | Only 20 of 1,003 retracted trials (2.0%) are not flagged as Retracted Publication in PubMed, too little variation to serve as a predictor. |
 | 2026-10-27 | Research questions (RQ2); codebook P3 | The retraction-timing variable was changed from BEFORE / AFTER (with a 3-month BORDERLINE band) to the continuous years_since_retraction. Pairs retracted on or after the cutoff are reported descriptively. Made before the experiment started, based on the distribution of retraction dates. | With 2026 training cutoffs, only 1–5 trials per candidate model were retracted after the cutoff outside the 3-month band, too few for a BEFORE / AFTER comparison. |
+| 2026-10-28 | Statistical analysis; codebook P1 | The main V2 analysis now uses retracted papers with P1 = NO or UNCLEAR, with a P1 = NO only sensitivity analysis (was: P1 = NO only). Made before any model responses were collected. | *(reason to be added by the author)* |

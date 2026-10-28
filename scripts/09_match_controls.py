@@ -316,17 +316,66 @@ def topic_plan(article, tree):
     return own, [p for p in parent_list if p[0] not in {u for u, _ in own}]
 
 
-def main():
-    for _, _, out_path in SAMPLES:
-        if out_path.exists():
-            sys.exit(f"{out_path.relative_to(ROOT)} already exists; controls are fixed once chosen.")
-
+def load_rw_ids():
+    """PMIDs and DOIs that appear anywhere in the Retraction Watch snapshot."""
     rw_path = sorted(RAW.glob("retraction_watch_*.csv"))[-1]
     rw = pd.read_csv(rw_path, dtype=str, keep_default_na=False)
     # Any appearance in Retraction Watch excludes a candidate, whatever the
     # record type (retraction, correction, expression of concern, ...).
     rw_pmids = set(rw["OriginalPaperPubMedID"].str.strip()) - {"", "0"}
     rw_dois = set(rw["OriginalPaperDOI"].str.strip().str.lower()) - {"", "unavailable"}
+    return rw_path, rw_pmids, rw_dois
+
+
+def match_trial(trial, article, tree, rng, ctx_base):
+    """Find a control for one retracted trial, trying the levels in order.
+    ctx_base holds the shared state (used controls, journal counts, ...); a
+    chosen control is added to it."""
+    year = int(trial["pm_pub_date"][:4])
+    own, parents = topic_plan(article, tree) if article is not None else ([], [])
+    result = {"pmid": trial["pmid"], "stratum": trial["stratum"],
+              "retracted_year": year, "match_level": "NONE"}
+    for level, window, use_parent in LEVELS:
+        topics = parents if use_parent else own
+        for ui, term in topics:
+            # Own topics: exact descriptor (noexp). Parents: exploded, so any
+            # descriptor under the parent counts.
+            field = "majr" if use_parent else "majr:noexp"
+            query = build_query(term, field, year, window)
+            search = esearch(query)
+            ctx = {**ctx_base, "exact_ui": None if use_parent else ui,
+                   "year": year, "window": window}
+            control, checked = find_control(search["pmids"], rng, ctx)
+            if control:
+                ctx_base["used"].add(control["pmid"])
+                ctx_base["journals"][control["journal"]] += 1
+                result.update({
+                    "match_level": level, "matched_topic_ui": ui,
+                    "matched_topic": term, "topic_depth": depth(ui, tree),
+                    "n_search_results": search["count"], "n_checked": checked,
+                    "query": query, "searched_at_utc": search["searched_at_utc"],
+                    "control_pmid": control["pmid"],
+                    "control_year_diff": int(control["pub_date"][:4]) - year,
+                    "control_title": control["title"],
+                    "control_abstract": control["abstract"],
+                    "control_journal": control["journal"],
+                    "control_pub_date": control["pub_date"],
+                    "control_authors": control["authors"],
+                    "control_doi": control["doi"],
+                    "control_pub_types": "; ".join(control["pub_types"]),
+                    "control_mesh_major": control["mesh_major"],
+                })
+                return result
+    result["note"] = "no MeSH major topics" if not own else "no eligible control at any level"
+    return result
+
+
+def main():
+    for _, _, out_path in SAMPLES:
+        if out_path.exists():
+            sys.exit(f"{out_path.relative_to(ROOT)} already exists; controls are fixed once chosen.")
+
+    rw_path, rw_pmids, rw_dois = load_rw_ids()
 
     samples = {name: pd.read_csv(path, dtype=str, keep_default_na=False).sort_values(
         "draw_order", key=lambda s: s.astype(int)) for name, path, _ in SAMPLES}
@@ -346,49 +395,9 @@ def main():
         journals = Counter()
         rows = []
         for _, trial in samples[name].iterrows():
-            article = articles.get(trial["pmid"])
-            year = int(trial["pm_pub_date"][:4])
-            own, parents = topic_plan(article, tree) if article is not None else ([], [])
-            result = {"pmid": trial["pmid"], "stratum": trial["stratum"],
-                      "retracted_year": year, "match_level": "NONE"}
-            for level, window, use_parent in LEVELS:
-                topics = parents if use_parent else own
-                for ui, term in topics:
-                    # Own topics: exact descriptor (noexp). Parents: exploded,
-                    # so any descriptor under the parent counts.
-                    field = "majr" if use_parent else "majr:noexp"
-                    query = build_query(term, field, year, window)
-                    search = esearch(query)
-                    ctx = {"rw_pmids": rw_pmids, "rw_dois": rw_dois, "used": used,
-                           "journals": journals, "rejections": rejections,
-                           "exact_ui": None if use_parent else ui,
-                           "year": year, "window": window}
-                    control, checked = find_control(search["pmids"], rng, ctx)
-                    if control:
-                        used.add(control["pmid"])
-                        journals[control["journal"]] += 1
-                        result.update({
-                            "match_level": level, "matched_topic_ui": ui,
-                            "matched_topic": term, "topic_depth": depth(ui, tree),
-                            "n_search_results": search["count"], "n_checked": checked,
-                            "query": query, "searched_at_utc": search["searched_at_utc"],
-                            "control_pmid": control["pmid"],
-                            "control_year_diff": int(control["pub_date"][:4]) - year,
-                            "control_title": control["title"],
-                            "control_abstract": control["abstract"],
-                            "control_journal": control["journal"],
-                            "control_pub_date": control["pub_date"],
-                            "control_authors": control["authors"],
-                            "control_doi": control["doi"],
-                            "control_pub_types": "; ".join(control["pub_types"]),
-                            "control_mesh_major": control["mesh_major"],
-                        })
-                        break
-                if result["match_level"] != "NONE":
-                    break
-            if result["match_level"] == "NONE":
-                result["note"] = ("no MeSH major topics" if not own
-                                  else "no eligible control at any level")
+            ctx_base = {"rw_pmids": rw_pmids, "rw_dois": rw_dois, "used": used,
+                        "journals": journals, "rejections": rejections}
+            result = match_trial(trial, articles.get(trial["pmid"]), tree, rng, ctx_base)
             print(f"  {name} {trial['pmid']}: level {result['match_level']}")
             rows.append(result)
 

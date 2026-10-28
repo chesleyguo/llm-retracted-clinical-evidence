@@ -1,0 +1,18 @@
+{
+ "query": "\"Nandrolone\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 2023:2025[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:07:33+00:00",
+ "count": 11,
+ "pmids": [
+  "41134516",
+  "40233572",
+  "40220411",
+  "40187738",
+  "39724904",
+  "39279689",
+  "39111847",
+  "37743573",
+  "37599165",
+  "37010614",
+  "36995381"
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "query": "\"Intrauterine Devices, Copper\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 2019:2021[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:08:35+00:00",
+ "count": 19,
+ "pmids": [
+  "34848180",
+  "34587971",
+  "34166648",
+  "33579718",
+  "33503342",
+  "33448029",
+  "33421091",
+  "33208512",
+  "32732105",
+  "32442189",
+  "32394723",
+  "32360666",
+  "32330638",
+  "32168217",
+  "32037531",
+  "31927027",
+  "31811839",
+  "31204114",
+  "30919459"
+ ]
+}

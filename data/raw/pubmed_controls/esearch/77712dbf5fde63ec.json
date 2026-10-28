@@ -1,0 +1,13 @@
+{
+ "query": "\"Gamma Rays\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 2018:2020[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:09:38+00:00",
+ "count": 6,
+ "pmids": [
+  "32592381",
+  "32358816",
+  "31608454",
+  "31568193",
+  "30628519",
+  "29976736"
+ ]
+}

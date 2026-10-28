@@ -1,0 +1,9619 @@
+{
+ "D000019": {
+  "parents": {
+   "D012102": "Reproductive Control Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.875.131",
+   "D27.505.954.705.131"
+  ]
+ },
+ "D000020": {
+  "parents": {
+   "D000019": "Abortifacient Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.875.131.100",
+   "D27.505.954.705.131.100"
+  ]
+ },
+ "D000022": {
+  "parents": {
+   "D011248": "Pregnancy Complications",
+   "D011256": "Pregnancy Outcome"
+  },
+  "tree_numbers": [
+   "C12.050.703.039",
+   "G08.686.784.769.496.125"
+  ]
+ },
+ "D000026": {
+  "parents": {
+   "D000022": "Abortion, Spontaneous"
+  },
+  "tree_numbers": [
+   "C12.050.703.039.089"
+  ]
+ },
+ "D000066530": {
+  "parents": {
+   "D012046": "Rehabilitation"
+  },
+  "tree_numbers": [
+   "E02.760.169.063.500.477",
+   "E02.831.477",
+   "H02.403.680.600.750",
+   "N02.421.784.511"
+  ]
+ },
+ "D000066888": {
+  "parents": {
+   "D010829": "Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.203"
+  ]
+ },
+ "D000067796": {
+  "parents": {
+   "D008892": "Milk"
+  },
+  "tree_numbers": [
+   "A12.790.760",
+   "G07.203.100.700.750",
+   "G07.203.300.350.525.760",
+   "J02.200.700.750",
+   "J02.500.350.525.760"
+  ]
+ },
+ "D000067816": {
+  "parents": {
+   "D000067796": "Whey",
+   "D008894": "Milk Proteins"
+  },
+  "tree_numbers": [
+   "A12.790.520.500",
+   "D12.776.256.159.750.816",
+   "G07.203.300.428.159.812.500",
+   "J02.500.350.525.520.500",
+   "J02.500.428.159.750.500",
+   "A12.790.760.500",
+   "G07.203.300.350.525.760.500",
+   "J02.500.350.525.760.500"
+  ]
+ },
+ "D000068099": {
+  "parents": {
+   "D001523": "Mental Disorders"
+  },
+  "tree_numbers": [
+   "F03.950"
+  ]
+ },
+ "D000069196": {
+  "parents": {
+   "D064307": "Microbiota"
+  },
+  "tree_numbers": [
+   "G06.591.375",
+   "G16.500.275.157.049.100.500.375",
+   "N06.230.124.049.100.500.250"
+  ]
+ },
+ "D000069437": {
+  "parents": {
+   "D002620": "Pharmacological and Toxicological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.690.773"
+  ]
+ },
+ "D000070263": {
+  "parents": {
+   "D012890": "Sleep",
+   "D015438": "Health Behavior"
+  },
+  "tree_numbers": [
+   "F02.830.855.734",
+   "F01.145.488.725"
+  ]
+ },
+ "D000070642": {
+  "parents": {
+   "D001930": "Brain Injuries"
+  },
+  "tree_numbers": [
+   "C26.915.300.200.194",
+   "C10.228.140.199.444",
+   "C10.900.300.087.235"
+  ]
+ },
+ "D000071939": {
+  "parents": {
+   "D000066530": "Neurological Rehabilitation"
+  },
+  "tree_numbers": [
+   "E02.760.169.063.500.477.500",
+   "E02.831.477.500",
+   "H02.403.680.600.750.500",
+   "N02.421.784.511.500"
+  ]
+ },
+ "D000072038": {
+  "parents": {
+   "D012046": "Rehabilitation"
+  },
+  "tree_numbers": [
+   "E02.760.169.063.500.185",
+   "E02.831.185",
+   "H02.403.680.600.250",
+   "N02.421.784.244"
+  ]
+ },
+ "D000072226": {
+  "parents": {
+   "D014057": "Tomography, X-Ray Computed",
+   "D064847": "Multimodal Imaging"
+  },
+  "tree_numbers": [
+   "E01.370.350.350.810.335",
+   "E01.370.350.600.350.700.810.335",
+   "E01.370.350.700.700.810.335",
+   "E01.370.350.700.810.810.568",
+   "E01.370.350.825.810.810.499",
+   "E01.370.350.567.250"
+  ]
+ },
+ "D000072471": {
+  "parents": {
+   "D006571": "Heterocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D03.633"
+  ]
+ },
+ "D000072473": {
+  "parents": {
+   "D011083": "Polycyclic Compounds"
+  },
+  "tree_numbers": [
+   "D04.210"
+  ]
+ },
+ "D000073278": {
+  "parents": {
+   "D012046": "Rehabilitation"
+  },
+  "tree_numbers": [
+   "N02.421.784.760"
+  ]
+ },
+ "D000073319": {
+  "parents": {
+   "D013812": "Therapeutics",
+   "D019468": "Disease Management",
+   "D061217": "Weight Reduction Programs"
+  },
+  "tree_numbers": [
+   "E02.650",
+   "N04.590.607.250",
+   "N02.421.726.407.579.650.500",
+   "H02.403.720.750.380.579.650.500"
+  ]
+ },
+ "D000074322": {
+  "parents": {
+   "D000970": "Antineoplastic Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.248.384"
+  ]
+ },
+ "D000074424": {
+  "parents": {
+   "D019684": "Magnoliopsida"
+  },
+  "tree_numbers": [
+   "B01.875.800.575.912.250.859"
+  ]
+ },
+ "D000074822": {
+  "parents": {
+   "D001294": "Attitude to Health",
+   "D015438": "Health Behavior"
+  },
+  "tree_numbers": [
+   "F01.145.488.887",
+   "F01.100.150.750",
+   "N05.300.150.800"
+  ]
+ },
+ "D000075082": {
+  "parents": {
+   "D012106": "Research"
+  },
+  "tree_numbers": [
+   "H01.770.644.578"
+  ]
+ },
+ "D000076622": {
+  "parents": {
+   "D000074424": "Rosanae"
+  },
+  "tree_numbers": [
+   "B01.875.800.575.912.250.859.797"
+  ]
+ },
+ "D000077264": {
+  "parents": {
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.260"
+  ]
+ },
+ "D000079225": {
+  "parents": {
+   "D004644": "Emotions"
+  },
+  "tree_numbers": [
+   "F01.470.315"
+  ]
+ },
+ "D000080224": {
+  "parents": {
+   "D004044": "Dietary Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.256.159",
+   "G07.203.300.428.159",
+   "J02.500.428.159"
+  ]
+ },
+ "D000080874": {
+  "parents": {
+   "D019636": "Neurodegenerative Diseases",
+   "D057165": "Proteostasis Deficiencies"
+  },
+  "tree_numbers": [
+   "C10.574.928",
+   "C18.452.845.650"
+  ]
+ },
+ "D000082102": {
+  "parents": {
+   "D001685": "Biological Factors",
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.465",
+   "D23.383"
+  ]
+ },
+ "D000083": {
+  "parents": {
+   "D000813": "Anilides"
+  },
+  "tree_numbers": [
+   "D02.065.199.092",
+   "D02.092.146.113.092"
+  ]
+ },
+ "D000083242": {
+  "parents": {
+   "D020521": "Stroke"
+  },
+  "tree_numbers": [
+   "C14.907.253.855.400",
+   "C10.228.140.300.775.400"
+  ]
+ },
+ "D000083563": {
+  "parents": {
+   "D060805": "Performance Anxiety"
+  },
+  "tree_numbers": [
+   "F01.470.132.650.500"
+  ]
+ },
+ "D000087526": {
+  "parents": {
+   "D036861": "Delivery, Obstetric"
+  },
+  "tree_numbers": [
+   "E04.520.252.980"
+  ]
+ },
+ "D000089943": {
+  "parents": {
+   "D000070263": "Sleep Hygiene"
+  },
+  "tree_numbers": [
+   "F02.830.855.734.500"
+  ]
+ },
+ "D000090463": {
+  "parents": {
+   "D019189": "Iron Metabolism Disorders"
+  },
+  "tree_numbers": [
+   "C18.452.565.400"
+  ]
+ },
+ "D000091642": {
+  "parents": {},
+  "tree_numbers": [
+   "C12"
+  ]
+ },
+ "D000091662": {
+  "parents": {
+   "D000091642": "Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.100"
+  ]
+ },
+ "D000093485": {
+  "parents": {
+   "D004358": "Drug Therapy"
+  },
+  "tree_numbers": [
+   "E02.319.231"
+  ]
+ },
+ "D000143": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.029"
+  ]
+ },
+ "D000144": {
+  "parents": {
+   "D002264": "Carboxylic Acids"
+  },
+  "tree_numbers": [
+   "D02.241.081"
+  ]
+ },
+ "D000146": {
+  "parents": {
+   "D002264": "Carboxylic Acids"
+  },
+  "tree_numbers": [
+   "D02.241.223"
+  ]
+ },
+ "D000147": {
+  "parents": {
+   "D006571": "Heterocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D03.066"
+  ]
+ },
+ "D000148": {
+  "parents": {
+   "D000143": "Acids"
+  },
+  "tree_numbers": [
+   "D01.029.260"
+  ]
+ },
+ "D000230": {
+  "parents": {
+   "D002277": "Carcinoma"
+  },
+  "tree_numbers": [
+   "C04.557.470.200.025"
+  ]
+ },
+ "D000290": {
+  "parents": {
+   "D005836": "Genitalia, Female"
+  },
+  "tree_numbers": [
+   "A05.360.319.114"
+  ]
+ },
+ "D000291": {
+  "parents": {
+   "D005831": "Genital Diseases, Female"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.056",
+   "C12.100.250.056"
+  ]
+ },
+ "D000305": {
+  "parents": {
+   "D006728": "Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.040"
+  ]
+ },
+ "D000319": {
+  "parents": {
+   "D018674": "Adrenergic Antagonists"
+  },
+  "tree_numbers": [
+   "D27.505.519.625.050.200.200",
+   "D27.505.696.577.050.200.200"
+  ]
+ },
+ "D000359": {
+  "parents": {
+   "D003266": "Continuity of Patient Care"
+  },
+  "tree_numbers": [
+   "E02.760.169.063",
+   "N02.421.585.169.063",
+   "N04.590.233.727.210.063"
+  ]
+ },
+ "D000418": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.034"
+  ]
+ },
+ "D000438": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.033"
+  ]
+ },
+ "D000447": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.047"
+  ]
+ },
+ "D000470": {
+  "parents": {
+   "D006571": "Heterocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D03.132"
+  ]
+ },
+ "D000556": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.030"
+  ]
+ },
+ "D000577": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.065"
+  ]
+ },
+ "D000578": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.078"
+  ]
+ },
+ "D000588": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.092"
+  ]
+ },
+ "D000596": {
+  "parents": {
+   "D000602": "Amino Acids, Peptides, and Proteins"
+  },
+  "tree_numbers": [
+   "D12.125"
+  ]
+ },
+ "D000597": {
+  "parents": {
+   "D000596": "Amino Acids"
+  },
+  "tree_numbers": [
+   "D12.125.070"
+  ]
+ },
+ "D000598": {
+  "parents": {
+   "D000596": "Amino Acids"
+  },
+  "tree_numbers": [
+   "D12.125.072"
+  ]
+ },
+ "D000601": {
+  "parents": {
+   "D000596": "Amino Acids"
+  },
+  "tree_numbers": [
+   "D12.125.142"
+  ]
+ },
+ "D000602": {
+  "parents": {},
+  "tree_numbers": [
+   "D12"
+  ]
+ },
+ "D000605": {
+  "parents": {
+   "D000438": "Alcohols",
+   "D000588": "Amines"
+  },
+  "tree_numbers": [
+   "D02.033.100",
+   "D02.092.063"
+  ]
+ },
+ "D000662": {
+  "parents": {
+   "D010627": "Phenethylamines"
+  },
+  "tree_numbers": [
+   "D02.092.471.683.152"
+  ]
+ },
+ "D000698": {
+  "parents": {
+   "D000760": "Anesthesia and Analgesia"
+  },
+  "tree_numbers": [
+   "E03.091"
+  ]
+ },
+ "D000700": {
+  "parents": {
+   "D002491": "Central Nervous System Agents",
+   "D018689": "Sensory System Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.427.040",
+   "D27.505.696.663.850.014"
+  ]
+ },
+ "D000701": {
+  "parents": {
+   "D009294": "Narcotics"
+  },
+  "tree_numbers": [
+   "D27.505.696.277.600.500",
+   "D27.505.696.663.850.014.760.500",
+   "D27.505.954.427.040.550.500",
+   "D27.505.954.427.210.600.500"
+  ]
+ },
+ "D000714": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.035"
+  ]
+ },
+ "D000740": {
+  "parents": {
+   "D006402": "Hematologic Diseases"
+  },
+  "tree_numbers": [
+   "C15.378.050"
+  ]
+ },
+ "D000747": {
+  "parents": {
+   "D000740": "Anemia"
+  },
+  "tree_numbers": [
+   "C15.378.050.196"
+  ]
+ },
+ "D000758": {
+  "parents": {
+   "D000760": "Anesthesia and Analgesia"
+  },
+  "tree_numbers": [
+   "E03.155"
+  ]
+ },
+ "D000760": {
+  "parents": {},
+  "tree_numbers": [
+   "E03"
+  ]
+ },
+ "D000765": {
+  "parents": {
+   "D000758": "Anesthesia"
+  },
+  "tree_numbers": [
+   "E03.155.086"
+  ]
+ },
+ "D000772": {
+  "parents": {
+   "D000765": "Anesthesia, Conduction"
+  },
+  "tree_numbers": [
+   "E03.155.086.231"
+  ]
+ },
+ "D000773": {
+  "parents": {
+   "D000758": "Anesthesia"
+  },
+  "tree_numbers": [
+   "E03.155.364"
+  ]
+ },
+ "D000775": {
+  "parents": {
+   "D000765": "Anesthesia, Conduction"
+  },
+  "tree_numbers": [
+   "E03.155.086.331"
+  ]
+ },
+ "D000777": {
+  "parents": {
+   "D002492": "Central Nervous System Depressants"
+  },
+  "tree_numbers": [
+   "D27.505.696.277.100",
+   "D27.505.954.427.210.100"
+  ]
+ },
+ "D000779": {
+  "parents": {
+   "D000777": "Anesthetics",
+   "D018689": "Sensory System Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.427.210.100.200",
+   "D27.505.696.277.100.200",
+   "D27.505.696.663.850.025"
+  ]
+ },
+ "D000813": {
+  "parents": {
+   "D000577": "Amides",
+   "D000814": "Aniline Compounds"
+  },
+  "tree_numbers": [
+   "D02.065.199",
+   "D02.092.146.113"
+  ]
+ },
+ "D000814": {
+  "parents": {
+   "D000588": "Amines"
+  },
+  "tree_numbers": [
+   "D02.092.146"
+  ]
+ },
+ "D000838": {
+  "parents": {
+   "D007477": "Ions"
+  },
+  "tree_numbers": [
+   "D01.248.497.158"
+  ]
+ },
+ "D000889": {
+  "parents": {
+   "D002317": "Cardiovascular Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.411.097"
+  ]
+ },
+ "D000906": {
+  "parents": {
+   "D007136": "Immunoglobulins"
+  },
+  "tree_numbers": [
+   "D12.776.124.486.485.114",
+   "D12.776.124.790.651.114",
+   "D12.776.377.715.548.114"
+  ]
+ },
+ "D000911": {
+  "parents": {
+   "D000906": "Antibodies"
+  },
+  "tree_numbers": [
+   "D12.776.124.486.485.114.224",
+   "D12.776.124.790.651.114.224",
+   "D12.776.377.715.548.114.224"
+  ]
+ },
+ "D000914": {
+  "parents": {
+   "D000906": "Antibodies"
+  },
+  "tree_numbers": [
+   "D12.776.124.486.485.114.254",
+   "D12.776.124.790.651.114.254",
+   "D12.776.377.715.548.114.254"
+  ]
+ },
+ "D000928": {
+  "parents": {
+   "D011619": "Psychotropic Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.954.427.700.122"
+  ]
+ },
+ "D000932": {
+  "parents": {
+   "D001337": "Autonomic Agents",
+   "D002491": "Central Nervous System Agents",
+   "D005765": "Gastrointestinal Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.483.200",
+   "D27.505.696.663.050.030",
+   "D27.505.954.427.095"
+  ]
+ },
+ "D000941": {
+  "parents": {
+   "D001685": "Biological Factors"
+  },
+  "tree_numbers": [
+   "D23.050"
+  ]
+ },
+ "D000942": {
+  "parents": {
+   "D000941": "Antigens",
+   "D001426": "Bacterial Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.097.025",
+   "D23.050.161"
+  ]
+ },
+ "D000954": {
+  "parents": {
+   "D000941": "Antigens"
+  },
+  "tree_numbers": [
+   "D23.050.301"
+  ]
+ },
+ "D000959": {
+  "parents": {
+   "D002317": "Cardiovascular Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.411.162"
+  ]
+ },
+ "D000970": {
+  "parents": {
+   "D045506": "Therapeutic Uses"
+  },
+  "tree_numbers": [
+   "D27.505.954.248"
+  ]
+ },
+ "D000971": {
+  "parents": {
+   "D004359": "Drug Therapy, Combination",
+   "D024221": "Antineoplastic Protocols"
+  },
+  "tree_numbers": [
+   "E02.319.310.037",
+   "E02.183.750.500",
+   "E02.319.077.500"
+  ]
+ },
+ "D000975": {
+  "parents": {
+   "D001685": "Biological Factors",
+   "D020011": "Protective Agents",
+   "D045504": "Molecular Mechanisms of Pharmacological Action"
+  },
+  "tree_numbers": [
+   "D23.063",
+   "D27.505.519.217",
+   "D27.505.696.706.125",
+   "D27.720.799.047"
+  ]
+ },
+ "D001007": {
+  "parents": {
+   "D004644": "Emotions"
+  },
+  "tree_numbers": [
+   "F01.470.132"
+  ]
+ },
+ "D001026": {
+  "parents": {
+   "D009204": "Myocardial Revascularization",
+   "D058017": "Vascular Grafting"
+  },
+  "tree_numbers": [
+   "E04.100.376.719.332",
+   "E04.928.220.520.220",
+   "E04.100.814.868.750"
+  ]
+ },
+ "D001157": {
+  "parents": {
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.907.137"
+  ]
+ },
+ "D001161": {
+  "parents": {
+   "D001157": "Arterial Occlusive Diseases"
+  },
+  "tree_numbers": [
+   "C14.907.137.126"
+  ]
+ },
+ "D001168": {
+  "parents": {
+   "D007592": "Joint Diseases"
+  },
+  "tree_numbers": [
+   "C05.550.114"
+  ]
+ },
+ "D001190": {
+  "parents": {
+   "D017739": "Arylsulfonic Acids"
+  },
+  "tree_numbers": [
+   "D02.886.645.600.080.050"
+  ]
+ },
+ "D001241": {
+  "parents": {
+   "D012459": "Salicylates"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.657.410.595.176"
+  ]
+ },
+ "D001279": {
+  "parents": {
+   "D044182": "Benzylisoquinolines"
+  },
+  "tree_numbers": [
+   "D03.633.100.531.085.061"
+  ]
+ },
+ "D001290": {
+  "parents": {
+   "D001520": "Behavior and Behavior Mechanisms"
+  },
+  "tree_numbers": [
+   "F01.100"
+  ]
+ },
+ "D001294": {
+  "parents": {
+   "D001290": "Attitude",
+   "D003695": "Delivery of Health Care"
+  },
+  "tree_numbers": [
+   "F01.100.150",
+   "N05.300.150"
+  ]
+ },
+ "D001327": {
+  "parents": {
+   "D007154": "Immune System Diseases"
+  },
+  "tree_numbers": [
+   "C20.111"
+  ]
+ },
+ "D001337": {
+  "parents": {
+   "D018373": "Peripheral Nervous System Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.663.050"
+  ]
+ },
+ "D001341": {
+  "parents": {
+   "D017933": "Peripheral Nervous System"
+  },
+  "tree_numbers": [
+   "A08.800.050"
+  ]
+ },
+ "D001372": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.145"
+  ]
+ },
+ "D001393": {
+  "parents": {
+   "D006573": "Heterocyclic Compounds, 1-Ring"
+  },
+  "tree_numbers": [
+   "D03.383.129"
+  ]
+ },
+ "D001419": {
+  "parents": {},
+  "tree_numbers": [
+   "B03"
+  ]
+ },
+ "D001426": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.097"
+  ]
+ },
+ "D001480": {
+  "parents": {
+   "D001927": "Brain Diseases"
+  },
+  "tree_numbers": [
+   "C10.228.140.079"
+  ]
+ },
+ "D001519": {
+  "parents": {
+   "D001520": "Behavior and Behavior Mechanisms"
+  },
+  "tree_numbers": [
+   "F01.145"
+  ]
+ },
+ "D001520": {
+  "parents": {},
+  "tree_numbers": [
+   "F01"
+  ]
+ },
+ "D001523": {
+  "parents": {},
+  "tree_numbers": [
+   "F03"
+  ]
+ },
+ "D001525": {
+  "parents": {
+   "D004191": "Behavioral Disciplines and Activities"
+  },
+  "tree_numbers": [
+   "F04.096"
+  ]
+ },
+ "D001526": {
+  "parents": {
+   "D001519": "Behavior"
+  },
+  "tree_numbers": [
+   "F01.145.126"
+  ]
+ },
+ "D001549": {
+  "parents": {
+   "D000577": "Amides",
+   "D001565": "Benzoates"
+  },
+  "tree_numbers": [
+   "D02.065.277",
+   "D02.241.223.100.100",
+   "D02.455.426.559.389.127.085"
+  ]
+ },
+ "D001552": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100.079"
+  ]
+ },
+ "D001555": {
+  "parents": {
+   "D006841": "Hydrocarbons, Aromatic"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389"
+  ]
+ },
+ "D001557": {
+  "parents": {
+   "D001190": "Arylsulfonates",
+   "D001555": "Benzene Derivatives"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.097",
+   "D02.886.645.600.080.050.100"
+  ]
+ },
+ "D001562": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100.103"
+  ]
+ },
+ "D001565": {
+  "parents": {
+   "D000146": "Acids, Carbocyclic",
+   "D001555": "Benzene Derivatives"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.127",
+   "D02.241.223.100"
+  ]
+ },
+ "D001597": {
+  "parents": {
+   "D001555": "Benzene Derivatives"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.150"
+  ]
+ },
+ "D001628": {
+  "parents": {
+   "D000066888": "Diet, Food, and Nutrition",
+   "D019602": "Food and Beverages"
+  },
+  "tree_numbers": [
+   "G07.203.100",
+   "J02.200"
+  ]
+ },
+ "D001645": {
+  "parents": {
+   "D006146": "Guanidines"
+  },
+  "tree_numbers": [
+   "D02.078.370.141"
+  ]
+ },
+ "D001649": {
+  "parents": {
+   "D001660": "Biliary Tract Diseases"
+  },
+  "tree_numbers": [
+   "C06.130.120"
+  ]
+ },
+ "D001660": {
+  "parents": {
+   "D004066": "Digestive System Diseases"
+  },
+  "tree_numbers": [
+   "C06.130"
+  ]
+ },
+ "D001685": {
+  "parents": {},
+  "tree_numbers": [
+   "D23"
+  ]
+ },
+ "D001686": {
+  "parents": {},
+  "tree_numbers": [
+   "G16"
+  ]
+ },
+ "D001688": {
+  "parents": {
+   "D045424": "Complex Mixtures"
+  },
+  "tree_numbers": [
+   "D20.215"
+  ]
+ },
+ "D001690": {
+  "parents": {
+   "D010811": "Natural Science Disciplines"
+  },
+  "tree_numbers": [
+   "H01.158"
+  ]
+ },
+ "D001697": {
+  "parents": {
+   "D008420": "Manufactured Materials",
+   "D020313": "Specialty Uses of Chemicals"
+  },
+  "tree_numbers": [
+   "D27.720.102",
+   "J01.637.051",
+   "D25"
+  ]
+ },
+ "D001704": {
+  "parents": {
+   "D011108": "Polymers"
+  },
+  "tree_numbers": [
+   "D05.750.078",
+   "D25.720.099",
+   "J01.637.051.720.099"
+  ]
+ },
+ "D001769": {
+  "parents": {
+   "D001826": "Body Fluids",
+   "D006424": "Hemic and Immune Systems"
+  },
+  "tree_numbers": [
+   "A15.145",
+   "A12.207.152"
+  ]
+ },
+ "D001777": {
+  "parents": {
+   "D006487": "Hemostasis"
+  },
+  "tree_numbers": [
+   "G09.188.390.150"
+  ]
+ },
+ "D001781": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.120"
+  ]
+ },
+ "D001790": {
+  "parents": {
+   "D002943": "Circulatory and Respiratory Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G09.188"
+  ]
+ },
+ "D001794": {
+  "parents": {
+   "D006439": "Hemodynamics",
+   "D055986": "Vital Signs"
+  },
+  "tree_numbers": [
+   "G09.330.380.076",
+   "E01.370.600.875.249"
+  ]
+ },
+ "D001798": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.124"
+  ]
+ },
+ "D001802": {
+  "parents": {
+   "D006401": "Hematologic Agents",
+   "D040761": "Biomimetic Materials"
+  },
+  "tree_numbers": [
+   "J01.637.087.249",
+   "D27.505.954.502.140"
+  ]
+ },
+ "D001825": {
+  "parents": {
+   "D001826": "Body Fluids",
+   "D014024": "Tissues"
+  },
+  "tree_numbers": [
+   "A12.207.180",
+   "A10.082"
+  ]
+ },
+ "D001826": {
+  "parents": {
+   "D005441": "Fluids and Secretions"
+  },
+  "tree_numbers": [
+   "A12.207"
+  ]
+ },
+ "D001829": {
+  "parents": {},
+  "tree_numbers": [
+   "A01"
+  ]
+ },
+ "D001845": {
+  "parents": {
+   "D001847": "Bone Diseases",
+   "D003560": "Cysts"
+  },
+  "tree_numbers": [
+   "C05.116.070",
+   "C04.182.089"
+  ]
+ },
+ "D001847": {
+  "parents": {
+   "D009140": "Musculoskeletal Diseases"
+  },
+  "tree_numbers": [
+   "C05.116"
+  ]
+ },
+ "D001851": {
+  "parents": {
+   "D001847": "Bone Diseases",
+   "D008659": "Metabolic Diseases"
+  },
+  "tree_numbers": [
+   "C05.116.198",
+   "C18.452.104"
+  ]
+ },
+ "D001927": {
+  "parents": {
+   "D002493": "\u4e2d\u67a2\u795e\u7d4c\u7cfb\u75be\u60a3"
+  },
+  "tree_numbers": [
+   "C10.228.140"
+  ]
+ },
+ "D001930": {
+  "parents": {
+   "D001927": "Brain Diseases",
+   "D006259": "Craniocerebral Trauma"
+  },
+  "tree_numbers": [
+   "C10.228.140.199",
+   "C26.915.300.200",
+   "C10.900.300.087"
+  ]
+ },
+ "D001939": {
+  "parents": {
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.100",
+   "J02.500.100"
+  ]
+ },
+ "D001941": {
+  "parents": {
+   "D012871": "Skin Diseases"
+  },
+  "tree_numbers": [
+   "C17.800.090"
+  ]
+ },
+ "D001943": {
+  "parents": {
+   "D001941": "Breast Diseases",
+   "D009371": "Neoplasms by Site"
+  },
+  "tree_numbers": [
+   "C17.800.090.500",
+   "C04.588.180"
+  ]
+ },
+ "D001982": {
+  "parents": {
+   "D012140": "Respiratory Tract Diseases"
+  },
+  "tree_numbers": [
+   "C08.127"
+  ]
+ },
+ "D001984": {
+  "parents": {
+   "D001982": "Bronchial Diseases",
+   "D008175": "Lung Neoplasms"
+  },
+  "tree_numbers": [
+   "C04.588.894.797.520.109",
+   "C08.785.520.100",
+   "C08.127.265"
+  ]
+ },
+ "D002090": {
+  "parents": {
+   "D007659": "Ketones"
+  },
+  "tree_numbers": [
+   "D02.522.352"
+  ]
+ },
+ "D002121": {
+  "parents": {
+   "D000077264": "Calcium-Regulating Hormones and Agents",
+   "D002317": "Cardiovascular Agents",
+   "D049990": "Membrane Transport Modulators"
+  },
+  "tree_numbers": [
+   "D27.505.954.411.192",
+   "D27.505.519.562.249",
+   "D27.505.696.260.500"
+  ]
+ },
+ "D002208": {
+  "parents": {
+   "D000144": "Acids, Acyclic",
+   "D005232": "Fatty Acids, Volatile"
+  },
+  "tree_numbers": [
+   "D02.241.081.193",
+   "D10.251.400.326"
+  ]
+ },
+ "D002241": {
+  "parents": {},
+  "tree_numbers": [
+   "D09"
+  ]
+ },
+ "D002264": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.241"
+  ]
+ },
+ "D002277": {
+  "parents": {
+   "D009375": "Neoplasms, Glandular and Epithelial"
+  },
+  "tree_numbers": [
+   "C04.557.470.200"
+  ]
+ },
+ "D002283": {
+  "parents": {
+   "D001984": "Bronchial Neoplasms",
+   "D008175": "Lung Neoplasms"
+  },
+  "tree_numbers": [
+   "C08.381.540.140",
+   "C04.588.894.797.520.109.220",
+   "C08.785.520.100.220"
+  ]
+ },
+ "D002289": {
+  "parents": {
+   "D002283": "Carcinoma, Bronchogenic"
+  },
+  "tree_numbers": [
+   "C04.588.894.797.520.109.220.249",
+   "C08.381.540.140.500",
+   "C08.785.520.100.220.500"
+  ]
+ },
+ "D002315": {
+  "parents": {
+   "D005112": "Extracorporeal Circulation"
+  },
+  "tree_numbers": [
+   "E04.292.413"
+  ]
+ },
+ "D002317": {
+  "parents": {
+   "D045506": "Therapeutic Uses"
+  },
+  "tree_numbers": [
+   "D27.505.954.411"
+  ]
+ },
+ "D002318": {
+  "parents": {},
+  "tree_numbers": [
+   "C14"
+  ]
+ },
+ "D002319": {
+  "parents": {},
+  "tree_numbers": [
+   "A07"
+  ]
+ },
+ "D002320": {
+  "parents": {
+   "D002943": "Circulatory and Respiratory Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G09.330"
+  ]
+ },
+ "D002349": {
+  "parents": {
+   "D009408": "Nerve Compression Syndromes",
+   "D012090": "Cumulative Trauma Disorders",
+   "D020423": "Median Neuropathy"
+  },
+  "tree_numbers": [
+   "C26.844.150.206",
+   "C10.668.829.500.500.200",
+   "C10.668.829.550.200"
+  ]
+ },
+ "D002395": {
+  "parents": {
+   "D000588": "Amines",
+   "D002396": "Catechols"
+  },
+  "tree_numbers": [
+   "D02.092.311",
+   "D02.455.426.559.389.657.166.175"
+  ]
+ },
+ "D002396": {
+  "parents": {
+   "D010636": "Phenols"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.657.166"
+  ]
+ },
+ "D002404": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E05.157",
+   "E02.148"
+  ]
+ },
+ "D002406": {
+  "parents": {
+   "D002404": "Catheterization",
+   "D057510": "Endovascular Procedures"
+  },
+  "tree_numbers": [
+   "E02.148.224",
+   "E05.157.375",
+   "E04.100.814.529.937",
+   "E04.502.382.937"
+  ]
+ },
+ "D002477": {
+  "parents": {},
+  "tree_numbers": [
+   "A11"
+  ]
+ },
+ "D002491": {
+  "parents": {
+   "D045506": "Therapeutic Uses"
+  },
+  "tree_numbers": [
+   "D27.505.954.427"
+  ]
+ },
+ "D002492": {
+  "parents": {
+   "D002491": "Central Nervous System Agents",
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.277",
+   "D27.505.954.427.210"
+  ]
+ },
+ "D002493": {
+  "parents": {
+   "D009422": "Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.228"
+  ]
+ },
+ "D002545": {
+  "parents": {
+   "D002561": "Cerebrovascular Disorders"
+  },
+  "tree_numbers": [
+   "C14.907.253.092",
+   "C10.228.140.300.150"
+  ]
+ },
+ "D002561": {
+  "parents": {
+   "D001927": "Brain Diseases",
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C10.228.140.300",
+   "C14.907.253"
+  ]
+ },
+ "D002577": {
+  "parents": {
+   "D014591": "Uterine Diseases"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.852.593",
+   "C12.100.250.852.593"
+  ]
+ },
+ "D002583": {
+  "parents": {
+   "D002577": "Uterine Cervical Diseases",
+   "D014594": "Uterine Neoplasms"
+  },
+  "tree_numbers": [
+   "C04.588.945.418.948.850",
+   "C12.050.351.500.852.762.850",
+   "C12.050.351.937.418.875.850",
+   "C12.100.250.852.762.850",
+   "C12.900.418.875.850",
+   "C12.050.351.500.852.593.131",
+   "C12.100.250.852.593.131"
+  ]
+ },
+ "D002585": {
+  "parents": {
+   "D036861": "Delivery, Obstetric"
+  },
+  "tree_numbers": [
+   "E04.520.252.500"
+  ]
+ },
+ "D002620": {
+  "parents": {
+   "D010829": "Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.690"
+  ]
+ },
+ "D002723": {
+  "parents": {
+   "D001565": "Benzoates"
+  },
+  "tree_numbers": [
+   "D02.241.223.100.200",
+   "D02.455.426.559.389.127.250"
+  ]
+ },
+ "D002762": {
+  "parents": {
+   "D002782": "Cholestenes",
+   "D013261": "Sterols",
+   "D014807": "Vitamin D"
+  },
+  "tree_numbers": [
+   "D04.210.500.247.222.159",
+   "D04.210.500.247.808.146",
+   "D10.570.938.146",
+   "D04.210.500.812.768.196"
+  ]
+ },
+ "D002769": {
+  "parents": {
+   "D001660": "Biliary Tract Diseases"
+  },
+  "tree_numbers": [
+   "C06.130.409"
+  ]
+ },
+ "D002776": {
+  "parents": {
+   "D013256": "Steroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.247"
+  ]
+ },
+ "D002782": {
+  "parents": {
+   "D002776": "Cholestanes"
+  },
+  "tree_numbers": [
+   "D04.210.500.247.222"
+  ]
+ },
+ "D002943": {
+  "parents": {},
+  "tree_numbers": [
+   "G09"
+  ]
+ },
+ "D002979": {
+  "parents": {
+   "D046468": "Sexual Development",
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.157",
+   "G08.686.841.249"
+  ]
+ },
+ "D002985": {
+  "parents": {
+   "D013812": "Therapeutics",
+   "D016020": "Epidemiologic Study Characteristics"
+  },
+  "tree_numbers": [
+   "E02.183",
+   "N05.715.360.330.125"
+  ]
+ },
+ "D002996": {
+  "parents": {
+   "D013267": "Stilbenes"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.150.700.125"
+  ]
+ },
+ "D003061": {
+  "parents": {
+   "D009022": "Morphine Derivatives"
+  },
+  "tree_numbers": [
+   "D03.132.577.249.562.149",
+   "D03.605.497.607.204",
+   "D03.633.400.686.607.204",
+   "D04.615.723.795.576.149"
+  ]
+ },
+ "D003102": {
+  "parents": {
+   "D004304": "Dosage Forms",
+   "D045424": "Complex Mixtures"
+  },
+  "tree_numbers": [
+   "D20.280",
+   "D26.255.165"
+  ]
+ },
+ "D003115": {
+  "parents": {
+   "D006023": "Glycoproteins",
+   "D016298": "Hematopoietic Cell Growth Factors"
+  },
+  "tree_numbers": [
+   "D09.400.430.775",
+   "D12.776.395.240",
+   "D12.644.276.374.410.240",
+   "D12.776.467.374.410.240",
+   "D23.529.374.410.240"
+  ]
+ },
+ "D003137": {
+  "parents": {
+   "D001649": "Bile Duct Diseases"
+  },
+  "tree_numbers": [
+   "C06.130.120.250"
+  ]
+ },
+ "D003142": {
+  "parents": {
+   "D001519": "Behavior",
+   "D007254": "Information Science"
+  },
+  "tree_numbers": [
+   "F01.145.209",
+   "L01.143"
+  ]
+ },
+ "D003191": {
+  "parents": {
+   "D010346": "Patient Care Management"
+  },
+  "tree_numbers": [
+   "N04.590.233"
+  ]
+ },
+ "D003205": {
+  "parents": {
+   "D007254": "Information Science"
+  },
+  "tree_numbers": [
+   "L01.224"
+  ]
+ },
+ "D003238": {
+  "parents": {
+   "D014024": "Tissues"
+  },
+  "tree_numbers": [
+   "A10.165"
+  ]
+ },
+ "D003240": {
+  "parents": {
+   "D017437": "Skin and Connective Tissue Diseases"
+  },
+  "tree_numbers": [
+   "C17.300"
+  ]
+ },
+ "D003266": {
+  "parents": {
+   "D005791": "Patient Care",
+   "D011320": "Primary Health Care"
+  },
+  "tree_numbers": [
+   "E02.760.169",
+   "N02.421.585.169",
+   "N04.590.233.727.210"
+  ]
+ },
+ "D003267": {
+  "parents": {
+   "D012099": "Reproductive Techniques"
+  },
+  "tree_numbers": [
+   "E02.875.194"
+  ]
+ },
+ "D003273": {
+  "parents": {
+   "D004864": "Equipment and Supplies"
+  },
+  "tree_numbers": [
+   "E07.190"
+  ]
+ },
+ "D003274": {
+  "parents": {
+   "D003273": "Contraceptive Devices"
+  },
+  "tree_numbers": [
+   "E07.190.250"
+  ]
+ },
+ "D003324": {
+  "parents": {
+   "D001161": "Arteriosclerosis",
+   "D003327": "Coronary Disease"
+  },
+  "tree_numbers": [
+   "C14.907.137.126.339",
+   "C14.280.647.250.260",
+   "C14.907.585.250.260"
+  ]
+ },
+ "D003327": {
+  "parents": {
+   "D017202": "Myocardial Ischemia"
+  },
+  "tree_numbers": [
+   "C14.280.647.250",
+   "C14.907.585.250"
+  ]
+ },
+ "D003339": {
+  "parents": {
+   "D042341": "Gonadal Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.334.734"
+  ]
+ },
+ "D003371": {
+  "parents": {
+   "D012120": "Respiration Disorders",
+   "D012818": "Signs and Symptoms, Respiratory"
+  },
+  "tree_numbers": [
+   "C23.888.852.293",
+   "C08.618.248"
+  ]
+ },
+ "D003391": {
+  "parents": {
+   "D010525": "Peripheral Nerves"
+  },
+  "tree_numbers": [
+   "A08.800.800.120"
+  ]
+ },
+ "D003415": {
+  "parents": {
+   "D003418": "Criminology",
+   "D012940": "Social Problems"
+  },
+  "tree_numbers": [
+   "I01.880.735.191",
+   "I01.198.240"
+  ]
+ },
+ "D003418": {
+  "parents": {
+   "D012942": "Social Sciences"
+  },
+  "tree_numbers": [
+   "I01.198"
+  ]
+ },
+ "D003486": {
+  "parents": {
+   "D000838": "Anions",
+   "D006856": "Hydrogen Cyanide"
+  },
+  "tree_numbers": [
+   "D01.248.497.158.291",
+   "D01.625.400.100"
+  ]
+ },
+ "D003509": {
+  "parents": {
+   "D000146": "Acids, Carbocyclic",
+   "D003510": "Cyclohexanes"
+  },
+  "tree_numbers": [
+   "D02.455.426.392.368.367.218",
+   "D02.241.223.268"
+  ]
+ },
+ "D003510": {
+  "parents": {
+   "D003516": "Cycloparaffins"
+  },
+  "tree_numbers": [
+   "D02.455.426.392.368.367"
+  ]
+ },
+ "D003516": {
+  "parents": {
+   "D006840": "Hydrocarbons, Alicyclic",
+   "D047028": "Macrocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D04.345.133",
+   "D02.455.426.392.368"
+  ]
+ },
+ "D003560": {
+  "parents": {
+   "D009369": "Neoplasms",
+   "D020763": "Pathological Conditions, Anatomical"
+  },
+  "tree_numbers": [
+   "C23.300.306",
+   "C04.182"
+  ]
+ },
+ "D003611": {
+  "parents": {
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.350",
+   "J02.500.350"
+  ]
+ },
+ "D003625": {
+  "parents": {
+   "D004812": "Epidemiologic Methods",
+   "D017531": "Health Care Evaluation Mechanisms",
+   "D019451": "Information Management"
+  },
+  "tree_numbers": [
+   "N05.715.360.300",
+   "L01.399.250",
+   "E05.318.308",
+   "N06.850.520.308"
+  ]
+ },
+ "D003658": {
+  "parents": {
+   "D008491": "Medical Informatics Applications"
+  },
+  "tree_numbers": [
+   "L01.313.500.750.100"
+  ]
+ },
+ "D003695": {
+  "parents": {
+   "D010346": "Patient Care Management",
+   "D017530": "Health Care Quality, Access, and Evaluation"
+  },
+  "tree_numbers": [
+   "N04.590.374",
+   "N05.300"
+  ]
+ },
+ "D003710": {
+  "parents": {
+   "D011154": "Population Characteristics",
+   "D012942": "Social Sciences",
+   "D015991": "Epidemiologic Measurements"
+  },
+  "tree_numbers": [
+   "N06.850.505.400",
+   "N01.224",
+   "I01.240"
+  ]
+ },
+ "D003711": {
+  "parents": {
+   "D009422": "Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.314"
+  ]
+ },
+ "D003803": {
+  "parents": {
+   "D009807": "Odontogenic Cysts"
+  },
+  "tree_numbers": [
+   "C04.182.089.530.690.310",
+   "C05.500.470.690.310",
+   "C07.320.450.670.275"
+  ]
+ },
+ "D003813": {
+  "parents": {
+   "D006281": "Health Occupations"
+  },
+  "tree_numbers": [
+   "H02.163",
+   "E06"
+  ]
+ },
+ "D003863": {
+  "parents": {
+   "D001526": "Behavioral Symptoms",
+   "D004644": "Emotions"
+  },
+  "tree_numbers": [
+   "F01.145.126.350",
+   "F01.470.282"
+  ]
+ },
+ "D003865": {
+  "parents": {
+   "D003866": "Depressive Disorder"
+  },
+  "tree_numbers": [
+   "F03.600.300.375"
+  ]
+ },
+ "D003866": {
+  "parents": {
+   "D019964": "Mood Disorders"
+  },
+  "tree_numbers": [
+   "F03.600.300"
+  ]
+ },
+ "D003907": {
+  "parents": {
+   "D011246": "Pregnadienetriols",
+   "D013259": "Steroids, Fluorinated"
+  },
+  "tree_numbers": [
+   "D04.210.500.908.238",
+   "D04.210.500.745.432.769.344"
+  ]
+ },
+ "D003920": {
+  "parents": {
+   "D004700": "Endocrine System Diseases",
+   "D044882": "Glucose Metabolism Disorders"
+  },
+  "tree_numbers": [
+   "C18.452.394.750",
+   "C19.246"
+  ]
+ },
+ "D003924": {
+  "parents": {
+   "D003920": "Diabetes Mellitus"
+  },
+  "tree_numbers": [
+   "C18.452.394.750.149",
+   "C19.246.300"
+  ]
+ },
+ "D003933": {
+  "parents": {},
+  "tree_numbers": [
+   "E01"
+  ]
+ },
+ "D003935": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.370"
+  ]
+ },
+ "D003936": {
+  "parents": {
+   "D003658": "Decision Making, Computer-Assisted",
+   "D003933": "Diagnosis"
+  },
+  "tree_numbers": [
+   "E01.158",
+   "L01.313.500.750.100.158"
+  ]
+ },
+ "D003944": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.378"
+  ]
+ },
+ "D003948": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.386"
+  ]
+ },
+ "D003949": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.388"
+  ]
+ },
+ "D003952": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.350"
+  ]
+ },
+ "D003972": {
+  "parents": {
+   "D006979": "Hyperthermia, Induced"
+  },
+  "tree_numbers": [
+   "E02.565.280"
+  ]
+ },
+ "D004032": {
+  "parents": {
+   "D009747": "Nutritional Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.203.650.240"
+  ]
+ },
+ "D004035": {
+  "parents": {
+   "D044623": "Nutrition Therapy"
+  },
+  "tree_numbers": [
+   "E02.642.249"
+  ]
+ },
+ "D004038": {
+  "parents": {
+   "D004032": "Diet",
+   "D004035": "Diet Therapy"
+  },
+  "tree_numbers": [
+   "G07.203.650.240.285",
+   "E02.642.249.285"
+  ]
+ },
+ "D004040": {
+  "parents": {
+   "D002241": "Carbohydrates",
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.362",
+   "J02.500.362",
+   "D09.301"
+  ]
+ },
+ "D004041": {
+  "parents": {
+   "D005223": "Fats",
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.375",
+   "J02.500.375",
+   "D10.212.302"
+  ]
+ },
+ "D004042": {
+  "parents": {
+   "D004041": "Dietary Fats"
+  },
+  "tree_numbers": [
+   "D10.212.302.380",
+   "G07.203.300.375.400",
+   "J02.500.375.400"
+  ]
+ },
+ "D004043": {
+  "parents": {
+   "D004040": "Dietary Carbohydrates",
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.400",
+   "J02.500.400",
+   "D09.301.416"
+  ]
+ },
+ "D004044": {
+  "parents": {
+   "D005502": "Food",
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.256",
+   "G07.203.300.428",
+   "J02.500.428"
+  ]
+ },
+ "D004066": {
+  "parents": {},
+  "tree_numbers": [
+   "C06"
+  ]
+ },
+ "D004095": {
+  "parents": {
+   "D011725": "Pyridines"
+  },
+  "tree_numbers": [
+   "D03.383.725.203"
+  ]
+ },
+ "D004110": {
+  "parents": {
+   "D001552": "Benzazepines"
+  },
+  "tree_numbers": [
+   "D03.633.100.079.150"
+  ]
+ },
+ "D004151": {
+  "parents": {
+   "D009842": "Oligopeptides"
+  },
+  "tree_numbers": [
+   "D12.644.456.345"
+  ]
+ },
+ "D004164": {
+  "parents": {
+   "D063065": "Organophosphonates"
+  },
+  "tree_numbers": [
+   "D02.705.429.500"
+  ]
+ },
+ "D004185": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.400"
+  ]
+ },
+ "D004191": {
+  "parents": {},
+  "tree_numbers": [
+   "F04"
+  ]
+ },
+ "D004280": {
+  "parents": {
+   "D002395": "Catecholamines",
+   "D010627": "Phenethylamines"
+  },
+  "tree_numbers": [
+   "D02.092.471.683.410",
+   "D02.092.311.220",
+   "D02.455.426.559.389.657.166.175.220"
+  ]
+ },
+ "D004292": {
+  "parents": {
+   "D009424": "Nervous System Physiological Phenomena",
+   "D011603": "Psychophysiology"
+  },
+  "tree_numbers": [
+   "G11.561.225",
+   "F02.830.297"
+  ]
+ },
+ "D004295": {
+  "parents": {
+   "D002395": "Catecholamines",
+   "D010649": "Phenylalanine",
+   "D014443": "Tyrosine"
+  },
+  "tree_numbers": [
+   "D12.125.072.050.875.130",
+   "D02.092.311.200",
+   "D02.455.426.559.389.657.166.175.200",
+   "D12.125.072.050.685.400"
+  ]
+ },
+ "D004304": {
+  "parents": {
+   "D004364": "Pharmaceutical Preparations",
+   "D013678": "Technology, Pharmaceutical"
+  },
+  "tree_numbers": [
+   "E05.916.250",
+   "D26.255"
+  ]
+ },
+ "D004329": {
+  "parents": {
+   "D001562": "Benzimidazoles",
+   "D002090": "Butyrophenones"
+  },
+  "tree_numbers": [
+   "D03.633.100.103.393",
+   "D02.522.352.343"
+  ]
+ },
+ "D004351": {
+  "parents": {
+   "D000069437": "Pharmacological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.690.773.984"
+  ]
+ },
+ "D004358": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.319"
+  ]
+ },
+ "D004359": {
+  "parents": {
+   "D004358": "Drug Therapy"
+  },
+  "tree_numbers": [
+   "E02.319.310"
+  ]
+ },
+ "D004364": {
+  "parents": {},
+  "tree_numbers": [
+   "D26"
+  ]
+ },
+ "D004415": {
+  "parents": {
+   "D012817": "Signs and Symptoms, Digestive"
+  },
+  "tree_numbers": [
+   "C23.888.821.236"
+  ]
+ },
+ "D004420": {
+  "parents": {
+   "D007744": "Obstetric Labor Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703.420.288"
+  ]
+ },
+ "D004423": {
+  "parents": {
+   "D006257": "Head",
+   "D012679": "Sense Organs"
+  },
+  "tree_numbers": [
+   "A01.456.313",
+   "A09.246"
+  ]
+ },
+ "D004432": {
+  "parents": {
+   "D004423": "Ear"
+  },
+  "tree_numbers": [
+   "A09.246.397"
+  ]
+ },
+ "D004573": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.248"
+  ]
+ },
+ "D004602": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.268"
+  ]
+ },
+ "D004622": {
+  "parents": {
+   "D004628": "Embryonic Structures"
+  },
+  "tree_numbers": [
+   "A16.254"
+  ]
+ },
+ "D004624": {
+  "parents": {
+   "D027724": "Reproductive Techniques, Assisted"
+  },
+  "tree_numbers": [
+   "E02.875.800.500",
+   "E05.820.800.500"
+  ]
+ },
+ "D004628": {
+  "parents": {},
+  "tree_numbers": [
+   "A16"
+  ]
+ },
+ "D004644": {
+  "parents": {
+   "D001520": "Behavior and Behavior Mechanisms"
+  },
+  "tree_numbers": [
+   "F01.470"
+  ]
+ },
+ "D004656": {
+  "parents": {
+   "D004151": "Dipeptides"
+  },
+  "tree_numbers": [
+   "D12.644.456.345.360"
+  ]
+ },
+ "D004700": {
+  "parents": {},
+  "tree_numbers": [
+   "C19"
+  ]
+ },
+ "D004702": {
+  "parents": {
+   "D004703": "Endocrine System"
+  },
+  "tree_numbers": [
+   "A06.300"
+  ]
+ },
+ "D004703": {
+  "parents": {},
+  "tree_numbers": [
+   "A06"
+  ]
+ },
+ "D004717": {
+  "parents": {
+   "D014599": "Uterus"
+  },
+  "tree_numbers": [
+   "A05.360.319.679.490"
+  ]
+ },
+ "D004724": {
+  "parents": {
+   "D003949": "Diagnostic Techniques, Surgical",
+   "D019060": "Minimally Invasive Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.502.250",
+   "E01.370.388.250"
+  ]
+ },
+ "D004777": {
+  "parents": {
+   "D004778": "Environment and Public Health",
+   "D055669": "Ecological and Environmental Phenomena"
+  },
+  "tree_numbers": [
+   "G16.500.275",
+   "N06.230"
+  ]
+ },
+ "D004778": {
+  "parents": {},
+  "tree_numbers": [
+   "N06"
+  ]
+ },
+ "D004791": {
+  "parents": {
+   "D045504": "Molecular Mechanisms of Pharmacological Action"
+  },
+  "tree_numbers": [
+   "D27.505.519.389"
+  ]
+ },
+ "D004792": {
+  "parents": {
+   "D011498": "Protein Precursors",
+   "D045762": "Enzymes and Coenzymes"
+  },
+  "tree_numbers": [
+   "D12.776.811.243",
+   "D08.622"
+  ]
+ },
+ "D004812": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D011634": "Public Health"
+  },
+  "tree_numbers": [
+   "E05.318",
+   "N06.850.520"
+  ]
+ },
+ "D004864": {
+  "parents": {},
+  "tree_numbers": [
+   "E07"
+  ]
+ },
+ "D004868": {
+  "parents": {
+   "D008919": "Investigative Techniques"
+  },
+  "tree_numbers": [
+   "E05.325"
+  ]
+ },
+ "D004958": {
+  "parents": {
+   "D004963": "Estrenes",
+   "D045166": "Estradiol Congeners"
+  },
+  "tree_numbers": [
+   "D04.210.500.365.415.248",
+   "D06.472.334.851.437.500"
+  ]
+ },
+ "D004962": {
+  "parents": {
+   "D013256": "Steroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.365"
+  ]
+ },
+ "D004963": {
+  "parents": {
+   "D004962": "Estranes"
+  },
+  "tree_numbers": [
+   "D04.210.500.365.415"
+  ]
+ },
+ "D004967": {
+  "parents": {
+   "D006728": "Hormones"
+  },
+  "tree_numbers": [
+   "D27.505.696.399.472.277"
+  ]
+ },
+ "D004968": {
+  "parents": {
+   "D004967": "Estrogens"
+  },
+  "tree_numbers": [
+   "D27.505.696.399.472.277.540"
+  ]
+ },
+ "D004979": {
+  "parents": {
+   "D001557": "Benzenesulfonates"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.097.250",
+   "D02.886.645.600.080.050.100.300"
+  ]
+ },
+ "D004987": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.355"
+  ]
+ },
+ "D004997": {
+  "parents": {
+   "D009651": "Norpregnatrienes",
+   "D042782": "Estrogenic Steroids, Alkylated"
+  },
+  "tree_numbers": [
+   "D06.472.334.851.437.968.500",
+   "D04.210.500.668.651.568.291"
+  ]
+ },
+ "D005021": {
+  "parents": {
+   "D000588": "Amines"
+  },
+  "tree_numbers": [
+   "D02.092.471"
+  ]
+ },
+ "D005080": {
+  "parents": {
+   "D006334": "Heart Function Tests",
+   "D012129": "Respiratory Function Tests",
+   "D016552": "Ergometry"
+  },
+  "tree_numbers": [
+   "E01.370.370.380.250",
+   "E01.370.386.700.250",
+   "E05.333.250"
+  ]
+ },
+ "D005081": {
+  "parents": {
+   "D012046": "Rehabilitation",
+   "D026741": "Physical Therapy Modalities"
+  },
+  "tree_numbers": [
+   "E02.760.169.063.500.387",
+   "E02.779.483",
+   "E02.831.535.483"
+  ]
+ },
+ "D005094": {
+  "parents": {
+   "D009916": "Orbital Diseases"
+  },
+  "tree_numbers": [
+   "C11.675.349"
+  ]
+ },
+ "D005110": {
+  "parents": {
+   "D001825": "Body Fluid Compartments",
+   "D022082": "Cellular Structures"
+  },
+  "tree_numbers": [
+   "A10.082.500",
+   "A11.284.295"
+  ]
+ },
+ "D005112": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.292"
+  ]
+ },
+ "D005121": {
+  "parents": {
+   "D001829": "Body Regions"
+  },
+  "tree_numbers": [
+   "A01.378"
+  ]
+ },
+ "D005128": {
+  "parents": {},
+  "tree_numbers": [
+   "C11"
+  ]
+ },
+ "D005154": {
+  "parents": {
+   "D003391": "Cranial Nerves",
+   "D010275": "Parasympathetic Nervous System",
+   "D017776": "Autonomic Pathways"
+  },
+  "tree_numbers": [
+   "A08.800.800.120.250",
+   "A08.800.050.050.275",
+   "A08.800.800.060.275",
+   "A08.800.050.600.149"
+  ]
+ },
+ "D005159": {
+  "parents": {},
+  "tree_numbers": [
+   "N02"
+  ]
+ },
+ "D005223": {
+  "parents": {
+   "D008055": "Lipids"
+  },
+  "tree_numbers": [
+   "D10.212"
+  ]
+ },
+ "D005224": {
+  "parents": {
+   "D005223": "Fats"
+  },
+  "tree_numbers": [
+   "D10.212.507"
+  ]
+ },
+ "D005227": {
+  "parents": {
+   "D008055": "Lipids"
+  },
+  "tree_numbers": [
+   "D10.251"
+  ]
+ },
+ "D005231": {
+  "parents": {
+   "D005227": "Fatty Acids"
+  },
+  "tree_numbers": [
+   "D10.251.355"
+  ]
+ },
+ "D005232": {
+  "parents": {
+   "D005227": "Fatty Acids"
+  },
+  "tree_numbers": [
+   "D10.251.400"
+  ]
+ },
+ "D005261": {
+  "parents": {
+   "D000091642": "Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.050"
+  ]
+ },
+ "D005283": {
+  "parents": {
+   "D010880": "Piperidines"
+  },
+  "tree_numbers": [
+   "D03.383.621.265"
+  ]
+ },
+ "D005290": {
+  "parents": {
+   "D058085": "Iron Compounds"
+  },
+  "tree_numbers": [
+   "D01.490.100"
+  ]
+ },
+ "D005292": {
+  "parents": {
+   "D003486": "Cyanides",
+   "D005290": "Ferric Compounds"
+  },
+  "tree_numbers": [
+   "D01.490.100.300",
+   "D01.248.497.158.291.350",
+   "D01.625.400.100.325"
+  ]
+ },
+ "D005296": {
+  "parents": {
+   "D058085": "Iron Compounds"
+  },
+  "tree_numbers": [
+   "D01.490.200"
+  ]
+ },
+ "D005299": {
+  "parents": {
+   "D012102": "Reproductive Control Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.875.552",
+   "D27.505.954.705.552"
+  ]
+ },
+ "D005300": {
+  "parents": {
+   "D005299": "Fertility Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.875.552.344",
+   "D27.505.954.705.552.344"
+  ]
+ },
+ "D005307": {
+  "parents": {
+   "D027724": "Reproductive Techniques, Assisted"
+  },
+  "tree_numbers": [
+   "E02.875.800.750",
+   "E05.820.800.750"
+  ]
+ },
+ "D005314": {
+  "parents": {
+   "D009024": "Morphogenesis",
+   "D012098": "Reproduction"
+  },
+  "tree_numbers": [
+   "G08.686.784.170",
+   "G07.345.500.325"
+  ]
+ },
+ "D005315": {
+  "parents": {
+   "D009358": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities",
+   "D011248": "Pregnancy Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703.277",
+   "C16.300"
+  ]
+ },
+ "D005317": {
+  "parents": {
+   "D005315": "Fetal Diseases",
+   "D006130": "Growth Disorders"
+  },
+  "tree_numbers": [
+   "C16.300.390",
+   "C12.050.703.277.370",
+   "C23.550.393.450"
+  ]
+ },
+ "D005342": {
+  "parents": {
+   "D001777": "Blood Coagulation"
+  },
+  "tree_numbers": [
+   "G09.188.390.150.390"
+  ]
+ },
+ "D005343": {
+  "parents": {
+   "D002317": "Cardiovascular Agents",
+   "D006401": "Hematologic Agents",
+   "D050299": "Fibrin Modulating Agents"
+  },
+  "tree_numbers": [
+   "D27.505.519.421.750",
+   "D27.505.954.411.320",
+   "D27.505.954.502.427"
+  ]
+ },
+ "D005356": {
+  "parents": {
+   "D009135": "Muscular Diseases",
+   "D012216": "Rheumatic Diseases"
+  },
+  "tree_numbers": [
+   "C05.799.321",
+   "C05.651.324",
+   "C10.668.491.425"
+  ]
+ },
+ "D005395": {
+  "parents": {
+   "D009821": "Oils"
+  },
+  "tree_numbers": [
+   "D10.627.430"
+  ]
+ },
+ "D005441": {
+  "parents": {},
+  "tree_numbers": [
+   "A12"
+  ]
+ },
+ "D005502": {
+  "parents": {
+   "D000066888": "Diet, Food, and Nutrition",
+   "D019602": "Food and Beverages"
+  },
+  "tree_numbers": [
+   "G07.203.300",
+   "J02.500"
+  ]
+ },
+ "D005547": {
+  "parents": {
+   "D014947": "Wounds and Injuries"
+  },
+  "tree_numbers": [
+   "C26.392"
+  ]
+ },
+ "D005548": {
+  "parents": {
+   "D005547": "Foreign Bodies"
+  },
+  "tree_numbers": [
+   "C26.392.500"
+  ]
+ },
+ "D005609": {
+  "parents": {
+   "D007287": "Inorganic Chemicals",
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.389",
+   "D01.339"
+  ]
+ },
+ "D005638": {
+  "parents": {
+   "D005502": "Food",
+   "D035261": "Plant Components, Aerial"
+  },
+  "tree_numbers": [
+   "G07.203.300.562",
+   "J02.500.562",
+   "A18.024.500"
+  ]
+ },
+ "D005640": {
+  "parents": {
+   "D006065": "Gonadotropins, Pituitary"
+  },
+  "tree_numbers": [
+   "D06.472.699.322.576.288",
+   "D06.472.699.631.525.343.288",
+   "D12.644.548.691.525.343.288"
+  ]
+ },
+ "D005705": {
+  "parents": {
+   "D001660": "Biliary Tract Diseases"
+  },
+  "tree_numbers": [
+   "C06.130.564"
+  ]
+ },
+ "D005720": {
+  "parents": {
+   "D011839": "Radiation, Ionizing",
+   "D060733": "Electromagnetic Radiation"
+  },
+  "tree_numbers": [
+   "G01.750.750.400",
+   "G01.358.500.505.300",
+   "G01.750.250.300"
+  ]
+ },
+ "D005740": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.362"
+  ]
+ },
+ "D005763": {
+  "parents": {
+   "D000714": "Anastomosis, Surgical",
+   "D013505": "Digestive System Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.035.398",
+   "E04.210.457"
+  ]
+ },
+ "D005765": {
+  "parents": {
+   "D045506": "Therapeutic Uses"
+  },
+  "tree_numbers": [
+   "D27.505.954.483"
+  ]
+ },
+ "D005782": {
+  "parents": {
+   "D003102": "Colloids"
+  },
+  "tree_numbers": [
+   "D20.280.320",
+   "D26.255.165.320"
+  ]
+ },
+ "D005791": {
+  "parents": {
+   "D006296": "Health Services",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.760",
+   "N02.421.585"
+  ]
+ },
+ "D005831": {
+  "parents": {
+   "D000091662": "Genital Diseases",
+   "D052776": "Female Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.100.250",
+   "C12.050.351.500"
+  ]
+ },
+ "D005832": {
+  "parents": {
+   "D000091662": "Genital Diseases",
+   "D052801": "Male Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.100.500",
+   "C12.200.294"
+  ]
+ },
+ "D005833": {
+  "parents": {
+   "D005831": "Genital Diseases, Female",
+   "D014565": "Urogenital Neoplasms"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.242",
+   "C12.100.250.242",
+   "C04.588.945.418",
+   "C12.050.351.937.418",
+   "C12.900.418"
+  ]
+ },
+ "D005835": {
+  "parents": {
+   "D014566": "Urogenital System"
+  },
+  "tree_numbers": [
+   "A05.360"
+  ]
+ },
+ "D005836": {
+  "parents": {
+   "D005835": "Genitalia"
+  },
+  "tree_numbers": [
+   "A05.360.319"
+  ]
+ },
+ "D005837": {
+  "parents": {
+   "D005835": "Genitalia"
+  },
+  "tree_numbers": [
+   "A05.360.444"
+  ]
+ },
+ "D005854": {
+  "parents": {
+   "D002477": "Cells",
+   "D005835": "Genitalia"
+  },
+  "tree_numbers": [
+   "A11.497",
+   "A05.360.490"
+  ]
+ },
+ "D005865": {
+  "parents": {
+   "D047109": "Fetal Development",
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.320",
+   "G07.345.500.325.235.968"
+  ]
+ },
+ "D005916": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.377"
+  ]
+ },
+ "D005936": {
+  "parents": {
+   "D001704": "Biopolymers",
+   "D011134": "Polysaccharides"
+  },
+  "tree_numbers": [
+   "D09.698.365",
+   "D05.750.078.562"
+  ]
+ },
+ "D005938": {
+  "parents": {
+   "D000305": "Adrenal Cortex Hormones",
+   "D006728": "Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.040.543",
+   "D27.505.696.399.472.488"
+  ]
+ },
+ "D005998": {
+  "parents": {
+   "D000596": "Amino Acids"
+  },
+  "tree_numbers": [
+   "D12.125.481"
+  ]
+ },
+ "D006001": {
+  "parents": {
+   "D002241": "Carbohydrates"
+  },
+  "tree_numbers": [
+   "D09.400"
+  ]
+ },
+ "D006023": {
+  "parents": {
+   "D006001": "Glycoconjugates",
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.395",
+   "D09.400.430"
+  ]
+ },
+ "D006042": {
+  "parents": {
+   "D013959": "Thyroid Diseases"
+  },
+  "tree_numbers": [
+   "C19.874.283"
+  ]
+ },
+ "D006058": {
+  "parents": {
+   "D004700": "Endocrine System Diseases"
+  },
+  "tree_numbers": [
+   "C19.391"
+  ]
+ },
+ "D006062": {
+  "parents": {
+   "D036361": "Peptide Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.322"
+  ]
+ },
+ "D006063": {
+  "parents": {
+   "D006062": "Gonadotropins",
+   "D010926": "Placental Hormones",
+   "D011257": "Pregnancy Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.780.400",
+   "D06.472.699.649.367",
+   "D12.644.548.726.367",
+   "D06.472.699.322.326"
+  ]
+ },
+ "D006065": {
+  "parents": {
+   "D006062": "Gonadotropins",
+   "D010908": "Pituitary Hormones, Anterior"
+  },
+  "tree_numbers": [
+   "D06.472.699.631.525.343",
+   "D12.644.548.691.525.343",
+   "D06.472.699.322.576"
+  ]
+ },
+ "D006066": {
+  "parents": {
+   "D004702": "Endocrine Glands",
+   "D005835": "Genitalia"
+  },
+  "tree_numbers": [
+   "A06.300.312",
+   "A05.360.576"
+  ]
+ },
+ "D006111": {
+  "parents": {
+   "D001327": "Autoimmune Diseases",
+   "D005094": "Exophthalmos",
+   "D006042": "Goiter",
+   "D006980": "Hyperthyroidism"
+  },
+  "tree_numbers": [
+   "C19.874.283.605",
+   "C11.675.349.500",
+   "C19.874.397.370",
+   "C20.111.555"
+  ]
+ },
+ "D006130": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.393"
+  ]
+ },
+ "D006146": {
+  "parents": {
+   "D000578": "Amidines"
+  },
+  "tree_numbers": [
+   "D02.078.370"
+  ]
+ },
+ "D006201": {
+  "parents": {
+   "D012871": "Skin Diseases"
+  },
+  "tree_numbers": [
+   "C17.800.329"
+  ]
+ },
+ "D006233": {
+  "parents": {
+   "D009272": "Persons"
+  },
+  "tree_numbers": [
+   "M01.150"
+  ]
+ },
+ "D006235": {
+  "parents": {
+   "D063373": "Hand Hygiene"
+  },
+  "tree_numbers": [
+   "N06.850.670.150.500"
+  ]
+ },
+ "D006257": {
+  "parents": {
+   "D001829": "Body Regions"
+  },
+  "tree_numbers": [
+   "A01.456"
+  ]
+ },
+ "D006258": {
+  "parents": {
+   "D009371": "Neoplasms by Site"
+  },
+  "tree_numbers": [
+   "C04.588.443"
+  ]
+ },
+ "D006259": {
+  "parents": {
+   "D020196": "Trauma, Nervous System"
+  },
+  "tree_numbers": [
+   "C26.915.300",
+   "C10.900.300"
+  ]
+ },
+ "D006262": {
+  "parents": {
+   "D011154": "Population Characteristics"
+  },
+  "tree_numbers": [
+   "N01.400"
+  ]
+ },
+ "D006266": {
+  "parents": {
+   "D011314": "Preventive Health Services",
+   "D011315": "Preventive Medicine"
+  },
+  "tree_numbers": [
+   "H02.403.720.750.380",
+   "N02.421.726.407"
+  ]
+ },
+ "D006281": {
+  "parents": {},
+  "tree_numbers": [
+   "H02"
+  ]
+ },
+ "D006293": {
+  "parents": {
+   "D006266": "Health Education"
+  },
+  "tree_numbers": [
+   "H02.403.720.750.380.579",
+   "N02.421.726.407.579"
+  ]
+ },
+ "D006296": {
+  "parents": {
+   "D005159": "Health Care Facilities Workforce and Services"
+  },
+  "tree_numbers": [
+   "N02.421"
+  ]
+ },
+ "D006298": {
+  "parents": {
+   "D006281": "Health Occupations"
+  },
+  "tree_numbers": [
+   "H02.269",
+   "N04"
+  ]
+ },
+ "D006304": {
+  "parents": {
+   "D003710": "Demography"
+  },
+  "tree_numbers": [
+   "I01.240.425",
+   "N01.224.425",
+   "N06.850.505.400.425"
+  ]
+ },
+ "D006321": {
+  "parents": {
+   "D002319": "Cardiovascular System"
+  },
+  "tree_numbers": [
+   "A07.541"
+  ]
+ },
+ "D006331": {
+  "parents": {
+   "D002318": "Cardiovascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.280"
+  ]
+ },
+ "D006332": {
+  "parents": {
+   "D006331": "Heart Diseases",
+   "D006984": "Hypertrophy"
+  },
+  "tree_numbers": [
+   "C23.300.775.250",
+   "C14.280.195"
+  ]
+ },
+ "D006333": {
+  "parents": {
+   "D006331": "Heart Diseases"
+  },
+  "tree_numbers": [
+   "C14.280.434"
+  ]
+ },
+ "D006334": {
+  "parents": {
+   "D003935": "Diagnostic Techniques, Cardiovascular"
+  },
+  "tree_numbers": [
+   "E01.370.370.380"
+  ]
+ },
+ "D006339": {
+  "parents": {
+   "D006439": "Hemodynamics",
+   "D055986": "Vital Signs"
+  },
+  "tree_numbers": [
+   "G09.330.380.500",
+   "E01.370.600.875.500"
+  ]
+ },
+ "D006348": {
+  "parents": {
+   "D013504": "Cardiovascular Surgical Procedures",
+   "D019616": "Thoracic Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.100.376",
+   "E04.928.220"
+  ]
+ },
+ "D006397": {
+  "parents": {
+   "D006401": "Hematologic Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.502.543"
+  ]
+ },
+ "D006401": {
+  "parents": {
+   "D045506": "Therapeutic Uses"
+  },
+  "tree_numbers": [
+   "D27.505.954.502"
+  ]
+ },
+ "D006402": {
+  "parents": {
+   "D006425": "Hemic and Lymphatic Diseases"
+  },
+  "tree_numbers": [
+   "C15.378"
+  ]
+ },
+ "D006424": {
+  "parents": {},
+  "tree_numbers": [
+   "A15"
+  ]
+ },
+ "D006425": {
+  "parents": {},
+  "tree_numbers": [
+   "C15"
+  ]
+ },
+ "D006439": {
+  "parents": {
+   "D002320": "Cardiovascular Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G09.330.380"
+  ]
+ },
+ "D006470": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.414"
+  ]
+ },
+ "D006473": {
+  "parents": {
+   "D007744": "Obstetric Labor Complications",
+   "D011644": "Puerperal Disorders",
+   "D014592": "Uterine Hemorrhage"
+  },
+  "tree_numbers": [
+   "C12.050.703.420.725",
+   "C12.050.703.844.700",
+   "C23.550.414.993.850"
+  ]
+ },
+ "D006487": {
+  "parents": {
+   "D001790": "Blood Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G09.188.390"
+  ]
+ },
+ "D006498": {
+  "parents": {
+   "D013505": "Digestive System Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.210.556"
+  ]
+ },
+ "D006571": {
+  "parents": {},
+  "tree_numbers": [
+   "D03"
+  ]
+ },
+ "D006572": {
+  "parents": {
+   "D006571": "Heterocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D03.605"
+  ]
+ },
+ "D006573": {
+  "parents": {
+   "D006571": "Heterocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D03.383"
+  ]
+ },
+ "D006574": {
+  "parents": {
+   "D000072471": "Heterocyclic Compounds, Fused-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100"
+  ]
+ },
+ "D006576": {
+  "parents": {
+   "D000072471": "Heterocyclic Compounds, Fused-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.400"
+  ]
+ },
+ "D006628": {
+  "parents": {
+   "D006201": "Hair Diseases",
+   "D014770": "Virilism"
+  },
+  "tree_numbers": [
+   "C17.800.329.750",
+   "C23.888.971.468"
+  ]
+ },
+ "D006722": {
+  "parents": {
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.581",
+   "J02.500.581"
+  ]
+ },
+ "D006728": {
+  "parents": {
+   "D006730": "Hormones, Hormone Substitutes, and Hormone Antagonists"
+  },
+  "tree_numbers": [
+   "D06.472",
+   "D27.505.696.399.472"
+  ]
+ },
+ "D006730": {
+  "parents": {
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.399",
+   "D06"
+  ]
+ },
+ "D006792": {
+  "parents": {
+   "D011364": "Professional Practice"
+  },
+  "tree_numbers": [
+   "N04.452.758.307"
+  ]
+ },
+ "D006802": {
+  "parents": {},
+  "tree_numbers": [
+   "I03"
+  ]
+ },
+ "D006809": {
+  "parents": {},
+  "tree_numbers": [
+   "K01"
+  ]
+ },
+ "D006838": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.455"
+  ]
+ },
+ "D006840": {
+  "parents": {
+   "D006844": "Hydrocarbons, Cyclic"
+  },
+  "tree_numbers": [
+   "D02.455.426.392"
+  ]
+ },
+ "D006841": {
+  "parents": {
+   "D006844": "Hydrocarbons, Cyclic"
+  },
+  "tree_numbers": [
+   "D02.455.426.559"
+  ]
+ },
+ "D006844": {
+  "parents": {
+   "D006838": "Hydrocarbons"
+  },
+  "tree_numbers": [
+   "D02.455.426"
+  ]
+ },
+ "D006856": {
+  "parents": {
+   "D000148": "Acids, Noncarboxylic",
+   "D017672": "Nitrogen Compounds"
+  },
+  "tree_numbers": [
+   "D01.625.400",
+   "D01.029.260.330"
+  ]
+ },
+ "D006880": {
+  "parents": {
+   "D002264": "Carboxylic Acids"
+  },
+  "tree_numbers": [
+   "D02.241.511"
+  ]
+ },
+ "D006895": {
+  "parents": {
+   "D013213": "Starch"
+  },
+  "tree_numbers": [
+   "D09.301.915.500",
+   "D09.698.365.855.500"
+  ]
+ },
+ "D006920": {
+  "parents": {
+   "D011634": "Public Health",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "N06.850.670",
+   "E02.547"
+  ]
+ },
+ "D006931": {
+  "parents": {
+   "D010102": "Oxygen Inhalation Therapy"
+  },
+  "tree_numbers": [
+   "E02.880.690.490"
+  ]
+ },
+ "D006946": {
+  "parents": {
+   "D044882": "Glucose Metabolism Disorders"
+  },
+  "tree_numbers": [
+   "C18.452.394.968"
+  ]
+ },
+ "D006973": {
+  "parents": {
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.907.489"
+  ]
+ },
+ "D006979": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.565"
+  ]
+ },
+ "D006980": {
+  "parents": {
+   "D013959": "Thyroid Diseases"
+  },
+  "tree_numbers": [
+   "C19.874.397"
+  ]
+ },
+ "D006984": {
+  "parents": {
+   "D020763": "Pathological Conditions, Anatomical"
+  },
+  "tree_numbers": [
+   "C23.300.775"
+  ]
+ },
+ "D007004": {
+  "parents": {
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.422"
+  ]
+ },
+ "D007023": {
+  "parents": {
+   "D000760": "Anesthesia and Analgesia"
+  },
+  "tree_numbers": [
+   "E03.545"
+  ]
+ },
+ "D007028": {
+  "parents": {
+   "D009479": "Neuropeptides",
+   "D036361": "Peptide Hormones"
+  },
+  "tree_numbers": [
+   "D12.644.400.400",
+   "D12.776.631.650.405",
+   "D06.472.699.327",
+   "D12.644.548.365"
+  ]
+ },
+ "D007044": {
+  "parents": {
+   "D013509": "Gynecologic Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.950.300.399"
+  ]
+ },
+ "D007089": {
+  "parents": {
+   "D007091": "Image Processing, Computer-Assisted",
+   "D010781": "Photography"
+  },
+  "tree_numbers": [
+   "L01.224.308.380",
+   "E01.370.350.600.350"
+  ]
+ },
+ "D007090": {
+  "parents": {
+   "D003936": "Diagnosis, Computer-Assisted",
+   "D003952": "Diagnostic Imaging"
+  },
+  "tree_numbers": [
+   "E01.158.600",
+   "L01.313.500.750.100.158.600",
+   "E01.370.350.350"
+  ]
+ },
+ "D007091": {
+  "parents": {
+   "D003205": "Computing Methodologies"
+  },
+  "tree_numbers": [
+   "L01.224.308"
+  ]
+ },
+ "D007093": {
+  "parents": {
+   "D001393": "Azoles"
+  },
+  "tree_numbers": [
+   "D03.383.129.308"
+  ]
+ },
+ "D007136": {
+  "parents": {
+   "D007162": "Immunoproteins",
+   "D012712": "Serum Globulins"
+  },
+  "tree_numbers": [
+   "D12.776.124.486.485",
+   "D12.776.124.790.651",
+   "D12.776.377.715.548"
+  ]
+ },
+ "D007154": {
+  "parents": {},
+  "tree_numbers": [
+   "C20"
+  ]
+ },
+ "D007160": {
+  "parents": {
+   "D007154": "Immune System Diseases"
+  },
+  "tree_numbers": [
+   "C20.683"
+  ]
+ },
+ "D007162": {
+  "parents": {
+   "D001798": "Blood Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.124.486"
+  ]
+ },
+ "D007172": {
+  "parents": {
+   "D005832": "Genital Diseases, Male",
+   "D012735": "Sexual Dysfunction, Physiological",
+   "D020018": "Sexual Dysfunctions, Psychological"
+  },
+  "tree_numbers": [
+   "F03.835.400",
+   "C12.100.875.486",
+   "C12.100.500.214",
+   "C12.200.294.214"
+  ]
+ },
+ "D007191": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring",
+   "D011720": "Pyrazoles"
+  },
+  "tree_numbers": [
+   "D03.633.100.449",
+   "D03.383.129.539.487"
+  ]
+ },
+ "D007211": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100.473"
+  ]
+ },
+ "D007232": {
+  "parents": {
+   "D009358": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+  },
+  "tree_numbers": [
+   "C16.614"
+  ]
+ },
+ "D007235": {
+  "parents": {
+   "D007232": "Infant, Newborn, Diseases"
+  },
+  "tree_numbers": [
+   "C16.614.521"
+  ]
+ },
+ "D007239": {
+  "parents": {},
+  "tree_numbers": [
+   "C01"
+  ]
+ },
+ "D007246": {
+  "parents": {
+   "D000091662": "Genital Diseases"
+  },
+  "tree_numbers": [
+   "C12.100.750"
+  ]
+ },
+ "D007247": {
+  "parents": {
+   "D005831": "Genital Diseases, Female",
+   "D007246": "Infertility"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.498",
+   "C12.100.250.498",
+   "C12.100.750.350"
+  ]
+ },
+ "D007248": {
+  "parents": {
+   "D005832": "Genital Diseases, Male",
+   "D007246": "Infertility"
+  },
+  "tree_numbers": [
+   "C12.100.750.700",
+   "C12.100.500.430",
+   "C12.200.294.430"
+  ]
+ },
+ "D007249": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.470"
+  ]
+ },
+ "D007251": {
+  "parents": {
+   "D009976": "Orthomyxoviridae Infections",
+   "D012141": "Respiratory Tract Infections"
+  },
+  "tree_numbers": [
+   "C01.925.782.620.365",
+   "C01.748.310",
+   "C08.730.310"
+  ]
+ },
+ "D007252": {
+  "parents": {
+   "D014765": "Viral Vaccines"
+  },
+  "tree_numbers": [
+   "D20.215.894.899.302"
+  ]
+ },
+ "D007254": {
+  "parents": {},
+  "tree_numbers": [
+   "L01"
+  ]
+ },
+ "D007287": {
+  "parents": {},
+  "tree_numbers": [
+   "D01"
+  ]
+ },
+ "D007294": {
+  "parents": {
+   "D013402": "Sugar Alcohols"
+  },
+  "tree_numbers": [
+   "D02.033.800.519",
+   "D09.853.519"
+  ]
+ },
+ "D007314": {
+  "parents": {
+   "D012098": "Reproduction"
+  },
+  "tree_numbers": [
+   "G08.686.784.363"
+  ]
+ },
+ "D007315": {
+  "parents": {
+   "D007314": "Insemination",
+   "D027724": "Reproductive Techniques, Assisted"
+  },
+  "tree_numbers": [
+   "E02.875.800.937",
+   "E05.820.800.937",
+   "G08.686.784.363.492"
+  ]
+ },
+ "D007317": {
+  "parents": {
+   "D007315": "Insemination, Artificial"
+  },
+  "tree_numbers": [
+   "E02.875.800.937.525",
+   "E05.820.800.937.525",
+   "G08.686.784.363.492.750"
+  ]
+ },
+ "D007333": {
+  "parents": {
+   "D004351": "Drug Resistance",
+   "D006946": "Hyperinsulinism"
+  },
+  "tree_numbers": [
+   "G07.690.773.984.617",
+   "C18.452.394.968.500"
+  ]
+ },
+ "D007431": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.505"
+  ]
+ },
+ "D007433": {
+  "parents": {
+   "D058736": "Intrauterine Device Migration"
+  },
+  "tree_numbers": [
+   "E05.325.578.500"
+  ]
+ },
+ "D007434": {
+  "parents": {
+   "D003274": "Contraceptive Devices, Female"
+  },
+  "tree_numbers": [
+   "E07.190.250.510"
+  ]
+ },
+ "D007435": {
+  "parents": {
+   "D007436": "Intrauterine Devices, Medicated"
+  },
+  "tree_numbers": [
+   "E07.190.250.510.520.300"
+  ]
+ },
+ "D007436": {
+  "parents": {
+   "D007434": "Intrauterine Devices"
+  },
+  "tree_numbers": [
+   "E07.190.250.510.520"
+  ]
+ },
+ "D007440": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E05.497",
+   "E02.585"
+  ]
+ },
+ "D007442": {
+  "parents": {
+   "D007440": "Intubation",
+   "D058109": "Airway Management"
+  },
+  "tree_numbers": [
+   "E02.585.578",
+   "E05.497.578",
+   "E02.041.500"
+  ]
+ },
+ "D007477": {
+  "parents": {
+   "D004573": "Electrolytes"
+  },
+  "tree_numbers": [
+   "D01.248.497"
+  ]
+ },
+ "D007546": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100.531"
+  ]
+ },
+ "D007556": {
+  "parents": {
+   "D010627": "Phenethylamines",
+   "D011412": "Propanolamines"
+  },
+  "tree_numbers": [
+   "D02.092.471.683.560",
+   "D02.033.100.624.427",
+   "D02.033.755.624.427"
+  ]
+ },
+ "D007570": {
+  "parents": {
+   "D001845": "Bone Cysts",
+   "D007571": "Jaw Diseases"
+  },
+  "tree_numbers": [
+   "C04.182.089.530",
+   "C05.500.470",
+   "C07.320.450"
+  ]
+ },
+ "D007571": {
+  "parents": {
+   "D009057": "Stomatognathic Diseases",
+   "D009140": "Musculoskeletal Diseases"
+  },
+  "tree_numbers": [
+   "C05.500",
+   "C07.320"
+  ]
+ },
+ "D007592": {
+  "parents": {
+   "D009140": "Musculoskeletal Diseases"
+  },
+  "tree_numbers": [
+   "C05.550"
+  ]
+ },
+ "D007596": {
+  "parents": {
+   "D012863": "Skeleton"
+  },
+  "tree_numbers": [
+   "A02.835.583"
+  ]
+ },
+ "D007611": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.083"
+  ]
+ },
+ "D007649": {
+  "parents": {
+   "D003510": "Cyclohexanes"
+  },
+  "tree_numbers": [
+   "D02.455.426.392.368.367.652"
+  ]
+ },
+ "D007659": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.522"
+  ]
+ },
+ "D007674": {
+  "parents": {
+   "D014570": "Urologic Diseases"
+  },
+  "tree_numbers": [
+   "C12.050.351.968.419",
+   "C12.200.777.419",
+   "C12.950.419"
+  ]
+ },
+ "D007743": {
+  "parents": {
+   "D011247": "Pregnancy"
+  },
+  "tree_numbers": [
+   "G08.686.784.769.326"
+  ]
+ },
+ "D007744": {
+  "parents": {
+   "D011248": "Pregnancy Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703.420"
+  ]
+ },
+ "D007745": {
+  "parents": {
+   "D007743": "Labor, Obstetric"
+  },
+  "tree_numbers": [
+   "G08.686.784.769.326.500"
+  ]
+ },
+ "D007748": {
+  "parents": {
+   "D007745": "Labor Onset"
+  },
+  "tree_numbers": [
+   "G08.686.784.769.326.500.090"
+  ]
+ },
+ "D007751": {
+  "parents": {
+   "D036861": "Delivery, Obstetric"
+  },
+  "tree_numbers": [
+   "E04.520.252.968"
+  ]
+ },
+ "D007752": {
+  "parents": {
+   "D007744": "Obstetric Labor Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703.420.491"
+  ]
+ },
+ "D007768": {
+  "parents": {
+   "D000067816": "Whey Proteins",
+   "D000418": "Albumins"
+  },
+  "tree_numbers": [
+   "D12.776.034.398",
+   "D12.776.256.159.750.816.250"
+  ]
+ },
+ "D007839": {
+  "parents": {
+   "D004292": "Dominance, Cerebral"
+  },
+  "tree_numbers": [
+   "F02.830.297.425",
+   "G11.561.225.425"
+  ]
+ },
+ "D007871": {
+  "parents": {
+   "D012883": "Skin Ulcer"
+  },
+  "tree_numbers": [
+   "C17.800.893.592"
+  ]
+ },
+ "D007889": {
+  "parents": {
+   "D009379": "Neoplasms, Muscle Tissue"
+  },
+  "tree_numbers": [
+   "C04.557.450.590.450"
+  ]
+ },
+ "D007899": {
+  "parents": {
+   "D006802": "Human Activities"
+  },
+  "tree_numbers": [
+   "I03.450"
+  ]
+ },
+ "D007980": {
+  "parents": {
+   "D004295": "Dihydroxyphenylalanine"
+  },
+  "tree_numbers": [
+   "D02.092.311.200.480",
+   "D02.455.426.559.389.657.166.175.200.480",
+   "D12.125.072.050.685.400.500",
+   "D12.125.072.050.875.130.500"
+  ]
+ },
+ "D007987": {
+  "parents": {
+   "D009842": "Oligopeptides",
+   "D010906": "Pituitary Hormone-Releasing Hormones"
+  },
+  "tree_numbers": [
+   "D12.644.456.460",
+   "D06.472.699.327.740.320",
+   "D12.644.400.400.740.320",
+   "D12.644.548.365.740.320",
+   "D12.776.631.650.405.740.320"
+  ]
+ },
+ "D008012": {
+  "parents": {
+   "D000083": "Acetanilides"
+  },
+  "tree_numbers": [
+   "D02.065.199.092.500",
+   "D02.092.146.113.092.500"
+  ]
+ },
+ "D008022": {
+  "parents": {
+   "D003238": "Connective Tissue",
+   "D009141": "Musculoskeletal System"
+  },
+  "tree_numbers": [
+   "A02.513",
+   "A10.165.669"
+  ]
+ },
+ "D008023": {
+  "parents": {
+   "D007596": "Joints",
+   "D008022": "Ligaments"
+  },
+  "tree_numbers": [
+   "A02.513.514",
+   "A10.165.669.514",
+   "A02.835.583.512"
+  ]
+ },
+ "D008055": {
+  "parents": {},
+  "tree_numbers": [
+   "D10"
+  ]
+ },
+ "D008168": {
+  "parents": {
+   "D012137": "Respiratory System"
+  },
+  "tree_numbers": [
+   "A04.411"
+  ]
+ },
+ "D008171": {
+  "parents": {
+   "D012140": "Respiratory Tract Diseases"
+  },
+  "tree_numbers": [
+   "C08.381"
+  ]
+ },
+ "D008175": {
+  "parents": {
+   "D008171": "Lung Diseases",
+   "D012142": "Respiratory Tract Neoplasms"
+  },
+  "tree_numbers": [
+   "C08.381.540",
+   "C04.588.894.797.520",
+   "C08.785.520"
+  ]
+ },
+ "D008183": {
+  "parents": {
+   "D008597": "Menstrual Cycle"
+  },
+  "tree_numbers": [
+   "G08.686.605.410"
+  ]
+ },
+ "D008206": {
+  "parents": {
+   "D006425": "Hemic and Lymphatic Diseases"
+  },
+  "tree_numbers": [
+   "C15.604"
+  ]
+ },
+ "D008223": {
+  "parents": {
+   "D008232": "Lymphoproliferative Disorders",
+   "D009370": "Neoplasms by Histologic Type"
+  },
+  "tree_numbers": [
+   "C04.557.386",
+   "C15.604.515.569",
+   "C20.683.515.761"
+  ]
+ },
+ "D008228": {
+  "parents": {
+   "D008223": "Lymphoma"
+  },
+  "tree_numbers": [
+   "C04.557.386.480",
+   "C15.604.515.569.480",
+   "C20.683.515.761.480"
+  ]
+ },
+ "D008232": {
+  "parents": {
+   "D007160": "Immunoproliferative Disorders",
+   "D008206": "Lymphatic Diseases"
+  },
+  "tree_numbers": [
+   "C20.683.515",
+   "C15.604.515"
+  ]
+ },
+ "D008310": {
+  "parents": {
+   "D014076": "Tooth Diseases"
+  },
+  "tree_numbers": [
+   "C07.793.494"
+  ]
+ },
+ "D008315": {
+  "parents": {
+   "D000447": "Aldehydes"
+  },
+  "tree_numbers": [
+   "D02.047.700"
+  ]
+ },
+ "D008336": {
+  "parents": {
+   "D007571": "Jaw Diseases"
+  },
+  "tree_numbers": [
+   "C05.500.607",
+   "C07.320.610"
+  ]
+ },
+ "D008420": {
+  "parents": {
+   "D013676": "Technology, Industry, and Agriculture"
+  },
+  "tree_numbers": [
+   "J01.637"
+  ]
+ },
+ "D008439": {
+  "parents": {
+   "D007571": "Jaw Diseases"
+  },
+  "tree_numbers": [
+   "C05.500.693",
+   "C07.320.660"
+  ]
+ },
+ "D008477": {
+  "parents": {
+   "D013896": "Thoracic Diseases"
+  },
+  "tree_numbers": [
+   "C08.846.187"
+  ]
+ },
+ "D008479": {
+  "parents": {
+   "D008477": "Mediastinal Diseases",
+   "D013899": "Thoracic Neoplasms"
+  },
+  "tree_numbers": [
+   "C08.846.187.580",
+   "C04.588.894.479"
+  ]
+ },
+ "D008487": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.510"
+  ]
+ },
+ "D008490": {
+  "parents": {
+   "D048088": "Informatics"
+  },
+  "tree_numbers": [
+   "L01.313.500"
+  ]
+ },
+ "D008491": {
+  "parents": {
+   "D008490": "Medical Informatics"
+  },
+  "tree_numbers": [
+   "L01.313.500.750"
+  ]
+ },
+ "D008511": {
+  "parents": {
+   "D006281": "Health Occupations"
+  },
+  "tree_numbers": [
+   "H02.403"
+  ]
+ },
+ "D008535": {
+  "parents": {
+   "D011245": "Pregnadienes"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.432.531"
+  ]
+ },
+ "D008562": {
+  "parents": {
+   "D006023": "Glycoproteins",
+   "D008565": "Membrane Proteins"
+  },
+  "tree_numbers": [
+   "D09.400.430.890",
+   "D12.776.395.550",
+   "D12.776.543.550"
+  ]
+ },
+ "D008563": {
+  "parents": {
+   "D008055": "Lipids"
+  },
+  "tree_numbers": [
+   "D10.570"
+  ]
+ },
+ "D008565": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.543"
+  ]
+ },
+ "D008569": {
+  "parents": {
+   "D019954": "Neurobehavioral Manifestations"
+  },
+  "tree_numbers": [
+   "C23.888.592.604.529",
+   "F01.700.625",
+   "C10.597.606.525"
+  ]
+ },
+ "D008593": {
+  "parents": {
+   "D002979": "Climacteric"
+  },
+  "tree_numbers": [
+   "G08.686.157.500",
+   "G08.686.841.249.500"
+  ]
+ },
+ "D008597": {
+  "parents": {
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.605"
+  ]
+ },
+ "D008659": {
+  "parents": {
+   "D009750": "Nutritional and Metabolic Diseases"
+  },
+  "tree_numbers": [
+   "C18.452"
+  ]
+ },
+ "D008660": {
+  "parents": {},
+  "tree_numbers": [
+   "G03"
+  ]
+ },
+ "D008687": {
+  "parents": {
+   "D001645": "Biguanides"
+  },
+  "tree_numbers": [
+   "D02.078.370.141.450"
+  ]
+ },
+ "D008787": {
+  "parents": {
+   "D001549": "Benzamides",
+   "D002723": "Chlorobenzoates",
+   "D062366": "para-Aminobenzoates",
+   "D062425": "Hydroxybenzoate Ethers"
+  },
+  "tree_numbers": [
+   "D02.065.277.573",
+   "D02.241.223.100.100.510",
+   "D02.455.426.559.389.127.085.510",
+   "D02.241.223.100.200.750",
+   "D02.455.426.559.389.127.250.750",
+   "D02.241.223.100.050.500.647",
+   "D02.455.426.559.389.127.020.937.647",
+   "D02.241.223.100.300.350.625",
+   "D02.241.511.390.350.625",
+   "D02.455.426.559.389.127.281.350.625",
+   "D02.455.426.559.389.657.654.638.625"
+  ]
+ },
+ "D008827": {
+  "parents": {},
+  "tree_numbers": [
+   "G06"
+  ]
+ },
+ "D008892": {
+  "parents": {
+   "D001628": "Beverages",
+   "D003611": "Dairy Products",
+   "D005441": "Fluids and Secretions",
+   "D012634": "Bodily Secretions"
+  },
+  "tree_numbers": [
+   "A12.200.455",
+   "G07.203.100.700",
+   "J02.200.700",
+   "A12.790",
+   "G07.203.300.350.525",
+   "J02.500.350.525"
+  ]
+ },
+ "D008894": {
+  "parents": {
+   "D000080224": "Animal Proteins, Dietary",
+   "D008892": "Milk"
+  },
+  "tree_numbers": [
+   "A12.790.520",
+   "J02.500.350.525.520",
+   "D12.776.256.159.750",
+   "G07.203.300.428.159.812",
+   "J02.500.428.159.750"
+  ]
+ },
+ "D008903": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.578"
+  ]
+ },
+ "D008919": {
+  "parents": {},
+  "tree_numbers": [
+   "E05"
+  ]
+ },
+ "D008991": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.520"
+  ]
+ },
+ "D009019": {
+  "parents": {
+   "D006572": "Heterocyclic Compounds, Bridged-Ring",
+   "D006576": "Heterocyclic Compounds, 4 or More Rings",
+   "D010616": "Phenanthrenes",
+   "D053610": "Opiate Alkaloids"
+  },
+  "tree_numbers": [
+   "D03.633.400.686",
+   "D04.615.723.795",
+   "D03.605.497",
+   "D03.132.577.249"
+  ]
+ },
+ "D009022": {
+  "parents": {
+   "D009019": "Morphinans"
+  },
+  "tree_numbers": [
+   "D03.132.577.249.562",
+   "D03.605.497.607",
+   "D03.633.400.686.607",
+   "D04.615.723.795.576"
+  ]
+ },
+ "D009024": {
+  "parents": {
+   "D048788": "Growth and Development"
+  },
+  "tree_numbers": [
+   "G07.345.500"
+  ]
+ },
+ "D009043": {
+  "parents": {
+   "D001519": "Behavior",
+   "D009068": "Movement"
+  },
+  "tree_numbers": [
+   "F01.145.632",
+   "G11.427.410.698"
+  ]
+ },
+ "D009057": {
+  "parents": {},
+  "tree_numbers": [
+   "C07"
+  ]
+ },
+ "D009059": {
+  "parents": {
+   "D009057": "Stomatognathic Diseases"
+  },
+  "tree_numbers": [
+   "C07.465"
+  ]
+ },
+ "D009062": {
+  "parents": {
+   "D006258": "Head and Neck Neoplasms",
+   "D009059": "Mouth Diseases"
+  },
+  "tree_numbers": [
+   "C07.465.530",
+   "C04.588.443.591"
+  ]
+ },
+ "D009068": {
+  "parents": {
+   "D009142": "Musculoskeletal Physiological Phenomena",
+   "D010829": "Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.568",
+   "G11.427.410"
+  ]
+ },
+ "D009069": {
+  "parents": {
+   "D002493": "\u4e2d\u67a2\u795e\u7d4c\u7cfb\u75be\u60a3"
+  },
+  "tree_numbers": [
+   "C10.228.662"
+  ]
+ },
+ "D009103": {
+  "parents": {
+   "D020278": "Demyelinating Autoimmune Diseases, CNS"
+  },
+  "tree_numbers": [
+   "C20.111.258.250.500",
+   "C10.114.375.500",
+   "C10.314.350.500"
+  ]
+ },
+ "D009104": {
+  "parents": {
+   "D014947": "Wounds and Injuries"
+  },
+  "tree_numbers": [
+   "C26.640"
+  ]
+ },
+ "D009119": {
+  "parents": {
+   "D009142": "Musculoskeletal Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G11.427.494"
+  ]
+ },
+ "D009132": {
+  "parents": {
+   "D009141": "Musculoskeletal System",
+   "D014024": "Tissues"
+  },
+  "tree_numbers": [
+   "A02.633",
+   "A10.690"
+  ]
+ },
+ "D009135": {
+  "parents": {
+   "D009140": "Musculoskeletal Diseases",
+   "D009468": "Neuromuscular Diseases"
+  },
+  "tree_numbers": [
+   "C05.651",
+   "C10.668.491"
+  ]
+ },
+ "D009140": {
+  "parents": {},
+  "tree_numbers": [
+   "C05"
+  ]
+ },
+ "D009141": {
+  "parents": {},
+  "tree_numbers": [
+   "A02"
+  ]
+ },
+ "D009142": {
+  "parents": {
+   "D055687": "Musculoskeletal and Neural Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G11.427"
+  ]
+ },
+ "D009173": {
+  "parents": {
+   "D002208": "Caproates",
+   "D005227": "Fatty Acids"
+  },
+  "tree_numbers": [
+   "D02.241.081.193.678",
+   "D10.251.618"
+  ]
+ },
+ "D009204": {
+  "parents": {
+   "D006348": "Cardiac Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.100.376.719",
+   "E04.928.220.520"
+  ]
+ },
+ "D009272": {
+  "parents": {},
+  "tree_numbers": [
+   "M01"
+  ]
+ },
+ "D009277": {
+  "parents": {
+   "D004963": "Estrenes",
+   "D045165": "Testosterone Congeners"
+  },
+  "tree_numbers": [
+   "D04.210.500.365.415.638",
+   "D06.472.334.851.968.976"
+  ]
+ },
+ "D009294": {
+  "parents": {
+   "D000700": "Analgesics",
+   "D002492": "Central Nervous System Depressants"
+  },
+  "tree_numbers": [
+   "D27.505.696.663.850.014.760",
+   "D27.505.954.427.040.550",
+   "D27.505.696.277.600",
+   "D27.505.954.427.210.600"
+  ]
+ },
+ "D009320": {
+  "parents": {
+   "D045265": "Natriuretic Peptides"
+  },
+  "tree_numbers": [
+   "D06.472.699.584.500",
+   "D12.644.548.585.500"
+  ]
+ },
+ "D009325": {
+  "parents": {
+   "D012817": "Signs and Symptoms, Digestive"
+  },
+  "tree_numbers": [
+   "C23.888.821.712"
+  ]
+ },
+ "D009339": {
+  "parents": {
+   "D004864": "Equipment and Supplies"
+  },
+  "tree_numbers": [
+   "E07.612"
+  ]
+ },
+ "D009358": {
+  "parents": {},
+  "tree_numbers": [
+   "C16"
+  ]
+ },
+ "D009369": {
+  "parents": {},
+  "tree_numbers": [
+   "C04"
+  ]
+ },
+ "D009370": {
+  "parents": {
+   "D009369": "Neoplasms"
+  },
+  "tree_numbers": [
+   "C04.557"
+  ]
+ },
+ "D009371": {
+  "parents": {
+   "D009369": "Neoplasms"
+  },
+  "tree_numbers": [
+   "C04.588"
+  ]
+ },
+ "D009375": {
+  "parents": {
+   "D009370": "Neoplasms by Histologic Type"
+  },
+  "tree_numbers": [
+   "C04.557.470"
+  ]
+ },
+ "D009379": {
+  "parents": {
+   "D018204": "Neoplasms, Connective and Soft Tissue"
+  },
+  "tree_numbers": [
+   "C04.557.450.590"
+  ]
+ },
+ "D009408": {
+  "parents": {
+   "D010523": "Peripheral Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.668.829.550"
+  ]
+ },
+ "D009419": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.631"
+  ]
+ },
+ "D009420": {
+  "parents": {},
+  "tree_numbers": [
+   "A08"
+  ]
+ },
+ "D009422": {
+  "parents": {},
+  "tree_numbers": [
+   "C10"
+  ]
+ },
+ "D009424": {
+  "parents": {
+   "D055687": "Musculoskeletal and Neural Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G11.561"
+  ]
+ },
+ "D009461": {
+  "parents": {
+   "D009422": "Nervous System Diseases",
+   "D012816": "Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C10.597",
+   "C23.888.592"
+  ]
+ },
+ "D009468": {
+  "parents": {
+   "D009422": "Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.668"
+  ]
+ },
+ "D009479": {
+  "parents": {
+   "D009419": "Nerve Tissue Proteins",
+   "D010455": "Peptides"
+  },
+  "tree_numbers": [
+   "D12.776.631.650",
+   "D12.644.400"
+  ]
+ },
+ "D009529": {
+  "parents": {
+   "D004095": "Dihydropyridines"
+  },
+  "tree_numbers": [
+   "D03.383.725.203.510"
+  ]
+ },
+ "D009557": {
+  "parents": {
+   "D000147": "Acids, Heterocyclic",
+   "D010880": "Piperidines"
+  },
+  "tree_numbers": [
+   "D03.383.621.566",
+   "D03.066.566"
+  ]
+ },
+ "D009569": {
+  "parents": {
+   "D009589": "Nitrogen Oxides",
+   "D026361": "Reactive Nitrogen Species"
+  },
+  "tree_numbers": [
+   "D01.625.550.500",
+   "D01.650.550.587.600",
+   "D01.625.700.500",
+   "D01.339.409.500",
+   "D02.389.508.500"
+  ]
+ },
+ "D009570": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.626"
+  ]
+ },
+ "D009589": {
+  "parents": {
+   "D005740": "Gases",
+   "D010087": "Oxides",
+   "D017672": "Nitrogen Compounds"
+  },
+  "tree_numbers": [
+   "D01.650.550.587",
+   "D01.625.550",
+   "D01.362.635"
+  ]
+ },
+ "D009599": {
+  "parents": {
+   "D005292": "Ferricyanides"
+  },
+  "tree_numbers": [
+   "D01.248.497.158.291.350.550",
+   "D01.490.100.300.550",
+   "D01.625.400.100.325.550"
+  ]
+ },
+ "D009603": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.654"
+  ]
+ },
+ "D009649": {
+  "parents": {
+   "D009650": "Norpregnanes"
+  },
+  "tree_numbers": [
+   "D04.210.500.668.651.443"
+  ]
+ },
+ "D009650": {
+  "parents": {
+   "D009654": "Norsteroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.668.651"
+  ]
+ },
+ "D009651": {
+  "parents": {
+   "D009650": "Norpregnanes"
+  },
+  "tree_numbers": [
+   "D04.210.500.668.651.568"
+  ]
+ },
+ "D009654": {
+  "parents": {
+   "D013256": "Steroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.668"
+  ]
+ },
+ "D009747": {
+  "parents": {
+   "D000066888": "Diet, Food, and Nutrition"
+  },
+  "tree_numbers": [
+   "G07.203.650"
+  ]
+ },
+ "D009750": {
+  "parents": {},
+  "tree_numbers": [
+   "C18"
+  ]
+ },
+ "D009752": {
+  "parents": {
+   "D006304": "Health Status",
+   "D009747": "Nutritional Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.203.650.650",
+   "I01.240.425.635",
+   "N01.224.425.525"
+  ]
+ },
+ "D009807": {
+  "parents": {
+   "D007570": "Jaw Cysts"
+  },
+  "tree_numbers": [
+   "C04.182.089.530.690",
+   "C05.500.470.690",
+   "C07.320.450.670"
+  ]
+ },
+ "D009821": {
+  "parents": {
+   "D008055": "Lipids"
+  },
+  "tree_numbers": [
+   "D10.627"
+  ]
+ },
+ "D009842": {
+  "parents": {
+   "D010455": "Peptides"
+  },
+  "tree_numbers": [
+   "D12.644.456"
+  ]
+ },
+ "D009865": {
+  "parents": {
+   "D010063": "Ovum"
+  },
+  "tree_numbers": [
+   "A05.360.490.690.680",
+   "A11.497.497.600"
+  ]
+ },
+ "D009916": {
+  "parents": {
+   "D005128": "Eye Diseases"
+  },
+  "tree_numbers": [
+   "C11.675"
+  ]
+ },
+ "D009930": {
+  "parents": {},
+  "tree_numbers": [
+   "D02"
+  ]
+ },
+ "D009934": {
+  "parents": {
+   "D006298": "Health Services Administration"
+  },
+  "tree_numbers": [
+   "N04.452"
+  ]
+ },
+ "D009943": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.705"
+  ]
+ },
+ "D009976": {
+  "parents": {
+   "D012327": "RNA Virus Infections"
+  },
+  "tree_numbers": [
+   "C01.925.782.620"
+  ]
+ },
+ "D009985": {
+  "parents": {
+   "D013043": "Specialties, Surgical"
+  },
+  "tree_numbers": [
+   "H02.403.810.494"
+  ]
+ },
+ "D010003": {
+  "parents": {
+   "D001168": "Arthritis",
+   "D012216": "Rheumatic Diseases"
+  },
+  "tree_numbers": [
+   "C05.799.613",
+   "C05.550.114.606"
+  ]
+ },
+ "D010024": {
+  "parents": {
+   "D001851": "Bone Diseases, Metabolic"
+  },
+  "tree_numbers": [
+   "C05.116.198.579",
+   "C18.452.104.579"
+  ]
+ },
+ "D010048": {
+  "parents": {
+   "D003560": "Cysts",
+   "D010049": "Ovarian Diseases"
+  },
+  "tree_numbers": [
+   "C04.182.612",
+   "C19.391.630.580",
+   "C12.050.351.500.056.630.580",
+   "C12.100.250.056.630.580"
+  ]
+ },
+ "D010049": {
+  "parents": {
+   "D000291": "Adnexal Diseases",
+   "D006058": "Gonadal Disorders"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.056.630",
+   "C12.100.250.056.630",
+   "C19.391.630"
+  ]
+ },
+ "D010053": {
+  "parents": {
+   "D000290": "Adnexa Uteri",
+   "D006066": "Gonads"
+  },
+  "tree_numbers": [
+   "A05.360.319.114.630",
+   "A05.360.576.497",
+   "A06.300.312.497"
+  ]
+ },
+ "D010060": {
+  "parents": {
+   "D012098": "Reproduction"
+  },
+  "tree_numbers": [
+   "G08.686.784.690"
+  ]
+ },
+ "D010062": {
+  "parents": {
+   "D027724": "Reproductive Techniques, Assisted"
+  },
+  "tree_numbers": [
+   "E02.875.800.984",
+   "E05.820.800.984"
+  ]
+ },
+ "D010063": {
+  "parents": {
+   "D004628": "Embryonic Structures",
+   "D005854": "Germ Cells"
+  },
+  "tree_numbers": [
+   "A05.360.490.690",
+   "A11.497.497",
+   "A16.690"
+  ]
+ },
+ "D010087": {
+  "parents": {
+   "D000838": "Anions",
+   "D017601": "Oxygen Compounds"
+  },
+  "tree_numbers": [
+   "D01.248.497.158.685",
+   "D01.650.550"
+  ]
+ },
+ "D010098": {
+  "parents": {
+   "D003061": "Codeine"
+  },
+  "tree_numbers": [
+   "D03.132.577.249.562.149.575",
+   "D03.605.497.607.204.650",
+   "D03.633.400.686.607.204.650",
+   "D04.615.723.795.576.149.575"
+  ]
+ },
+ "D010101": {
+  "parents": {
+   "D008660": "Metabolism",
+   "D055754": "[OBSOLETE] Metabolic Phenomena"
+  },
+  "tree_numbers": [
+   "G03.680"
+  ]
+ },
+ "D010102": {
+  "parents": {
+   "D012138": "Respiratory Therapy"
+  },
+  "tree_numbers": [
+   "E02.880.690"
+  ]
+ },
+ "D010120": {
+  "parents": {
+   "D012102": "Reproductive Control Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.875.737",
+   "D27.505.954.705.737"
+  ]
+ },
+ "D010121": {
+  "parents": {
+   "D010909": "Pituitary Hormones, Posterior"
+  },
+  "tree_numbers": [
+   "D06.472.699.631.692.433",
+   "D12.644.548.691.692.433"
+  ]
+ },
+ "D010146": {
+  "parents": {
+   "D009461": "Neurologic Manifestations",
+   "D012677": "Sensation"
+  },
+  "tree_numbers": [
+   "C23.888.592.612",
+   "F02.830.816.444",
+   "G11.561.790.444"
+  ]
+ },
+ "D010275": {
+  "parents": {
+   "D001341": "Autonomic Nervous System"
+  },
+  "tree_numbers": [
+   "A08.800.050.600"
+  ]
+ },
+ "D010300": {
+  "parents": {
+   "D000080874": "Synucleinopathies",
+   "D020734": "Parkinsonian Disorders"
+  },
+  "tree_numbers": [
+   "C10.574.928.750",
+   "C10.228.140.079.862.500",
+   "C10.228.662.600.400"
+  ]
+ },
+ "D010305": {
+  "parents": {
+   "D012466": "Salivary Gland Diseases"
+  },
+  "tree_numbers": [
+   "C07.465.815.470"
+  ]
+ },
+ "D010307": {
+  "parents": {
+   "D010305": "Parotid Diseases",
+   "D012468": "Salivary Gland Neoplasms"
+  },
+  "tree_numbers": [
+   "C07.465.815.470.770",
+   "C04.588.443.591.824.695",
+   "C07.465.530.824.695",
+   "C07.465.815.718.589"
+  ]
+ },
+ "D010335": {
+  "parents": {
+   "D013568": "Pathological Conditions, Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C23.550"
+  ]
+ },
+ "D010342": {
+  "parents": {
+   "D000074822": "Treatment Adherence and Compliance"
+  },
+  "tree_numbers": [
+   "F01.100.150.750.500",
+   "F01.145.488.887.500",
+   "N05.300.150.800.500"
+  ]
+ },
+ "D010346": {
+  "parents": {
+   "D006298": "Health Services Administration"
+  },
+  "tree_numbers": [
+   "N04.590"
+  ]
+ },
+ "D010349": {
+  "parents": {
+   "D010342": "Patient Acceptance of Health Care"
+  },
+  "tree_numbers": [
+   "F01.100.150.750.500.600",
+   "F01.145.488.887.500.600",
+   "N05.300.150.800.500.600"
+  ]
+ },
+ "D010353": {
+  "parents": {
+   "D006266": "Health Education"
+  },
+  "tree_numbers": [
+   "N02.421.726.407.680",
+   "H02.403.720.750.380.680"
+  ]
+ },
+ "D010409": {
+  "parents": {
+   "D005832": "Genital Diseases, Male"
+  },
+  "tree_numbers": [
+   "C12.100.500.494",
+   "C12.200.294.494"
+  ]
+ },
+ "D010411": {
+  "parents": {
+   "D003240": "Connective Tissue Diseases",
+   "D010409": "Penile Diseases"
+  },
+  "tree_numbers": [
+   "C17.300.715",
+   "C12.100.500.494.508",
+   "C12.200.294.494.508"
+  ]
+ },
+ "D010413": {
+  "parents": {
+   "D005837": "Genitalia, Male"
+  },
+  "tree_numbers": [
+   "A05.360.444.492"
+  ]
+ },
+ "D010431": {
+  "parents": {
+   "D013805": "Theobromine"
+  },
+  "tree_numbers": [
+   "D03.633.100.759.758.824.651.700"
+  ]
+ },
+ "D010455": {
+  "parents": {
+   "D000602": "Amino Acids, Peptides, and Proteins"
+  },
+  "tree_numbers": [
+   "D12.644"
+  ]
+ },
+ "D010510": {
+  "parents": {
+   "D009059": "Mouth Diseases"
+  },
+  "tree_numbers": [
+   "C07.465.714"
+  ]
+ },
+ "D010518": {
+  "parents": {
+   "D010510": "Periodontal Diseases"
+  },
+  "tree_numbers": [
+   "C07.465.714.533"
+  ]
+ },
+ "D010523": {
+  "parents": {
+   "D009468": "Neuromuscular Diseases"
+  },
+  "tree_numbers": [
+   "C10.668.829"
+  ]
+ },
+ "D010525": {
+  "parents": {
+   "D017933": "Peripheral Nervous System"
+  },
+  "tree_numbers": [
+   "A08.800.800"
+  ]
+ },
+ "D010535": {
+  "parents": {
+   "D004724": "Endoscopy"
+  },
+  "tree_numbers": [
+   "E01.370.388.250.520",
+   "E04.502.250.520"
+  ]
+ },
+ "D010551": {
+  "parents": {
+   "D001520": "Behavior and Behavior Mechanisms"
+  },
+  "tree_numbers": [
+   "F01.752"
+  ]
+ },
+ "D010616": {
+  "parents": {
+   "D011084": "Polycyclic Aromatic Hydrocarbons"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.847.723",
+   "D04.615.723"
+  ]
+ },
+ "D010627": {
+  "parents": {
+   "D005021": "Ethylamines"
+  },
+  "tree_numbers": [
+   "D02.092.471.683"
+  ]
+ },
+ "D010636": {
+  "parents": {
+   "D001555": "Benzene Derivatives"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.657"
+  ]
+ },
+ "D010647": {
+  "parents": {
+   "D004987": "Ethers",
+   "D010636": "Phenols"
+  },
+  "tree_numbers": [
+   "D02.355.726",
+   "D02.455.426.559.389.657.654"
+  ]
+ },
+ "D010649": {
+  "parents": {
+   "D000601": "Amino Acids, Essential",
+   "D024322": "Amino Acids, Aromatic"
+  },
+  "tree_numbers": [
+   "D12.125.072.050.685",
+   "D12.125.142.666"
+  ]
+ },
+ "D010684": {
+  "parents": {
+   "D006809": "Humanities"
+  },
+  "tree_numbers": [
+   "K01.752"
+  ]
+ },
+ "D010726": {
+  "parents": {
+   "D004791": "Enzyme Inhibitors"
+  },
+  "tree_numbers": [
+   "D27.505.519.389.735"
+  ]
+ },
+ "D010743": {
+  "parents": {
+   "D008563": "Membrane Lipids"
+  },
+  "tree_numbers": [
+   "D10.570.755"
+  ]
+ },
+ "D010781": {
+  "parents": {
+   "D003952": "Diagnostic Imaging",
+   "D008919": "Investigative Techniques"
+  },
+  "tree_numbers": [
+   "E05.712",
+   "E01.370.350.600"
+  ]
+ },
+ "D010807": {
+  "parents": {
+   "D009142": "Musculoskeletal Physiological Phenomena",
+   "D054874": "Athletic Performance"
+  },
+  "tree_numbers": [
+   "I03.450.642.845.054.600",
+   "G11.427.680"
+  ]
+ },
+ "D010808": {
+  "parents": {
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E01.370.600"
+  ]
+ },
+ "D010810": {
+  "parents": {
+   "D008511": "Medicine"
+  },
+  "tree_numbers": [
+   "H02.403.680"
+  ]
+ },
+ "D010811": {
+  "parents": {},
+  "tree_numbers": [
+   "H01"
+  ]
+ },
+ "D010825": {
+  "parents": {
+   "D010811": "Natural Science Disciplines"
+  },
+  "tree_numbers": [
+   "H01.671"
+  ]
+ },
+ "D010827": {
+  "parents": {
+   "D001690": "Biological Science Disciplines"
+  },
+  "tree_numbers": [
+   "H01.158.782"
+  ]
+ },
+ "D010829": {
+  "parents": {},
+  "tree_numbers": [
+   "G07"
+  ]
+ },
+ "D010880": {
+  "parents": {
+   "D006573": "Heterocyclic Compounds, 1-Ring"
+  },
+  "tree_numbers": [
+   "D03.383.621"
+  ]
+ },
+ "D010906": {
+  "parents": {
+   "D007028": "Hypothalamic Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.327.740",
+   "D12.644.400.400.740",
+   "D12.644.548.365.740",
+   "D12.776.631.650.405.740"
+  ]
+ },
+ "D010907": {
+  "parents": {
+   "D036361": "Peptide Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.631",
+   "D12.644.548.691"
+  ]
+ },
+ "D010908": {
+  "parents": {
+   "D010907": "Pituitary Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.631.525",
+   "D12.644.548.691.525"
+  ]
+ },
+ "D010909": {
+  "parents": {
+   "D010907": "Pituitary Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.631.692",
+   "D12.644.548.691.692"
+  ]
+ },
+ "D010926": {
+  "parents": {
+   "D036361": "Peptide Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.649",
+   "D12.644.548.726"
+  ]
+ },
+ "D010936": {
+  "parents": {
+   "D004364": "Pharmaceutical Preparations",
+   "D028321": "Plant Preparations"
+  },
+  "tree_numbers": [
+   "D20.215.784.500",
+   "D26.667"
+  ]
+ },
+ "D010938": {
+  "parents": {
+   "D009821": "Oils",
+   "D028321": "Plant Preparations"
+  },
+  "tree_numbers": [
+   "D10.627.700",
+   "D20.215.784.750"
+  ]
+ },
+ "D010949": {
+  "parents": {
+   "D001769": "Blood",
+   "D045604": "Extracellular Fluid"
+  },
+  "tree_numbers": [
+   "A12.207.270.695",
+   "A12.207.152.693",
+   "A15.145.693"
+  ]
+ },
+ "D010952": {
+  "parents": {
+   "D001802": "Blood Substitutes"
+  },
+  "tree_numbers": [
+   "D27.505.954.502.140.500"
+  ]
+ },
+ "D010956": {
+  "parents": {
+   "D001781": "Blood Component Removal",
+   "D005112": "Extracorporeal Circulation",
+   "D016060": "Sorption Detoxification"
+  },
+  "tree_numbers": [
+   "E04.292.869",
+   "E02.120.770",
+   "E02.912.715"
+  ]
+ },
+ "D010974": {
+  "parents": {
+   "D015539": "Platelet Activation",
+   "D018056": "Hemorheology"
+  },
+  "tree_numbers": [
+   "G09.188.390.600.640",
+   "G09.188.370.687"
+  ]
+ },
+ "D010980": {
+  "parents": {
+   "D008562": "Membrane Glycoproteins",
+   "D011971": "Receptors, Immunologic"
+  },
+  "tree_numbers": [
+   "D12.776.395.550.625",
+   "D12.776.543.550.625",
+   "D09.400.430.890.625",
+   "D12.776.543.750.705.675"
+  ]
+ },
+ "D010988": {
+  "parents": {
+   "D011998": "Recreation"
+  },
+  "tree_numbers": [
+   "I03.450.642.693"
+  ]
+ },
+ "D011013": {
+  "parents": {
+   "D013510": "Pulmonary Surgical Procedures",
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.620",
+   "E04.928.600.600"
+  ]
+ },
+ "D011028": {
+  "parents": {
+   "D003949": "Diagnostic Techniques, Surgical"
+  },
+  "tree_numbers": [
+   "E01.370.388.605"
+  ]
+ },
+ "D011083": {
+  "parents": {},
+  "tree_numbers": [
+   "D04"
+  ]
+ },
+ "D011084": {
+  "parents": {
+   "D006841": "Hydrocarbons, Aromatic",
+   "D011083": "Polycyclic Compounds"
+  },
+  "tree_numbers": [
+   "D04.615",
+   "D02.455.426.559.847"
+  ]
+ },
+ "D011085": {
+  "parents": {
+   "D010048": "Ovarian Cysts"
+  },
+  "tree_numbers": [
+   "C04.182.612.765",
+   "C19.391.630.580.765",
+   "C12.050.351.500.056.630.580.765",
+   "C12.100.250.056.630.580.765"
+  ]
+ },
+ "D011108": {
+  "parents": {
+   "D001697": "Biomedical and Dental Materials",
+   "D046911": "Macromolecular Substances"
+  },
+  "tree_numbers": [
+   "D25.720",
+   "J01.637.051.720",
+   "D05.750"
+  ]
+ },
+ "D011127": {
+  "parents": {
+   "D020763": "Pathological Conditions, Anatomical"
+  },
+  "tree_numbers": [
+   "C23.300.825"
+  ]
+ },
+ "D011134": {
+  "parents": {
+   "D002241": "Carbohydrates"
+  },
+  "tree_numbers": [
+   "D09.698"
+  ]
+ },
+ "D011135": {
+  "parents": {
+   "D000942": "Antigens, Bacterial",
+   "D011134": "Polysaccharides"
+  },
+  "tree_numbers": [
+   "D23.050.161.616",
+   "D09.698.718"
+  ]
+ },
+ "D011154": {
+  "parents": {},
+  "tree_numbers": [
+   "N01"
+  ]
+ },
+ "D011183": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.767"
+  ]
+ },
+ "D011241": {
+  "parents": {
+   "D011244": "Pregnadienediols"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.432.719.702"
+  ]
+ },
+ "D011244": {
+  "parents": {
+   "D011245": "Pregnadienes"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.432.719"
+  ]
+ },
+ "D011245": {
+  "parents": {
+   "D011278": "Pregnanes"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.432"
+  ]
+ },
+ "D011246": {
+  "parents": {
+   "D011245": "Pregnadienes"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.432.769"
+  ]
+ },
+ "D011247": {
+  "parents": {
+   "D012098": "Reproduction"
+  },
+  "tree_numbers": [
+   "G08.686.784.769"
+  ]
+ },
+ "D011248": {
+  "parents": {
+   "D005261": "Female Urogenital Diseases and Pregnancy Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703"
+  ]
+ },
+ "D011256": {
+  "parents": {
+   "D011247": "Pregnancy",
+   "D011379": "Prognosis"
+  },
+  "tree_numbers": [
+   "G08.686.784.769.496",
+   "E01.789.700"
+  ]
+ },
+ "D011257": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.780"
+  ]
+ },
+ "D011278": {
+  "parents": {
+   "D013256": "Steroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.745"
+  ]
+ },
+ "D011282": {
+  "parents": {
+   "D011283": "Pregnenes"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.745.654"
+  ]
+ },
+ "D011283": {
+  "parents": {
+   "D011278": "Pregnanes"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.745"
+  ]
+ },
+ "D011292": {
+  "parents": {
+   "D004358": "Drug Therapy"
+  },
+  "tree_numbers": [
+   "E02.319.703"
+  ]
+ },
+ "D011300": {
+  "parents": {
+   "D019990": "Perioperative Care"
+  },
+  "tree_numbers": [
+   "E02.760.731.775",
+   "E04.604.750",
+   "N02.421.585.722.775"
+  ]
+ },
+ "D011314": {
+  "parents": {
+   "D006296": "Health Services"
+  },
+  "tree_numbers": [
+   "N02.421.726"
+  ]
+ },
+ "D011315": {
+  "parents": {
+   "D011634": "Public Health"
+  },
+  "tree_numbers": [
+   "H02.403.720.750"
+  ]
+ },
+ "D011320": {
+  "parents": {
+   "D003191": "Comprehensive Health Care"
+  },
+  "tree_numbers": [
+   "N04.590.233.727"
+  ]
+ },
+ "D011364": {
+  "parents": {
+   "D009934": "Organization and Administration"
+  },
+  "tree_numbers": [
+   "N04.452.758"
+  ]
+ },
+ "D011374": {
+  "parents": {
+   "D003339": "Corpus Luteum Hormones",
+   "D011282": "Pregnenediones",
+   "D045167": "Progesterone Congeners"
+  },
+  "tree_numbers": [
+   "D04.210.500.745.745.654.829",
+   "D06.472.334.851.687.750",
+   "D06.472.334.734.623"
+  ]
+ },
+ "D011379": {
+  "parents": {
+   "D003933": "Diagnosis"
+  },
+  "tree_numbers": [
+   "E01.789"
+  ]
+ },
+ "D011412": {
+  "parents": {
+   "D000605": "Amino Alcohols",
+   "D020005": "Propanols"
+  },
+  "tree_numbers": [
+   "D02.033.100.624",
+   "D02.092.063.624",
+   "D02.033.755.624"
+  ]
+ },
+ "D011453": {
+  "parents": {
+   "D015777": "Eicosanoids"
+  },
+  "tree_numbers": [
+   "D10.251.355.255.550",
+   "D23.469.050.175.725"
+  ]
+ },
+ "D011459": {
+  "parents": {
+   "D011465": "Prostaglandins, Synthetic"
+  },
+  "tree_numbers": [
+   "D10.251.355.255.550.775.450",
+   "D23.469.050.175.725.775.450",
+   "D23.469.700.660"
+  ]
+ },
+ "D011465": {
+  "parents": {
+   "D011453": "Prostaglandins",
+   "D018836": "Inflammation Mediators"
+  },
+  "tree_numbers": [
+   "D10.251.355.255.550.775",
+   "D23.469.050.175.725.775",
+   "D23.469.700"
+  ]
+ },
+ "D011486": {
+  "parents": {
+   "D001798": "Blood Proteins",
+   "D004792": "Enzyme Precursors",
+   "D006023": "Glycoproteins",
+   "D019774": "Blood Coagulation Factor Inhibitors"
+  },
+  "tree_numbers": [
+   "D12.776.124.650",
+   "D09.400.430.915",
+   "D12.776.395.635",
+   "D23.113.700",
+   "D08.622.705",
+   "D12.776.811.243.705"
+  ]
+ },
+ "D011498": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.811"
+  ]
+ },
+ "D011506": {
+  "parents": {
+   "D000602": "Amino Acids, Peptides, and Proteins"
+  },
+  "tree_numbers": [
+   "D12.776"
+  ]
+ },
+ "D011579": {
+  "parents": {},
+  "tree_numbers": [
+   "F02"
+  ]
+ },
+ "D011603": {
+  "parents": {
+   "D001525": "Behavioral Sciences",
+   "D010827": "Physiology",
+   "D011579": "Psychological Phenomena"
+  },
+  "tree_numbers": [
+   "F02.830",
+   "H01.158.782.795",
+   "F04.096.795"
+  ]
+ },
+ "D011613": {
+  "parents": {
+   "D004191": "Behavioral Disciplines and Activities"
+  },
+  "tree_numbers": [
+   "F04.754"
+  ]
+ },
+ "D011619": {
+  "parents": {
+   "D002491": "Central Nervous System Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.427.700"
+  ]
+ },
+ "D011634": {
+  "parents": {
+   "D004778": "Environment and Public Health",
+   "D006262": "Health",
+   "D008511": "Medicine"
+  },
+  "tree_numbers": [
+   "N01.400.550",
+   "H02.403.720",
+   "N06.850"
+  ]
+ },
+ "D011644": {
+  "parents": {
+   "D011248": "Pregnancy Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703.844"
+  ]
+ },
+ "D011687": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100.759"
+  ]
+ },
+ "D011688": {
+  "parents": {
+   "D011687": "Purines"
+  },
+  "tree_numbers": [
+   "D03.633.100.759.758"
+  ]
+ },
+ "D011720": {
+  "parents": {
+   "D001393": "Azoles"
+  },
+  "tree_numbers": [
+   "D03.383.129.539"
+  ]
+ },
+ "D011725": {
+  "parents": {
+   "D006573": "Heterocyclic Compounds, 1-Ring"
+  },
+  "tree_numbers": [
+   "D03.383.725"
+  ]
+ },
+ "D011758": {
+  "parents": {
+   "D001393": "Azoles"
+  },
+  "tree_numbers": [
+   "D03.383.129.578"
+  ]
+ },
+ "D011787": {
+  "parents": {
+   "D006298": "Health Services Administration",
+   "D017530": "Health Care Quality, Access, and Evaluation"
+  },
+  "tree_numbers": [
+   "N04.761",
+   "N05.715"
+  ]
+ },
+ "D011788": {
+  "parents": {
+   "D006304": "Health Status",
+   "D012942": "Social Sciences",
+   "D019369": "Life"
+  },
+  "tree_numbers": [
+   "I01.800",
+   "K01.752.400.750",
+   "N06.850.505.400.425.837"
+  ]
+ },
+ "D011804": {
+  "parents": {
+   "D006574": "Heterocyclic Compounds, 2-Ring"
+  },
+  "tree_numbers": [
+   "D03.633.100.810"
+  ]
+ },
+ "D011827": {
+  "parents": {
+   "D055585": "Physical Phenomena"
+  },
+  "tree_numbers": [
+   "G01.750"
+  ]
+ },
+ "D011839": {
+  "parents": {
+   "D011827": "Radiation"
+  },
+  "tree_numbers": [
+   "G01.750.750"
+  ]
+ },
+ "D011856": {
+  "parents": {
+   "D007089": "Image Enhancement",
+   "D011859": "Radiography"
+  },
+  "tree_numbers": [
+   "E01.370.350.700.700",
+   "E01.370.350.600.350.700",
+   "L01.224.308.380.600"
+  ]
+ },
+ "D011859": {
+  "parents": {
+   "D003952": "Diagnostic Imaging"
+  },
+  "tree_numbers": [
+   "E01.370.350.700"
+  ]
+ },
+ "D011951": {
+  "parents": {
+   "D011971": "Receptors, Immunologic"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.705.833"
+  ]
+ },
+ "D011956": {
+  "parents": {
+   "D008565": "Membrane Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.543.750"
+  ]
+ },
+ "D011971": {
+  "parents": {
+   "D011956": "Receptors, Cell Surface"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.705"
+  ]
+ },
+ "D011994": {
+  "parents": {
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.776.828"
+  ]
+ },
+ "D011998": {
+  "parents": {
+   "D007899": "Leisure Activities"
+  },
+  "tree_numbers": [
+   "I03.450.642"
+  ]
+ },
+ "D012038": {
+  "parents": {
+   "D001686": "Biological Phenomena"
+  },
+  "tree_numbers": [
+   "G16.762"
+  ]
+ },
+ "D012046": {
+  "parents": {
+   "D000359": "Aftercare",
+   "D006296": "Health Services",
+   "D010810": "Physical and Rehabilitation Medicine",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.831",
+   "E02.760.169.063.500",
+   "N02.421.784",
+   "H02.403.680.600"
+  ]
+ },
+ "D012090": {
+  "parents": {
+   "D013180": "Sprains and Strains"
+  },
+  "tree_numbers": [
+   "C26.844.150"
+  ]
+ },
+ "D012098": {
+  "parents": {
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.784"
+  ]
+ },
+ "D012099": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E05.820",
+   "E02.875"
+  ]
+ },
+ "D012101": {
+  "parents": {},
+  "tree_numbers": [
+   "G08"
+  ]
+ },
+ "D012102": {
+  "parents": {
+   "D045505": "Physiological Effects of Drugs",
+   "D045506": "Therapeutic Uses"
+  },
+  "tree_numbers": [
+   "D27.505.696.875",
+   "D27.505.954.705"
+  ]
+ },
+ "D012106": {
+  "parents": {
+   "D012586": "Science"
+  },
+  "tree_numbers": [
+   "H01.770.644"
+  ]
+ },
+ "D012120": {
+  "parents": {
+   "D012140": "Respiratory Tract Diseases"
+  },
+  "tree_numbers": [
+   "C08.618"
+  ]
+ },
+ "D012127": {
+  "parents": {
+   "D007235": "Infant, Premature, Diseases",
+   "D012128": "Respiratory Distress Syndrome"
+  },
+  "tree_numbers": [
+   "C16.614.521.563",
+   "C08.381.840.500",
+   "C08.618.840.500"
+  ]
+ },
+ "D012128": {
+  "parents": {
+   "D008171": "Lung Diseases",
+   "D012120": "Respiration Disorders"
+  },
+  "tree_numbers": [
+   "C08.381.840",
+   "C08.618.840"
+  ]
+ },
+ "D012129": {
+  "parents": {
+   "D003948": "Diagnostic Techniques, Respiratory System"
+  },
+  "tree_numbers": [
+   "E01.370.386.700"
+  ]
+ },
+ "D012137": {
+  "parents": {},
+  "tree_numbers": [
+   "A04"
+  ]
+ },
+ "D012138": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.880"
+  ]
+ },
+ "D012140": {
+  "parents": {},
+  "tree_numbers": [
+   "C08"
+  ]
+ },
+ "D012141": {
+  "parents": {
+   "D007239": "Infections",
+   "D012140": "Respiratory Tract Diseases"
+  },
+  "tree_numbers": [
+   "C01.748",
+   "C08.730"
+  ]
+ },
+ "D012142": {
+  "parents": {
+   "D012140": "Respiratory Tract Diseases",
+   "D013899": "Thoracic Neoplasms"
+  },
+  "tree_numbers": [
+   "C08.785",
+   "C04.588.894.797"
+  ]
+ },
+ "D012212": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D010825": "Physics"
+  },
+  "tree_numbers": [
+   "E05.830",
+   "H01.671.808"
+  ]
+ },
+ "D012216": {
+  "parents": {
+   "D003240": "Connective Tissue Diseases",
+   "D009140": "Musculoskeletal Diseases"
+  },
+  "tree_numbers": [
+   "C17.300.775",
+   "C05.799"
+  ]
+ },
+ "D012327": {
+  "parents": {
+   "D014777": "Virus Diseases"
+  },
+  "tree_numbers": [
+   "C01.925.782"
+  ]
+ },
+ "D012459": {
+  "parents": {
+   "D062385": "Hydroxybenzoates"
+  },
+  "tree_numbers": [
+   "D02.241.223.100.300.595",
+   "D02.241.511.390.595",
+   "D02.455.426.559.389.127.281.595",
+   "D02.455.426.559.389.657.410.595"
+  ]
+ },
+ "D012466": {
+  "parents": {
+   "D009059": "Mouth Diseases"
+  },
+  "tree_numbers": [
+   "C07.465.815"
+  ]
+ },
+ "D012468": {
+  "parents": {
+   "D009062": "Mouth Neoplasms",
+   "D012466": "Salivary Gland Diseases"
+  },
+  "tree_numbers": [
+   "C07.465.815.718",
+   "C04.588.443.591.824",
+   "C07.465.530.824"
+  ]
+ },
+ "D012559": {
+  "parents": {
+   "D019967": "Schizophrenia Spectrum and Other Psychotic Disorders"
+  },
+  "tree_numbers": [
+   "F03.700.750"
+  ]
+ },
+ "D012586": {
+  "parents": {
+   "D010811": "Natural Science Disciplines"
+  },
+  "tree_numbers": [
+   "H01.770"
+  ]
+ },
+ "D012632": {
+  "parents": {
+   "D013256": "Steroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.812"
+  ]
+ },
+ "D012634": {
+  "parents": {
+   "D005441": "Fluids and Secretions"
+  },
+  "tree_numbers": [
+   "A12.200"
+  ]
+ },
+ "D012639": {
+  "parents": {
+   "D005502": "Food",
+   "D005638": "Fruit"
+  },
+  "tree_numbers": [
+   "G07.203.300.775",
+   "J02.500.775",
+   "A18.024.500.750"
+  ]
+ },
+ "D012643": {
+  "parents": {
+   "D008903": "Minerals",
+   "D018011": "Chalcogens"
+  },
+  "tree_numbers": [
+   "D01.578.700",
+   "D01.268.185.850"
+  ]
+ },
+ "D012677": {
+  "parents": {
+   "D009424": "Nervous System Physiological Phenomena",
+   "D011603": "Psychophysiology"
+  },
+  "tree_numbers": [
+   "G11.561.790",
+   "F02.830.816"
+  ]
+ },
+ "D012679": {
+  "parents": {},
+  "tree_numbers": [
+   "A09"
+  ]
+ },
+ "D012702": {
+  "parents": {
+   "D018490": "Serotonin Agents"
+  },
+  "tree_numbers": [
+   "D27.505.519.625.850.850",
+   "D27.505.696.577.850.850"
+  ]
+ },
+ "D012712": {
+  "parents": {
+   "D001798": "Blood Proteins",
+   "D005916": "Globulins"
+  },
+  "tree_numbers": [
+   "D12.776.124.790",
+   "D12.776.377.715"
+  ]
+ },
+ "D012735": {
+  "parents": {
+   "D000091662": "Genital Diseases"
+  },
+  "tree_numbers": [
+   "C12.100.875"
+  ]
+ },
+ "D012739": {
+  "parents": {
+   "D042341": "Gonadal Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.334.851"
+  ]
+ },
+ "D012769": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.835"
+  ]
+ },
+ "D012816": {
+  "parents": {
+   "D013568": "Pathological Conditions, Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C23.888"
+  ]
+ },
+ "D012817": {
+  "parents": {
+   "D012816": "Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C23.888.821"
+  ]
+ },
+ "D012818": {
+  "parents": {
+   "D012816": "Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C23.888.852"
+  ]
+ },
+ "D012863": {
+  "parents": {
+   "D009141": "Musculoskeletal System"
+  },
+  "tree_numbers": [
+   "A02.835"
+  ]
+ },
+ "D012871": {
+  "parents": {
+   "D017437": "Skin and Connective Tissue Diseases"
+  },
+  "tree_numbers": [
+   "C17.800"
+  ]
+ },
+ "D012883": {
+  "parents": {
+   "D012871": "Skin Diseases"
+  },
+  "tree_numbers": [
+   "C17.800.893"
+  ]
+ },
+ "D012890": {
+  "parents": {
+   "D009424": "Nervous System Physiological Phenomena",
+   "D011603": "Psychophysiology"
+  },
+  "tree_numbers": [
+   "G11.561.803",
+   "F02.830.855"
+  ]
+ },
+ "D012898": {
+  "parents": {
+   "D018836": "Inflammation Mediators"
+  },
+  "tree_numbers": [
+   "D23.469.050"
+  ]
+ },
+ "D012940": {
+  "parents": {
+   "D012961": "Sociology"
+  },
+  "tree_numbers": [
+   "I01.880.735"
+  ]
+ },
+ "D012942": {
+  "parents": {
+   "D001525": "Behavioral Sciences"
+  },
+  "tree_numbers": [
+   "F04.096.879",
+   "I01"
+  ]
+ },
+ "D012961": {
+  "parents": {
+   "D012942": "Social Sciences"
+  },
+  "tree_numbers": [
+   "F04.096.879.757",
+   "I01.880"
+  ]
+ },
+ "D012968": {
+  "parents": {
+   "D004164": "Diphosphonates"
+  },
+  "tree_numbers": [
+   "D02.705.429.500.830"
+  ]
+ },
+ "D013024": {
+  "parents": {
+   "D004042": "Dietary Fats, Unsaturated",
+   "D005224": "Fats, Unsaturated",
+   "D010938": "Plant Oils"
+  },
+  "tree_numbers": [
+   "D10.627.700.880",
+   "D20.215.784.750.880",
+   "D10.212.507.800",
+   "D10.212.302.380.800",
+   "G07.203.300.375.400.750",
+   "J02.500.375.400.750"
+  ]
+ },
+ "D013043": {
+  "parents": {
+   "D008511": "Medicine"
+  },
+  "tree_numbers": [
+   "H02.403.810"
+  ]
+ },
+ "D013177": {
+  "parents": {
+   "D011998": "Recreation"
+  },
+  "tree_numbers": [
+   "I03.450.642.845"
+  ]
+ },
+ "D013180": {
+  "parents": {
+   "D014947": "Wounds and Injuries"
+  },
+  "tree_numbers": [
+   "C26.844"
+  ]
+ },
+ "D013213": {
+  "parents": {
+   "D004040": "Dietary Carbohydrates",
+   "D005936": "Glucans"
+  },
+  "tree_numbers": [
+   "D05.750.078.562.855",
+   "D09.698.365.855",
+   "D09.301.915"
+  ]
+ },
+ "D013256": {
+  "parents": {
+   "D000072473": "Fused-Ring Compounds"
+  },
+  "tree_numbers": [
+   "D04.210.500"
+  ]
+ },
+ "D013259": {
+  "parents": {
+   "D013256": "Steroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.908"
+  ]
+ },
+ "D013261": {
+  "parents": {
+   "D002776": "Cholestanes",
+   "D008563": "Membrane Lipids"
+  },
+  "tree_numbers": [
+   "D04.210.500.247.808",
+   "D10.570.938"
+  ]
+ },
+ "D013267": {
+  "parents": {
+   "D001597": "Benzylidene Compounds"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.150.700"
+  ]
+ },
+ "D013312": {
+  "parents": {
+   "D010829": "Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.775"
+  ]
+ },
+ "D013313": {
+  "parents": {
+   "D040921": "Stress Disorders, Traumatic"
+  },
+  "tree_numbers": [
+   "F03.950.750.500"
+  ]
+ },
+ "D013315": {
+  "parents": {
+   "D001526": "Behavioral Symptoms",
+   "D011603": "Psychophysiology"
+  },
+  "tree_numbers": [
+   "F01.145.126.990",
+   "F02.830.900"
+  ]
+ },
+ "D013402": {
+  "parents": {
+   "D000438": "Alcohols",
+   "D002241": "Carbohydrates"
+  },
+  "tree_numbers": [
+   "D02.033.800",
+   "D09.853"
+  ]
+ },
+ "D013405": {
+  "parents": {
+   "D012940": "Social Problems",
+   "D016728": "Self-Injurious Behavior"
+  },
+  "tree_numbers": [
+   "I01.880.735.856",
+   "F01.145.126.980.875"
+  ]
+ },
+ "D013449": {
+  "parents": {
+   "D000577": "Amides",
+   "D013450": "Sulfones"
+  },
+  "tree_numbers": [
+   "D02.065.884",
+   "D02.886.590.700"
+  ]
+ },
+ "D013450": {
+  "parents": {
+   "D013457": "Sulfur Compounds"
+  },
+  "tree_numbers": [
+   "D02.886.590"
+  ]
+ },
+ "D013451": {
+  "parents": {
+   "D013456": "Sulfur Acids"
+  },
+  "tree_numbers": [
+   "D02.886.645.600",
+   "D01.029.260.877.740",
+   "D01.875.800.740"
+  ]
+ },
+ "D013456": {
+  "parents": {
+   "D000148": "Acids, Noncarboxylic",
+   "D013457": "Sulfur Compounds"
+  },
+  "tree_numbers": [
+   "D01.875.800",
+   "D02.886.645",
+   "D01.029.260.877"
+  ]
+ },
+ "D013457": {
+  "parents": {
+   "D007287": "Inorganic Chemicals",
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.886",
+   "D01.875"
+  ]
+ },
+ "D013480": {
+  "parents": {
+   "D010060": "Ovulation",
+   "D010062": "Ovulation Induction"
+  },
+  "tree_numbers": [
+   "E02.875.800.984.500",
+   "E05.820.800.984.500",
+   "G08.686.784.690.768"
+  ]
+ },
+ "D013504": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.100"
+  ]
+ },
+ "D013505": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.210"
+  ]
+ },
+ "D013509": {
+  "parents": {
+   "D013519": "Urogenital Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.950.300"
+  ]
+ },
+ "D013510": {
+  "parents": {
+   "D019616": "Thoracic Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.928.600"
+  ]
+ },
+ "D013513": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.520"
+  ]
+ },
+ "D013514": {
+  "parents": {},
+  "tree_numbers": [
+   "E04"
+  ]
+ },
+ "D013519": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.950"
+  ]
+ },
+ "D013523": {
+  "parents": {
+   "D004864": "Equipment and Supplies"
+  },
+  "tree_numbers": [
+   "E07.858"
+  ]
+ },
+ "D013525": {
+  "parents": {
+   "D013523": "Surgical Equipment"
+  },
+  "tree_numbers": [
+   "E07.858.700"
+  ]
+ },
+ "D013528": {
+  "parents": {
+   "D013525": "Surgical Instruments"
+  },
+  "tree_numbers": [
+   "E07.858.700.750"
+  ]
+ },
+ "D013530": {
+  "parents": {
+   "D011183": "Postoperative Complications",
+   "D014946": "Wound Infection"
+  },
+  "tree_numbers": [
+   "C23.550.767.925",
+   "C01.947.692"
+  ]
+ },
+ "D013536": {
+  "parents": {
+   "D058106": "Wound Closure Techniques"
+  },
+  "tree_numbers": [
+   "E04.987.775"
+  ]
+ },
+ "D013537": {
+  "parents": {
+   "D053831": "Surgical Fixation Devices"
+  },
+  "tree_numbers": [
+   "E07.858.690.820"
+  ]
+ },
+ "D013568": {
+  "parents": {},
+  "tree_numbers": [
+   "C23"
+  ]
+ },
+ "D013672": {
+  "parents": {
+   "D013676": "Technology, Industry, and Agriculture"
+  },
+  "tree_numbers": [
+   "J01.897"
+  ]
+ },
+ "D013676": {
+  "parents": {},
+  "tree_numbers": [
+   "J01"
+  ]
+ },
+ "D013678": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D013672": "Technology"
+  },
+  "tree_numbers": [
+   "E05.916",
+   "J01.897.836"
+  ]
+ },
+ "D013694": {
+  "parents": {
+   "D010551": "Personality"
+  },
+  "tree_numbers": [
+   "F01.752.898"
+  ]
+ },
+ "D013777": {
+  "parents": {
+   "D001393": "Azoles"
+  },
+  "tree_numbers": [
+   "D03.383.129.617"
+  ]
+ },
+ "D013805": {
+  "parents": {
+   "D014970": "Xanthines"
+  },
+  "tree_numbers": [
+   "D03.132.960.651",
+   "D03.633.100.759.758.824.651"
+  ]
+ },
+ "D013812": {
+  "parents": {},
+  "tree_numbers": [
+   "E02"
+  ]
+ },
+ "D013896": {
+  "parents": {
+   "D012140": "Respiratory Tract Diseases"
+  },
+  "tree_numbers": [
+   "C08.846"
+  ]
+ },
+ "D013899": {
+  "parents": {
+   "D009371": "Neoplasms by Site"
+  },
+  "tree_numbers": [
+   "C04.588.894"
+  ]
+ },
+ "D013959": {
+  "parents": {
+   "D004700": "Endocrine System Diseases"
+  },
+  "tree_numbers": [
+   "C19.874"
+  ]
+ },
+ "D014024": {
+  "parents": {},
+  "tree_numbers": [
+   "A10"
+  ]
+ },
+ "D014054": {
+  "parents": {
+   "D003952": "Diagnostic Imaging"
+  },
+  "tree_numbers": [
+   "E01.370.350.825"
+  ]
+ },
+ "D014056": {
+  "parents": {
+   "D011859": "Radiography",
+   "D014054": "Tomography"
+  },
+  "tree_numbers": [
+   "E01.370.350.700.810",
+   "E01.370.350.825.810"
+  ]
+ },
+ "D014057": {
+  "parents": {
+   "D007090": "Image Interpretation, Computer-Assisted",
+   "D011856": "Radiographic Image Enhancement",
+   "D014056": "Tomography, X-Ray"
+  },
+  "tree_numbers": [
+   "E01.370.350.350.810",
+   "E01.370.350.600.350.700.810",
+   "E01.370.350.700.700.810",
+   "E01.370.350.700.810.810",
+   "E01.370.350.825.810.810"
+  ]
+ },
+ "D014076": {
+  "parents": {
+   "D009057": "Stomatognathic Diseases"
+  },
+  "tree_numbers": [
+   "C07.793"
+  ]
+ },
+ "D014148": {
+  "parents": {
+   "D003509": "Cyclohexanecarboxylic Acids"
+  },
+  "tree_numbers": [
+   "D02.241.223.268.860"
+  ]
+ },
+ "D014149": {
+  "parents": {
+   "D002492": "Central Nervous System Depressants",
+   "D011619": "Psychotropic Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.277.950",
+   "D27.505.954.427.210.950",
+   "D27.505.954.427.700.872"
+  ]
+ },
+ "D014150": {
+  "parents": {
+   "D014149": "Tranquilizing Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.277.950.040",
+   "D27.505.954.427.210.950.040",
+   "D27.505.954.427.700.872.331"
+  ]
+ },
+ "D014219": {
+  "parents": {
+   "D007743": "Labor, Obstetric"
+  },
+  "tree_numbers": [
+   "G08.686.784.769.326.660"
+  ]
+ },
+ "D014230": {
+  "parents": {
+   "D001393": "Azoles"
+  },
+  "tree_numbers": [
+   "D03.383.129.799"
+  ]
+ },
+ "D014443": {
+  "parents": {
+   "D024322": "Amino Acids, Aromatic"
+  },
+  "tree_numbers": [
+   "D12.125.072.050.875"
+  ]
+ },
+ "D014565": {
+  "parents": {
+   "D000091642": "Urogenital Diseases",
+   "D009371": "Neoplasms by Site",
+   "D052776": "Female Urogenital Diseases",
+   "D052801": "Male Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.200.758",
+   "C04.588.945",
+   "C12.050.351.937",
+   "C12.900"
+  ]
+ },
+ "D014566": {
+  "parents": {},
+  "tree_numbers": [
+   "A05"
+  ]
+ },
+ "D014570": {
+  "parents": {
+   "D000091642": "Urogenital Diseases",
+   "D052776": "Female Urogenital Diseases",
+   "D052801": "Male Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.200.777",
+   "C12.050.351.968",
+   "C12.950"
+  ]
+ },
+ "D014591": {
+  "parents": {
+   "D005831": "Genital Diseases, Female"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.852",
+   "C12.100.250.852"
+  ]
+ },
+ "D014592": {
+  "parents": {
+   "D006470": "Hemorrhage",
+   "D014591": "Uterine Diseases"
+  },
+  "tree_numbers": [
+   "C23.550.414.993",
+   "C12.050.351.500.852.691",
+   "C12.100.250.852.691"
+  ]
+ },
+ "D014593": {
+  "parents": {
+   "D004420": "Dystocia"
+  },
+  "tree_numbers": [
+   "C12.050.703.420.288.728"
+  ]
+ },
+ "D014594": {
+  "parents": {
+   "D005833": "Genital Neoplasms, Female",
+   "D014591": "Uterine Diseases"
+  },
+  "tree_numbers": [
+   "C04.588.945.418.948",
+   "C12.050.351.937.418.875",
+   "C12.900.418.875",
+   "C12.050.351.500.852.762",
+   "C12.100.250.852.762"
+  ]
+ },
+ "D014599": {
+  "parents": {
+   "D005836": "Genitalia, Female"
+  },
+  "tree_numbers": [
+   "A05.360.319.679"
+  ]
+ },
+ "D014612": {
+  "parents": {
+   "D001688": "Biological Products"
+  },
+  "tree_numbers": [
+   "D20.215.894"
+  ]
+ },
+ "D014614": {
+  "parents": {
+   "D000941": "Antigens",
+   "D011994": "Recombinant Proteins",
+   "D014612": "Vaccines"
+  },
+  "tree_numbers": [
+   "D12.776.828.868",
+   "D20.215.894.865",
+   "D23.050.865"
+  ]
+ },
+ "D014623": {
+  "parents": {
+   "D005831": "Genital Diseases, Female"
+  },
+  "tree_numbers": [
+   "C12.050.351.500.894",
+   "C12.100.250.894"
+  ]
+ },
+ "D014633": {
+  "parents": {
+   "D000597": "Amino Acids, Branched-Chain",
+   "D000601": "Amino Acids, Essential"
+  },
+  "tree_numbers": [
+   "D12.125.070.950",
+   "D12.125.142.930"
+  ]
+ },
+ "D014647": {
+  "parents": {
+   "D007871": "Leg Ulcer",
+   "D014648": "Varicose Veins"
+  },
+  "tree_numbers": [
+   "C17.800.893.592.730",
+   "C14.907.927.730"
+  ]
+ },
+ "D014648": {
+  "parents": {
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.907.927"
+  ]
+ },
+ "D014652": {
+  "parents": {
+   "D002318": "Cardiovascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.907"
+  ]
+ },
+ "D014656": {
+  "parents": {
+   "D013504": "Cardiovascular Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.100.814"
+  ]
+ },
+ "D014657": {
+  "parents": {
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.907.940"
+  ]
+ },
+ "D014665": {
+  "parents": {
+   "D002317": "Cardiovascular Agents"
+  },
+  "tree_numbers": [
+   "D27.505.954.411.918"
+  ]
+ },
+ "D014732": {
+  "parents": {
+   "D055595": "Mechanical Phenomena"
+  },
+  "tree_numbers": [
+   "G01.374.930"
+  ]
+ },
+ "D014754": {
+  "parents": {
+   "D003415": "Crime",
+   "D012940": "Social Problems"
+  },
+  "tree_numbers": [
+   "I01.198.240.856",
+   "I01.880.735.900"
+  ]
+ },
+ "D014765": {
+  "parents": {
+   "D014612": "Vaccines"
+  },
+  "tree_numbers": [
+   "D20.215.894.899"
+  ]
+ },
+ "D014770": {
+  "parents": {
+   "D012816": "Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C23.888.971"
+  ]
+ },
+ "D014777": {
+  "parents": {
+   "D007239": "Infections"
+  },
+  "tree_numbers": [
+   "C01.925"
+  ]
+ },
+ "D014798": {
+  "parents": {
+   "D003625": "Data Collection",
+   "D003710": "Demography"
+  },
+  "tree_numbers": [
+   "E05.318.308.985",
+   "N06.850.520.308.985",
+   "N01.224.935",
+   "N06.850.505.400.975"
+  ]
+ },
+ "D014805": {
+  "parents": {
+   "D045728": "Corrinoids"
+  },
+  "tree_numbers": [
+   "D03.383.129.578.840.437.777",
+   "D03.633.400.909.437.777",
+   "D04.345.783.437.777"
+  ]
+ },
+ "D014807": {
+  "parents": {
+   "D012632": "Secosteroids"
+  },
+  "tree_numbers": [
+   "D04.210.500.812.768"
+  ]
+ },
+ "D014839": {
+  "parents": {
+   "D012817": "Signs and Symptoms, Digestive"
+  },
+  "tree_numbers": [
+   "C23.888.821.937"
+  ]
+ },
+ "D014945": {
+  "parents": {
+   "D012038": "Regeneration"
+  },
+  "tree_numbers": [
+   "G16.762.891"
+  ]
+ },
+ "D014946": {
+  "parents": {
+   "D007239": "Infections"
+  },
+  "tree_numbers": [
+   "C01.947"
+  ]
+ },
+ "D014947": {
+  "parents": {},
+  "tree_numbers": [
+   "C26"
+  ]
+ },
+ "D014970": {
+  "parents": {
+   "D000470": "Alkaloids",
+   "D011688": "Purinones"
+  },
+  "tree_numbers": [
+   "D03.132.960",
+   "D03.633.100.759.758.824"
+  ]
+ },
+ "D015390": {
+  "parents": {
+   "D005763": "Gastroenterostomy",
+   "D050110": "Bariatric Surgery"
+  },
+  "tree_numbers": [
+   "E02.650.500.062.249",
+   "E04.062.249",
+   "E04.035.398.385",
+   "E04.210.457.430"
+  ]
+ },
+ "D015415": {
+  "parents": {
+   "D001685": "Biological Factors"
+  },
+  "tree_numbers": [
+   "D23.101"
+  ]
+ },
+ "D015438": {
+  "parents": {
+   "D001519": "Behavior"
+  },
+  "tree_numbers": [
+   "F01.145.488"
+  ]
+ },
+ "D015444": {
+  "parents": {
+   "D006802": "Human Activities",
+   "D009043": "Motor Activity"
+  },
+  "tree_numbers": [
+   "I03.350",
+   "G11.427.410.698.277"
+  ]
+ },
+ "D015525": {
+  "parents": {
+   "D004042": "Dietary Fats, Unsaturated",
+   "D005231": "Fatty Acids, Unsaturated",
+   "D005395": "Fish Oils"
+  },
+  "tree_numbers": [
+   "D10.251.355.337",
+   "D10.212.302.380.410",
+   "D10.627.430.450"
+  ]
+ },
+ "D015539": {
+  "parents": {
+   "D006487": "Hemostasis"
+  },
+  "tree_numbers": [
+   "G09.188.390.600"
+  ]
+ },
+ "D015773": {
+  "parents": {
+   "D004656": "Enalapril"
+  },
+  "tree_numbers": [
+   "D12.644.456.345.360.300"
+  ]
+ },
+ "D015777": {
+  "parents": {
+   "D005231": "Fatty Acids, Unsaturated",
+   "D012898": "Autacoids"
+  },
+  "tree_numbers": [
+   "D10.251.355.255",
+   "D23.469.050.175"
+  ]
+ },
+ "D015785": {
+  "parents": {
+   "D005128": "Eye Diseases",
+   "D030342": "Genetic Diseases, Inborn"
+  },
+  "tree_numbers": [
+   "C11.270",
+   "C16.320.290"
+  ]
+ },
+ "D015815": {
+  "parents": {
+   "D000954": "Antigens, Surface",
+   "D008562": "Membrane Glycoproteins"
+  },
+  "tree_numbers": [
+   "D23.050.301.350",
+   "D12.776.395.550.200",
+   "D12.776.543.550.200",
+   "D09.400.430.890.200"
+  ]
+ },
+ "D015870": {
+  "parents": {
+   "D055614": "Genetic Phenomena"
+  },
+  "tree_numbers": [
+   "G05.297"
+  ]
+ },
+ "D015907": {
+  "parents": {
+   "D003944": "Diagnostic Techniques, Obstetrical and Gynecological",
+   "D004724": "Endoscopy",
+   "D013509": "Gynecologic Surgical Procedures",
+   "D013513": "Obstetric Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.520.360",
+   "E04.950.300.539",
+   "E01.370.388.250.360",
+   "E04.502.250.360",
+   "E01.370.378.330"
+  ]
+ },
+ "D015981": {
+  "parents": {
+   "D011634": "Public Health",
+   "D011787": "Quality of Health Care"
+  },
+  "tree_numbers": [
+   "N06.850.490",
+   "N05.715.350"
+  ]
+ },
+ "D015991": {
+  "parents": {
+   "D011634": "Public Health"
+  },
+  "tree_numbers": [
+   "N06.850.505"
+  ]
+ },
+ "D016020": {
+  "parents": {
+   "D004812": "Epidemiologic Methods",
+   "D017531": "Health Care Evaluation Mechanisms"
+  },
+  "tree_numbers": [
+   "N05.715.360.330",
+   "E05.318.372",
+   "N06.850.520.450"
+  ]
+ },
+ "D016060": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.912"
+  ]
+ },
+ "D016063": {
+  "parents": {
+   "D006470": "Hemorrhage",
+   "D007431": "Intraoperative Complications"
+  },
+  "tree_numbers": [
+   "C23.550.414.300",
+   "C23.550.505.300"
+  ]
+ },
+ "D016118": {
+  "parents": {
+   "D008023": "Ligaments, Articular"
+  },
+  "tree_numbers": [
+   "A02.513.514.100",
+   "A02.835.583.512.100",
+   "A10.165.669.514.100"
+  ]
+ },
+ "D016179": {
+  "parents": {
+   "D003115": "Colony-Stimulating Factors"
+  },
+  "tree_numbers": [
+   "D09.400.430.775.200",
+   "D12.644.276.374.410.240.350",
+   "D12.776.395.240.200",
+   "D12.776.467.374.410.240.350",
+   "D23.529.374.410.240.350"
+  ]
+ },
+ "D016207": {
+  "parents": {
+   "D036341": "Intercellular Signaling Peptides and Proteins"
+  },
+  "tree_numbers": [
+   "D12.644.276.374",
+   "D12.776.467.374",
+   "D23.529.374"
+  ]
+ },
+ "D016276": {
+  "parents": {
+   "D002320": "Cardiovascular Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G09.330.955"
+  ]
+ },
+ "D016277": {
+  "parents": {
+   "D016276": "Ventricular Function"
+  },
+  "tree_numbers": [
+   "G09.330.955.800"
+  ]
+ },
+ "D016298": {
+  "parents": {
+   "D016207": "Cytokines"
+  },
+  "tree_numbers": [
+   "D12.644.276.374.410",
+   "D12.776.467.374.410",
+   "D23.529.374.410"
+  ]
+ },
+ "D016343": {
+  "parents": {
+   "D008991": "Monitoring, Physiologic",
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.510",
+   "E01.370.520.510"
+  ]
+ },
+ "D016393": {
+  "parents": {
+   "D008228": "Lymphoma, Non-Hodgkin"
+  },
+  "tree_numbers": [
+   "C04.557.386.480.150",
+   "C15.604.515.569.480.150",
+   "C20.683.515.761.480.150"
+  ]
+ },
+ "D016403": {
+  "parents": {
+   "D016393": "Lymphoma, B-Cell"
+  },
+  "tree_numbers": [
+   "C04.557.386.480.150.585",
+   "C15.604.515.569.480.150.585",
+   "C20.683.515.761.480.150.585"
+  ]
+ },
+ "D016552": {
+  "parents": {
+   "D008919": "Investigative Techniques"
+  },
+  "tree_numbers": [
+   "E05.333"
+  ]
+ },
+ "D016595": {
+  "parents": {
+   "D011459": "Prostaglandins E, Synthetic"
+  },
+  "tree_numbers": [
+   "D10.251.355.255.550.775.450.500",
+   "D23.469.050.175.725.775.450.500",
+   "D23.469.700.660.500"
+  ]
+ },
+ "D016640": {
+  "parents": {
+   "D003920": "Diabetes Mellitus",
+   "D011248": "Pregnancy Complications"
+  },
+  "tree_numbers": [
+   "C12.050.703.170",
+   "C18.452.394.750.448",
+   "C19.246.200"
+  ]
+ },
+ "D016728": {
+  "parents": {
+   "D001526": "Behavioral Symptoms"
+  },
+  "tree_numbers": [
+   "F01.145.126.980"
+  ]
+ },
+ "D016879": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.895"
+  ]
+ },
+ "D017202": {
+  "parents": {
+   "D006331": "Heart Diseases",
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.280.647",
+   "C14.907.585"
+  ]
+ },
+ "D017273": {
+  "parents": {
+   "D007987": "Gonadotropin-Releasing Hormone"
+  },
+  "tree_numbers": [
+   "D06.472.699.327.740.320.340",
+   "D12.644.400.400.740.320.340",
+   "D12.644.456.460.315",
+   "D12.644.548.365.740.320.340",
+   "D12.776.631.650.405.740.320.340"
+  ]
+ },
+ "D017379": {
+  "parents": {
+   "D006332": "Cardiomegaly"
+  },
+  "tree_numbers": [
+   "C14.280.195.400",
+   "C23.300.775.250.400"
+  ]
+ },
+ "D017409": {
+  "parents": {
+   "D005283": "Fentanyl"
+  },
+  "tree_numbers": [
+   "D03.383.621.265.900"
+  ]
+ },
+ "D017437": {
+  "parents": {},
+  "tree_numbers": [
+   "C17"
+  ]
+ },
+ "D017445": {
+  "parents": {
+   "D012871": "Skin Diseases"
+  },
+  "tree_numbers": [
+   "C17.800.862"
+  ]
+ },
+ "D017530": {
+  "parents": {},
+  "tree_numbers": [
+   "N05"
+  ]
+ },
+ "D017531": {
+  "parents": {
+   "D011787": "Quality of Health Care"
+  },
+  "tree_numbers": [
+   "N05.715.360"
+  ]
+ },
+ "D017579": {
+  "parents": {
+   "D014754": "Violence"
+  },
+  "tree_numbers": [
+   "I01.198.240.856.350",
+   "I01.880.735.900.350"
+  ]
+ },
+ "D017584": {
+  "parents": {
+   "D008487": "Medical History Taking",
+   "D015981": "Epidemiologic Factors"
+  },
+  "tree_numbers": [
+   "N05.715.350.575",
+   "N06.850.490.812",
+   "E01.370.510.700"
+  ]
+ },
+ "D017601": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.650"
+  ]
+ },
+ "D017672": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.625"
+  ]
+ },
+ "D017698": {
+  "parents": {
+   "D008593": "Menopause"
+  },
+  "tree_numbers": [
+   "G08.686.157.500.625",
+   "G08.686.841.249.500.625"
+  ]
+ },
+ "D017739": {
+  "parents": {
+   "D013451": "Sulfonic Acids"
+  },
+  "tree_numbers": [
+   "D02.886.645.600.080"
+  ]
+ },
+ "D017753": {
+  "parents": {
+   "D004777": "Environment"
+  },
+  "tree_numbers": [
+   "G16.500.275.157",
+   "N06.230.124"
+  ]
+ },
+ "D017776": {
+  "parents": {
+   "D001341": "Autonomic Nervous System",
+   "D010525": "Peripheral Nerves"
+  },
+  "tree_numbers": [
+   "A08.800.050.050",
+   "A08.800.800.060"
+  ]
+ },
+ "D017792": {
+  "parents": {
+   "D013536": "Suture Techniques"
+  },
+  "tree_numbers": [
+   "E04.987.775.800"
+  ]
+ },
+ "D017829": {
+  "parents": {
+   "D007191": "Indazoles",
+   "D053961": "Azabicyclo Compounds"
+  },
+  "tree_numbers": [
+   "D03.383.129.539.487.350",
+   "D03.633.100.449.350",
+   "D03.605.084.500.444",
+   "D02.145.074.444"
+  ]
+ },
+ "D017933": {
+  "parents": {
+   "D009420": "Nervous System"
+  },
+  "tree_numbers": [
+   "A08.800"
+  ]
+ },
+ "D018000": {
+  "parents": {
+   "D011956": "Receptors, Cell Surface"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.750"
+  ]
+ },
+ "D018011": {
+  "parents": {
+   "D004602": "Elements"
+  },
+  "tree_numbers": [
+   "D01.268.185"
+  ]
+ },
+ "D018056": {
+  "parents": {
+   "D001790": "Blood Physiological Phenomena",
+   "D006439": "Hemodynamics",
+   "D012212": "Rheology"
+  },
+  "tree_numbers": [
+   "G09.330.380.630",
+   "G09.188.370",
+   "E05.830.250"
+  ]
+ },
+ "D018179": {
+  "parents": {
+   "D010980": "Platelet Membrane Glycoproteins",
+   "D018000": "Receptors, Peptide",
+   "D043562": "Receptors, G-Protein-Coupled",
+   "D044462": "Receptors, Proteinase-Activated"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.792.500",
+   "D12.776.543.750.750.850",
+   "D12.776.543.750.695.875",
+   "D09.400.430.890.625.800",
+   "D12.776.395.550.625.800",
+   "D12.776.543.550.625.800",
+   "D12.776.543.750.705.675.892"
+  ]
+ },
+ "D018180": {
+  "parents": {
+   "D018179": "Receptors, Thrombin"
+  },
+  "tree_numbers": [
+   "D12.776.395.550.625.800.800",
+   "D12.776.543.550.625.800.800",
+   "D12.776.543.750.705.675.892.800",
+   "D12.776.543.750.750.850.800",
+   "D09.400.430.890.625.800.800"
+  ]
+ },
+ "D018204": {
+  "parents": {
+   "D009370": "Neoplasms by Histologic Type"
+  },
+  "tree_numbers": [
+   "C04.557.450"
+  ]
+ },
+ "D018373": {
+  "parents": {
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.663"
+  ]
+ },
+ "D018377": {
+  "parents": {
+   "D045504": "Molecular Mechanisms of Pharmacological Action",
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.519.625",
+   "D27.505.696.577"
+  ]
+ },
+ "D018384": {
+  "parents": {
+   "D008660": "Metabolism",
+   "D013312": "Stress, Physiological",
+   "D055754": "[OBSOLETE] Metabolic Phenomena"
+  },
+  "tree_numbers": [
+   "G03.673",
+   "G07.775.750"
+  ]
+ },
+ "D018482": {
+  "parents": {
+   "D009132": "Muscles",
+   "D054792": "Muscle, Striated"
+  },
+  "tree_numbers": [
+   "A02.633.567",
+   "A10.690.552.500"
+  ]
+ },
+ "D018490": {
+  "parents": {
+   "D018377": "Neurotransmitter Agents"
+  },
+  "tree_numbers": [
+   "D27.505.519.625.850",
+   "D27.505.696.577.850"
+  ]
+ },
+ "D018514": {
+  "parents": {},
+  "tree_numbers": [
+   "A18"
+  ]
+ },
+ "D018566": {
+  "parents": {
+   "D011247": "Pregnancy"
+  },
+  "tree_numbers": [
+   "G08.686.784.769.500"
+  ]
+ },
+ "D018663": {
+  "parents": {
+   "D018377": "Neurotransmitter Agents"
+  },
+  "tree_numbers": [
+   "D27.505.519.625.050",
+   "D27.505.696.577.050"
+  ]
+ },
+ "D018674": {
+  "parents": {
+   "D018663": "Adrenergic Agents"
+  },
+  "tree_numbers": [
+   "D27.505.519.625.050.200",
+   "D27.505.696.577.050.200"
+  ]
+ },
+ "D018689": {
+  "parents": {
+   "D018373": "Peripheral Nervous System Agents"
+  },
+  "tree_numbers": [
+   "D27.505.696.663.850"
+  ]
+ },
+ "D018746": {
+  "parents": {
+   "D007249": "Inflammation",
+   "D012769": "Shock"
+  },
+  "tree_numbers": [
+   "C23.550.470.790",
+   "C23.550.835.900"
+  ]
+ },
+ "D018783": {
+  "parents": {
+   "D007172": "Erectile Dysfunction"
+  },
+  "tree_numbers": [
+   "C12.100.500.214.500",
+   "C12.100.875.486.500",
+   "C12.200.294.214.500"
+  ]
+ },
+ "D018798": {
+  "parents": {
+   "D000090463": "Iron Deficiencies",
+   "D000747": "Anemia, Hypochromic"
+  },
+  "tree_numbers": [
+   "C18.452.565.400.500",
+   "C15.378.050.196.300"
+  ]
+ },
+ "D018805": {
+  "parents": {
+   "D007239": "Infections",
+   "D018746": "Systemic Inflammatory Response Syndrome"
+  },
+  "tree_numbers": [
+   "C01.757",
+   "C23.550.470.790.500"
+  ]
+ },
+ "D018817": {
+  "parents": {
+   "D000662": "Amphetamines"
+  },
+  "tree_numbers": [
+   "D02.092.471.683.152.670"
+  ]
+ },
+ "D018836": {
+  "parents": {
+   "D001685": "Biological Factors"
+  },
+  "tree_numbers": [
+   "D23.469"
+  ]
+ },
+ "D018873": {
+  "parents": {
+   "D014798": "Vital Statistics",
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.705",
+   "E05.318.308.985.775",
+   "N01.224.935.849",
+   "N06.850.505.400.975.775",
+   "N06.850.520.308.985.775"
+  ]
+ },
+ "D018890": {
+  "parents": {
+   "D004358": "Drug Therapy"
+  },
+  "tree_numbers": [
+   "E02.319.162"
+  ]
+ },
+ "D019052": {
+  "parents": {
+   "D003866": "Depressive Disorder",
+   "D011644": "Puerperal Disorders"
+  },
+  "tree_numbers": [
+   "F03.600.300.350",
+   "C12.050.703.844.253"
+  ]
+ },
+ "D019060": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.502"
+  ]
+ },
+ "D019072": {
+  "parents": {
+   "D011292": "Premedication",
+   "D018890": "Chemoprevention"
+  },
+  "tree_numbers": [
+   "E02.319.162.150",
+   "E02.319.703.150"
+  ]
+ },
+ "D019086": {
+  "parents": {
+   "D006572": "Heterocyclic Compounds, Bridged-Ring"
+  },
+  "tree_numbers": [
+   "D03.605.084"
+  ]
+ },
+ "D019106": {
+  "parents": {
+   "D006470": "Hemorrhage",
+   "D011183": "Postoperative Complications"
+  },
+  "tree_numbers": [
+   "C23.550.414.941",
+   "C23.550.767.850"
+  ]
+ },
+ "D019148": {
+  "parents": {
+   "D000760": "Anesthesia and Analgesia",
+   "D008919": "Investigative Techniques"
+  },
+  "tree_numbers": [
+   "E05.635",
+   "E03.706"
+  ]
+ },
+ "D019189": {
+  "parents": {
+   "D008659": "Metabolic Diseases"
+  },
+  "tree_numbers": [
+   "C18.452.565"
+  ]
+ },
+ "D019266": {
+  "parents": {
+   "D058085": "Iron Compounds"
+  },
+  "tree_numbers": [
+   "D01.490.600"
+  ]
+ },
+ "D019369": {
+  "parents": {
+   "D010684": "Philosophy"
+  },
+  "tree_numbers": [
+   "K01.752.400"
+  ]
+ },
+ "D019411": {
+  "parents": {
+   "D008919": "Investigative Techniques",
+   "D019937": "Diagnostic Techniques and Procedures"
+  },
+  "tree_numbers": [
+   "E05.200",
+   "E01.370.225"
+  ]
+ },
+ "D019451": {
+  "parents": {
+   "D007254": "Information Science"
+  },
+  "tree_numbers": [
+   "L01.399"
+  ]
+ },
+ "D019468": {
+  "parents": {
+   "D010346": "Patient Care Management"
+  },
+  "tree_numbers": [
+   "N04.590.607"
+  ]
+ },
+ "D019587": {
+  "parents": {
+   "D005502": "Food"
+  },
+  "tree_numbers": [
+   "G07.203.300.456",
+   "J02.500.456"
+  ]
+ },
+ "D019597": {
+  "parents": {
+   "D019658": "Linaceae"
+  },
+  "tree_numbers": [
+   "B01.875.800.575.912.250.859.797.620.500"
+  ]
+ },
+ "D019602": {
+  "parents": {},
+  "tree_numbers": [
+   "J02"
+  ]
+ },
+ "D019616": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.928"
+  ]
+ },
+ "D019636": {
+  "parents": {
+   "D009422": "Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.574"
+  ]
+ },
+ "D019637": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E04.555",
+   "E02.718"
+  ]
+ },
+ "D019647": {
+  "parents": {
+   "D003813": "Dentistry",
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.545",
+   "E06.645"
+  ]
+ },
+ "D019651": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.617"
+  ]
+ },
+ "D019658": {
+  "parents": {
+   "D000076622": "Malpighiales"
+  },
+  "tree_numbers": [
+   "B01.875.800.575.912.250.859.797.620"
+  ]
+ },
+ "D019669": {
+  "parents": {
+   "D057949": "Streptophyta"
+  },
+  "tree_numbers": [
+   "B01.875.800.575"
+  ]
+ },
+ "D019684": {
+  "parents": {
+   "D064028": "Tracheophyta"
+  },
+  "tree_numbers": [
+   "B01.875.800.575.912.250"
+  ]
+ },
+ "D019774": {
+  "parents": {
+   "D001685": "Biological Factors"
+  },
+  "tree_numbers": [
+   "D23.113"
+  ]
+ },
+ "D019919": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.650"
+  ]
+ },
+ "D019936": {
+  "parents": {
+   "D019587": "Dietary Supplements"
+  },
+  "tree_numbers": [
+   "G07.203.300.456.500",
+   "J02.500.456.500"
+  ]
+ },
+ "D019937": {
+  "parents": {
+   "D003933": "Diagnosis"
+  },
+  "tree_numbers": [
+   "E01.370"
+  ]
+ },
+ "D019954": {
+  "parents": {
+   "D001520": "Behavior and Behavior Mechanisms",
+   "D009461": "Neurologic Manifestations"
+  },
+  "tree_numbers": [
+   "F01.700",
+   "C23.888.592.604",
+   "C10.597.606"
+  ]
+ },
+ "D019964": {
+  "parents": {
+   "D001523": "Mental Disorders"
+  },
+  "tree_numbers": [
+   "F03.600"
+  ]
+ },
+ "D019967": {
+  "parents": {
+   "D001523": "Mental Disorders"
+  },
+  "tree_numbers": [
+   "F03.700"
+  ]
+ },
+ "D019990": {
+  "parents": {
+   "D005791": "Patient Care",
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.604",
+   "E02.760.731",
+   "N02.421.585.722"
+  ]
+ },
+ "D020005": {
+  "parents": {
+   "D000438": "Alcohols"
+  },
+  "tree_numbers": [
+   "D02.033.755"
+  ]
+ },
+ "D020011": {
+  "parents": {
+   "D020313": "Specialty Uses of Chemicals",
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.720.799",
+   "D27.505.696.706"
+  ]
+ },
+ "D020018": {
+  "parents": {
+   "D001523": "Mental Disorders"
+  },
+  "tree_numbers": [
+   "F03.835"
+  ]
+ },
+ "D020073": {
+  "parents": {
+   "D011247": "Pregnancy",
+   "D017584": "Reproductive History",
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.340",
+   "G08.686.784.769.213",
+   "N06.850.490.812.250"
+  ]
+ },
+ "D020097": {
+  "parents": {
+   "D009419": "Nerve Tissue Proteins",
+   "D045265": "Natriuretic Peptides"
+  },
+  "tree_numbers": [
+   "D12.776.631.590",
+   "D06.472.699.584.625",
+   "D12.644.548.585.625"
+  ]
+ },
+ "D020100": {
+  "parents": {
+   "D005782": "Gels"
+  },
+  "tree_numbers": [
+   "D20.280.320.375",
+   "D26.255.165.320.375"
+  ]
+ },
+ "D020164": {
+  "parents": {},
+  "tree_numbers": [
+   "D27"
+  ]
+ },
+ "D020196": {
+  "parents": {
+   "D009422": "Nervous System Diseases",
+   "D014947": "Wounds and Injuries"
+  },
+  "tree_numbers": [
+   "C10.900",
+   "C26.915"
+  ]
+ },
+ "D020228": {
+  "parents": {
+   "D020164": "Chemical Actions and Uses"
+  },
+  "tree_numbers": [
+   "D27.505"
+  ]
+ },
+ "D020250": {
+  "parents": {
+   "D009325": "Nausea",
+   "D011183": "Postoperative Complications",
+   "D014839": "Vomiting"
+  },
+  "tree_numbers": [
+   "C23.550.767.859",
+   "C23.888.821.937.059",
+   "C23.888.821.712.700"
+  ]
+ },
+ "D020274": {
+  "parents": {
+   "D001327": "Autoimmune Diseases",
+   "D009422": "Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.114",
+   "C20.111.258"
+  ]
+ },
+ "D020278": {
+  "parents": {
+   "D003711": "Demyelinating Diseases",
+   "D020274": "Autoimmune Diseases of the Nervous System",
+   "D056784": "Leukoencephalopathies"
+  },
+  "tree_numbers": [
+   "C10.314.350",
+   "C20.111.258.250",
+   "C10.114.375",
+   "C10.228.140.695.562"
+  ]
+ },
+ "D020313": {
+  "parents": {
+   "D020164": "Chemical Actions and Uses"
+  },
+  "tree_numbers": [
+   "D27.720"
+  ]
+ },
+ "D020370": {
+  "parents": {
+   "D010003": "Osteoarthritis"
+  },
+  "tree_numbers": [
+   "C05.550.114.606.500",
+   "C05.799.613.500"
+  ]
+ },
+ "D020422": {
+  "parents": {
+   "D010523": "Peripheral Nervous System Diseases"
+  },
+  "tree_numbers": [
+   "C10.668.829.500"
+  ]
+ },
+ "D020423": {
+  "parents": {
+   "D020422": "Mononeuropathies"
+  },
+  "tree_numbers": [
+   "C10.668.829.500.500"
+  ]
+ },
+ "D020521": {
+  "parents": {
+   "D002561": "Cerebrovascular Disorders"
+  },
+  "tree_numbers": [
+   "C14.907.253.855",
+   "C10.228.140.300.775"
+  ]
+ },
+ "D020554": {
+  "parents": {
+   "D005307": "Fertilization in Vitro"
+  },
+  "tree_numbers": [
+   "E02.875.800.750.700",
+   "E05.820.800.750.700"
+  ]
+ },
+ "D020734": {
+  "parents": {
+   "D001480": "Basal Ganglia Diseases",
+   "D009069": "Movement Disorders"
+  },
+  "tree_numbers": [
+   "C10.228.140.079.862",
+   "C10.228.662.600"
+  ]
+ },
+ "D020763": {
+  "parents": {
+   "D013568": "Pathological Conditions, Signs and Symptoms"
+  },
+  "tree_numbers": [
+   "C23.300"
+  ]
+ },
+ "D020969": {
+  "parents": {
+   "D010335": "Pathologic Processes"
+  },
+  "tree_numbers": [
+   "C23.550.291"
+  ]
+ },
+ "D022082": {
+  "parents": {
+   "D002477": "Cells"
+  },
+  "tree_numbers": [
+   "A11.284"
+  ]
+ },
+ "D024221": {
+  "parents": {
+   "D002985": "Clinical Protocols",
+   "D004358": "Drug Therapy"
+  },
+  "tree_numbers": [
+   "E02.183.750",
+   "N05.715.360.330.125.500",
+   "E02.319.077"
+  ]
+ },
+ "D024322": {
+  "parents": {
+   "D000598": "Amino Acids, Cyclic"
+  },
+  "tree_numbers": [
+   "D12.125.072.050"
+  ]
+ },
+ "D024821": {
+  "parents": {
+   "D007333": "Insulin Resistance",
+   "D008659": "Metabolic Diseases"
+  },
+  "tree_numbers": [
+   "C18.452.394.968.500.570",
+   "C18.452.625"
+  ]
+ },
+ "D026361": {
+  "parents": {
+   "D005609": "Free Radicals",
+   "D009603": "Nitroso Compounds",
+   "D017672": "Nitrogen Compounds"
+  },
+  "tree_numbers": [
+   "D02.654.846",
+   "D01.339.409",
+   "D02.389.508",
+   "D01.625.700"
+  ]
+ },
+ "D026741": {
+  "parents": {
+   "D012046": "Rehabilitation",
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.831.535",
+   "E02.779"
+  ]
+ },
+ "D027724": {
+  "parents": {
+   "D012099": "Reproductive Techniques"
+  },
+  "tree_numbers": [
+   "E02.875.800",
+   "E05.820.800"
+  ]
+ },
+ "D028321": {
+  "parents": {
+   "D001688": "Biological Products"
+  },
+  "tree_numbers": [
+   "D20.215.784"
+  ]
+ },
+ "D030342": {
+  "parents": {
+   "D009358": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+  },
+  "tree_numbers": [
+   "C16.320"
+  ]
+ },
+ "D035261": {
+  "parents": {
+   "D018514": "Plant Structures"
+  },
+  "tree_numbers": [
+   "A18.024"
+  ]
+ },
+ "D036341": {
+  "parents": {
+   "D001685": "Biological Factors",
+   "D010455": "Peptides",
+   "D011506": "Proteins"
+  },
+  "tree_numbers": [
+   "D12.644.276",
+   "D12.776.467",
+   "D23.529"
+  ]
+ },
+ "D036361": {
+  "parents": {
+   "D006728": "Hormones",
+   "D010455": "Peptides"
+  },
+  "tree_numbers": [
+   "D12.644.548",
+   "D06.472.699"
+  ]
+ },
+ "D036861": {
+  "parents": {
+   "D013513": "Obstetric Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.520.252"
+  ]
+ },
+ "D040761": {
+  "parents": {
+   "D008420": "Manufactured Materials"
+  },
+  "tree_numbers": [
+   "J01.637.087"
+  ]
+ },
+ "D040921": {
+  "parents": {
+   "D000068099": "Trauma and Stressor Related Disorders"
+  },
+  "tree_numbers": [
+   "F03.950.750"
+  ]
+ },
+ "D041761": {
+  "parents": {
+   "D002769": "Cholelithiasis",
+   "D005705": "Gallbladder Diseases"
+  },
+  "tree_numbers": [
+   "C06.130.564.332",
+   "C06.130.409.178"
+  ]
+ },
+ "D042341": {
+  "parents": {
+   "D006728": "Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.334"
+  ]
+ },
+ "D042782": {
+  "parents": {
+   "D045166": "Estradiol Congeners"
+  },
+  "tree_numbers": [
+   "D06.472.334.851.437.968"
+  ]
+ },
+ "D042883": {
+  "parents": {
+   "D002769": "Cholelithiasis",
+   "D003137": "Common Bile Duct Diseases"
+  },
+  "tree_numbers": [
+   "C06.130.120.250.174",
+   "C06.130.409.267"
+  ]
+ },
+ "D043562": {
+  "parents": {
+   "D011956": "Receptors, Cell Surface"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.695"
+  ]
+ },
+ "D044087": {
+  "parents": {
+   "D011951": "Receptors, Complement",
+   "D043562": "Receptors, G-Protein-Coupled"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.705.833.550",
+   "D12.776.543.750.695.024"
+  ]
+ },
+ "D044182": {
+  "parents": {
+   "D000470": "Alkaloids",
+   "D007546": "Isoquinolines"
+  },
+  "tree_numbers": [
+   "D03.132.098",
+   "D03.633.100.531.085"
+  ]
+ },
+ "D044462": {
+  "parents": {
+   "D011956": "Receptors, Cell Surface"
+  },
+  "tree_numbers": [
+   "D12.776.543.750.792"
+  ]
+ },
+ "D044623": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.642"
+  ]
+ },
+ "D044822": {
+  "parents": {
+   "D017753": "Ecosystem"
+  },
+  "tree_numbers": [
+   "G16.500.275.157.049",
+   "N06.230.124.049"
+  ]
+ },
+ "D044882": {
+  "parents": {
+   "D008659": "Metabolic Diseases"
+  },
+  "tree_numbers": [
+   "C18.452.394"
+  ]
+ },
+ "D045165": {
+  "parents": {
+   "D012739": "Gonadal Steroid Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.334.851.968"
+  ]
+ },
+ "D045166": {
+  "parents": {
+   "D012739": "Gonadal Steroid Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.334.851.437"
+  ]
+ },
+ "D045167": {
+  "parents": {
+   "D012739": "Gonadal Steroid Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.334.851.687"
+  ]
+ },
+ "D045265": {
+  "parents": {
+   "D036361": "Peptide Hormones"
+  },
+  "tree_numbers": [
+   "D06.472.699.584",
+   "D12.644.548.585"
+  ]
+ },
+ "D045424": {
+  "parents": {},
+  "tree_numbers": [
+   "D20"
+  ]
+ },
+ "D045504": {
+  "parents": {
+   "D020228": "Pharmacologic Actions"
+  },
+  "tree_numbers": [
+   "D27.505.519"
+  ]
+ },
+ "D045505": {
+  "parents": {
+   "D020228": "Pharmacologic Actions"
+  },
+  "tree_numbers": [
+   "D27.505.696"
+  ]
+ },
+ "D045506": {
+  "parents": {
+   "D020228": "Pharmacologic Actions"
+  },
+  "tree_numbers": [
+   "D27.505.954"
+  ]
+ },
+ "D045604": {
+  "parents": {
+   "D001826": "Body Fluids",
+   "D005110": "Extracellular Space"
+  },
+  "tree_numbers": [
+   "A11.284.295.260",
+   "A12.207.270"
+  ]
+ },
+ "D045725": {
+  "parents": {
+   "D006576": "Heterocyclic Compounds, 4 or More Rings",
+   "D011758": "Pyrroles",
+   "D047028": "Macrocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D03.633.400.909",
+   "D03.383.129.578.840",
+   "D04.345.783"
+  ]
+ },
+ "D045728": {
+  "parents": {
+   "D045725": "Tetrapyrroles"
+  },
+  "tree_numbers": [
+   "D03.383.129.578.840.437",
+   "D03.633.400.909.437",
+   "D04.345.783.437"
+  ]
+ },
+ "D045762": {
+  "parents": {},
+  "tree_numbers": [
+   "D08"
+  ]
+ },
+ "D046468": {
+  "parents": {
+   "D048788": "Growth and Development",
+   "D055703": "Reproductive Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686.841",
+   "G07.345.750"
+  ]
+ },
+ "D046911": {
+  "parents": {},
+  "tree_numbers": [
+   "D05"
+  ]
+ },
+ "D047028": {
+  "parents": {
+   "D011083": "Polycyclic Compounds"
+  },
+  "tree_numbers": [
+   "D04.345"
+  ]
+ },
+ "D047109": {
+  "parents": {
+   "D005314": "Embryonic and Fetal Development"
+  },
+  "tree_numbers": [
+   "G07.345.500.325.235",
+   "G08.686.784.170.157"
+  ]
+ },
+ "D047228": {
+  "parents": {
+   "D057911": "Angiotensin Receptor Antagonists"
+  },
+  "tree_numbers": [
+   "D27.505.519.162.500"
+  ]
+ },
+ "D047648": {
+  "parents": {
+   "D008593": "Menopause"
+  },
+  "tree_numbers": [
+   "G08.686.157.500.562",
+   "G08.686.841.249.500.562"
+  ]
+ },
+ "D047928": {
+  "parents": {
+   "D007752": "Obstetric Labor, Premature"
+  },
+  "tree_numbers": [
+   "C12.050.703.420.491.500"
+  ]
+ },
+ "D048088": {
+  "parents": {
+   "D007254": "Information Science"
+  },
+  "tree_numbers": [
+   "L01.313"
+  ]
+ },
+ "D048788": {
+  "parents": {
+   "D010829": "Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G07.345"
+  ]
+ },
+ "D048789": {
+  "parents": {
+   "D004968": "Estrogens, Non-Steroidal"
+  },
+  "tree_numbers": [
+   "D27.505.696.399.472.277.540.500"
+  ]
+ },
+ "D049088": {
+  "parents": {
+   "D000073319": "Obesity Management"
+  },
+  "tree_numbers": [
+   "E02.650.500"
+  ]
+ },
+ "D049970": {
+  "parents": {
+   "D006111": "Graves Disease",
+   "D015785": "Eye Diseases, Hereditary"
+  },
+  "tree_numbers": [
+   "C11.270.240",
+   "C16.320.290.410",
+   "C11.675.349.500.500",
+   "C19.874.283.605.500",
+   "C19.874.397.370.500",
+   "C20.111.555.500"
+  ]
+ },
+ "D049990": {
+  "parents": {
+   "D045504": "Molecular Mechanisms of Pharmacological Action"
+  },
+  "tree_numbers": [
+   "D27.505.519.562"
+  ]
+ },
+ "D050071": {
+  "parents": {
+   "D045505": "Physiological Effects of Drugs"
+  },
+  "tree_numbers": [
+   "D27.505.696.242"
+  ]
+ },
+ "D050110": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative",
+   "D049088": "Bariatrics"
+  },
+  "tree_numbers": [
+   "E04.062",
+   "E02.650.500.062"
+  ]
+ },
+ "D050299": {
+  "parents": {
+   "D045504": "Molecular Mechanisms of Pharmacological Action"
+  },
+  "tree_numbers": [
+   "D27.505.519.421"
+  ]
+ },
+ "D052177": {
+  "parents": {
+   "D007674": "Kidney Diseases"
+  },
+  "tree_numbers": [
+   "C12.050.351.968.419.403",
+   "C12.200.777.419.403",
+   "C12.950.419.403"
+  ]
+ },
+ "D052776": {
+  "parents": {
+   "D005261": "Female Urogenital Diseases and Pregnancy Complications"
+  },
+  "tree_numbers": [
+   "C12.050.351"
+  ]
+ },
+ "D052801": {
+  "parents": {
+   "D000091642": "Urogenital Diseases"
+  },
+  "tree_numbers": [
+   "C12.200"
+  ]
+ },
+ "D053610": {
+  "parents": {
+   "D000470": "Alkaloids"
+  },
+  "tree_numbers": [
+   "D03.132.577"
+  ]
+ },
+ "D053657": {
+  "parents": {
+   "D010949": "Plasma"
+  },
+  "tree_numbers": [
+   "A12.207.152.693.600",
+   "A12.207.270.695.600",
+   "A15.145.693.600"
+  ]
+ },
+ "D053831": {
+  "parents": {
+   "D013523": "Surgical Equipment"
+  },
+  "tree_numbers": [
+   "E07.858.690"
+  ]
+ },
+ "D053961": {
+  "parents": {
+   "D001372": "Aza Compounds",
+   "D019086": "Bridged Bicyclo Compounds, Heterocyclic"
+  },
+  "tree_numbers": [
+   "D02.145.074",
+   "D03.605.084.500"
+  ]
+ },
+ "D054626": {
+  "parents": {
+   "D006266": "Health Education"
+  },
+  "tree_numbers": [
+   "N02.421.726.407.229",
+   "H02.403.720.750.380.229"
+  ]
+ },
+ "D054792": {
+  "parents": {
+   "D009132": "Muscles"
+  },
+  "tree_numbers": [
+   "A10.690.552"
+  ]
+ },
+ "D054874": {
+  "parents": {
+   "D013177": "Sports"
+  },
+  "tree_numbers": [
+   "I03.450.642.845.054"
+  ]
+ },
+ "D055070": {
+  "parents": {
+   "D005081": "Exercise Therapy",
+   "D064797": "Physical Conditioning, Human"
+  },
+  "tree_numbers": [
+   "E02.760.169.063.500.387.875",
+   "E02.779.483.875",
+   "E02.831.535.483.875",
+   "G11.427.410.698.277.311.750",
+   "I03.350.311.750"
+  ]
+ },
+ "D055101": {
+  "parents": {
+   "D019411": "Clinical Laboratory Techniques"
+  },
+  "tree_numbers": [
+   "E01.370.225.992",
+   "E05.200.992"
+  ]
+ },
+ "D055118": {
+  "parents": {
+   "D010349": "Patient Compliance"
+  },
+  "tree_numbers": [
+   "F01.100.150.750.500.600.500",
+   "F01.145.488.887.500.600.500",
+   "N05.300.150.800.500.600.500"
+  ]
+ },
+ "D055499": {
+  "parents": {
+   "D007239": "Infections"
+  },
+  "tree_numbers": [
+   "C01.195"
+  ]
+ },
+ "D055585": {
+  "parents": {},
+  "tree_numbers": [
+   "G01"
+  ]
+ },
+ "D055590": {
+  "parents": {
+   "D060328": "Magnetic Phenomena"
+  },
+  "tree_numbers": [
+   "G01.358.500"
+  ]
+ },
+ "D055595": {
+  "parents": {
+   "D055585": "Physical Phenomena"
+  },
+  "tree_numbers": [
+   "G01.374"
+  ]
+ },
+ "D055614": {
+  "parents": {},
+  "tree_numbers": [
+   "G05"
+  ]
+ },
+ "D055669": {
+  "parents": {
+   "D001686": "Biological Phenomena"
+  },
+  "tree_numbers": [
+   "G16.500"
+  ]
+ },
+ "D055687": {
+  "parents": {},
+  "tree_numbers": [
+   "G11"
+  ]
+ },
+ "D055703": {
+  "parents": {
+   "D012101": "Reproductive and Urinary Physiological Phenomena"
+  },
+  "tree_numbers": [
+   "G08.686"
+  ]
+ },
+ "D055754": {
+  "parents": {},
+  "tree_numbers": [
+   "G03"
+  ]
+ },
+ "D055986": {
+  "parents": {
+   "D010808": "Physical Examination"
+  },
+  "tree_numbers": [
+   "E01.370.600.875"
+  ]
+ },
+ "D056647": {
+  "parents": {
+   "D014657": "Vasculitis"
+  },
+  "tree_numbers": [
+   "C14.907.940.897"
+  ]
+ },
+ "D056648": {
+  "parents": {
+   "D001327": "Autoimmune Diseases",
+   "D017445": "Skin Diseases, Vascular",
+   "D056647": "Systemic Vasculitis"
+  },
+  "tree_numbers": [
+   "C17.800.862.105",
+   "C20.111.193",
+   "C14.907.940.897.249"
+  ]
+ },
+ "D056692": {
+  "parents": {
+   "D004043": "Dietary Fiber",
+   "D011135": "Polysaccharides, Bacterial",
+   "D019587": "Dietary Supplements"
+  },
+  "tree_numbers": [
+   "D09.698.718.622",
+   "G07.203.300.456.249",
+   "J02.500.456.249",
+   "D09.301.416.500",
+   "G07.203.300.400.500",
+   "J02.500.400.500"
+  ]
+ },
+ "D056784": {
+  "parents": {
+   "D001927": "Brain Diseases"
+  },
+  "tree_numbers": [
+   "C10.228.140.695"
+  ]
+ },
+ "D057165": {
+  "parents": {
+   "D008659": "Metabolic Diseases"
+  },
+  "tree_numbers": [
+   "C18.452.845"
+  ]
+ },
+ "D057220": {
+  "parents": {
+   "D054626": "Consumer Health Information",
+   "D058980": "Information Literacy"
+  },
+  "tree_numbers": [
+   "N02.421.726.407.229.500",
+   "H02.403.720.750.380.229.500",
+   "L01.143.450.500"
+  ]
+ },
+ "D057510": {
+  "parents": {
+   "D014656": "Vascular Surgical Procedures",
+   "D019060": "Minimally Invasive Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.502.382",
+   "E04.100.814.529"
+  ]
+ },
+ "D057785": {
+  "parents": {
+   "D004864": "Equipment and Supplies"
+  },
+  "tree_numbers": [
+   "E07.132"
+  ]
+ },
+ "D057911": {
+  "parents": {
+   "D045504": "Molecular Mechanisms of Pharmacological Action"
+  },
+  "tree_numbers": [
+   "D27.505.519.162"
+  ]
+ },
+ "D058017": {
+  "parents": {
+   "D014656": "Vascular Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.100.814.868"
+  ]
+ },
+ "D058070": {
+  "parents": {
+   "D020969": "Disease Attributes"
+  },
+  "tree_numbers": [
+   "C23.550.291.187"
+  ]
+ },
+ "D058085": {
+  "parents": {
+   "D007287": "Inorganic Chemicals"
+  },
+  "tree_numbers": [
+   "D01.490"
+  ]
+ },
+ "D058106": {
+  "parents": {
+   "D013514": "Surgical Procedures, Operative"
+  },
+  "tree_numbers": [
+   "E04.987"
+  ]
+ },
+ "D058109": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.041"
+  ]
+ },
+ "D058448": {
+  "parents": {
+   "D044822": "Biodiversity"
+  },
+  "tree_numbers": [
+   "G16.500.275.157.049.100",
+   "N06.230.124.049.100"
+  ]
+ },
+ "D058616": {
+  "parents": {
+   "D019936": "Probiotics",
+   "D056692": "Prebiotics"
+  },
+  "tree_numbers": [
+   "G07.203.300.456.249.500",
+   "J02.500.456.249.500",
+   "G07.203.300.456.500.500",
+   "J02.500.456.500.500"
+  ]
+ },
+ "D058736": {
+  "parents": {
+   "D004868": "Equipment Failure",
+   "D005548": "Foreign-Body Migration"
+  },
+  "tree_numbers": [
+   "E05.325.578",
+   "C26.392.500.500"
+  ]
+ },
+ "D058980": {
+  "parents": {
+   "D003142": "Communication"
+  },
+  "tree_numbers": [
+   "L01.143.450"
+  ]
+ },
+ "D059020": {
+  "parents": {
+   "D013405": "Suicide"
+  },
+  "tree_numbers": [
+   "F01.145.126.980.875.149",
+   "I01.880.735.856.149"
+  ]
+ },
+ "D060328": {
+  "parents": {
+   "D055585": "Physical Phenomena"
+  },
+  "tree_numbers": [
+   "G01.358"
+  ]
+ },
+ "D060733": {
+  "parents": {
+   "D011827": "Radiation",
+   "D055590": "Electromagnetic Phenomena"
+  },
+  "tree_numbers": [
+   "G01.750.250",
+   "G01.358.500.505"
+  ]
+ },
+ "D060805": {
+  "parents": {
+   "D001007": "Anxiety"
+  },
+  "tree_numbers": [
+   "F01.470.132.650"
+  ]
+ },
+ "D060887": {
+  "parents": {
+   "D000954": "Antigens, Surface",
+   "D008565": "Membrane Proteins",
+   "D036341": "Intercellular Signaling Peptides and Proteins"
+  },
+  "tree_numbers": [
+   "D23.050.301.285",
+   "D12.776.543.095",
+   "D23.529.168",
+   "D12.776.467.150"
+  ]
+ },
+ "D060890": {
+  "parents": {
+   "D000082102": "Immune Checkpoint Proteins",
+   "D060887": "B7 Antigens"
+  },
+  "tree_numbers": [
+   "D12.776.465.625",
+   "D12.776.467.150.300",
+   "D12.776.543.095.300",
+   "D23.050.301.285.400",
+   "D23.529.168.300"
+  ]
+ },
+ "D061067": {
+  "parents": {
+   "D000911": "Antibodies, Monoclonal"
+  },
+  "tree_numbers": [
+   "D12.776.124.486.485.114.224.060",
+   "D12.776.124.790.651.114.224.060",
+   "D12.776.377.715.548.114.224.200"
+  ]
+ },
+ "D061217": {
+  "parents": {
+   "D006293": "Health Promotion"
+  },
+  "tree_numbers": [
+   "N02.421.726.407.579.650",
+   "H02.403.720.750.380.579.650"
+  ]
+ },
+ "D061218": {
+  "parents": {
+   "D003866": "Depressive Disorder"
+  },
+  "tree_numbers": [
+   "F03.600.300.388"
+  ]
+ },
+ "D062365": {
+  "parents": {
+   "D001565": "Benzoates"
+  },
+  "tree_numbers": [
+   "D02.241.223.100.050",
+   "D02.455.426.559.389.127.020"
+  ]
+ },
+ "D062366": {
+  "parents": {
+   "D062365": "Aminobenzoates"
+  },
+  "tree_numbers": [
+   "D02.455.426.559.389.127.020.937",
+   "D02.241.223.100.050.500"
+  ]
+ },
+ "D062385": {
+  "parents": {
+   "D001565": "Benzoates",
+   "D006880": "Hydroxy Acids",
+   "D010636": "Phenols"
+  },
+  "tree_numbers": [
+   "D02.241.223.100.300",
+   "D02.455.426.559.389.127.281",
+   "D02.455.426.559.389.657.410",
+   "D02.241.511.390"
+  ]
+ },
+ "D062425": {
+  "parents": {
+   "D010647": "Phenyl Ethers",
+   "D062385": "Hydroxybenzoates"
+  },
+  "tree_numbers": [
+   "D02.355.726.675",
+   "D02.455.426.559.389.657.654.638",
+   "D02.241.223.100.300.350",
+   "D02.455.426.559.389.127.281.350",
+   "D02.241.511.390.350"
+  ]
+ },
+ "D062666": {
+  "parents": {
+   "D057785": "Catheters"
+  },
+  "tree_numbers": [
+   "E07.132.750"
+  ]
+ },
+ "D062905": {
+  "parents": {
+   "D062666": "Vascular Access Devices"
+  },
+  "tree_numbers": [
+   "E07.132.750.500"
+  ]
+ },
+ "D063065": {
+  "parents": {
+   "D009943": "Organophosphorus Compounds"
+  },
+  "tree_numbers": [
+   "D02.705.429"
+  ]
+ },
+ "D063186": {
+  "parents": {
+   "D013509": "Gynecologic Surgical Procedures"
+  },
+  "tree_numbers": [
+   "E04.950.300.941"
+  ]
+ },
+ "D063373": {
+  "parents": {
+   "D006920": "Hygiene"
+  },
+  "tree_numbers": [
+   "N06.850.670.150",
+   "E02.547.300"
+  ]
+ },
+ "D064028": {
+  "parents": {
+   "D019669": "Embryophyta"
+  },
+  "tree_numbers": [
+   "B01.875.800.575.912"
+  ]
+ },
+ "D064307": {
+  "parents": {
+   "D008827": "Microbiological Phenomena",
+   "D058448": "Biota"
+  },
+  "tree_numbers": [
+   "N06.230.124.049.100.500",
+   "G16.500.275.157.049.100.500",
+   "G06.591"
+  ]
+ },
+ "D064797": {
+  "parents": {
+   "D015444": "Exercise"
+  },
+  "tree_numbers": [
+   "I03.350.311",
+   "G11.427.410.698.277.311"
+  ]
+ },
+ "D064847": {
+  "parents": {
+   "D003952": "Diagnostic Imaging"
+  },
+  "tree_numbers": [
+   "E01.370.350.567"
+  ]
+ }
+}

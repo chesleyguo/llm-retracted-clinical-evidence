@@ -1,0 +1,33 @@
+{
+ "query": "\"Cell Adhesion Molecules\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 1994:1996[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:08:48+00:00",
+ "count": 26,
+ "pmids": [
+  "8956759",
+  "8893577",
+  "8795695",
+  "8664114",
+  "8724298",
+  "8561070",
+  "8747511",
+  "7493367",
+  "8581377",
+  "8577657",
+  "7545704",
+  "7542185",
+  "7591422",
+  "7780133",
+  "8565711",
+  "7536438",
+  "7535841",
+  "7527508",
+  "7527406",
+  "7921445",
+  "8079969",
+  "7912930",
+  "7912043",
+  "7526483",
+  "7957469",
+  "7533998"
+ ]
+}

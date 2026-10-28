@@ -1,0 +1,32 @@
+{
+ "query": "\"Soybean Oil\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 2015:2017[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:07:11+00:00",
+ "count": 25,
+ "pmids": [
+  "29443399",
+  "29269199",
+  "29044324",
+  "28888601",
+  "28814399",
+  "28488194",
+  "28246176",
+  "27932764",
+  "27577598",
+  "27562303",
+  "27558396",
+  "27535127",
+  "27404223",
+  "27136010",
+  "26898245",
+  "26838529",
+  "26671484",
+  "26343717",
+  "26115305",
+  "26107420",
+  "26024828",
+  "25805397",
+  "25560678",
+  "25524913",
+  "24963025"
+ ]
+}

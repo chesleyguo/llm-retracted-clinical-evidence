@@ -1,0 +1,21 @@
+{
+ "query": "\"N-Methyl-3,4-methylenedioxyamphetamine\"[majr:noexp] AND (\"Clinical Trial\"[pt] OR \"Adaptive Clinical Trial\"[pt] OR \"Clinical Trial, Phase I\"[pt] OR \"Clinical Trial, Phase II\"[pt] OR \"Clinical Trial, Phase III\"[pt] OR \"Clinical Trial, Phase IV\"[pt] OR \"Controlled Clinical Trial\"[pt] OR \"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt] OR \"Human Challenge Trials\"[pt] OR \"Pragmatic Clinical Trial\"[pt]) AND 2019:2021[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-28T17:07:06+00:00",
+ "count": 14,
+ "pmids": [
+  "34624734",
+  "34114250",
+  "34096755",
+  "33972795",
+  "33235285",
+  "33219313",
+  "32538252",
+  "32073177",
+  "31978933",
+  "31814488",
+  "31042696",
+  "30953835",
+  "30589533",
+  "30455187"
+ ]
+}
