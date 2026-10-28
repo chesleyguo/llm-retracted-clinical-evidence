@@ -1,0 +1,6 @@
+File: retraction_watch_2026-10-28.csv
+All records: 73399
+RetractionNature = Retraction: 67958
+Any (HSC) subject: 22145
+Valid OriginalPaperPubMedID: 17570
+Titles with more than one PMID: 6 (12 PMIDs, 13 records)
