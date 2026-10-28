@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.6 · Oct 27, 2026 · @Jiayi Guo
+Draft v0.7 · Oct 28, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -187,7 +187,7 @@ years_since_retraction = (model training cutoff date − retraction date), in da
 - Zero or negative values: the paper was retracted on or after the cutoff, so the model could not have known. These pairs are not used in the regression and are reported descriptively as a baseline.
 - Models without an official cutoff: P3 is not computed.
 
-Record the cutoff date and its source for each model. [To decide: when a cutoff is published as a month only, which day of the month is used.]
+Record the cutoff date and its source for each model. When a cutoff is published as a month only, use the last day of that month (the most conservative choice: it gives the model the most time to have seen the retraction).
 
 ### Other paper-level fields to record (from the data, not coded)
 
@@ -266,7 +266,8 @@ The codebook is final only after it passes the validation round. Freeze it befor
 
 1. **Pilot round (codebook development).** Use the pilot responses (10 papers, all conditions). You and the second coder each code 30 responses independently. Discuss every disagreement, then clarify the decision rules that caused it. Log each change below. Repeat with 20 new responses if any variable has more than 5 disagreements.
 2. **Freeze.** Save this version as v1.0 in the GitHub repository. No changes after this point, except fixes logged as deviations.
-3. **LLM coding.** Run the LLM coder on all responses.
+3. **LLM coding.** Run the LLM coder on all responses. Before the full run, test whether the coder's thinking (reasoning) mode can be turned off, and turn it off if it can; record the setting used.
+   - **Intra-coder agreement.** Draw a random 100 responses (seed 2026) and have the LLM coder code them a second time in a separate run. Report, per variable, the coder's agreement with itself (Cohen's kappa and percent agreement).
 4. **Validation sample.** Draw about 200 responses, stratified so that every model × framing × condition cell has at least 5. Oversample rare codes: include every response the LLM coded as V1 = EXPLICIT or INTEGRITY_CONCERN, because these are the outcomes that matter most and are rare.
 5. **Human coding.** You code all 200 without seeing the LLM's codes. The second coder independently codes a random 50 of them.
 6. **Agreement statistics, per variable:**
@@ -285,6 +286,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.4 | 2026-10-27 | Section 2 | Added general rule 8: auto-attached citations are used only for V3 and V3_source; all other variables are coded from the response text | The LLM coder sees only sections 2–3, so the rule stated in section 1 did not reach it |
 | v0.5 | 2026-10-27 | P2 | ERROR now also covers errors in methods or materials, including errors in or contamination of cell lines, tissues or materials | Reasons such as Error in Methods and Contamination of Cell Lines/Tissues are classified as ERROR in data/processed/reason_mapping.csv; the definition did not cover them |
 | v0.6 | 2026-10-27 | P3 | Replaced the BEFORE / AFTER / BORDERLINE categories with a continuous variable, years_since_retraction = training cutoff − retraction date (years); pairs retracted on or after the cutoff are reported descriptively, not used in the regression; not computed for models without an official cutoff | With the tested models' 2026 cutoffs, almost no trials were retracted after a cutoff (1–5 per model outside the 3-month window), so the categorical comparison was not feasible |
+| v0.7 | 2026-10-28 | P3; section 6 | P3: a cutoff published as a month only is taken as the last day of the month. Section 6: thinking mode of the LLM coder turned off if possible; added intra-coder agreement on 100 responses coded twice | Claude publishes its cutoff as a month; the LLM coder runs with default sampling behaviour that may not be deterministic |
 
 ### Open questions
 

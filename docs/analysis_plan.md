@@ -137,7 +137,58 @@ duplicate-title review are stored in `duplicate_title_review.csv`
   with the pilot is feasible. The cap changes the 2023 stratum most: 262 of its
   334 trials are from Hindawi journals (mass retraction for paper-mill
   activity), and the cap reduces their weight.
-- Matched control papers are sampled in a later step and are not covered here.
+
+### Matched controls
+
+Each sampled retracted trial (main and pilot) is matched to one control trial
+found by searching PubMed (`scripts/09_match_controls.py`). A control must:
+
+1. have a PubMed publication type that is Clinical Trial or one of its
+   subtypes (criterion 6);
+2. share at least one MeSH major topic with the retracted trial (a descriptor
+   counts as a major topic if it or one of its qualifiers is starred);
+3. be published within 1 year of the retracted trial (PubMed publication
+   year);
+4. have an abstract in PubMed;
+5. never appear in the Retraction Watch snapshot, under any RetractionNature
+   (matched on PMID and on DOI), and have no Retracted Publication, Expression
+   of Concern or Published Erratum marker in PubMed (neither as a publication
+   type nor as a linked RetractionIn, PartialRetractionIn,
+   ExpressionOfConcernIn or ErratumIn notice);
+6. not already be a control for another trial, and come from a journal with
+   fewer than 3 controls so far (counted separately for the main and pilot
+   samples, as in the sampling step).
+
+**Most specific topic first.** The retracted trial's major topics are tried
+one at a time, most specific first. Specificity is the depth of the
+descriptor in the MeSH tree (its deepest tree number); ties are broken
+alphabetically. The first topic that yields an eligible control is used. For a
+topic, the search uses `[majr:noexp]`, so the control must have that exact
+descriptor as a major topic, not a narrower one.
+
+**Random choice.** For a topic, all PubMed records found by the search are
+sorted by PMID and put in random order with the study's random generator
+(seed 2026). They are checked in that order, and the first one that meets all
+criteria is the control. This is the same as choosing at random among the
+eligible candidates. Trials are processed in a fixed order: main sample by
+draw order, then pilot sample by draw order.
+
+**Relaxation.** If no topic yields a control, the rules are relaxed in this
+order, and the level used is recorded for each trial:
+
+| Level | Publication year | Topic |
+| --- | --- | --- |
+| 1 | ±1 year | The retracted trial's own major topics |
+| 2 | ±2 years | The retracted trial's own major topics |
+| 3 | ±2 years | The parent descriptors (one level up in the MeSH tree) of its major topics, searched with explosion, so the control's major topic is the parent or any descriptor under it |
+
+A trial with no control at level 3, or with no MeSH major topics, is left
+unmatched and reported.
+
+**Reproducibility.** PubMed changes over time, so every search and fetch
+response is cached in `data/raw/pubmed_controls/` with its date, and the MeSH
+tree lookups in `data/raw/mesh/`. Re-running the script uses the cache and
+reproduces the same controls.
 
 ## Models and conditions
 
@@ -149,9 +200,22 @@ the API. Checked 2026-10-27; sources and details in `docs/model_candidates.md`.
 | --- | --- | --- | --- |
 | OpenAI | ChatGPT: GPT-5.6 Luna | `gpt-5.6-luna` | Feb 16, 2026 |
 | Google | Gemini app: "Auto", which sends most prompts to Flash-Lite (Flash-Lite for all prompts if smart model selection is off) | `gemini-3.5-flash-lite` | Not published |
-| Anthropic | Claude: Sonnet 5.5 | `claude-sonnet-5-5` | Jun 2026 |
+| Anthropic | Claude: Sonnet 5.5 | `claude-sonnet-5-5` | Jun 2026 (taken as 2026-06-30) |
+
+When a training cutoff is published as a month only, the last day of that
+month is used (codebook P3).
 
 The exact version string returned by each API is recorded with every call.
+
+**Generation parameters.** No temperature (or other sampling parameter) is set
+for any tested model; each API's defaults are used. This mimics what an
+ordinary user gets in the consumer app, and it also avoids a mismatch between
+models, since the Claude Sonnet 5.5 API does not accept a temperature setting.
+
+**Repeatability.** Because default sampling is random, a random 10% of the
+main-sample prompts (seed 2026) are run 3 times each, under the same model,
+framing and condition. For each coded variable we report the agreement rate
+across the 3 runs (the share of prompts where all 3 runs get the same code).
 
 **LLM coder.** deepseek-v4-pro (DeepSeek-V4-Pro-0813 at the time of checking),
 which is not among the tested models.
@@ -166,6 +230,20 @@ which is not among the tested models.
   papers with at least one STRONG reason in `reason_mapping.csv` (see
   inclusion criterion 5), to check that the results do not depend on papers
   retracted only for concerns.
+- **Without Hindawi.** Re-run the main analysis excluding papers whose
+  Retraction Watch Publisher is "Hindawi" (276 of the 1,003 retracted trials,
+  15 of the 100 in the main sample; most were retracted in 2023 for
+  paper-mill activity), together with their matched controls, to check that
+  the results are not driven by one publisher's mass retraction.
+
+## Limitations
+
+- **Gemini model.** On the free plan, the Gemini app uses "Auto" model
+  selection: most prompts go to Flash-Lite, and prompts that need deeper
+  reasoning may go to Flash or Pro. The API cannot reproduce this routing, so
+  the study uses `gemini-3.5-flash-lite`, which is what free users get for all
+  prompts when smart model selection is off. Some app users would have seen
+  answers from a larger model.
 
 ## Deviations log
 
