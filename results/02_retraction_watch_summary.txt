@@ -339,3 +339,25 @@ Combinations of RetractionNature among multi-record DOIs with one title (n = 252
         1    0.0%  Correction x3 + Retraction
         1    0.0%  Reinstatement + Retraction
         1    0.0%  Correction x3 + Expression of concern
+
+========================================================================
+I. PMID as paper identifier (retractions with a valid OriginalPaperPubMedID)
+========================================================================
+
+All subjects: 30549 records, 30525 distinct PMIDs
+  PMIDs with more than one record: 22 (covering 46 records)
+  Titles with more than one PMID: 10 (covering 20 PMIDs)
+    2 PMIDs  association of cytokine gene polymorphisms with psoriasis in cases from the nile
+    2 PMIDs  cip2a mediates prostate cancer progression via the c-myc signaling pathway
+    2 PMIDs  combination of tanshinone iia and cisplatin inhibits esophageal squamous cell ca
+    2 PMIDs  effect of educational interventions on health in childhood: a meta-analysis of r
+    2 PMIDs  flexible field emitter for x-ray generation by implanting cnts into nickel foil
+
+Any (HSC) subject: 17570 records, 17554 distinct PMIDs
+  PMIDs with more than one record: 14 (covering 30 records)
+  Titles with more than one PMID: 6 (covering 12 PMIDs)
+    2 PMIDs  association of cytokine gene polymorphisms with psoriasis in cases from the nile
+    2 PMIDs  cip2a mediates prostate cancer progression via the c-myc signaling pathway
+    2 PMIDs  effect of educational interventions on health in childhood: a meta-analysis of r
+    2 PMIDs  journal of dentistry: x – editorial board
+    2 PMIDs  review of brucellosis in nepal

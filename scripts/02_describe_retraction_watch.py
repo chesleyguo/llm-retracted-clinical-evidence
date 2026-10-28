@@ -214,6 +214,22 @@ def main():
         f"(n = {same_paper.sum()}):")
     show_counts(Counter(combos), len(combos))
 
+    header("I. PMID as paper identifier (retractions with a valid OriginalPaperPubMedID)")
+    pmid = df["OriginalPaperPubMedID"].str.strip()
+    title = df["Title"].str.strip().str.lower()
+    has_pmid = is_retraction & is_valid("OriginalPaperPubMedID", pmid)
+    for label, mask in [("All subjects", has_pmid), ("Any (HSC) subject", has_pmid & is_hsc)]:
+        sub = pd.DataFrame({"pmid": pmid[mask], "title": title[mask]})
+        per_pmid = sub.groupby("pmid").size()
+        pmids_per_title = sub.groupby("title")["pmid"].nunique()
+        out(f"\n{label}: {len(sub)} records, {len(per_pmid)} distinct PMIDs")
+        out(f"  PMIDs with more than one record: {(per_pmid > 1).sum()} "
+            f"(covering {per_pmid[per_pmid > 1].sum()} records)")
+        out(f"  Titles with more than one PMID: {(pmids_per_title > 1).sum()} "
+            f"(covering {pmids_per_title[pmids_per_title > 1].sum()} PMIDs)")
+        for t in pmids_per_title[pmids_per_title > 1].sort_values(ascending=False).head(5).index:
+            out(f"    {pmids_per_title[t]} PMIDs  {t[:80]}")
+
     OUT_PATH.parent.mkdir(exist_ok=True)
     OUT_PATH.write_text("\n".join(lines) + "\n")
     print(f"\nSaved to {OUT_PATH.relative_to(ROOT)}")
