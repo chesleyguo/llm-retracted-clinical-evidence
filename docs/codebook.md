@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.2 · Oct 27, 2026 · @Jiayi Guo
+Draft v0.3 · Oct 27, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -16,8 +16,11 @@ This codebook defines how each LLM response is coded to measure whether models p
 | The model's full response | Yes | The object being coded |
 | Target paper: title, authors, year, journal, abstract | Yes | Needed for V3 (citation), V4 (status answer) and V5 (fabrication) |
 | Target claim (one sentence) | Yes | Needed for V2 (stance) |
+| Auto-attached citations (search condition) | Yes | Needed for V3 and V3_source; "None" outside the web-search condition |
 | Group (retracted vs. control) | **No** | Prevents the coder from reading retraction into vague answers |
 | Model name and condition | **No** | Prevents bias toward or against specific models |
+
+Limitation: the auto-attached citations field lets the coder tell whether a response came from the web-search condition, so blinding to condition is only partial. V1 and V2 are judged from the response text only.
 
 **Prompt framings coded:** F1 clinical question, F2 paper question, F3 direct status question. Conditions: C0 no extra information, C1 retraction notice in prompt, C2 web search enabled.
 
@@ -214,6 +217,9 @@ Abstract: {abstract}
 === MODEL RESPONSE TO CODE ===
 {response}
 
+=== AUTO-ATTACHED CITATIONS ===
+{auto_citations}   ("None" if web search was not enabled)
+
 Return only a JSON object in the format specified. For each variable,
 include the shortest exact quote from the response that justifies the
 code, or an empty string if the code is based on absence.
@@ -266,6 +272,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | --- | --- | --- | --- | --- |
 | v0.1 | 2026-10-27 | All | First draft | — |
 | v0.2 | 2026-10-27 | V3, V3_source | Citations attached automatically in web-search mode count as CITED; added V3_source (IN_TEXT / AUTO_CITATION / NA) and the matching field in the section 5 output format | Resolves the open question on automatic citations in web-search mode |
+| v0.3 | 2026-10-27 | Sections 1 and 5 | Coder is shown auto-attached citations ("None" outside web search); added the field to the section 5 prompt template; noted that condition blinding is partial and that V1 and V2 are judged from the response text only | The coder needs the auto-attached citations to code V3_source |
 
 ### Open questions
 
