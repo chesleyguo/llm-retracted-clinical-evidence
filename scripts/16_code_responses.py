@@ -216,6 +216,14 @@ def check_v6(parsed):
     return None
 
 
+def quote_found(quote, text):
+    """A quote is found if every part between ellipses ("..." or "…")
+    appears in the text: the coder often joins non-adjacent passages with an
+    ellipsis, and each passage is still an exact quote."""
+    parts = [norm(x).strip(" .,;:") for x in re.split(r"\.\.\.|…", quote)]
+    return all(x in norm(text) for x in parts if x)
+
+
 def quotes_not_found(parsed, response, citations):
     """Evidence variables whose quote does not appear in the response
     (for V3, in the response or the auto-attached citations)."""
@@ -224,7 +232,7 @@ def quotes_not_found(parsed, response, citations):
         if not var.endswith("_evidence") or not str(quote).strip():
             continue
         where = response + ("\n" + citations if var == "V3_evidence" else "")
-        if norm(quote) not in norm(where):
+        if not quote_found(quote, where):
             missing.append(var.replace("_evidence", ""))
     return missing
 
@@ -431,13 +439,17 @@ def main():
                "status": "ok" if c else "failed"}
         if c:
             row.update({k: c.get(k, "") for k in json.loads(output_format) if k != "response_id"})
-            row["quote_not_found"] = "; ".join(
-                quotes_not_found(c, r["response_text"], format_citations(r)))
+            missing = quotes_not_found(c, r["response_text"], format_citations(r))
+            row["quote_not_found"] = "; ".join(missing)
+            # A V3 quote taken from the prompt, not the response, may mean V3 was
+            # miscoded (codebook: the paper named in the prompt does not count).
+            row["v3_quote_from_prompt"] = "TRUE" if "V3" in missing and \
+                quote_found(c["V3_evidence"], r["prompt"]) else "FALSE"
             d = v6.get(r["call_id"])
             row["V6_accuracy"] = d["V6_accuracy"] if d else ("FAILED" if c["V1_retraction_flag"] == "EXPLICIT" else "")
             row["V6_evidence"] = d.get("V6_evidence", "") if d else ""
             if d and d["V6_accuracy"] != "FALSE_FLAG" and d.get("V6_evidence") and \
-                    norm(d["V6_evidence"]) not in norm(r["response_text"]):
+                    not quote_found(d["V6_evidence"], r["response_text"]):
                 row["quote_not_found"] = "; ".join(x for x in (row["quote_not_found"], "V6") if x)
         rows.append(row)
     table = pd.DataFrame(rows)
@@ -450,7 +462,8 @@ def main():
                                  list(allowed) + ["V6_accuracy"] if v in ok},
                "quote_not_found": {"responses": int((ok["quote_not_found"] != "").sum()),
                                    "by_variable": Counter(x for q in ok["quote_not_found"]
-                                                          for x in q.split("; ") if x)},
+                                                          for x in q.split("; ") if x),
+                                   "v3_quote_from_prompt": int((ok["v3_quote_from_prompt"] == "TRUE").sum())},
                "calls": cost_summary(log_path)}
     if not args.limit:
         (ROOT / "results" / f"coding_{args.sample}_summary.json").write_text(

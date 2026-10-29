@@ -44,14 +44,13 @@
   }
  },
  "quote_not_found": {
-  "responses": 68,
+  "responses": 33,
   "by_variable": {
-   "V4": 13,
-   "V2": 30,
-   "V3": 19,
-   "V5": 13,
-   "V1": 3
-  }
+   "V3": 11,
+   "V2": 11,
+   "V5": 12
+  },
+  "v3_quote_from_prompt": 6
  },
  "calls": {
   "api_calls": 369,

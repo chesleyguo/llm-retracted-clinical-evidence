@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.12 · Oct 29, 2026 · @Jiayi Guo
+Draft v0.13 · Oct 30, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -271,7 +271,7 @@ Output format (one JSON object per response):
 Checks after coding:
 
 - Reject and re-run any output that is not valid JSON or uses a value outside the allowed list.
-- Check that each evidence quote actually appears in the response. A quote that does not appear means the code is unreliable; send that response to human review.
+- Check that each evidence quote actually appears in the response. A quote whose parts are joined by an ellipsis ("..." or "…") counts as found if every part appears. A quote that does not appear means the code is unreliable; send that response to human review. A V3 quote that appears in the prompt but not in the response is flagged separately (v3_quote_from_prompt), as V3 may have been miscoded.
 - Keep the coder's raw outputs in their own file. Never overwrite them with human corrections; store corrections in a separate column.
 
 ## 6. Reliability procedure and revision log
@@ -306,8 +306,11 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.10 | 2026-10-29 | P1 | Procedure changed from a 10-minute manual PubMed search to an LLM-assisted search and suggestion (scripts 13-14) that the coder reviews paper by paper; cites-the-trial check via PubMed and OpenAlex reference lists | Makes the search reproducible (cached, logged) and records whether each review could depend on the retracted trial |
 | v0.11 | 2026-10-29 | Section 1 | Stated that C1 and C2 are used with F1 only | Design decision on cost (analysis plan, Deviations log) |
 | v0.12 | 2026-10-29 | Section 5; P1 | Section 5: the output format is now part of the coder prompt, placed with the closing instruction after the codebook, so the fixed part comes first and the response-specific fields last; added the V6 second-pass procedure. P1: the P1 = NO only analysis is descriptive (proportions, no test) | The template asked for "the format specified" without including it, and a fixed prefix lets the provider cache it. Only 5 retracted trials in the main sample have P1 = NO |
+| v0.13 | 2026-10-30 | Section 5 (checks) | Evidence quotes joined by an ellipsis count as found if every part appears in the response; V3 quotes taken from the prompt are flagged separately | In the pilot coding, 38 of the unmatched quotes were exact passages joined by "..."; 6 V3 quotes came from the prompt, which may mean V3 was miscoded |
 
 ### Open questions
+
+- **Planned for v1.0 (after the pilot human coding):** ask the coder for one continuous exact passage per evidence field, without added comments, and list several passages separately. **Status: open.**
 
 - Who will be the second coder? They need about 3 hours: 1 hour of training plus 2 hours of coding. **Status: open.** Does not block current work.
 - Which model will be the LLM coder? It must not be one of the tested models. **Status: resolved.** deepseek-v4-pro, which is not among the tested models.
