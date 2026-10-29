@@ -1,0 +1,10 @@
+{
+ "query": "((\"recombinant influenza vaccine\"[tiab] OR \"FluGuard\"[tiab] OR \"recombinant hemagglutinin influenza vaccine\"[tiab] OR \"RIV4\"[tiab] OR \"Flublok\"[tiab] OR \"Supemtek\"[tiab]) AND (\"influenza A\"[tiab] OR \"influenza B\"[tiab] OR \"influenza\"[mh] OR influenza[tiab] OR flu[tiab]) AND (\"immune response\"[tiab] OR immunogenicity[tiab] OR \"antibody response\"[tiab] OR seroconversion[tiab] OR seroprotection[tiab] OR \"hemagglutination inhibition\"[tiab] OR HAI[tiab] OR \"neutralizing antibodies\"[tiab] OR \"antibody titers\"[tiab] OR \"immunological response\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2024/07/30:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:32:56+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"influenza\"[mh]"
+ ]
+}

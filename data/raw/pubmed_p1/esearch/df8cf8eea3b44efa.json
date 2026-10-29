@@ -1,0 +1,14 @@
+{
+ "query": "((\"Granulocyte Colony-Stimulating Factor\"[mh] OR \"G-CSF\"[tiab] OR \"GCSF\"[tiab] OR \"Granulocyte Colony Stimulating Factor\"[tiab] OR \"Filgrastim\"[tiab] OR \"Lenograstim\"[tiab] OR \"Pegfilgrastim\"[tiab]) AND (\"Recurrent Implantation Failure\"[tiab] OR \"Implantation Failure\"[tiab] OR \"Repeated Implantation Failure\"[tiab] OR \"RIF\"[tiab] OR \"Embryo Implantation\"[mh] OR \"Infertility, Female\"[mh] OR \"Fertilization in Vitro\"[mh] OR \"Sperm Injections, Intracytoplasmic\"[mh] OR \"IVF\"[tiab] OR \"ICSI\"[tiab] OR \"in vitro fertilization\"[tiab] OR \"intracytoplasmic sperm injection\"[tiab]) AND (\"Pregnancy Rate\"[mh] OR \"Pregnancy Rate\"[tiab] OR \"Clinical Pregnancy\"[tiab] OR \"Live Birth\"[mh] OR \"Live Birth\"[tiab] OR \"Ongoing Pregnancy\"[tiab] OR \"Implantation Rate\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/04/17:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:31:38+00:00",
+ "count": 14,
+ "pmids": [
+  "37013570",
+  "38745960",
+  "38682756",
+  "35325124",
+  "39636199"
+ ],
+ "phrases_not_found": []
+}

@@ -1,0 +1,17 @@
+{
+ "id": "https://openalex.org/W2135298178",
+ "doi": "https://doi.org/10.1016/s0090-4295(01)01084-6",
+ "publication_date": "2001-07-01",
+ "referenced_works": [
+  "https://openalex.org/W33491007",
+  "https://openalex.org/W135946679",
+  "https://openalex.org/W2045256807",
+  "https://openalex.org/W2073188446",
+  "https://openalex.org/W2170370440",
+  "https://openalex.org/W2417248328",
+  "https://openalex.org/W2464853839",
+  "https://openalex.org/W4323237015"
+ ],
+ "referenced_works_count": 8,
+ "retrieved_at_utc": "2026-10-29T04:33:35+00:00"
+}

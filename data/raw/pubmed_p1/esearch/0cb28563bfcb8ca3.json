@@ -1,0 +1,14 @@
+{
+ "query": "((\"progesterone\"[mh] OR progesterone[tiab] OR \"progestational hormones\"[tiab] OR progestogen[tiab] OR progestin[tiab]) AND (\"pregnancy, high-risk\"[mh] OR \"high-risk pregnancy\"[tiab] OR \"high risk pregnancy\"[tiab] OR \"high-risk pregnancies\"[tiab] OR \"high risk pregnancies\"[tiab] OR \"obstetric labor, premature/prevention and control\"[mh] OR \"premature birth/prevention and control\"[mh]) AND (\"premature birth\"[mh] OR \"preterm delivery\"[tiab] OR \"preterm birth\"[tiab] OR \"premature delivery\"[tiab] OR \"premature birth\"[tiab] OR \"early delivery\"[tiab] OR \"early birth\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2011/03/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:31:04+00:00",
+ "count": 85,
+ "pmids": [
+  "35130263",
+  "33773630",
+  "37211087",
+  "37196896",
+  "29157866"
+ ],
+ "phrases_not_found": []
+}

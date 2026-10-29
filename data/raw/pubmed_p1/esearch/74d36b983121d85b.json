@@ -1,0 +1,8 @@
+{
+ "query": "((\"fatty acids, omega-3\"[mh] OR \"omega-3 fatty acids\"[tiab] OR \"omega 3 fatty acids\"[tiab] OR \"n-3 fatty acids\"[tiab] OR \"n3 fatty acids\"[tiab] OR \"eicosapentaenoic acid\"[tiab] OR \"docosahexaenoic acid\"[tiab] OR \"fish oil\"[tiab] OR \"fish oils\"[tiab] OR \"alpha-linolenic acid\"[tiab]) AND (\"vitamin d\"[mh] OR \"vitamin d\"[tiab] OR \"cholecalciferol\"[tiab] OR \"ergocalciferol\"[tiab] OR \"25-hydroxyvitamin d\"[tiab] OR \"25 hydroxyvitamin d\"[tiab] OR \"calcitriol\"[tiab] OR \"1,25-dihydroxyvitamin d\"[tiab]) AND (\"multiple sclerosis\"[mh] OR \"multiple sclerosis\"[tiab] OR \"ms\"[tiab] OR \"disseminated sclerosis\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2018/08/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:57+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

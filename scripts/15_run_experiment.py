@@ -1,9 +1,9 @@
 """Step 15: run the experiment calls to the tested models.
 
 For every approved pair in data/processed/claims_final.csv (pair_ready =
-TRUE) of the chosen sample, each paper is asked about in 3 framings x 3
-conditions, by each of the 3 tested models (analysis plan, "Models and
-conditions"):
+TRUE) of the chosen sample, each paper is asked about in 5 framing-condition
+cells, by each of the 3 tested models (analysis plan, "Models and
+conditions"): F1 under C0, C1 and C2; F2 and F3 under C0 only.
 
   F1 clinical question   F2 paper question   F3 status question
   C0 prompt only
@@ -55,8 +55,10 @@ SEED = 2026
 MODELS = {"openai": "gpt-5.6-luna", "anthropic": "claude-sonnet-5-5",
           "google": "gemini-3.5-flash-lite"}
 ANTHROPIC_MAX_TOKENS = 16000
-FRAMINGS = ["F1", "F2", "F3"]
-CONDITIONS = ["C0", "C1", "C2"]
+# The design: conditions C1 and C2 are used with F1 only. Records of other
+# cells (from the smoke test of 2026-10-29) stay in the raw log but are not
+# part of the design and are not analysed.
+DESIGN = [("F1", "C0"), ("F1", "C1"), ("F1", "C2"), ("F2", "C0"), ("F3", "C0")]
 WORKERS_PER_PROVIDER = 4
 MAX_ATTEMPTS = 4
 WRITE_LOCK = threading.Lock()
@@ -267,7 +269,7 @@ def main():
     out_path = OUT_DIR / f"{args.sample}.jsonl"
 
     papers = load_papers(args.sample, None)
-    tasks = [(p, f, c, prov, 1) for p in papers for f in FRAMINGS for c in CONDITIONS for prov in MODELS]
+    tasks = [(p, f, c, prov, 1) for p in papers for f, c in DESIGN for prov in MODELS]
     # Random call order (seed 2026), so no condition or model is run in one
     # block of time. The order is computed on all calls of the sample, so a
     # smoke test (--pairs) and the full run share it; calls already done are

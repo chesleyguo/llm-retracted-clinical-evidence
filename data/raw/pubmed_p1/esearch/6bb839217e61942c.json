@@ -1,0 +1,16 @@
+{
+ "query": "((\"avacopan\"[Supplementary Concept] OR \"avacopan\"[tiab] OR \"CCX168\"[tiab] OR \"tavneos\"[tiab]) AND (\"Anti-Neutrophil Cytoplasmic Antibody-Associated Vasculitis\"[mh] OR \"ANCA-associated vasculitis\"[tiab] OR \"ANCA vasculitis\"[tiab] OR \"microscopic polyangiitis\"[tiab] OR \"granulomatosis with polyangiitis\"[tiab] OR \"Wegener granulomatosis\"[tiab] OR \"eosinophilic granulomatosis with polyangiitis\"[tiab] OR \"Churg-Strauss syndrome\"[tiab]) AND (\"remission\"[mh] OR \"remission induction\"[mh] OR \"sustained remission\"[tiab] OR \"remission\"[tiab] OR \"disease activity\"[tiab] OR \"Birmingham Vasculitis Activity Score\"[tiab] OR \"BVAS\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2021/02/18:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:10+00:00",
+ "count": 7,
+ "pmids": [
+  "41151615",
+  "41945486",
+  "36927642",
+  "36975183",
+  "36811629"
+ ],
+ "phrases_not_found": [
+  "\"remission\"[mh]"
+ ]
+}

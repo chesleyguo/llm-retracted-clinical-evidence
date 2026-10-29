@@ -1,0 +1,13 @@
+{
+ "id": "https://openalex.org/W4402428622",
+ "doi": "https://doi.org/10.1097/md.0000000000039551",
+ "publication_date": "2024-09-06",
+ "referenced_works": [
+  "https://openalex.org/W2081570709",
+  "https://openalex.org/W2274481996",
+  "https://openalex.org/W2351943744",
+  "https://openalex.org/W3028562642"
+ ],
+ "referenced_works_count": 4,
+ "retrieved_at_utc": "2026-10-29T04:37:06+00:00"
+}

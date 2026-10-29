@@ -1,0 +1,14 @@
+{
+ "query": "((\"physical activity\"[tiab] OR \"exercise\"[mh] OR exercise[tiab] OR \"motor activity\"[mh] OR \"motor activity\"[tiab] OR \"active play\"[tiab] OR \"physical education\"[tiab] OR \"movement\"[tiab]) AND (\"child, preschool\"[mh] OR preschool*[tiab] OR \"early childhood\"[tiab] OR \"nursery school\"[tiab] OR \"kindergarten\"[tiab] OR \"day care\"[tiab] OR \"child care\"[tiab] OR \"early childhood education and care\"[tiab] OR ECEC[tiab]) AND (\"moderate-to-vigorous physical activity\"[tiab] OR \"moderate and vigorous physical activity\"[tiab] OR MVPA[tiab] OR \"vigorous physical activity\"[tiab] OR \"moderate physical activity\"[tiab] OR \"physical activity level\"[tiab] OR \"physical activity levels\"[tiab] OR \"energy expenditure\"[tiab] OR \"accelerometry\"[mh] OR acceleromet*[tiab] OR \"step count\"[tiab] OR \"steps per day\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/11/04:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:30:56+00:00",
+ "count": 61,
+ "pmids": [
+  "40442501",
+  "41407657",
+  "38763517",
+  "39147399",
+  "34881411"
+ ],
+ "phrases_not_found": []
+}

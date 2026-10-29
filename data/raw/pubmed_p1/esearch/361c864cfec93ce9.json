@@ -1,0 +1,10 @@
+{
+ "query": "((anlotinib[tiab] OR anlotinib[mh]) AND (docetaxel[tiab] OR docetaxel[mh]) AND (lung carcinoma[tiab] OR lung cancer[tiab] OR lung neoplasm[tiab] OR lung neoplasms[mh] OR carcinoma, non-small-cell lung[mh] OR non-small cell lung cancer[tiab] OR nsclc[tiab] OR small cell lung carcinoma[mh] OR small cell lung cancer[tiab] OR sclc[tiab]) AND (survival[tiab] OR survival rate[tiab] OR mortality[tiab] OR mortality[mh] OR survival analysis[mh] OR disease-free survival[tiab] OR progression-free survival[tiab] OR overall survival[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:19+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "anlotinib"
+ ]
+}

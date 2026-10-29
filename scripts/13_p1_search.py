@@ -177,9 +177,18 @@ def openalex_work(pmid):
     OpenAlex has no record."""
     path = OPENALEX_CACHE / f"{pmid}.json"
     if not path.exists():
-        r = requests.get(f"https://api.openalex.org/works/pmid:{pmid}", timeout=60,
-                         params={"select": "id,doi,publication_date,referenced_works,referenced_works_count",
-                                 "mailto": os.environ.get("CONTACT_EMAIL", "")})
+        for attempt in range(1, 6):   # retry dropped connections and 429/5xx
+            try:
+                r = requests.get(f"https://api.openalex.org/works/pmid:{pmid}", timeout=60,
+                                 params={"select": "id,doi,publication_date,referenced_works,referenced_works_count",
+                                         "mailto": os.environ.get("CONTACT_EMAIL", "")})
+                if r.status_code not in (429, 500, 502, 503, 504) or attempt == 5:
+                    break
+            except (requests.ConnectionError, requests.Timeout,
+                    requests.exceptions.ChunkedEncodingError):
+                if attempt == 5:
+                    raise
+            time.sleep(5 * attempt)
         time.sleep(0.2)
         if r.status_code == 404:
             body = {"not_found": True}
@@ -240,7 +249,9 @@ def main():
         paper = {"pmid": pmid, "group": "retracted", "sample": "main", "pair_pmid": pmid}
         parsed = done.get(s11.done_key(pmid, "p1_query", prompt, values))
         if parsed is None:
-            parsed = s11.run_task("p1_query", prompt, values, paper, check_query, key, LLM_LOG)
+            # Long synonym lists can exceed step 11's 1,000-token output limit.
+            parsed = s11.run_task("p1_query", prompt, values, paper, check_query, key, LLM_LOG,
+                                  {**s11.PARAMS, "max_tokens": 4000})
         if parsed is None:
             print(f"  {pmid}: query generation FAILED")
             continue

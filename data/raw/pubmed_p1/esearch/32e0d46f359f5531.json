@@ -1,0 +1,14 @@
+{
+ "query": "((\"misoprostol\"[mh] OR misoprostol[tiab] OR \"cytotec\"[tiab]) AND (\"cesarean section\"[mh] OR \"cesarean section\"[tiab] OR \"caesarean section\"[tiab] OR \"c-section\"[tiab] OR \"cesarean delivery\"[tiab] OR \"caesarean delivery\"[tiab]) AND (\"blood loss, surgical\"[mh] OR \"blood loss\"[tiab] OR \"intraoperative blood loss\"[tiab] OR \"operative blood loss\"[tiab] OR \"hemorrhage\"[tiab] OR \"haemorrhage\"[tiab] OR \"bleeding\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2019/03/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:31:12+00:00",
+ "count": 14,
+ "pmids": [
+  "40712613",
+  "33752219",
+  "31049950",
+  "34534498",
+  "33232518"
+ ],
+ "phrases_not_found": []
+}

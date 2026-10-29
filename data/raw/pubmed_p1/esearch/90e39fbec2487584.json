@@ -1,0 +1,14 @@
+{
+ "query": "((\"clomiphene\"[mh] OR clomiphene[tiab] OR \"clomiphene citrate\"[tiab] OR clomifene[tiab] OR clomid[tiab] OR serophene[tiab]) AND (\"polycystic ovary syndrome\"[mh] OR \"polycystic ovary syndrome\"[tiab] OR \"polycystic ovarian syndrome\"[tiab] OR pcos[tiab] OR \"stein-leventhal syndrome\"[tiab]) AND (\"endometrium\"[mh] OR endometrium[tiab] OR \"endometrial thickness\"[tiab] OR \"endometrial response\"[tiab] OR \"endometrial growth\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2014/10/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:54+00:00",
+ "count": 12,
+ "pmids": [
+  "39861414",
+  "33926292",
+  "40660210",
+  "39297798",
+  "41120691"
+ ],
+ "phrases_not_found": []
+}

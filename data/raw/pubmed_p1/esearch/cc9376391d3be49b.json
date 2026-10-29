@@ -1,0 +1,16 @@
+{
+ "query": "((\"modified B-Lynch suture\"[tiab] OR \"modified B-Lynch\"[tiab] OR \"modified B Lynch\"[tiab] OR \"modified brace suture\"[tiab] OR \"modified uterine compression suture\"[tiab] OR \"modified compression suture\"[tiab]) AND (\"postpartum hemorrhage\"[mh] OR \"postpartum hemorrhage\"[tiab] OR \"postpartum haemorrhage\"[tiab] OR \"uterine atony\"[tiab] OR \"atonic uterus\"[tiab] OR \"uterine inertia\"[tiab] OR \"flabby uterus\"[tiab] OR \"atonic, flabby uterus\"[tiab]) AND (\"bleeding\"[tiab] OR \"blood loss\"[tiab] OR \"hemorrhage\"[tiab] OR \"haemorrhage\"[tiab] OR \"control bleeding\"[tiab] OR \"controlling bleeding\"[tiab] OR \"hemostasis\"[tiab] OR \"haemostasis\"[tiab] OR \"arrest bleeding\"[tiab] OR \"stop bleeding\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2016/08/27:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:03+00:00",
+ "count": 1,
+ "pmids": [
+  "32609374"
+ ],
+ "phrases_not_found": [
+  "\"modified brace suture\"[tiab]",
+  "\"modified uterine compression suture\"[tiab]",
+  "\"modified compression suture\"[tiab]",
+  "\"flabby uterus\"[tiab]",
+  "\"atonic, flabby uterus\"[tiab]"
+ ]
+}

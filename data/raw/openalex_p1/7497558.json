@@ -1,0 +1,19 @@
+{
+ "id": "https://openalex.org/W2019945880",
+ "doi": "https://doi.org/10.1007/bf03011177",
+ "publication_date": "1995-09-01",
+ "referenced_works": [
+  "https://openalex.org/W55063019",
+  "https://openalex.org/W2001947338",
+  "https://openalex.org/W2003098711",
+  "https://openalex.org/W2049955601",
+  "https://openalex.org/W2090246441",
+  "https://openalex.org/W2119308029",
+  "https://openalex.org/W2120611507",
+  "https://openalex.org/W2137263748",
+  "https://openalex.org/W2163124816",
+  "https://openalex.org/W2339194716"
+ ],
+ "referenced_works_count": 10,
+ "retrieved_at_utc": "2026-10-29T04:40:27+00:00"
+}

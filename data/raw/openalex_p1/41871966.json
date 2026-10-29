@@ -1,0 +1,15 @@
+{
+ "id": "https://openalex.org/W7140044201",
+ "doi": "https://doi.org/10.1016/j.jmig.2026.02.022",
+ "publication_date": "2026-03-22",
+ "referenced_works": [
+  "https://openalex.org/W3013659704",
+  "https://openalex.org/W3206053058",
+  "https://openalex.org/W4284966022",
+  "https://openalex.org/W4296004278",
+  "https://openalex.org/W4394569163",
+  "https://openalex.org/W4407175798"
+ ],
+ "referenced_works_count": 6,
+ "retrieved_at_utc": "2026-10-29T04:32:10+00:00"
+}

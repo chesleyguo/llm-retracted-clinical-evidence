@@ -1,0 +1,10 @@
+{
+ "query": "((\"surgical hand antisepsis\"[tiab] OR \"surgical hand scrub\"[tiab] OR \"surgical hand washing\"[tiab] OR \"surgical hand wash\"[tiab] OR \"surgical hand disinfection\"[tiab] OR \"hand antisepsis\"[tiab] OR \"hand scrub\"[tiab] OR \"hand washing\"[tiab] OR \"hand wash\"[tiab] OR \"hand disinfection\"[tiab] OR \"hand hygiene\"[tiab] OR \"handwashing\"[tiab] OR \"hand washing\"[mh] OR \"hand disinfection\"[mh] OR \"hand hygiene\"[mh]) AND (\"eight-step\"[tiab] OR \"8-step\"[tiab] OR \"eight step\"[tiab] OR \"8 step\"[tiab] OR \"improved technique\"[tiab] OR \"modified technique\"[tiab] OR \"new technique\"[tiab] OR \"novel technique\"[tiab]) AND (\"orthopedic surgery\"[tiab] OR \"orthopaedic surgery\"[tiab] OR \"orthopedic procedures\"[tiab] OR \"orthopaedic procedures\"[tiab] OR \"orthopedic\"[tiab] OR \"orthopaedic\"[tiab] OR \"orthopedics\"[mh] OR \"orthopedic procedures\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:38:50+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"hand washing\"[mh]"
+ ]
+}

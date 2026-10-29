@@ -1,0 +1,8 @@
+{
+ "query": "((aprotinin[mh] OR aprotinin[tiab] OR \"trasylol\"[tiab] OR \"bovine pancreatic trypsin inhibitor\"[tiab] OR BPTI[tiab]) AND (\"cardiac surgical procedures\"[mh] OR \"cardiac surgery\"[tiab] OR \"heart surgery\"[tiab] OR \"cardiopulmonary bypass\"[mh] OR \"cardiopulmonary bypass\"[tiab] OR \"coronary artery bypass\"[mh] OR \"coronary artery bypass\"[tiab] OR \"coronary artery bypass grafting\"[tiab] OR CABG[tiab] OR \"valve surgery\"[tiab] OR \"valve replacement\"[tiab] OR \"valve repair\"[tiab] OR \"aortic surgery\"[tiab] OR \"aortic valve\"[tiab] OR \"mitral valve\"[tiab] OR \"cardiac operation\"[tiab] OR \"cardiac operations\"[tiab] OR \"cardiac surgical procedure\"[tiab] OR \"cardiac surgical procedures\"[tiab] OR \"open heart surgery\"[tiab] OR \"open-heart surgery\"[tiab]) AND (\"cell adhesion molecules\"[mh] OR \"cell adhesion molecules\"[tiab] OR \"adhesion molecules\"[tiab] OR \"circulating adhesion molecules\"[tiab] OR \"soluble adhesion molecules\"[tiab] OR \"sICAM-1\"[tiab] OR \"sVCAM-1\"[tiab] OR \"sE-selectin\"[tiab] OR \"sP-selectin\"[tiab] OR \"intercellular adhesion molecule-1\"[tiab] OR \"vascular cell adhesion molecule-1\"[tiab] OR \"E-selectin\"[tiab] OR \"P-selectin\"[tiab] OR ICAM-1[tiab] OR VCAM-1[tiab] OR \"endothelial adhesion molecules\"[tiab] OR \"leukocyte adhesion molecules\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1995/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:44+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

@@ -1,0 +1,17 @@
+{
+ "query": "((marsupialization[tiab] OR marsupialisation[tiab] OR \"marsupialization\"[mh]) AND (\"odontogenic keratocyst\"[tiab] OR \"odontogenic keratocysts\"[tiab] OR \"keratocystic odontogenic tumor\"[tiab] OR \"keratocystic odontogenic tumours\"[tiab] OR \"keratocystic odontogenic tumor\"[mh]) AND (\"complete resolution\"[tiab] OR resolution[tiab] OR regression[tiab] OR disappearance[tiab] OR healing[tiab] OR \"disease-free\"[tiab] OR recurrence[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2004/06/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:35+00:00",
+ "count": 10,
+ "pmids": [
+  "36150944",
+  "38750607",
+  "29930360",
+  "28011178",
+  "22771402"
+ ],
+ "phrases_not_found": [
+  "\"marsupialization\"[mh]",
+  "\"keratocystic odontogenic tumor\"[mh]"
+ ]
+}

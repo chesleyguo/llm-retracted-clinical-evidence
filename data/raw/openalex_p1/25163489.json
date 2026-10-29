@@ -1,0 +1,24 @@
+{
+ "id": "https://openalex.org/W1975089633",
+ "doi": "https://doi.org/10.3109/14767058.2014.958461",
+ "publication_date": "2014-08-28",
+ "referenced_works": [
+  "https://openalex.org/W1984668436",
+  "https://openalex.org/W1996160038",
+  "https://openalex.org/W2005295098",
+  "https://openalex.org/W2011628555",
+  "https://openalex.org/W2036301159",
+  "https://openalex.org/W2046737563",
+  "https://openalex.org/W2058408648",
+  "https://openalex.org/W2087156095",
+  "https://openalex.org/W2122839417",
+  "https://openalex.org/W2124420113",
+  "https://openalex.org/W2132651639",
+  "https://openalex.org/W2145201049",
+  "https://openalex.org/W2202508323",
+  "https://openalex.org/W2346056284",
+  "https://openalex.org/W3204680512"
+ ],
+ "referenced_works_count": 15,
+ "retrieved_at_utc": "2026-10-29T04:32:48+00:00"
+}

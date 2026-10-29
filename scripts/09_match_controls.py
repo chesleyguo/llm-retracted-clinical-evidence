@@ -148,12 +148,21 @@ def cache_name(text):
 
 
 def post(url, data):
-    for attempt in range(1, 5):
-        r = requests.post(url, data=data, timeout=120)
+    """POST with retries on rate limits, server errors and dropped connections."""
+    for attempt in range(1, 6):
+        try:
+            r = requests.post(url, data=data, timeout=120)
+            r.content   # read the whole body here, so a cut-off response is retried
+        except (requests.ConnectionError, requests.Timeout,
+                requests.exceptions.ChunkedEncodingError):
+            if attempt == 5:
+                raise
+            time.sleep(5 * attempt)
+            continue
         time.sleep(PAUSE)
         if r.status_code == 200:
             return r
-        if attempt == 4 or r.status_code not in (429, 500, 502, 503, 504):
+        if attempt == 5 or r.status_code not in (429, 500, 502, 503, 504):
             r.raise_for_status()
         time.sleep(PAUSE * 5 * attempt)
 

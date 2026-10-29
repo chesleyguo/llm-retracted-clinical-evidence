@@ -1,0 +1,14 @@
+{
+ "query": "((\"laparoscopic ovarian diathermy\"[tiab] OR \"ovarian diathermy\"[tiab] OR \"laparoscopic ovarian drilling\"[tiab] OR \"ovarian drilling\"[tiab] OR \"LOD\"[tiab]) AND (\"polycystic ovary syndrome\"[mh] OR \"polycystic ovary syndrome\"[tiab] OR \"PCOS\"[tiab] OR \"clomiphene resistant\"[tiab] OR \"clomiphene citrate resistant\"[tiab] OR \"clomiphene-resistant\"[tiab]) AND (\"pregnancy\"[mh] OR \"pregnancy rate\"[tiab] OR \"pregnancy\"[tiab] OR \"live birth\"[tiab] OR \"ovulation\"[mh] OR \"ovulation\"[tiab] OR \"fertility\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2011/11/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:47+00:00",
+ "count": 17,
+ "pmids": [
+  "36165742",
+  "37207714",
+  "34085287",
+  "29797697",
+  "34735019"
+ ],
+ "phrases_not_found": []
+}

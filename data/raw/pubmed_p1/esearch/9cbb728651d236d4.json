@@ -1,0 +1,10 @@
+{
+ "query": "((\"self-management\"[tiab] OR \"self management\"[tiab] OR \"self-care\"[tiab] OR \"self care\"[tiab] OR \"self-management program\"[tiab] OR \"self-management intervention\"[tiab] OR \"self-management education\"[tiab] OR \"self-management support\"[tiab] OR \"self-management strategies\"[tiab] OR \"self-management skills\"[tiab] OR \"self-management training\"[tiab] OR \"self-management therapy\"[tiab] OR \"self-management approach\"[tiab] OR \"self-management techniques\"[tiab] OR \"self-management program\"[mh] OR \"self care\"[mh]) AND (\"metabolic syndrome\"[tiab] OR \"metabolic syndrome X\"[tiab] OR \"insulin resistance syndrome\"[tiab] OR \"syndrome X\"[tiab] OR \"dysmetabolic syndrome\"[tiab] OR \"cardiometabolic syndrome\"[tiab] OR \"metabolic syndrome\"[mh]) AND (\"older women\"[tiab] OR \"elderly women\"[tiab] OR \"aged women\"[tiab] OR \"postmenopausal women\"[tiab] OR \"older females\"[tiab] OR \"elderly females\"[tiab] OR \"aged females\"[tiab] OR \"women\"[tiab] OR \"female\"[tiab] OR \"aged\"[mh] OR \"middle aged\"[mh] OR \"postmenopause\"[mh]) AND (\"little formal education\"[tiab] OR \"low education\"[tiab] OR \"low educational level\"[tiab] OR \"low educational attainment\"[tiab] OR \"less educated\"[tiab] OR \"limited education\"[tiab] OR \"low literacy\"[tiab] OR \"educational status\"[mh] OR \"health literacy\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2023/06/26:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:30:50+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"self-management program\"[mh]"
+ ]
+}

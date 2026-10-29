@@ -1,0 +1,8 @@
+{
+ "query": "((\"peripherally inserted central catheter\"[tiab] OR \"PICC\"[tiab] OR \"PICC line\"[tiab] OR \"peripherally inserted central venous catheter\"[tiab] OR \"catheterization, peripheral\"[mh]) AND (\"lung cancer\"[tiab] OR \"lung neoplasm\"[tiab] OR \"lung neoplasms\"[mh] OR \"pulmonary cancer\"[tiab] OR \"pulmonary neoplasm\"[tiab] OR \"bronchogenic carcinoma\"[tiab] OR \"non-small cell lung cancer\"[tiab] OR \"small cell lung cancer\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:54+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

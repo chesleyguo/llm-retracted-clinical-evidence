@@ -1,0 +1,10 @@
+{
+ "query": "((\"platelet-rich plasma\"[mh] OR \"platelet rich plasma\"[tiab] OR \"platelet-rich plasma\"[tiab] OR PRP[tiab]) AND (\"hyaluronic acid\"[mh] OR \"hyaluronic acid\"[tiab] OR hyaluronan[tiab] OR \"sodium hyaluronate\"[tiab]) AND (\"osteoarthritis, knee\"[mh] OR \"knee osteoarthritis\"[tiab] OR \"osteoarthritis of the knee\"[tiab] OR \"gonarthrosis\"[tiab]) AND (\"arthroscopic debridement\"[tiab] OR \"joint debridement\"[tiab] OR \"debridement\"[mh] OR debridement[tiab]) AND (\"treatment outcome\"[mh] OR \"treatment outcome\"[tiab] OR \"total effective rate\"[tiab] OR \"effective rate\"[tiab] OR \"clinical efficacy\"[tiab] OR \"efficacy\"[tiab] OR \"effectiveness\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:28+00:00",
+ "count": 1,
+ "pmids": [
+  "37715357"
+ ],
+ "phrases_not_found": []
+}

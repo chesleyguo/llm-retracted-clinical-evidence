@@ -1,0 +1,13 @@
+{
+ "query": "((\"omega-3\"[tiab] OR \"omega 3\"[tiab] OR \"n-3 fatty acids\"[tiab] OR \"n-3 polyunsaturated fatty acids\"[tiab] OR \"eicosapentaenoic acid\"[tiab] OR \"docosahexaenoic acid\"[tiab] OR \"fish oil\"[tiab] OR \"fatty acids, omega-3\"[mh]) AND (\"severe psychological distress\"[tiab] OR \"psychological distress\"[tiab] OR \"depression\"[tiab] OR \"depressive disorder\"[mh] OR \"depressive disorder, major\"[mh] OR \"stress, psychological\"[mh]) AND (\"depression scores\"[tiab] OR \"depressive symptoms\"[tiab] OR \"depression\"[tiab] OR \"depressive disorder\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2026/04/15:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:04+00:00",
+ "count": 2,
+ "pmids": [
+  "42100925",
+  "42520986"
+ ],
+ "phrases_not_found": [
+  "\"depressive disorder, major\"[mh]"
+ ]
+}

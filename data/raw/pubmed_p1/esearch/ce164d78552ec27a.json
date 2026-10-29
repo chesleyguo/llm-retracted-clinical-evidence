@@ -1,0 +1,12 @@
+{
+ "query": "((\"direct trocar\"[tiab] OR \"direct trocar entry\"[tiab] OR \"direct trocar insertion\"[tiab] OR \"direct trocar technique\"[tiab] OR \"trocar entry\"[tiab] OR \"trocar insertion\"[tiab]) AND (laparoscop*[tiab] OR \"laparoscopy\"[mh] OR \"pneumoperitoneum\"[mh] OR pneumoperitoneum[tiab]) AND (\"duration\"[tiab] OR \"time\"[tiab] OR \"operative time\"[tiab] OR \"procedure time\"[tiab] OR \"pneumoperitoneum time\"[tiab] OR \"time to pneumoperitoneum\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2010/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:04+00:00",
+ "count": 1,
+ "pmids": [
+  "37069276"
+ ],
+ "phrases_not_found": [
+  "\"time to pneumoperitoneum\"[tiab]"
+ ]
+}

@@ -1,0 +1,13 @@
+{
+ "query": "((\"resistance training\"[mh] OR \"resistance training\"[tiab] OR \"strength training\"[tiab] OR \"weight lifting\"[tiab] OR \"weight training\"[tiab] OR \"strength exercise\"[tiab]) AND (\"middle aged\"[mh] OR \"middle aged\"[tiab] OR \"middle-aged\"[tiab] OR \"untrained\"[tiab] OR \"sedentary\"[tiab] OR \"men\"[mh] OR men[tiab] OR male[tiab]) AND (\"antioxidants\"[mh] OR antioxidant*[tiab] OR \"superoxide dismutase\"[tiab] OR \"catalase\"[tiab] OR \"glutathione peroxidase\"[tiab] OR \"gene expression\"[mh] OR \"gene expression\"[tiab] OR \"mRNA expression\"[tiab] OR \"blood cells\"[mh] OR \"blood cells\"[tiab] OR leukocyte*[tiab] OR lymphocyte*[tiab] OR monocyte*[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2007/10/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:32:00+00:00",
+ "count": 4,
+ "pmids": [
+  "33628774",
+  "32460679",
+  "34335309",
+  "31586588"
+ ],
+ "phrases_not_found": []
+}

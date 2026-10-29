@@ -1,0 +1,10 @@
+{
+ "query": "((\"Sugira Muryango\"[tiab] OR \"Sugira Muryango Program\"[tiab]) AND (\"younger siblings\"[tiab] OR \"siblings\"[mh] OR sibling*[tiab] OR \"brothers and sisters\"[tiab]) AND (\"temperament\"[mh] OR temperament*[tiab] OR \"temperament traits\"[tiab] OR \"personality\"[mh] OR personality[tiab] OR \"behavioral traits\"[tiab] OR \"emotional regulation\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2025/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:51+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"Sugira Muryango Program\"[tiab]"
+ ]
+}

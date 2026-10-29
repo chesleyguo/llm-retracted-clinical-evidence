@@ -1,0 +1,16 @@
+{
+ "query": "((\"myo-inositol\"[mh] OR \"myo-inositol\"[tiab] OR \"myoinositol\"[tiab] OR \"inositol\"[tiab]) AND (\"hirsutism\"[mh] OR hirsutism[tiab] OR hirsute[tiab] OR \"excessive hair growth\"[tiab]) AND (\"hirsutism\"[mh] OR hirsutism[tiab] OR \"hair growth\"[tiab] OR \"Ferriman-Gallwey score\"[tiab] OR \"FG score\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2008/10/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:31+00:00",
+ "count": 6,
+ "pmids": [
+  "38163998",
+  "35916457",
+  "39331347",
+  "38117862",
+  "41947399"
+ ],
+ "phrases_not_found": [
+  "\"myo-inositol\"[mh]"
+ ]
+}

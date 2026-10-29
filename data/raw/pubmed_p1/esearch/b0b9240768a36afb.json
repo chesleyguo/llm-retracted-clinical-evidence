@@ -1,0 +1,17 @@
+{
+ "query": "((\"WoundCare 18+\"[tiab] OR \"WoundCare18+\"[tiab] OR \"WoundCare Plus\"[tiab] OR \"WoundCare\"[tiab]) AND (\"venous leg ulcer\"[tiab] OR \"venous leg ulcers\"[tiab] OR \"varicose ulcer\"[tiab] OR \"varicose ulcers\"[tiab] OR \"stasis ulcer\"[tiab] OR \"stasis ulcers\"[tiab] OR \"leg ulcer\"[tiab] OR \"leg ulcers\"[tiab] OR \"venous ulcer\"[tiab] OR \"venous ulcers\"[tiab] OR \"Venous Ulcer\"[mh] OR \"Varicose Ulcer\"[mh] OR \"Leg Ulcer\"[mh]) AND (\"healing\"[tiab] OR \"wound healing\"[tiab] OR \"epithelialization\"[tiab] OR \"epithelialisation\"[tiab] OR \"granulation\"[tiab] OR \"slough\"[tiab] OR \"sloughy\"[tiab] OR \"debridement\"[tiab] OR \"Wound Healing\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2009/02/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:41:41+00:00",
+ "count": 3,
+ "pmids": [
+  "31978262",
+  "26932818",
+  "24009097"
+ ],
+ "phrases_not_found": [
+  "\"WoundCare 18+\"[tiab]",
+  "\"WoundCare18+\"[tiab]",
+  "\"WoundCare Plus\"[tiab]",
+  "\"Venous Ulcer\"[mh]"
+ ]
+}

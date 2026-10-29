@@ -1,0 +1,12 @@
+{
+ "query": "((ramosetron[mh] OR ramosetron[tiab] OR \"YM060\"[tiab] OR \"YM-060\"[tiab]) AND (\"gynecologic surgical procedures\"[mh] OR gynecologic surgery[tiab] OR gynaecologic surgery[tiab] OR gynecological surgery[tiab] OR gynaecological surgery[tiab] OR \"major gynecologic surgery\"[tiab] OR \"major gynaecologic surgery\"[tiab] OR hysterectomy[tiab] OR oophorectomy[tiab] OR salpingectomy[tiab] OR myomectomy[tiab] OR \"pelvic surgery\"[tiab]) AND (\"postoperative nausea and vomiting\"[mh] OR \"postoperative nausea and vomiting\"[tiab] OR PONV[tiab] OR \"nausea and vomiting\"[tiab] OR nausea[tiab] OR vomiting[tiab] OR emesis[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1999/08/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:29+00:00",
+ "count": 1,
+ "pmids": [
+  "40348596"
+ ],
+ "phrases_not_found": [
+  "ramosetron"
+ ]
+}

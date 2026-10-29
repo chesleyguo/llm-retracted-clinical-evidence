@@ -1,0 +1,14 @@
+{
+ "query": "((\"radiotherapy\"[mh] OR radiotherapy[tiab] OR \"radiation therapy\"[tiab] OR irradiation[tiab] OR \"involved field\"[tiab] OR \"involved-field\"[tiab] OR ifrt[tiab]) AND (\"lymphoma, b-cell\"[mh] OR \"primary mediastinal b-cell lymphoma\"[tiab] OR \"primary mediastinal large b-cell lymphoma\"[tiab] OR pmbcl[tiab] OR \"mediastinal large b-cell lymphoma\"[tiab]) AND (\"progression-free survival\"[mh] OR \"progression-free survival\"[tiab] OR \"disease-free survival\"[mh] OR \"disease-free survival\"[tiab] OR \"event-free survival\"[tiab] OR \"survival rate\"[mh] OR \"survival rate\"[tiab] OR recurrence[tiab] OR relapse[tiab] OR \"treatment outcome\"[mh] OR \"treatment outcome\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2012/07/15:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:22+00:00",
+ "count": 20,
+ "pmids": [
+  "29878045",
+  "29413279",
+  "24176573",
+  "29482772",
+  "33618247"
+ ],
+ "phrases_not_found": []
+}

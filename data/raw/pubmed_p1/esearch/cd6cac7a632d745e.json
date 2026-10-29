@@ -1,0 +1,14 @@
+{
+ "query": "((\"ketamine\"[mh] OR ketamine[tiab] OR esketamine[tiab] OR \"ketamine hydrochloride\"[tiab]) AND (\"depressive disorder, treatment-resistant\"[mh] OR \"treatment-resistant depression\"[tiab] OR \"treatment resistant depression\"[tiab] OR \"refractory depression\"[tiab] OR \"therapy-resistant depression\"[tiab] OR \"treatment-refractory depression\"[tiab] OR \"drug-resistant depression\"[tiab] OR \"medication-resistant depression\"[tiab] OR \"antidepressant-resistant depression\"[tiab] OR \"TRD\"[tiab] OR \"treatment-resistant major depressive disorder\"[tiab] OR \"treatment resistant major depressive disorder\"[tiab] OR \"refractory major depressive disorder\"[tiab] OR \"treatment-refractory major depressive disorder\"[tiab]) AND (\"depression\"[mh] OR \"depressive symptoms\"[tiab] OR \"depressive symptom\"[tiab] OR \"symptom severity\"[tiab] OR \"remission\"[tiab] OR \"response\"[tiab] OR \"mood\"[tiab] OR \"Hamilton Depression Rating Scale\"[tiab] OR \"HDRS\"[tiab] OR \"HAM-D\"[tiab] OR \"Montgomery-Asberg Depression Rating Scale\"[tiab] OR \"MADRS\"[tiab] OR \"Beck Depression Inventory\"[tiab] OR \"BDI\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2024/05/07:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:32:24+00:00",
+ "count": 49,
+ "pmids": [
+  "40736734",
+  "39790081",
+  "40024346",
+  "40020133",
+  "38537759"
+ ],
+ "phrases_not_found": []
+}

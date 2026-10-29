@@ -1,0 +1,16 @@
+{
+ "query": "((\"gonadotropin-releasing hormone\"[mh] OR \"gonadotropin-releasing hormone\"[tiab] OR \"GnRH\"[tiab] OR \"GnRH agonist\"[tiab] OR \"GnRH agonists\"[tiab] OR \"buserelin\"[tiab] OR \"triptorelin\"[tiab] OR \"leuprolide\"[tiab] OR \"leuprorelin\"[tiab] OR \"nafarelin\"[tiab] OR \"goserelin\"[tiab] OR \"histrelin\"[tiab]) AND (\"chorionic gonadotropin\"[mh] OR \"chorionic gonadotropin\"[tiab] OR \"human chorionic gonadotropin\"[tiab] OR \"hCG\"[tiab] OR \"recombinant hCG\"[tiab] OR \"rhCG\"[tiab] OR \"choriogonadotropin alfa\"[tiab] OR \"Ovidrel\"[tiab] OR \"Ovitrelle\"[tiab]) AND (\"oocytes\"[mh] OR oocyte[tiab] OR oocytes[tiab] OR \"mature oocyte\"[tiab] OR \"mature oocytes\"[tiab] OR \"MII oocyte\"[tiab] OR \"MII oocytes\"[tiab] OR \"metaphase II\"[tiab] OR \"oocyte maturation\"[mh] OR \"oocyte maturation\"[tiab] OR \"oocyte yield\"[tiab] OR \"number of oocytes\"[tiab] OR \"oocyte number\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/05/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:12+00:00",
+ "count": 21,
+ "pmids": [
+  "38110714",
+  "39547644",
+  "39783453",
+  "35306603",
+  "36356171"
+ ],
+ "phrases_not_found": [
+  "\"oocyte maturation\"[mh]"
+ ]
+}

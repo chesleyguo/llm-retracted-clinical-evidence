@@ -1,0 +1,8 @@
+{
+ "query": "((\"sulbactam\"[mh] OR sulbactam[tiab] OR \"ampicillin-sulbactam\"[tiab] OR \"sultamicillin\"[tiab] OR \"unasyn\"[tiab]) AND (\"pneumonectomy\"[mh] OR \"lung resection\"[tiab] OR \"pulmonary resection\"[tiab] OR \"lobectomy\"[tiab] OR \"segmentectomy\"[tiab] OR \"thoracic surgery\"[mh] OR \"thoracic surgical procedures\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1999/07/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:41:22+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

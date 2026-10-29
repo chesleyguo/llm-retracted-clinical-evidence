@@ -1,0 +1,30 @@
+{
+ "id": "https://openalex.org/W4393198452",
+ "doi": "https://doi.org/10.1016/j.jad.2024.03.137",
+ "publication_date": "2024-03-26",
+ "referenced_works": [
+  "https://openalex.org/W1948877773",
+  "https://openalex.org/W2033585778",
+  "https://openalex.org/W2109334244",
+  "https://openalex.org/W2128918664",
+  "https://openalex.org/W2132324173",
+  "https://openalex.org/W2157823046",
+  "https://openalex.org/W2263151523",
+  "https://openalex.org/W2614068273",
+  "https://openalex.org/W2752371649",
+  "https://openalex.org/W2779386549",
+  "https://openalex.org/W2796940952",
+  "https://openalex.org/W2895197076",
+  "https://openalex.org/W2946661342",
+  "https://openalex.org/W2961020354",
+  "https://openalex.org/W2981272605",
+  "https://openalex.org/W3048755251",
+  "https://openalex.org/W3208279447",
+  "https://openalex.org/W4311688634",
+  "https://openalex.org/W4361296432",
+  "https://openalex.org/W4362519238",
+  "https://openalex.org/W4385556714"
+ ],
+ "referenced_works_count": 21,
+ "retrieved_at_utc": "2026-10-29T04:32:27+00:00"
+}

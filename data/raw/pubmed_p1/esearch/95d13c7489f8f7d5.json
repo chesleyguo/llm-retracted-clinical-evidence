@@ -1,0 +1,14 @@
+{
+ "query": "((\"letrozole\"[mh] OR letrozole[tiab] OR \"femara\"[tiab]) AND (\"clomiphene\"[mh] OR clomiphene[tiab] OR \"clomiphene citrate\"[tiab] OR clomifene[tiab] OR \"clomid\"[tiab] OR \"serophene\"[tiab]) AND (\"pregnancy rate\"[tiab] OR \"pregnancy rates\"[tiab] OR \"live birth\"[tiab] OR \"live births\"[tiab] OR \"clinical pregnancy\"[tiab] OR \"ongoing pregnancy\"[tiab] OR \"pregnancy outcome\"[tiab] OR \"pregnancy outcomes\"[tiab] OR \"pregnancy\"[mh] OR \"live birth\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2010/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:30:27+00:00",
+ "count": 56,
+ "pmids": [
+  "39332623",
+  "36735392",
+  "32106976",
+  "36165742",
+  "40193219"
+ ],
+ "phrases_not_found": []
+}

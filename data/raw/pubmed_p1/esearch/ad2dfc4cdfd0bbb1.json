@@ -1,0 +1,12 @@
+{
+ "query": "((\"SurgASSIST\"[tiab] OR \"SurgASSIST stapler\"[tiab] OR \"powered circular stapler\"[tiab] OR \"powered EEA stapler\"[tiab]) AND (\"laparoscopic Roux-en-Y gastric bypass\"[tiab] OR \"laparoscopic RYGB\"[tiab] OR \"laparoscopic gastric bypass\"[tiab] OR \"Roux-en-Y gastric bypass\"[mh] OR \"Gastric Bypass\"[mh]) AND (\"port site wound infection\"[tiab] OR \"port site infection\"[tiab] OR \"wound infection\"[tiab] OR \"surgical site infection\"[tiab] OR \"surgical wound infection\"[mh] OR \"Surgical Wound Infection\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2009/02/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:15+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"SurgASSIST stapler\"[tiab]",
+  "\"powered EEA stapler\"[tiab]",
+  "\"Roux-en-Y gastric bypass\"[mh]"
+ ]
+}

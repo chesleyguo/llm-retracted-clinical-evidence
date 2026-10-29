@@ -1,0 +1,16 @@
+{
+ "query": "((\"remdesivir\"[mh] OR remdesivir[tiab] OR \"GS-5734\"[tiab] OR \"veklury\"[tiab]) AND (\"COVID-19\"[mh] OR \"SARS-CoV-2\"[mh] OR \"COVID-19\"[tiab] OR \"COVID 19\"[tiab] OR \"coronavirus disease 2019\"[tiab] OR \"severe acute respiratory syndrome coronavirus 2\"[tiab] OR \"SARS-CoV-2\"[tiab] OR \"2019-nCoV\"[tiab]) AND (\"length of stay\"[tiab] OR \"hospital stay\"[tiab] OR \"hospitalization\"[tiab] OR \"hospitalisation\"[tiab] OR \"duration of hospitalization\"[tiab] OR \"time to discharge\"[tiab] OR \"discharge\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2021/09/10:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:41:10+00:00",
+ "count": 23,
+ "pmids": [
+  "34323191",
+  "34650951",
+  "36695483",
+  "33073552",
+  "35181207"
+ ],
+ "phrases_not_found": [
+  "\"remdesivir\"[mh]"
+ ]
+}

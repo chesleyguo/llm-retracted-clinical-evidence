@@ -1,0 +1,14 @@
+{
+ "query": "((\"Gonadotropin-Releasing Hormone\"[mh] OR \"gonadotropin-releasing hormone\"[tiab] OR \"GnRH\"[tiab] OR \"GnRH agonist\"[tiab] OR \"GnRH agonists\"[tiab] OR \"LHRH agonist\"[tiab] OR \"LHRH agonists\"[tiab] OR \"luteinizing hormone-releasing hormone agonist\"[tiab] OR \"luteinizing hormone-releasing hormone agonists\"[tiab] OR \"buserelin\"[tiab] OR \"goserelin\"[tiab] OR \"leuprolide\"[tiab] OR \"leuprorelin\"[tiab] OR \"nafarelin\"[tiab] OR \"triptorelin\"[tiab]) AND (\"Breast Neoplasms\"[mh] OR \"breast cancer\"[tiab] OR \"breast carcinoma\"[tiab] OR \"breast tumor\"[tiab] OR \"breast tumour\"[tiab] OR \"breast malignancy\"[tiab]) AND (\"ovarian function\"[tiab] OR \"ovarian reserve\"[tiab] OR \"ovarian failure\"[tiab] OR \"ovarian insufficiency\"[tiab] OR \"premature ovarian failure\"[tiab] OR \"premature ovarian insufficiency\"[tiab] OR \"amenorrhea\"[tiab] OR \"amenorrhoea\"[tiab] OR \"menstruation\"[tiab] OR \"menses\"[tiab] OR \"fertility\"[tiab] OR \"pregnancy\"[tiab] OR \"pregnancy rate\"[tiab] OR \"live birth\"[tiab] OR \"resumption of menses\"[tiab] OR \"return of menstruation\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2009/03/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:20+00:00",
+ "count": 21,
+ "pmids": [
+  "22614158",
+  "40106739",
+  "29718793",
+  "40536056",
+  "35917530"
+ ],
+ "phrases_not_found": []
+}

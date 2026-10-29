@@ -1,0 +1,11 @@
+{
+ "query": "((dienogest[tiab] OR DNG[tiab] OR \"dienogest\"[mh] OR \"estradiol\"[mh] OR estradiol[tiab] OR \"ethinyl estradiol\"[tiab] OR EE[tiab]) AND (perimenopaus*[tiab] OR \"perimenopause\"[mh] OR \"premenopause\"[mh] OR premenopaus*[tiab] OR \"middle aged\"[tiab] OR \"middle age\"[mh]) AND (endometrial thickness[tiab] OR \"endometrium/diagnostic imaging\"[mh] OR \"endometrium/pathology\"[mh] OR endometrium[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2024/12/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:24+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"dienogest\"[mh]",
+  "\"middle age\"[mh]"
+ ]
+}

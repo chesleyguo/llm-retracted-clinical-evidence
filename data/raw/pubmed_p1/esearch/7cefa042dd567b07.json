@@ -1,0 +1,13 @@
+{
+ "query": "((\"ferrous bis-glycinate\"[tiab] OR \"ferrous bisglycinate\"[tiab] OR \"iron bis-glycinate\"[tiab] OR \"iron bisglycinate\"[tiab] OR \"ferrous glycine chelate\"[tiab] OR \"iron glycine chelate\"[tiab] OR \"ferrous bisglycinate chelate\"[tiab] OR \"ferrous bis-glycinate chelate\"[tiab]) AND (\"pregnant women\"[tiab] OR pregnancy[tiab] OR \"pregnant\"[tiab] OR \"gestation\"[tiab] OR \"maternal\"[tiab] OR \"prenatal\"[tiab] OR \"antenatal\"[tiab] OR \"pregnancy\"[mh] OR \"pregnant women\"[mh]) AND (\"hemoglobin\"[tiab] OR \"haemoglobin\"[tiab] OR \"Hb\"[tiab] OR \"hemoglobin level\"[tiab] OR \"haemoglobin level\"[tiab] OR \"hemoglobin concentration\"[tiab] OR \"haemoglobin concentration\"[tiab] OR \"anemia\"[tiab] OR \"anaemia\"[tiab] OR \"iron deficiency anemia\"[tiab] OR \"iron deficiency anaemia\"[tiab] OR \"hemoglobin\"[mh] OR \"anemia, iron-deficiency\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2019/12/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:32:37+00:00",
+ "count": 1,
+ "pmids": [
+  "36728680"
+ ],
+ "phrases_not_found": [
+  "\"pregnant women\"[mh]",
+  "\"hemoglobin\"[mh]"
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "query": "((\"intrauterine devices, copper\"[mh] OR \"copper intrauterine device\"[tiab] OR \"copper IUD\"[tiab] OR \"Cu-IUD\"[tiab] OR \"copper T\"[tiab] OR \"TCu380A\"[tiab] OR \"Nova T\"[tiab] OR \"Multiload\"[tiab]) AND (\"uterine sound\"[tiab] OR \"sound-sparing\"[tiab] OR \"no sound\"[tiab] OR \"without sound\"[tiab] OR \"soundless\"[tiab] OR \"uterine sounding\"[tiab]) AND (\"patient satisfaction\"[mh] OR satisfaction[tiab] OR \"patient preference\"[mh] OR preference[tiab] OR \"pain\"[mh] OR pain[tiab] OR \"anxiety\"[mh] OR anxiety[tiab] OR \"fear\"[mh] OR fear[tiab] OR \"discomfort\"[tiab] OR \"acceptability\"[tiab] OR \"experience\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/02/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:36:55+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

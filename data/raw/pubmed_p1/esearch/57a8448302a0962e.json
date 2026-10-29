@@ -1,0 +1,14 @@
+{
+ "query": "((\"synbiotics\"[mh] OR synbiotic*[tiab] OR \"synbiotic food\"[tiab] OR \"synbiotic foods\"[tiab] OR \"synbiotic supplement\"[tiab] OR \"synbiotic supplements\"[tiab] OR \"synbiotic preparation\"[tiab] OR \"synbiotic preparations\"[tiab]) AND (\"diabetes mellitus\"[mh] OR diabet*[tiab] OR \"type 1 diabetes\"[tiab] OR \"type 2 diabetes\"[tiab] OR \"T1DM\"[tiab] OR \"T2DM\"[tiab]) AND (\"insulin\"[mh] OR insulin[tiab] OR \"serum insulin\"[tiab] OR \"insulin level\"[tiab] OR \"insulin levels\"[tiab] OR \"insulin concentration\"[tiab] OR \"insulin concentrations\"[tiab] OR \"insulin resistance\"[mh] OR \"insulin resistance\"[tiab] OR \"insulin sensitivity\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2014/04/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:59+00:00",
+ "count": 29,
+ "pmids": [
+  "41059033",
+  "34417122",
+  "33356677",
+  "38815494",
+  "38527396"
+ ],
+ "phrases_not_found": []
+}

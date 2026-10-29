@@ -1,0 +1,15 @@
+{
+ "query": "((\"flexible ureteroscope\"[tiab] OR \"flexible ureteroscopy\"[tiab] OR \"flexible ureteroscopes\"[tiab] OR \"ureteroscope, flexible\"[tiab] OR \"flexible ureterorenoscope\"[tiab] OR \"flexible ureterorenoscopy\"[tiab] OR \"f-URS\"[tiab] OR \"fURS\"[tiab]) AND (\"parapelvic cyst\"[tiab] OR \"parapelvic cysts\"[tiab] OR \"peripelvic cyst\"[tiab] OR \"peripelvic cysts\"[tiab] OR \"renal parapelvic cyst\"[tiab] OR \"renal parapelvic cysts\"[tiab] OR \"parapelvic renal cyst\"[tiab] OR \"parapelvic renal cysts\"[tiab] OR \"parapelvic cyst of kidney\"[tiab] OR \"parapelvic cysts of kidney\"[tiab] OR \"parapelvic kidney cyst\"[tiab] OR \"parapelvic kidney cysts\"[tiab] OR \"parapelvic cyst\"[mh] OR \"kidney diseases, cystic\"[mh]) AND (\"recurrence\"[tiab] OR \"recurrences\"[tiab] OR \"recurrent\"[tiab] OR \"relapse\"[tiab] OR \"relapses\"[tiab] OR \"reoperation\"[tiab] OR \"reoperations\"[tiab] OR \"re-treatment\"[tiab] OR \"retreatment\"[tiab] OR \"recurrence\"[mh] OR \"neoplasm recurrence, local\"[mh] OR \"reoperation\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:31:27+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"ureteroscope, flexible\"[tiab]",
+  "\"parapelvic cyst of kidney\"[tiab]",
+  "\"parapelvic cysts of kidney\"[tiab]",
+  "\"parapelvic kidney cyst\"[tiab]",
+  "\"parapelvic kidney cysts\"[tiab]",
+  "\"parapelvic cyst\"[mh]"
+ ]
+}

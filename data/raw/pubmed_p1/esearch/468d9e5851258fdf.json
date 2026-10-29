@@ -1,0 +1,14 @@
+{
+ "query": "((\"intrauterine devices\"[mh] OR \"intrauterine device\"[tiab] OR \"intrauterine devices\"[tiab] OR IUD[tiab] OR IUCD[tiab] OR \"intrauterine contraceptive device\"[tiab] OR \"intrauterine contraceptive devices\"[tiab] OR \"intrauterine system\"[tiab] OR \"intrauterine systems\"[tiab] OR IUS[tiab] OR \"levonorgestrel-releasing intrauterine system\"[tiab] OR LNG-IUS[tiab] OR \"copper intrauterine device\"[tiab] OR \"copper IUD\"[tiab] OR \"copper T380A\"[tiab] OR \"copper T 380A\"[tiab] OR \"copper-bearing intrauterine device\"[tiab]) AND (\"cesarean section\"[mh] OR \"cesarean section\"[tiab] OR \"caesarean section\"[tiab] OR cesarean[tiab] OR caesarean[tiab] OR \"c-section\"[tiab] OR \"abdominal delivery\"[tiab] OR \"post-cesarean\"[tiab] OR \"post-caesarean\"[tiab] OR \"postpartum period\"[mh] OR postpartum[tiab] OR \"post-partum\"[tiab] OR \"after delivery\"[tiab] OR \"after childbirth\"[tiab] OR \"postnatal\"[tiab]) AND (\"expulsion\"[tiab] OR expulsions[tiab] OR \"device expulsion\"[tiab] OR \"IUD expulsion\"[tiab] OR \"intrauterine device expulsion\"[tiab] OR \"displacement\"[tiab] OR \"dislodgement\"[tiab] OR \"dislodgment\"[tiab] OR \"complete expulsion\"[tiab] OR \"partial expulsion\"[tiab] OR \"uterine perforation\"[tiab] OR \"complication\"[tiab] OR complications[tiab] OR \"adverse event\"[tiab] OR \"adverse events\"[tiab] OR \"treatment failure\"[tiab] OR \"continuation rate\"[tiab] OR \"discontinuation\"[tiab] OR \"removal\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/12/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:38:57+00:00",
+ "count": 10,
+ "pmids": [
+  "40914965",
+  "40985300",
+  "36302159",
+  "36600467",
+  "33608901"
+ ],
+ "phrases_not_found": []
+}

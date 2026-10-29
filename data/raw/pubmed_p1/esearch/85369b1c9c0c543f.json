@@ -1,0 +1,11 @@
+{
+ "query": "((\"controlled hypotension\"[tiab] OR \"deliberate hypotension\"[tiab] OR \"induced hypotension\"[tiab] OR \"hypotensive anesthesia\"[tiab] OR \"hypotensive anaesthesia\"[tiab] OR \"hypotension\"[mh]) AND (\"natriuretic peptides\"[tiab] OR \"natriuretic peptide\"[tiab] OR \"atrial natriuretic peptide\"[tiab] OR \"brain natriuretic peptide\"[tiab] OR \"ANP\"[tiab] OR \"BNP\"[tiab] OR \"NT-proBNP\"[tiab] OR \"N-terminal pro-BNP\"[tiab] OR \"natriuretic peptide, brain\"[mh] OR \"atrial natriuretic factor\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2007/06/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:41+00:00",
+ "count": 2,
+ "pmids": [
+  "41310450",
+  "38523184"
+ ],
+ "phrases_not_found": []
+}

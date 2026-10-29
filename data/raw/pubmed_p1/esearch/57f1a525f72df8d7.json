@@ -1,0 +1,8 @@
+{
+ "query": "((\"subcutaneous drain\"[tiab] OR \"subcutaneous drainage\"[tiab] OR \"wound drain\"[tiab] OR \"closed suction drain\"[tiab] OR \"drain\"[tiab]) AND (\"cesarean section\"[mh] OR \"cesarean section\"[tiab] OR \"cesarean delivery\"[tiab] OR \"caesarean section\"[tiab] OR \"caesarean delivery\"[tiab] OR \"c-section\"[tiab] OR \"abdominal delivery\"[tiab]) AND (\"obesity\"[mh] OR obese[tiab] OR obesity[tiab] OR overweight[tiab] OR \"body mass index\"[tiab] OR BMI[tiab]) AND (\"surgical wound infection\"[mh] OR \"surgical wound infection\"[tiab] OR \"wound infection\"[tiab] OR \"wound complication\"[tiab] OR \"wound complications\"[tiab] OR \"wound dehiscence\"[tiab] OR \"seroma\"[tiab] OR \"hematoma\"[tiab] OR \"hematoma\"[mh] OR \"seroma\"[mh] OR \"postoperative complications\"[mh] OR \"postoperative complication\"[tiab] OR \"postoperative complications\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2025/05/05:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:32:31+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

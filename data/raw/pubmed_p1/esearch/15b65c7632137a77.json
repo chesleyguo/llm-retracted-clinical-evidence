@@ -1,0 +1,10 @@
+{
+ "query": "((\"granisetron\"[mh] OR granisetron[tiab] OR \"kytril\"[tiab]) AND (\"anesthesia, spinal\"[mh] OR \"anesthesia, obstetrical\"[mh] OR \"cesarean section\"[mh] OR \"spinal anesthesia\"[tiab] OR \"spinal anaesthesia\"[tiab] OR \"subarachnoid anesthesia\"[tiab] OR \"subarachnoid anaesthesia\"[tiab] OR \"intrathecal anesthesia\"[tiab] OR \"intrathecal anaesthesia\"[tiab] OR \"caesarean section\"[tiab] OR \"cesarean section\"[tiab] OR \"cesarean delivery\"[tiab] OR \"caesarean delivery\"[tiab] OR \"c-section\"[tiab]) AND (\"nausea\"[mh] OR \"vomiting\"[mh] OR \"postoperative nausea and vomiting\"[mh] OR nausea[tiab] OR vomiting[tiab] OR emesis[tiab] OR \"postoperative nausea\"[tiab] OR \"postoperative vomiting\"[tiab] OR \"intraoperative nausea\"[tiab] OR \"intraoperative vomiting\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1998/09/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:16+00:00",
+ "count": 1,
+ "pmids": [
+  "39021143"
+ ],
+ "phrases_not_found": []
+}

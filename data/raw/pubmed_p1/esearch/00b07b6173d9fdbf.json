@@ -1,0 +1,15 @@
+{
+ "query": "((\"iron\"[mh] OR iron[tiab] OR \"ferrous\"[tiab] OR \"ferric\"[tiab] OR \"iron supplementation\"[tiab]) AND (\"postpartum depression\"[mh] OR \"depression, postpartum\"[mh] OR \"postpartum depression\"[tiab] OR \"postnatal depression\"[tiab] OR \"post-partum depression\"[tiab] OR \"post partum depression\"[tiab] OR \"maternal depression\"[tiab]) AND (\"depression\"[mh] OR depression[tiab] OR \"depressive symptoms\"[tiab] OR \"depressive disorder\"[tiab] OR \"mood\"[tiab] OR \"affect\"[tiab] OR \"psychological\"[tiab] OR \"mental health\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2017/03/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:34+00:00",
+ "count": 4,
+ "pmids": [
+  "32403029",
+  "41228551",
+  "37019362",
+  "38678183"
+ ],
+ "phrases_not_found": [
+  "\"postpartum depression\"[mh]"
+ ]
+}

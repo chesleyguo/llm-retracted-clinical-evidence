@@ -1,0 +1,10 @@
+{
+ "query": "((\"celery\"[tiab] OR \"Apium graveolens\"[tiab] OR \"ajwain\"[tiab] OR \"Trachyspermum ammi\"[tiab] OR \"carom\"[tiab] OR \"celery and ajwain\"[tiab] OR \"herbal mixture\"[tiab]) AND (\"postprandial distress syndrome\"[tiab] OR \"functional dyspepsia\"[tiab] OR \"dyspepsia\"[mh] OR \"dyspepsia\"[tiab] OR \"indigestion\"[tiab]) AND (\"quality of life\"[tiab] OR \"QOL\"[tiab] OR \"well-being\"[tiab] OR \"health-related quality of life\"[tiab] OR \"HRQOL\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2023/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:20+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"celery and ajwain\"[tiab]"
+ ]
+}

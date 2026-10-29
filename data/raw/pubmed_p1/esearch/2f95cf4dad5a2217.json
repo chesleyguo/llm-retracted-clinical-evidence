@@ -1,0 +1,12 @@
+{
+ "query": "((\"diltiazem\"[mh] OR diltiazem[tiab] OR cardizem[tiab] OR tiazac[tiab] OR cartia[tiab]) AND (hypertens*[tiab] OR \"hypertension\"[mh] OR \"high blood pressure\"[tiab]) AND (\"heart rate\"[tiab] OR \"pulse\"[tiab] OR \"chronotropic\"[tiab] OR \"tachycardia\"[tiab] OR \"hemodynamic response\"[tiab] OR \"hemodynamic changes\"[tiab] OR \"intubation response\"[tiab] OR \"tracheal intubation\"[tiab] OR \"laryngoscopy\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1995/09/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:27+00:00",
+ "count": 3,
+ "pmids": [
+  "11195610",
+  "11393682",
+  "23080109"
+ ],
+ "phrases_not_found": []
+}

@@ -1,0 +1,14 @@
+{
+ "query": "((\"labor scale\"[tiab] OR \"labour scale\"[tiab] OR \"labor assessment scale\"[tiab] OR \"labour assessment scale\"[tiab] OR \"partograph\"[mh] OR partograph[tiab] OR partogram[tiab]) AND (nulliparous[tiab] OR nullipara[tiab] OR \"first pregnancy\"[tiab] OR primigravida[tiab] OR primiparous[tiab] OR \"first birth\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2018/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:39+00:00",
+ "count": 1,
+ "pmids": [
+  "32247770"
+ ],
+ "phrases_not_found": [
+  "\"labor assessment scale\"[tiab]",
+  "\"labour assessment scale\"[tiab]",
+  "\"partograph\"[mh]"
+ ]
+}

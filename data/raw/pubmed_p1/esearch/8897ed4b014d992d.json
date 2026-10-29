@@ -1,0 +1,16 @@
+{
+ "query": "((\"enoximone\"[mh] OR enoximone[tiab] OR \"enoximone\"[tiab]) AND (\"coronary artery bypass\"[mh] OR \"coronary artery bypass, off-pump\"[mh] OR \"coronary artery bypass grafting\"[tiab] OR \"coronary artery bypass\"[tiab] OR \"coronary surgery\"[tiab] OR \"coronary artery surgery\"[tiab] OR \"cardiac surgery\"[tiab] OR \"cardiopulmonary bypass\"[mh] OR \"cardiopulmonary bypass\"[tiab] OR \"heart surgery\"[tiab]) AND (\"inotropic support\"[tiab] OR \"inotropic agents\"[tiab] OR \"inotropes\"[tiab] OR \"vasopressor support\"[tiab] OR \"vasopressors\"[tiab] OR \"drug support\"[tiab] OR \"pharmacologic support\"[tiab] OR \"additional drug support\"[tiab] OR \"need for inotropes\"[tiab] OR \"need for vasopressors\"[tiab] OR \"weaning from cardiopulmonary bypass\"[tiab] OR \"weaning from bypass\"[tiab] OR \"post-bypass\"[tiab] OR \"after cardiopulmonary bypass\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1988/10/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:57+00:00",
+ "count": 2,
+ "pmids": [
+  "33152122",
+  "29376560"
+ ],
+ "phrases_not_found": [
+  "\"additional drug support\"[tiab]",
+  "\"need for inotropes\"[tiab]",
+  "\"need for vasopressors\"[tiab]",
+  "\"weaning from bypass\"[tiab]"
+ ]
+}

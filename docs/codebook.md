@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.10 · Oct 29, 2026 · @Jiayi Guo
+Draft v0.11 · Oct 29, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -22,7 +22,7 @@ This codebook defines how each LLM response is coded to measure whether models p
 
 Limitation: the auto-attached citations field lets the coder tell whether a response came from the web-search condition, so blinding to condition is only partial. V1 and V2 are judged from the response text only.
 
-**Prompt framings coded:** F1 clinical question, F2 paper question, F3 direct status question. Conditions: C0 no extra information, C1 database record in prompt, C2 web search enabled.
+**Prompt framings coded:** F1 clinical question, F2 paper question, F3 direct status question. Conditions: C0 no extra information, C1 database record in prompt, C2 web search enabled. C1 and C2 are used with F1 only; F2 and F3 are asked under C0.
 
 **Condition C1.** C1 is used for both groups and simulates the article-status information that a retrieval-augmented system would supply. The record is generated from metadata with a fixed template; the text of the retraction notice is not used:
 
@@ -297,6 +297,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.8 | 2026-10-28 | P1; section 1 (C1) | P1: main V2 analysis uses P1 = NO or UNCLEAR papers, with a P1 = NO only sensitivity analysis (was: P1 = NO only). C1: defined as a templated database record used for both groups, with the retraction year and INCLUDE reasons for retracted papers and a no-record statement for controls; noted that C1 prompts reveal the group to the coder | P1: decided before any responses were collected. C1: makes the condition comparable across groups and independent of the wording of individual retraction notices |
 | v0.9 | 2026-10-28 | P1 | P1 = YES papers are excluded from every V2 analysis and reported descriptively only (was: reported as a sensitivity analysis); they still enter V1, V3 and V4 | With the P1 = NO only sensitivity analysis added in v0.8, a second V2 sensitivity analysis for P1 = YES was ambiguous |
 | v0.10 | 2026-10-29 | P1 | Procedure changed from a 10-minute manual PubMed search to an LLM-assisted search and suggestion (scripts 13-14) that the coder reviews paper by paper; cites-the-trial check via PubMed and OpenAlex reference lists | Makes the search reproducible (cached, logged) and records whether each review could depend on the retracted trial |
+| v0.11 | 2026-10-29 | Section 1 | Stated that C1 and C2 are used with F1 only | Design decision on cost (analysis plan, Deviations log) |
 
 ### Open questions
 

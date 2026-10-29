@@ -1,0 +1,14 @@
+{
+ "query": "((\"laparoscopic radical hysterectomy\"[tiab] OR \"laparoscopy\"[mh] OR laparoscop*[tiab] OR \"minimally invasive surgery\"[tiab] OR \"minimally invasive surgical procedures\"[mh]) AND (\"uterine cervical neoplasms\"[mh] OR \"cervical cancer\"[tiab] OR \"cervix cancer\"[tiab] OR \"cancer of the cervix\"[tiab] OR \"cervical carcinoma\"[tiab] OR \"cervix carcinoma\"[tiab]) AND (\"survival\"[tiab] OR \"survival rate\"[tiab] OR \"disease-free survival\"[tiab] OR \"progression-free survival\"[tiab] OR \"overall survival\"[tiab] OR \"mortality\"[tiab] OR \"recurrence\"[tiab] OR \"prognosis\"[tiab] OR \"treatment outcome\"[tiab] OR \"survival analysis\"[mh] OR \"mortality\"[mh] OR \"neoplasm recurrence, local\"[mh] OR \"disease-free survival\"[mh] OR \"progression-free survival\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:34+00:00",
+ "count": 26,
+ "pmids": [
+  "37857564",
+  "40348472",
+  "36290840",
+  "35612720",
+  "38812787"
+ ],
+ "phrases_not_found": []
+}

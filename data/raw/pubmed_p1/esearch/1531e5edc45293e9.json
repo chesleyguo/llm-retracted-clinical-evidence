@@ -1,0 +1,14 @@
+{
+ "query": "((\"flax\"[mh] OR flax[tiab] OR flaxseed[tiab] OR linseed[tiab] OR \"linum usitatissimum\"[tiab]) AND (\"weight loss\"[mh] OR \"diet, reducing\"[mh] OR \"caloric restriction\"[mh] OR weight loss[tiab] OR weight reducing[tiab] OR reducing diet[tiab] OR calorie restriction[tiab] OR caloric restriction[tiab] OR energy restriction[tiab] OR diet[tiab] OR dietary[tiab]) AND (\"c-reactive protein\"[mh] OR c-reactive protein[tiab] OR crp[tiab] OR \"high sensitivity c-reactive protein\"[tiab] OR hs-crp[tiab] OR \"inflammatory markers\"[tiab] OR inflammation[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2015/01/10:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:41:01+00:00",
+ "count": 10,
+ "pmids": [
+  "33506690",
+  "39996006",
+  "36193986",
+  "37778442",
+  "39558500"
+ ],
+ "phrases_not_found": []
+}

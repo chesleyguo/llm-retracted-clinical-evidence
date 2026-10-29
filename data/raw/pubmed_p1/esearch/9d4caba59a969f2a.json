@@ -1,0 +1,14 @@
+{
+ "query": "((\"anlotinib\"[Supplementary Concept] OR anlotinib[tiab]) AND (\"lung neoplasms\"[mh] OR \"lung cancer\"[tiab] OR \"lung carcinoma\"[tiab] OR \"pulmonary neoplasms\"[tiab] OR \"pulmonary cancer\"[tiab] OR \"pulmonary carcinoma\"[tiab] OR \"advanced lung cancer\"[tiab] OR \"advanced non-small cell lung cancer\"[tiab] OR \"advanced NSCLC\"[tiab]) AND (\"disease control rate\"[tiab] OR \"disease control\"[tiab] OR \"DCR\"[tiab] OR \"response rate\"[tiab] OR \"objective response rate\"[tiab] OR \"ORR\"[tiab] OR \"tumor response\"[tiab] OR \"treatment outcome\"[mh] OR \"treatment outcome\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:36:04+00:00",
+ "count": 13,
+ "pmids": [
+  "41221276",
+  "38623838",
+  "36238567",
+  "35509221",
+  "40783512"
+ ],
+ "phrases_not_found": []
+}

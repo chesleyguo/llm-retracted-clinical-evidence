@@ -1,0 +1,10 @@
+{
+ "query": "((\"metformin\"[mh] OR metformin[tiab] OR dimethylbiguanidine[tiab] OR dimethylguanylguanidine[tiab] OR glucophage[tiab]) AND (\"depressive disorder, major\"[mh] OR \"major depressive disorder\"[tiab] OR \"major depression\"[tiab] OR \"unipolar depression\"[tiab] OR \"clinical depression\"[tiab]) AND (\"hamilton depression rating scale\"[tiab] OR \"hamilton rating scale for depression\"[tiab] OR \"ham-d\"[tiab] OR \"hdrs\"[tiab] OR \"hamd\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/10/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:03+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"depressive disorder, major\"[mh]"
+ ]
+}

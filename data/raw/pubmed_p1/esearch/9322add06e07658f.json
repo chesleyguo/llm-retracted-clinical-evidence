@@ -1,0 +1,14 @@
+{
+ "query": "((\"aerobic exercise\"[tiab] OR \"moderate exercise\"[tiab] OR \"physical activity\"[tiab] OR exercise[tiab] OR \"exercise therapy\"[mh] OR \"exercise\"[mh]) AND (\"infertility\"[mh] OR infertile[tiab] OR infertility[tiab] OR \"subfertility\"[tiab] OR subfertile[tiab] OR \"reproductive techniques, assisted\"[mh] OR \"assisted reproduction\"[tiab] OR \"in vitro fertilization\"[tiab] OR \"IVF\"[tiab] OR \"intracytoplasmic sperm injection\"[tiab] OR \"ICSI\"[tiab]) AND (\"pregnancy rate\"[tiab] OR \"pregnancy rates\"[tiab] OR \"clinical pregnancy\"[tiab] OR \"live birth\"[tiab] OR \"live births\"[tiab] OR \"pregnancy outcome\"[mh] OR \"pregnancy\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2017/04/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:33+00:00",
+ "count": 25,
+ "pmids": [
+  "37839720",
+  "30470200",
+  "33914901",
+  "36116799",
+  "40847529"
+ ],
+ "phrases_not_found": []
+}

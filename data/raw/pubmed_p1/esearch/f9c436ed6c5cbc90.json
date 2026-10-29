@@ -1,0 +1,14 @@
+{
+ "query": "((\"granisetron\"[mh] OR granisetron[tiab] OR \"kytril\"[tiab]) AND (\"droperidol\"[mh] OR droperidol[tiab] OR \"metoclopramide\"[mh] OR metoclopramide[tiab] OR \"maxolon\"[tiab] OR \"reglan\"[tiab]) AND (\"postoperative nausea and vomiting\"[mh] OR \"postoperative nausea\"[tiab] OR \"postoperative vomiting\"[tiab] OR PONV[tiab] OR \"nausea and vomiting\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1998/12/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:47+00:00",
+ "count": 15,
+ "pmids": [
+  "33075160",
+  "33170514",
+  "16670360",
+  "28715610",
+  "16856030"
+ ],
+ "phrases_not_found": []
+}

@@ -1,0 +1,10 @@
+{
+ "query": "((\"misoprostol\"[mh] OR misoprostol[tiab] OR \"prostaglandin E1\"[tiab] OR \"PGE1\"[tiab]) AND (\"intrauterine devices\"[mh] OR \"intrauterine device\"[tiab] OR \"intrauterine devices\"[tiab] OR IUD[tiab] OR IUCD[tiab] OR \"intrauterine contraceptive device\"[tiab] OR \"intrauterine contraceptive devices\"[tiab]) AND (\"cesarean section\"[mh] OR \"cesarean section\"[tiab] OR \"caesarean section\"[tiab] OR \"cesarean delivery\"[tiab] OR \"caesarean delivery\"[tiab] OR \"previous cesarean\"[tiab] OR \"previous caesarean\"[tiab] OR \"post-cesarean\"[tiab] OR \"post-caesarean\"[tiab]) AND (\"pain\"[mh] OR pain[tiab] OR \"pain measurement\"[mh] OR \"visual analog scale\"[tiab] OR \"visual analogue scale\"[tiab] OR VAS[tiab] OR \"pain score\"[tiab] OR \"pain scores\"[tiab] OR \"pain relief\"[tiab] OR analgesia[tiab] OR \"analgesic effect\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2018/02/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:58+00:00",
+ "count": 1,
+ "pmids": [
+  "31914331"
+ ],
+ "phrases_not_found": []
+}

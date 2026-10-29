@@ -1,0 +1,12 @@
+{
+ "query": "((\"oxytocin\"[mh] OR oxytocin[tiab] OR \"oxytocin gel\"[tiab]) AND (\"postmenopause\"[mh] OR postmenopausal[tiab] OR \"post-menopausal\"[tiab] OR \"post menopause\"[tiab]) AND (\"vaginal atrophy\"[tiab] OR \"atrophic vaginitis\"[mh] OR \"atrophic vaginitis\"[tiab] OR \"vulvovaginal atrophy\"[tiab] OR \"vaginal dryness\"[tiab] OR \"vaginal maturation\"[tiab] OR \"vaginal health\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2018/04/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:31:53+00:00",
+ "count": 3,
+ "pmids": [
+  "32814499",
+  "37716966",
+  "36446564"
+ ],
+ "phrases_not_found": []
+}

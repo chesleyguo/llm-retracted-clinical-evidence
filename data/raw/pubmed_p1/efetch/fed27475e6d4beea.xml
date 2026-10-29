@@ -1,0 +1,1895 @@
+<?xml version="1.0" ?>
+<!DOCTYPE PubmedArticleSet PUBLIC "-//NLM//DTD PubMedArticle, 1st January 2025//EN" "https://dtd.nlm.nih.gov/ncbi/pubmed/out/pubmed_250101.dtd">
+<PubmedArticleSet>
+<PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Manual"><PMID Version="1">33956777</PMID><DateCompleted><Year>2021</Year><Month>05</Month><Day>11</Day></DateCompleted><DateRevised><Year>2021</Year><Month>05</Month><Day>22</Day></DateRevised><Article PubModel="Electronic"><Journal><ISSN IssnType="Electronic">1545-8601</ISSN><JournalIssue CitedMedium="Internet"><Volume>70</Volume><Issue>2</Issue><PubDate><Year>2021</Year><Month>May</Month><Day>07</Day></PubDate></JournalIssue><Title>MMWR. Recommendations and reports : Morbidity and mortality weekly report. Recommendations and reports</Title><ISOAbbreviation>MMWR Recomm Rep</ISOAbbreviation></Journal><ArticleTitle>Clinical Guidelines for Diagnosis and Treatment of Botulism, 2021.</ArticleTitle><Pagination><StartPage>1</StartPage><EndPage>30</EndPage><MedlinePgn>1-30</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.15585/mmwr.rr7002a1</ELocationID><Abstract><AbstractText>Botulism is a rare, neurotoxin-mediated, life-threatening disease characterized by flaccid descending paralysis that begins with cranial nerve palsies and might progress to extremity weakness and respiratory failure. Botulinum neurotoxin, which inhibits acetylcholine release at the neuromuscular junction, is produced by the anaerobic, gram-positive bacterium Clostridium botulinum and, rarely, by related species (C. baratii and C. butyricum). Exposure to the neurotoxin occurs through ingestion of toxin (foodborne botulism), bacterial colonization of a wound (wound botulism) or the intestines (infant botulism and adult intestinal colonization botulism), and high-concentration cosmetic or therapeutic injections of toxin (iatrogenic botulism). In addition, concerns have been raised about the possibility of a bioterrorism event involving toxin exposure through intentional contamination of food or drink or through aerosolization. Neurologic symptoms are similar regardless of exposure route. Treatment involves supportive care, intubation and mechanical ventilation when necessary, and administration of botulinum antitoxin. Certain neurological diseases (e.g., myasthenia gravis and Guillain-Barr&#xe9; syndrome) have signs and symptoms that overlap with botulism. Before the publication of these guidelines, no comprehensive clinical care guidelines existed for treating botulism. These evidence-based guidelines provide health care providers with recommended best practices for diagnosing, monitoring, and treating single cases or outbreaks of foodborne, wound, and inhalational botulism and were developed after a multiyear process involving several systematic reviews and expert input.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Rao</LastName><ForeName>Agam K</ForeName><Initials>AK</Initials><AffiliationInfo><Affiliation>Division of Foodborne, Waterborne, and Environmental Diseases, National Center for Emerging and Zoonotic Infectious Diseases, CDC.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sobel</LastName><ForeName>Jeremy</ForeName><Initials>J</Initials><AffiliationInfo><Affiliation>Division of Foodborne, Waterborne, and Environmental Diseases, National Center for Emerging and Zoonotic Infectious Diseases, CDC.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Chatham-Stephens</LastName><ForeName>Kevin</ForeName><Initials>K</Initials><AffiliationInfo><Affiliation>Division of Foodborne, Waterborne, and Environmental Diseases, National Center for Emerging and Zoonotic Infectious Diseases, CDC.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Luquez</LastName><ForeName>Carolina</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>Division of Foodborne, Waterborne, and Environmental Diseases, National Center for Emerging and Zoonotic Infectious Diseases, CDC.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D017065">Practice Guideline</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2021</Year><Month>05</Month><Day>07</Day></ArticleDate></Article><MedlineJournalInfo><Country>United States</Country><MedlineTA>MMWR Recomm Rep</MedlineTA><NlmUniqueID>101124922</NlmUniqueID><ISSNLinking>1057-5987</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D001906" MajorTopicYN="N">Botulism</DescriptorName><QualifierName UI="Q000175" MajorTopicYN="Y">diagnosis</QualifierName><QualifierName UI="Q000628" MajorTopicYN="Y">therapy</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D002487" MajorTopicYN="N">Centers for Disease Control and Prevention, U.S.</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D019317" MajorTopicYN="N">Evidence-Based Medicine</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D014481" MajorTopicYN="N" Type="Geographic">United States</DescriptorName></MeshHeading></MeshHeadingList><CoiStatement>All authors have completed and submitted the International Committee of Medical Journal Editors form for disclosure of potential conflicts of interest. No potential conflicts of interest were disclosed.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="entrez"><Year>2021</Year><Month>5</Month><Day>6</Day><Hour>18</Hour><Minute>1</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2021</Year><Month>5</Month><Day>7</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2021</Year><Month>5</Month><Day>12</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2021</Year><Month>5</Month><Day>7</Day></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">33956777</ArticleId><ArticleId IdType="pmc">PMC8112830</ArticleId><ArticleId IdType="doi">10.15585/mmwr.rr7002a1</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Werner SB, Passaro D, McGee J, Schechter R, Vugia DJ. Wound botulism in California, 1951&#x2013;1998: recent epidemic in heroin injectors. Clin Infect Dis 2000;31:1018&#x2013;24. 10.1086/318134</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/318134</ArticleId><ArticleId IdType="pubmed">11049786</ArticleId></ArticleIdList></Reference><Reference><Citation>Arnon SS, Schechter R, Inglesby TV, et al. ; Working Group on Civilian Biodefense. Botulinum toxin as a biological weapon: medical and public health management. JAMA 2001;285:1059&#x2013;70. 10.1001/jama.285.8.1059</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/jama.285.8.1059</ArticleId><ArticleId IdType="pubmed">11209178</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobel J. Botulism. Clin Infect Dis 2005;41:1167&#x2013;73. 10.1086/444507</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/444507</ArticleId><ArticleId IdType="pubmed">16163636</ArticleId></ArticleIdList></Reference><Reference><Citation>Smith LD. Botulism. The organism, its toxins, the disease. Springfield, IL: Charles C. Thomas; 1977.</Citation></Reference><Reference><Citation>Dack GM, Wood WL. Serum therapy of botulism in monkeys. J Infect Dis 1928;42:209&#x2013;12. 10.1093/infdis/42.3.209</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/infdis/42.3.209</ArticleId></ArticleIdList></Reference><Reference><Citation>Ono T, Karashimada T, Iida H. Studies of the serum therapy of type E botulism. 3. Jpn J Med Sci Biol 1970;23:177&#x2013;91. 10.7883/yoken1952.23.177</Citation><ArticleIdList><ArticleId IdType="doi">10.7883/yoken1952.23.177</ArticleId><ArticleId IdType="pubmed">4989998</ArticleId></ArticleIdList></Reference><Reference><Citation>Morton HE. The toxicity of <i>Clostridium botulinum</i> type A toxin for various species of animals, including man. Philadelphia, PA: Institute for Cooperative Research, University of Pennsylvania; 1961.</Citation></Reference><Reference><Citation>Maslanka SE, L&#xfa;quez C, Dykes JK, et al. A novel botulinum neurotoxin, previously reported as serotype H, has a hybrid-like structure with regions of similarity to the structures of serotypes A and F and is neutralized with serotype A antitoxin. J Infect Dis 2016;213:379&#x2013;85. 10.1093/infdis/jiv327</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/infdis/jiv327</ArticleId><ArticleId IdType="pmc">PMC4704661</ArticleId><ArticleId IdType="pubmed">26068781</ArticleId></ArticleIdList></Reference><Reference><Citation>Zhang S, Masuyer G, Zhang J, et al. Identification and characterization of a novel botulinum neurotoxin. Nat Commun 2017;8:14130. 10.1038/ncomms14130</Citation><ArticleIdList><ArticleId IdType="doi">10.1038/ncomms14130</ArticleId><ArticleId IdType="pmc">PMC5543303</ArticleId><ArticleId IdType="pubmed">28770820</ArticleId></ArticleIdList></Reference><Reference><Citation>Zhang S, Lebreton F, Mansfield MJ, et al. 
+Identification of a botulinum neurotoxin-like toxin in a commensal strain of <i>Enterococcus faecium</i>.
+Cell Host Microbe
+2018;23:169&#x2013;176.e6. 10.1016/j.chom.2017.12.018</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.chom.2017.12.018</ArticleId><ArticleId IdType="pmc">PMC5926203</ArticleId><ArticleId IdType="pubmed">29396040</ArticleId></ArticleIdList></Reference><Reference><Citation>Brunt J, Carter AT, Stringer SC, Peck MW. Identification of a novel botulinum neurotoxin gene cluster in <i>Enterococcus</i>.
+FEBS Lett
+2018;592:310&#x2013;7. 10.1002/1873-3468.12969</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/1873-3468.12969</ArticleId><ArticleId IdType="pmc">PMC5838542</ArticleId><ArticleId IdType="pubmed">29323697</ArticleId></ArticleIdList></Reference><Reference><Citation>Humeau Y, Doussau F, Grant NJ, Poulain B. How botulinum and tetanus neurotoxins block neurotransmitter release. Biochimie 2000;82:427&#x2013;46. 10.1016/S0300-9084(00)00216-9</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0300-9084(00)00216-9</ArticleId><ArticleId IdType="pubmed">10865130</ArticleId></ArticleIdList></Reference><Reference><Citation>Rao AK, Lin NH, Jackson KA, Mody RK, Griffin PM. Clinical characteristics and ancillary test results among patients with botulism&#x2014;United States, 2002&#x2013;2015. Clin Infect Dis 2017;66(suppl_1):S4&#x2013;10. 10.1093/cid/cix935</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix935</ArticleId><ArticleId IdType="pubmed">29293936</ArticleId></ArticleIdList></Reference><Reference><Citation>Chatham-Stephens K, Fleck-Derderian S, Johnson SD, Sobel J, Rao AK, Meaney-Delman D. Clinical features of foodborne and wound botulism: a systematic review of the literature, 1932&#x2013;2015. Clin Infect Dis 2017;66(suppl_1):S11&#x2013;6. 10.1093/cid/cix811</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix811</ArticleId><ArticleId IdType="pubmed">29293923</ArticleId></ArticleIdList></Reference><Reference><Citation>Caleo M, Restani L. Exploiting botulinum neurotoxins for the study of brain physiology and pathology. Toxins (Basel) 2018;10:175. 10.3390/toxins10050175</Citation><ArticleIdList><ArticleId IdType="doi">10.3390/toxins10050175</ArticleId><ArticleId IdType="pmc">PMC5983231</ArticleId><ArticleId IdType="pubmed">29693600</ArticleId></ArticleIdList></Reference><Reference><Citation>Hughes JM, Blumenthal JR, Merson MH, Lombard GL, Dowell VR Jr, Gangarosa EJ. Clinical features of types A and B food-borne botulism. Ann Intern Med 1981;95:442&#x2013;5. 10.7326/0003-4819-95-4-442</Citation><ArticleIdList><ArticleId IdType="doi">10.7326/0003-4819-95-4-442</ArticleId><ArticleId IdType="pubmed">7283294</ArticleId></ArticleIdList></Reference><Reference><Citation>Woodruff BA, Griffin PM, McCroskey LM, et al. Clinical and laboratory comparison of botulism from toxin types A, B, and E in the United States, 1975&#x2013;1988. J Infect Dis 1992;166:1281&#x2013;6. 10.1093/infdis/166.6.1281</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/infdis/166.6.1281</ArticleId><ArticleId IdType="pubmed">1431246</ArticleId></ArticleIdList></Reference><Reference><Citation>Demarchi J, Mourgues C, Orio J, Prevot AR. [Existence of type D botulism in man]. Bull Acad Natl Med 1958;142:580&#x2013;2.</Citation><ArticleIdList><ArticleId IdType="pubmed">13560962</ArticleId></ArticleIdList></Reference><Reference><Citation>Prevot AR, Sillioc R. [Biological enigma: cat and botulism]. Ann Inst Pasteur (Paris) 1955;89:354&#x2013;7.</Citation><ArticleIdList><ArticleId IdType="pubmed">13403395</ArticleId></ArticleIdList></Reference><Reference><Citation>Coffield JA, Bakry N, Zhang RD, Carlson J, Gomella LG, Simpson LL. In vitro characterization of botulinum toxin types A, C and D action on human tissues: combined electrophysiologic, pharmacologic and molecular biologic approaches. J Pharmacol Exp Ther 1997;280:1489&#x2013;98.</Citation><ArticleIdList><ArticleId IdType="pubmed">9067339</ArticleId></ArticleIdList></Reference><Reference><Citation>Eleopra R, Tugnoli V, Quatrale R, et al. Botulinum neurotoxin serotypes A and C do not affect motor units survival in humans: an electrophysiological study by motor units counting. Clin Neurophysiol 2002;113:1258&#x2013;64. 10.1016/S1388-2457(02)00103-7</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S1388-2457(02)00103-7</ArticleId><ArticleId IdType="pubmed">12140005</ArticleId></ArticleIdList></Reference><Reference><Citation>Rogers DE, Koenig MG, Spickard A. Clinical and laboratory manifestations of type E botulism in man. Trans Assoc Am Physicians 1964;77:135&#x2013;44.</Citation><ArticleIdList><ArticleId IdType="pubmed">14275409</ArticleId></ArticleIdList></Reference><Reference><Citation>Dolman CE. Further outbreaks of botulism in Canada. Can Med Assoc J 1961;84:191&#x2013;200.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC1939198</ArticleId><ArticleId IdType="pubmed">13723571</ArticleId></ArticleIdList></Reference><Reference><Citation>Gupta A, Sumner CJ, Castor M, Maslanka S, Sobel J. Adult botulism type F in the United States, 1981&#x2013;2002. Neurology 2005;65:1694&#x2013;700. 10.1212/01.wnl.0000187127.92446.4c</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/01.wnl.0000187127.92446.4c</ArticleId><ArticleId IdType="pubmed">16344510</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobel J, Dill T, Kirkpatrick CL, Riek L, Luedtke P, Damrow TA. Clinical recovery and circulating botulinum toxin type F in adult patient. Emerg Infect Dis 2009;15:969&#x2013;71. 10.3201/eid1506.070571</Citation><ArticleIdList><ArticleId IdType="doi">10.3201/eid1506.070571</ArticleId><ArticleId IdType="pmc">PMC2727312</ArticleId><ArticleId IdType="pubmed">19523306</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobel J, Rao AK. Making the best of the evidence: toward national clinical guidelines for botulism. Clin Infect Dis 2017;66(suppl_1):S1&#x2013;3. 10.1093/cid/cix829</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix829</ArticleId><ArticleId IdType="pubmed">29293933</ArticleId></ArticleIdList></Reference><Reference><Citation>Fleck-Derderian S, Shankar M, Rao AK, et al. The epidemiology of foodborne botulism outbreaks: a systematic review. Clin Infect Dis 2017;66(suppl_1):S73&#x2013;81. 10.1093/cid/cix846</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix846</ArticleId><ArticleId IdType="pubmed">29293934</ArticleId></ArticleIdList></Reference><Reference><Citation>O&#x2019;Horo JC, Harper EP, El Rafei A, et al. Efficacy of antitoxin therapy in treating patients with foodborne botulism: a systematic review and meta-analysis of cases, 1923&#x2013;2016. Clin Infect Dis 2017;66(suppl_1):S43&#x2013;56. 10.1093/cid/cix815</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix815</ArticleId><ArticleId IdType="pmc">PMC5850555</ArticleId><ArticleId IdType="pubmed">29293927</ArticleId></ArticleIdList></Reference><Reference><Citation>Schussler E, Sobel J, Hsu J, et al. Workgroup report by the Joint Task Force Involving American Academy of Allergy, Asthma &amp; Immunology (AAAAI); Food Allergy, Anaphylaxis, Dermatology and Drug Allergy (FADDA) (Adverse Reactions to Foods Committee and Adverse Reactions to Drugs, Biologicals, and Latex Committee); and the Centers for Disease Control and Prevention Botulism Clinical Treatment Guidelines Workgroup&#x2014;Allergic reactions to botulinum antitoxin: a systematic review. Clin Infect Dis 2017;66(suppl_1):S65&#x2013;72. 10.1093/cid/cix827</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix827</ArticleId><ArticleId IdType="pmc">PMC5850017</ArticleId><ArticleId IdType="pubmed">29293931</ArticleId></ArticleIdList></Reference><Reference><Citation>Badell ML, Rimawi BH, Rao AK, Jamieson DJ, Rasmussen S, Meaney-Delman D. Botulism during pregnancy and the postpartum period: a systematic review. Clin Infect Dis 2017;66(suppl_1):S30&#x2013;7. 10.1093/cid/cix813</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix813</ArticleId><ArticleId IdType="pubmed">29293925</ArticleId></ArticleIdList></Reference><Reference><Citation>Griese SE, Kisselburgh HM, Bartenfeld MT, et al. Pediatric botulism and use of equine botulinum antitoxin in children: a systematic review. Clin Infect Dis 2017;66(suppl_1):S17&#x2013;29. 10.1093/cid/cix812</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix812</ArticleId><ArticleId IdType="pubmed">29293924</ArticleId></ArticleIdList></Reference><Reference><Citation>Halpin AL, Khouri JM, Payne JR, et al. Type F infant botulism: investigation of recent clusters and overview of this exceedingly rare disease. Clin Infect Dis 2017;66(suppl_1):S92&#x2013;4. 10.1093/cid/cix818</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix818</ArticleId><ArticleId IdType="pubmed">29293930</ArticleId></ArticleIdList></Reference><Reference><Citation>Jacobs Slifka K, Harris JA, Nguyen V, Luquez C, Tiwari T, Rao AK. A case of localized, unilateral (cephalic) wound botulism. Clin Infect Dis 2017;66(suppl_1):S95&#x2013;8. 10.1093/cid/cix828</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix828</ArticleId><ArticleId IdType="pubmed">29293932</ArticleId></ArticleIdList></Reference><Reference><Citation>Parameswaran L, Rao A, Chastain K, et al. A case of adult intestinal toxemia botulism during prolonged hospitalization in an allogeneic hematopoietic cell transplant recipient. Clin Infect Dis 2017;66(suppl_1):S99&#x2013;102. 10.1093/cid/cix847</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix847</ArticleId><ArticleId IdType="pubmed">29293935</ArticleId></ArticleIdList></Reference><Reference><Citation>Harvey RR, Cooper R, Bennett S, et al. Outbreak of foodborne botulism in an immigrant community: Overcoming delayed disease recognition, ambiguous epidemiologic links, and cultural barriers to identify the cause. Clin Infect Dis 2017;66(suppl_1):S82&#x2013;4. 10.1093/cid/cix817</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix817</ArticleId><ArticleId IdType="pubmed">29293929</ArticleId></ArticleIdList></Reference><Reference><Citation>Rao AK, Lin NH, Griese SE, Chatham-Stephens K, Badell ML, Sobel J. Clinical criteria to trigger suspicion for botulism: an evidence-based tool to facilitate timely recognition of suspected cases during sporadic events and outbreaks. Clin Infect Dis 2017;66(suppl_1):S38&#x2013;42. 10.1093/cid/cix814</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix814</ArticleId><ArticleId IdType="pubmed">29293926</ArticleId></ArticleIdList></Reference><Reference><Citation>Yu PA, Lin NH, Mahon BE, et al. Safety and improved clinical outcomes in patients treated with new equine-derived heptavalent botulinum antitoxin. Clin Infect Dis 2017;66(suppl_1):S57&#x2013;64. 10.1093/cid/cix816</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix816</ArticleId><ArticleId IdType="pmc">PMC5866099</ArticleId><ArticleId IdType="pubmed">29293928</ArticleId></ArticleIdList></Reference><Reference><Citation>Rao AK, Walters M, Hall J, et al. Outbreak of botulism due to illicit prison-brewed alcohol: public health response to a serious and recurrent problem. Clin Infect Dis 2017;66(suppl_1):S85&#x2013;91. 10.1093/cid/cix936</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix936</ArticleId><ArticleId IdType="pubmed">29293937</ArticleId></ArticleIdList></Reference><Reference><Citation>Committee on Guidance for Establishing Crisis Standards of Care for Use in Disaster Situations; Institute of Medicine. Crisis standards of care: a systems framework for catastrophic disaster response. National Academies Press: Washington, DC; 2012.</Citation><ArticleIdList><ArticleId IdType="pubmed">24830057</ArticleId></ArticleIdList></Reference><Reference><Citation>Hick JL, Barbera JA, Kelen GD. Refining surge capacity: conventional, contingency, and crisis capacity. Disaster Med Public Health Prep 2009;3(Suppl 2):S59&#x2013;67. 10.1097/DMP.0b013e31819f1ae2</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/DMP.0b013e31819f1ae2</ArticleId><ArticleId IdType="pubmed">19349869</ArticleId></ArticleIdList></Reference><Reference><Citation>Institute of Medicine. Crisis standards of care: a toolkit for indicators and triggers. Washington, DC: National Academies Press; 2013. https://www.nap.edu/read/18338/chapter/3</Citation><ArticleIdList><ArticleId IdType="pubmed">24872980</ArticleId></ArticleIdList></Reference><Reference><Citation>Shapiro RL, Hatheway C, Swerdlow DL. Botulism in the United States: a clinical and epidemiologic review. Ann Intern Med 1998;129:221&#x2013;8. 10.7326/0003-4819-129-3-199808010-00011</Citation><ArticleIdList><ArticleId IdType="doi">10.7326/0003-4819-129-3-199808010-00011</ArticleId><ArticleId IdType="pubmed">9696731</ArticleId></ArticleIdList></Reference><Reference><Citation>Maslanka S, Agam KR. Botulism. In: Kasper D, Fauci A, Hauser S, Longo D, Jameson JL, Loscalzo J, eds. Harrison&#x2019;s principles of internal medicine, 19th ed. New York, NY: McGraw-Hill Education; 2015.</Citation></Reference><Reference><Citation>Sheth AN, Wiersma P, Atrubin D, et al. International outbreak of severe botulism with prolonged toxemia caused by commercial carrot juice. Clin Infect Dis 2008;47:1245&#x2013;51. 10.1086/592574</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/592574</ArticleId><ArticleId IdType="pubmed">18834318</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobel J. Diagnosis and treatment of botulism: a century later, clinical suspicion remains the cornerstone. Clin Infect Dis 2009;48:1674&#x2013;5. 10.1086/599030</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/599030</ArticleId><ArticleId IdType="pubmed">19435432</ArticleId></ArticleIdList></Reference><Reference><Citation>St Louis ME, Peck SH, Bowering D, et al. Botulism from chopped garlic: delayed recognition of a major outbreak. Ann Intern Med 1988;108:363&#x2013;8. 10.7326/0003-4819-108-3-363</Citation><ArticleIdList><ArticleId IdType="doi">10.7326/0003-4819-108-3-363</ArticleId><ArticleId IdType="pubmed">3341673</ArticleId></ArticleIdList></Reference><Reference><Citation>Filozov A, Kattan JA, Jitendranath L, et al. Asymmetric type F botulism with cranial nerve demyelination. Emerg Infect Dis 2012;18:102&#x2013;4. 10.3201/eid1801.110471</Citation><ArticleIdList><ArticleId IdType="doi">10.3201/eid1801.110471</ArticleId><ArticleId IdType="pmc">PMC3310096</ArticleId><ArticleId IdType="pubmed">22257488</ArticleId></ArticleIdList></Reference><Reference><Citation>Fokke C, van den Berg B, Drenthen J, Walgaard C, van Doorn PA, Jacobs BC. Diagnosis of Guillain-Barr&#xe9; syndrome and validation of Brighton criteria. Brain 2014;137:33&#x2013;43. 10.1093/brain/awt285</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/brain/awt285</ArticleId><ArticleId IdType="pubmed">24163275</ArticleId></ArticleIdList></Reference><Reference><Citation>Mallik A, Weir AI. Nerve conduction studies: essentials and pitfalls in practice. J Neurol Neurosurg Psychiatry 2005;76(Suppl 2):ii23&#x2013;31. 10.1136/jnnp.2005.069138</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/jnnp.2005.069138</ArticleId><ArticleId IdType="pmc">PMC1765692</ArticleId><ArticleId IdType="pubmed">15961865</ArticleId></ArticleIdList></Reference><Reference><Citation>Maselli RA, Bakshi N; American Association of Electrodiagnostic Medicine. AAEM case report 16. Botulism. Muscle Nerve 2000;23:1137&#x2013;44. 10.1002/1097-4598(200007)23:7&lt;1137::AID-MUS21&gt;3.0.CO;2-7</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/1097-4598(200007)23:7&lt;1137::AID-MUS21&gt;3.0.CO;2-7</ArticleId><ArticleId IdType="pubmed">10883013</ArticleId></ArticleIdList></Reference><Reference><Citation>Maselli RA, Ellis W, Mandler RN, et al. Cluster of wound botulism in California: clinical, electrophysiologic, and pathologic study. Muscle Nerve 1997;20:1284&#x2013;95. 10.1002/(SICI)1097-4598(199710)20:10&lt;1284::AID-MUS11&gt;3.0.CO;2-3</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/(SICI)1097-4598(199710)20:10&lt;1284::AID-MUS11&gt;3.0.CO;2-3</ArticleId><ArticleId IdType="pubmed">9324085</ArticleId></ArticleIdList></Reference><Reference><Citation>Padua L, Aprile I, Monaco ML, et al. Neurophysiological assessment in the diagnosis of botulism: usefulness of single-fiber EMG. Muscle Nerve 1999;22:1388&#x2013;92. 10.1002/(SICI)1097-4598(199910)22:10&lt;1388::AID-MUS8&gt;3.0.CO;2-3</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/(SICI)1097-4598(199910)22:10&lt;1388::AID-MUS8&gt;3.0.CO;2-3</ArticleId><ArticleId IdType="pubmed">10487905</ArticleId></ArticleIdList></Reference><Reference><Citation>McCarty CL, Angelo K, Beer KD, et al. Large outbreak of botulism associated with a church potluck meal&#x2014;Ohio, 2015. MMWR Morb Mortal Wkly Rep 2015;64:802&#x2013;3. 10.15585/mmwr.mm6429a6</Citation><ArticleIdList><ArticleId IdType="doi">10.15585/mmwr.mm6429a6</ArticleId><ArticleId IdType="pmc">PMC4584836</ArticleId><ArticleId IdType="pubmed">26225479</ArticleId></ArticleIdList></Reference><Reference><Citation>Maslanka SE, Solomon HM, Sharma S, Johnson EA. Chapter 32. <i>Clostridium botulinum</i> and its toxins. In: Salfinger Y, Tortorello ML, eds. Compendium of methods for the microbiological examination of foods: Washington, DC: American Public Health Association Press; 2013.</Citation></Reference><Reference><Citation>Kalb SR, Baudys J, Wang D, Barr JR. Recommended mass spectrometry-based strategies to identify botulinum neurotoxin-containing samples. Toxins (Basel) 2015;7:1765&#x2013;78. 10.3390/toxins7051765</Citation><ArticleIdList><ArticleId IdType="doi">10.3390/toxins7051765</ArticleId><ArticleId IdType="pmc">PMC4448173</ArticleId><ArticleId IdType="pubmed">25996606</ArticleId></ArticleIdList></Reference><Reference><Citation>Mighty HE. Acute respiratory failure in pregnancy. Clin Obstet Gynecol 2010;53:360&#x2013;8. 10.1097/GRF.0b013e3181deb3f1</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/GRF.0b013e3181deb3f1</ArticleId><ArticleId IdType="pubmed">20436311</ArticleId></ArticleIdList></Reference><Reference><Citation>Sandrock CE, Murin S. Clinical predictors of respiratory failure and long-term outcome in black tar heroin-associated wound botulism. Chest 2001;120:562&#x2013;6. 10.1378/chest.120.2.562</Citation><ArticleIdList><ArticleId IdType="doi">10.1378/chest.120.2.562</ArticleId><ArticleId IdType="pubmed">11502659</ArticleId></ArticleIdList></Reference><Reference><Citation>Wongtanate M, Sucharitchan N, Tantisiriwit K, et al. Signs and symptoms predictive of respiratory failure in patients with foodborne botulism in Thailand. Am J Trop Med Hyg 2007;77:386&#x2013;9. 10.4269/ajtmh.2007.77.386</Citation><ArticleIdList><ArticleId IdType="doi">10.4269/ajtmh.2007.77.386</ArticleId><ArticleId IdType="pubmed">17690419</ArticleId></ArticleIdList></Reference><Reference><Citation>Lawn ND, Fletcher DD, Henderson RD, Wolter TD, Wijdicks EF. Anticipating mechanical ventilation in Guillain-Barr&#xe9; syndrome. Arch Neurol 2001;58:893&#x2013;8. 10.1001/archneur.58.6.893</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/archneur.58.6.893</ArticleId><ArticleId IdType="pubmed">11405803</ArticleId></ArticleIdList></Reference><Reference><Citation>Stefanutti D, Fitting J-W. Sniff nasal inspiratory pressure. Reference values in Caucasian children. Am J Respir Crit Care Med 1999;159:107&#x2013;11. 10.1164/ajrccm.159.1.9804052</Citation><ArticleIdList><ArticleId IdType="doi">10.1164/ajrccm.159.1.9804052</ArticleId><ArticleId IdType="pubmed">9872826</ArticleId></ArticleIdList></Reference><Reference><Citation>Uldry C, Fitting JW. Maximal values of sniff nasal inspiratory pressure in healthy subjects. Thorax 1995;50:371&#x2013;5. 10.1136/thx.50.4.371</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/thx.50.4.371</ArticleId><ArticleId IdType="pmc">PMC474280</ArticleId><ArticleId IdType="pubmed">7785009</ArticleId></ArticleIdList></Reference><Reference><Citation>Laveneziana P, Albuquerque A, Aliverti A, et al. ERS statement on respiratory muscle testing at rest and during exercise. Eur Respir J 2019;53:1801214. 10.1183/13993003.01214-2018</Citation><ArticleIdList><ArticleId IdType="doi">10.1183/13993003.01214-2018</ArticleId><ArticleId IdType="pubmed">30956204</ArticleId></ArticleIdList></Reference><Reference><Citation>H&#xe9;ritier F, Rahm F, Pasche P, Fitting JW. Sniff nasal inspiratory pressure. A noninvasive assessment of inspiratory muscle strength. Am J Respir Crit Care Med 1994;150:1678&#x2013;83. 10.1164/ajrccm.150.6.7952632</Citation><ArticleIdList><ArticleId IdType="doi">10.1164/ajrccm.150.6.7952632</ArticleId><ArticleId IdType="pubmed">7952632</ArticleId></ArticleIdList></Reference><Reference><Citation>Elsheikh B, Arnold WD, Gharibshahi S, Reynolds J, Freimer M, Kissel JT. Correlation of single-breath count test and neck flexor muscle strength with spirometry in myasthenia gravis. Muscle Nerve 2016;53:134&#x2013;6. 10.1002/mus.24929</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.24929</ArticleId><ArticleId IdType="pmc">PMC4715713</ArticleId><ArticleId IdType="pubmed">26437790</ArticleId></ArticleIdList></Reference><Reference><Citation>Harms M. Inpatient management of Guillain-Barr&#xe9; syndrome. Neurohospitalist 2011;1:78&#x2013;84. 10.1177/1941875210396379</Citation><ArticleIdList><ArticleId IdType="doi">10.1177/1941875210396379</ArticleId><ArticleId IdType="pmc">PMC3726082</ArticleId><ArticleId IdType="pubmed">23983841</ArticleId></ArticleIdList></Reference><Reference><Citation>Hutchinson D, Whyte K. Neuromuscular disease and respiratory failure. Pract Neurol 2008;8:229&#x2013;37. 10.1136/pn.2008.152611</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/pn.2008.152611</ArticleId><ArticleId IdType="pubmed">18644909</ArticleId></ArticleIdList></Reference><Reference><Citation>Hughes RA, Bihari D. Acute neuromuscular respiratory paralysis. J Neurol Neurosurg Psychiatry 1993;56:334&#x2013;43. 10.1136/jnnp.56.4.334</Citation><ArticleIdList><ArticleId IdType="doi">10.1136/jnnp.56.4.334</ArticleId><ArticleId IdType="pmc">PMC1014946</ArticleId><ArticleId IdType="pubmed">8482951</ArticleId></ArticleIdList></Reference><Reference><Citation>Dressler D, Benecke R. Autonomic side effects of botulinum toxin type B treatment of cervical dystonia and hyperhidrosis. Eur Neurol 2003;49:34&#x2013;8. 10.1159/000067023</Citation><ArticleIdList><ArticleId IdType="doi">10.1159/000067023</ArticleId><ArticleId IdType="pubmed">12464716</ArticleId></ArticleIdList></Reference><Reference><Citation>Dolly JO, Aoki KR. The structure and mode of action of different botulinum toxins. Eur J Neurol 2006;13(Suppl 4):1&#x2013;9. 10.1111/j.1468-1331.2006.01648.x</Citation><ArticleIdList><ArticleId IdType="doi">10.1111/j.1468-1331.2006.01648.x</ArticleId><ArticleId IdType="pubmed">17112344</ArticleId></ArticleIdList></Reference><Reference><Citation>Jenzer G, Mumenthaler M, Ludin HP, Robert F. Autonomic dysfunction in botulism B: a clinical report. Neurology 1975;25:150&#x2013;3. 10.1212/WNL.25.2.150</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/WNL.25.2.150</ArticleId><ArticleId IdType="pubmed">1167643</ArticleId></ArticleIdList></Reference><Reference><Citation>Koenig MG, Drutz DJ, Mushlin AI, Schaffner W, Rogers DE. Type B botulism in man. Am J Med 1967;42:208&#x2013;19. 10.1016/0002-9343(67)90020-4</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0002-9343(67)90020-4</ArticleId><ArticleId IdType="pubmed">6018532</ArticleId></ArticleIdList></Reference><Reference><Citation>Merz B, Bigalke H, Stoll G, Naumann M. Botulism type B presenting as pure autonomic dysfunction. Clin Auton Res 2003;13:337&#x2013;8. 10.1007/s10286-003-0118-2</Citation><ArticleIdList><ArticleId IdType="doi">10.1007/s10286-003-0118-2</ArticleId><ArticleId IdType="pubmed">14564656</ArticleId></ArticleIdList></Reference><Reference><Citation>Potulska-Chromik A, Zakrzewska-Pniewska B, Szmidt-Sa&#x142;kowska E, et al. Long lasting dysautonomia due to botulinum toxin B poisoning: clinical-laboratory follow up and difficulties in initial diagnosis. BMC Res Notes 2013;6:438. 10.1186/1756-0500-6-438</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/1756-0500-6-438</ArticleId><ArticleId IdType="pmc">PMC3816205</ArticleId><ArticleId IdType="pubmed">24172031</ArticleId></ArticleIdList></Reference><Reference><Citation>Truax BT, ed. Autonomic disturbances in the Guillain-Barr&#xe9; syndrome. Seminars in Neurology; 1984: Thieme Medical Publishers, Inc.</Citation></Reference><Reference><Citation>Dalos NP, Borel C, Hanley DF. Cardiovascular autonomic dysfunction in Guillain-Barr&#xe9; syndrome. Therapeutic implications of Swan-Ganz monitoring. Arch Neurol 1988;45:115&#x2013;7. 10.1001/archneur.1988.00520250125034</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/archneur.1988.00520250125034</ArticleId><ArticleId IdType="pubmed">3337665</ArticleId></ArticleIdList></Reference><Reference><Citation>Hund EF, Borel CO, Cornblath DR, Hanley DF, McKhann GM. Intensive management and treatment of severe Guillain-Barr&#xe9; syndrome. Crit Care Med 1993;21:433&#x2013;46. 10.1097/00003246-199303000-00023</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/00003246-199303000-00023</ArticleId><ArticleId IdType="pubmed">8440115</ArticleId></ArticleIdList></Reference><Reference><Citation>Hughes RA, Wijdicks EF, Benson E, et al. ; Multidisciplinary Consensus Group. Supportive care for patients with Guillain-Barr&#xe9; syndrome. Arch Neurol 2005;62:1194&#x2013;8. 10.1001/archneur.62.8.1194</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/archneur.62.8.1194</ArticleId><ArticleId IdType="pubmed">16087757</ArticleId></ArticleIdList></Reference><Reference><Citation>Rabinstein AA. Acute neuromuscular respiratory failure. Continuum (Minneap Minn) 2015;21(5 Neurocritical Care):1324&#x2013;45. 10.1212/CON.0000000000000218</Citation><ArticleIdList><ArticleId IdType="doi">10.1212/CON.0000000000000218</ArticleId><ArticleId IdType="pubmed">26426233</ArticleId></ArticleIdList></Reference><Reference><Citation>Fiz JA, Haro M, Aguilar J, et al. Spirometry and maximal respiratory pressures in patients with facial paralysis. Chest 1993;103:170&#x2013;3. 10.1378/chest.103.1.170</Citation><ArticleIdList><ArticleId IdType="doi">10.1378/chest.103.1.170</ArticleId><ArticleId IdType="pubmed">8417873</ArticleId></ArticleIdList></Reference><Reference><Citation>Cabrera Serrano M, Rabinstein AA. Causes and outcomes of acute neuromuscular respiratory failure. Arch Neurol 2010;67:1089&#x2013;94. 10.1001/archneurol.2010.207</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/archneurol.2010.207</ArticleId><ArticleId IdType="pubmed">20837853</ArticleId></ArticleIdList></Reference><Reference><Citation>Mangera Z, Panesar G, Makker H. Practical approach to management of respiratory complications in neurological disorders. Int J Gen Med 2012;5:255&#x2013;63.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3325013</ArticleId><ArticleId IdType="pubmed">22505823</ArticleId></ArticleIdList></Reference><Reference><Citation>O&#x2019;Horo JC, Harper EP, El Rafei A, et al. Efficacy of antitoxin therapy in treating patients with foodborne botulism: a systematic review and meta-analysis of cases, 1923&#x2013;2016. Clin Infect Dis 2017;66(suppl_1):S43&#x2013;56. 10.1093/cid/cix815</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/cid/cix815</ArticleId><ArticleId IdType="pmc">PMC5850555</ArticleId><ArticleId IdType="pubmed">29293927</ArticleId></ArticleIdList></Reference><Reference><Citation>Tacket CO, Shandera WX, Mann JM, Hargrett NT, Blake PA. Equine antitoxin use and other factors that predict outcome in type A foodborne botulism. Am J Med 1984;76:794&#x2013;8. 10.1016/0002-9343(84)90988-4</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0002-9343(84)90988-4</ArticleId><ArticleId IdType="pubmed">6720725</ArticleId></ArticleIdList></Reference><Reference><Citation>Botulism antitoxin heptavalent. (A, B, C, D, E, F, G)&#x2014;(Equine) [package insert]. Gaithersburg, MD: Cangene Corporation (as Emergent Biosolutions); 2017. https://www.fda.gov/media/85514/download</Citation></Reference><Reference><Citation>Black RE, Gunn RA. Hypersensitivity reactions associated with botulinal antitoxin. Am J Med 1980;69:567&#x2013;70. 10.1016/0002-9343(80)90469-6</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0002-9343(80)90469-6</ArticleId><ArticleId IdType="pubmed">7191633</ArticleId></ArticleIdList></Reference><Reference><Citation>Kongsaengdao S, Samintarapanya K, Rusmeechan S, et al. ; Thai Botulism Study Group. An outbreak of botulism in Thailand: clinical manifestations and management of severe respiratory failure. Clin Infect Dis 2006;43:1247&#x2013;56. 10.1086/508176</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/508176</ArticleId><ArticleId IdType="pubmed">17051488</ArticleId></ArticleIdList></Reference><Reference><Citation>Hatheway CH, Snyder JD, Seals JE, Edell TA, Lewis GE Jr. Antitoxin levels in botulism patients treated with trivalent equine botulism antitoxin to toxin types A, B, and E. J Infect Dis 1984;150:407&#x2013;12. 10.1093/infdis/150.3.407</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/infdis/150.3.407</ArticleId><ArticleId IdType="pubmed">6481185</ArticleId></ArticleIdList></Reference><Reference><Citation>Arnon SS, Schechter R, Maslanka SE, Jewell NP, Hatheway CL. Human botulism immune globulin for the treatment of infant botulism. N Engl J Med 2006;354:462&#x2013;71. 10.1056/NEJMoa051926</Citation><ArticleIdList><ArticleId IdType="doi">10.1056/NEJMoa051926</ArticleId><ArticleId IdType="pubmed">16452558</ArticleId></ArticleIdList></Reference><Reference><Citation>Lack JA, Stuart-Taylor ME. Calculation of drug dosage and body surface area of children. Br J Anaesth 1997;78:601&#x2013;5. 10.1093/bja/78.5.601</Citation><ArticleIdList><ArticleId IdType="doi">10.1093/bja/78.5.601</ArticleId><ArticleId IdType="pubmed">9175982</ArticleId></ArticleIdList></Reference><Reference><Citation>Feng L, Chen X, Liu S, Zhou Z, Yang R. Two-family outbreak of botulism associated with the consumption of smoked ribs in Sichuan Province, China. Int J Infect Dis 2015;30:74&#x2013;7. 10.1016/j.ijid.2014.10.008</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/j.ijid.2014.10.008</ArticleId><ArticleId IdType="pubmed">25448333</ArticleId></ArticleIdList></Reference><Reference><Citation>Gomez HF, Johnson R, Guven H, et al. Adsorption of botulinum toxin to activated charcoal with a mouse bioassay. Ann Emerg Med 1995;25:818&#x2013;22. 10.1016/S0196-0644(95)70214-8</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0196-0644(95)70214-8</ArticleId><ArticleId IdType="pubmed">7755207</ArticleId></ArticleIdList></Reference><Reference><Citation>Osterhoudt KC, Alpern ER, Durbin D, Nadel F, Henretig FM. Activated charcoal administration in a pediatric emergency department. Pediatr Emerg Care 2004;20:493&#x2013;8. 10.1097/01.pec.0000136064.14704.d1</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/01.pec.0000136064.14704.d1</ArticleId><ArticleId IdType="pubmed">15295243</ArticleId></ArticleIdList></Reference><Reference><Citation>Mazuet C, Dano J, Popoff MR, Cr&#xe9;minon C, Volland H. Characterization of botulinum neurotoxin type A neutralizing monoclonal antibodies and influence of their half-lives on therapeutic activity. PLoS One 2010;5:e12416. 10.1371/journal.pone.0012416</Citation><ArticleIdList><ArticleId IdType="doi">10.1371/journal.pone.0012416</ArticleId><ArticleId IdType="pmc">PMC2928723</ArticleId><ArticleId IdType="pubmed">20865035</ArticleId></ArticleIdList></Reference><Reference><Citation>Cherington M, Ryan DW. Botulism and guanidine. N Engl J Med 1968;278:931&#x2013;3. 10.1056/NEJM196804252781704</Citation><ArticleIdList><ArticleId IdType="doi">10.1056/NEJM196804252781704</ArticleId><ArticleId IdType="pubmed">5644559</ArticleId></ArticleIdList></Reference><Reference><Citation>Cherington M, Ryan DW. Treatment of botulism with guanidine. Early neurophysiologic studies. N Engl J Med 1970;282:195&#x2013;7. 10.1056/NEJM197001222820405</Citation><ArticleIdList><ArticleId IdType="doi">10.1056/NEJM197001222820405</ArticleId><ArticleId IdType="pubmed">5409814</ArticleId></ArticleIdList></Reference><Reference><Citation>Puggiari M, Cherington M. Botulism and guanidine. Ten years later. JAMA 1978;240:2276&#x2013;7. 10.1001/jama.1978.03290210058027</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/jama.1978.03290210058027</ArticleId><ArticleId IdType="pubmed">702753</ArticleId></ArticleIdList></Reference><Reference><Citation>Kaplan JE, Davis LE, Narayan V, Koster J, Katzenstein D. Botulism, type A, and treatment with guanidine. Ann Neurol 1979;6:69&#x2013;71. 10.1002/ana.410060117</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/ana.410060117</ArticleId><ArticleId IdType="pubmed">389150</ArticleId></ArticleIdList></Reference><Reference><Citation>Davis LE, Johnson JK, Bicknell JM, Levy H, McEvoy KM. Human type A botulism and treatment with 3,4-diaminopyridine. Electromyogr Clin Neurophysiol 1992;32:379&#x2013;83.</Citation><ArticleIdList><ArticleId IdType="pubmed">1526219</ArticleId></ArticleIdList></Reference><Reference><Citation>Faich GA, Graebner RW, Sato S. Failure of guanidine therapy in botulism A. N Engl J Med 1971;285:773&#x2013;6. 10.1056/NEJM197109302851404</Citation><ArticleIdList><ArticleId IdType="doi">10.1056/NEJM197109302851404</ArticleId><ArticleId IdType="pubmed">5567262</ArticleId></ArticleIdList></Reference><Reference><Citation>Oh SJ, Halsey JH Jr, Briggs DDJ Jr. Guanidine in type B botulism. Arch Intern Med 1975;135:726&#x2013;8. 10.1001/archinte.135.5.726</Citation><ArticleIdList><ArticleId IdType="doi">10.1001/archinte.135.5.726</ArticleId><ArticleId IdType="pubmed">1052669</ArticleId></ArticleIdList></Reference><Reference><Citation>Ball AP, Hopkinson RB, Farrell ID, et al. 
+Human botulism caused by <i>Clostridium botulinum</i> type E: the Birmingham outbreak.
+Q J Med
+1979;48:473&#x2013;91.</Citation><ArticleIdList><ArticleId IdType="pubmed">575566</ArticleId></ArticleIdList></Reference><Reference><Citation>Paterson DL, King MA, Boyle RS, et al. Severe botulism after eating home-preserved asparagus. Med J Aust 1992;157:269&#x2013;70. 10.5694/j.1326-5377.1992.tb137135.x</Citation><ArticleIdList><ArticleId IdType="doi">10.5694/j.1326-5377.1992.tb137135.x</ArticleId><ArticleId IdType="pubmed">1435446</ArticleId></ArticleIdList></Reference><Reference><Citation>Robinson RF, Nahata MC. Management of botulism. Ann Pharmacother 2003;37:127&#x2013;31. 10.1345/aph.1C034</Citation><ArticleIdList><ArticleId IdType="doi">10.1345/aph.1C034</ArticleId><ArticleId IdType="pubmed">12503947</ArticleId></ArticleIdList></Reference><Reference><Citation>Wang YC, Burr DH, Korthals GJ, Sugiyama H. Acute toxicity of aminoglycoside antibiotics as an aid in detecting botulism. Appl Environ Microbiol 1984;48:951&#x2013;5. 10.1128/AEM.48.5.951-955.1984</Citation><ArticleIdList><ArticleId IdType="doi">10.1128/AEM.48.5.951-955.1984</ArticleId><ArticleId IdType="pmc">PMC241656</ArticleId><ArticleId IdType="pubmed">6508309</ArticleId></ArticleIdList></Reference><Reference><Citation>Molg&#xf3; J, Lemeignan M, Thesleff S. Aminoglycosides and 3,4-diaminopyridine on neuromuscular block caused by botulinum type A toxin. Muscle Nerve 1987;10:464&#x2013;70. 10.1002/mus.880100514</Citation><ArticleIdList><ArticleId IdType="doi">10.1002/mus.880100514</ArticleId><ArticleId IdType="pubmed">3497343</ArticleId></ArticleIdList></Reference><Reference><Citation>L&#x2019;Hommedieu C, Stough R, Brown L, Kettrick R, Polin R. Potentiation of neuromuscular weakness in infant botulism by aminoglycosides. J Pediatr 1979;95:1065&#x2013;70. 10.1016/S0022-3476(79)80314-5</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/S0022-3476(79)80314-5</ArticleId><ArticleId IdType="pubmed">501488</ArticleId></ArticleIdList></Reference><Reference><Citation>Paradelis AG, Triantaphyllidis C, Giala MM. Neuromuscular blocking activity of aminoglycoside antibiotics. Methods Find Exp Clin Pharmacol 1980;2:45&#x2013;51.</Citation><ArticleIdList><ArticleId IdType="pubmed">6121961</ArticleId></ArticleIdList></Reference><Reference><Citation>Santos JI, Swensen P, Glasgow LA. Potentiation of <i>Clostridium botulinum</i> toxin aminoglycoside antibiotics: clinical and laboratory observations.
+Pediatrics
+1981;68:50&#x2013;4.</Citation><ArticleIdList><ArticleId IdType="pubmed">7243509</ArticleId></ArticleIdList></Reference><Reference><Citation>Lee JH, Lee SI, Chung CJ, et al. The synergistic effect of gentamicin and clindamycin on rocuronium-induced neuromuscular blockade. Korean J Anesthesiol 2013;64:143&#x2013;51. 10.4097/kjae.2013.64.2.143</Citation><ArticleIdList><ArticleId IdType="doi">10.4097/kjae.2013.64.2.143</ArticleId><ArticleId IdType="pmc">PMC3581784</ArticleId><ArticleId IdType="pubmed">23459675</ArticleId></ArticleIdList></Reference><Reference><Citation>Rhee WJ, Lee SY, Lee JH, et al. The effect of high concentration of magnesium with ropivacaine, gentamicin, rocuronium, and their combination on neuromuscular blockade. Korean J Anesthesiol 2015;68:50&#x2013;61. 10.4097/kjae.2015.68.1.50</Citation><ArticleIdList><ArticleId IdType="doi">10.4097/kjae.2015.68.1.50</ArticleId><ArticleId IdType="pmc">PMC4318866</ArticleId><ArticleId IdType="pubmed">25664156</ArticleId></ArticleIdList></Reference><Reference><Citation>Pandian SJ, Subramanian M, Vijayakumar G, Balasubramaniam GA, Sukumar K. Therapeutic management of botulism in dairy cattle. Vet World 2015;8:1305&#x2013;9.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4774742</ArticleId><ArticleId IdType="pubmed">27047034</ArticleId></ArticleIdList></Reference><Reference><Citation>Del Pozo E, Baeyens JM. Effects of calcium channel blockers on neuromuscular blockade induced by aminoglycoside antibiotics. Eur J Pharmacol 1986;128:49&#x2013;54. 10.1016/0014-2999(86)90556-X</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0014-2999(86)90556-X</ArticleId><ArticleId IdType="pubmed">3758187</ArticleId></ArticleIdList></Reference><Reference><Citation>Paradelis AG, Triantaphyllidis CJ, Mironidou M, Crassaris LG, Karachalios DN, Giala MM. Interaction of aminoglycoside antibiotics and calcium channel blockers at the neuromuscular junctions. Methods Find Exp Clin Pharmacol 1988;10:687&#x2013;90.</Citation><ArticleIdList><ArticleId IdType="pubmed">3221740</ArticleId></ArticleIdList></Reference><Reference><Citation>Simpson LL. The interaction between 5-hydroxytryptamine and botulinum toxin type A. Toxicol Appl Pharmacol 1968;12:249&#x2013;59. 10.1016/0041-008X(68)90037-9</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0041-008X(68)90037-9</ArticleId><ArticleId IdType="pubmed">4875050</ArticleId></ArticleIdList></Reference><Reference><Citation>Hale TW. Maternal medications during breastfeeding. Clin Obstet Gynecol 2004;47:696&#x2013;711. 10.1097/01.grf.0000135653.56778.3f</Citation><ArticleIdList><ArticleId IdType="doi">10.1097/01.grf.0000135653.56778.3f</ArticleId><ArticleId IdType="pubmed">15326432</ArticleId></ArticleIdList></Reference><Reference><Citation>Simpson LL. Identification of the major steps in botulinum toxin action. Annu Rev Pharmacol Toxicol 2004;44:167&#x2013;93. 10.1146/annurev.pharmtox.44.101802.121554</Citation><ArticleIdList><ArticleId IdType="doi">10.1146/annurev.pharmtox.44.101802.121554</ArticleId><ArticleId IdType="pubmed">14744243</ArticleId></ArticleIdList></Reference><Reference><Citation>Middaugh J. Botulism and breast milk. N Engl J Med 1978;298:343. 10.1056/NEJM197802092980620</Citation><ArticleIdList><ArticleId IdType="doi">10.1056/NEJM197802092980620</ArticleId><ArticleId IdType="pubmed">622098</ArticleId></ArticleIdList></Reference><Reference><Citation>Jim J, Johnson B, Millerburg T, Silver T, Funk D, Bixby M. Type A botulism in Alaska. State of Alaska Epidemiology Bulletin. 1976;13.</Citation></Reference><Reference><Citation>Douthirt C. An outbreak of botulism in Tucumcari, New Mexico. Southwest Med 1938;(2):51&#x2013;3.</Citation></Reference><Reference><Citation>CDC. Botulism&#x2014;California. MMWR Morb Mortal Wkly Rep 1972;21:106.</Citation></Reference><Reference><Citation>Moodley A, Quinlisk P, Garvey A, Kalas N, Barash JR, Khouri JM. Notes from the field: infant botulism caused by <i>Clostridium baratii</i> type F&#x2014;Iowa, 2013.
+MMWR Morb Mortal Wkly Rep
+2015;64:400.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5779545</ArticleId><ArticleId IdType="pubmed">25879901</ArticleId></ArticleIdList></Reference><Reference><Citation>Gould CV, Umscheid CA, Agarwal RK, Kuntz G, Pegues DA; Healthcare Infection Control Practices Advisory Committee. Guideline for prevention of catheter-associated urinary tract infections 2009. Infect Control Hosp Epidemiol 2010;31:319&#x2013;26. 10.1086/651091</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/651091</ArticleId><ArticleId IdType="pubmed">20156062</ArticleId></ArticleIdList></Reference><Reference><Citation>Berlowitz D, VanDeusen Lukas C, Parker V, Niederhauser A, Silver J, Logan C, et al.  Preventing pressure ulcers in hospitals. Rockville, MD: Agency for Healthcare Research and Quality; 2014. https://www.ahrq.gov/sites/default/files/publications/files/putoolkit.pdf</Citation></Reference><Reference><Citation>Klompas M, Branson R, Eichenwald EC, et al. ; Society for Healthcare Epidemiology of America (SHEA). Strategies to prevent ventilator-associated pneumonia in acute care hospitals: 2014 update. Infect Control Hosp Epidemiol 2014;35:915&#x2013;36. 10.1086/677144</Citation><ArticleIdList><ArticleId IdType="doi">10.1086/677144</ArticleId><ArticleId IdType="pubmed">25026607</ArticleId></ArticleIdList></Reference><Reference><Citation>Marcus SM. Reflections on the care of a patient severely poisoned by &#x2018;rogue&#x2019; botulinum toxin and rendered paralysed for a protracted hospital stay. Botulinum J 2009;1:318&#x2013;39. 10.1504/TBJ.2009.031683</Citation><ArticleIdList><ArticleId IdType="doi">10.1504/TBJ.2009.031683</ArticleId></ArticleIdList></Reference><Reference><Citation>ten Hoorn S, Elbers PW, Girbes AR, Tuinman PR. Communicating with conscious and mechanically ventilated critically ill patients: a systematic review. Crit Care 2016;20:333. 10.1186/s13054-016-1483-2</Citation><ArticleIdList><ArticleId IdType="doi">10.1186/s13054-016-1483-2</ArticleId><ArticleId IdType="pmc">PMC5070186</ArticleId><ArticleId IdType="pubmed">27756433</ArticleId></ArticleIdList></Reference><Reference><Citation>Cohen RE, Anderson DL. Botulism: emotional impact on patient and family. J Psychosom Res 1986;30:321&#x2013;6. 10.1016/0022-3999(86)90009-7</Citation><ArticleIdList><ArticleId IdType="doi">10.1016/0022-3999(86)90009-7</ArticleId><ArticleId IdType="pubmed">3735176</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Curated"><PMID Version="1">41123183</PMID><DateCompleted><Year>2025</Year><Month>10</Month><Day>31</Day></DateCompleted><DateRevised><Year>2026</Year><Month>07</Month><Day>01</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Electronic">1535-4970</ISSN><JournalIssue CitedMedium="Internet"><Volume>211</Volume><Issue>11</Issue><PubDate><Year>2025</Year><Month>Nov</Month></PubDate></JournalIssue><Title>American journal of respiratory and critical care medicine</Title><ISOAbbreviation>Am J Respir Crit Care Med</ISOAbbreviation></Journal><ArticleTitle>Care of Infants and Children with Tracheostomies: An Official American Thoracic Society Clinical Practice Guideline.</ArticleTitle><Pagination><StartPage>2001</StartPage><EndPage>2020</EndPage><MedlinePgn>2001-2020</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1164/rccm.202508-2055ST</ELocationID><Abstract><AbstractText><b>Background:</b> The increase in tracheostomies among infants and children, driven by medical advances and evolving family preferences, underscores the need for standardized, evidence-based guidelines. This guideline outlines management recommendations for these medically complex and resource-intensive children with tracheostomies, incorporating best evidence on diagnostic tools and streamlined care protocols. <b>Methods:</b> This Clinical Practice Guideline adheres to American Thoracic Society policies and procedures, using the Grading of Recommendations, Assessment, Development, and Evaluation (GRADE) approach to form clinical questions, summarize evidence, and develop recommendations with a health equity perspective. A multidisciplinary panel with expertise in pediatric tracheostomy care contributed to recommendations for ethical considerations, discharge processes, in-home caregiver requirements, and diagnostic tools (tracheal aspirate cultures, bronchoscopy, and polysomnography). <b>Results:</b> The panel recommends applying ethical principles to guide shared decision-making about tracheostomy placement (strong recommendation). We also recommend a standardized discharge process involving comprehensive family caregiver training for safe transitions from hospital to home (conditional recommendation). A continuously awake, trained caregiver to manage emergencies is also recommended for high-risk patients (strong recommendation). The panel recommends tracheal aspirate cultures during acute respiratory episodes to guide antibiotic therapy, but not for routine surveillance (conditional recommendation); bronchoscopy for thorough airway examination before tracheostomy decannulation (strong recommendation); and polysomnography before decannulation to ensure respiratory stability (conditional recommendation). <b>Conclusions:</b> These guidelines aim to standardize and improve the management of pediatric patients with tracheostomies by providing evidence-based recommendations for ethical considerations, discharge planning, and diagnostic assessments. Implementing these guidelines aims to enhance patient safety and quality of life through a structured and patient-centered approach.</AbstractText></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Amin</LastName><ForeName>Reshma</ForeName><Initials>R</Initials><Identifier Source="ORCID">0000-0002-3032-5234</Identifier></Author><Author ValidYN="Y"><LastName>Agarwal</LastName><ForeName>Amit</ForeName><Initials>A</Initials><Identifier Source="ORCID">0000-0002-9979-8483</Identifier></Author><Author ValidYN="Y"><LastName>Chiang</LastName><ForeName>Jackie</ForeName><Initials>J</Initials><Identifier Source="ORCID">0000-0002-7958-5472</Identifier></Author><Author ValidYN="Y"><LastName>Collaco</LastName><ForeName>Joseph M</ForeName><Initials>JM</Initials><Identifier Source="ORCID">0000-0002-2581-4372</Identifier></Author><Author ValidYN="Y"><LastName>Cristea</LastName><ForeName>A Ioana</ForeName><Initials>AI</Initials><Identifier Source="ORCID">0000-0002-9206-2190</Identifier></Author><Author ValidYN="Y"><LastName>Propst</LastName><ForeName>Evan J</ForeName><Initials>EJ</Initials><Identifier Source="ORCID">0000-0002-8013-8530</Identifier></Author><Author ValidYN="Y"><LastName>Sobotka</LastName><ForeName>Sarah A</ForeName><Initials>SA</Initials><Identifier Source="ORCID">0000-0001-7352-2043</Identifier></Author><Author ValidYN="Y"><LastName>Balakrishnan</LastName><ForeName>Karthik</ForeName><Initials>K</Initials><Identifier Source="ORCID">0000-0001-8409-227X</Identifier></Author><Author ValidYN="Y"><LastName>Benscoter</LastName><ForeName>Dan</ForeName><Initials>D</Initials><Identifier Source="ORCID">0000-0002-8034-4289</Identifier></Author><Author ValidYN="Y"><LastName>Brenner</LastName><ForeName>Michael J</ForeName><Initials>MJ</Initials><Identifier Source="ORCID">0000-0003-4926-0957</Identifier></Author><Author ValidYN="Y"><LastName>Castro-Codesal</LastName><ForeName>Maria L</ForeName><Initials>ML</Initials><Identifier Source="ORCID">0000-0002-1079-2502</Identifier></Author><Author ValidYN="Y"><LastName>Cuevas Guaman</LastName><ForeName>Milenka</ForeName><Initials>M</Initials><Identifier Source="ORCID">0000-0002-3835-5806</Identifier></Author><Author ValidYN="Y"><LastName>Daines</LastName><ForeName>Cori L</ForeName><Initials>CL</Initials><Identifier Source="ORCID">0000-0001-6447-7957</Identifier></Author><Author ValidYN="Y"><LastName>Dawson</LastName><ForeName>Jessica A</ForeName><Initials>JA</Initials><Identifier Source="ORCID">0009-0007-2629-7307</Identifier></Author><Author ValidYN="Y"><LastName>Edwards</LastName><ForeName>Jeffrey D</ForeName><Initials>JD</Initials><Identifier Source="ORCID">0000-0002-8648-248X</Identifier></Author><Author ValidYN="Y"><LastName>Graham</LastName><ForeName>Robert J</ForeName><Initials>RJ</Initials><Identifier Source="ORCID">0000-0002-8659-6313</Identifier></Author><Author ValidYN="Y"><LastName>Henningfeld</LastName><ForeName>Jennifer K</ForeName><Initials>JK</Initials><Identifier Source="ORCID">0000-0002-8472-1002</Identifier></Author><Author ValidYN="Y"><LastName>Hoekstra</LastName><ForeName>Nadia E</ForeName><Initials>NE</Initials><Identifier Source="ORCID">0000-0002-4432-4029</Identifier></Author><Author ValidYN="Y"><LastName>Jackson</LastName><ForeName>Arwen J</ForeName><Initials>AJ</Initials><Identifier Source="ORCID">0000-0003-0359-8565</Identifier></Author><Author ValidYN="Y"><LastName>Johnson</LastName><ForeName>Romaine F</ForeName><Initials>RF</Initials><Identifier Source="ORCID">0000-0002-2322-5347</Identifier></Author><Author ValidYN="Y"><LastName>Kam</LastName><ForeName>Karen</ForeName><Initials>K</Initials><Identifier Source="ORCID">0000-0001-6374-4857</Identifier></Author><Author ValidYN="Y"><LastName>Kun</LastName><ForeName>Shelia S</ForeName><Initials>SS</Initials></Author><Author ValidYN="Y"><LastName>Napolitano</LastName><ForeName>Natalie</ForeName><Initials>N</Initials><Identifier Source="ORCID">0000-0002-1498-8465</Identifier></Author><Author ValidYN="Y"><LastName>Pacheco</LastName><ForeName>Alvaro</ForeName><Initials>A</Initials><Identifier Source="ORCID">0009-0008-3138-7005</Identifier></Author><Author ValidYN="Y"><LastName>Panitch</LastName><ForeName>Howard B</ForeName><Initials>HB</Initials><Identifier Source="ORCID">0000-0001-8440-283X</Identifier></Author><Author ValidYN="Y"><LastName>Prager</LastName><ForeName>Jeremy D</ForeName><Initials>JD</Initials><Identifier Source="ORCID">0000-0002-8123-2529</Identifier></Author><Author ValidYN="Y"><LastName>Shi</LastName><ForeName>Jenny Y</ForeName><Initials>JY</Initials><Identifier Source="ORCID">0000-0002-9363-7232</Identifier></Author><Author ValidYN="Y"><LastName>Soma</LastName><ForeName>Marlene</ForeName><Initials>M</Initials><Identifier Source="ORCID">0000-0002-0043-4648</Identifier></Author><Author ValidYN="Y"><LastName>St-Laurent</LastName><ForeName>Aaron</ForeName><Initials>A</Initials><Identifier Source="ORCID">0000-0003-0099-0502</Identifier></Author><Author ValidYN="Y"><LastName>Syed</LastName><ForeName>Faiza</ForeName><Initials>F</Initials><Identifier Source="ORCID">0009-0008-4982-5229</Identifier></Author><Author ValidYN="Y"><LastName>Watters</LastName><ForeName>Karen F</ForeName><Initials>KF</Initials><Identifier Source="ORCID">0009-0008-8909-6235</Identifier></Author><Author ValidYN="Y"><LastName>Zielinski</LastName><ForeName>David</ForeName><Initials>D</Initials><Identifier Source="ORCID">0000-0002-3293-7346</Identifier></Author><Author ValidYN="Y"><LastName>Ho</LastName><ForeName>An Thi Nhat</ForeName><Initials>ATN</Initials><Identifier Source="ORCID">0000-0003-3155-7568</Identifier></Author><Author ValidYN="Y"><LastName>Velagapudi</LastName><ForeName>Ravi Kanth</ForeName><Initials>RK</Initials><Identifier Source="ORCID">0000-0003-4175-328X</Identifier></Author><Author ValidYN="Y"><LastName>Zeba</LastName><ForeName>Fatima</ForeName><Initials>F</Initials><Identifier Source="ORCID">0000-0002-5356-7209</Identifier></Author><Author ValidYN="Y"><LastName>Knight</LastName><ForeName>Shandra L</ForeName><Initials>SL</Initials><Identifier Source="ORCID">0000-0002-4404-3833</Identifier></Author><Author ValidYN="Y"><LastName>Iyer</LastName><ForeName>Narayan</ForeName><Initials>N</Initials><Identifier Source="ORCID">0000-0003-3589-0018</Identifier></Author><Author ValidYN="Y"><LastName>Baker</LastName><ForeName>Christopher D</ForeName><Initials>CD</Initials><Identifier Source="ORCID">0000-0002-1171-563X</Identifier></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D017065">Practice Guideline</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>England</Country><MedlineTA>Am J Respir Crit Care Med</MedlineTA><NlmUniqueID>9421642</NlmUniqueID><ISSNLinking>1073-449X</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D014139" MajorTopicYN="Y">Tracheostomy</DescriptorName><QualifierName UI="Q000592" MajorTopicYN="N">standards</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D007223" MajorTopicYN="N">Infant</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002648" MajorTopicYN="N">Child</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D014481" MajorTopicYN="N" Type="Geographic">United States</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D002675" MajorTopicYN="N">Child, Preschool</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D012955" MajorTopicYN="N">Societies, Medical</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D010351" MajorTopicYN="N">Patient Discharge</DescriptorName><QualifierName UI="Q000592" MajorTopicYN="N">standards</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D017028" MajorTopicYN="N">Caregivers</DescriptorName><QualifierName UI="Q000193" MajorTopicYN="N">education</QualifierName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">bronchoscopy</Keyword><Keyword MajorTopicYN="N">home mechanical ventilation</Keyword><Keyword MajorTopicYN="N">pediatric</Keyword><Keyword MajorTopicYN="N">shared decision-making</Keyword><Keyword MajorTopicYN="N">tracheostomy</Keyword></KeywordList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="medline"><Year>2025</Year><Month>10</Month><Day>31</Day><Hour>17</Hour><Minute>30</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2025</Year><Month>10</Month><Day>22</Day><Hour>12</Hour><Minute>31</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2025</Year><Month>10</Month><Day>22</Day><Hour>7</Hour><Minute>53</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2025</Year><Month>10</Month><Day>22</Day></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">41123183</ArticleId><ArticleId IdType="pmc">PMC12618984</ArticleId><ArticleId IdType="doi">10.1164/rccm.202508-2055ST</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Watters K, Neill M, Zhu H, Graham RJ, Hall M, Berry J. Two-year mortality, complications, and healthcare use in children with Medicaid following tracheostomy. Laryngoscope . 2016;126:2611&#x2013;2617.</Citation><ArticleIdList><ArticleId IdType="pubmed">27060012</ArticleId></ArticleIdList></Reference><Reference><Citation>Verma R, Mocanu C, Shi J, Miller MR, Chiang J, Wolter NE. et al. Decannulation following tracheostomy in children: a systematic review of decannulation protocols. Pediatr Pulmonol . 2021;56:2426&#x2013;2443.</Citation><ArticleIdList><ArticleId IdType="pubmed">34231976</ArticleId></ArticleIdList></Reference><Reference><Citation>Ong T, Liu CC, Elder L, Hill L, Abts M, Dahl JP. et al. The Trach Safe Initiative: a quality improvement initiative to reduce mortality among pediatric tracheostomy patients. Otolaryngol Head Neck Surg . 2020;163:221&#x2013;231.</Citation><ArticleIdList><ArticleId IdType="pubmed">32204663</ArticleId></ArticleIdList></Reference><Reference><Citation>Sherman JM, Davis S, Albamonte-Petrick S, Chatburn RL, Fitton C, Green C. et al. Care of the child with a chronic tracheostomy: this official statement of the American Thoracic Society was adopted by the ATS Board of Directors, July 1999. Am J Respir Crit Care Med . 2000;161:297&#x2013;308.</Citation><ArticleIdList><ArticleId IdType="pubmed">10619835</ArticleId></ArticleIdList></Reference><Reference><Citation>Mitchell RB, Hussey HM, Setzen G, Jacobs IN, Nussenbaum B, Dawson C. et al. Clinical consensus statement: tracheostomy care. Otolaryngol Head Neck Surg . 2013;148:6&#x2013;20.</Citation><ArticleIdList><ArticleId IdType="pubmed">22990518</ArticleId></ArticleIdList></Reference><Reference><Citation>Sterni LM, Collaco JM, Baker CD, Carroll JL, Sharma GD, Brozek JL. et al. ATS Pediatric Chronic Home Ventilation Workgroup. An official American Thoracic Society clinical practice guideline: pediatric chronic home invasive ventilation. Am J Respir Crit Care Med . 2016;193:e16&#x2013;e35.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5439679</ArticleId><ArticleId IdType="pubmed">27082538</ArticleId></ArticleIdList></Reference><Reference><Citation>Guyatt G, Oxman AD, Akl EA, Kunz R, Vist G, Brozek J. et al. GRADE guidelines: 1. Introduction: GRADE evidence profiles and summary of findings tables. J Clin Epidemiol . 2011;64:383&#x2013;394.</Citation><ArticleIdList><ArticleId IdType="pubmed">21195583</ArticleId></ArticleIdList></Reference><Reference><Citation>The GRADE Working Group. GRADE handbook for grading quality of evidence and strength of recommendations. 2013. guidelinedevelopment.org/handbook</Citation></Reference><Reference><Citation>Andrews JC, Schunemann HJ, Oxman AD, Pottie K, Meerpohl JJ, Coello PA. et al. GRADE guidelines: 15. Going from evidence to recommendation-determinants of a recommendation&#x2019;s direction and strength. J Clin Epidemiol . 2013;66:726&#x2013;735.</Citation><ArticleIdList><ArticleId IdType="pubmed">23570745</ArticleId></ArticleIdList></Reference><Reference><Citation>Johnson BH. Family-centered care: four decades of progress. Fam Syst Health . 2000;18:137&#x2013;156.</Citation></Reference><Reference><Citation>Roberts J, Powell J, Begbie J, Siou G, McLarnon C, Welch A. et al. Pediatric tracheostomy: a large single-center experience. Laryngoscope . 2020;130:E375&#x2013;E380.</Citation><ArticleIdList><ArticleId IdType="pubmed">31251404</ArticleId></ArticleIdList></Reference><Reference><Citation>de Trey L, Niedermann E, Ghelfi D, Gerber A, Gysin C. Pediatric tracheotomy: a 30-year experience. J Pediatr Surg . 2013;48:1470&#x2013;1475.</Citation><ArticleIdList><ArticleId IdType="pubmed">23895956</ArticleId></ArticleIdList></Reference><Reference><Citation>Zenk J, Fyrmpas G, Zimmermann T, Koch M, Constantinidis J, Iro H. Tracheostomy in young patients: indications and long-term outcome. Eur Arch Otorhinolaryngol . 2009;266:705&#x2013;711.</Citation><ArticleIdList><ArticleId IdType="pubmed">18766359</ArticleId></ArticleIdList></Reference><Reference><Citation>Semansky RM, Koyanagi C. The TEFRA Medicaid eligibility option for children with severe disabilities: a national study. J Behav Health Serv Res . 2004;31:334&#x2013;342.</Citation><ArticleIdList><ArticleId IdType="pubmed">15263871</ArticleId></ArticleIdList></Reference><Reference><Citation>Rul B, Carnevale F, Estournet B, Rudler M, Herve C. Tracheotomy and children with spinal muscular atrophy type 1: ethical considerations in the French context. Nurs Ethics . 2012;19:408&#x2013;418.</Citation><ArticleIdList><ArticleId IdType="pubmed">22323397</ArticleId></ArticleIdList></Reference><Reference><Citation>Bach JR, Baird JS, Plosky D, Navado J, Weaver B. Spinal muscular atrophy type 1: management and outcomes. Pediatr Pulmonol . 2002;34:16&#x2013;22.</Citation><ArticleIdList><ArticleId IdType="pubmed">12112792</ArticleId></ArticleIdList></Reference><Reference><Citation>Wilfond BS. Tracheostomies and assisted ventilation in children with profound disabilities: navigating family and professional values. Pediatrics . 2014;133:S44&#x2013;S49.</Citation><ArticleIdList><ArticleId IdType="pubmed">24488540</ArticleId></ArticleIdList></Reference><Reference><Citation>Wightman A, Kett J, Campelia G, Wilfond BS. The relational potential standard: rethinking the ethical justification for life-sustaining treatment for children with profound cognitive disabilities. Hastings Cent Rep . 2019;49:18&#x2013;25.</Citation><ArticleIdList><ArticleId IdType="pubmed">31269258</ArticleId></ArticleIdList></Reference><Reference><Citation>Beauchamp T, Childress J. Principles of biomedical ethics: marking its fortieth anniversary. Am J Bioeth . 2019;19:9&#x2013;12.</Citation><ArticleIdList><ArticleId IdType="pubmed">31647760</ArticleId></ArticleIdList></Reference><Reference><Citation>Amar-Dolan LG, Horn MH, O&#x2019;Connell B, Parsons SK, Roussin CJ, Weinstock PH. et al. &#x201c;This is how hard it is&#x201d;: family experience of hospital-to-home transition with a tracheostomy. Ann Am Thorac Soc . 2020;17:860&#x2013;868.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7328176</ArticleId><ArticleId IdType="pubmed">32267725</ArticleId></ArticleIdList></Reference><Reference><Citation>Carnevale FA, Alexander E, Davis M, Rennick J, Troini R. Daily living with distress and enrichment: the moral experience of families with ventilator-assisted children at home. Pediatrics . 2006;117:e48&#x2013;e60.</Citation><ArticleIdList><ArticleId IdType="pubmed">16396848</ArticleId></ArticleIdList></Reference><Reference><Citation>Ross LF. Children, families, and health care decision making. Oxford, United Kingdom: Oxford University Press; 1998.</Citation></Reference><Reference><Citation>Yen BM, Schneiderman LJ. Impact of pediatric ethics consultations on patients, families, social workers, and physicians. J Perinatol . 1999;19:373&#x2013;378.</Citation><ArticleIdList><ArticleId IdType="pubmed">10685260</ArticleId></ArticleIdList></Reference><Reference><Citation>Orr RD, Perkin RM. Clinical ethics consultations with children. J Clin Ethics . 1994;5:323&#x2013;328.</Citation><ArticleIdList><ArticleId IdType="pubmed">7749179</ArticleId></ArticleIdList></Reference><Reference><Citation>Edwards JD, Panitch HB, George M, Cirrilla AM, Grunstein E, Wolfe J. et al. Development and validation of a novel informational booklet for pediatric long-term ventilation decision support. Pediatr Pulmonol . 2021;56:1198&#x2013;1204.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8035285</ArticleId><ArticleId IdType="pubmed">33305899</ArticleId></ArticleIdList></Reference><Reference><Citation>Brigham D, Karkare S, Siegel L. Ethical perspectives: withdrawal of life-sustaining treatments in pediatrics. Ethics Biology Eng Med . 2015;6:187&#x2013;196.</Citation></Reference><Reference><Citation>Fumihito N, Oue H, Yoshida M, Inoue K, Shibata M. Experiences of advance care planning in patients with Fukuyama congenital muscular dystrophy [in Japanese] No to Hattatsu . 2022;54:330&#x2013;334.</Citation></Reference><Reference><Citation>Nageswaran S, Gower WA, Golden SL, King NMP. Collaborative decision-making: a framework for decision-making about life-sustaining treatments in children with medical complexity. Pediatr Pulmonol . 2022;57:3094&#x2013;3103.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9825978</ArticleId><ArticleId IdType="pubmed">36098220</ArticleId></ArticleIdList></Reference><Reference><Citation>Schneiderman LJ, Gilmer T, Teetzel HD. Impact of ethics consultations in the intensive care setting: a randomized, controlled trial. Crit Care Med . 2000;28:3920&#x2013;3924.</Citation><ArticleIdList><ArticleId IdType="pubmed">11153636</ArticleId></ArticleIdList></Reference><Reference><Citation>Antommaria AH, Collura CA, Antiel RM, Lantos JD. Two infants, same prognosis, different parental preferences. Pediatrics . 2015;135:918&#x2013;923.</Citation><ArticleIdList><ArticleId IdType="pubmed">25847802</ArticleId></ArticleIdList></Reference><Reference><Citation>Klee K, Wilfond B, Thomas K, Ridling D. Conflicts between parents and clinicians: Tracheotomy decisions and clinical bioethics consultation. Nurs Ethics . 2022;29:685&#x2013;695.</Citation><ArticleIdList><ArticleId IdType="pubmed">35094605</ArticleId></ArticleIdList></Reference><Reference><Citation>Edwards JD, Panitch HB, Nelson JE, Miller RL, Morris MC. Decisions for long-term ventilation for children: perspectives of family members. Ann Am Thorac Soc . 2020;17:72&#x2013;80.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6944342</ArticleId><ArticleId IdType="pubmed">31437013</ArticleId></ArticleIdList></Reference><Reference><Citation>Shipman KJ, Mercer AH, Raisanen JC, Jabre NA, Vo HH, Miles A. et al. &#x201c;What would give her the best life?&#x201d;: Understanding why families decline pediatric home ventilation. J Palliat Med . 2023;26:930&#x2013;940.</Citation><ArticleIdList><ArticleId IdType="pubmed">36662553</ArticleId></ArticleIdList></Reference><Reference><Citation>Carnevale FA, Farrell C, Cremer R, Canoui P, Seguret S, Gaudreault J. et al. Struggling to do what is right for the child: pediatric life-support decisions among physicians and nurses in France and Quebec. J Child Health Care . 2012;16:109&#x2013;123.</Citation><ArticleIdList><ArticleId IdType="pubmed">22247181</ArticleId></ArticleIdList></Reference><Reference><Citation>Glass KC, Carnevale FA. Decisional challenges for children requiring assisted ventilation at home. HEC Forum . 2006;18:207&#x2013;221.</Citation><ArticleIdList><ArticleId IdType="pubmed">17650760</ArticleId></ArticleIdList></Reference><Reference><Citation>Redmann AJ, Hart CK, Smith MM, Martin C, Borschuk AP, Cortezzo DE. et al. Provider moral distress in caring for tracheostomy and ventilator dependent children: a single institution cross-sectional evaluation. Pediatr Pulmonol . 2024;59:880&#x2013;885.</Citation><ArticleIdList><ArticleId IdType="pubmed">38165151</ArticleId></ArticleIdList></Reference><Reference><Citation>Rapoport A, Harrison C, Carnevale FA. Section 3: ethics of initiation of long-term ventilation in children at home. Can J Respir Crit Care Sleep Med . 2018;2:16&#x2013;22.</Citation></Reference><Reference><Citation>Mack C, Mailo J, Ofosu D, Hinai AA, Keto-Lambert D, Soril LJJ. et al. Tracheostomy and long-term invasive ventilation decision-making in children: a scoping review. Pediatr Pulmonol . 2024;59:1153&#x2013;1164.</Citation><ArticleIdList><ArticleId IdType="pubmed">38289099</ArticleId></ArticleIdList></Reference><Reference><Citation>Edwards JD, Panitch HB, Constantinescu A, Miller RL, Stone PW. Survey of financial burden of families in the US with children using home mechanical ventilation. Pediatr Pulmonol . 2018;53:108&#x2013;116.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5737909</ArticleId><ArticleId IdType="pubmed">29152895</ArticleId></ArticleIdList></Reference><Reference><Citation>Thyen U, Kuhlthau K, Perrin JM. Employment, child care, and mental health of mothers caring for children assisted by technology. Pediatrics . 1999;103:1235&#x2013;1242.</Citation><ArticleIdList><ArticleId IdType="pubmed">10353935</ArticleId></ArticleIdList></Reference><Reference><Citation>Walker JG, Manion IG, Cloutier PF, Johnson SM. Measuring marital distress in couples with chronically ill children: the Dyadic Adjustment Scale. J Pediatr Psychol . 1992;17:345&#x2013;357.</Citation><ArticleIdList><ArticleId IdType="pubmed">1640317</ArticleId></ArticleIdList></Reference><Reference><Citation>Blamires J, Foster M, Rasmussen S, Zgambo M, Morelius E. The experiences and perceptions of healthy siblings of children with a long-term condition: umbrella review. J Pediatr Nurs . 2024;77:191&#x2013;203.</Citation><ArticleIdList><ArticleId IdType="pubmed">38574402</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobotka SA. Magic mothers: how parents of children with invasive mechanical ventilation can make health system crises disappear. J Dev Phys Disabil . 2025;37:185&#x2013;197.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC12140620</ArticleId><ArticleId IdType="pubmed">40476224</ArticleId></ArticleIdList></Reference><Reference><Citation>Sandler ML, Ayele N, Ncogoza I, Blanchette S, Munhall DS, Marques B. et al. Improving tracheostomy care in resource-limited settings. Ann Otol Rhinol Laryngol . 2020;129:181&#x2013;190.</Citation><ArticleIdList><ArticleId IdType="pubmed">31631687</ArticleId></ArticleIdList></Reference><Reference><Citation>Din TF, McGuire J, Booth J, Lytwynchuk A, Fagan JJ, Peer S. The assessment of quality of life in children with tracheostomies and their families in a low to middle income country (LMIC) Int J Pediatr Otorhinolaryngol . 2020;138:110319.</Citation><ArticleIdList><ArticleId IdType="pubmed">32882602</ArticleId></ArticleIdList></Reference><Reference><Citation>Vanker A, Kling S, Booysen JR, Rhode D, Goussard P, Heyns L. et al. Tracheostomy home care: in a resource-limited setting. Arch Dis Child . 2012;97:121&#x2013;123.</Citation><ArticleIdList><ArticleId IdType="pubmed">20870625</ArticleId></ArticleIdList></Reference><Reference><Citation>Brenner MJ, Pandian V, Milliren CE, Graham DA, Zaga C, Morris LL. et al. Global Tracheostomy Collaborative: data-driven improvements in patient safety through multidisciplinary teamwork, standardisation, education, and patient partnership. Br J Anaesth . 2020;125:e104&#x2013;e118.</Citation><ArticleIdList><ArticleId IdType="pubmed">32456776</ArticleId></ArticleIdList></Reference><Reference><Citation>Groenendijk I, Booth J, van Dijk M, Argent A, Zampoli M. Paediatric tracheostomy and ventilation home care with challenging socio-economic circumstances in South Africa. Int J Pediatr Otorhinolaryngol . 2016;84:161&#x2013;165.</Citation><ArticleIdList><ArticleId IdType="pubmed">27063774</ArticleId></ArticleIdList></Reference><Reference><Citation>Brown C, Shah GB, Mitchell RB, Lenes-Voit F, Johnson RF. The incidence of pediatric tracheostomy and its association among black children. Otolaryngol Head Neck Surg . 2021;164:206&#x2013;211.</Citation><ArticleIdList><ArticleId IdType="pubmed">32777978</ArticleId></ArticleIdList></Reference><Reference><Citation>Edwards JD, Rivanis C, Kun SS, Caughey AB, Keens TG. Costs of hospitalized ventilator-dependent children: differences between a ventilator ward and intensive care unit. Pediatr Pulmonol . 2011;46:356&#x2013;361.</Citation><ArticleIdList><ArticleId IdType="pubmed">21438169</ArticleId></ArticleIdList></Reference><Reference><Citation>Baker CD, Martin S, Thrasher J, Moore HM, Baker J, Abman SH. et al. a standardized discharge process decreases length of stay for ventilator-dependent children. Pediatrics . 2016;137:e20150637.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4811306</ArticleId><ArticleId IdType="pubmed">26966133</ArticleId></ArticleIdList></Reference><Reference><Citation>Chorney SR, Brown AF, Brooks RL, Bailey C, Whitney C, Sewell A. et al. Pediatric tracheostomy outcomes after development of a multidisciplinary airway team: a quality improvement initiative. OTO Open . 2021;5:2473974X211045615.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8488522</ArticleId><ArticleId IdType="pubmed">34616995</ArticleId></ArticleIdList></Reference><Reference><Citation>Tearl DK, Cox TJ, Hertzog JH. Hospital discharge of respiratory-technology-dependent children: role of a dedicated respiratory care discharge coordinator. Respir Care . 2006;51:744&#x2013;749.</Citation><ArticleIdList><ArticleId IdType="pubmed">16800908</ArticleId></ArticleIdList></Reference><Reference><Citation>Tolomeo CT, Major NE, Szondy MV, Bazzy-Asaad A. Standardizing care and parental training to improve training duration, referral frequency, and length of stay: our quality improvement project experience. J Pediatr Nurs . 2017;32:72&#x2013;79.</Citation><ArticleIdList><ArticleId IdType="pubmed">28341025</ArticleId></ArticleIdList></Reference><Reference><Citation>Hartnick C, Diercks G, De Guzman V, Hartnick E, Van Cleave J, Callans K. A quality study of family-centered care coordination to improve care for children undergoing tracheostomy and the quality of life for their caregivers. Int J Pediatr Otorhinolaryngol . 2017;99:107&#x2013;110.</Citation><ArticleIdList><ArticleId IdType="pubmed">28688550</ArticleId></ArticleIdList></Reference><Reference><Citation>Hotaling AJ, Zablocki H, Madgy DN. Pediatric tracheotomy discharge teaching: a comprehensive checklist format. Int J Pediatr Otorhinolaryngol . 1995;33:113&#x2013;126.</Citation><ArticleIdList><ArticleId IdType="pubmed">7499044</ArticleId></ArticleIdList></Reference><Reference><Citation>Wells S, Shermont H, Hockman G, Hamilton S, Abecassis L, Blanchette S. et al. Standardized tracheostomy education across the enterprise. J Pediatr Nurs . 2018;43:120&#x2013;126.</Citation><ArticleIdList><ArticleId IdType="pubmed">30477679</ArticleId></ArticleIdList></Reference><Reference><Citation>Enzer KG, Dawson JA, Langevin JA, Brinton JT, Baker CD. Medical and social factors associated with prolonged length of stay for chronically ventilated children. Pediatr Pulmonol . 2025;60:e27320.</Citation><ArticleIdList><ArticleId IdType="pubmed">39387834</ArticleId></ArticleIdList></Reference><Reference><Citation>Liao K, Chorney SR, Brown AB, Brooks RL, Sewell A, Bailey C. et al. The impact of socioeconomic disadvantage on pediatric tracheostomy outcomes. Laryngoscope . 2021;131:2603&#x2013;2609.</Citation><ArticleIdList><ArticleId IdType="pubmed">33860942</ArticleId></ArticleIdList></Reference><Reference><Citation>Johnson RF, Brown CM, Beams DR, Wang CS, Shah GB, Mitchell RB. et al. Racial influences on pediatric tracheostomy outcomes. Laryngoscope . 2022;132:1118&#x2013;1124.</Citation><ArticleIdList><ArticleId IdType="pubmed">34478158</ArticleId></ArticleIdList></Reference><Reference><Citation>Friesen TL, Zamora SM, Rahmanian R, Bundogji N, Brigger MT. Predictors of pediatric tracheostomy outcomes in the United States. Otolaryngol Head Neck Surg . 2020;163:591&#x2013;599.</Citation><ArticleIdList><ArticleId IdType="pubmed">32315254</ArticleId></ArticleIdList></Reference><Reference><Citation>Han SM, Watters KF, Hong CR, Edwards EM, Knell J, Morrow KA. et al. Tracheostomy in very low birth weight infants: a prospective multicenter study. Pediatrics . 2020;145:e20192371.</Citation><ArticleIdList><ArticleId IdType="pubmed">32098788</ArticleId></ArticleIdList></Reference><Reference><Citation>McPherson ML, Shekerdemian L, Goldsworthy M, Minard CG, Nelson CS, Stein F. et al. A decade of pediatric tracheostomies: indications, outcomes, and long-term prognosis. Pediatr Pulmonol . 2017;52:946&#x2013;953.</Citation><ArticleIdList><ArticleId IdType="pubmed">28263440</ArticleId></ArticleIdList></Reference><Reference><Citation>Prodhan P, Agarwal A, ElHassan NO, Bolin EH, Beam B, Garcia X. et al. Tracheostomy among infants with hypoplastic left heart syndrome undergoing cardiac operations: a multicenter analysis. Ann Thorac Surg . 2017;103:1308&#x2013;1314.</Citation><ArticleIdList><ArticleId IdType="pubmed">27865477</ArticleId></ArticleIdList></Reference><Reference><Citation>Tsuboi N, Ide K, Nishimura N, Nakagawa S, Morimoto N. Pediatric tracheostomy: survival and long-term outcomes. Int J Pediatr Otorhinolaryngol . 2016;89:81&#x2013;85.</Citation><ArticleIdList><ArticleId IdType="pubmed">27619034</ArticleId></ArticleIdList></Reference><Reference><Citation>Teplitzky TB, Brown AF, Brooks RL, Bailey CH, Whitney C, Sewell A. et al. Mortality among children with a tracheostomy. Laryngoscope . 2023;133:403&#x2013;409.</Citation><ArticleIdList><ArticleId IdType="pubmed">35357004</ArticleId></ArticleIdList></Reference><Reference><Citation>Pettitt-Schieber B, Mahendran G, Tey CS, Prickett KK. Risk factors for return visits in children discharged with tracheostomy. Int J Pediatr Otorhinolaryngol . 2021;150:110860.</Citation><ArticleIdList><ArticleId IdType="pubmed">34403974</ArticleId></ArticleIdList></Reference><Reference><Citation>Rogerson CM, Beardsley AL, Nitu ME, Cristea AI. Health care resource utilization for children requiring prolonged mechanical ventilation via tracheostomy. Respir Care . 2020;65:1147&#x2013;1153.</Citation><ArticleIdList><ArticleId IdType="pubmed">32019853</ArticleId></ArticleIdList></Reference><Reference><Citation>Tarfa RA, Morris J, Melder KL, McCoy JL, Tobey ABJ. Readmissions and mortality in pediatric tracheostomy patients: are we doing enough? Int J Pediatr Otorhinolaryngol . 2021;145:110704.</Citation><ArticleIdList><ArticleId IdType="pubmed">33882340</ArticleId></ArticleIdList></Reference><Reference><Citation>Johnson RF, Brown A, Brooks R. The family impact of having a child with a tracheostomy. Laryngoscope . 2021;131:911&#x2013;915.</Citation><ArticleIdList><ArticleId IdType="pubmed">32797676</ArticleId></ArticleIdList></Reference><Reference><Citation>Boroughs D, Dougherty JA. Decreasing accidental mortality of ventilator-dependent children at home: a call to action. Home Healthc Nurse . 2012;30:103&#x2013;111.</Citation><ArticleIdList><ArticleId IdType="pubmed">22306756</ArticleId></ArticleIdList></Reference><Reference><Citation>Edwards JD, Kun SS, Keens TG. Outcomes and causes of death in children on home mechanical ventilation via tracheostomy: an institutional and literature review. J Pediatr . 2010;157:955&#x2013;959.e2.</Citation><ArticleIdList><ArticleId IdType="pubmed">20713294</ArticleId></ArticleIdList></Reference><Reference><Citation>Akangire G, Taylor JB, McAnany S, Noel-MacDonnell J, Lachica C, Sampath V. et al. Respiratory, growth, and survival outcomes of infants with tracheostomy and ventilator dependence. Pediatr Res . 2021;90:381&#x2013;389.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7605149</ArticleId><ArticleId IdType="pubmed">33010793</ArticleId></ArticleIdList></Reference><Reference><Citation>Ortmann LA, Manimtim WM, Lachica CI. Outcomes of tracheostomy in children requiring surgery for congenital heart disease. Pediatr Cardiol . 2017;38:296&#x2013;301.</Citation><ArticleIdList><ArticleId IdType="pubmed">27872994</ArticleId></ArticleIdList></Reference><Reference><Citation>Funamura JL, Yuen S, Kawai K, Gergin O, Adil E, Rahbar R. et al. Characterizing mortality in pediatric tracheostomy patients. Laryngoscope . 2017;127:1701&#x2013;1706.</Citation><ArticleIdList><ArticleId IdType="pubmed">27808411</ArticleId></ArticleIdList></Reference><Reference><Citation>Kun SS, Nakamura CT, Ripka JF, Davidson Ward SL, Keens TG. Home ventilator low-pressure alarms fail to detect accidental decannulation with pediatric tracheostomy tubes. Chest . 2001;119:562&#x2013;564.</Citation><ArticleIdList><ArticleId IdType="pubmed">11171738</ArticleId></ArticleIdList></Reference><Reference><Citation>Pajor NM, Simpson RC, Liu P-H, Arnsperger AL, Beltran-Ale GJ. Home ventilator alarm function in simulated decannulation with pediatric-sized tracheostomy tubes. Pediatr Pulmonol . 2024;59:3770&#x2013;3773.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC11600991</ArticleId><ArticleId IdType="pubmed">39078253</ArticleId></ArticleIdList></Reference><Reference><Citation>C&#xf4;t&#xe9; A, CTS Pediatric Home Ventilation Guidelines Panel Section 4: home monitoring and follow-up of home-ventilated children. Can J Respir Crit Care Sleep Med . 2018;2:23&#x2013;31.</Citation></Reference><Reference><Citation>Amin R, Parshuram C, Kelso J, Lim A, Mateos D, Mitchell I. et al. Caregiver knowledge and skills to safely care for pediatric tracheostomy ventilation at home. Pediatr Pulmonol . 2017;52:1610&#x2013;1615.</Citation><ArticleIdList><ArticleId IdType="pubmed">28984426</ArticleId></ArticleIdList></Reference><Reference><Citation>Israelsson-Skogsberg A, Lindahl B. Personal care assistants&#x2019; experiences of caring for people on home mechanical ventilation. Scand J Caring Sci . 2017;31:27&#x2013;36.</Citation><ArticleIdList><ArticleId IdType="pubmed">27126367</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobotka SA, Dholakia A, Agrawal RK, Berry JG, Brenner M, Graham RJ. et al. Discharge practices for children with home mechanical ventilation across the United States: key-informant perspectives. Ann Am Thorac Soc . 2020;17:1424&#x2013;1430.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7640721</ArticleId><ArticleId IdType="pubmed">32780599</ArticleId></ArticleIdList></Reference><Reference><Citation>Tibballs J, Henning R, Robertson CF, Massie J, Hochmann M, Carter B. et al. A home respiratory support programme for children by parents and layperson carers. J Paediatr Child Health . 2010;46:57&#x2013;62.</Citation><ArticleIdList><ArticleId IdType="pubmed">19943860</ArticleId></ArticleIdList></Reference><Reference><Citation>Downes J, Parra M. In: Long-term mechanical ventilation. Hill NS, editor. New York, New York: Dekker; 2001. Costs and reimbursement issues in long-term mechanical ventilation of patients at home; pp. 353&#x2013;374.</Citation></Reference><Reference><Citation>Sobotka SA, Foster C, Lynch E, Hird-McCorry L, Goodman DM. Attributable delay of discharge for children with long-term mechanical ventilation. J Pediatr . 2019;212:166&#x2013;171.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7290238</ArticleId><ArticleId IdType="pubmed">31153586</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobotka SA, Hall DE, Thurm C, Gay J, Berry JG. Home health care utilization in children with Medicaid. Pediatrics . 2022;149:e2021050534.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9003864</ArticleId><ArticleId IdType="pubmed">35028664</ArticleId></ArticleIdList></Reference><Reference><Citation>Sobotka SA, Lynch E, Laudon S, Whitmore K. Home health nurses for children with invasive mechanical ventilation (IMV): perspectives on gaps and opportunities for recruitment. J Pediatr Nurs . 2023;72:e158&#x2013;e165.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10680155</ArticleId><ArticleId IdType="pubmed">37394300</ArticleId></ArticleIdList></Reference><Reference><Citation>Flynn AP, Carter B, Bray L, Donne AJ. Parents&#x2019; experiences and views of caring for a child with a tracheostomy: a literature review. Int J Pediatr Otorhinolaryngol . 2013;77:1630&#x2013;1634.</Citation><ArticleIdList><ArticleId IdType="pubmed">23953483</ArticleId></ArticleIdList></Reference><Reference><Citation>Boettcher J, Denecke J, Barkmann C, Wiegand-Grefe S. Quality of life and mental health in mothers and fathers caring for children and adolescents with rare diseases requiring long-term mechanical ventilation. Int J Environ Res Public Health . 2020;17:8975.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7731445</ArticleId><ArticleId IdType="pubmed">33276595</ArticleId></ArticleIdList></Reference><Reference><Citation>Chandran A, Sikka K, Thakar A, Lodha R, Irugu DVK, Kumar R. et al. The impact of pediatric tracheostomy on the quality of life of caregivers. Int J Pediatr Otorhinolaryngol . 2021;149:110854.</Citation><ArticleIdList><ArticleId IdType="pubmed">34352673</ArticleId></ArticleIdList></Reference><Reference><Citation>Meltzer LJ, Boroughs DS, Downes JJ. The relationship between home nursing coverage, sleep, and daytime functioning in parents of ventilator-assisted children. J Pediatr Nurs . 2010;25:250&#x2013;257.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2932665</ArticleId><ArticleId IdType="pubmed">20620805</ArticleId></ArticleIdList></Reference><Reference><Citation>Page BF, Hinton L, Harrop E, Vincent C. The challenges of caring for children who require complex medical care at home: &#x2018;The go between for everyone is the parent and as the parent that&#x2019;s an awful lot of responsibility. Health Expect . 2020;23:1144&#x2013;1154.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7696130</ArticleId><ArticleId IdType="pubmed">32542954</ArticleId></ArticleIdList></Reference><Reference><Citation>Toly VB, Musil CM, Carl JC. Families with children who are technology dependent: normalization and family functioning. West J Nurs Res . 2012;34:52&#x2013;71.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3271785</ArticleId><ArticleId IdType="pubmed">21148462</ArticleId></ArticleIdList></Reference><Reference><Citation>Hirt E, Wright A, Kehring A, Wang Y, Torano V, Boles J. &#x201c;Fitting the pieces together&#x201d;: the experiences of caregivers of children with medical complexity. Hosp Pediatr . 2023;13:1056&#x2013;1066.</Citation><ArticleIdList><ArticleId IdType="pubmed">37916264</ArticleId></ArticleIdList></Reference><Reference><Citation>Kellom KS, Wilson-Hall CL, Strane D, Wu K, Matone M. Employment and leave while parenting children with medical complexity. Fam Syst Health . 2023;41:168&#x2013;181.</Citation><ArticleIdList><ArticleId IdType="pubmed">37166914</ArticleId></ArticleIdList></Reference><Reference><Citation>Thomson J, Shah SS, Simmons JM, Sauers-Ford HS, Brunswick S, Hall D. et al. Financial and social hardships in families of children with medical complexity. J Pediatr . 2016;172:187&#x2013;193.e1.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4846519</ArticleId><ArticleId IdType="pubmed">26897040</ArticleId></ArticleIdList></Reference><Reference><Citation>Baddour K, Mady LJ, Schwarzbach HL, Sabik LM, Thomas TH, McCoy JL. et al. Exploring caregiver burden and financial toxicity in caregivers of tracheostomy-dependent children. Int J Pediatr Otorhinolaryngol . 2021;145:110713.</Citation><ArticleIdList><ArticleId IdType="pubmed">33882339</ArticleId></ArticleIdList></Reference><Reference><Citation>Edwards JD, Morris MC, Nelson JE, Panitch HB, Miller RL. Decisions around long-term ventilation for children: perspectives of directors of pediatric home ventilation programs. Ann Am Thorac Soc . 2017;14:1539&#x2013;1547.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5718568</ArticleId><ArticleId IdType="pubmed">28530141</ArticleId></ArticleIdList></Reference><Reference><Citation>Foster CC, Kwon S, Blakely C, Carter K, Sobotka SA, Goodman DM. et al. Paying family medical caregivers for children&#x2019;s home healthcare in Colorado: a working Medicaid model. J Pediatr . 2023;261:113347.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10412725</ArticleId><ArticleId IdType="pubmed">36775189</ArticleId></ArticleIdList></Reference><Reference><Citation>Truitt BA, Ghosh RN, Price EW, Du C, Bai S, Greene D. et al. Family caregiver knowledge in the outpatient management of pediatric tracheostomy-related emergencies. Clin Pediatr (Phila) . 2025;64:936&#x2013;943.</Citation><ArticleIdList><ArticleId IdType="pubmed">39707594</ArticleId></ArticleIdList></Reference><Reference><Citation>Amin R, Verma R, Bai YQ, Guttmann A, Cohen E, Gershon AS. et al. Healthcare use and costs in children receiving home mechanical ventilation in Ontario: a 14-year cohort study. Ann Am Thorac Soc . 2024;21:1421&#x2013;1431.</Citation><ArticleIdList><ArticleId IdType="pubmed">38959407</ArticleId></ArticleIdList></Reference><Reference><Citation>Wasserman MG, Graham RJ, Mansbach JM. Airway bacterial colonization, biofilms and blooms, and acute respiratory infection. Pediatr Crit Care Med . 2022;23:e476&#x2013;e482.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9529803</ArticleId><ArticleId IdType="pubmed">35767569</ArticleId></ArticleIdList></Reference><Reference><Citation>Graf JM, Montagnino BA, Hueckel R, McPherson ML. Pediatric tracheostomies: a recent experience from one academic center. Pediatr Crit Care Med . 2008;9:96&#x2013;100.</Citation><ArticleIdList><ArticleId IdType="pubmed">18477921</ArticleId></ArticleIdList></Reference><Reference><Citation>Zhu H, Das P, Roberson DW, Jang J, Skinner ML, Paine M. et al. Hospitalizations in children with preexisting tracheostomy: a national perspective. Laryngoscope . 2015;125:462&#x2013;468.</Citation><ArticleIdList><ArticleId IdType="pubmed">24986601</ArticleId></ArticleIdList></Reference><Reference><Citation>Tan CY, Chiu NC, Lee KS, Chi H, Huang FY, Huang DT. et al. Respiratory tract infections in children with tracheostomy. J Microbiol Immunol Infect . 2020;53:315&#x2013;320.</Citation><ArticleIdList><ArticleId IdType="pubmed">30131258</ArticleId></ArticleIdList></Reference><Reference><Citation>Camargo LF, De Marco FV, Barbas CS, Hoelz C, Bueno MA, Rodrigues M, Jr, et al. Ventilator associated pneumonia: comparison between quantitative and qualitative cultures of tracheal aspirates. Crit Care . 2004;8:R422&#x2013;R430.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC1065063</ArticleId><ArticleId IdType="pubmed">15566587</ArticleId></ArticleIdList></Reference><Reference><Citation>Raveendra N, Rathnakara SH, Haswani N, Subramaniam V. Bacterial biofilms on tracheostomy tubes. Indian J Otolaryngol Head Neck Surg . 2022;74:4995&#x2013;4999.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8100750</ArticleId><ArticleId IdType="pubmed">33972925</ArticleId></ArticleIdList></Reference><Reference><Citation>Solomon DH, Wobb J, Buttaro BA, Truant A, Soliman AM. Characterization of bacterial biofilms on tracheostomy tubes. Laryngoscope . 2009;119:1633&#x2013;1638.</Citation><ArticleIdList><ArticleId IdType="pubmed">19504601</ArticleId></ArticleIdList></Reference><Reference><Citation>Bohm N, Sprenger E, Sandritter W. The Feulgen reaction with acriflavine-SO2: a comparison between absorption and fluorescence cytophotometry on the basis of hydrolysis curves [in German] Acta Histochem . 1970;35:324&#x2013;329.</Citation><ArticleIdList><ArticleId IdType="pubmed">4986601</ArticleId></ArticleIdList></Reference><Reference><Citation>Shea YR. In: Clinical microbiology procedures handbook. Isenberg HD, editor. Washington, DC: ASM Press; 1997. Specimen collection and transport; pp. 16&#x2013;30.</Citation></Reference><Reference><Citation>James L, Hoppe-Bauer JE. In: Clinical microbiology procedures handbook. Isenberg HD, editor. Washington, DC: ASM Press; 1997. Processing and interpretation of lower respiratory tract specimens; pp. 1&#x2013;15.</Citation></Reference><Reference><Citation>Brook I. Bacterial colonization, tracheobronchitis, and pneumonia following tracheostomy and long-term intubation in pediatric patients. Chest . 1979;76:420&#x2013;424.</Citation><ArticleIdList><ArticleId IdType="pubmed">477429</ArticleId></ArticleIdList></Reference><Reference><Citation>Cline JM, Woods CR, Ervin SE, Rubin BK, Kirse DJ. Surveillance tracheal aspirate cultures do not reliably predict bacteria cultured at the time of an acute respiratory infection in children with tracheostomy tubes. Chest . 2012;141:625&#x2013;631.</Citation><ArticleIdList><ArticleId IdType="pubmed">21436240</ArticleId></ArticleIdList></Reference><Reference><Citation>Garcia-Boyano M, Alcala FJC, Alonso AR, de Villalta MGF, Alonso OZ, Retolaza IR. et al. Microbiological patterns of bacterial infections in tracheostomized children: reducing uncertainty in continuous care. Pediatr Pulmonol . 2023;58:3507&#x2013;3515.</Citation><ArticleIdList><ArticleId IdType="pubmed">37701951</ArticleId></ArticleIdList></Reference><Reference><Citation>Morar P, Singh V, Jones AS, Hughes J, van Saene R. Impact of tracheotomy on colonization and infection of lower airways in children requiring long-term ventilation: a prospective observational cohort study. Chest . 1998;113:77&#x2013;85.</Citation><ArticleIdList><ArticleId IdType="pubmed">9440572</ArticleId></ArticleIdList></Reference><Reference><Citation>Orhan &#xd6;, Y&#x131;lmaz K, G&#xf6;z&#xfc; Pirin&#xe7;&#xe7;io&#x11f;lu A, Solmaz M, Karako&#xe7; F. Antibiotic susceptibility of microorganisms grown in tracheal aspirate cultures of pediatric intensive care patients. Cureus . 2022;14:e26934.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9379867</ArticleId><ArticleId IdType="pubmed">35989826</ArticleId></ArticleIdList></Reference><Reference><Citation>Ormsby J, Conrad P, Blumenthal J, Carpenter J, Jones S, Sandora TJ. et al. Practice improvement for standardized evaluation and management of acute tracheitis in mechanically ventilated children. Pediatr Qual Saf . 2021;6:e368.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7775031</ArticleId><ArticleId IdType="pubmed">33403314</ArticleId></ArticleIdList></Reference><Reference><Citation>Steuart R, Ale GB, Woolums A, Xia N, Benscoter D, Russell CJ. et al. Respiratory culture organism isolation and test characteristics in children with tracheostomies with and without acute respiratory infection. Pediatr Pulmonol . 2023;58:1481&#x2013;1491.</Citation><ArticleIdList><ArticleId IdType="pubmed">36751142</ArticleId></ArticleIdList></Reference><Reference><Citation>Triplett AD, Rigdon J, Auriemma J, Darby J, Ervin S, Haberman C. et al. Diagnosis of bacterial tracheostomy-associated respiratory tract infections in pediatric patients. Hosp Pediatr . 2023;13:308&#x2013;318.</Citation><ArticleIdList><ArticleId IdType="pubmed">36974612</ArticleId></ArticleIdList></Reference><Reference><Citation>Russell CJ, Simon TD, Mamey MR, Newth CJL, Neely MN. Pseudomonas aeruginosa and post-tracheotomy bacterial respiratory tract infection readmissions. Pediatr Pulmonol . 2017;52:1212&#x2013;1218.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5561001</ArticleId><ArticleId IdType="pubmed">28440922</ArticleId></ArticleIdList></Reference><Reference><Citation>Perez-Losada M, Graham RJ, Coquillette M, Jafarey A, Castro-Nallar E, Aira M. et al. Tracheal microbiota in patients with a tracheostomy before, during and after an acute respiratory infection. Pediatr Infect Dis J . 2018;37:e269&#x2013;e271.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6097614</ArticleId><ArticleId IdType="pubmed">29462107</ArticleId></ArticleIdList></Reference><Reference><Citation>Perez-Losada M, Graham RJ, Coquillette M, Jafarey A, Castro-Nallar E, Aira M. et al. The temporal dynamics of the tracheal microbiome in tracheostomised patients with and without lower respiratory infections. PLoS One . 2017;12:e0182520.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5552036</ArticleId><ArticleId IdType="pubmed">28796800</ArticleId></ArticleIdList></Reference><Reference><Citation>McCaleb R, Warren RH, Willis D, Maples HD, Bai S, O&#x2019;Brien CE. Description of respiratory microbiology of children with long-term tracheostomies. Respir Care . 2016;61:447&#x2013;452.</Citation><ArticleIdList><ArticleId IdType="pubmed">26670471</ArticleId></ArticleIdList></Reference><Reference><Citation>Yoshida K, Hatachi T, Okamoto Y, Aoki Y, Kyogoku M, Moon Miyashita K. et al. Application of multiplex polymerase chain reaction for pathogen identification and antibiotic use in children with respiratory infections in a PICU. Pediatr Crit Care Med . 2021;22:e644&#x2013;e648.</Citation><ArticleIdList><ArticleId IdType="pubmed">34224509</ArticleId></ArticleIdList></Reference><Reference><Citation>U.S. Department of Health and Human Services. Comparing prescription drugs in the U.S. and other countries: prices and availability. 2024. https://aspe.hhs.gov/reports/comparing-prescription-drugs</Citation></Reference><Reference><Citation>Cramer K.Average cost of antibiotics without insurance. 2024. https://bettercare.com/costs/cost-of-antibiotics-without-insurance</Citation></Reference><Reference><Citation>Gergin O, Adil E, Kawai K, Watters K, Moritz E, Rahbar R. Routine airway surveillance in pediatric tracheostomy patients. Int J Pediatr Otorhinolaryngol . 2017;97:1&#x2013;4.</Citation><ArticleIdList><ArticleId IdType="pubmed">28483217</ArticleId></ArticleIdList></Reference><Reference><Citation>Wood RE. Evaluation of the upper airway in children. Curr Opin Pediatr . 2008;20:266&#x2013;271.</Citation><ArticleIdList><ArticleId IdType="pubmed">18475094</ArticleId></ArticleIdList></Reference><Reference><Citation>Sharif-Askary B, Cheng TZ, Brown CS, Campbell JC, Yong Ji KS, Raynor EM. Airway findings in children with tracheostomies: when is diagnostic bronchoscopy and laryngoscopy indicated? Int J Pediatr Otorhinolaryngol . 2019;117:73&#x2013;77.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6333488</ArticleId><ArticleId IdType="pubmed">30579093</ArticleId></ArticleIdList></Reference><Reference><Citation>Esianor BI, Jiang ZY, Diggs P, Yuksel S, Roy S, Huang Z. Pediatric tracheostomies in patients less than 2 years of age: analysis of complications and long-term follow-up. Am J Otolaryngol . 2020;41:102368.</Citation><ArticleIdList><ArticleId IdType="pubmed">31859007</ArticleId></ArticleIdList></Reference><Reference><Citation>Chauhan N, Mohindra S, Patro SK, Mathew PJ, Mathew J. Investigation of the paediatric tracheostomy decannulation: factors affecting outcome. Iran J Otorhinolaryngol . 2020;32:139&#x2013;145.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7302532</ArticleId><ArticleId IdType="pubmed">32596172</ArticleId></ArticleIdList></Reference><Reference><Citation>Picerno NA, Bent JP, Hammond J, Pennington W, 3rd, Guill MF, Hudson VL. et al. Is tracheotomy decannulation possible in oxygen-dependent children? Otolaryngol Head Neck Surg . 2000;123:263&#x2013;268.</Citation><ArticleIdList><ArticleId IdType="pubmed">10964302</ArticleId></ArticleIdList></Reference><Reference><Citation>Veder LL, Joosten KFM, Zondag MD, Pullens B. Indications and clinical outcome in pediatric tracheostomy: lessons learned. Int J Pediatr Otorhinolaryngol . 2021;151:110927.</Citation><ArticleIdList><ArticleId IdType="pubmed">34592656</ArticleId></ArticleIdList></Reference><Reference><Citation>Tunkel DE, McColley SA, Baroody FM, Marcus CL, Carroll JL, Loughlin GM. Polysomnography in the evaluation of readiness for decannulation in children. Arch Otolaryngol Head Neck Surg . 1996;122:721&#x2013;724.</Citation><ArticleIdList><ArticleId IdType="pubmed">8663942</ArticleId></ArticleIdList></Reference><Reference><Citation>Richter A, Chen DW, Ongkasuwan J. Surveillance direct laryngoscopy and bronchoscopy in children with tracheostomies. Laryngoscope . 2015;125:2393&#x2013;2397.</Citation><ArticleIdList><ArticleId IdType="pubmed">25780899</ArticleId></ArticleIdList></Reference><Reference><Citation>Wirtz N, Tibesar RJ, Lander T, Sidman J. A pediatric decannulation protocol: outcomes of a 10-year experience. Otolaryngol Head Neck Surg . 2016;154:731&#x2013;734.</Citation><ArticleIdList><ArticleId IdType="pubmed">26884371</ArticleId></ArticleIdList></Reference><Reference><Citation>Wilcox LJ, Weber BC, Cunningham TD, Baldassari CM. Tracheostomy complications in institutionalized children with long-term tracheostomy and ventilator dependence. Otolaryngol Head Neck Surg . 2016;154:725&#x2013;730.</Citation><ArticleIdList><ArticleId IdType="pubmed">26884369</ArticleId></ArticleIdList></Reference><Reference><Citation>Bandyopadhyay A, Cristea AI, Davis SD, Ackerman VL, Slaven JE, Jalou HE. et al. Retrospective analysis of factors leading to tracheostomy decannulation failure: a single institution experience. Ann Am Thorac Soc . 2016;14:70&#x2013;75.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5461993</ArticleId><ArticleId IdType="pubmed">27768853</ArticleId></ArticleIdList></Reference><Reference><Citation>Zawadzka-G&#x142;os L, Chmielik M, Gabryszewska A. The endoscopic treatment of postintubation laryngeal stenosis in children, using argon plasma coagulation. Int J Pediatr Otorhinolaryngol . 2003;67:609&#x2013;612.</Citation><ArticleIdList><ArticleId IdType="pubmed">12745153</ArticleId></ArticleIdList></Reference><Reference><Citation>Smith MM, de Alarcon A, Meinzen-Derr J, Cohen AP, Born H, Wilcox LJ. et al. Timing of initial posttracheostomy surveillance endoscopy in pediatric patients. Otolaryngol Head Neck Surg . 2020;162:362&#x2013;366.</Citation><ArticleIdList><ArticleId IdType="pubmed">31959060</ArticleId></ArticleIdList></Reference><Reference><Citation>Kraft S, Patel S, Sykes K, Nicklaus P, Gratny L, Wei JL. Practice patterns after tracheotomy in infants younger than 2 years. Arch Otolaryngol Head Neck Surg . 2011;137:670&#x2013;674.</Citation><ArticleIdList><ArticleId IdType="pubmed">21502466</ArticleId></ArticleIdList></Reference><Reference><Citation>Kharasch VS, Dumas HM, Haley SM, Sawicki GS, Ludlow LH, Wright EA. et al. Bronchoscopy findings in children and young adults with tracheostomy due to congenital anomalies and neurological impairment. J Pediatr Rehabil Med . 2008;1:137&#x2013;143.</Citation><ArticleIdList><ArticleId IdType="pubmed">21791757</ArticleId></ArticleIdList></Reference><Reference><Citation>Henningfeld JK, Maletta K, Ren B, Richards KL, Wegner C, D&#x2019;Andrea LA. Liberation from home mechanical ventilation and decannulation in children. Pediatr Pulmonol . 2016;51:838&#x2013;849.</Citation><ArticleIdList><ArticleId IdType="pubmed">26934657</ArticleId></ArticleIdList></Reference><Reference><Citation>Bashir A, Henningfeld JK, Thompson NE, D&#x2019;Andrea LA. Polysomnography provides useful clinical information in the liberation from respiratory technology: a retrospective review. Pediatr Pulmonol . 2018;53:1549&#x2013;1558.</Citation><ArticleIdList><ArticleId IdType="pubmed">30350930</ArticleId></ArticleIdList></Reference><Reference><Citation>Cristea AI, Baker CD. To PSG or not to PSG: that is the question. Pediatr Pulmonol . 2020;55:9&#x2013;10.</Citation><ArticleIdList><ArticleId IdType="pubmed">31496130</ArticleId></ArticleIdList></Reference><Reference><Citation>Maslan JT, Feehs KR, Kirse DJ. Considerations for the successful decannulation of the pediatric patient: a single surgeon&#x2019;s experience. Int J Pediatr Otorhinolaryngol . 2017;98:116&#x2013;120.</Citation><ArticleIdList><ArticleId IdType="pubmed">28583487</ArticleId></ArticleIdList></Reference><Reference><Citation>Seligman KL, Liming BJ, Smith RJH. Pediatric tracheostomy decannulation: 11-year experience. Otolaryngol Head Neck Surg . 2019;161:499&#x2013;506.</Citation><ArticleIdList><ArticleId IdType="pubmed">30987524</ArticleId></ArticleIdList></Reference><Reference><Citation>Cristea AI, Jalou HE, Givan DC, Davis SD, Slaven JE, Ackerman VL. Use of polysomnography to assess safe decannulation in children. Pediatr Pulmonol . 2016;51:796&#x2013;802.</Citation><ArticleIdList><ArticleId IdType="pubmed">26919704</ArticleId></ArticleIdList></Reference><Reference><Citation>Beaton F, Baird TA, Clement WA, Kubba H. Tracheostomy decannulation at the Royal Hospital for Sick Children in Glasgow: predictors of success and failure. Int J Pediatr Otorhinolaryngol . 2016;90:204&#x2013;209.</Citation><ArticleIdList><ArticleId IdType="pubmed">27729134</ArticleId></ArticleIdList></Reference><Reference><Citation>Paglietti MG, Porcaro F, Sovtic A, Cherchi C, Verrillo E, Pavone M. et al. Decannulation in children affected by congenital central hypoventilation syndrome: a proposal of an algorithm from two European centers. Pediatr Pulmonol . 2019;54:1663&#x2013;1669.</Citation><ArticleIdList><ArticleId IdType="pubmed">31313536</ArticleId></ArticleIdList></Reference><Reference><Citation>Gurbani N, Promyothin U, Rutter M, Fenchel MC, Szczesniak RD, Simakajornboon N. Using polysomnography and airway evaluation to predict successful decannulation in children. Otolaryngol Head Neck Surg . 2015;153:649&#x2013;655.</Citation><ArticleIdList><ArticleId IdType="pubmed">26124266</ArticleId></ArticleIdList></Reference><Reference><Citation>Kasi AS, Anand N, Harford KL, Landry AM, Alfonso KP, Taylor M. et al. Tracheostomy decannulation to noninvasive positive pressure ventilation in congenital central hypoventilation syndrome. Sleep Breath . 2022;26:133&#x2013;139.</Citation><ArticleIdList><ArticleId IdType="pubmed">33852109</ArticleId></ArticleIdList></Reference><Reference><Citation>Lee J, Soma MA, Teng AY, Thambipillay G, Waters KA, Cheng AT. The role of polysomnography in tracheostomy decannulation of the paediatric patient. Int J Pediatr Otorhinolaryngol . 2016;83:132&#x2013;136.</Citation><ArticleIdList><ArticleId IdType="pubmed">26968066</ArticleId></ArticleIdList></Reference><Reference><Citation>Lind M, Lopez JJ, Merrill T, Cooper J, Jatana KR, Justice L. et al. Impact of functional status and medical comorbidities on tracheostomy decannulation in pediatric patients. J Pediatr Rehabil Med . 2017;10:89&#x2013;94.</Citation><ArticleIdList><ArticleId IdType="pubmed">28582884</ArticleId></ArticleIdList></Reference><Reference><Citation>Morrow AK, Tunkel DE, Collaco JM, McGrath-Morrow SA, Lam JC, Accardo JA. et al. The role of polysomnography in decannulation of children with brain and spinal cord injuries. Pediatr Pulmonol . 2019;54:333&#x2013;341.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6918457</ArticleId><ArticleId IdType="pubmed">30548191</ArticleId></ArticleIdList></Reference><Reference><Citation>Mukherjee B, Bais AS, Bajaj Y. Role of polysomnography in tracheostomy decannulation in the paediatric patient. J Laryngol Otol . 1999;113:442&#x2013;445.</Citation><ArticleIdList><ArticleId IdType="pubmed">10505158</ArticleId></ArticleIdList></Reference><Reference><Citation>Pozzi M, Galbiati S, Locatelli F, Clementi E, Strazzer S. Performance of a tracheostomy removal protocol for pediatric patients in rehabilitation after acquired brain injury: factors associated with timing and possibility of decannulation. Pediatr Pulmonol . 2017;52:1509&#x2013;1517.</Citation><ArticleIdList><ArticleId IdType="pubmed">28950420</ArticleId></ArticleIdList></Reference><Reference><Citation>Prickett KK, Sobol SE. Inpatient observation for elective decannulation of pediatric patients with tracheostomy. JAMA Otolaryngol Head Neck Surg . 2015;141:120&#x2013;125.</Citation><ArticleIdList><ArticleId IdType="pubmed">25429439</ArticleId></ArticleIdList></Reference><Reference><Citation>Quinlan C, Piccone J, Kim JY, Beck S, Brooks L, Chandy-Patel R. et al. The role of polysomnography in tracheostomy decannulation of children with bronchopulmonary dysplasia [abstract] Ann Am Thorac Soc . 2019;199:A3885.</Citation><ArticleIdList><ArticleId IdType="pubmed">31424180</ArticleId></ArticleIdList></Reference><Reference><Citation>Robison JG, Thottam PJ, Greenberg LL, Maguire RC, Simons JP, Mehta DK. Role of polysomnography in the development of an algorithm for planning tracheostomy decannulation. Otolaryngol Head Neck Surg . 2015;152:180&#x2013;184.</Citation><ArticleIdList><ArticleId IdType="pubmed">25389316</ArticleId></ArticleIdList></Reference><Reference><Citation>Tkachenko N, Singh K, Abreu N, Morse AM, Day C, Fitzgerald K. et al. Establishing a role for polysomnography in hospitalized children. Pediatr Neurol . 2016;57:39&#x2013;45.e1.</Citation><ArticleIdList><ArticleId IdType="pubmed">26774552</ArticleId></ArticleIdList></Reference><Reference><Citation>Xiao L, Kaspy K, Zielinski D, Amin R. Pediatric tracheostomy tube decannulation with or without polysomnography: a PRO-CON debate. Pediatr Pulmonol . 2022;57:609&#x2013;615.</Citation><ArticleIdList><ArticleId IdType="pubmed">34825785</ArticleId></ArticleIdList></Reference><Reference><Citation>Henry O, Brito A, Lloyd MC, Miller R, Weaver E, Upender R. A model for sleep apnea management in underserved patient populations. J Prim Care Community Health . 2022;13:21501319211068969.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8771751</ArticleId><ArticleId IdType="pubmed">35040343</ArticleId></ArticleIdList></Reference><Reference><Citation>Ministry of Health and Long-term Care. Schedule of facility costs for integrated community health services centre under the Integrated Community Health Services Centres Act. 2024. https://www.ontario.ca/files/2024-05/moh-ohip-schedule-of-facility-costs-2024-05-23.pdf</Citation></Reference><Reference><Citation>Zabih W, Holler T, Syed F, Russell L, Allegro J, Amin R. The use of speaking valves in children with tracheostomy tubes. Respir Care . 2017;62:1594&#x2013;1601.</Citation><ArticleIdList><ArticleId IdType="pubmed">28928262</ArticleId></ArticleIdList></Reference><Reference><Citation>Lichtman SW, Birnbaum IL, Sanfilippo MR, Pellicone JT, Damon WJ, King ML. Effect of a tracheostomy speaking valve on secretions, arterial oxygenation, and olfaction: a quantitative evaluation. J Speech Hear Res . 1995;38:549&#x2013;555.</Citation><ArticleIdList><ArticleId IdType="pubmed">7674646</ArticleId></ArticleIdList></Reference><Reference><Citation>Ongkasuwan J, Turk CL, Rappazzo CA, Lavergne KA, Smith EO, Friedman EM. The effect of a speaking valve on laryngeal aspiration and penetration in children with tracheotomies. Laryngoscope . 2014;124:1469&#x2013;1474.</Citation><ArticleIdList><ArticleId IdType="pubmed">24122747</ArticleId></ArticleIdList></Reference><Reference><Citation>Eichar BW, Kaffenberger TM, McCoy JL, Padia RK, Muzumdar H, Tobey ABJ. Effect of speaking valves on tracheostomy decannulation. Int Arch Otorhinolaryngol . 2024;28:e157&#x2013;e164.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10843928</ArticleId><ArticleId IdType="pubmed">38322435</ArticleId></ArticleIdList></Reference><Reference><Citation>Ames SG, Delaney RK, Houtrow AJ, Delgado-Corcoran C, Alvey J, Watt MH. et al. Perceived disability-based discrimination in health care for children with medical complexity. Pediatrics . 2023;152:e2022060975.</Citation><ArticleIdList><ArticleId IdType="pubmed">37357731</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Automated"><PMID Version="1">35758388</PMID><DateCompleted><Year>2022</Year><Month>06</Month><Day>28</Day></DateCompleted><DateRevised><Year>2022</Year><Month>11</Month><Day>03</Day></DateRevised><Article PubModel="Electronic"><Journal><ISSN IssnType="Electronic">1536-5964</ISSN><JournalIssue CitedMedium="Internet"><Volume>101</Volume><Issue>25</Issue><PubDate><Year>2022</Year><Month>Jun</Month><Day>24</Day></PubDate></JournalIssue><Title>Medicine</Title><ISOAbbreviation>Medicine (Baltimore)</ISOAbbreviation></Journal><ArticleTitle>ABCDE and ABCDEF care bundles: A systematic review of the implementation process in intensive care units.</ArticleTitle><Pagination><StartPage>e29499</StartPage><MedlinePgn>e29499</MedlinePgn></Pagination><ELocationID EIdType="pii" ValidYN="Y">e29499</ELocationID><ELocationID EIdType="doi" ValidYN="Y">10.1097/MD.0000000000029499</ELocationID><Abstract><AbstractText Label="BACKGROUND" NlmCategory="BACKGROUND">The ABCDE (Awakening and Breathing Coordination of daily sedation and ventilator removal trials, Delirium monitoring and management, and Early mobility and exercise) and ABCDEF (Assessment, prevent and manage pain, Both spontaneous awakening and spontaneous breathing trials, Choice of analgesia and sedation, assess, prevent and manage Delirium, Early mobility and exercise, Family engagement) care bundles consist of small sets of evidence-based interventions and are part of the science behind Intensive Care Unit (ICU) liberation. This review sought to analyse the process of implementation of ABCDE and ABCDEF care bundles in ICUs, identifying barriers, facilitators and changes in perception and attitudes of healthcare professionals; and to estimate care bundle effectiveness and safety.</AbstractText><AbstractText Label="METHODS" NlmCategory="METHODS">We selected qualitative and quantitative studies addressing the implementation of ABCDE and ABCDEF bundles in the ICU, identified on MEDLINE, Embase, CINAHL, The Cochrane Library, Web of Science, Epistemonikos, PsycINFO, Virtual Health Library and Open Grey, without restriction on language or date of publication, up to June 2018. The outcomes measured were ICU and hospital length of stay; mechanical ventilation time; incidence and prevalence of delirium or coma; level of agitation and sedation; early mobilization; mortality in ICU and hospital; change in perception, attitude or behaviour of the stakeholders; and change in knowledge of health professionals. Two reviewers independently selected the studies, performed data extraction, and assessed risk of bias and methodological quality. A meta-analysis of random effects was performed.</AbstractText><AbstractText Label="RESULTS" NlmCategory="RESULTS">Twenty studies were included, 13 of which had a predominantly qualitative and 7 a quantitative design (31,604 participants). The implementation strategies were categorized according to the taxonomy developed by the Cochrane Effective Practice and Organization of Care Group and eighty strategies were identified. The meta-analysis results showed that implementation of the bundles may reduce length of ICU stay, mechanical ventilation time, delirium, ICU and hospital mortality, and promoted early mobilization in critically-ill patients.</AbstractText><AbstractText Label="CONCLUSIONS" NlmCategory="CONCLUSIONS">: This study can contribute to the planning and execution of the implementation process of ABCDE and ABCDEF care bundles in ICUs. However, the effectiveness and safety of these bundles need to be corroborated by further studies with greater methodological rigor.</AbstractText><AbstractText Label="PROTOCOL REGISTRATION" NlmCategory="BACKGROUND">PROSPERO CRD42019121307.</AbstractText><CopyrightInformation>Copyright &#xa9; 2022 the Author(s). Published by Wolters Kluwer Health, Inc.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Moraes</LastName><ForeName>Fabio da Silva</ForeName><Initials>FDS</Initials><AffiliationInfo><Affiliation>Graduate Program in Pharmaceutical Sciences, University of Sorocaba, Sorocaba, S&#xe3;o Paulo, Brazil.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Marengo</LastName><ForeName>L&#xed;via Luize</ForeName><Initials>LL</Initials></Author><Author ValidYN="Y"><LastName>Moura</LastName><ForeName>Mariana Del Grossi</ForeName><Initials>MDG</Initials></Author><Author ValidYN="Y"><LastName>Bergamaschi</LastName><ForeName>Cristiane de C&#xe1;ssia</ForeName><Initials>CC</Initials></Author><Author ValidYN="Y"><LastName>de S&#xe1; Del Fiol</LastName><ForeName>Fernando</ForeName><Initials>F</Initials></Author><Author ValidYN="Y"><LastName>Lopes</LastName><ForeName>Luciane Cruz</ForeName><Initials>LC</Initials></Author><Author ValidYN="Y"><LastName>Silva</LastName><ForeName>Marcus Tolentino</ForeName><Initials>MT</Initials></Author><Author ValidYN="Y"><LastName>Barberato-Filho</LastName><ForeName>Silvio</ForeName><Initials>S</Initials></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D017418">Meta-Analysis</PublicationType><PublicationType UI="D000078182">Systematic Review</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2022</Year><Month>06</Month><Day>24</Day></ArticleDate></Article><MedlineJournalInfo><Country>United States</Country><MedlineTA>Medicine (Baltimore)</MedlineTA><NlmUniqueID>2985248R</NlmUniqueID><ISSNLinking>0025-7974</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D003422" MajorTopicYN="N">Critical Care</DescriptorName><QualifierName UI="Q000379" MajorTopicYN="N">methods</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D016638" MajorTopicYN="N">Critical Illness</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D003693" MajorTopicYN="Y">Delirium</DescriptorName><QualifierName UI="Q000517" MajorTopicYN="N">prevention &amp; control</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D007362" MajorTopicYN="N">Intensive Care Units</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D064872" MajorTopicYN="Y">Patient Care Bundles</DescriptorName></MeshHeading></MeshHeadingList><CoiStatement>The authors have no conflicts of interest to disclose.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2021</Year><Month>11</Month><Day>24</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2022</Year><Month>5</Month><Day>5</Day></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2022</Year><Month>6</Month><Day>27</Day><Hour>7</Hour><Minute>42</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2022</Year><Month>6</Month><Day>28</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2022</Year><Month>6</Month><Day>29</Day><Hour>6</Hour><Minute>0</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2022</Year><Month>6</Month><Day>24</Day></PubMedPubDate></History><PublicationStatus>epublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">35758388</ArticleId><ArticleId IdType="pmc">PMC9276239</ArticleId><ArticleId IdType="doi">10.1097/MD.0000000000029499</ArticleId><ArticleId IdType="pii">00005792-202206240-00045</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>Marshall JC, Bosco L, Adhikari NK, et al. What is an intensive care unit? A report of the task force of the World Federation of Societies of Intensive and Critical Care Medicine. J Crit Care 2017;37:270&#x2013;6.</Citation><ArticleIdList><ArticleId IdType="pubmed">27612678</ArticleId></ArticleIdList></Reference><Reference><Citation>De Jonghe B, Bastuji-Garin S, Durand M-C. Respiratory weakness is associated with limb weakness and delayed weaning in critical illness. Crit Care Med 2007;35:2007&#x2013;15.</Citation><ArticleIdList><ArticleId IdType="pubmed">17855814</ArticleId></ArticleIdList></Reference><Reference><Citation>Schweickert WD, Pohlman MC, Pohlman AS, et al. Early physical and occupational therapy in mechanically ventilated, critically ill patients: a randomised controlled trial. Lancet 2009;373:1874&#x2013;82.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9906655</ArticleId><ArticleId IdType="pubmed">19446324</ArticleId></ArticleIdList></Reference><Reference><Citation>Ely EW. The ABCDEF bundle: science and philosophy of how ICU Liberation serves patients and families. Crit Care Med 2017;45:321&#x2013;30.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5830123</ArticleId><ArticleId IdType="pubmed">28098628</ArticleId></ArticleIdList></Reference><Reference><Citation>Cook D, Swinton M, Toledo F, et al. Personalizing death in the intensive care unit: the 3 wishes project: a mixed-methods study. Ann Intern Med 2015;163:271.</Citation><ArticleIdList><ArticleId IdType="pubmed">26167721</ArticleId></ArticleIdList></Reference><Reference><Citation>Vasilevskis EE, Pandharipande PP, Girard TD, Ely EW. A screening, prevention, and restoration model for saving the injured brain in intensive care unit survivors. Crit Care Med 2010;38:S683&#x2013;91.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3679543</ArticleId><ArticleId IdType="pubmed">21164415</ArticleId></ArticleIdList></Reference><Reference><Citation>Barr J, Fraser GL, Puntillo K, et al. Clinical practice guidelines for the management of pain, agitation, and delirium in adult patients in the intensive care unit. Crit Care Med 2013;41:263&#x2013;306.</Citation><ArticleIdList><ArticleId IdType="pubmed">23269131</ArticleId></ArticleIdList></Reference><Reference><Citation>Barnes-Daly MA, Phillips G, Ely EW. Improving hospital survival and reducing brain dysfunction at seven California community hospitals: implementing PAD guidelines via the ABCDEF bundle in 6,064 patients. Crit Care Med 2017;45:171&#x2013;8.</Citation><ArticleIdList><ArticleId IdType="pubmed">27861180</ArticleId></ArticleIdList></Reference><Reference><Citation>Runciman WB, Hunt TD, Hannaford NA, et al. CareTrack: assessing the appropriateness of health care delivery in Australia. Med J Aust 2012;197:100&#x2013;5.</Citation><ArticleIdList><ArticleId IdType="pubmed">22794056</ArticleId></ArticleIdList></Reference><Reference><Citation>Gagliardi AR, Alhabib S. Trends in guideline implementation: a scoping systematic review. Implementation Sci 2015;10:54.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4409784</ArticleId><ArticleId IdType="pubmed">25895908</ArticleId></ArticleIdList></Reference><Reference><Citation>Liang L, Bernhardsson S, Vernooij RWM, et al. Use of theory to plan or evaluate guideline implementation among physicians: a scoping review. Implementation Sci 2017;12:26.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5327520</ArticleId><ArticleId IdType="pubmed">28241771</ArticleId></ArticleIdList></Reference><Reference><Citation>Page MJ, McKenzie JE, Bossuyt PM, et al. The PRISMA 2020 statement: an updated guideline for reporting systematic reviews. BMJ 2021;372:n71.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8005924</ArticleId><ArticleId IdType="pubmed">33782057</ArticleId></ArticleIdList></Reference><Reference><Citation>Moraes FS, Marengo LL, Silva MT, et al. ABCDE and ABCDEF care bundles: a systematic review protocol of the implementation process in intensive care units. Medicine (Baltimore) 2019;98:e14792.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6426482</ArticleId><ArticleId IdType="pubmed">30882653</ArticleId></ArticleIdList></Reference><Reference><Citation>National Institute of Health. Study quality assessment tools. In: National Institutes of Health &#x2013; NIH. 2014. https://www.nhlbi.nih.gov/health-topics/study-quality-assessment-tools of subordinate document. Accessed June 10, 2018.</Citation></Reference><Reference><Citation>Lockwood C, Munn Z, Porritt K. Qualitative research synthesis: methodological guidance for systematic reviewers utilizing meta-aggregation. Int J Evid Based Health 2015;13:179&#x2013;87.</Citation><ArticleIdList><ArticleId IdType="pubmed">26262565</ArticleId></ArticleIdList></Reference><Reference><Citation>Higgins JPT, Green S. Cochrane handbook for systematic reviews of interventions version 5.1.0. The Cochrane Collaboration.
+2014;https://www.handbook.cochrane.orghttps://www.handbook.cochrane.org. Accessed January 8, 2019.</Citation></Reference><Reference><Citation>Effective Practice and Organisation of Care. The EPOC taxonomy of health systems interventions. EPOC Resources for review authors
+2015;http://epoc.cochrane.org/epoc-specific-resources-review-authorshttp://epoc.cochrane.org/epoc-specific-resources-review-authors. Accessed October 26, 2018.</Citation></Reference><Reference><Citation>Trogrli&#x107; Z, Van Der Jagt M, Bakker J, et al. A systematic review of implementation strategies for assessment, prevention, and management of ICU delirium and their effect on clinical outcomes. Crit Care 2015;19:157.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4428250</ArticleId><ArticleId IdType="pubmed">25888230</ArticleId></ArticleIdList></Reference><Reference><Citation>Higgins JPT, Thompson SG. Quantifying heterogeneity in a meta-analysis. Stat Med 2002;21:1539&#x2013;58.</Citation><ArticleIdList><ArticleId IdType="pubmed">12111919</ArticleId></ArticleIdList></Reference><Reference><Citation>Egger M, Smith GD, Schneider M, Minder C. Bias in meta-analysis detected by a simple, graphical test. BMJ 1997;315:629&#x2013;34.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2127453</ArticleId><ArticleId IdType="pubmed">9310563</ArticleId></ArticleIdList></Reference><Reference><Citation>Review Manager. Computer program version 5.3.5. The Cochrane Collaboration
+2018;https://training.cochrane.org/online-learning/core-software-cochrane-reviews/revmanhttps://training.cochrane.org/online-learning/core-software-cochrane-reviews/revman. Accessed October 8, 2018.</Citation></Reference><Reference><Citation>Balas MC, Burke WJ, Gannon D, et al. Implementing the awakening and breathing coordination, delirium monitoring/management, and early exercise/mobility bundle into everyday care: opportunities, challenges, and lessons learned for implementing the ICU pain, agitation, and delirium guidelines. Crit Care Med 2013;41:S116&#x2013;27.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4096994</ArticleId><ArticleId IdType="pubmed">23989089</ArticleId></ArticleIdList></Reference><Reference><Citation>Morandi A, Piva S, Ely EW, et al. Worldwide survey of the &#x201c;assessing pain, both spontaneous awakening and breathing trials, choice of drugs, delirium monitoring/management, early exercise/mobility, and family empowerment&#x201d; (ABCDEF) bundle. Crit Care Med 2017;45:e1111&#x2013;22.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5640479</ArticleId><ArticleId IdType="pubmed">28787293</ArticleId></ArticleIdList></Reference><Reference><Citation>Boehm LM, Vasilevskis EE, Mion LC. Interprofessional perspectives on ABCDE bundle implementation: a focus group study. Dimens Crit Care Nurs 2016;35:339&#x2013;47.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5089165</ArticleId><ArticleId IdType="pubmed">27749438</ArticleId></ArticleIdList></Reference><Reference><Citation>Boehm LM, Dietrich MS, Vasilevskis EE, et al. Perceptions of workload burden and adherence to ABCDE bundle among intensive care providers. Am J Crit Care 2017;26:e38&#x2013;47.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5714508</ArticleId><ArticleId IdType="pubmed">28668925</ArticleId></ArticleIdList></Reference><Reference><Citation>Boehm LM, Vasilevskis EE, Dietrich MS, et al. Organizational domains and variation in attitudes of intensive care providers toward the ABCDE bundle. Am J Crit Care 2017;26:e18&#x2013;28.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5693381</ArticleId><ArticleId IdType="pubmed">28461551</ArticleId></ArticleIdList></Reference><Reference><Citation>Carrothers KM, Barr J, Spurlock B, Ridgely MS, Damberg CL, Ely EW. Contextual issues influencing implementation and outcomes associated with an integrated approach to managing pain, agitation, and delirium in adult ICUs. Crit Care Med 2013;41:S128&#x2013;35.</Citation><ArticleIdList><ArticleId IdType="pubmed">23989090</ArticleId></ArticleIdList></Reference><Reference><Citation>Weber ML, Byrd C, Cape K, Mccarthy C, Exline M. Implementation of the ABCDEF bundle in an academic medical center. J Clin Outcomes Manag 2017;24:417&#x2013;22.</Citation></Reference><Reference><Citation>BarnesDaly MA, Pun BT, Harmon LA, et al. Improving health care for critically ill patients using an evidence-based collaborative approach to ABCDEF bundle dissemination and implementation. Worldviews Evid Based Nurs 2018;15:206&#x2013;16.</Citation><ArticleIdList><ArticleId IdType="pubmed">29729659</ArticleId></ArticleIdList></Reference><Reference><Citation>Costa DK, Valley TS, Miller MA, et al. ICU team composition and its association with ABCDE implementation in a quality collaborative. J Crit Care 2018;44:01&#x2013;6.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5831474</ArticleId><ArticleId IdType="pubmed">28978488</ArticleId></ArticleIdList></Reference><Reference><Citation>Sosnowski K, Mitchell ML, White H, et al. A feasibility study of a randomised controlled trial to examine the impact of the ABCDE bundle on quality of life in ICU survivors. Pilot Feasibility Stud 2018;4:32.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5765639</ArticleId><ArticleId IdType="pubmed">29372070</ArticleId></ArticleIdList></Reference><Reference><Citation>Balas MC, Vasilevskis EE, Olsen KM, et al. Effectiveness and safety of the awakening and breathing coordination, delirium monitoring/management, and early exercise/mobility bundle. Crit Care Med 2014;42:1024&#x2013;36.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4105208</ArticleId><ArticleId IdType="pubmed">24394627</ArticleId></ArticleIdList></Reference><Reference><Citation>Bounds M, Kram S, Speroni KG, et al. Effect of ABCDE bundle implementation on prevalence of delirium in intensive care unit patients. Am J Crit Care 2016;25:535&#x2013;44.</Citation><ArticleIdList><ArticleId IdType="pubmed">27802955</ArticleId></ArticleIdList></Reference><Reference><Citation>Chai J. The effect of the ABCDEF bundle on incidence of delirium in critically ill patients [Nursing and Health Professions]. Irvine: Brandman University; 2017.</Citation></Reference><Reference><Citation>Kram SL, DiBartolo MC, Hinderer K, Jones RA. Implementation of the ABCDE bundle to improve patient outcomes in the intensive care unit in a rural community hospital. Dimens Crit Care Nurs 2015;34:250&#x2013;8.</Citation><ArticleIdList><ArticleId IdType="pubmed">26244238</ArticleId></ArticleIdList></Reference><Reference><Citation>Ren X-L, Li J-H, Peng C, et al. Effects of ABCDE bundle on hemodynamics in patients on mechanical ventilation. Med Sci Monit 2017;23:4650&#x2013;6.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5629994</ArticleId><ArticleId IdType="pubmed">28955029</ArticleId></ArticleIdList></Reference><Reference><Citation>Collinsworth AW, Masica AL, Priest EL, et al. Modifying the electronic health record to facilitate the implementation and evaluation of a bundled care program for intensive care unit delirium. EGEMS (Wash DC) 2014;2:20.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4371482</ArticleId><ArticleId IdType="pubmed">25848599</ArticleId></ArticleIdList></Reference><Reference><Citation>Louzon P, Jennings H, Ali M, Kraisinger M. Impact of pharmacist management of pain, agitation, and delirium in the intensive care unit through participation in multidisciplinary bundle rounds. Am J Health Syst Pharm 2017;74:253&#x2013;62.</Citation><ArticleIdList><ArticleId IdType="pubmed">28179250</ArticleId></ArticleIdList></Reference><Reference><Citation>Miller MA, Govindan S, Watson SR, Hyzy RC, Iwashyna TJ. ABCDE, but in that order? A cross-sectional survey of Michigan intensive care unit sedation, delirium, and early mobility practices. Ann Am Thorac Soc 2015;12:1066&#x2013;71.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4566406</ArticleId><ArticleId IdType="pubmed">25970737</ArticleId></ArticleIdList></Reference><Reference><Citation>Pinto F, Biancofiore G. The ABCDE bundle: a survey of nurses knowledge and attitudes in the intensive care units of a national teaching hospital in Italy. Dimens Crit Care Nurs 2016;35:309&#x2013;14.</Citation><ArticleIdList><ArticleId IdType="pubmed">27749432</ArticleId></ArticleIdList></Reference><Reference><Citation>Liu K, Nakamura K, Katsukawa H, et al. ABCDEF bundle and supportive ICU practices for patients with coronavirus disease 2019 infection: an international point prevalence study. Crit Care Explor 2021;3:e0353.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7994035</ArticleId><ArticleId IdType="pubmed">33786432</ArticleId></ArticleIdList></Reference><Reference><Citation>Devlin JW, O&#x2019;Neal HR, Thomas C, et al. Strategies to optimize ICU liberation (A to F) bundle performance in critically ill adults with coronavirus disease 2019. Crit Care Explor 2020;2:e0139.</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7314345</ArticleId><ArticleId IdType="pubmed">32696002</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Curated"><PMID Version="1">40838698</PMID><DateCompleted><Year>2025</Year><Month>12</Month><Day>02</Day></DateCompleted><DateRevised><Year>2026</Year><Month>06</Month><Day>18</Day></DateRevised><Article PubModel="Print"><Journal><ISSN IssnType="Electronic">1550-9397</ISSN><JournalIssue CitedMedium="Internet"><Volume>21</Volume><Issue>12</Issue><PubDate><Year>2025</Year><Month>Dec</Month><Day>01</Day></PubDate></JournalIssue><Title>Journal of clinical sleep medicine : JCSM : official publication of the American Academy of Sleep Medicine</Title><ISOAbbreviation>J Clin Sleep Med</ISOAbbreviation></Journal><ArticleTitle>Evaluation and management of obstructive sleep apnea in adults hospitalized for medical care: an American Academy of Sleep Medicine clinical practice guideline.</ArticleTitle><Pagination><StartPage>2193</StartPage><EndPage>2203</EndPage><MedlinePgn>2193-2203</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.5664/jcsm.11864</ELocationID><Abstract><AbstractText Label="INTRODUCTION">The purpose of this guideline is to establish clinical practice recommendations for the management of obstructive sleep apnea (OSA) in medically hospitalized adults.</AbstractText><AbstractText Label="METHODS">The American Academy of Sleep Medicine (AASM) commissioned a task force of experts in sleep medicine to develop recommendations and assign strengths based on a systematic review of the literature and an assessment of the evidence using Grading of Recommendations, Assessment, Development and Evaluation methodology. The task force provided a summary of the relevant literature and the certainty of evidence, the balance of benefits and harms, patient values and preferences, and resource use considerations that support the recommendations. The AASM Board of Directors approved the final recommendations.</AbstractText><AbstractText Label="GOOD PRACTICE STATEMENT">The following Good Practice Statement is based on expert consensus, and its implementation is necessary for the appropriate and effective management of hospitalized adults with sleep-disordered breathing: For medically hospitalized adults with an established diagnosis of sleep-disordered breathing and on active treatment, existing treatment should be continued rather than withheld, unless contraindicated.</AbstractText><AbstractText Label="RECOMMENDATIONS">The following recommendations are intended as a guide for clinicians in managing medically hospitalized adults with OSA. Each recommendation statement is assigned a strength ("Strong" or "Conditional"). A "Strong" recommendation (ie, "We recommend&#x2026;") is one that clinicians should follow under most circumstances. A "Conditional" recommendation (ie, "We suggest&#x2026;") is one that requires that the clinician use clinical knowledge and experience and strongly consider the patient's values and preferences to determine the best course of action.</AbstractText><AbstractText Label="UNLABELLED">1. For medically hospitalized adults at increased risk for OSA, the AASM suggests in-hospital screening for OSA as part of an evaluation and management pathway that incorporates diagnosis and treatment with positive airway pressure (PAP) rather than no in-hospital screening. (Conditional recommendation, low certainty of evidence) <i>Remarks: Screening may include validated questionnaires and/or screening with overnight high-resolution pulse oximetry. When considering in-hospital screening as part of a management pathway, (1) patients who place a lower value on the potential reduction of clinically meaningful outcomes (eg, cardiovascular events) and place a higher value on the possible downsides associated with the use of PAP (eg, sleep disruption, discomfort), or (2) clinicians who perceive that the diagnosis or management of OSA may interfere with medical care, would reasonably decline OSA screening or PAP during the hospitalization. High risk for OSA is defined by signs and symptoms that suggest moderate-to-severe OSA (eg, excessive daytime somnolence plus 2 of the following: diagnosed hypertension; habitual loud snoring; witnessed apnea, gasping, or choking; and/or association of high-risk comorbidities as outlined in the <b>Figure 1</b>&#xa0;caption). Diagnostic testing for OSA should ideally be conducted after a patient has been medically stabilized during the hospital stay or postdischarge.</i></AbstractText><AbstractText Label="UNLABELLED">2. For medically hospitalized adults with newly diagnosed OSA, or with a prior established diagnosis of moderate-to-severe OSA but not currently on treatment, the AASM suggests the use of inpatient treatment with PAP rather than no PAP. (Conditional recommendation, low certainty of evidence) <i>Remarks: When considering in-hospital OSA treatment, (1) patients who place a lower value on the potential reduction of clinically meaningful outcomes (eg, cardiovascular events) and place a higher value on the possible downsides associated with the use of PAP (eg, sleep disruption, discomfort), or (2) clinicians who perceive that the diagnosis or management of OSA may interfere with medical care, would reasonably decline OSA screening or PAP during the hospitalization.</i></AbstractText><AbstractText Label="UNLABELLED">3. For medically hospitalized adults at increased risk for or with an established diagnosis of OSA, the AASM suggests that sleep medicine consultation be available as part of an evaluation and management pathway, rather than no sleep medicine consultation. (Conditional recommendation, very low certainty of evidence) <i>Remarks: It is recognized that there will be variability of the availability of hospital-based expertise and resources specific to sleep medicine consultation; therefore, we provide specific guidance as follows. Oversight by a board-certified sleep medicine clinician and/or an AASM-accredited sleep center is preferable. However, elements of this consultation, including education and follow-up plan, can be provided by those with requisite expertise, including advanced practitioners, nurses, sleep technologists, respiratory therapists, care coordinators, case managers, health educators, or other available resource personnel. Given the variability of expertise and resources available, creative consultation models of care such as teleconsult/telehealth, E-consult, and/or nursing or respiratory therapist care can be considered. Availability of inpatient diagnostics and treatment as part of the consultation should be taken into consideration in terms of feasibility of implementation of this recommendation.</i></AbstractText><AbstractText Label="UNLABELLED">4. For medically hospitalized adults at increased risk for or with an established diagnosis of OSA, the AASM suggests a discharge management plan to ensure timely diagnosis and effective management of OSA, rather than no plan. (Conditional recommendation, very low certainty of evidence) <i>Remarks: Consider ordering postdischarge testing or sleep medicine evaluation prior to discharge. Inpatient sleep testing prior to discharge and/or telehealth medicine may be an option to reduce barriers to care. Consider care coordination to ensure appropriate follow-up and postdischarge care.</i></AbstractText><AbstractText Label="CITATION">Mehra R, Auckley DH, Johnson KG, et&#xa0;al. Evaluation and management of obstructive sleep apnea in adults hospitalized for medical care: an American Academy of Sleep Medicine clinical practice guideline. <i>J Clin Sleep Med</i>. 2025;21(12):2193-2203.</AbstractText><CopyrightInformation>&#xa9; 2025 American Academy of Sleep Medicine.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Mehra</LastName><ForeName>Reena</ForeName><Initials>R</Initials><AffiliationInfo><Affiliation>Division of Pulmonary, Critical Care and Sleep Medicine, University of Washington, Seattle, Washington.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Auckley</LastName><ForeName>Dennis H</ForeName><Initials>DH</Initials><AffiliationInfo><Affiliation>Division of Pulmonary, Critical Care, and Sleep Medicine, MetroHealth Medical Center, Case Western Reserve University, Cleveland, Ohio.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Johnson</LastName><ForeName>Karin G</ForeName><Initials>KG</Initials><AffiliationInfo><Affiliation>Department of Neurology, Baystate Medical Center, University of Massachusetts Chan Medical School-Baystate, Springfield, Massachusetts.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Billings</LastName><ForeName>Martha E</ForeName><Initials>ME</Initials><AffiliationInfo><Affiliation>Division of Pulmonary, Critical Care and Sleep Medicine, University of Washington, Seattle, Washington.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Carandang</LastName><ForeName>Gerard</ForeName><Initials>G</Initials><AffiliationInfo><Affiliation>American Academy of Sleep Medicine, Darien, Illinois.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Falck-Ytter</LastName><ForeName>Yngve</ForeName><Initials>Y</Initials><AffiliationInfo><Affiliation>Case Western Reserve University, Cleveland, Ohio.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Gastroenterology and Hepatology, Veterans Affairs Northeast Ohio Healthcare System, Cleveland, Ohio.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Khayat</LastName><ForeName>Rami N</ForeName><Initials>RN</Initials><AffiliationInfo><Affiliation>Department of Medicine, Division of Pulmonary, Allergy, and Critical Care Medicine, Penn State University College of Medicine, Hershey, Pennsylvania.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Penn State Sleep Services, Milton S. Hershey Medical Center, Hershey, Pennsylvania.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Mustafa</LastName><ForeName>Reem A</ForeName><Initials>RA</Initials><AffiliationInfo><Affiliation>Department of Internal Medicine, University of Kansas Medical Center, Kansas City, Kansas.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Department of Health Research Methods, Evidence, and Impact, McMaster University, Hamilton, Ontario, Canada.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Pena-Orbea</LastName><ForeName>Cinthya</ForeName><Initials>C</Initials><AffiliationInfo><Affiliation>Cleveland Clinic, Sleep Disorders Center, Neurologic Institute, Cleveland, Ohio.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sahni</LastName><ForeName>Ashima S</ForeName><Initials>AS</Initials><AffiliationInfo><Affiliation>Division of Pulmonary, Critical Care, Sleep and Allergy, Department of Medicine, University of Illinois at Chicago, Chicago, Illinois.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Sharma</LastName><ForeName>Sunil</ForeName><Initials>S</Initials><AffiliationInfo><Affiliation>Division of Pulmonary, Critical Care, and Sleep Medicine, West Virginia University School of Medicine, Morgantown, West Virginia.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Patil</LastName><ForeName>Susheel P</ForeName><Initials>SP</Initials><AffiliationInfo><Affiliation>Sleep Medicine Program, University Hospitals of Cleveland, Cleveland, Ohio.</Affiliation></AffiliationInfo><AffiliationInfo><Affiliation>Case Western Reserve University School of Medicine, Cleveland, Ohio.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D017065">Practice Guideline</PublicationType><PublicationType UI="D013485">Research Support, Non-U.S. Gov't</PublicationType></PublicationTypeList></Article><MedlineJournalInfo><Country>Switzerland</Country><MedlineTA>J Clin Sleep Med</MedlineTA><NlmUniqueID>101231977</NlmUniqueID><ISSNLinking>1550-9389</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D020181" MajorTopicYN="Y">Sleep Apnea, Obstructive</DescriptorName><QualifierName UI="Q000628" MajorTopicYN="N">therapy</QualifierName><QualifierName UI="Q000175" MajorTopicYN="N">diagnosis</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D006760" MajorTopicYN="Y">Hospitalization</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D056508" MajorTopicYN="Y">Sleep Medicine Specialty</DescriptorName><QualifierName UI="Q000592" MajorTopicYN="N">standards</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D000328" MajorTopicYN="N">Adult</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D014481" MajorTopicYN="N" Type="Geographic">United States</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000047" MajorTopicYN="N">Academies and Institutes</DescriptorName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">OSA</Keyword><Keyword MajorTopicYN="N">PAP</Keyword><Keyword MajorTopicYN="N">hospital</Keyword><Keyword MajorTopicYN="N">inpatient</Keyword><Keyword MajorTopicYN="N">obstructive sleep apnea</Keyword><Keyword MajorTopicYN="N">positive airway pressure</Keyword><Keyword MajorTopicYN="N">sleep-disordered breathing</Keyword></KeywordList></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="medline"><Year>2025</Year><Month>12</Month><Day>2</Day><Hour>12</Hour><Minute>56</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2025</Year><Month>8</Month><Day>21</Day><Hour>12</Hour><Minute>47</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2025</Year><Month>8</Month><Day>21</Day><Hour>8</Hour><Minute>55</Minute></PubMedPubDate><PubMedPubDate PubStatus="pmc-release"><Year>2026</Year><Month>12</Month><Day>1</Day></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">40838698</ArticleId><ArticleId IdType="pmc">PMC12670605</ArticleId><ArticleId IdType="doi">10.5664/jcsm.11864</ArticleId><ArticleId IdType="pii">jcsm.11864</ArticleId></ArticleIdList><ReferenceList><Reference><Citation>
+
+Kapur
+ 
+VK
+, 
+Auckley
+ 
+DH
+, 
+Chowdhuri
+ 
+S
+, et al
+. 
+Clinical practice guideline for diagnostic testing for adult obstructive sleep apnea: an American Academy of Sleep Medicine clinical practice guideline
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2017. 
+;
+13
+(
+3
+):
+479
+&#x2013;
+504
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5337595</ArticleId><ArticleId IdType="pubmed">28162150</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Patil
+ 
+SP
+, 
+Ayappa
+ 
+IA
+, 
+Caples
+ 
+SM
+, 
+Kimoff
+ 
+RJ
+, 
+Patel
+ 
+SR
+, 
+Harrod
+ 
+CG
+
+. 
+Treatment of adult obstructive sleep apnea with positive airway pressure: an American Academy Sleep Medicine clinical practice guideline
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2019. 
+;
+15
+(
+2
+):
+335
+&#x2013;
+343
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6374094</ArticleId><ArticleId IdType="pubmed">30736887</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+May
+ 
+AM
+
+. 
+Sleep-disordered breathing and inpatient outcomes in nonsurgical patients: analysis of the nationwide inpatient cohort
+. 
+
+<i>Ann Am Thorac Soc.</i>
+
+ 
+2023. 
+;
+20
+(
+12
+):
+1784
+&#x2013;
+1790
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10704237</ArticleId><ArticleId IdType="pubmed">37748082</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Mokhlesi
+ 
+B
+, 
+Masa
+ 
+JF
+, 
+Brozek
+ 
+JL
+, et al
+. 
+Evaluation and management of obesity hypoventilation syndrome. An official American Thoracic Society clinical practice guideline
+. 
+
+<i>Am J Respir Crit Care Med.</i>
+
+ 
+2019. 
+;
+200
+(
+3
+):
+e6
+&#x2013;
+e24
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6680300</ArticleId><ArticleId IdType="pubmed">31368798</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Auckley
+ 
+DH
+, 
+Mehra
+ 
+R
+, 
+Johnson
+ 
+KG
+, et al
+. 
+Evaluation and management of obstructive sleep apnea in adults hospitalized for medical care: an American Academy of Sleep Medicine systematic review, meta-analysis, and GRADE assessment
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2025. 
+;
+21
+(
+12
+):
+2237
+&#x2013;
+2256
+.
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC12670606</ArticleId><ArticleId IdType="pubmed">40838686</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Guyatt
+ 
+G
+, 
+Oxman
+ 
+AD
+, 
+Akl
+ 
+EA
+, et al
+. 
+GRADE guidelines: 1. Introduction-GRADE evidence profiles and summary of findings tables
+. 
+
+<i>J Clin Epidemiol.</i>
+
+ 
+2011. 
+;
+64
+(
+4
+):
+383
+&#x2013;
+394
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">21195583</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Morgenthaler
+ 
+TI
+, 
+Deriy
+ 
+L
+, 
+Heald
+ 
+JL
+, 
+Thomas
+ 
+SM
+
+. 
+The evolution of the AASM clinical practice guidelines: another step forward
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2016. 
+;
+12
+(
+1
+):
+129
+&#x2013;
+135
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4702195</ArticleId><ArticleId IdType="pubmed">26518707</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Lindenauer
+ 
+PK
+, 
+Stefan
+ 
+MS
+, 
+Johnson
+ 
+KG
+, 
+Priya
+ 
+A
+, 
+Pekow
+ 
+PS
+, 
+Rothberg
+ 
+MB
+
+. 
+Prevalence, treatment, and outcomes associated with OSA among patients hospitalized with pneumonia
+. 
+
+<i>Chest.</i>
+
+ 
+2014. 
+;
+145
+(
+5
+):
+1032
+&#x2013;
+1038
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4011652</ArticleId><ArticleId IdType="pubmed">24371839</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Spurr
+ 
+KF
+, 
+Graven
+ 
+MA
+, 
+Gilbert
+ 
+RW
+
+. 
+Prevalence of unspecified sleep apnea and the use of continuous positive airway pressure in hospitalized patients, 2004 national hospital discharge survey
+. 
+
+<i>Sleep Breath.</i>
+
+ 
+2008. 
+;
+12
+(
+3
+):
+229
+&#x2013;
+234
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">18236092</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Pinto
+ 
+VL
+, 
+Sharma
+ 
+S
+
+. 
+
+<i>Continuous Positive Airway Pressure.</i>
+
+ 
+Treasure Island, FL: 
+: 
+StatPearls; 
+; 
+2024. 
+.
+</Citation></Reference><Reference><Citation>
+
+Evans
+ 
+RS
+, 
+Flint
+ 
+VB
+, 
+Cloward
+ 
+TV
+, et al
+. 
+Early detection of hospitalized patients with previously diagnosed obstructive sleep apnea using computer decision support alerts
+. 
+
+<i>Stud Health Technol Inform.</i>
+
+ 
+2013. 
+;
+192
+:
+505
+&#x2013;
+509
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">23920606</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Saini
+ 
+P
+, 
+Klada
+ 
+E
+, 
+Patel
+ 
+V
+, et al
+. 
+Continuous positive airway pressure usage in hospitalized patients with known obstructive sleep apnea: discrepancy between admission pressure settings and laboratory-determined settings
+. 
+
+<i>Sleep Breath.</i>
+
+ 
+2017. 
+;
+21
+(
+2
+):
+347
+&#x2013;
+353
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">27796718</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Smith
+ 
+DF
+, 
+Spiceland
+ 
+CP
+, 
+Pringle
+ 
+LC
+, 
+Mattare
+ 
+KL
+, 
+Benke
+ 
+JR
+, 
+Ishman
+ 
+SL
+
+. 
+Financial incentive of home continuous positive airway pressure machine use in the inpatient hospital setting
+. 
+
+<i>Laryngoscope.</i>
+
+ 
+2014. 
+;
+124
+(
+9
+):
+2200
+&#x2013;
+2204
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">24448722</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Boulos
+ 
+MI
+, 
+Wan
+ 
+A
+, 
+Im
+ 
+J
+, et al
+. 
+Identifying obstructive sleep apnea after stroke/TIA: evaluating four simple screening tools
+. 
+
+<i>Sleep Med.</i>
+
+ 
+2016. 
+;
+21
+:
+133
+&#x2013;
+139
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">27448484</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Takala
+ 
+M
+, 
+Puustinen
+ 
+J
+, 
+Rauhala
+ 
+E
+, 
+Holm
+ 
+A
+
+. 
+Pre-screening of sleep-disordered breathing after stroke: a systematic review
+. 
+
+<i>Brain Behav.</i>
+
+ 
+2018. 
+;
+8
+(
+12
+):
+e01146
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6305929</ArticleId><ArticleId IdType="pubmed">30371010</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Boulos
+ 
+MI
+, 
+Kamra
+ 
+M
+, 
+Colelli
+ 
+DR
+, et al
+. 
+SLEAP SMART (Sleep Apnea Screening Using Mobile Ambulatory Recorders After TIA/Stroke): a randomized controlled trial
+. 
+
+<i>Stroke.</i>
+
+ 
+2022. 
+;
+53
+(
+3
+):
+710
+&#x2013;
+718
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">34628939</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Parthasarathy
+ 
+S
+, 
+Haynes
+ 
+PL
+, 
+Budhiraja
+ 
+R
+, 
+Habib
+ 
+MP
+, 
+Quan
+ 
+SF
+
+. 
+A national survey of the effect of sleep medicine specialists and American Academy of Sleep Medicine accreditation on management of obstructive sleep apnea
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2006. 
+;
+2
+(
+2
+):
+133
+&#x2013;
+142
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">17557485</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Goring
+ 
+K
+, 
+Collop
+ 
+N
+
+. 
+Sleep disordered breathing in hospitalized patients
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2008. 
+;
+4
+(
+2
+):
+105
+&#x2013;
+110
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2335404</ArticleId><ArticleId IdType="pubmed">18468307</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Khayat
+ 
+RN
+, 
+Jarjoura
+ 
+D
+, 
+Patt
+ 
+B
+, 
+Yamokoski
+ 
+T
+, 
+Abraham
+ 
+WT
+
+. 
+In-hospital testing for sleep-disordered breathing in hospitalized patients with decompensated heart failure: report of prevalence and patient characteristics
+. 
+
+<i>J Card Fail.</i>
+
+ 
+2009. 
+;
+15
+(
+9
+):
+739
+&#x2013;
+746
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC2772830</ArticleId><ArticleId IdType="pubmed">19879459</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Shear
+ 
+TC
+, 
+Balachandran
+ 
+JS
+, 
+Mokhlesi
+ 
+B
+, et al
+. 
+Risk of sleep apnea in hospitalized older patients
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2014. 
+;
+10
+(
+10
+):
+1061
+&#x2013;
+1066
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4173082</ArticleId><ArticleId IdType="pubmed">25317085</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Stansbury
+ 
+R
+, 
+Strollo
+ 
+P
+, 
+Pauly
+ 
+N
+, et al
+. 
+Underrecognition of sleep-disordered breathing and other common health conditions in the West Virginia Medicaid population: a driver of poor health outcomes
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2022. 
+;
+18
+(
+3
+):
+817
+&#x2013;
+824
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8883087</ArticleId><ArticleId IdType="pubmed">34669570</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Kim
+ 
+TJ
+, 
+Ko
+ 
+SB
+, 
+Jeong
+ 
+HG
+, et al
+. 
+Nocturnal desaturation is associated with neurological deterioration following ischemic stroke: a retrospective observational study
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2017. 
+;
+13
+(
+11
+):
+1273
+&#x2013;
+1279
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5656476</ArticleId><ArticleId IdType="pubmed">29065961</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Del Prado-Rico
+ 
+C
+, 
+Stansbury
+ 
+R
+, et al
+. 
+How to interpret a negative high-resolution pulse oximetry in hospitalized patients screened for obstructive sleep apnea: an exploratory analysis
+. 
+
+<i>Sleep Breath.</i>
+
+ 
+2023. 
+;
+27
+(
+5
+):
+1935
+&#x2013;
+1938
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">36715837</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Mather
+ 
+P
+, 
+Efird
+ 
+JT
+, et al
+. 
+Photoplethysmographic signal to screen sleep-disordered breathing in hospitalized heart failure patients: feasibility of a prospective clinical pathway
+. 
+
+<i>JACC Heart Fail.</i>
+
+ 
+2015. 
+;
+3
+(
+9
+):
+725
+&#x2013;
+731
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">26362449</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Mather
+ 
+PJ
+, 
+Chowdhury
+ 
+A
+, et al
+. 
+Sleep overnight monitoring for apnea in patients hospitalized with heart failure (SOMA-HF study)
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2017. 
+;
+13
+(
+10
+):
+1185
+&#x2013;
+1190
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC5612634</ArticleId><ArticleId IdType="pubmed">28859720</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Stansbury
+ 
+R
+, 
+Badami
+ 
+V
+, 
+Rojas
+ 
+E
+, 
+Quan
+ 
+SF
+
+. 
+Inpatient CPAP adherence may predict post-discharge adherence in hospitalized patients screened high risk for OSA
+. 
+
+<i>Sleep Breath.</i>
+
+ 
+2023. 
+;
+27
+(
+2
+):
+591
+&#x2013;
+597
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">35717447</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Mather
+ 
+PJ
+, 
+Efird
+ 
+JT
+, et al
+. 
+Obstructive sleep apnea in obese hospitalized patients: a single center experience
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2015. 
+;
+11
+(
+7
+):
+717
+&#x2013;
+723
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4481054</ArticleId><ArticleId IdType="pubmed">25766715</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Stansbury
+ 
+R
+
+. 
+Sleep-disordered breathing in hospitalized patients: a game changer?
+ 
+
+<i>Chest.</i>
+
+ 
+2022. 
+;
+161
+(
+4
+):
+1083
+&#x2013;
+1091
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">34673024</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Gupta
+ 
+A
+, 
+Quan
+ 
+SF
+, 
+Oldenburg
+ 
+O
+, 
+Malhotra
+ 
+A
+, 
+Sharma
+ 
+S
+
+. 
+Sleep-disordered breathing in hospitalized patients with congestive heart failure: a concise review and proposed algorithm
+. 
+
+<i>Heart Fail Rev.</i>
+
+ 
+2018. 
+;
+23
+(
+5
+):
+701
+&#x2013;
+709
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC6192673</ArticleId><ArticleId IdType="pubmed">29850982</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Chernyshev
+ 
+OY
+, 
+McCarty
+ 
+DE
+, 
+Moul
+ 
+DE
+, et al
+. 
+A pilot study: portable out-of-center sleep testing as an early sleep apnea screening tool in acute ischemic stroke
+. 
+
+<i>Nat Sci Sleep.</i>
+
+ 
+2015. 
+;
+7
+:
+127
+&#x2013;
+138
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4621189</ArticleId><ArticleId IdType="pubmed">26527904</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Chowdhury
+ 
+A
+, 
+Tang
+ 
+L
+, 
+Willes
+ 
+L
+, 
+Glynn
+ 
+B
+, 
+Quan
+ 
+SF
+
+. 
+Hospitalized patients at high risk for obstructive sleep apnea have more rapid response system events and intervention is associated with reduced events
+. 
+
+<i>PLoS One.</i>
+
+ 
+2016. 
+;
+11
+(
+5
+):
+e0153790
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC4864239</ArticleId><ArticleId IdType="pubmed">27168330</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Niroula
+ 
+A
+, 
+Garvia
+ 
+V
+, 
+Rives-Sanchez
+ 
+M
+, et al
+. 
+Opiate use and escalation of care in hospitalized adults with acute heart failure and sleep-disordered breathing (OpiatesHF study)
+. 
+
+<i>Ann Am Thorac Soc.</i>
+
+ 
+2019. 
+;
+16
+(
+9
+):
+1165
+&#x2013;
+1170
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">31184503</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Naranjo
+ 
+M
+, 
+Willes
+ 
+L
+, 
+Prillaman
+ 
+BA
+, 
+Quan
+ 
+SF
+, 
+Sharma
+ 
+S
+
+. 
+Undiagnosed OSA may significantly affect outcomes in adults admitted for COPD in an inner-city hospital
+. 
+
+<i>Chest.</i>
+
+ 
+2020. 
+;
+158
+(
+3
+):
+1198
+&#x2013;
+1207
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">32247716</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Rojas
+ 
+E
+, 
+Srinivasan
+ 
+PN
+, 
+Kassandra
+ 
+O
+, et al
+. 
+Impact of discharging hospitalized patients with chronic hypercapnic respiratory failure on non-invasive ventilation in a rural Appalachian population
+. 
+
+<i>Am J Respir Crit Care Med.</i>
+
+ 
+2024. 
+;
+209
+:
+A1478
+.
+</Citation></Reference><Reference><Citation>
+
+Farney
+ 
+RJ
+, 
+Walker
+ 
+JM
+, 
+Cloward
+ 
+TV
+, 
+Shilling
+ 
+KC
+, 
+Boyle
+ 
+KM
+, 
+Simons
+ 
+RG
+
+. 
+Polysomnography in hospitalized patients using a wireless wide area network
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2006. 
+;
+2
+(
+1
+):
+28
+&#x2013;
+34
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">17557434</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Johnson
+ 
+KG
+, 
+Rastegar
+ 
+V
+, 
+Scuderi
+ 
+N
+, 
+Johnson
+ 
+DC
+, 
+Visintainer
+ 
+P
+
+. 
+PAP therapy and readmission rates after in-hospital laboratory titration polysomnography in patients with hypoventilation
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2022. 
+;
+18
+(
+7
+):
+1739
+&#x2013;
+1748
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9243269</ArticleId><ArticleId IdType="pubmed">35332871</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Boulos
+ 
+MI
+, 
+Elias
+ 
+S
+, 
+Wan
+ 
+A
+, et al
+. 
+Unattended hospital and home sleep apnea testing following cerebrovascular events
+. 
+
+<i>J Stroke Cerebrovasc Dis.</i>
+
+ 
+2017. 
+;
+26
+(
+1
+):
+143
+&#x2013;
+149
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">27717683</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Quintos
+ 
+A
+, 
+Naranjo
+ 
+M
+, 
+Kelly
+ 
+C
+, 
+Quan
+ 
+SF
+, 
+Sharma
+ 
+S
+
+. 
+Recognition and treatment of sleep-disordered breathing in obese African American hospitalized patients may improve outcome
+. 
+
+<i>J Natl Med Assoc.</i>
+
+ 
+2019. 
+;
+111
+(
+2
+):
+176
+&#x2013;
+184
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">30314827</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Rives-Sanchez
+ 
+M
+, 
+Quintos
+ 
+A
+, 
+Prillaman
+ 
+B
+, et al
+. 
+Sleep disordered breathing in hospitalized African-Americans
+. 
+
+<i>J Natl Med Assoc.</i>
+
+ 
+2020. 
+;
+112
+(
+3
+):
+262
+&#x2013;
+267
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">32305125</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Stansbury
+ 
+R
+, 
+Abdelfattah
+ 
+M
+, 
+Chan
+ 
+J
+, 
+Mittal
+ 
+A
+, 
+Alqahtani
+ 
+F
+, 
+Sharma
+ 
+S
+
+. 
+Hospital screening for obstructive sleep apnea in patients admitted to a rural, tertiary care academic hospital with heart failure
+. 
+
+<i>Hosp Pract (1995).</i>
+
+ 
+2020. 
+;
+48
+(
+5
+):
+266
+&#x2013;
+271
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7725971</ArticleId><ArticleId IdType="pubmed">32715796</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Kangovi
+ 
+S
+, 
+Barg
+ 
+FK
+, 
+Carter
+ 
+T
+, 
+Long
+ 
+JA
+, 
+Shannon
+ 
+R
+, 
+Grande
+ 
+D
+
+. 
+Understanding why patients of low socioeconomic status prefer hospitals over ambulatory care
+. 
+
+<i>Health Aff (Millwood).</i>
+
+ 
+2013. 
+;
+32
+(
+7
+):
+1196
+&#x2013;
+1203
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">23836734</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Stansbury
+ 
+R
+, 
+Rudisill
+ 
+T
+, 
+Salyer
+ 
+R
+, et al
+. 
+Provider perspectives on sleep apnea from Appalachia: a mixed methods study
+. 
+
+<i>J Clin Med.</i>
+
+ 
+2022. 
+;
+11
+(
+15
+):
+4449
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9369967</ArticleId><ArticleId IdType="pubmed">35956065</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Voncken
+ 
+SFJ
+, 
+Feron
+ 
+TMH
+, 
+Laven
+ 
+S
+, et al
+. 
+Impact of obstructive sleep apnea on clinical outcomes in patients hospitalized with COVID-19
+. 
+
+<i>Sleep Breath.</i>
+
+ 
+2022. 
+;
+26
+(
+3
+):
+1399
+&#x2013;
+1407
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8475880</ArticleId><ArticleId IdType="pubmed">34561757</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Khayat
+ 
+RN
+, 
+Porter
+ 
+K
+, 
+Germany
+ 
+RE
+, 
+McKane
+ 
+SW
+, 
+Healy
+ 
+W
+, 
+Randerath
+ 
+W
+
+. 
+Clinical and financial impact of sleep disordered breathing on heart failure admissions
+. 
+
+<i>Sleep Breath.</i>
+
+ 
+2023. 
+;
+27
+(
+5
+):
+1917
+&#x2013;
+1924
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10539452</ArticleId><ArticleId IdType="pubmed">36930416</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Sharma
+ 
+S
+, 
+Stansbury
+ 
+R
+, 
+Srinivasan
+ 
+P
+, et al
+. 
+Early recognition and treatment of OSA in hospitalized patients and its impact on health care utilization in rural population: a real-world study
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2024. 
+;
+20
+(
+8
+):
+1313
+&#x2013;
+1319
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC11294130</ArticleId><ArticleId IdType="pubmed">38557651</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Yeghiazarians
+ 
+Y
+, 
+Jneid
+ 
+H
+, 
+Tietjens
+ 
+JR
+, et al
+. 
+Obstructive sleep apnea and cardiovascular disease: a scientific statement from the American Heart Association
+. 
+
+<i>Circulation.</i>
+
+ 
+2021. 
+;
+144
+(
+3
+):
+e56
+&#x2013;
+e67
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">34148375</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Mathew
+ 
+D
+, 
+Kosuru
+ 
+B
+, 
+Agarwal
+ 
+S
+, 
+Shrestha
+ 
+U
+, 
+Sherif
+ 
+A
+
+. 
+Impact of sleep apnoea on 30 day hospital readmission rate and cost in heart failure with reduced ejection fraction
+. 
+
+<i>ESC Heart Fail.</i>
+
+ 
+2023. 
+;
+10
+(
+4
+):
+2534
+&#x2013;
+2540
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC10375077</ArticleId><ArticleId IdType="pubmed">37295960</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Redline
+ 
+S
+, 
+Sotres-Alvarez
+ 
+D
+, 
+Loredo
+ 
+J
+, et al
+. 
+Sleep-disordered breathing in Hispanic/Latino individuals of diverse backgrounds. The Hispanic Community Health Study/Study of Latinos
+. 
+
+<i>Am J Respir Crit Care Med.</i>
+
+ 
+2014. 
+;
+189
+(
+3
+):
+335
+&#x2013;
+344
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC3977733</ArticleId><ArticleId IdType="pubmed">24392863</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Shamim-Uzzaman
+ 
+QA
+, 
+Bae
+ 
+CJ
+, 
+Ehsan
+ 
+Z
+, et al
+. 
+The use of telemedicine for the diagnosis and treatment of sleep disorders: an American Academy of Sleep Medicine update
+. 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2021. 
+;
+17
+(
+5
+):
+1103
+&#x2013;
+1107
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8320493</ArticleId><ArticleId IdType="pubmed">33599202</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Orbea
+ 
+CP
+, 
+Jenad
+ 
+H
+, 
+Kassab
+ 
+LL
+, et al
+. 
+Does testing for sleep-disordered breathing predischarge vs postdischarge result in different treatment outcomes?
+ 
+
+<i>J Clin Sleep Med.</i>
+
+ 
+2021. 
+;
+17
+(
+12
+):
+2451
+&#x2013;
+2460
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8726379</ArticleId><ArticleId IdType="pubmed">34216199</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Mokhlesi
+ 
+B
+, 
+Won
+ 
+CH
+, 
+Make
+ 
+BJ
+, et al
+. 
+Optimal NIV Medicare access promotion: patients with hypoventilation syndromes: a technical expert panel report from the American College of Chest Physicians, the American Association for Respiratory Care, the American Academy of Sleep Medicine, and the American Thoracic Society
+. 
+
+<i>Chest.</i>
+
+ 
+2021. 
+;
+160
+(
+5
+):
+e377
+&#x2013;
+e387
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC8628178</ArticleId><ArticleId IdType="pubmed">34339686</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Khanna
+ 
+AK
+, 
+Bergese
+ 
+SD
+, 
+Jungquist
+ 
+CR
+, et al. 
+; 
+PRediction of Opioid-induced respiratory Depression In patients monitored by capnoGraphY (PRODIGY) Group Collaborators
+. 
+Prediction of opioid-induced respiratory depression on inpatient wards using continuous capnography and oximetry: an international prospective, observational trial
+. 
+
+<i>Anesth Analg.</i>
+
+ 
+2020. 
+;
+131
+(
+4
+):
+1012
+&#x2013;
+1024
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC7467153</ArticleId><ArticleId IdType="pubmed">32925318</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Khanna
+ 
+AK
+, 
+Banga
+ 
+A
+, 
+Rigdon
+ 
+J
+, et al
+. 
+Role of continuous pulse oximetry and capnography monitoring in the prevention of postoperative respiratory failure, postoperative opioid-induced respiratory depression and adverse outcomes on hospital wards: a systematic review and meta-analysis
+. 
+
+<i>J Clin Anesth.</i>
+
+ 
+2024. 
+;
+94
+:
+111374
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">38184918</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Mokhlesi
+ 
+B
+, 
+Masa
+ 
+JF
+, 
+Afshar
+ 
+M
+, et al
+. 
+The effect of hospital discharge with empiric noninvasive ventilation on mortality in hospitalized patients with obesity hypoventilation syndrome. An individual patient data meta-analysis
+. 
+
+<i>Ann Am Thorac Soc.</i>
+
+ 
+2020. 
+;
+17
+(
+5
+):
+627
+&#x2013;
+637
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pubmed">32023419</ArticleId></ArticleIdList></Reference><Reference><Citation>
+
+Boulos
+ 
+MI
+, 
+Chi
+ 
+L
+, 
+Chernyshev
+ 
+OY
+
+. 
+The mobile sleep medicine model in neurologic practice: rationale and application
+. 
+
+<i>Front Neurol.</i>
+
+ 
+2022. 
+;
+13
+:
+1032463
+.
+
+</Citation><ArticleIdList><ArticleId IdType="pmc">PMC9650181</ArticleId><ArticleId IdType="pubmed">36388176</ArticleId></ArticleIdList></Reference></ReferenceList></PubmedData></PubmedArticle><PubmedArticle><MedlineCitation Status="MEDLINE" Owner="NLM" IndexingMethod="Curated"><PMID Version="1">41240665</PMID><DateCompleted><Year>2025</Year><Month>12</Month><Day>02</Day></DateCompleted><DateRevised><Year>2026</Year><Month>07</Month><Day>30</Day></DateRevised><Article PubModel="Print-Electronic"><Journal><ISSN IssnType="Electronic">1872-6976</ISSN><JournalIssue CitedMedium="Internet"><Volume>141</Volume><PubDate><Year>2026</Year><Month>Feb</Month></PubDate></JournalIssue><Title>Archives of gerontology and geriatrics</Title><ISOAbbreviation>Arch Gerontol Geriatr</ISOAbbreviation></Journal><ArticleTitle>Non-pharmacological interventions for preventing delirium in older adults in intensive care units: a systematic review and network meta-analysis.</ArticleTitle><Pagination><StartPage>106075</StartPage><MedlinePgn>106075</MedlinePgn></Pagination><ELocationID EIdType="doi" ValidYN="Y">10.1016/j.archger.2025.106075</ELocationID><ELocationID EIdType="pii" ValidYN="Y">S0167-4943(25)00332-2</ELocationID><Abstract><AbstractText Label="OBJECTIVE">This study compares the effects of non-pharmacological interventions on delirium incidence and other outcomes in elderly patients in ICU.</AbstractText><AbstractText Label="METHODS">A comprehensive search of eight electronic databases to identify randomized controlled trials (RCTs). The search covered studies from the inception to June 2024. Two reviewers independently screened titles and abstracts according to pre-defined inclusion and exclusion criteria. The analysis was conducted using Stata (version 15.0).</AbstractText><AbstractText Label="RESULTS">A total of 38 studies involving 7229 critically ill patients and 12 interventions were included. While the network meta-analysis results suggest that nurse-led cluster nursing is the superior intervention for reducing delirium incidence (SUCRA=80.5 %), delirium duration (SUCRA=92.2 %), and mechanical ventilation duration (SUCRA=84.4 %) in elderly patients, it's important to note that physical exercise (SUCRA=92.9 %) and cluster care (SUCRA=82.4 %) also demonstrated significant effects in decreasing ICU stay duration. However, these findings should be approached with caution.</AbstractText><AbstractText Label="CONCLUSION">Our findings indicated that nurse-led cluster nursing showed reliable performance in managing outcome indicators of delirium in the elderly. Our study provides important evidence for clinical medical staff to optimize intensive care programs, but the results should be interpreted with caution.</AbstractText><CopyrightInformation>Copyright &#xa9; 2025. Published by Elsevier B.V.</CopyrightInformation></Abstract><AuthorList CompleteYN="Y"><Author ValidYN="Y"><LastName>Lizi</LastName><ForeName>Hu</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>Chengdu University of TCM, Chengdu, Nursing school 611137, China.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Qingyuan</LastName><ForeName>Wang</ForeName><Initials>W</Initials><AffiliationInfo><Affiliation>Chengdu University of TCM, Chengdu, Nursing school 611137, China.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Shuyao</LastName><ForeName>Wang</ForeName><Initials>W</Initials><AffiliationInfo><Affiliation>Chengdu University of TCM, Chengdu, Nursing school 611137, China.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Dan</LastName><ForeName>Wang</ForeName><Initials>W</Initials><AffiliationInfo><Affiliation>Chengdu University of TCM, Chengdu, Nursing school 611137, China.</Affiliation></AffiliationInfo></Author><Author ValidYN="Y"><LastName>Kang</LastName><ForeName>Hua</ForeName><Initials>H</Initials><AffiliationInfo><Affiliation>Chengdu University of TCM, Chengdu, Nursing school 611137, China. Electronic address: kanghua@cdutcm.edu.cn.</Affiliation></AffiliationInfo></Author></AuthorList><Language>eng</Language><PublicationTypeList><PublicationType UI="D016428">Journal Article</PublicationType><PublicationType UI="D000078182">Systematic Review</PublicationType><PublicationType UI="D000099094">Network Meta-Analysis</PublicationType></PublicationTypeList><ArticleDate DateType="Electronic"><Year>2025</Year><Month>11</Month><Day>02</Day></ArticleDate></Article><MedlineJournalInfo><Country>Netherlands</Country><MedlineTA>Arch Gerontol Geriatr</MedlineTA><NlmUniqueID>8214379</NlmUniqueID><ISSNLinking>0167-4943</ISSNLinking></MedlineJournalInfo><CitationSubset>IM</CitationSubset><MeshHeadingList><MeshHeading><DescriptorName UI="D006801" MajorTopicYN="N">Humans</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D003693" MajorTopicYN="Y">Delirium</DescriptorName><QualifierName UI="Q000517" MajorTopicYN="N">prevention &amp; control</QualifierName><QualifierName UI="Q000453" MajorTopicYN="N">epidemiology</QualifierName><QualifierName UI="Q000451" MajorTopicYN="N">nursing</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D007362" MajorTopicYN="Y">Intensive Care Units</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D000368" MajorTopicYN="N">Aged</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D016032" MajorTopicYN="N">Randomized Controlled Trials as Topic</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D007902" MajorTopicYN="N">Length of Stay</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="N">statistics &amp; numerical data</QualifierName></MeshHeading><MeshHeading><DescriptorName UI="D015994" MajorTopicYN="N">Incidence</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D016638" MajorTopicYN="N">Critical Illness</DescriptorName></MeshHeading><MeshHeading><DescriptorName UI="D012121" MajorTopicYN="N">Respiration, Artificial</DescriptorName><QualifierName UI="Q000706" MajorTopicYN="N">statistics &amp; numerical data</QualifierName></MeshHeading></MeshHeadingList><KeywordList Owner="NOTNLM"><Keyword MajorTopicYN="N">Delirium</Keyword><Keyword MajorTopicYN="N">Elderly</Keyword><Keyword MajorTopicYN="N">Network meta-analysis</Keyword><Keyword MajorTopicYN="N">Systematic review</Keyword></KeywordList><CoiStatement>Declaration of competing interest The authors declare that they have no known competing financial interests or personal relationships that could have appeared to influence the work reported in this paper. This research did not receive any specific grant from funding agencies in the public, commercial, or not-for-profit sectors.</CoiStatement></MedlineCitation><PubmedData><History><PubMedPubDate PubStatus="received"><Year>2024</Year><Month>10</Month><Day>1</Day></PubMedPubDate><PubMedPubDate PubStatus="revised"><Year>2025</Year><Month>10</Month><Day>29</Day></PubMedPubDate><PubMedPubDate PubStatus="accepted"><Year>2025</Year><Month>11</Month><Day>1</Day></PubMedPubDate><PubMedPubDate PubStatus="medline"><Year>2025</Year><Month>12</Month><Day>3</Day><Hour>1</Hour><Minute>16</Minute></PubMedPubDate><PubMedPubDate PubStatus="pubmed"><Year>2025</Year><Month>11</Month><Day>16</Day><Hour>0</Hour><Minute>27</Minute></PubMedPubDate><PubMedPubDate PubStatus="entrez"><Year>2025</Year><Month>11</Month><Day>15</Day><Hour>18</Hour><Minute>8</Minute></PubMedPubDate></History><PublicationStatus>ppublish</PublicationStatus><ArticleIdList><ArticleId IdType="pubmed">41240665</ArticleId><ArticleId IdType="doi">10.1016/j.archger.2025.106075</ArticleId><ArticleId IdType="pii">S0167-4943(25)00332-2</ArticleId></ArticleIdList></PubmedData></PubmedArticle></PubmedArticleSet>

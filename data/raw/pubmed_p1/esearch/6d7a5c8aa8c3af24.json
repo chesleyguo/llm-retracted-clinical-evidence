@@ -1,0 +1,8 @@
+{
+ "query": "((\"celecoxib\"[mh] OR celecoxib[tiab] OR celebrex[tiab]) AND (\"anterior cruciate ligament\"[mh] OR \"anterior cruciate ligament reconstruction\"[mh] OR \"anterior cruciate ligament injuries\"[mh] OR \"anterior cruciate ligament\"[tiab] OR acl[tiab] OR \"acl reconstruction\"[tiab] OR \"acl surgery\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2007/07/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:41:27+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

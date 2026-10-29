@@ -1,0 +1,14 @@
+{
+ "query": "((\"Intralipid\"[tiab] OR \"soybean oil emulsion\"[tiab] OR \"lipid emulsion\"[tiab] OR \"fat emulsion\"[tiab] OR \"intravenous lipid emulsion\"[tiab] OR \"ILE\"[tiab] OR \"soybean oil\"[mh]) AND (\"recurrent spontaneous abortion\"[tiab] OR \"recurrent miscarriage\"[tiab] OR \"recurrent pregnancy loss\"[tiab] OR \"habitual abortion\"[tiab] OR \"abortion, habitual\"[mh] OR \"abortion, spontaneous\"[mh]) AND (\"chemical pregnancy\"[tiab] OR \"biochemical pregnancy\"[tiab] OR \"pregnancy rate\"[tiab] OR \"implantation rate\"[tiab] OR \"clinical pregnancy\"[tiab] OR \"live birth\"[tiab] OR \"pregnancy outcome\"[tiab] OR \"pregnancy rate\"[mh] OR \"live birth\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2016/12/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:31:46+00:00",
+ "count": 8,
+ "pmids": [
+  "35118388",
+  "33462292",
+  "40438374",
+  "39205682",
+  "40600377"
+ ],
+ "phrases_not_found": []
+}

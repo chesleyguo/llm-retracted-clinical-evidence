@@ -1,0 +1,16 @@
+{
+ "query": "((\"pentoxifylline\"[mh] OR pentoxifylline[tiab] OR oxpentifylline[tiab] OR trental[tiab]) AND (\"critical illness\"[mh] OR critically ill[tiab] OR \"intensive care\"[tiab] OR \"critical care\"[tiab] OR \"trauma\"[mh] OR trauma[tiab] OR traumatic[tiab] OR \"wounds and injuries\"[mh] OR injury[tiab] OR injuries[tiab] OR \"sepsis\"[mh] OR sepsis[tiab] OR septic[tiab] OR septicemia[tiab] OR septicaemia[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1996/07/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:25+00:00",
+ "count": 36,
+ "pmids": [
+  "15035457",
+  "36882364",
+  "29550081",
+  "33653127",
+  "40518060"
+ ],
+ "phrases_not_found": [
+  "\"trauma\"[mh]"
+ ]
+}

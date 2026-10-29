@@ -1,0 +1,10 @@
+{
+ "query": "((\"microlearning\"[tiab] OR \"micro-learning\"[tiab] OR \"micro learning\"[tiab] OR \"bite-sized learning\"[tiab] OR \"microtraining\"[tiab] OR \"micro training\"[tiab] OR \"micro-education\"[tiab] OR \"micro education\"[tiab] OR \"microlearning\"[mh]) AND (\"aged\"[mh] OR \"aged, 80 and over\"[mh] OR \"frail elderly\"[mh] OR \"older adults\"[tiab] OR \"elderly\"[tiab] OR \"older people\"[tiab] OR \"older persons\"[tiab] OR \"seniors\"[tiab] OR \"geriatric\"[tiab] OR \"aging\"[tiab] OR \"ageing\"[tiab]) AND (\"medication adherence\"[mh] OR \"medication adherence\"[tiab] OR \"drug adherence\"[tiab] OR \"medication compliance\"[tiab] OR \"drug compliance\"[tiab] OR \"patient compliance\"[mh] OR \"patient compliance\"[tiab] OR \"treatment adherence\"[tiab] OR \"treatment compliance\"[tiab] OR \"adherence\"[tiab] OR \"compliance\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2025/11/22:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:46+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"microlearning\"[mh]"
+ ]
+}

@@ -1,0 +1,10 @@
+{
+ "query": "((\"enalaprilat\"[mh] OR enalaprilat[tiab] OR \"enalaprilic acid\"[tiab] OR \"MK-422\"[tiab]) AND (\"hypertension\"[mh] OR hypertens*[tiab] OR \"high blood pressure\"[tiab] OR \"elevated blood pressure\"[tiab]) AND (\"blood pressure\"[mh] OR \"blood pressure\"[tiab] OR \"arterial pressure\"[tiab] OR \"systolic pressure\"[tiab] OR \"diastolic pressure\"[tiab] OR \"mean arterial pressure\"[tiab] OR \"MAP\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1994/06/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:36:49+00:00",
+ "count": 1,
+ "pmids": [
+  "25530194"
+ ],
+ "phrases_not_found": []
+}

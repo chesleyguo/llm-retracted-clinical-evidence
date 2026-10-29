@@ -1,0 +1,8 @@
+{
+ "query": "((\"pentoxifylline\"[mh] OR pentoxifylline[tiab] OR oxpentifylline[tiab] OR trental[tiab]) AND (\"risperidone\"[mh] OR risperidone[tiab] OR risperdal[tiab]) AND (\"schizophrenia\"[mh] OR schizophrenia[tiab] OR schizophrenic[tiab] OR \"schizoaffective disorder\"[tiab] OR \"negative symptoms\"[tiab] OR \"negative symptom\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2023/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:30:40+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

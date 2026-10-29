@@ -1,0 +1,14 @@
+{
+ "query": "((\"pramipexole\"[mh] OR pramipexole[tiab] OR \"Mirapex\"[tiab] OR \"Sifrol\"[tiab]) AND (\"levodopa\"[mh] OR levodopa[tiab] OR \"L-dopa\"[tiab] OR \"L Dopa\"[tiab]) AND (\"Parkinson Disease\"[mh] OR \"Parkinson's disease\"[tiab] OR Parkinson[tiab] OR \"Parkinson disease\"[tiab]) AND (\"Unified Parkinson's Disease Rating Scale\"[tiab] OR UPDRS[tiab] OR \"motor symptoms\"[tiab] OR \"motor function\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/07/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:32:15+00:00",
+ "count": 11,
+ "pmids": [
+  "37396766",
+  "34324057",
+  "41247590",
+  "36380711",
+  "32710141"
+ ],
+ "phrases_not_found": []
+}

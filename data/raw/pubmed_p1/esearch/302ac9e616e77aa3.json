@@ -1,0 +1,8 @@
+{
+ "query": "((\"neuromuscular electrical stimulation\"[tiab] OR \"NMES\"[tiab] OR \"electric stimulation therapy\"[mh] OR \"electric stimulation\"[tiab] OR \"electrical stimulation\"[tiab]) AND (\"anterior cruciate ligament reconstruction\"[tiab] OR \"ACL reconstruction\"[tiab] OR \"anterior cruciate ligament\"[mh] OR \"anterior cruciate ligament\"[tiab]) AND (\"deep venous thrombosis\"[tiab] OR \"deep vein thrombosis\"[tiab] OR \"DVT\"[tiab] OR \"venous thrombosis\"[mh] OR \"venous thrombosis\"[tiab] OR \"thromboembolism\"[tiab] OR \"venous thromboembolism\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:40+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

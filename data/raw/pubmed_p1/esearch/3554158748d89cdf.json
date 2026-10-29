@@ -1,0 +1,8 @@
+{
+ "query": "((\"aspirin\"[mh] OR aspirin[tiab] OR \"acetylsalicylic acid\"[tiab]) AND (\"fatty acids, omega-3\"[mh] OR \"omega-3\"[tiab] OR \"omega 3\"[tiab] OR \"n-3 fatty acids\"[tiab] OR \"fish oil\"[tiab] OR \"eicosapentaenoic acid\"[tiab] OR \"docosahexaenoic acid\"[tiab]) AND (\"fetal weight\"[mh] OR \"fetal weight\"[tiab] OR \"birth weight\"[mh] OR \"birth weight\"[tiab] OR \"fetal growth\"[tiab] OR \"intrauterine growth restriction\"[tiab] OR \"fetal growth restriction\"[tiab] OR \"small for gestational age\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2017/03/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:06+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

@@ -1,0 +1,16 @@
+{
+ "query": "((\"sacubitril valsartan\"[tiab] OR \"sacubitril-valsartan\"[tiab] OR \"LCZ696\"[tiab] OR \"Entresto\"[tiab] OR \"sacubitril and valsartan\"[tiab] OR \"sacubitril/valsartan\"[tiab] OR \"sacubitril valsartan sodium\"[tiab] OR \"sacubitril\"[mh] OR \"valsartan\"[mh]) AND (\"heart failure with preserved ejection fraction\"[tiab] OR \"HFpEF\"[tiab] OR \"diastolic heart failure\"[tiab] OR \"heart failure, diastolic\"[mh] OR \"heart failure\"[mh] OR \"heart failure\"[tiab]) AND (\"left ventricular diastolic function\"[tiab] OR \"diastolic function\"[tiab] OR \"ventricular diastolic function\"[tiab] OR \"diastolic dysfunction\"[tiab] OR \"ventricular filling\"[tiab] OR \"E/e'\"[tiab] OR \"E/A ratio\"[tiab] OR \"left atrial volume\"[tiab] OR \"diastole\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:36:12+00:00",
+ "count": 5,
+ "pmids": [
+  "39252524",
+  "39927814",
+  "39828108",
+  "38728489",
+  "36184714"
+ ],
+ "phrases_not_found": [
+  "\"sacubitril\"[mh]"
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "query": "((isoxsuprine[mh] OR isoxsuprine[tiab] OR \"isoxsuprine hydrochloride\"[tiab] OR vasodilan[tiab] OR duvadilan[tiab]) AND (\"erectile dysfunction\"[mh] OR \"erectile dysfunction\"[tiab] OR \"male impotence\"[tiab] OR impotence[tiab] OR \"sexual dysfunction\"[tiab]) AND (\"treatment outcome\"[mh] OR \"treatment outcome\"[tiab] OR efficacy[tiab] OR effectiveness[tiab] OR \"clinical improvement\"[tiab] OR \"erectile function\"[tiab] OR \"penile erection\"[tiab] OR \"sexual function\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2001/07/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:34+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

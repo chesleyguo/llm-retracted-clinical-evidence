@@ -1,0 +1,14 @@
+{
+ "query": "((\"treadmill exercise\"[tiab] OR \"treadmill training\"[tiab] OR \"aerobic exercise\"[tiab] OR \"aerobic training\"[tiab] OR \"resistance training\"[tiab] OR \"strength training\"[tiab] OR \"weight training\"[tiab] OR \"combined training\"[tiab] OR \"concurrent training\"[tiab] OR \"exercise training\"[tiab] OR \"physical training\"[tiab] OR \"exercise\"[mh] OR \"resistance training\"[mh]) AND (\"healthy sedentary\"[tiab] OR \"sedentary men\"[tiab] OR \"sedentary male\"[tiab] OR \"healthy men\"[tiab] OR \"healthy male\"[tiab] OR \"male volunteers\"[tiab] OR \"men\"[tiab] OR \"male\"[tiab] OR \"healthy volunteers\"[mh] OR \"men\"[mh]) AND (\"sperm DNA integrity\"[tiab] OR \"sperm DNA fragmentation\"[tiab] OR \"DNA fragmentation\"[tiab] OR \"sperm chromatin\"[tiab] OR \"sperm DNA damage\"[tiab] OR \"DNA integrity\"[tiab] OR \"sperm quality\"[tiab] OR \"semen quality\"[tiab] OR \"sperm parameters\"[tiab] OR \"sperm\"[tiab] OR \"semen\"[tiab] OR \"DNA fragmentation\"[mh] OR \"spermatozoa\"[mh] OR \"semen analysis\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2019/04/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:41:33+00:00",
+ "count": 7,
+ "pmids": [
+  "40603698",
+  "34806474",
+  "30671700",
+  "40104136",
+  "41572846"
+ ],
+ "phrases_not_found": []
+}

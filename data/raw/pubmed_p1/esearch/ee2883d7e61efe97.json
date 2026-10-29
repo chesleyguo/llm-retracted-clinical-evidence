@@ -1,0 +1,10 @@
+{
+ "query": "((\"play dough\"[tiab] OR \"playdough\"[tiab] OR \"play-dough\"[tiab] OR \"modeling clay\"[tiab] OR \"modelling clay\"[tiab] OR \"plasticine\"[tiab]) AND (child[tiab] OR children[tiab] OR pediatric[tiab] OR paediatric[tiab] OR preschool[tiab] OR \"preschool child\"[mh] OR \"child, preschool\"[mh]) AND (anxiety[tiab] OR anxious[tiab] OR fear[tiab] OR distress[tiab] OR \"preoperative anxiety\"[tiab] OR \"premedication anxiety\"[tiab] OR \"anxiety\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2017/02/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:35:14+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"preschool child\"[mh]"
+ ]
+}

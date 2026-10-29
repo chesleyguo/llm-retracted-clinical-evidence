@@ -1,0 +1,14 @@
+{
+ "query": "((\"probiotics\"[mh] OR probiotic*[tiab] OR \"probiotic supplement\"[tiab] OR \"probiotic preparation\"[tiab]) AND (\"test anxiety\"[tiab] OR \"examination anxiety\"[tiab] OR \"exam anxiety\"[tiab] OR \"performance anxiety\"[tiab] OR \"academic anxiety\"[tiab] OR \"anxiety\"[mh] OR anxiety[tiab]) AND (\"students\"[mh] OR student*[tiab] OR \"college students\"[tiab] OR \"university students\"[tiab] OR \"undergraduates\"[tiab] OR \"young adults\"[tiab] OR \"adolescents\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2021/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:47+00:00",
+ "count": 7,
+ "pmids": [
+  "35246237",
+  "40420533",
+  "35276975",
+  "39511589",
+  "33271210"
+ ],
+ "phrases_not_found": []
+}

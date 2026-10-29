@@ -1,0 +1,17 @@
+{
+ "id": "https://openalex.org/W7156099759",
+ "doi": "https://doi.org/10.1097/md.0000000000048396",
+ "publication_date": "2026-04-24",
+ "referenced_works": [
+  "https://openalex.org/W2018022341",
+  "https://openalex.org/W2340863029",
+  "https://openalex.org/W2567108978",
+  "https://openalex.org/W3045490362",
+  "https://openalex.org/W3111496039",
+  "https://openalex.org/W3173409407",
+  "https://openalex.org/W4324395205",
+  "https://openalex.org/W4377694899"
+ ],
+ "referenced_works_count": 8,
+ "retrieved_at_utc": "2026-10-29T04:33:27+00:00"
+}

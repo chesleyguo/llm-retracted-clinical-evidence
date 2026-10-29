@@ -1,0 +1,14 @@
+{
+ "query": "((\"umbilical cord milking\"[tiab] OR \"cord milking\"[tiab] OR \"intact umbilical cord milking\"[tiab] OR \"cut umbilical cord milking\"[tiab] OR \"Umbilical Cord Milking\"[mh]) AND (\"preterm neonates\"[tiab] OR \"preterm newborn\"[tiab] OR \"preterm infants\"[tiab] OR \"premature neonates\"[tiab] OR \"premature infants\"[tiab] OR \"premature newborn\"[tiab] OR \"Infant, Premature\"[mh] OR \"Infant, Preterm\"[mh]) AND (\"respiratory support\"[tiab] OR \"mechanical ventilation\"[tiab] OR \"continuous positive airway pressure\"[tiab] OR \"CPAP\"[tiab] OR \"oxygen therapy\"[tiab] OR \"oxygen supplementation\"[tiab] OR \"respiratory distress syndrome\"[tiab] OR \"RDS\"[tiab] OR \"Respiratory Distress Syndrome, Newborn\"[mh] OR \"Respiration, Artificial\"[mh] OR \"Continuous Positive Airway Pressure\"[mh] OR \"Oxygen Inhalation Therapy\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/09/19:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:33:40+00:00",
+ "count": 2,
+ "pmids": [
+  "40819818",
+  "42297412"
+ ],
+ "phrases_not_found": [
+  "\"Umbilical Cord Milking\"[mh]",
+  "\"Infant, Preterm\"[mh]"
+ ]
+}

@@ -1,0 +1,8 @@
+{
+ "query": "((\"granisetron\"[mh] OR granisetron[tiab] OR \"Kytril\"[tiab]) AND (\"droperidol\"[mh] OR droperidol[tiab] OR \"Inapsine\"[tiab]) AND (\"middle ear\"[tiab] OR \"tympanic\"[tiab] OR \"otologic\"[tiab] OR \"otological\"[tiab] OR \"ear surgery\"[tiab] OR \"mastoidectomy\"[tiab] OR \"tympanoplasty\"[tiab] OR \"stapedectomy\"[tiab] OR \"ossiculoplasty\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 1999/03/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:39:11+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

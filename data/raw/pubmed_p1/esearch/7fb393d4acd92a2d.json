@@ -1,0 +1,13 @@
+{
+ "query": "((\"360 degree safe indwelling needle\"[tiab] OR \"360\u00b0 safe indwelling needle\"[tiab] OR \"360 safe indwelling needle\"[tiab] OR \"safety indwelling needle\"[tiab] OR \"safety IV catheter\"[tiab] OR \"safety peripheral intravenous catheter\"[tiab] OR \"safety cannula\"[tiab]) AND (child[tiab] OR children[tiab] OR pediatric[tiab] OR paediatric[tiab] OR infant[tiab] OR infants[tiab] OR adolescent[tiab] OR adolescents[tiab] OR \"child\"[mh] OR \"infant\"[mh] OR \"adolescent\"[mh] OR \"pediatrics\"[mh]) AND (complication[tiab] OR complications[tiab] OR adverse event[tiab] OR adverse events[tiab] OR phlebitis[tiab] OR infiltration[tiab] OR extravasation[tiab] OR occlusion[tiab] OR dislodgement[tiab] OR infection[tiab] OR \"catheter-related infections\"[mh] OR \"phlebitis\"[mh] OR \"extravasation of diagnostic and therapeutic materials\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:00+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": [
+  "\"360 degree safe indwelling needle\"[tiab]",
+  "\"360 safe indwelling needle\"[tiab]",
+  "\"360 safe indwelling needle\"[tiab]",
+  "\"safety indwelling needle\"[tiab]"
+ ]
+}

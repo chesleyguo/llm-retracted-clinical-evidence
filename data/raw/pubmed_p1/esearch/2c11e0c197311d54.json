@@ -1,0 +1,14 @@
+{
+ "query": "((probiotic*[tiab] OR probiotics[mh] OR synbiotic*[tiab] OR lactobacillus[tiab] OR bifidobacterium[tiab] OR saccharomyces[tiab] OR \"lactic acid bacteria\"[tiab]) AND (\"Parkinson disease\"[mh] OR Parkinson*[tiab] OR \"Parkinson's disease\"[tiab]) AND (\"MDS-UPDRS\"[tiab] OR \"Movement Disorder Society-Unified Parkinson's Disease Rating Scale\"[tiab] OR \"Unified Parkinson's Disease Rating Scale\"[tiab] OR UPDRS[tiab] OR motor[tiab] OR non-motor[tiab] OR symptoms[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2019/06/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:34:25+00:00",
+ "count": 17,
+ "pmids": [
+  "36974511",
+  "36284437",
+  "39470206",
+  "38705493",
+  "36084951"
+ ],
+ "phrases_not_found": []
+}

@@ -1,0 +1,16 @@
+{
+ "query": "((pembrolizumab[mh] OR pembrolizumab[tiab] OR keytruda[tiab] OR mk-3475[tiab] OR mk3475[tiab]) AND (carcinoma, non-small-cell lung[mh] OR non-small cell lung cancer[tiab] OR non-small cell lung carcinoma[tiab] OR nsclc[tiab] OR lung adenocarcinoma[tiab] OR lung squamous cell carcinoma[tiab]) AND (progression-free survival[mh] OR progression-free survival[tiab] OR pfs[tiab] OR disease progression[mh] OR progression[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/12/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:40:08+00:00",
+ "count": 72,
+ "pmids": [
+  "33882375",
+  "36748406",
+  "41644920",
+  "37596898",
+  "41035637"
+ ],
+ "phrases_not_found": [
+  "pembrolizumab"
+ ]
+}

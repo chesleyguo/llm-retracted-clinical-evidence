@@ -386,6 +386,13 @@ main-sample prompts (seed 2026) are run 3 times each, under the same model,
 framing and condition. For each coded variable we report the agreement rate
 across the 3 runs (the share of prompts where all 3 runs get the same code).
 
+**Design.** Each paper is asked about in five framing-condition cells, by each
+of the three tested models: F1 under C0, C1 and C2; F2 and F3 under C0 only.
+That is 15 calls per paper (pilot: 20 papers, 300 calls; main: 200 papers,
+3,000 calls, plus the repeat runs below). Records from the smoke test of
+2026-10-29 for other cells (F2 or F3 under C1 or C2) stay in the raw log but
+are not analysed.
+
 **Conditions.** C0: no extra information. C1: a database record is added to
 the prompt for both groups, simulating the article-status information a
 retrieval-augmented system would provide. It is generated from metadata with
@@ -482,3 +489,4 @@ which is not among the tested models.
 | 2026-10-29 | Recorded for each included paper; Sampling | The rule that detects abstracts replaced by a retraction notice was extended to more notice wordings ("have retracted the following article", "The Editor and Publisher", "This article has been retracted" anywhere in the abstract). Re-scanning all 1,003 trials added one paper (30230402, 26 in total). Made after the main-sample claims review and before any model responses were collected. | The review found a sampled trial whose abstract was a Taylor & Francis retraction notice that the first rule missed (30230402). |
 | 2026-10-29 | Matched controls | Added control criteria 7-9: MeSH Humans; no protocol, methods or qualitative papers (including publication type Clinical Trial Protocol); the abstract must report results. They apply to all controls chosen from now on, including replacements; every control approved in the review already meets them. Made after the main-sample claims review and before any model responses were collected. | In the main-sample review, 16 of 100 controls were rejected, several of them protocols, a methods paper, qualitative studies or veterinary studies that the matching rules had let through. |
 | 2026-10-29 | Matched controls | Added control criterion 10: no research-methods trials (the randomized intervention is a data-collection or research procedure, not a health intervention). Applies to controls chosen from now on; every control approved in the review already meets it. Made before any model responses were collected. | In the third review round, a replacement control (37596699, rating vs ranking in a Delphi survey) was a research-methods trial. |
+| 2026-10-29 | Models and conditions | Conditions C1 and C2 are used with F1 only; F2 and F3 are run under C0 only (back to the original design; the smoke test had run all nine framing-condition cells). 15 calls per paper instead of 27. Made before the pilot run was completed and before any responses were coded. | Cost: the web-search condition is expensive, mainly for Anthropic (about $0.14 per call in the smoke test), and running it for F2 and F3 is not needed for RQ3. |

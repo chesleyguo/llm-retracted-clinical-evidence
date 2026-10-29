@@ -1,0 +1,16 @@
+{
+ "query": "((\"mycophenolate mofetil\"[mh] OR \"mycophenolate mofetil\"[tiab] OR mycophenolate[tiab] OR \"mycophenolic acid\"[tiab] OR CellCept[tiab]) AND (\"Graves ophthalmopathy\"[mh] OR \"Graves ophthalmopathy\"[tiab] OR \"Graves' ophthalmopathy\"[tiab] OR \"Graves orbitopathy\"[tiab] OR \"Graves' orbitopathy\"[tiab] OR \"thyroid-associated ophthalmopathy\"[tiab] OR \"thyroid eye disease\"[tiab] OR \"endocrine ophthalmopathy\"[tiab]) AND (\"overall response rate\"[tiab] OR \"response rate\"[tiab] OR \"treatment response\"[tiab] OR \"clinical response\"[tiab] OR \"therapeutic response\"[tiab] OR \"remission\"[tiab] OR \"improvement\"[tiab] OR \"efficacy\"[tiab] OR \"effectiveness\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2017/02/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T04:37:10+00:00",
+ "count": 8,
+ "pmids": [
+  "34297684",
+  "31272958",
+  "31834613",
+  "30596092",
+  "39097840"
+ ],
+ "phrases_not_found": [
+  "\"mycophenolate mofetil\"[mh]"
+ ]
+}
