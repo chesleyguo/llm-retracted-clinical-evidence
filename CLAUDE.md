@@ -32,3 +32,17 @@ propagate claims from retracted clinical studies.
 - Prefer small, readable scripts in scripts/ numbered by pipeline step
   (01_..., 02_...). Explain any statistics choice in comments.
 - I am learning: before writing code, briefly explain the plan and wait for my OK.
+- Claude runs all scripts itself (including API calls) and reports the results.
+- At the start of a session, read docs/STATUS.md; update it at the end of a
+  block of work.
+- Blinding: while I am hand-coding a sheet, never show or quote item-level LLM
+  codes or the sheet's key file (group, model, condition) for its items.
+  Aggregate counts are fine.
+- Budget: total API spend is capped at $95 for the whole project. Estimate the
+  cost before any large run, and report the actual spend after it.
+- DeepSeek calls run outside peak hours, with the fixed part of the prompt first
+  (prefix cache).
+- Every codebook change gets a version bump and a revision-log row; every change
+  to the analysis plan gets a row in its Deviations log.
+- New dependencies are pinned in requirements.txt.
+- Commit after each completed step.
