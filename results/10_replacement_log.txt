@@ -20,3 +20,84 @@ pilot: replacing 38416549, no control found (stratum 2024, position 1 in the str
 
 pilot: replacing 26905469, abstract is a retraction notice (stratum <=2022, position 3 in the stratum's random order)
   position 5: 9809085 taken; control 9787142 (level 1, topic Dexamethasone)
+
+========================================================================
+Run at (UTC): 2026-10-29T03:06:41+00:00
+Seed for new candidate orders: 2026 (numpy 2.5.4, default_rng)
+Retraction Watch snapshot: retraction_watch_2026-10-28.csv
+
+main: replacing control 25316562 of 24483234, control rejected in claims review (recorded order: level 1, topic Labor Stage, Second, chosen at position 1 of 12)
+  new control 23528153 (level 1, topic Labor Stage, Second, position 2)
+
+main: replacing control 33855883 of 33050752, control rejected in claims review (recorded order: level 1, topic Brain Injuries, Traumatic, chosen at position 1 of 169)
+  new control 30794101 (level 1, topic Brain Injuries, Traumatic, position 3)
+
+main: replacing pair of 34337032, retracted trial rejected in claims review (stratum 2024, position 9 in the stratum's random order)
+  position 20: 35655485 taken; control 37294727 (level 1, topic Kyphosis)
+
+main: replacing pair of 30230402, abstract is a retraction notice (stratum 2024, position 15 in the stratum's random order)
+  position 25: 35860804 skipped (journal cap)
+  position 29: 33148218 taken; control 30548953 (level 1, topic Health Promotion)
+
+main: replacing control 27562303 of 27614789, control rejected in claims review (recorded order: level 1, topic Soybean Oil, chosen at position 1 of 25)
+  new control 27535127 (level 1, topic Soybean Oil, position 3)
+
+main: replacing control 30226796 of 32735501, control rejected in claims review (recorded order: level 1, topic Levodopa, chosen at position 1 of 37)
+  new control 32607644 (level 1, topic Levodopa, position 2)
+
+main: replacing control 25527661 of 25163489, control rejected in claims review (recorded order: level 1, topic Gestational Age, chosen at position 1 of 16)
+  new control 26204351 (level 1, topic Gestational Age, position 3)
+
+main: replacing control 41930409 of 40163481, control rejected in claims review (recorded order: level 1, topic Domestic Violence, chosen at position 1 of 16)
+  new control 41240947 (level 1, topic Domestic Violence, position 2)
+
+main: replacing control 29141679 of 27567670, control rejected in claims review (recorded order: level 1, topic Uterine Inertia, chosen at position 1 of 4)
+  new control 27855051 (level 1, topic Uterine Inertia, position 2)
+
+main: replacing control 40906520 of 41275022, control rejected in claims review (recorded order: level 1, topic Health Literacy, chosen at position 1 of 150)
+  new control 40946594 (level 1, topic Health Literacy, position 2)
+
+main: replacing control 35444614 of 36277984, control rejected in claims review (recorded order: level 1, topic Lung Neoplasms, chosen at position 1 of 776)
+  new control 36978035 (level 1, topic Lung Neoplasms, position 2)
+
+main: replacing pair of 35028116, retracted trial rejected in claims review (stratum 2023, position 4 in the stratum's random order)
+  position 9: 36199765 skipped (journal cap)
+  position 14: 36299682 skipped (journal cap)
+  position 15: 35371287 skipped (journal cap)
+  position 16: 35720026 skipped (journal cap)
+  position 22: 35722469 skipped (journal cap)
+  position 24: 35310181 taken; control 35568681 (level 1, topic Venous Thrombosis)
+
+main: replacing control 34495421 of 35251294, control rejected in claims review (recorded order: level 1, topic Carcinoma, Non-Small-Cell Lung, chosen at position 1 of 901)
+  new control 33915217 (level 1, topic Carcinoma, Non-Small-Cell Lung, position 2)
+
+main: replacing pair of 35310194, retracted trial rejected in claims review (stratum 2023, position 11 in the stratum's random order)
+  position 14: 36299682 skipped (journal cap)
+  position 15: 35371287 skipped (journal cap)
+  position 16: 35720026 skipped (journal cap)
+  position 22: 35722469 skipped (journal cap)
+  position 25: 35360550 skipped (journal cap)
+  position 26: 34733454 taken; control 34763504 (level 1, topic Lung Neoplasms)
+
+main: replacing pair of 34760143, retracted trial rejected in claims review (stratum 2023, position 18 in the stratum's random order)
+  position 22: 35722469 skipped (journal cap)
+  position 25: 35360550 skipped (journal cap)
+  position 27: 35432822 taken; control 37407057 (level 1, topic Ambulatory Care Facilities)
+
+main: replacing control 32816830 of 33981369, control rejected in claims review (recorded order: level 1, topic Gastrointestinal Microbiome, chosen at position 1 of 459)
+  new control 33487303 (level 1, topic Gastrointestinal Microbiome, position 2)
+
+main: replacing control 15337177 of 15170272, control rejected in claims review (recorded order: level 1, topic Mandibular Diseases, chosen at position 1 of 11)
+  new control 16053843 (level 1, topic Mandibular Diseases, position 3)
+
+main: replacing control 8956759 of 7529482, control rejected in claims review (recorded order: level 1, topic Cell Adhesion Molecules, chosen at position 1 of 4)
+  new control 7536438 (level 1, topic Cell Adhesion Molecules, position 2)
+
+main: replacing control 9706209 of 10193289, control rejected in claims review (recorded order: level 1, topic Dexamethasone, chosen at position 1 of 151)
+  new control 9015035 (level 1, topic Dexamethasone, position 2)
+
+main: replacing control 32270176 of 32500486, control rejected in claims review (recorded order: level 1, topic Antidepressive Agents, chosen at position 1 of 191)
+  new control 33734000 (level 1, topic Antidepressive Agents, position 3)
+
+pilot: replacing pair of 33928619, retracted trial rejected in claims review (stratum 2025-2026, position 1 in the stratum's random order)
+  position 3: 39702045 taken; control 37604638 (level 1, topic COVID-19)

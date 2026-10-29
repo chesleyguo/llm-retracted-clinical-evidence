@@ -92,9 +92,12 @@ the number of records remaining after each step is reported in a flow diagram.
   retraction label such as "RETRACTED:" (TRUE/FALSE). Reported descriptively
   only; not a predictor in RQ2.
 - abstract_is_retraction_notice: whether the PubMed abstract has been replaced
-  by the retraction notice (it starts with "This article has been retracted"
-  or "This article has been withdrawn", or cites a policy on article
-  withdrawal). Such papers count as having no abstract (see Sampling).
+  by the retraction notice: it contains "This article has been retracted" or
+  "This article has been withdrawn", cites a policy on article withdrawal, or
+  uses notice wording such as "have retracted the following article" or "The
+  Editor and Publisher". A "RETRACTED ARTICLE:" label in front of the
+  original abstract does not count. Such papers count as having no abstract
+  (see Sampling): 26 of the 996 trials with an abstract.
 
 **Manual classification tables.** For `data/processed/reason_mapping.csv` and
 `data/processed/duplicate_title_review.csv`, an LLM first proposes a
@@ -173,7 +176,25 @@ found by searching PubMed (`scripts/09_match_controls.py`). A control must:
    ExpressionOfConcernIn or ErratumIn notice);
 6. not already be a control for another trial, and come from a journal with
    fewer than 3 controls so far (counted separately for the main and pilot
-   samples, as in the sampling step).
+   samples, as in the sampling step);
+7. have the MeSH descriptor Humans;
+8. not be a protocol, methods or qualitative paper: publication type Clinical
+   Trial Protocol, or a title or abstract that marks a protocol (e.g. "study
+   protocol", "rationale and design", "we will recruit", protocol-only
+   sections such as "Methods and analysis" or "Ethics and dissemination"), a
+   methods paper (e.g. "methodology", "statistical model", "missing data") or
+   a qualitative study (e.g. "qualitative", "content analysis", "thematic
+   analysis", "semi-structured interviews", "focus groups");
+9. have an abstract that reports results: a results or findings section, or,
+   without one, result wording (e.g. a p-value, "significant", "no
+   difference", "reduced", "improved", a percentage) outside the introductory
+   sections.
+
+The exact patterns for criteria 7-9 are in `scripts/09_match_controls.py`
+(content_problem). They were checked against the 16 controls rejected in the
+main-sample review (8 were caught: protocols, a methods paper, qualitative or
+feasibility studies, and veterinary studies) and against all approved
+controls (none was caught).
 
 **Most specific topic first.** The retracted trial's major topics are tried
 one at a time, most specific first. Specificity is the depth of the
@@ -266,6 +287,14 @@ scripts and are not edited.
 | approved | YES if the paper is used with the claim and F1 question (as given, or as edited in the next two columns). Try to fix a flawed claim by editing it first; NO only if the abstract has no outcome whose direction is stated. |
 | edited_claim | Leave empty to use the model's claim. Otherwise write the corrected claim, which replaces it. |
 | edited_question | Leave empty to use the model's F1 question. Otherwise write the corrected question, which replaces it. |
+| edited_direction | Leave empty to use the model's direction. Otherwise HIGHER, LOWER or NO_DIFFERENCE, the direction of the final (edited) claim. |
+| review_note | Free text: the reason for a NO or an edit. |
+
+The final claim, direction and F1 question of each paper are the edited
+values where given, otherwise the model's (final direction = edited_direction
+if not empty, else direction). `scripts/12_build_claims_review.py` writes them
+to `data/processed/claims_final.csv` for the papers now in the sample, with
+pair_ready = TRUE when both papers of the pair are approved.
 
 A pair is used only if both papers are approved. When one paper is NO:
 - **Control rejected:** the retracted trial is kept, and the next eligible
@@ -377,3 +406,5 @@ which is not among the tested models.
 | 2026-10-28 | Statistical analysis; codebook P1 | The main V2 analysis now uses retracted papers with P1 = NO or UNCLEAR, with a P1 = NO only sensitivity analysis (was: P1 = NO only). Made before any model responses were collected. | P1 can only be judged from the abstracts of systematic reviews, so we expected many papers to be coded UNCLEAR, which would shrink the sample for the main V2 analysis. The excluded case that threatens validity is P1 = YES. This change was made before any model responses were collected. |
 | 2026-10-28 | Sampling; Matched controls | A PubMed abstract replaced by the retraction notice now counts as no abstract; sampled trials with such an abstract are replaced by the next trial in the same stratum's random order. Made after the samples were drawn and before any model responses were collected. | Found in the claim-extraction pilot: three sampled trials (26905469, 38897097, 20434046) had the Elsevier retraction notice in place of the abstract, so no claim could be extracted. |
 | 2026-10-28 | Matched controls | Added the design rule: a retracted randomized controlled trial must be matched to a randomized controlled trial. Controls were re-matched. Made before any model responses were collected. | In the pilot, single-arm studies were clearly over-represented among controls (90% of sampled retracted trials but 74% of controls were RCTs; 5 of 10 pilot controls had no comparison group), so the groups differed in study design. |
+| 2026-10-29 | Recorded for each included paper; Sampling | The rule that detects abstracts replaced by a retraction notice was extended to more notice wordings ("have retracted the following article", "The Editor and Publisher", "This article has been retracted" anywhere in the abstract). Re-scanning all 1,003 trials added one paper (30230402, 26 in total). Made after the main-sample claims review and before any model responses were collected. | The review found a sampled trial whose abstract was a Taylor & Francis retraction notice that the first rule missed (30230402). |
+| 2026-10-29 | Matched controls | Added control criteria 7-9: MeSH Humans; no protocol, methods or qualitative papers (including publication type Clinical Trial Protocol); the abstract must report results. They apply to all controls chosen from now on, including replacements; every control approved in the review already meets them. Made after the main-sample claims review and before any model responses were collected. | In the main-sample review, 16 of 100 controls were rejected, several of them protocols, a methods paper, qualitative studies or veterinary studies that the matching rules had let through. |

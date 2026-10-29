@@ -8,7 +8,7 @@ Cross-check among 11637 eligible papers with a PubMed record:
 
 pubmed_flagged = False among trials: 20 of 1003
 Trials with an abstract: 996 (99.3%)
-  of which the abstract is a retraction notice: 25
+  of which the abstract is a retraction notice: 26
 pubmed_title_marked (title starts with a retraction label): 57 of 1003
 
 Trials by retraction year:

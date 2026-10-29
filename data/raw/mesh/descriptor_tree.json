@@ -1,4 +1,12 @@
 {
+ "D000013": {
+  "parents": {
+   "D009358": "Congenital, Hereditary, and Neonatal Diseases and Abnormalities"
+  },
+  "tree_numbers": [
+   "C16.131"
+  ]
+ },
  "D000019": {
   "parents": {
    "D012102": "Reproductive Control Agents"
@@ -157,6 +165,12 @@
    "E02.831.185",
    "H02.403.680.600.250",
    "N02.421.784.244"
+  ]
+ },
+ "D000072182": {
+  "parents": {},
+  "tree_numbers": [
+   "J03"
   ]
  },
  "D000072226": {
@@ -323,6 +337,19 @@
   },
   "tree_numbers": [
    "F01.470.132.650.500"
+  ]
+ },
+ "D000086382": {
+  "parents": {
+   "D011024": "Pneumonia, Viral",
+   "D018352": "Coronavirus Infections"
+  },
+  "tree_numbers": [
+   "C01.925.782.600.550.200.163",
+   "C01.925.705.500",
+   "C08.730.610.763.500",
+   "C08.381.677.807.500",
+   "C01.748.610.763.500"
   ]
  },
  "D000087526": {
@@ -493,6 +520,14 @@
   },
   "tree_numbers": [
    "D03.132"
+  ]
+ },
+ "D000554": {
+  "parents": {
+   "D006268": "Health Facilities"
+  },
+  "tree_numbers": [
+   "N02.278.035"
   ]
  },
  "D000556": {
@@ -905,6 +940,16 @@
   },
   "tree_numbers": [
    "C05.550.114"
+  ]
+ },
+ "D001178": {
+  "parents": {
+   "D019637": "Orthopedic Procedures",
+   "D019651": "Plastic Surgery Procedures"
+  },
+  "tree_numbers": [
+   "E04.555.110",
+   "E04.617.101"
   ]
  },
  "D001190": {
@@ -1671,6 +1716,14 @@
    "G07.690"
   ]
  },
+ "D002652": {
+  "parents": {
+   "D001519": "Behavior"
+  },
+  "tree_numbers": [
+   "F01.145.179"
+  ]
+ },
  "D002723": {
   "parents": {
    "D001565": "Benzoates"
@@ -1678,6 +1731,14 @@
   "tree_numbers": [
    "D02.241.223.100.200",
    "D02.455.426.559.389.127.250"
+  ]
+ },
+ "D002738": {
+  "parents": {
+   "D000634": "Aminoquinolines"
+  },
+  "tree_numbers": [
+   "D03.633.100.810.050.180"
   ]
  },
  "D002762": {
@@ -2440,6 +2501,12 @@
    "A09.246.397"
   ]
  },
+ "D004493": {
+  "parents": {},
+  "tree_numbers": [
+   "I02"
+  ]
+ },
  "D004573": {
   "parents": {
    "D007287": "Inorganic Chemicals"
@@ -2589,6 +2656,14 @@
   },
   "tree_numbers": [
    "E05.325"
+  ]
+ },
+ "D004917": {
+  "parents": {
+   "D018942": "Macrolides"
+  },
+  "tree_numbers": [
+   "D02.540.576.500.992"
   ]
  },
  "D004958": {
@@ -3351,6 +3426,14 @@
    "N02.421.726.407"
   ]
  },
+ "D006268": {
+  "parents": {
+   "D005159": "Health Care Facilities Workforce and Services"
+  },
+  "tree_numbers": [
+   "N02.278"
+  ]
+ },
  "D006281": {
   "parents": {},
   "tree_numbers": [
@@ -3678,6 +3761,14 @@
   },
   "tree_numbers": [
    "D02.241.511"
+  ]
+ },
+ "D006886": {
+  "parents": {
+   "D002738": "Chloroquine"
+  },
+  "tree_numbers": [
+   "D03.633.100.810.050.180.350"
   ]
  },
  "D006895": {
@@ -4182,6 +4273,14 @@
    "C12.950.419"
   ]
  },
+ "D007738": {
+  "parents": {
+   "D013121": "Spinal Curvatures"
+  },
+  "tree_numbers": [
+   "C05.116.900.800.500"
+  ]
+ },
  "D007743": {
   "parents": {
    "D011247": "Pregnancy"
@@ -4304,6 +4403,14 @@
   "tree_numbers": [
    "D02.065.199.092.500",
    "D02.092.146.113.092.500"
+  ]
+ },
+ "D008019": {
+  "parents": {
+   "D011593": "Psychology, Social"
+  },
+  "tree_numbers": [
+   "F01.829.458"
   ]
  },
  "D008022": {
@@ -4798,6 +4905,16 @@
   "tree_numbers": [
    "C05.651",
    "C10.668.491"
+  ]
+ },
+ "D009139": {
+  "parents": {
+   "D000013": "Congenital Abnormalities",
+   "D009140": "Musculoskeletal Diseases"
+  },
+  "tree_numbers": [
+   "C16.131.621",
+   "C05.660"
   ]
  },
  "D009140": {
@@ -5828,6 +5945,18 @@
    "E04.928.600.600"
   ]
  },
+ "D011024": {
+  "parents": {
+   "D011014": "Pneumonia",
+   "D014777": "Virus Diseases"
+  },
+  "tree_numbers": [
+   "C08.381.677.807",
+   "C01.748.610.763",
+   "C08.730.610.763",
+   "C01.925.705"
+  ]
+ },
  "D011028": {
   "parents": {
    "D003949": "Diagnostic Techniques, Surgical"
@@ -6151,6 +6280,24 @@
   "parents": {},
   "tree_numbers": [
    "F02"
+  ]
+ },
+ "D011584": {
+  "parents": {
+   "D001525": "Behavioral Sciences"
+  },
+  "tree_numbers": [
+   "F04.096.628"
+  ]
+ },
+ "D011593": {
+  "parents": {
+   "D001520": "Behavior and Behavior Mechanisms",
+   "D011584": "Psychology"
+  },
+  "tree_numbers": [
+   "F04.096.628.829",
+   "F01.829"
   ]
  },
  "D011603": {
@@ -6561,6 +6708,16 @@
    "F03.700.750"
   ]
  },
+ "D012574": {
+  "parents": {
+   "D000072182": "Non-Medical Public and Private Facilities",
+   "D004493": "Education"
+  },
+  "tree_numbers": [
+   "J03.832",
+   "I02.783"
+  ]
+ },
  "D012586": {
   "parents": {
    "D010811": "Natural Science Disciplines"
@@ -6786,6 +6943,30 @@
   },
   "tree_numbers": [
    "H02.403.810"
+  ]
+ },
+ "D013121": {
+  "parents": {
+   "D013122": "Spinal Diseases"
+  },
+  "tree_numbers": [
+   "C05.116.900.800"
+  ]
+ },
+ "D013122": {
+  "parents": {
+   "D001847": "Bone Diseases"
+  },
+  "tree_numbers": [
+   "C05.116.900"
+  ]
+ },
+ "D013124": {
+  "parents": {
+   "D019567": "Back Injuries"
+  },
+  "tree_numbers": [
+   "C26.117.500"
   ]
  },
  "D013177": {
@@ -7147,6 +7328,14 @@
   },
   "tree_numbers": [
    "C04.588.894"
+  ]
+ },
+ "D013927": {
+  "parents": {
+   "D016769": "Embolism and Thrombosis"
+  },
+  "tree_numbers": [
+   "C14.907.355.830"
   ]
  },
  "D013959": {
@@ -7706,6 +7895,16 @@
    "C23.550.505.300"
   ]
  },
+ "D016103": {
+  "parents": {
+   "D013124": "Spinal Injuries",
+   "D050723": "Fractures, Bone"
+  },
+  "tree_numbers": [
+   "C26.404.812",
+   "C26.117.500.500"
+  ]
+ },
  "D016118": {
   "parents": {
    "D008023": "Ligaments, Articular"
@@ -7829,6 +8028,14 @@
   },
   "tree_numbers": [
    "F01.145.126.980"
+  ]
+ },
+ "D016769": {
+  "parents": {
+   "D014652": "Vascular Diseases"
+  },
+  "tree_numbers": [
+   "C14.907.355"
   ]
  },
  "D016879": {
@@ -8006,6 +8213,14 @@
    "A08.800"
   ]
  },
+ "D017963": {
+  "parents": {
+   "D004917": "Erythromycin"
+  },
+  "tree_numbers": [
+   "D02.540.576.500.992.050"
+  ]
+ },
  "D018000": {
   "parents": {
    "D011956": "Receptors, Cell Surface"
@@ -8069,6 +8284,14 @@
   },
   "tree_numbers": [
    "C04.557.450"
+  ]
+ },
+ "D018352": {
+  "parents": {
+   "D003333": "Coronaviridae Infections"
+  },
+  "tree_numbers": [
+   "C01.925.782.600.550.200"
   ]
  },
  "D018373": {
@@ -8342,6 +8565,14 @@
    "N04.590.607"
   ]
  },
+ "D019567": {
+  "parents": {
+   "D014947": "Wounds and Injuries"
+  },
+  "tree_numbers": [
+   "C26.117"
+  ]
+ },
  "D019587": {
   "parents": {
    "D005502": "Food"
@@ -8584,6 +8815,14 @@
   },
   "tree_numbers": [
    "D27.505"
+  ]
+ },
+ "D020246": {
+  "parents": {
+   "D013927": "Thrombosis"
+  },
+  "tree_numbers": [
+   "C14.907.355.830.925"
   ]
  },
  "D020250": {
@@ -9214,6 +9453,14 @@
    "D27.505.519.421"
   ]
  },
+ "D050723": {
+  "parents": {
+   "D014947": "Wounds and Injuries"
+  },
+  "tree_numbers": [
+   "C26.404"
+  ]
+ },
  "D052177": {
   "parents": {
    "D007674": "Kidney Diseases"
@@ -9462,6 +9709,16 @@
    "C18.452.845"
   ]
  },
+ "D057185": {
+  "parents": {
+   "D001519": "Behavior",
+   "D008019": "Life Style"
+  },
+  "tree_numbers": [
+   "F01.145.749",
+   "F01.829.458.705"
+  ]
+ },
  "D057220": {
   "parents": {
    "D054626": "Consumer Health Information",
@@ -9601,6 +9858,15 @@
   "tree_numbers": [
    "F01.145.126.980.875.149",
    "I01.880.735.856.149"
+  ]
+ },
+ "D059549": {
+  "parents": {
+   "D001178": "Arthroplasty"
+  },
+  "tree_numbers": [
+   "E04.617.101.026",
+   "E04.555.110.026"
   ]
  },
  "D060328": {
@@ -9801,6 +10067,14 @@
   },
   "tree_numbers": [
    "E01.370.350.567"
+  ]
+ },
+ "D064872": {
+  "parents": {
+   "D013812": "Therapeutics"
+  },
+  "tree_numbers": [
+   "E02.765"
   ]
  }
 }

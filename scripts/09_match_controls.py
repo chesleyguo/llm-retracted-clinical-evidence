@@ -26,6 +26,7 @@ Usage:
 import hashlib
 import json
 import os
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -78,6 +79,36 @@ RCT_TYPES = ["Randomized Controlled Trial", "Equivalence Trial"]
 FLAG_TYPES = {"Retracted Publication", "Retraction of Publication", "Retraction Notice",
               "Expression of Concern", "Published Erratum"}
 FLAG_LINKS = {"RetractionIn", "PartialRetractionIn", "ExpressionOfConcernIn", "ErratumIn"}
+
+# Content rules for controls (analysis plan, criteria 7-9; added after the
+# main-sample claims review).
+HUMANS_UI = "D006801"   # MeSH descriptor "Humans"
+NOT_A_RESULTS_PAPER_TITLE = re.compile(
+    r"\b(study|trial) protocol\b"
+    r"|\bprotocol (for|of) (a|an|the) (randomi[sz]ed|controlled|clinical|multicent|pragmatic|pilot|feasibility)"
+    r"|design and rationale|rationale and design|statistical analysis plan"
+    r"|\bmethodolog\w*|\bqualitative\b|\bmissing data\b|\bprobability model\b"
+    r"|\bstatistical (method|model|approach)|\bsimulation study\b"
+    r"|^(experiences|perceptions|views) of\b", re.IGNORECASE)
+NOT_A_RESULTS_PAPER_ABSTRACT = re.compile(
+    r"\b(this|the|our) (study |trial )?protocol (describes|will|is designed)"
+    r"|\bwe will (recruit|randomi[sz]e|enrol|enroll|assess|evaluate|compare)\b"
+    r"|\bwill be (randomi[sz]ed|recruited|enrolled|allocated)\b"
+    r"|\bqualitative (study|analysis|interview|content analysis|research)\b"
+    r"|\b(content|thematic|framework) analysis\b|\bsemi-structured interviews?\b"
+    r"|\bfocus groups?\b", re.IGNORECASE)
+# Section labels used only by protocols (e.g. BMJ Open).
+PROTOCOL_SECTIONS = {"METHODS AND ANALYSIS", "ETHICS AND DISSEMINATION"}
+# Sections that come before any results.
+INTRO_SECTIONS = {"BACKGROUND", "INTRODUCTION", "OBJECTIVE", "OBJECTIVES", "AIM", "AIMS",
+                  "PURPOSE", "CONTEXT", "IMPORTANCE", "RATIONALE"}
+# An unstructured abstract counts as reporting results if it contains at
+# least one of these.
+RESULT_WORDS = re.compile(
+    r"\bp\s*[<=>≤≥]|\bsignificant|\bno (significant )?difference|\bdid not differ"
+    r"|\b(was|were) (higher|lower|similar|greater|smaller|reduced|increased|decreased|improved)"
+    r"|\b(reduc|increas|decreas|improv|lower|higher)\w*|\bshowed\b|\bfound\b"
+    r"|\d+(\.\d+)?\s*%", re.IGNORECASE)
 
 # (level, years either side, use parent descriptors)
 LEVELS = [(1, 1, False), (2, 2, False), (3, 2, True)]
@@ -223,9 +254,12 @@ def parse_candidate(article):
     doi = next((i.text for i in article.findall("PubmedData/ArticleIdList/ArticleId")
                 if i.get("IdType") == "doi" and i.text), "")
     abstract = []
+    sections = []   # (section names, text); names = label and NLM category
     for part in art.findall("Abstract/AbstractText"):
         label, text = part.get("Label"), text_of(part)
         abstract.append(f"{label}: {text}" if label else text)
+        names = {(x or "").upper() for x in (label, part.get("NlmCategory"))} - {"", "UNASSIGNED"}
+        sections.append((names, text))
     authors = []
     for a in art.findall("AuthorList/Author"):
         authors.append(a.findtext("CollectiveName") or
@@ -244,6 +278,9 @@ def parse_candidate(article):
         "pub_types": pub_types,
         "flag_links": links & FLAG_LINKS,
         "major_uis": {ui for ui, _ in major_topics(article)},
+        "mesh_uis": {d.get("UI") for d in
+                     citation.findall("MeshHeadingList/MeshHeading/DescriptorName")},
+        "abstract_sections": sections,
         "mesh_major": "; ".join(name for _, name in major_topics(article)),
     }
 
@@ -268,6 +305,28 @@ def build_query(term, field, year, window, require_rct):
             f"AND hasabstract NOT ({flags})")
 
 
+def content_problem(c):
+    """Content rules every control must meet (criteria 7-9), or None."""
+    if HUMANS_UI not in c["mesh_uis"]:
+        return "MeSH has no Humans"
+    if "Clinical Trial Protocol" in c["pub_types"]:
+        return "protocol, methods or qualitative paper"
+    if NOT_A_RESULTS_PAPER_TITLE.search(c["title"]) or NOT_A_RESULTS_PAPER_ABSTRACT.search(c["abstract"]):
+        return "protocol, methods or qualitative paper"
+    sections = [(names, text) for names, text in c["abstract_sections"] if names]
+    all_names = set().union(*(n for n, _ in sections)) if sections else set()
+    if all_names & PROTOCOL_SECTIONS:
+        return "protocol, methods or qualitative paper"
+    if any("RESULT" in x or "FINDING" in x for x in all_names):
+        return None
+    # No results section (or an unstructured abstract): look for result
+    # wording outside the introductory sections.
+    text = " ".join(t for n, t in c["abstract_sections"] if not n & INTRO_SECTIONS)
+    if not RESULT_WORDS.search(text):
+        return "abstract reports no results"
+    return None
+
+
 def why_not(c, ctx):
     """Reason a candidate fails, or None if it is eligible. Order is fixed so
     the log counts are comparable."""
@@ -281,6 +340,9 @@ def why_not(c, ctx):
         return "PubMed retraction/concern/erratum marker"
     if c["pmid"] in ctx["rw_pmids"] or (c["doi"] and c["doi"] in ctx["rw_dois"]):
         return "in Retraction Watch"
+    problem = content_problem(c)
+    if problem:
+        return problem
     if c["pmid"] in ctx["used"]:
         return "already a control"
     if ctx["journals"][c["journal"]] >= JOURNAL_CAP:

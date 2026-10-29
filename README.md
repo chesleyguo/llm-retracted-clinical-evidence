@@ -35,6 +35,13 @@ in only these columns:
 - `approved`: `YES` or `NO`. Edit a flawed claim first; `NO` only if the abstract has no outcome whose direction is stated.
 - `edited_claim`: leave empty to use the model's claim; otherwise the corrected claim.
 - `edited_question`: leave empty to use the model's F1 question; otherwise the corrected question.
+- `edited_direction`: leave empty to keep the model's `direction`; otherwise `HIGHER`, `LOWER` or `NO_DIFFERENCE` for the final claim.
+- `review_note`: free text, the reason for a `NO` or an edit.
+
+Final values = the edited column where filled, otherwise the model's column
+(e.g. final direction = `edited_direction` if not empty, else `direction`).
+Step 12 writes them to `data/processed/claims_final.csv`; `in_sample` (set by
+the script) is `FALSE` for papers replaced in step 10.
 
 Re-running step 12 only adds papers that are not yet in the table, so these
 entries are never overwritten. See `docs/analysis_plan.md`, "Target claims and

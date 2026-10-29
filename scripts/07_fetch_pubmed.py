@@ -60,8 +60,15 @@ TRIAL_TYPES = {
 # Elsevier replaces the PubMed abstract of a retracted article with the
 # retraction notice; such an abstract counts as no abstract (analysis plan,
 # Sampling).
+# Phrases found only in retraction notices (checked against all 1,003
+# abstracts: words such as "withdrawn blood" or "withdrawal" in methods must
+# not match). A "RETRACTED ARTICLE:" label in front of the original abstract
+# does not count: the abstract itself is still there.
 NOTICE_ABSTRACT = re.compile(
-    r"^\s*this article has been (retracted|withdrawn)|policy on article withdrawal",
+    r"this article has been (retracted|withdrawn)"       # e.g. Elsevier
+    r"|policy on article withdrawal"
+    r"|ha(s|ve) retracted the following article"         # e.g. Taylor & Francis
+    r"|\bthe editors? and (the )?publisher\b",
     re.IGNORECASE)
 # A retraction label at the start of the PubMed title, e.g. "RETRACTED: ...".
 TITLE_LABEL = re.compile(r"^\s*(retracted|withdrawn)(\s+article)?\s*:", re.IGNORECASE)

@@ -41,9 +41,13 @@ XML_DIRS = [ROOT / "data" / "raw" / "pubmed", ROOT / "data" / "raw" / "pubmed_co
 COLUMNS = ["sample", "pair_pmid", "group", "pmid", "in_sample", "support_sentence", "claim",
            "population", "intervention", "comparison", "outcome", "direction",
            "f1_question", "f2_prompt", "f3_prompt", "claim_hedged", "verify_flags", "check_flags",
-           "approved", "edited_claim", "edited_question", "abstract"]
+           "approved", "edited_claim", "edited_question", "abstract",
+           "edited_direction", "review_note"]
 # Columns the author fills in; the script never changes them once written.
-AUTHOR_COLUMNS = ["approved", "edited_claim", "edited_question"]
+AUTHOR_COLUMNS = ["approved", "edited_claim", "edited_question", "edited_direction",
+                  "review_note"]
+FINAL_PATH = PROCESSED / "claims_final.csv"
+DIRECTIONS = {"HIGHER", "LOWER", "NO_DIFFERENCE"}
 
 RETRACTION_LABEL = re.compile(
     r"^\s*(retracted|withdrawn)(\s+article)?\s*:\s*|\s*[\[(](retracted|retracted article|withdrawn)[\])]",
@@ -183,6 +187,35 @@ def fill_script_columns(table):
     return table
 
 
+def final_value(table, edited, model):
+    """The author's edit if there is one, otherwise the model's value."""
+    return table[edited].where(table[edited].str.strip() != "", table[model]).str.strip()
+
+
+def write_final(table):
+    """Final claims for the experiment: papers now in the sample, with the
+    author's edits applied. pair_ready is TRUE when both papers of the pair
+    are approved."""
+    t = table[table["in_sample"] == "TRUE"].copy()
+    bad = t.loc[(t["edited_direction"] != "") & ~t["edited_direction"].isin(DIRECTIONS), "pmid"]
+    if len(bad):
+        sys.exit(f"edited_direction must be one of {sorted(DIRECTIONS)}: {bad.tolist()}")
+    final = pd.DataFrame({
+        "sample": t["sample"], "pair_pmid": t["pair_pmid"], "group": t["group"],
+        "pmid": t["pmid"], "approved": t["approved"],
+        "claim": final_value(t, "edited_claim", "claim"),
+        "direction": final_value(t, "edited_direction", "direction"),
+        "f1_question": final_value(t, "edited_question", "f1_question"),
+        "f2_prompt": t["f2_prompt"], "f3_prompt": t["f3_prompt"],
+        "claim_hedged": t["claim_hedged"],
+    })
+    approved_pairs = final.groupby("pair_pmid")["approved"].apply(lambda a: (a == "YES").sum() == 2)
+    final["pair_ready"] = final["pair_pmid"].map(approved_pairs).map({True: "TRUE", False: "FALSE"})
+    final.to_csv(FINAL_PATH, index=False)
+    print(f"Wrote {FINAL_PATH.relative_to(ROOT)}: {len(final)} papers, "
+          f"{final.loc[final['pair_ready'] == 'TRUE', 'pair_pmid'].nunique()} pairs ready")
+
+
 def main():
     which = sys.argv[1] if len(sys.argv) > 1 else ""
     if which not in ("pilot", "main", "all"):
@@ -191,6 +224,9 @@ def main():
     existing = (pd.read_csv(REVIEW_PATH, dtype=str, keep_default_na=False)
                 if REVIEW_PATH.exists() else pd.DataFrame(columns=COLUMNS))
     existing = fill_script_columns(existing)
+    for col in AUTHOR_COLUMNS:   # older tables may not have every author column
+        if col not in existing:
+            existing[col] = ""
     papers = [p for p in s11.load_papers(which) if p["pmid"] not in set(existing["pmid"])]
 
     meta = metadata({p["pmid"] for p in papers})
@@ -250,7 +286,7 @@ def main():
                 + "".join(f" | {x}" for x in verified.get("problems", []) if x),
             "check_flags": "; ".join(flags),
             "approved": "", "edited_claim": "", "edited_question": "",
-            "abstract": p["abstract"],
+            "abstract": p["abstract"], "edited_direction": "", "review_note": "",
         })
 
     table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)], ignore_index=True)
@@ -263,6 +299,7 @@ def main():
     ).sort_values(["_sample", "_out", "_flag", "pair_pmid", "_group"]).drop(
         columns=["_flag", "_sample", "_out", "_group"])
     table.to_csv(REVIEW_PATH, index=False)
+    write_final(table)
     print(f"Added {len(rows)} rows to {REVIEW_PATH.relative_to(ROOT)} "
           f"(now {len(table)}); without step-11 answers: {len(missing)} {missing}")
     if rows:

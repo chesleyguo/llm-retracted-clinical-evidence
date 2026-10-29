@@ -1,0 +1,33 @@
+{
+ "query": "\"Kyphosis\"[majr:noexp] AND (\"Randomized Controlled Trial\"[pt] OR \"Equivalence Trial\"[pt]) AND 2021:2023[dp] AND hasabstract NOT (\"Expression of Concern\"[pt] OR \"Published Erratum\"[pt] OR \"Retracted Publication\"[pt] OR \"Retraction Notice\"[pt] OR \"Retraction of Publication\"[pt])",
+ "searched_at_utc": "2026-10-29T03:06:50+00:00",
+ "count": 26,
+ "pmids": [
+  "37864921",
+  "37741334",
+  "37458026",
+  "37328735",
+  "37294727",
+  "37254237",
+  "36988363",
+  "36807105",
+  "36791290",
+  "36563860",
+  "36515903",
+  "36376952",
+  "36215059",
+  "36197728",
+  "36047026",
+  "36013490",
+  "35793183",
+  "35773652",
+  "35694970",
+  "35616265",
+  "35452919",
+  "35452347",
+  "34781972",
+  "33896809",
+  "33618669",
+  "32796410"
+ ]
+}
