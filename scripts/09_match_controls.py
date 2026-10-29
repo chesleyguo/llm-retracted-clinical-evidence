@@ -46,6 +46,10 @@ SEARCH_CACHE = RAW / "pubmed_controls" / "esearch"
 FETCH_CACHE = RAW / "pubmed_controls" / "efetch"
 MESH_CACHE = RAW / "mesh" / "descriptor_tree.json"
 LOG_PATH = ROOT / "results" / "09_matching_log.txt"
+# Append-only record of the random candidate order behind every chosen
+# control, so a rejected control can be replaced by the next candidate in the
+# same order (step 10).
+DRAWS_PATH = PROCESSED / "control_draws.jsonl"
 SAMPLES = [("main", PROCESSED / "sample_main.csv", PROCESSED / "controls_main.csv"),
            ("pilot", PROCESSED / "sample_pilot.csv", PROCESSED / "controls_pilot.csv")]
 
@@ -291,23 +295,23 @@ def why_not(c, ctx):
     return None
 
 
-def find_control(pmids, rng, ctx):
-    """Check candidates in random order; return (control, n_checked)."""
-    order = rng.permutation(sorted(pmids, key=int)) if pmids else []
-    order = [str(p) for p in order]
-    checked = 0
-    for i in range(0, len(order), CHECK_BATCH):
+def find_control(pmids, rng, ctx, order=None, start=0):
+    """Check candidates in random order, from position `start`; return
+    (control, position of the control in the order, order). A given `order`
+    (a recorded one) is used instead of drawing a new one."""
+    if order is None:
+        order = [str(p) for p in rng.permutation(sorted(pmids, key=int))] if pmids else []
+    for i in range(start, len(order), CHECK_BATCH):
         batch = order[i:i + CHECK_BATCH]
         records = {a.findtext("MedlineCitation/PMID"): parse_candidate(a)
                    for a in efetch(batch).iter("PubmedArticle")}
-        for pmid in batch:  # keep the random order, not the order returned
-            checked += 1
+        for j, pmid in enumerate(batch):  # keep the random order, not the order returned
             c = records.get(pmid)
             reason = "not returned by efetch" if c is None else why_not(c, ctx)
             ctx["rejections"][reason or "chosen"] += 1
             if reason is None:
-                return c, checked
-    return None, checked
+                return c, i + j, order
+    return None, None, order
 
 
 def topic_plan(article, tree):
@@ -333,19 +337,28 @@ def load_rw_ids():
     return rw_path, rw_pmids, rw_dois
 
 
-def match_trial(trial, article, tree, rng, ctx_base):
+def match_trial(trial, article, tree, rng, ctx_base, resume=None):
     """Find a control for one retracted trial, trying the levels in order.
     ctx_base holds the shared state (used controls, journal counts, ...); a
-    chosen control is added to it."""
+    chosen control is added to it.
+
+    resume (step 10, rejected control): a recorded draw with keys level,
+    topic_ui, order and chosen_index. The search continues after the chosen
+    candidate in that recorded order, then with the topics and levels that
+    come after it, exactly as the original search would have gone on."""
     year = int(trial["pm_pub_date"][:4])
     require_rct = bool(set(RCT_TYPES) & set(trial["pm_pub_types"].split("; ")))
     own, parents = topic_plan(article, tree) if article is not None else ([], [])
     result = {"pmid": trial["pmid"], "stratum": trial["stratum"],
               "retracted_year": year, "retracted_is_rct": require_rct,
               "match_level": "NONE"}
+    skipping = resume is not None
     for level, window, use_parent in LEVELS:
         topics = parents if use_parent else own
         for ui, term in topics:
+            # When resuming, skip the topics tried before the recorded one.
+            if skipping and (level, ui) != (resume["level"], resume["topic_ui"]):
+                continue
             # Own topics: exact descriptor (noexp). Parents: exploded, so any
             # descriptor under the parent counts.
             field = "majr" if use_parent else "majr:noexp"
@@ -354,14 +367,19 @@ def match_trial(trial, article, tree, rng, ctx_base):
             ctx = {**ctx_base, "require_rct": require_rct,
                    "exact_ui": None if use_parent else ui,
                    "year": year, "window": window}
-            control, checked = find_control(search["pmids"], rng, ctx)
+            if skipping:
+                skipping = False
+                control, pos, order = find_control(search["pmids"], rng, ctx, order=resume["order"],
+                                                   start=resume["chosen_index"] + 1)
+            else:
+                control, pos, order = find_control(search["pmids"], rng, ctx)
             if control:
                 ctx_base["used"].add(control["pmid"])
                 ctx_base["journals"][control["journal"]] += 1
                 result.update({
                     "match_level": level, "matched_topic_ui": ui,
                     "matched_topic": term, "topic_depth": depth(ui, tree),
-                    "n_search_results": search["count"], "n_checked": checked,
+                    "n_search_results": search["count"], "n_checked": pos + 1,
                     "query": query, "searched_at_utc": search["searched_at_utc"],
                     "control_pmid": control["pmid"],
                     "control_year_diff": int(control["pub_date"][:4]) - year,
@@ -373,10 +391,41 @@ def match_trial(trial, article, tree, rng, ctx_base):
                     "control_doi": control["doi"],
                     "control_pub_types": "; ".join(control["pub_types"]),
                     "control_mesh_major": control["mesh_major"],
+                    # Popped by the caller and written to DRAWS_PATH.
+                    "_draw": {"level": level, "topic_ui": ui, "topic": term, "query": query,
+                              "order": order, "chosen_index": pos},
                 })
                 return result
+    if skipping:
+        raise ValueError(f"Recorded topic {resume['topic_ui']} (level {resume['level']}) "
+                         f"is not among the topics of {trial['pmid']}.")
     result["note"] = "no MeSH major topics" if not own else "no eligible control at any level"
     return result
+
+
+def append_draw(result, sample, source):
+    """Move the candidate order out of a match result into DRAWS_PATH."""
+    draw = result.pop("_draw", None)
+    if draw is None:
+        return
+    record = {"sample": sample, "retracted_pmid": result["pmid"],
+              "control_pmid": result["control_pmid"], "source": source,
+              "recorded_at_utc": datetime.now(timezone.utc).isoformat(timespec="seconds"),
+              **draw}
+    with open(DRAWS_PATH, "a") as f:
+        f.write(json.dumps(record) + "\n")
+
+
+def latest_draw(retracted_pmid, control_pmid):
+    """The most recent recorded draw that chose this control for this trial."""
+    found = None
+    if DRAWS_PATH.exists():
+        with open(DRAWS_PATH) as f:
+            for line in f:
+                r = json.loads(line)
+                if (r["retracted_pmid"], r["control_pmid"]) == (retracted_pmid, control_pmid):
+                    found = r
+    return found
 
 
 def main():
@@ -407,6 +456,7 @@ def main():
             ctx_base = {"rw_pmids": rw_pmids, "rw_dois": rw_dois, "used": used,
                         "journals": journals, "rejections": rejections}
             result = match_trial(trial, articles.get(trial["pmid"]), tree, rng, ctx_base)
+            append_draw(result, name, "step 09")
             print(f"  {name} {trial['pmid']}: level {result['match_level']}")
             rows.append(result)
 

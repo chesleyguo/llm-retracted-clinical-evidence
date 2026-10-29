@@ -276,6 +276,16 @@ A pair is used only if both papers are approved. When one paper is NO:
   matched to a control.
 
 Replacement papers go through the same extraction, verification and review.
+Both replacements are made by `scripts/10_replace_unmatched.py`, run once
+after the review of each sample is complete. To make "the next candidate in
+the same random order" possible, the candidate order behind every chosen
+control is kept in `data/processed/control_draws.jsonl` (append-only). For
+the controls chosen before this record existed, it was reconstructed by
+replaying steps 09 and 10 from the original samples with the cached searches;
+the replay reproduced the committed controls exactly. If a recorded order
+runs out, the search continues with the later topics and levels, using a new
+generator with seed 2026. In the review table, papers that left the sample
+keep their rows, with in_sample = FALSE.
 
 ## Models and conditions
 

@@ -728,6 +728,18 @@
    "D01.248.497.158"
   ]
  },
+ "D000886": {
+  "parents": {
+   "D001699": "Biometry",
+   "D008919": "Investigative Techniques",
+   "D010808": "Physical Examination"
+  },
+  "tree_numbers": [
+   "E05.041",
+   "E01.370.600.024",
+   "N06.850.505.200.100"
+  ]
+ },
  "D000889": {
   "parents": {
    "D002317": "Cardiovascular Agents"
@@ -1169,6 +1181,16 @@
    "D27.720.102",
    "J01.637.051",
    "D25"
+  ]
+ },
+ "D001699": {
+  "parents": {
+   "D013223": "Statistics as Topic",
+   "D015991": "Epidemiologic Measurements"
+  },
+  "tree_numbers": [
+   "E05.318.740.225",
+   "N06.850.505.200"
   ]
  },
  "D001704": {
@@ -4418,6 +4440,14 @@
    "J01.637"
   ]
  },
+ "D008433": {
+  "parents": {
+   "D010811": "Natural Science Disciplines"
+  },
+  "tree_numbers": [
+   "H01.548"
+  ]
+ },
  "D008439": {
   "parents": {
    "D007571": "Jaw Diseases"
@@ -6783,6 +6813,19 @@
    "D05.750.078.562.855",
    "D09.698.365.855",
    "D09.301.915"
+  ]
+ },
+ "D013223": {
+  "parents": {
+   "D004812": "Epidemiologic Methods",
+   "D008433": "Mathematics",
+   "D017531": "Health Care Evaluation Mechanisms"
+  },
+  "tree_numbers": [
+   "N05.715.360.750",
+   "H01.548.832",
+   "N06.850.520.830",
+   "E05.318.740"
   ]
  },
  "D013256": {

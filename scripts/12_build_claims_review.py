@@ -38,7 +38,7 @@ PROMPTS = ROOT / "prompts"
 REVIEW_PATH = PROCESSED / "claims_review.csv"
 XML_DIRS = [ROOT / "data" / "raw" / "pubmed", ROOT / "data" / "raw" / "pubmed_controls" / "efetch"]
 
-COLUMNS = ["sample", "pair_pmid", "group", "pmid", "support_sentence", "claim",
+COLUMNS = ["sample", "pair_pmid", "group", "pmid", "in_sample", "support_sentence", "claim",
            "population", "intervention", "comparison", "outcome", "direction",
            "f1_question", "f2_prompt", "f3_prompt", "claim_hedged", "verify_flags", "check_flags",
            "approved", "edited_claim", "edited_question", "abstract"]
@@ -154,9 +154,26 @@ def abstract_sources():
     return out
 
 
+def current_pmids():
+    """PMIDs of the retracted trials and controls now in the samples."""
+    out = set()
+    for sample in ("pilot", "main"):
+        out |= set(pd.read_csv(PROCESSED / f"sample_{sample}.csv", dtype=str)["pmid"])
+        c = pd.read_csv(PROCESSED / f"controls_{sample}.csv", dtype=str, keep_default_na=False)
+        out |= set(c["control_pmid"]) - {""}
+    return out
+
+
 def fill_script_columns(table):
-    """Fill script-owned columns that are empty (e.g. added after the row was
-    written). Author columns are never touched."""
+    """Update script-owned columns. in_sample is recomputed on every run
+    (papers replaced in step 10 become FALSE; their rows stay as a record);
+    abstract is filled where empty. Author columns are never touched."""
+    current = current_pmids()
+    in_sample = table["pmid"].isin(current).map({True: "TRUE", False: "FALSE"})
+    if "in_sample" in table:
+        table["in_sample"] = in_sample
+    else:
+        table.insert(table.columns.get_loc("pmid") + 1, "in_sample", in_sample)
     if "abstract" not in table:
         table["abstract"] = ""
     missing = table["abstract"] == ""
@@ -221,7 +238,7 @@ def main():
 
         rows.append({
             "sample": p["sample"], "pair_pmid": p["pair_pmid"], "group": p["group"],
-            "pmid": p["pmid"], "support_sentence": ext["support_sentence"],
+            "pmid": p["pmid"], "in_sample": "TRUE", "support_sentence": ext["support_sentence"],
             **{k: ext[k] for k in ("claim", "population", "intervention", "comparison",
                                    "outcome", "direction")},
             "f1_question": question,
@@ -237,14 +254,14 @@ def main():
         })
 
     table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)], ignore_index=True)
-    # Pilot rows first, then main; within each sample, rows with verify flags
-    # first, then by pair, the retracted row before its control. Reordering
-    # keeps the author's entries.
+    # Pilot rows first, then main; within each sample, rows still in the
+    # sample first, then rows with verify flags, then by pair, the retracted
+    # row before its control. Reordering keeps the author's entries.
     table = table.assign(
         _flag=table["verify_flags"].eq(""), _sample=table["sample"].ne("pilot"),
-        _group=table["group"].ne("retracted"),
-    ).sort_values(["_sample", "_flag", "pair_pmid", "_group"]).drop(
-        columns=["_flag", "_sample", "_group"])
+        _out=table["in_sample"].ne("TRUE"), _group=table["group"].ne("retracted"),
+    ).sort_values(["_sample", "_out", "_flag", "pair_pmid", "_group"]).drop(
+        columns=["_flag", "_sample", "_out", "_group"])
     table.to_csv(REVIEW_PATH, index=False)
     print(f"Added {len(rows)} rows to {REVIEW_PATH.relative_to(ROOT)} "
           f"(now {len(table)}); without step-11 answers: {len(missing)} {missing}")
