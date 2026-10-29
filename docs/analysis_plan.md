@@ -353,7 +353,8 @@ For the 100 retracted trials of the main sample (codebook P1):
    judged twice in separate calls; papers where the two differ are marked
    p1_disagree = TRUE and listed first for review.
 4. **Review**: the author codes every paper in `data/processed/p1_review.csv`
-   (p1, p1_source, p1_note); only these codes are used.
+   (p1, p1_source, p1_note); only these codes are used. Step 12 copies p1
+   into `data/processed/claims_final.csv` (main-sample retracted papers).
 
 PubMed, OpenAlex and model responses are cached in `data/raw/pubmed_p1/`,
 `data/raw/openalex_p1/` and `outputs/llm_calls/p1.jsonl`.

@@ -47,6 +47,8 @@ COLUMNS = ["sample", "pair_pmid", "group", "pmid", "in_sample", "support_sentenc
 AUTHOR_COLUMNS = ["approved", "edited_claim", "edited_question", "edited_direction",
                   "review_note"]
 FINAL_PATH = PROCESSED / "claims_final.csv"
+P1_PATH = PROCESSED / "p1_review.csv"
+P1_CODES = {"YES", "NO", "UNCLEAR"}
 DIRECTIONS = {"HIGHER", "LOWER", "NO_DIFFERENCE"}
 
 RETRACTION_LABEL = re.compile(
@@ -192,10 +194,22 @@ def final_value(table, edited, model):
     return table[edited].where(table[edited].str.strip() != "", table[model]).str.strip()
 
 
+def p1_codes():
+    """The author's P1 codes (step 14 review table); empty if not yet built."""
+    if not P1_PATH.exists():
+        return {}
+    p1 = pd.read_csv(P1_PATH, dtype=str, keep_default_na=False)
+    bad = p1.loc[(p1["p1"] != "") & ~p1["p1"].isin(P1_CODES), "pmid"]
+    if len(bad):
+        sys.exit(f"p1 must be one of {sorted(P1_CODES)}: {bad.tolist()}")
+    return dict(zip(p1["pmid"], p1["p1"]))
+
+
 def write_final(table):
     """Final claims for the experiment: papers now in the sample, with the
     author's edits applied. pair_ready is TRUE when both papers of the pair
-    are approved."""
+    are approved. p1 is the author's P1 code for main-sample retracted papers
+    (empty for controls, pilot papers and papers not yet coded)."""
     t = table[table["in_sample"] == "TRUE"].copy()
     bad = t.loc[(t["edited_direction"] != "") & ~t["edited_direction"].isin(DIRECTIONS), "pmid"]
     if len(bad):
@@ -209,11 +223,16 @@ def write_final(table):
         "f2_prompt": t["f2_prompt"], "f3_prompt": t["f3_prompt"],
         "claim_hedged": t["claim_hedged"],
     })
+    codes = p1_codes()
+    final["p1"] = [codes.get(pmid, "") if (sample, group) == ("main", "retracted") else ""
+                   for pmid, sample, group in zip(t["pmid"], t["sample"], t["group"])]
     approved_pairs = final.groupby("pair_pmid")["approved"].apply(lambda a: (a == "YES").sum() == 2)
     final["pair_ready"] = final["pair_pmid"].map(approved_pairs).map({True: "TRUE", False: "FALSE"})
     final.to_csv(FINAL_PATH, index=False)
     print(f"Wrote {FINAL_PATH.relative_to(ROOT)}: {len(final)} papers, "
           f"{final.loc[final['pair_ready'] == 'TRUE', 'pair_pmid'].nunique()} pairs ready")
+    main_retracted = final[(final["sample"] == "main") & (final["group"] == "retracted")]
+    print("P1 (main retracted):", main_retracted["p1"].replace("", "(missing)").value_counts().to_dict())
 
 
 def main():
