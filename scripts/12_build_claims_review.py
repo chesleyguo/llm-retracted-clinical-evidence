@@ -41,7 +41,9 @@ XML_DIRS = [ROOT / "data" / "raw" / "pubmed", ROOT / "data" / "raw" / "pubmed_co
 COLUMNS = ["sample", "pair_pmid", "group", "pmid", "support_sentence", "claim",
            "population", "intervention", "comparison", "outcome", "direction",
            "f1_question", "f2_prompt", "f3_prompt", "claim_hedged", "verify_flags", "check_flags",
-           "approved", "edited_claim", "edited_question"]
+           "approved", "edited_claim", "edited_question", "abstract"]
+# Columns the author fills in; the script never changes them once written.
+AUTHOR_COLUMNS = ["approved", "edited_claim", "edited_question"]
 
 RETRACTION_LABEL = re.compile(
     r"^\s*(retracted|withdrawn)(\s+article)?\s*:\s*|\s*[\[(](retracted|retracted article|withdrawn)[\])]",
@@ -140,6 +142,30 @@ def latest_answers(papers):
     return answers
 
 
+def abstract_sources():
+    """Full PubMed abstracts: retracted trials from pubmed_metadata.csv,
+    controls from the PubMed records fetched when they were matched."""
+    out = {}
+    meta = pd.read_csv(PROCESSED / "pubmed_metadata.csv", dtype=str, keep_default_na=False)
+    out.update(zip(meta["pmid"], meta["pm_abstract"]))
+    for sample in ("pilot", "main"):
+        c = pd.read_csv(PROCESSED / f"controls_{sample}.csv", dtype=str, keep_default_na=False)
+        out.update(zip(c["control_pmid"], c["control_abstract"]))
+    return out
+
+
+def fill_script_columns(table):
+    """Fill script-owned columns that are empty (e.g. added after the row was
+    written). Author columns are never touched."""
+    if "abstract" not in table:
+        table["abstract"] = ""
+    missing = table["abstract"] == ""
+    if missing.any():
+        sources = abstract_sources()
+        table.loc[missing, "abstract"] = table.loc[missing, "pmid"].map(sources).fillna("")
+    return table
+
+
 def main():
     which = sys.argv[1] if len(sys.argv) > 1 else ""
     if which not in ("pilot", "main", "all"):
@@ -147,9 +173,8 @@ def main():
 
     existing = (pd.read_csv(REVIEW_PATH, dtype=str, keep_default_na=False)
                 if REVIEW_PATH.exists() else pd.DataFrame(columns=COLUMNS))
+    existing = fill_script_columns(existing)
     papers = [p for p in s11.load_papers(which) if p["pmid"] not in set(existing["pmid"])]
-    if not papers:
-        sys.exit("All papers are already in the review table.")
 
     meta = metadata({p["pmid"] for p in papers})
     answers = latest_answers(papers)
@@ -208,6 +233,7 @@ def main():
                 + "".join(f" | {x}" for x in verified.get("problems", []) if x),
             "check_flags": "; ".join(flags),
             "approved": "", "edited_claim": "", "edited_question": "",
+            "abstract": p["abstract"],
         })
 
     table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)], ignore_index=True)
@@ -222,7 +248,8 @@ def main():
     table.to_csv(REVIEW_PATH, index=False)
     print(f"Added {len(rows)} rows to {REVIEW_PATH.relative_to(ROOT)} "
           f"(now {len(table)}); without step-11 answers: {len(missing)} {missing}")
-    print(f"Rows with flags: {(pd.DataFrame(rows)['check_flags'] != '').sum()}")
+    if rows:
+        print(f"Rows with flags: {(pd.DataFrame(rows)['check_flags'] != '').sum()}")
 
 
 if __name__ == "__main__":
