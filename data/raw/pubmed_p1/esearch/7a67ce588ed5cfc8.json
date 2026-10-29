@@ -1,0 +1,11 @@
+{
+ "query": "((\"paravertebral block\"[tiab] OR \"paravertebral blockade\"[tiab] OR \"paravertebral nerve block\"[tiab] OR \"paravertebral anesthesia\"[tiab] OR \"paravertebral anaesthesia\"[tiab] OR \"paravertebral analgesia\"[tiab] OR \"paravertebral catheter\"[tiab] OR \"paravertebral infusion\"[tiab] OR \"paravertebral injection\"[tiab] OR \"paravertebral\"[tiab]) AND (\"hepatectomy\"[mh] OR hepatectomy[tiab] OR \"hepatic resection\"[tiab] OR \"liver resection\"[tiab] OR \"liver surgery\"[tiab] OR \"open liver resection\"[tiab] OR \"open hepatectomy\"[tiab]) AND (\"morphine\"[mh] OR morphine[tiab] OR \"opioid consumption\"[tiab] OR \"opioid use\"[tiab] OR \"analgesic consumption\"[tiab] OR \"analgesic use\"[tiab] OR \"postoperative pain\"[tiab] OR \"pain score\"[tiab] OR \"visual analog scale\"[tiab] OR \"numeric rating scale\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2023/08/05:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:59+00:00",
+ "count": 2,
+ "pmids": [
+  "40581925",
+  "41393129"
+ ],
+ "phrases_not_found": []
+}

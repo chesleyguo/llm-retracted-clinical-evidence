@@ -1,0 +1,10 @@
+{
+ "query": "((\"HES 130/0.4\"[tiab] OR \"hydroxyethyl starch 130/0.4\"[tiab] OR \"tetrastarch\"[tiab] OR \"Voluven\"[tiab] OR \"6% HES 130/0.4\"[tiab]) AND (\"cardiac surgery\"[tiab] OR \"heart surgery\"[tiab] OR \"coronary artery bypass\"[tiab] OR \"CABG\"[tiab] OR \"valve surgery\"[tiab] OR \"cardiopulmonary bypass\"[tiab] OR \"cardiac surgical procedures\"[mh]) AND (\"hemodynamic\"[tiab] OR \"haemodynamic\"[tiab] OR \"hemodynamics\"[tiab] OR \"haemodynamics\"[tiab] OR \"blood pressure\"[tiab] OR \"cardiac output\"[tiab] OR \"stroke volume\"[tiab] OR \"mean arterial pressure\"[tiab] OR \"heart rate\"[tiab] OR \"central venous pressure\"[tiab] OR \"pulmonary artery pressure\"[tiab] OR \"systemic vascular resistance\"[tiab] OR \"hemodynamics\"[mh] OR \"blood pressure\"[mh] OR \"cardiac output\"[mh] OR \"stroke volume\"[mh] OR \"heart rate\"[mh] OR \"central venous pressure\"[mh] OR \"vascular resistance\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2000/06/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:52+00:00",
+ "count": 1,
+ "pmids": [
+  "22578894"
+ ],
+ "phrases_not_found": []
+}

@@ -1,0 +1,14 @@
+{
+ "query": "((misoprostol[mh] OR misoprostol[tiab] OR \"prostaglandin E1 analog\"[tiab] OR \"prostaglandin E1 analogue\"[tiab]) AND (\"cesarean section\"[mh] OR \"cesarean delivery\"[tiab] OR \"caesarean section\"[tiab] OR \"caesarean delivery\"[tiab] OR \"cesarean section\"[tiab] OR \"abdominal delivery\"[tiab] OR \"elective cesarean\"[tiab] OR \"elective caesarean\"[tiab]) AND (\"blood loss\"[tiab] OR \"postpartum hemorrhage\"[mh] OR \"postpartum hemorrhage\"[tiab] OR \"postpartum haemorrhage\"[tiab] OR \"intraoperative blood loss\"[tiab] OR \"operative blood loss\"[tiab] OR \"estimated blood loss\"[tiab] OR \"hemorrhage\"[tiab] OR \"haemorrhage\"[tiab] OR \"bleeding\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2012/08/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:42+00:00",
+ "count": 21,
+ "pmids": [
+  "40712613",
+  "33752219",
+  "30821683",
+  "34534498",
+  "33232518"
+ ],
+ "phrases_not_found": []
+}

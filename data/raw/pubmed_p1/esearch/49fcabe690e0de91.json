@@ -1,0 +1,14 @@
+{
+ "query": "((\"probiotics\"[mh] OR probiotic*[tiab] OR \"synbiotics\"[tiab] OR \"lactobacillus\"[tiab] OR \"bifidobacterium\"[tiab]) AND (\"diabetes, gestational\"[mh] OR \"gestational diabetes\"[tiab] OR \"pregnancy-induced diabetes\"[tiab]) AND (\"blood glucose\"[mh] OR \"fasting plasma glucose\"[tiab] OR \"fasting blood glucose\"[tiab] OR \"FPG\"[tiab] OR \"glucose\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2018/05/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:19+00:00",
+ "count": 32,
+ "pmids": [
+  "33870484",
+  "39582003",
+  "36368685",
+  "34417122",
+  "29916111"
+ ],
+ "phrases_not_found": []
+}

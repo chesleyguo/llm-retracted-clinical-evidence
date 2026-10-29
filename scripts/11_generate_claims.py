@@ -164,11 +164,11 @@ def done_key(pmid, task, prompt, values):
     return (pmid, task, prompt["sha256"], json.dumps(values, sort_keys=True))
 
 
-def already_done():
+def already_done(log_path=LOG_PATH):
     """Parsed answers of tasks that finished successfully, by done_key."""
     done = {}
-    if LOG_PATH.exists():
-        with open(LOG_PATH) as f:
+    if log_path.exists():
+        with open(log_path) as f:
             for line in f:
                 r = json.loads(line)
                 if r["status"] == "ok":
@@ -198,7 +198,7 @@ def post(messages, key):
         time.sleep(10 * attempt)
 
 
-def run_task(task, prompt, values, paper, check, key):
+def run_task(task, prompt, values, paper, check, key, log_path=LOG_PATH):
     """Call the model, check the answer, and retry with feedback if needed.
     Every attempt is logged. Returns the parsed answer or None."""
     messages = [{"role": "system", "content": prompt["system"]},
@@ -224,7 +224,7 @@ def run_task(task, prompt, values, paper, check, key):
             "messages": messages, "response": raw,
             "parsed": parsed, "status": status, "problem": problem,
         }
-        with open(LOG_PATH, "a") as f:
+        with open(log_path, "a") as f:
             f.write(json.dumps(record, ensure_ascii=False) + "\n")
         if problem is None:
             return parsed

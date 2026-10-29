@@ -1,0 +1,34 @@
+[system]
+You are a careful research assistant helping to code a variable for a study of retracted clinical trials. You judge only from the records given, you do not add outside knowledge, and you do not guess. Return only a JSON object.
+
+[user]
+A clinical trial was retracted. Decide whether its claim is supported by reliable evidence other than the retracted trial, using the codebook definition and the search results below.
+
+=== CODEBOOK DEFINITION (P1) ===
+{p1_definition}
+
+=== RETRACTED TRIAL ===
+Title: {title}
+Published: {published}
+Retracted: {retracted}
+
+=== CLAIM ===
+{claim}
+
+=== SEARCH RESULTS (up to 5 systematic reviews, meta-analyses or guidelines published after the trial) ===
+{reviews}
+
+How to judge:
+- A review counts as independent support only if it supports the claim without depending on the retracted trial. A review that cites the retracted trial ("cites_retracted: YES") probably included it.
+- The strongest independent evidence is a review published after the retraction that does not cite the trial.
+- If cites_retracted is UNKNOWN, judge from the abstract (for example, the years or number of included trials) whether the review could have included the trial, and say so.
+- YES only if at least one review that does not depend on the retracted trial supports this specific claim; list only such reviews in basis_pmids.
+- NO only if some review shows that the claim rests mainly on the retracted trial, or if independent evidence contradicts the claim; list those reviews in basis_pmids.
+- UNCLEAR if the evidence is mixed, or if none of the reviews addresses this specific claim (same intervention, condition and outcome). Absence of evidence is UNCLEAR, not NO.
+
+Return a JSON object:
+{"suggested_p1": "YES|NO|UNCLEAR",
+ "basis_pmids": ["PMIDs of the reviews the judgment rests on"],
+ "rationale": "one sentence",
+ "inclusion_notes": [{"pmid": "...", "likely_includes_retracted": "YES|NO|UNCLEAR", "note": "short reason"}]}
+Give one inclusion note for every review listed.

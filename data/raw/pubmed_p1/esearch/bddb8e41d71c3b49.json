@@ -1,0 +1,20 @@
+{
+ "query": "((\"early rehabilitation\"[tiab] OR \"early mobilization\"[tiab] OR \"early mobilisation\"[tiab] OR \"early ambulation\"[tiab] OR \"early physical therapy\"[tiab] OR \"early physiotherapy\"[tiab] OR \"early exercise\"[tiab] OR \"acute rehabilitation\"[tiab] OR \"rehabilitation within 72 hours\"[tiab] OR \"mobilization within 72 hours\"[tiab] OR \"mobilisation within 72 hours\"[tiab] OR \"early stroke rehabilitation\"[tiab] OR \"early stroke mobilization\"[tiab] OR \"early stroke mobilisation\"[tiab]) AND (\"ischemic stroke\"[tiab] OR \"ischaemic stroke\"[tiab] OR \"acute ischemic stroke\"[tiab] OR \"acute ischaemic stroke\"[tiab] OR \"cerebral infarction\"[tiab] OR \"brain infarction\"[tiab] OR \"cerebrovascular accident\"[tiab] OR \"stroke\"[mh] OR \"brain ischemia\"[mh] OR \"cerebral infarction\"[mh]) AND (\"neurological recovery\"[tiab] OR \"neurologic recovery\"[tiab] OR \"neurological outcome\"[tiab] OR \"neurologic outcome\"[tiab] OR \"NIHSS\"[tiab] OR \"National Institutes of Health Stroke Scale\"[tiab] OR \"functional recovery\"[tiab] OR \"functional outcome\"[tiab] OR \"motor recovery\"[tiab] OR \"disability\"[tiab] OR \"activities of daily living\"[tiab] OR \"ADL\"[tiab] OR \"modified Rankin Scale\"[tiab] OR \"mRS\"[tiab] OR \"Barthel Index\"[tiab] OR \"recovery of function\"[mh] OR \"treatment outcome\"[mh] OR \"disability evaluation\"[mh])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2021/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:44:31+00:00",
+ "count": 15,
+ "pmids": [
+  "34927568",
+  "38459477",
+  "32673130",
+  "39502386",
+  "37653810"
+ ],
+ "phrases_not_found": [
+  "\"rehabilitation within 72 hours\"[tiab]",
+  "\"mobilization within 72 hours\"[tiab]",
+  "\"mobilisation within 72 hours\"[tiab]",
+  "\"early stroke mobilization\"[tiab]",
+  "\"early stroke mobilisation\"[tiab]"
+ ]
+}

@@ -1,0 +1,18 @@
+{
+ "query": "((\"fetal pillow\"[tiab] OR \"foetal pillow\"[tiab] OR \"fetal head elevation device\"[tiab] OR \"foetal head elevation device\"[tiab]) AND (\"cesarean section\"[mh] OR \"cesarean section\"[tiab] OR \"caesarean section\"[tiab] OR \"cesarean delivery\"[tiab] OR \"caesarean delivery\"[tiab] OR \"abdominal delivery\"[tiab] OR \"c-section\"[tiab] OR \"caesarean\"[tiab] OR \"cesarean\"[tiab]) AND (\"uterine incision extension\"[tiab] OR \"uterine extension\"[tiab] OR \"extension of uterine incision\"[tiab] OR \"incision extension\"[tiab] OR \"uterine tear\"[tiab] OR \"uterine rupture\"[tiab] OR \"extension of the uterine incision\"[tiab] OR \"uterine incision extensions\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2014/04/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:12+00:00",
+ "count": 3,
+ "pmids": [
+  "38787368",
+  "33984724",
+  "26301522"
+ ],
+ "phrases_not_found": [
+  "\"foetal pillow\"[tiab]",
+  "\"fetal head elevation device\"[tiab]",
+  "\"foetal head elevation device\"[tiab]",
+  "\"extension of uterine incision\"[tiab]",
+  "\"extension of the uterine incision\"[tiab]"
+ ]
+}

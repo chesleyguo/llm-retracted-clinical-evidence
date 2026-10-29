@@ -1,0 +1,18 @@
+{
+ "query": "((\"percutaneous kyphoplasty\"[tiab] OR kyphoplasty[tiab] OR \"balloon kyphoplasty\"[tiab] OR \"percutaneous vertebroplasty\"[tiab] OR vertebroplasty[tiab] OR \"cementoplasty\"[tiab] OR \"vertebral augmentation\"[tiab] OR \"kyphoplasty\"[mh] OR \"vertebroplasty\"[mh]) AND (\"thoracolumbar fractures\"[tiab] OR \"thoracolumbar fracture\"[tiab] OR \"thoracolumbar burst fracture\"[tiab] OR \"thoracolumbar burst fractures\"[tiab] OR \"thoracolumbar spine fractures\"[tiab] OR \"thoracolumbar spine fracture\"[tiab] OR \"thoracolumbar junction fractures\"[tiab] OR \"thoracolumbar junction fracture\"[tiab] OR \"thoracolumbar vertebral fractures\"[tiab] OR \"thoracolumbar vertebral fracture\"[tiab] OR \"thoracolumbar compression fractures\"[tiab] OR \"thoracolumbar compression fracture\"[tiab] OR \"thoracolumbar traumatic fractures\"[tiab] OR \"thoracolumbar traumatic fracture\"[tiab] OR \"thoracolumbar injuries\"[tiab] OR \"thoracolumbar injury\"[tiab] OR \"thoracolumbar trauma\"[tiab] OR \"thoracolumbar spine trauma\"[tiab] OR \"thoracolumbar fractures\"[mh] OR \"spinal fractures\"[mh:noexp]) AND (\"kyphotic deformity\"[tiab] OR \"kyphosis\"[tiab] OR \"kyphotic angle\"[tiab] OR \"Cobb angle\"[tiab] OR \"sagittal alignment\"[tiab] OR \"sagittal balance\"[tiab] OR \"vertebral height\"[tiab] OR \"anterior vertebral height\"[tiab] OR \"deformity correction\"[tiab] OR \"kyphosis\"[mh] OR \"spinal curvatures\"[mh:noexp])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2022/01/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:44:19+00:00",
+ "count": 45,
+ "pmids": [
+  "41709492",
+  "35279177",
+  "39928136",
+  "37109620",
+  "37192225"
+ ],
+ "phrases_not_found": [
+  "\"thoracolumbar traumatic fractures\"[tiab]",
+  "\"thoracolumbar traumatic fracture\"[tiab]",
+  "\"thoracolumbar fractures\"[mh]"
+ ]
+}

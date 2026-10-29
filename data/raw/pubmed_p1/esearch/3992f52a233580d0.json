@@ -1,0 +1,14 @@
+{
+ "query": "((\"synbiotics\"[mh] OR synbiotic*[tiab] OR \"synbiotic bread\"[tiab] OR \"synbiotic breads\"[tiab]) AND (\"diabetes mellitus, type 2\"[mh] OR \"type 2 diabetes\"[tiab] OR \"type 2 diabetes mellitus\"[tiab] OR t2dm[tiab] OR \"non-insulin dependent diabetes\"[tiab] OR \"noninsulin dependent diabetes\"[tiab] OR \"adult onset diabetes\"[tiab]) AND (\"nitric oxide\"[mh] OR \"nitric oxide\"[tiab] OR \"plasma nitric oxide\"[tiab] OR \"no\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2016/08/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:27+00:00",
+ "count": 2,
+ "pmids": [
+  "36239789",
+  "31583250"
+ ],
+ "phrases_not_found": [
+  "\"synbiotic breads\"[tiab]",
+  "\"no\"[tiab]"
+ ]
+}

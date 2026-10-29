@@ -1,0 +1,8 @@
+{
+ "query": "((\"sufentanil\"[mh] OR sufentanil[tiab] OR \"sufentanil citrate\"[tiab] OR \"r30730\"[tiab] OR \"sufenta\"[tiab]) AND (\"injections, intravenous\"[mh] OR \"central venous catheters\"[mh] OR \"catheterization, central venous\"[mh] OR \"central venous\"[tiab] OR \"central vein\"[tiab] OR \"central line\"[tiab] OR \"central venous catheter\"[tiab] OR \"central venous route\"[tiab] OR \"central venous administration\"[tiab] OR \"intravenous\"[tiab] OR \"iv\"[tiab]) AND (\"cough\"[mh] OR cough[tiab] OR coughing[tiab] OR \"opioid-induced cough\"[tiab] OR \"fentanyl-induced cough\"[tiab] OR \"sufentanil-induced cough\"[tiab] OR \"reflex cough\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2018/04/10:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:44:07+00:00",
+ "count": 0,
+ "pmids": [],
+ "phrases_not_found": []
+}

@@ -316,6 +316,37 @@ runs out, the search continues with the later topics and levels, using a new
 generator with seed 2026. In the review table, papers that left the sample
 keep their rows, with in_sample = FALSE.
 
+### P1: independent support
+
+For the 100 retracted trials of the main sample (codebook P1):
+
+1. **Search** (`scripts/13_p1_search.py`). deepseek-v4-pro writes a PubMed
+   search from the final claim (`prompts/p1_query.txt`): intervention,
+   condition and outcome blocks, and a broad version without the outcome. The
+   script adds the filters: publication type Systematic Review, Meta-Analysis,
+   Guideline or Practice Guideline; published on or after the trial's PubMed
+   publication date; not a Retracted Publication. The top 5 results by
+   PubMed's relevance ranking are kept; if the search finds nothing, the broad
+   version is used. A concept block whose terms PubMed found none of is
+   flagged (block_dropped).
+2. **Per review**: published_after_retraction (review date, electronic if
+   available, after the Retraction Watch retraction date; a review dated only
+   by month or year counts from the first day of that period), and
+   cites_retracted: YES if the PubMed reference list or OpenAlex
+   referenced_works contains the trial, NO if at least one source has a
+   reference list without it, UNKNOWN if neither has one; the source is
+   recorded.
+3. **Suggestion** (`scripts/14_p1_suggest.py`, `prompts/p1_suggest.txt`):
+   the model reads the P1 definition from the codebook, the claim and the
+   reviews, and suggests YES, NO or UNCLEAR with the reviews it rests on, a
+   rationale, and for each review whether it probably included the trial. A
+   YES or NO must name at least one review; no review found gives UNCLEAR.
+4. **Review**: the author codes every paper in `data/processed/p1_review.csv`
+   (p1, p1_source, p1_note); only these codes are used.
+
+PubMed, OpenAlex and model responses are cached in `data/raw/pubmed_p1/`,
+`data/raw/openalex_p1/` and `outputs/llm_calls/p1.jsonl`.
+
 ## Models and conditions
 
 **Tested models.** One model from each of OpenAI, Google and Anthropic: the
@@ -388,6 +419,14 @@ which is not among the tested models.
   the study uses `gemini-3.5-flash-lite`, which is what free users get for all
   prompts when smart model selection is off. Some app users would have seen
   answers from a larger model.
+- **PubMed relevance ranking.** The P1 search keeps the top 5 results by
+  PubMed's Best Match ranking, whose algorithm is not published and changes
+  over time. The searches are cached so the results can be reproduced, but
+  a later search could return different reviews.
+- **P1 suggestions are unstable.** In the 10-paper pilot, a small change to
+  the suggestion prompt changed the suggested code for several papers, and
+  some suggestions misread the reviews. The suggestions only help the coder;
+  every P1 code is decided by the coder from the review abstracts.
 - **Fewer Elsevier papers.** Elsevier replaces the PubMed abstract of a
   retracted article with the retraction notice. These papers count as having
   no abstract and are excluded, so Elsevier journals are under-represented in

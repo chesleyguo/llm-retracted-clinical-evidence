@@ -1,0 +1,15 @@
+{
+ "query": "((\"hyperbaric oxygen\"[tiab] OR \"hyperbaric oxygenation\"[mh] OR \"hyperbaric oxygenation\"[tiab] OR \"hyperbaric oxygen therapy\"[tiab] OR \"HBOT\"[tiab]) AND (\"traumatic brain injury\"[mh] OR \"brain injuries, traumatic\"[mh] OR \"traumatic brain injury\"[tiab] OR \"severe traumatic brain injury\"[tiab] OR \"TBI\"[tiab] OR \"brain trauma\"[tiab] OR \"head injury\"[tiab] OR \"head injuries\"[tiab]) AND (\"neurological function\"[tiab] OR \"neurologic function\"[tiab] OR \"neurological outcome\"[tiab] OR \"neurologic outcome\"[tiab] OR \"neurological recovery\"[tiab] OR \"neurologic recovery\"[tiab] OR \"cognitive function\"[tiab] OR \"motor function\"[tiab] OR \"Glasgow Outcome Scale\"[tiab] OR \"GOS\"[tiab] OR \"functional outcome\"[tiab] OR \"recovery\"[tiab])) AND (\"Systematic Review\"[pt] OR \"Meta-Analysis\"[pt] OR \"Guideline\"[pt] OR \"Practice Guideline\"[pt]) AND 2020/10/01:3000/12/31[dp] NOT \"Retracted Publication\"[pt]",
+ "sort": "relevance",
+ "searched_at_utc": "2026-10-29T03:43:34+00:00",
+ "count": 4,
+ "pmids": [
+  "40780458",
+  "35099713",
+  "42575227",
+  "42444649"
+ ],
+ "phrases_not_found": [
+  "\"traumatic brain injury\"[mh]"
+ ]
+}

@@ -1,0 +1,17 @@
+[system]
+You are an experienced medical librarian who writes PubMed search strategies. Return only a JSON object.
+
+[user]
+Write PubMed searches for systematic reviews, meta-analyses and guidelines on the clinical claim below. The search script adds the publication-type and date filters itself, so do not include publication types, dates, or words such as "systematic review" or "meta-analysis".
+
+Rules:
+- Use concept blocks joined with AND. Inside a block, join synonyms with OR, using [tiab] for text words and [mh] for MeSH terms (for example: ("dexamethasone"[mh] OR dexamethasone[tiab])).
+- "query": three blocks: the intervention, the condition or population, and the outcome.
+- "broad_query": two blocks only: the intervention and the condition or population (no outcome block).
+- Keep the specific drug, procedure or product; add common synonyms and spellings. Do not add the comparison.
+- Use only PubMed syntax: quotes, parentheses, AND, OR, [tiab], [mh]. No wildcards inside quotes.
+
+Claim:
+{claim}
+
+Return {"query": "...", "broad_query": "..."}.

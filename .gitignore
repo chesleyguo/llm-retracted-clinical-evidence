@@ -7,6 +7,8 @@ data/raw/*
 # controls can be reproduced exactly; PubMed changes over time.
 !data/raw/pubmed_controls/
 !data/raw/mesh/
+!data/raw/pubmed_p1/
+!data/raw/openalex_p1/
 .venv/
 .DS_Store
 __pycache__/

@@ -1,0 +1,32 @@
+{
+ "id": "https://openalex.org/W4361004847",
+ "doi": "https://doi.org/10.3390/medicina59040662",
+ "publication_date": "2023-03-27",
+ "referenced_works": [
+  "https://openalex.org/W80135232",
+  "https://openalex.org/W1981913921",
+  "https://openalex.org/W1982585616",
+  "https://openalex.org/W2051338075",
+  "https://openalex.org/W2100224535",
+  "https://openalex.org/W2125435699",
+  "https://openalex.org/W2135013876",
+  "https://openalex.org/W2139168999",
+  "https://openalex.org/W2171579955",
+  "https://openalex.org/W2531269403",
+  "https://openalex.org/W2586496902",
+  "https://openalex.org/W2587462094",
+  "https://openalex.org/W2789794389",
+  "https://openalex.org/W2917272453",
+  "https://openalex.org/W3114739800",
+  "https://openalex.org/W3125335870",
+  "https://openalex.org/W3157407519",
+  "https://openalex.org/W3207436301",
+  "https://openalex.org/W4282841155",
+  "https://openalex.org/W4282944506",
+  "https://openalex.org/W4284676224",
+  "https://openalex.org/W4295007787",
+  "https://openalex.org/W4295757621"
+ ],
+ "referenced_works_count": 23,
+ "retrieved_at_utc": "2026-10-29T03:44:23+00:00"
+}
