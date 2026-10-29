@@ -35,6 +35,7 @@ import json
 import os
 import re
 import sys
+import time
 import uuid
 from datetime import datetime, timezone
 from pathlib import Path
@@ -177,11 +178,24 @@ def already_done():
 
 
 def post(messages, key):
+    """One API call. Network errors, rate limits (429) and server errors are
+    retried with a growing wait; these failed requests are not logged as
+    calls because no response was received."""
     body = {"model": MODEL, "messages": messages, **PARAMS}
-    r = requests.post(API_URL, json=body, timeout=180,
-                      headers={"Authorization": f"Bearer {key}"})
-    r.raise_for_status()
-    return r.json()
+    for attempt in range(1, 6):
+        try:
+            r = requests.post(API_URL, json=body, timeout=180,
+                              headers={"Authorization": f"Bearer {key}"})
+            if r.status_code not in (429, 500, 502, 503, 504):
+                r.raise_for_status()
+                return r.json()
+            error = f"HTTP {r.status_code}"
+        except (requests.ConnectionError, requests.Timeout) as e:
+            error = type(e).__name__
+        if attempt == 5:
+            raise RuntimeError(f"API request failed 5 times; last error: {error}")
+        print(f"    request failed ({error}); retrying in {10 * attempt} s")
+        time.sleep(10 * attempt)
 
 
 def run_task(task, prompt, values, paper, check, key):

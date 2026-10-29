@@ -189,7 +189,7 @@ def main():
             flags.append("F1 mentions a study/trial/research")
         if LEADING_WORDS.search(question):
             flags.append("F1 contains leading wording")
-        if m["first_author"] and m["first_author"].lower() in question.lower():
+        if m["first_author"] and re.search(rf"\b{re.escape(m['first_author'])}\b", question, re.IGNORECASE):
             flags.append("F1 contains the first author's name")
         if STUDY_WORDS.search(ext["claim"]) or re.search(r"\d", ext["claim"]):
             flags.append("claim mentions a study or a number")
@@ -211,12 +211,13 @@ def main():
         })
 
     table = pd.concat([existing, pd.DataFrame(rows, columns=COLUMNS)], ignore_index=True)
-    # Rows with verify flags first, then by sample and pair; each pair's
-    # retracted row before its control. Reordering keeps the author's entries.
+    # Pilot rows first, then main; within each sample, rows with verify flags
+    # first, then by pair, the retracted row before its control. Reordering
+    # keeps the author's entries.
     table = table.assign(
         _flag=table["verify_flags"].eq(""), _sample=table["sample"].ne("pilot"),
         _group=table["group"].ne("retracted"),
-    ).sort_values(["_flag", "_sample", "pair_pmid", "_group"]).drop(
+    ).sort_values(["_sample", "_flag", "pair_pmid", "_group"]).drop(
         columns=["_flag", "_sample", "_group"])
     table.to_csv(REVIEW_PATH, index=False)
     print(f"Added {len(rows)} rows to {REVIEW_PATH.relative_to(ROOT)} "
