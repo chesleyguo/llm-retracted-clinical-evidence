@@ -102,6 +102,23 @@ PROTOCOL_SECTIONS = {"METHODS AND ANALYSIS", "ETHICS AND DISSEMINATION"}
 # Sections that come before any results.
 INTRO_SECTIONS = {"BACKGROUND", "INTRODUCTION", "OBJECTIVE", "OBJECTIVES", "AIM", "AIMS",
                   "PURPOSE", "CONTEXT", "IMPORTANCE", "RATIONALE"}
+# Research-methods trials (criterion 10): the randomized intervention is a
+# way of collecting data or running research (survey or questionnaire format,
+# Delphi procedure, recruitment, consent, reminders), not a health
+# intervention. "Response rate" alone is not used: it is a common clinical
+# outcome (e.g. tumour response).
+METHODS_TRIAL = re.compile(
+    r"\bdelphi\b|\b(survey|questionnaire) response rates?\b|\bresponse rates? to (the |a )?(survey|questionnaire)"
+    r"|\bsurvey (mode|method|format|design|administration)|\bmode of (questionnaire |survey )?(administration|data collection)"
+    r"|\bquestionnaire (format|design|length|administration)\b|\b(rating|ranking) (versus|vs\.?) (ranking|rating)\b"
+    r"|\bdata collection method|\b(study|trial) within a trial\b", re.IGNORECASE)
+# These are often mentioned in passing in a health trial's abstract (e.g.
+# "future trials should consider recruitment strategies"), so they count only
+# in the title.
+METHODS_TRIAL_TITLE = re.compile(
+    r"\brecruitment (strateg|method)\w*|\bconsent (form|process|procedure)s?\b"
+    r"|\breminder (letter|e-?mail|call|text)s?\b", re.IGNORECASE)
+
 # An unstructured abstract counts as reporting results if it contains at
 # least one of these.
 RESULT_WORDS = re.compile(
@@ -306,13 +323,16 @@ def build_query(term, field, year, window, require_rct):
 
 
 def content_problem(c):
-    """Content rules every control must meet (criteria 7-9), or None."""
+    """Content rules every control must meet (criteria 7-10), or None."""
     if HUMANS_UI not in c["mesh_uis"]:
         return "MeSH has no Humans"
     if "Clinical Trial Protocol" in c["pub_types"]:
         return "protocol, methods or qualitative paper"
     if NOT_A_RESULTS_PAPER_TITLE.search(c["title"]) or NOT_A_RESULTS_PAPER_ABSTRACT.search(c["abstract"]):
         return "protocol, methods or qualitative paper"
+    if (METHODS_TRIAL.search(c["title"]) or METHODS_TRIAL.search(c["abstract"])
+            or METHODS_TRIAL_TITLE.search(c["title"])):
+        return "research-methods trial"
     sections = [(names, text) for names, text in c["abstract_sections"] if names]
     all_names = set().union(*(n for n, _ in sections)) if sections else set()
     if all_names & PROTOCOL_SECTIONS:

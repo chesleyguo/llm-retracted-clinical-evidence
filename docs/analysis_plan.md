@@ -188,9 +188,13 @@ found by searching PubMed (`scripts/09_match_controls.py`). A control must:
 9. have an abstract that reports results: a results or findings section, or,
    without one, result wording (e.g. a p-value, "significant", "no
    difference", "reduced", "improved", a percentage) outside the introductory
-   sections.
+   sections;
+10. not be a research-methods trial, in which the randomized intervention is a
+   way of collecting data or running research (e.g. survey or questionnaire
+   format or mode of administration, Delphi procedures, recruitment, consent or
+   reminder strategies) rather than a health intervention for patients.
 
-The exact patterns for criteria 7-9 are in `scripts/09_match_controls.py`
+The exact patterns for criteria 7-10 are in `scripts/09_match_controls.py`
 (content_problem). They were checked against the 16 controls rejected in the
 main-sample review (8 were caught: protocols, a methods paper, qualitative or
 feasibility studies, and veterinary studies) and against all approved
@@ -447,3 +451,4 @@ which is not among the tested models.
 | 2026-10-28 | Matched controls | Added the design rule: a retracted randomized controlled trial must be matched to a randomized controlled trial. Controls were re-matched. Made before any model responses were collected. | In the pilot, single-arm studies were clearly over-represented among controls (90% of sampled retracted trials but 74% of controls were RCTs; 5 of 10 pilot controls had no comparison group), so the groups differed in study design. |
 | 2026-10-29 | Recorded for each included paper; Sampling | The rule that detects abstracts replaced by a retraction notice was extended to more notice wordings ("have retracted the following article", "The Editor and Publisher", "This article has been retracted" anywhere in the abstract). Re-scanning all 1,003 trials added one paper (30230402, 26 in total). Made after the main-sample claims review and before any model responses were collected. | The review found a sampled trial whose abstract was a Taylor & Francis retraction notice that the first rule missed (30230402). |
 | 2026-10-29 | Matched controls | Added control criteria 7-9: MeSH Humans; no protocol, methods or qualitative papers (including publication type Clinical Trial Protocol); the abstract must report results. They apply to all controls chosen from now on, including replacements; every control approved in the review already meets them. Made after the main-sample claims review and before any model responses were collected. | In the main-sample review, 16 of 100 controls were rejected, several of them protocols, a methods paper, qualitative studies or veterinary studies that the matching rules had let through. |
+| 2026-10-29 | Matched controls | Added control criterion 10: no research-methods trials (the randomized intervention is a data-collection or research procedure, not a health intervention). Applies to controls chosen from now on; every control approved in the review already meets it. Made before any model responses were collected. | In the third review round, a replacement control (37596699, rating vs ranking in a Delphi survey) was a research-methods trial. |

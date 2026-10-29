@@ -115,3 +115,11 @@ main: replacing control 37407057 of 35432822, control rejected in claims review 
 
 main: replacing control 16053843 of 15170272, control rejected in claims review (recorded order: level 1, topic Mandibular Diseases, chosen at position 3 of 11)
   new control 15520052 (level 1, topic Mandibular Diseases, position 4)
+
+========================================================================
+Run at (UTC): 2026-10-29T03:56:57+00:00
+Seed for new candidate orders: 2026 (numpy 2.5.4, default_rng)
+Retraction Watch snapshot: retraction_watch_2026-10-28.csv
+
+main: replacing control 37596699 of 35432822, control rejected in claims review (recorded order: level 1, topic Ambulatory Care Facilities, chosen at position 4 of 8)
+  new control 33765860 (level 1, topic Ambulatory Care Facilities, position 5)
