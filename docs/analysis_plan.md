@@ -425,7 +425,23 @@ stop_reason. Each call is appended to `outputs/responses/<sample>.jsonl`;
 calls that already succeeded are skipped on a re-run.
 
 **LLM coder.** deepseek-v4-pro (DeepSeek-V4-Pro-0813 at the time of checking),
-which is not among the tested models.
+which is not among the tested models. `scripts/16_code_responses.py` codes
+each response in its own call (thinking off, temperature 0, JSON output),
+with the prompt built from codebook section 5; the fixed part of the prompt
+comes first so the provider's prefix cache can reuse it. Calls are made
+outside DeepSeek's peak hours (weekdays 9:00-12:00 and 14:00-18:00 Beijing
+time), at half price; this does not change the model or its settings.
+Responses coded V1 = EXPLICIT get the V6 second pass. Calls are logged in
+`outputs/llm_calls/coding_<sample>.jsonl`, codes are written to
+`data/processed/coding_<sample>.csv`.
+
+**Human coding sheet** (pilot round). `scripts/17_human_coding_sheet.py`
+draws 30 pilot responses, 2 per tested model x framing x condition cell
+(seed 2026), without looking at the LLM codes, into
+`data/processed/human_coding_pilot.xlsx`. The sheet shows only what the LLM
+coder sees; the key linking items to responses is in
+`data/processed/human_coding_pilot_key.csv`. V6 is not on the sheet because
+it needs the Retraction Watch record, which reveals the group.
 
 ## Outcomes
 
@@ -437,10 +453,12 @@ which is not among the tested models.
   papers with at least one STRONG reason in `reason_mapping.csv` (see
   inclusion criterion 5), to check that the results do not depend on papers
   retracted only for concerns.
-- **P1 = NO only.** The main V2 analysis uses retracted papers with P1 = NO
-  or UNCLEAR (codebook P1); this sensitivity analysis repeats it with
-  P1 = NO papers only. Papers with P1 = YES are not used in any V2 analysis
-  and are reported descriptively; they are still used for V1, V3 and V4.
+- **P1 = NO only (descriptive).** The main V2 analysis uses retracted papers
+  with P1 = NO or UNCLEAR (codebook P1). For the P1 = NO papers only (5 in
+  the main sample), we report the proportion of responses in each V2 code,
+  without a statistical test. Papers with P1 = YES are not used in any V2
+  analysis and are reported descriptively; they are still used for V1, V3
+  and V4.
 - **Without Hindawi.** Re-run the main analysis excluding papers whose
   Retraction Watch Publisher is "Hindawi" (276 of the 1,003 retracted trials,
   15 of the 100 in the main sample; most were retracted in 2023 for
@@ -476,6 +494,11 @@ which is not among the tested models.
 - **Same model for claim extraction and coding.** The target claim and the F1
   question are drafted by deepseek-v4-pro (then reviewed by the author), and
   the same model is the LLM coder that judges stance toward that claim.
+- **Few P1 = NO papers.** Only 5 of the 100 retracted trials in the main
+  sample were coded P1 = NO, too few for a statistical test. The P1 = NO
+  only analysis is therefore a descriptive comparison of proportions, and it
+  cannot show whether the main V2 result holds when restricted to claims that
+  rest mainly on the retracted trial.
 
 ## Deviations log
 
@@ -491,3 +514,4 @@ which is not among the tested models.
 | 2026-10-29 | Matched controls | Added control criteria 7-9: MeSH Humans; no protocol, methods or qualitative papers (including publication type Clinical Trial Protocol); the abstract must report results. They apply to all controls chosen from now on, including replacements; every control approved in the review already meets them. Made after the main-sample claims review and before any model responses were collected. | In the main-sample review, 16 of 100 controls were rejected, several of them protocols, a methods paper, qualitative studies or veterinary studies that the matching rules had let through. |
 | 2026-10-29 | Matched controls | Added control criterion 10: no research-methods trials (the randomized intervention is a data-collection or research procedure, not a health intervention). Applies to controls chosen from now on; every control approved in the review already meets it. Made before any model responses were collected. | In the third review round, a replacement control (37596699, rating vs ranking in a Delphi survey) was a research-methods trial. |
 | 2026-10-29 | Models and conditions | Conditions C1 and C2 are used with F1 only; F2 and F3 are run under C0 only (back to the original design; the smoke test had run all nine framing-condition cells). 15 calls per paper instead of 27. Made before the pilot run was completed and before any responses were coded. | Cost: the web-search condition is expensive, mainly for Anthropic (about $0.14 per call in the smoke test), and running it for F2 and F3 is not needed for RQ3. |
+| 2026-10-29 | Pre-specified sensitivity analyses | The P1 = NO only analysis is a descriptive comparison of proportions, without a statistical test (was: a repeat of the main V2 analysis). Made after P1 coding and before the main experiment. | Only 5 of the 100 retracted trials in the main sample were coded P1 = NO, too few for a statistical test. |

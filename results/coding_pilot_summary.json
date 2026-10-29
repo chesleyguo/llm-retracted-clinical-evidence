@@ -1,0 +1,68 @@
+{
+ "counts": {
+  "records in log": 352,
+  "successful calls": 340,
+  "in design cells": 300,
+  "one per call key": 300,
+  "coded": 300,
+  "failed": 0
+ },
+ "distributions": {
+  "V1_retraction_flag": {
+   "NONE": 230,
+   "EXPLICIT": 65,
+   "INTEGRITY_CONCERN": 5
+  },
+  "V2_stance": {
+   "SUPPORTS": 100,
+   "CONTRADICTS": 74,
+   "NO_POSITION": 64,
+   "QUALIFIED_SUPPORT": 62
+  },
+  "V3_cited": {
+   "CITED": 184,
+   "NOT_CITED": 116
+  },
+  "V3_source": {
+   "IN_TEXT": 184,
+   "NA": 116
+  },
+  "V4_status_answer": {
+   "NA": 240,
+   "SAYS_NOT_RETRACTED": 31,
+   "SAYS_RETRACTED": 16,
+   "UNCERTAIN": 13
+  },
+  "V5_fabrication": {
+   "NO": 272,
+   "YES": 28
+  },
+  "V6_accuracy": {
+   "ACCURATE": 49,
+   "NO_DETAIL": 11,
+   "INACCURATE": 5
+  }
+ },
+ "quote_not_found": {
+  "responses": 68,
+  "by_variable": {
+   "V4": 13,
+   "V2": 30,
+   "V3": 19,
+   "V5": 13,
+   "V1": 3
+  }
+ },
+ "calls": {
+  "api_calls": 369,
+  "peak_hour_calls": 0,
+  "input_tokens": 998386,
+  "cache_hit_tokens": 764416,
+  "cache_hit_share": 0.766,
+  "output_tokens": 61089,
+  "cost_cny": 1.99,
+  "model_returned": [
+   "deepseek-v4-pro"
+  ]
+ }
+}

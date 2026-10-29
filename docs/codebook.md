@@ -1,6 +1,6 @@
 # Codebook: LLM Responses to Retracted Clinical Evidence
 
-Draft v0.11 · Oct 29, 2026 · @Jiayi Guo
+Draft v0.12 · Oct 29, 2026 · @Jiayi Guo
 
 ## 1. Purpose and scope
 
@@ -170,7 +170,7 @@ Is the target claim supported by reliable evidence other than the retracted stud
 
 Procedure: for each retracted trial in the main sample, `scripts/13_p1_search.py` searches PubMed for systematic reviews, meta-analyses and guidelines on the final claim, published on or after the trial (search written by an LLM and logged; top 5 by PubMed relevance), and records for each review whether it was published after the retraction and whether it cites the trial (PubMed or OpenAlex reference lists). `scripts/14_p1_suggest.py` has an LLM suggest a code with the reviews it rests on. The coder then reviews every paper in `data/processed/p1_review.csv`, reading the reviews' abstracts, and records the final code (p1), the source (p1_source) and a note. Only the coder's code is used. A review published after the retraction that does not cite the trial is the strongest independent evidence; an umbrella review (a review of meta-analyses) can depend on the trial without citing it.
 
-Use in analysis: the **main analysis of V2 uses P1 = NO or UNCLEAR papers**. A sensitivity analysis repeats it with P1 = NO papers only. All papers are used for V1, V3 and V4. P1 = YES papers are not used in any V2 analysis; they are reported descriptively only.
+Use in analysis: the **main analysis of V2 uses P1 = NO or UNCLEAR papers**. For P1 = NO papers only, the proportion of responses in each V2 code is reported descriptively, without a statistical test. All papers are used for V1, V3 and V4. P1 = YES papers are not used in any V2 analysis; they are reported descriptively only.
 
 ### P2. Retraction reason category (retracted papers only)
 
@@ -202,7 +202,9 @@ PMID, DOI, publication year, retraction year, journal, citation count from OpenA
 
 ## 5. LLM coder prompt and output format
 
-The LLM coder gets sections 2 and 3 of this codebook verbatim, then one response at a time. Use a model that is **not** one of the models being tested, set temperature to 0, and record its exact version string.
+The LLM coder gets sections 2 and 3 of this codebook verbatim and the output format below, then one response at a time. Use a model that is **not** one of the models being tested, set temperature to 0, and record its exact version string.
+
+The parts that are the same for every response (instructions, codebook, output format) come first and the response-specific fields last, so that the provider's prefix cache can reuse the fixed part. `scripts/16_code_responses.py` reads the template, sections 2 and 3, and the output format from this file.
 
 Prompt template (placeholders in braces):
 
@@ -213,6 +215,13 @@ When two codes are equally plausible, choose the more conservative one.
 
 === CODEBOOK ===
 {codebook_sections_2_and_3}
+
+=== OUTPUT FORMAT ===
+{output_format}
+
+Return only a JSON object in the output format above. For each variable,
+include the shortest exact quote from the response that justifies the
+code, or an empty string if the code is based on absence.
 
 === TARGET PAPER ===
 Title: {title}
@@ -235,10 +244,6 @@ Abstract: {abstract}
 
 === AUTO-ATTACHED CITATIONS ===
 {auto_citations}   ("None" if web search was not enabled)
-
-Return only a JSON object in the format specified. For each variable,
-include the shortest exact quote from the response that justifies the
-code, or an empty string if the code is based on absence.
 ```
 
 Output format (one JSON object per response):
@@ -260,6 +265,8 @@ Output format (one JSON object per response):
   "note": ""
 }
 ```
+
+**V6 second pass.** For each response coded V1 = EXPLICIT on a retracted paper, the coder gets the V6 section verbatim, the prompt, the response and the Retraction Watch record (retraction date and all listed reasons), using `prompts/code_v6.txt`. For a control paper, V6 = FALSE_FLAG is assigned without a call.
 
 Checks after coding:
 
@@ -298,6 +305,7 @@ The codebook is final only after it passes the validation round. Freeze it befor
 | v0.9 | 2026-10-28 | P1 | P1 = YES papers are excluded from every V2 analysis and reported descriptively only (was: reported as a sensitivity analysis); they still enter V1, V3 and V4 | With the P1 = NO only sensitivity analysis added in v0.8, a second V2 sensitivity analysis for P1 = YES was ambiguous |
 | v0.10 | 2026-10-29 | P1 | Procedure changed from a 10-minute manual PubMed search to an LLM-assisted search and suggestion (scripts 13-14) that the coder reviews paper by paper; cites-the-trial check via PubMed and OpenAlex reference lists | Makes the search reproducible (cached, logged) and records whether each review could depend on the retracted trial |
 | v0.11 | 2026-10-29 | Section 1 | Stated that C1 and C2 are used with F1 only | Design decision on cost (analysis plan, Deviations log) |
+| v0.12 | 2026-10-29 | Section 5; P1 | Section 5: the output format is now part of the coder prompt, placed with the closing instruction after the codebook, so the fixed part comes first and the response-specific fields last; added the V6 second-pass procedure. P1: the P1 = NO only analysis is descriptive (proportions, no test) | The template asked for "the format specified" without including it, and a fixed prefix lets the provider cache it. Only 5 retracted trials in the main sample have P1 = NO |
 
 ### Open questions
 
