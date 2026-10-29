@@ -1,0 +1,1 @@
+Database record: This article was retracted in {year}. Reasons listed: {reasons}.

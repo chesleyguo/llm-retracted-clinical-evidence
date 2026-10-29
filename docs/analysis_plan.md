@@ -341,10 +341,17 @@ For the 100 retracted trials of the main sample (codebook P1):
    reference list without it, UNKNOWN if neither has one; the source is
    recorded.
 3. **Suggestion** (`scripts/14_p1_suggest.py`, `prompts/p1_suggest.txt`):
-   the model reads the P1 definition from the codebook, the claim and the
-   reviews, and suggests YES, NO or UNCLEAR with the reviews it rests on, a
-   rationale, and for each review whether it probably included the trial. A
-   YES or NO must name at least one review; no review found gives UNCLEAR.
+   the model (thinking mode on) reads the P1 definition from the codebook,
+   the claim and the reviews, and suggests YES, NO or UNCLEAR with the reviews
+   it rests on, a rationale, and for each review whether it probably included
+   the trial. A review can support YES only if it studies the same
+   intervention and comparison and reports the same (or a very close) outcome
+   with the same direction; a review with a clearly different outcome or
+   population, or an umbrella review (a review of reviews, which can depend on
+   the trial without citing it), supports UNCLEAR at most. A YES or NO must
+   name at least one review; no review found gives UNCLEAR. Each paper is
+   judged twice in separate calls; papers where the two differ are marked
+   p1_disagree = TRUE and listed first for review.
 4. **Review**: the author codes every paper in `data/processed/p1_review.csv`
    (p1, p1_source, p1_note); only these codes are used.
 
@@ -369,7 +376,8 @@ month is used (codebook P3).
 The exact version string returned by each API is recorded with every call.
 
 **Generation parameters.** No temperature (or other sampling parameter) is set
-for any tested model; each API's defaults are used. This mimics what an
+for any tested model; each API's defaults are used, including thinking or
+reasoning settings. Anthropic requires max_tokens, set to 16000. This mimics what an
 ordinary user gets in the consumer app, and it also avoids a mismatch between
 models, since the Claude Sonnet 5.5 API does not accept a temperature setting.
 
@@ -390,7 +398,23 @@ a fixed template, not from the text of the retraction notice:
 - Control: "Database record: No retraction, correction, or expression of
   concern is recorded for this article."
 
-C2: web search enabled.
+C1 with F1: the F1 question does not name the article, so the record is
+introduced by one sentence naming it (`prompts/c1_f1_article.txt`: title,
+first author, journal, year), as a retrieval system would return the article
+together with its status. Templates: `prompts/c1_retracted.txt`,
+`prompts/c1_control.txt`.
+
+C2: web search enabled (OpenAI `web_search` tool, Anthropic
+`web_search_20260209`, Google Search grounding). All citations and sources the
+API returns are kept in the raw response; a list of them (title, URL) is
+stored as auto_citations.
+
+**Running the calls** (`scripts/15_run_experiment.py`). No system prompt.
+Calls are made in a random order (seed 2026) with at most 4 concurrent
+requests per provider. Anthropic's server-side refusal fallback is not used,
+so every answer comes from the tested model; a refusal is recorded with its
+stop_reason. Each call is appended to `outputs/responses/<sample>.jsonl`;
+calls that already succeeded are skipped on a re-run.
 
 **LLM coder.** deepseek-v4-pro (DeepSeek-V4-Pro-0813 at the time of checking),
 which is not among the tested models.
@@ -431,6 +455,12 @@ which is not among the tested models.
   the suggestion prompt changed the suggested code for several papers, and
   some suggestions misread the reviews. The suggestions only help the coder;
   every P1 code is decided by the coder from the review abstracts.
+- **C1 names the article under F1.** Under C1 the F1 prompt includes a
+  sentence naming the article, so F1-C1 is no longer a question that leaves
+  the paper unnamed; it is compared with F1-C0 as the effect of adding a
+  retrieved record.
+- **No system prompt.** The consumer apps use system prompts that cannot be
+  reproduced through the API; the study uses none.
 - **Fewer Elsevier papers.** Elsevier replaces the PubMed abstract of a
   retracted article with the retraction notice. These papers count as having
   no abstract and are excluded, so Elsevier journals are under-represented in

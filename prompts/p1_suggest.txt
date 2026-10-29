@@ -22,7 +22,9 @@ How to judge:
 - A review counts as independent support only if it supports the claim without depending on the retracted trial. A review that cites the retracted trial ("cites_retracted: YES") probably included it.
 - The strongest independent evidence is a review published after the retraction that does not cite the trial.
 - If cites_retracted is UNKNOWN, judge from the abstract (for example, the years or number of included trials) whether the review could have included the trial, and say so.
-- YES only if at least one review that does not depend on the retracted trial supports this specific claim; list only such reviews in basis_pmids.
+- YES only if at least one review that does not depend on the retracted trial supports this specific claim: it studies the same intervention and comparison, reports the same (or a very close) outcome, and finds an effect in the same direction. List only such reviews in basis_pmids.
+- A review whose outcome or population clearly differs from the claim can support UNCLEAR at most, never YES or NO.
+- An umbrella review ("umbrella_review: YES", a review of reviews or meta-analyses) may depend on the retracted trial without citing it, so it can support UNCLEAR at most.
 - NO only if some review shows that the claim rests mainly on the retracted trial, or if independent evidence contradicts the claim; list those reviews in basis_pmids.
 - UNCLEAR if the evidence is mixed, or if none of the reviews addresses this specific claim (same intervention, condition and outcome). Absence of evidence is UNCLEAR, not NO.
 

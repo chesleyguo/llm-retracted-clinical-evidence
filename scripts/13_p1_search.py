@@ -50,6 +50,9 @@ OUT_PATH = PROCESSED / "p1_candidates.csv"
 
 TOP_N = 5
 REVIEW_TYPES = ["Systematic Review", "Meta-Analysis", "Guideline", "Practice Guideline"]
+# A review of reviews can depend on the retracted trial without citing it.
+UMBRELLA = re.compile(r"\bumbrella\b|overview of (systematic )?reviews|review of (systematic )?reviews"
+                      r"|meta-analys[ie]s of meta-analys[ie]s", re.IGNORECASE)
 MONTHS = {m: i for i, m in enumerate(
     ["jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec"], 1)}
 
@@ -273,6 +276,9 @@ def main():
                          "review_pub_types": "; ".join(x.text for x in art.findall("PublicationTypeList/PublicationType")),
                          "published_after_retraction": "YES" if rdate > retracted_on else "NO",
                          "cites_retracted": cites, "cites_source": source,
+                         "umbrella_review": "YES" if UMBRELLA.search(
+                             "".join(art.find("ArticleTitle").itertext()) + " " + "".join(
+                                 "".join(p.itertext()) for p in art.findall("Abstract/AbstractText"))) else "NO",
                          "review_abstract": "\n".join(
                              (f"{p.get('Label')}: " if p.get("Label") else "") + "".join(p.itertext()).strip()
                              for p in art.findall("Abstract/AbstractText"))})

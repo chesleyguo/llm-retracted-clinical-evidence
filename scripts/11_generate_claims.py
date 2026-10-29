@@ -177,11 +177,11 @@ def already_done(log_path=LOG_PATH):
     return done
 
 
-def post(messages, key):
+def post(messages, key, params=PARAMS):
     """One API call. Network errors, rate limits (429) and server errors are
     retried with a growing wait; these failed requests are not logged as
     calls because no response was received."""
-    body = {"model": MODEL, "messages": messages, **PARAMS}
+    body = {"model": MODEL, "messages": messages, **params}
     for attempt in range(1, 6):
         try:
             r = requests.post(API_URL, json=body, timeout=180,
@@ -198,13 +198,13 @@ def post(messages, key):
         time.sleep(10 * attempt)
 
 
-def run_task(task, prompt, values, paper, check, key, log_path=LOG_PATH):
+def run_task(task, prompt, values, paper, check, key, log_path=LOG_PATH, params=PARAMS):
     """Call the model, check the answer, and retry with feedback if needed.
     Every attempt is logged. Returns the parsed answer or None."""
     messages = [{"role": "system", "content": prompt["system"]},
                 {"role": "user", "content": fill(prompt["user"], values)}]
     for attempt in range(1, MAX_ATTEMPTS + 1):
-        raw = post(messages, key)
+        raw = post(messages, key, params)
         content = raw["choices"][0]["message"]["content"]
         try:
             parsed = json.loads(content)
@@ -220,7 +220,7 @@ def run_task(task, prompt, values, paper, check, key, log_path=LOG_PATH):
             "prompt_file": prompt["file"], "prompt_sha256": prompt["sha256"],
             "model_requested": MODEL, "model_returned": raw.get("model"),
             "system_fingerprint": raw.get("system_fingerprint"),
-            "parameters": PARAMS, "input_values": values,
+            "parameters": params, "input_values": values,
             "messages": messages, "response": raw,
             "parsed": parsed, "status": status, "problem": problem,
         }
