@@ -17,14 +17,21 @@ Writes:
 - data/processed/human_coding_pilot_key.csv: item number -> response, for
   comparing with the LLM codes later.
 
+With "practice": 6 responses that are not on the pilot sheet, for practising
+the coding; not used in any analysis. Same workbook format, written to
+data/processed/practice_coding.xlsx; data/processed/practice_key.csv holds
+the group, condition and LLM codes of each item.
+
 Usage:
-    python scripts/17_human_coding_sheet.py
+    python scripts/17_human_coding_sheet.py            # pilot sheet
+    python scripts/17_human_coding_sheet.py practice   # practice sheet
 """
 
 import importlib.util
 import json
 import random
 import re
+import sys
 from pathlib import Path
 
 import pandas as pd
@@ -36,6 +43,13 @@ ROOT = Path(__file__).resolve().parent.parent
 PROCESSED = ROOT / "data" / "processed"
 SHEET_PATH = PROCESSED / "human_coding_pilot.xlsx"
 KEY_PATH = PROCESSED / "human_coding_pilot_key.csv"
+PRACTICE_PATH = PROCESSED / "practice_coding.xlsx"
+PRACTICE_KEY_PATH = PROCESSED / "practice_key.csv"
+# Practice slots (framing, condition, group): F3, F1-C1, F1-C2 and F2, with
+# both groups represented.
+PRACTICE_SLOTS = [("F3", "C0", "retracted"), ("F1", "C1", "retracted"),
+                  ("F1", "C2", "control"), ("F2", "C0", "retracted"),
+                  ("F1", "C2", "retracted"), ("F3", "C0", "control")]
 SEED = 2026
 PER_CELL = 2
 EXCEL_CELL_MAX = 32767
@@ -103,13 +117,30 @@ def quick_reference(sections):
     return rows
 
 
-def main():
-    template, sections, output_format, _ = s16.codebook_parts()
-    allowed = s16.allowed_values(output_format)
-    papers = s16.load_papers()
-    responses, _ = s16.load_responses("pilot")
-    picked = draw(responses)
+def draw_practice(responses, exclude):
+    """6 practice responses outside the pilot sheet, one per slot below; the
+    slots cover F3, F1-C1, F1-C2 with auto-attached citations and F2, both
+    groups, and the three tested models in turn. Chosen with seed 2026,
+    without looking at the LLM codes."""
+    rng = random.Random(SEED)
+    models = sorted({r["model_requested"] for r in responses})
+    picked = []
+    for i, (framing, condition, group) in enumerate(PRACTICE_SLOTS):
+        pool = sorted((r for r in responses if r["call_id"] not in exclude
+                       and (r["framing"], r["condition"], r["group"]) == (framing, condition, group)
+                       and r["model_requested"] == models[i % len(models)]
+                       and (condition != "C2" or r["auto_citations"])
+                       and r["pmid"] not in {x["pmid"] for x in picked}),
+                      key=lambda r: r["call_id"])
+        picked.append(rng.choice(pool))
+    rng.shuffle(picked)
+    print(f"  {len(picked)} practice responses, none on the pilot sheet (seed {SEED})")
+    return picked
 
+
+def write_sheet(picked, path, papers, sections, allowed, output_format):
+    """The coding workbook: sheet "Coding" (what the LLM coder sees, plus
+    empty code columns with drop-down lists) and sheet "Codebook"."""
     code_cols = []
     for var in json.loads(output_format):
         if var in ("response_id", "note"):
@@ -123,16 +154,11 @@ def main():
     ws = wb.active
     ws.title = "Coding"
     ws.append(info_cols + code_cols)
-    key_rows = []
     for i, r in enumerate(picked, 1):
         p = papers[r["pmid"]]
         ws.append([i, p["title"], p["authors"], p["year"], p["journal"], fit(p["abstract"]),
                    p["claim"], s16.FRAMING_LABELS[r["framing"]], fit(r["prompt"]),
                    fit(r["response_text"]), fit(s16.format_citations(r))] + [""] * len(code_cols))
-        key_rows.append({"item": i, "response_id": r["call_id"], "pmid": r["pmid"],
-                         "pair_pmid": r["pair_pmid"], "group": r["group"],
-                         "tested_model": r["model_requested"], "framing": r["framing"],
-                         "condition": r["condition"], "seed": SEED})
 
     widths = {"item": 6, "title": 30, "authors": 20, "year": 7, "journal": 20, "abstract": 60,
               "claim": 35, "framing": 14, "prompt": 40, "response": 80, "auto_citations": 40}
@@ -169,10 +195,43 @@ def main():
     for cell in ref[1]:
         cell.font = Font(bold=True)
     ref.freeze_panes = "A2"
+    wb.save(path)
 
-    wb.save(SHEET_PATH)
-    pd.DataFrame(key_rows).to_csv(KEY_PATH, index=False)
-    print(f"Wrote {SHEET_PATH.relative_to(ROOT)} ({n} responses) and {KEY_PATH.relative_to(ROOT)}")
+
+def key_rows(picked):
+    return [{"item": i, "response_id": r["call_id"], "pmid": r["pmid"],
+             "pair_pmid": r["pair_pmid"], "group": r["group"],
+             "tested_model": r["model_requested"], "framing": r["framing"],
+             "condition": r["condition"], "seed": SEED} for i, r in enumerate(picked, 1)]
+
+
+def main():
+    which = sys.argv[1] if len(sys.argv) > 1 else "pilot"
+    if which not in ("pilot", "practice"):
+        sys.exit("Usage: python scripts/17_human_coding_sheet.py [pilot|practice]")
+    template, sections, output_format, _ = s16.codebook_parts()
+    allowed = s16.allowed_values(output_format)
+    papers = s16.load_papers()
+    responses, _ = s16.load_responses("pilot")
+
+    if which == "pilot":
+        picked = draw(responses)
+        write_sheet(picked, SHEET_PATH, papers, sections, allowed, output_format)
+        pd.DataFrame(key_rows(picked)).to_csv(KEY_PATH, index=False)
+        print(f"Wrote {SHEET_PATH.relative_to(ROOT)} ({len(picked)} responses) and {KEY_PATH.relative_to(ROOT)}")
+        return
+
+    exclude = set(pd.read_csv(KEY_PATH, dtype=str)["response_id"])
+    picked = draw_practice(responses, exclude)
+    write_sheet(picked, PRACTICE_PATH, papers, sections, allowed, output_format)
+    # The practice key also holds the LLM codes, for checking the practice round.
+    llm = pd.read_csv(PROCESSED / "coding_pilot.csv", dtype=str, keep_default_na=False)
+    llm = llm.drop(columns=["sample", "pair_pmid", "pmid", "group", "tested_model",
+                            "framing", "condition"])
+    key = pd.DataFrame(key_rows(picked)).merge(llm, on="response_id", how="left")
+    key.to_csv(PRACTICE_KEY_PATH, index=False)
+    print(f"Wrote {PRACTICE_PATH.relative_to(ROOT)} ({len(picked)} responses) and "
+          f"{PRACTICE_KEY_PATH.relative_to(ROOT)}")
 
 
 if __name__ == "__main__":

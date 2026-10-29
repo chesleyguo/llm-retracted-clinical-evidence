@@ -73,3 +73,14 @@ python scripts/07_fetch_pubmed.py         # -> pubmed_metadata.csv, retracted_tr
 
 Script 07 reuses the PubMed XML cached in `data/raw/pubmed/` and only queries
 PubMed for PMIDs not requested before.
+
+## Practice coding sheet
+
+`data/processed/practice_coding.xlsx` holds 6 pilot responses that are not on
+the pilot human coding sheet (`human_coding_pilot.xlsx`), for practising the
+coding before the pilot round. It covers F3, F1-C1, F1-C2 (with auto-attached
+citations) and F2, both groups and all three tested models, in the same
+format as the pilot sheet. `data/processed/practice_key.csv` gives each item's
+group, model, condition and LLM codes; open it only after coding. **The
+practice sheet is not used in any analysis.** Regenerate it with
+`python scripts/17_human_coding_sheet.py practice`.
