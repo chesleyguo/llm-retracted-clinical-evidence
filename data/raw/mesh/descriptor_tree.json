@@ -610,6 +610,14 @@
    "D02.092.063"
   ]
  },
+ "D000634": {
+  "parents": {
+   "D011804": "Quinolines"
+  },
+  "tree_numbers": [
+   "D03.633.100.810.050"
+  ]
+ },
  "D000662": {
   "parents": {
    "D010627": "Phenethylamines"
@@ -1949,6 +1957,14 @@
   "tree_numbers": [
    "C14.280.647.250",
    "C14.907.585.250"
+  ]
+ },
+ "D003333": {
+  "parents": {
+   "D030341": "Nidovirales Infections"
+  },
+  "tree_numbers": [
+   "C01.925.782.600.550"
   ]
  },
  "D003339": {
@@ -4339,6 +4355,14 @@
    "D12.776.256.159.750.816.250"
   ]
  },
+ "D007783": {
+  "parents": {
+   "D009930": "Organic Chemicals"
+  },
+  "tree_numbers": [
+   "D02.540"
+  ]
+ },
  "D007839": {
   "parents": {
    "D004292": "Dominance, Cerebral"
@@ -5943,6 +5967,17 @@
   "tree_numbers": [
    "E04.620",
    "E04.928.600.600"
+  ]
+ },
+ "D011014": {
+  "parents": {
+   "D008171": "Lung Diseases",
+   "D012141": "Respiratory Tract Infections"
+  },
+  "tree_numbers": [
+   "C08.381.677",
+   "C01.748.610",
+   "C08.730.610"
   ]
  },
  "D011024": {
@@ -8459,6 +8494,17 @@
    "E02.319.162"
   ]
  },
+ "D018942": {
+  "parents": {
+   "D007783": "Lactones",
+   "D061065": "Polyketides"
+  },
+  "tree_numbers": [
+   "D02.540.505",
+   "D02.540.576.500",
+   "D04.345.674.500"
+  ]
+ },
  "D019052": {
   "parents": {
    "D003866": "Depressive Disorder",
@@ -9012,6 +9058,14 @@
   },
   "tree_numbers": [
    "D20.215.784"
+  ]
+ },
+ "D030341": {
+  "parents": {
+   "D012327": "RNA Virus Infections"
+  },
+  "tree_numbers": [
+   "C01.925.782.600"
   ]
  },
  "D030342": {
@@ -9919,6 +9973,16 @@
    "D12.776.543.095.300",
    "D23.050.301.285.400",
    "D23.529.168.300"
+  ]
+ },
+ "D061065": {
+  "parents": {
+   "D007783": "Lactones",
+   "D047028": "Macrocyclic Compounds"
+  },
+  "tree_numbers": [
+   "D02.540.576",
+   "D04.345.674"
   ]
  },
  "D061067": {
