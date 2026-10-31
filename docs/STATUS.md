@@ -1,6 +1,6 @@
 # Project status (handover)
 
-Last updated: 2026-10-30. Read this first in a new session, together with
+Last updated: 2026-10-31. Read this first in a new session, together with
 `CLAUDE.md`, `docs/codebook.md` (now v0.13) and `docs/analysis_plan.md`.
 
 ## 1. Where the project is
@@ -21,6 +21,7 @@ All steps below are done and committed (latest commit at the time of writing:
 | Pilot experiment (20 papers × 3 models × 5 cells = 300 calls, all ok) | `15` | `outputs/responses/pilot.jsonl` (352 records incl. smoke test and errors) |
 | LLM coding of the 300 pilot responses, V6 second pass | `16` | `outputs/llm_calls/coding_pilot.jsonl`, `data/processed/coding_pilot.csv`, `results/coding_pilot_summary.json` |
 | Human coding sheets | `17` | `human_coding_pilot.xlsx` (30) + `human_coding_pilot_key.csv`; `practice_coding.xlsx` (6, practice only) + `practice_key.csv` |
+| Author's pilot coding (30, done 2026-10-31): sheet check, agreement with the LLM coder, disagreement list | `18` | `results/18_sheet_check.csv`, `results/18_agreement.json`, `results/18_disagreements.md` |
 
 Analysis numbers fixed so far: V2 main analysis uses 94 retracted trials
 (P1 = NO or UNCLEAR); the P1 = NO analysis (n = 5) is descriptive only.
@@ -33,27 +34,24 @@ Cost ¥1.99, cache-hit share 77%.
 
 ## 2. Waiting on
 
-The author is hand-coding `data/processed/human_coding_pilot.xlsx` (30
-responses), after a practice round on `practice_coding.xlsx`. The second coder
-is not yet chosen (codebook, Open questions).
+The author is reviewing `results/18_disagreements.md` (group, model and
+condition deliberately not shown) and will decide the codebook v1.0
+changes. Do not change the codebook before that. The second coder is not yet
+chosen (codebook, Open questions).
 
-## 3. Next, once the human coding is done
+## 3. Results of step 18 (author vs. LLM coder, 30 items)
 
-1. **Check the author's sheet.** Every code cell filled with an allowed value;
-   V4 = NA exactly for non-F3 items; V3_source = NA exactly when NOT_CITED;
-   evidence quotes present in the response. Report problems, do not fix them.
-2. **Agreement, LLM vs. author** (new script, e.g. `18_agreement.py`; join on
-   `human_coding_pilot_key.csv` → `coding_pilot.csv`): per variable, Cohen's
-   kappa and percent agreement; for V1, the LLM's sensitivity and precision
-   with the author's codes as reference (positive = EXPLICIT; report also
-   with EXPLICIT or INTEGRITY_CONCERN as positive). With 30 items, report
-   kappa with a note on its instability for rare codes. Save to `results/`.
-3. **List every disagreement** (item, variable, both codes, both evidence
-   quotes), with the 6 `v3_quote_from_prompt` items and all quote_not_found
-   items marked. The author decides on codebook changes; per codebook
-   section 6, if any variable has more than 5 disagreements, code 20 new
-   responses after the revision.
-4. **Practice sheet**: only if the author asks, compare with `practice_key.csv`.
+- Sheet check: all 6 code columns filled with allowed values, NA rules
+  correct; 6 author evidence quotes not found (items 2 V3, 20 V2, 22 V3,
+  27 V5, 30 V3, 30 V5), reported to the author, not fixed.
+- Kappa / % agreement / disagreements: V1 0.79 / 93.3 / 2; V2 0.69 / 76.7 / 7;
+  V3 0.61 / 80.0 / 6; V3_source 0.52 / 73.3 / 8; V4 (F3 only, n = 6)
+  1.00 / 100 / 0; V5 0.63 / 93.3 / 2.
+- V1, LLM vs. author: sensitivity 1.0 (5/5), precision 0.71 (5/7), same with
+  EXPLICIT or INTEGRITY_CONCERN as positive.
+- V2, V3 and V3_source have more than 5 disagreements, so per codebook
+  section 6, 20 new pilot responses are coded after the revision.
+- Practice sheet: compare with `practice_key.csv` only if the author asks.
 
 ## 4. Decided but not yet done
 

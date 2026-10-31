@@ -1,0 +1,131 @@
+{
+  "n_items": 30,
+  "note": "30 items: kappa is unstable, especially for rare codes (one item can move it a lot) and undefined when both coders used a single code. V4 is computed on F3 items only. Items with an empty author code are left out of that variable.",
+  "variables": {
+    "V1_retraction_flag": {
+      "n": 30,
+      "items_excluded_empty": [],
+      "kappa": 0.793,
+      "percent_agreement": 93.3,
+      "disagreements": 2,
+      "author_codes": {
+        "EXPLICIT": 5,
+        "NONE": 25
+      },
+      "llm_codes": {
+        "EXPLICIT": 7,
+        "NONE": 23
+      },
+      "more_than_5_disagreements": false
+    },
+    "V2_stance": {
+      "n": 30,
+      "items_excluded_empty": [],
+      "kappa": 0.688,
+      "percent_agreement": 76.7,
+      "disagreements": 7,
+      "author_codes": {
+        "CONTRADICTS": 5,
+        "NO_POSITION": 7,
+        "SUPPORTS": 10,
+        "QUALIFIED_SUPPORT": 8
+      },
+      "llm_codes": {
+        "CONTRADICTS": 9,
+        "SUPPORTS": 10,
+        "NO_POSITION": 6,
+        "QUALIFIED_SUPPORT": 5
+      },
+      "more_than_5_disagreements": true
+    },
+    "V3_cited": {
+      "n": 30,
+      "items_excluded_empty": [],
+      "kappa": 0.615,
+      "percent_agreement": 80.0,
+      "disagreements": 6,
+      "author_codes": {
+        "NOT_CITED": 18,
+        "CITED": 12
+      },
+      "llm_codes": {
+        "CITED": 18,
+        "NOT_CITED": 12
+      },
+      "more_than_5_disagreements": true
+    },
+    "V3_source": {
+      "n": 30,
+      "items_excluded_empty": [],
+      "kappa": 0.524,
+      "percent_agreement": 73.3,
+      "disagreements": 8,
+      "author_codes": {
+        "NA": 18,
+        "IN_TEXT": 10,
+        "AUTO_CITATION": 2
+      },
+      "llm_codes": {
+        "IN_TEXT": 18,
+        "NA": 12
+      },
+      "more_than_5_disagreements": true
+    },
+    "V4_status_answer": {
+      "n": 6,
+      "items_excluded_empty": [],
+      "kappa": 1.0,
+      "percent_agreement": 100.0,
+      "disagreements": 0,
+      "author_codes": {
+        "UNCERTAIN": 3,
+        "SAYS_NOT_RETRACTED": 2,
+        "SAYS_RETRACTED": 1
+      },
+      "llm_codes": {
+        "UNCERTAIN": 3,
+        "SAYS_NOT_RETRACTED": 2,
+        "SAYS_RETRACTED": 1
+      },
+      "more_than_5_disagreements": false
+    },
+    "V5_fabrication": {
+      "n": 30,
+      "items_excluded_empty": [],
+      "kappa": 0.63,
+      "percent_agreement": 93.3,
+      "disagreements": 2,
+      "author_codes": {
+        "NO": 27,
+        "YES": 3
+      },
+      "llm_codes": {
+        "NO": 27,
+        "YES": 3
+      },
+      "more_than_5_disagreements": false
+    }
+  },
+  "v1_detection_llm_vs_author": [
+    {
+      "positive": "EXPLICIT",
+      "TP": 5,
+      "FP": 2,
+      "FN": 0,
+      "TN": 23,
+      "sensitivity": 1.0,
+      "precision": 0.714
+    },
+    {
+      "positive": "EXPLICIT or INTEGRITY_CONCERN",
+      "TP": 5,
+      "FP": 2,
+      "FN": 0,
+      "TN": 23,
+      "sensitivity": 1.0,
+      "precision": 0.714
+    }
+  ],
+  "v3_quote_from_prompt_on_sheet": "1 of 6",
+  "quote_not_found_on_sheet": 2
+}
