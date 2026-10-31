@@ -14,18 +14,19 @@
    "INTEGRITY_CONCERN": 5
   },
   "V2_stance": {
-   "SUPPORTS": 100,
-   "CONTRADICTS": 74,
-   "NO_POSITION": 64,
-   "QUALIFIED_SUPPORT": 62
+   "SUPPORTS": 109,
+   "NO_POSITION": 68,
+   "CONTRADICTS": 64,
+   "QUALIFIED_SUPPORT": 59
   },
   "V3_cited": {
-   "CITED": 184,
-   "NOT_CITED": 116
+   "NOT_CITED": 198,
+   "CITED": 102
   },
   "V3_source": {
-   "IN_TEXT": 184,
-   "NA": 116
+   "NA": 198,
+   "IN_TEXT": 100,
+   "AUTO_CITATION": 2
   },
   "V4_status_answer": {
    "NA": 240,
@@ -34,32 +35,32 @@
    "UNCERTAIN": 13
   },
   "V5_fabrication": {
-   "NO": 272,
-   "YES": 28
+   "NO": 279,
+   "YES": 21
   },
   "V6_accuracy": {
-   "ACCURATE": 49,
-   "NO_DETAIL": 11,
+   "ACCURATE": 48,
+   "NO_DETAIL": 12,
    "INACCURATE": 5
   }
  },
  "quote_not_found": {
-  "responses": 33,
+  "responses": 27,
   "by_variable": {
-   "V3": 11,
-   "V2": 11,
-   "V5": 12
+   "V2": 18,
+   "V4": 8,
+   "V3": 2
   },
-  "v3_quote_from_prompt": 6
+  "v3_quote_from_prompt": 1
  },
  "calls": {
-  "api_calls": 369,
+  "api_calls": 677,
   "peak_hour_calls": 0,
-  "input_tokens": 998386,
-  "cache_hit_tokens": 764416,
-  "cache_hit_share": 0.766,
-  "output_tokens": 61089,
-  "cost_cny": 1.99,
+  "input_tokens": 2316133,
+  "cache_hit_tokens": 1909760,
+  "cache_hit_share": 0.825,
+  "output_tokens": 134762,
+  "cost_cny": 3.93,
   "model_returned": [
    "deepseek-v4-pro"
   ]

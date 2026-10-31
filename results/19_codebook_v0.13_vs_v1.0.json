@@ -1,0 +1,139 @@
+{
+ "n": 300,
+ "V1_retraction_flag": {
+  "changed": 2,
+  "changed_outside_round1": 2,
+  "v0.13": {
+   "NONE": 230,
+   "EXPLICIT": 65,
+   "INTEGRITY_CONCERN": 5
+  },
+  "v1.0": {
+   "NONE": 230,
+   "EXPLICIT": 65,
+   "INTEGRITY_CONCERN": 5
+  },
+  "transitions": {
+   "EXPLICIT -> INTEGRITY_CONCERN": 1,
+   "INTEGRITY_CONCERN -> EXPLICIT": 1
+  }
+ },
+ "V2_stance": {
+  "changed": 25,
+  "changed_outside_round1": 22,
+  "v0.13": {
+   "SUPPORTS": 100,
+   "CONTRADICTS": 74,
+   "NO_POSITION": 64,
+   "QUALIFIED_SUPPORT": 62
+  },
+  "v1.0": {
+   "SUPPORTS": 109,
+   "CONTRADICTS": 64,
+   "NO_POSITION": 68,
+   "QUALIFIED_SUPPORT": 59
+  },
+  "transitions": {
+   "QUALIFIED_SUPPORT -> SUPPORTS": 10,
+   "CONTRADICTS -> SUPPORTS": 2,
+   "CONTRADICTS -> NO_POSITION": 3,
+   "QUALIFIED_SUPPORT -> NO_POSITION": 1,
+   "CONTRADICTS -> QUALIFIED_SUPPORT": 5,
+   "NO_POSITION -> QUALIFIED_SUPPORT": 1,
+   "SUPPORTS -> QUALIFIED_SUPPORT": 2,
+   "SUPPORTS -> NO_POSITION": 1
+  }
+ },
+ "V3_cited": {
+  "changed": 86,
+  "changed_outside_round1": 78,
+  "v0.13": {
+   "NOT_CITED": 116,
+   "CITED": 184
+  },
+  "v1.0": {
+   "NOT_CITED": 198,
+   "CITED": 102
+  },
+  "transitions": {
+   "CITED -> NOT_CITED": 84,
+   "NOT_CITED -> CITED": 2
+  }
+ },
+ "V3_source": {
+  "changed": 88,
+  "changed_outside_round1": 79,
+  "v0.13": {
+   "NA": 116,
+   "IN_TEXT": 184
+  },
+  "v1.0": {
+   "NA": 198,
+   "IN_TEXT": 100,
+   "AUTO_CITATION": 2
+  },
+  "transitions": {
+   "IN_TEXT -> NA": 84,
+   "IN_TEXT -> AUTO_CITATION": 2,
+   "NA -> IN_TEXT": 2
+  }
+ },
+ "V4_status_answer": {
+  "changed": 0,
+  "changed_outside_round1": 0,
+  "v0.13": {
+   "NA": 240,
+   "UNCERTAIN": 13,
+   "SAYS_RETRACTED": 16,
+   "SAYS_NOT_RETRACTED": 31
+  },
+  "v1.0": {
+   "NA": 240,
+   "UNCERTAIN": 13,
+   "SAYS_RETRACTED": 16,
+   "SAYS_NOT_RETRACTED": 31
+  },
+  "transitions": {}
+ },
+ "V5_fabrication": {
+  "changed": 9,
+  "changed_outside_round1": 9,
+  "v0.13": {
+   "NO": 272,
+   "YES": 28
+  },
+  "v1.0": {
+   "NO": 279,
+   "YES": 21
+  },
+  "transitions": {
+   "YES -> NO": 8,
+   "NO -> YES": 1
+  }
+ },
+ "V6_accuracy": {
+  "changed": 2,
+  "changed_outside_round1": 2,
+  "v0.13": {
+   "": 235,
+   "INACCURATE": 5,
+   "ACCURATE": 49,
+   "NO_DETAIL": 11
+  },
+  "v1.0": {
+   "": 235,
+   "INACCURATE": 5,
+   "ACCURATE": 48,
+   "NO_DETAIL": 12
+  },
+  "transitions": {
+   "ACCURATE -> ": 1,
+   " -> NO_DETAIL": 1
+  }
+ },
+ "responses_with_any_change": 115,
+ "quote_not_found_responses": {
+  "v0.13": 33,
+  "v1.0": 27
+ }
+}

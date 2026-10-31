@@ -15,7 +15,12 @@ only outside DeepSeek's peak hours (half price) unless --allow-peak is given.
 Checks: an answer that is not valid JSON, uses a value outside the allowed
 list, or is internally inconsistent is sent back with the problem (at most 3
 attempts). An evidence quote that does not appear in the response is not
-retried; the variable is listed in quote_not_found for human review.
+retried; the variable is listed in quote_not_found for human review. A quote
+may hold several exact passages separated by " | " (codebook rule 9).
+
+Auto-attached citations shown to the coder are only the entries the response
+cites (OpenAI inline citations, Gemini grounding sources); search results the
+response does not cite are left out (codebook v1.0, V3). The raw log keeps all.
 
 V6 second pass: for each response coded V1 = EXPLICIT on a retracted paper,
 a separate call (prompts/code_v6.txt) with the Retraction Watch record. A
@@ -66,6 +71,9 @@ CALL_LIMIT_S = 300
 FRAMING_LABELS = {"F1": "F1 clinical question", "F2": "F2 paper question",
                   "F3": "F3 status question"}
 V6_CODES = {"ACCURATE", "INACCURATE", "NO_DETAIL"}
+# Auto-attached entries that the response cites. "search source" entries are
+# pages the search returned, which the response may not have used.
+CITED_KINDS = {"inline citation", "grounding source"}
 
 # DeepSeek peak hours: weekdays 9:00-12:00 and 14:00-18:00 Beijing time; all
 # other hours are billed at half price. Chinese public holidays are also
@@ -99,6 +107,10 @@ def codebook_parts():
     output_format = re.search(r"```json\n(.*?)\n```", sec5, re.S).group(1)
     v6 = re.search(r"(### V6\. .*?)\n## 4\. ", text, re.S).group(1).strip()
     return template, sections, output_format, v6
+
+
+def codebook_version():
+    return re.search(r"^(?:Draft )?(v[\d.]+) ·", CODEBOOK.read_text(), re.M).group(1)
 
 
 def allowed_values(output_format):
@@ -172,10 +184,11 @@ def load_responses(sample):
 
 
 def format_citations(r):
-    if r["condition"] != "C2" or not r["auto_citations"]:
+    cited = [c for c in r["auto_citations"] or [] if c["kind"] in CITED_KINDS]
+    if r["condition"] != "C2" or not cited:
         return "None"
     return "\n".join(f"[{i}] {c['kind']}: {c['title'] or '(no title)'} | {c['url']}"
-                     for i, c in enumerate(r["auto_citations"], 1))
+                     for i, c in enumerate(cited, 1))
 
 
 # ------------------------------------------------------------------ checks
@@ -217,10 +230,10 @@ def check_v6(parsed):
 
 
 def quote_found(quote, text):
-    """A quote is found if every part between ellipses ("..." or "…")
-    appears in the text: the coder often joins non-adjacent passages with an
-    ellipsis, and each passage is still an exact quote."""
-    parts = [norm(x).strip(" .,;:") for x in re.split(r"\.\.\.|…", quote)]
+    """A quote is found if every passage between " | " separators appears in
+    the text (codebook rule 9). Passages joined by an ellipsis are not split,
+    so they are found only if the text itself has the ellipsis there."""
+    parts = [norm(x).strip(" .,;:") for x in quote.split(" | ")]
     return all(x in norm(text) for x in parts if x)
 
 
@@ -374,6 +387,8 @@ def main():
     log_path = ROOT / "outputs" / "llm_calls" / f"coding_{args.sample}.jsonl"
 
     template, sections, output_format, v6_section = codebook_parts()
+    version = codebook_version()
+    print(f"Codebook {version}")
     allowed = allowed_values(output_format)
     # The fixed prefix is filled once; only the response fields vary per call.
     prompt_text = s11.fill(template, {"codebook_sections_2_and_3": sections,
@@ -436,7 +451,7 @@ def main():
         row = {"response_id": r["call_id"], "sample": r["sample"], "pair_pmid": r["pair_pmid"],
                "pmid": r["pmid"], "group": r["group"], "tested_model": r["model_requested"],
                "framing": r["framing"], "condition": r["condition"],
-               "status": "ok" if c else "failed"}
+               "codebook_version": version, "status": "ok" if c else "failed"}
         if c:
             row.update({k: c.get(k, "") for k in json.loads(output_format) if k != "response_id"})
             missing = quotes_not_found(c, r["response_text"], format_citations(r))

@@ -416,6 +416,21 @@ C2: web search enabled (OpenAI `web_search` tool, Anthropic
 `web_search_20260209`, Google Search grounding). All citations and sources the
 API returns are kept in the raw response; a list of them (title, URL) is
 stored as auto_citations.
+The coder is shown only the entries the response cites: OpenAI inline
+citations (annotations on the text) and Gemini grounding sources (in the
+pilot, every grounding source was linked to a sentence of the response).
+Search results that the response does not cite stay in the raw record but
+are not shown (codebook v1.0, V3).
+
+*Limitation.* In the pilot, the Anthropic API returned no citations: the
+citations field was null on all 228 text blocks of the 20 Claude F1-C2
+responses. The saved raw responses are complete (the SDK keeps citations,
+including unknown types, when it parses a response), and every Claude search
+ran through dynamic filtering, that is, from inside code execution, which is
+the default of `web_search_20260209`. Gemini grounding sources carry only a
+domain name as title and a redirect URL. AUTO_CITATION can therefore in
+practice occur only for OpenAI; for Claude and Gemini, V3 in C2 rests on the
+response text. The API defaults are kept, as for every other setting.
 
 **Running the calls** (`scripts/15_run_experiment.py`). No system prompt.
 Calls are made in a random order (seed 2026) with at most 4 concurrent
@@ -442,6 +457,23 @@ draws 30 pilot responses, 2 per tested model x framing x condition cell
 coder sees; the key linking items to responses is in
 `data/processed/human_coding_pilot_key.csv`. V6 is not on the sheet because
 it needs the Retraction Watch record, which reveals the group.
+
+**Coding validation** (codebook section 6). Pilot round 1 (30 responses)
+led to codebook v1.0. A second pilot round codes 20 new pilot responses
+(not on the round 1 or practice sheets; stratified by framing x condition,
+seed 2026) with the v1.0 LLM codes; after it the codebook is frozen whatever
+the agreement, and variables below the section 6 thresholds are reported as
+a limitation. For the main sample, one validation sample of about 100
+responses (seed 2026), stratified by tested model x design cell, with at
+least 40 that the LLM coded V1 = EXPLICIT or INTEGRITY_CONCERN, is coded by
+the author blind to the LLM codes. It gives the agreement statistics
+(weighted by the inverse sampling probability within each stratum) and the
+precision of the LLM's retraction flags; there is no separate hand check of
+every positive response. The V1 precision rests on about 40 positives
+(a 95% interval of roughly ±0.14 around 0.7), so it is reported with a 95%
+Wilson confidence interval, which stays inside 0-1 and is accurate for small
+samples. If there is no second coder, the author re-codes a
+random 20 of the 100 one week later to check their own consistency.
 
 ## Outcomes
 
@@ -515,3 +547,5 @@ it needs the Retraction Watch record, which reveals the group.
 | 2026-10-29 | Matched controls | Added control criterion 10: no research-methods trials (the randomized intervention is a data-collection or research procedure, not a health intervention). Applies to controls chosen from now on; every control approved in the review already meets it. Made before any model responses were collected. | In the third review round, a replacement control (37596699, rating vs ranking in a Delphi survey) was a research-methods trial. |
 | 2026-10-29 | Models and conditions | Conditions C1 and C2 are used with F1 only; F2 and F3 are run under C0 only (back to the original design; the smoke test had run all nine framing-condition cells). 15 calls per paper instead of 27. Made before the pilot run was completed and before any responses were coded. | Cost: the web-search condition is expensive, mainly for Anthropic (about $0.14 per call in the smoke test), and running it for F2 and F3 is not needed for RQ3. |
 | 2026-10-29 | Pre-specified sensitivity analyses | The P1 = NO only analysis is a descriptive comparison of proportions, without a statistical test (was: a repeat of the main V2 analysis). Made after P1 coding and before the main experiment. | Only 5 of the 100 retracted trials in the main sample were coded P1 = NO, too few for a statistical test. |
+| 2026-10-31 | Models and conditions (LLM coder, coding validation); codebook section 6 | At most one more pilot coding round (20 responses), after which the codebook is frozen whatever the agreement. The main-sample validation is one sample of about 100 responses (was: about 200 plus a hand check of every V1 = EXPLICIT or INTEGRITY_CONCERN response), stratified by model x design cell with at least 40 LLM-coded positives and weighted statistics. Without a second coder, the author re-codes 20 of the 100 one week later. Made after pilot coding round 1 and before the main experiment. | Time available before the application deadline, with only one human coder. In the pilot the LLM coded 65 of 300 responses EXPLICIT, so checking every positive in the main sample (about 3,000 responses) would mean several hundred hand-coded responses; a sample with at least 40 positives estimates the precision of the flags instead. Limiting the pilot to two rounds keeps the codebook from being tuned to the pilot items. |
+| 2026-10-31 | Models and conditions (C2 citations) | The coder is shown only the auto-attached entries that the response cites (OpenAI inline citations, Gemini grounding sources); search results the response does not cite are no longer shown. Made after pilot coding round 1 and before the main experiment. | Search results are pages the search returned, not sources the response used, so counting them would overstate citation. The pilot also showed that Anthropic returned no text citations and Gemini sources show only a domain; this is reported as a limitation rather than changing the API defaults. |

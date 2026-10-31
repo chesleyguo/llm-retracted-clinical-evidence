@@ -17,6 +17,13 @@ Writes:
 - data/processed/human_coding_pilot_key.csv: item number -> response, for
   comparing with the LLM codes later.
 
+With "round2": 20 new pilot responses for the second pilot round (codebook
+section 6, step 1, after the v1.0 revision), none on the pilot or practice
+sheets, stratified by framing x condition (5 cells, 4 per cell; seed 2026),
+without looking at the LLM codes. Same workbook format, written to
+data/processed/human_coding_round2.xlsx with the key in
+data/processed/human_coding_round2_key.csv.
+
 With "practice": 6 responses that are not on the pilot sheet, for practising
 the coding; not used in any analysis. Same workbook format, written to
 data/processed/practice_coding.xlsx; data/processed/practice_key.csv holds
@@ -25,6 +32,7 @@ the group, condition and LLM codes of each item.
 Usage:
     python scripts/17_human_coding_sheet.py            # pilot sheet
     python scripts/17_human_coding_sheet.py practice   # practice sheet
+    python scripts/17_human_coding_sheet.py round2     # second pilot round
 """
 
 import importlib.util
@@ -45,6 +53,9 @@ SHEET_PATH = PROCESSED / "human_coding_pilot.xlsx"
 KEY_PATH = PROCESSED / "human_coding_pilot_key.csv"
 PRACTICE_PATH = PROCESSED / "practice_coding.xlsx"
 PRACTICE_KEY_PATH = PROCESSED / "practice_key.csv"
+ROUND2_PATH = PROCESSED / "human_coding_round2.xlsx"
+ROUND2_KEY_PATH = PROCESSED / "human_coding_round2_key.csv"
+ROUND2_PER_CELL = 4
 # Practice slots (framing, condition, group): F3, F1-C1, F1-C2 and F2, with
 # both groups represented.
 PRACTICE_SLOTS = [("F3", "C0", "retracted"), ("F1", "C1", "retracted"),
@@ -65,18 +76,20 @@ def load_script(filename):
 s16 = load_script("16_code_responses.py")
 
 
-def draw(responses):
-    """2 responses per model x framing x condition cell, then shuffled."""
+def draw(responses, cell=lambda r: (r["model_requested"], r["framing"], r["condition"]),
+         per_cell=PER_CELL):
+    """per_cell responses from each cell (default: model x framing x
+    condition), then shuffled."""
     rng = random.Random(SEED)
     cells = {}
     for r in responses:
-        cells.setdefault((r["model_requested"], r["framing"], r["condition"]), []).append(r)
+        cells.setdefault(cell(r), []).append(r)
     picked = []
-    for cell in sorted(cells):
-        pool = sorted(cells[cell], key=lambda r: r["call_id"])
-        picked += rng.sample(pool, PER_CELL)
+    for c in sorted(cells):
+        pool = sorted(cells[c], key=lambda r: r["call_id"])
+        picked += rng.sample(pool, per_cell)
     rng.shuffle(picked)
-    print(f"  {len(cells)} cells x {PER_CELL} = {len(picked)} responses (seed {SEED})")
+    print(f"  {len(cells)} cells x {per_cell} = {len(picked)} responses (seed {SEED})")
     return picked
 
 
@@ -207,8 +220,8 @@ def key_rows(picked):
 
 def main():
     which = sys.argv[1] if len(sys.argv) > 1 else "pilot"
-    if which not in ("pilot", "practice"):
-        sys.exit("Usage: python scripts/17_human_coding_sheet.py [pilot|practice]")
+    if which not in ("pilot", "practice", "round2"):
+        sys.exit("Usage: python scripts/17_human_coding_sheet.py [pilot|practice|round2]")
     template, sections, output_format, _ = s16.codebook_parts()
     allowed = s16.allowed_values(output_format)
     papers = s16.load_papers()
@@ -222,6 +235,17 @@ def main():
         return
 
     exclude = set(pd.read_csv(KEY_PATH, dtype=str)["response_id"])
+    if which == "round2":
+        exclude |= set(pd.read_csv(PRACTICE_KEY_PATH, dtype=str)["response_id"])
+        pool = [r for r in responses if r["call_id"] not in exclude]
+        print(f"  {len(pool)} responses not on the pilot or practice sheets")
+        picked = draw(pool, cell=lambda r: (r["framing"], r["condition"]), per_cell=ROUND2_PER_CELL)
+        write_sheet(picked, ROUND2_PATH, papers, sections, allowed, output_format)
+        pd.DataFrame(key_rows(picked)).to_csv(ROUND2_KEY_PATH, index=False)
+        print(f"Wrote {ROUND2_PATH.relative_to(ROOT)} ({len(picked)} responses) and "
+              f"{ROUND2_KEY_PATH.relative_to(ROOT)}")
+        return
+
     picked = draw_practice(responses, exclude)
     write_sheet(picked, PRACTICE_PATH, papers, sections, allowed, output_format)
     # The practice key also holds the LLM codes, for checking the practice round.

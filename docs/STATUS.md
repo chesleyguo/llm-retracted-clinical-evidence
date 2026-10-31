@@ -1,7 +1,7 @@
 # Project status (handover)
 
-Last updated: 2026-10-31. Read this first in a new session, together with
-`CLAUDE.md`, `docs/codebook.md` (now v0.13) and `docs/analysis_plan.md`.
+Last updated: 2026-11-01. Read this first in a new session, together with
+`CLAUDE.md`, `docs/codebook.md` (now v1.0) and `docs/analysis_plan.md`.
 
 ## 1. Where the project is
 
@@ -22,48 +22,56 @@ All steps below are done and committed (latest commit at the time of writing:
 | LLM coding of the 300 pilot responses, V6 second pass | `16` | `outputs/llm_calls/coding_pilot.jsonl`, `data/processed/coding_pilot.csv`, `results/coding_pilot_summary.json` |
 | Human coding sheets | `17` | `human_coding_pilot.xlsx` (30) + `human_coding_pilot_key.csv`; `practice_coding.xlsx` (6, practice only) + `practice_key.csv` |
 | Author's pilot coding (30, done 2026-10-31): sheet check, agreement with the LLM coder, disagreement list | `18` | `results/18_sheet_check.csv`, `results/18_agreement.json`, `results/18_disagreements.md` |
+| Codebook v1.0 (2026-10-31); LLM re-coding of the 300 pilot responses with v1.0 | `16`, `19` | `coding_pilot.csv` (v1.0, column codebook_version), `coding_pilot_v0.13.csv` (old codes), `coding_pilot_changes.csv`, `results/19_codebook_v0.13_vs_v1.0.json` |
+| Second pilot coding sheet (20 new responses, 4 per framing × condition cell, seed 2026) | `17 round2` | `human_coding_round2.xlsx` + `human_coding_round2_key.csv` |
 
 Analysis numbers fixed so far: V2 main analysis uses 94 retracted trials
 (P1 = NO or UNCLEAR); the P1 = NO analysis (n = 5) is descriptive only.
 
-Pilot LLM coding (for reference; do not show per-item codes, see section 5):
-300 coded, 0 failed; 65 EXPLICIT, all in the retracted group (V6: 49
-ACCURATE, 11 NO_DETAIL, 5 INACCURATE); quote_not_found in 33 responses after
-the ellipsis rule; 6 V3 quotes taken from the prompt (`v3_quote_from_prompt`).
-Cost ¥1.99, cache-hit share 77%.
+Pilot LLM coding with v1.0 (for reference; do not show per-item codes, see
+section 5): 300 coded, 0 failed; V1 EXPLICIT 65, INTEGRITY_CONCERN 5 (as in
+v0.13); V3 CITED 102 (was 184); V5 YES 21 (was 28); V6 48 ACCURATE, 12
+NO_DETAIL, 5 INACCURATE; quote_not_found in 27 responses (was 33); 1
+v3_quote_from_prompt (was 6). 115 responses changed at least one code
+(V2 25, V3 86, V3_source 88, V5 9, V1 2, V6 2). Re-coding cost ¥1.94
+(v0.13 run ¥1.99), all off-peak, cache-hit share 82.5% over the whole log.
+The v1.0 examples come from round 1 items, so v1.0 vs. the author on those
+30 is not a clean test; round 2 is.
+
+Web-search citations (checked 2026-10-31): Anthropic returned `citations:
+null` on all 228 text blocks of the 20 Claude F1-C2 pilot responses; the raw
+responses are complete (the SDK keeps citations, also of unknown types) and
+every search ran through dynamic filtering (`web_search_20260209` default).
+Not a recording bug; script 15 parses citations correctly, so a main-run
+Claude response with citations would be captured. No re-run needed.
+Recorded as a limitation (analysis plan, C2; codebook section 1). The coder
+now sees only cited entries (OpenAI inline citations, Gemini grounding
+sources; Gemini titles are domain names only).
 
 ## 2. Waiting on
 
-The author is reviewing `results/18_disagreements.md` (group, model and
-condition deliberately not shown) and will decide the codebook v1.0
-changes. Do not change the codebook before that. The second coder is not yet
-chosen (codebook, Open questions).
+The author is hand-coding `data/processed/human_coding_round2.xlsx` (20
+responses, codebook v1.0). This is the last pilot round: afterwards the
+codebook is frozen whatever the agreement (v1.0 if unchanged, otherwise
+v1.1). The second coder is not yet chosen; without one, the author re-codes
+20 validation responses one week later (codebook section 6).
 
-## 3. Results of step 18 (author vs. LLM coder, 30 items)
+## 3. Next, once round 2 is coded
 
-- Sheet check: all 6 code columns filled with allowed values, NA rules
-  correct; 6 author evidence quotes not found (items 2 V3, 20 V2, 22 V3,
-  27 V5, 30 V3, 30 V5), reported to the author, not fixed.
-- Kappa / % agreement / disagreements: V1 0.79 / 93.3 / 2; V2 0.69 / 76.7 / 7;
-  V3 0.61 / 80.0 / 6; V3_source 0.52 / 73.3 / 8; V4 (F3 only, n = 6)
-  1.00 / 100 / 0; V5 0.63 / 93.3 / 2.
-- V1, LLM vs. author: sensitivity 1.0 (5/5), precision 0.71 (5/7), same with
-  EXPLICIT or INTEGRITY_CONCERN as positive.
-- V2, V3 and V3_source have more than 5 disagreements, so per codebook
-  section 6, 20 new pilot responses are coded after the revision.
-- Practice sheet: compare with `practice_key.csv` only if the author asks.
+1. Check the round 2 sheet and compute agreement with the v1.0 LLM codes:
+   give `scripts/18_agreement.py` a round argument (sheet, key and output
+   names; the LLM codes are in `coding_pilot.csv`). Same checks and
+   statistics as round 1; list disagreements without group, model or
+   condition.
+2. The author decides on a last revision (v1.1) or none; then freeze
+   (codebook section 6, step 2), re-code the pilot only if v1.1 changes the
+   prompt, and update this file.
+
+Round 1 results (author vs. v0.13 LLM codes, 30 items): kappa V1 0.79, V2
+0.69, V3 0.61, V3_source 0.52, V4 1.00 (F3 only), V5 0.63; V1 sensitivity
+1.0 (5/5), precision 0.71 (5/7). Details in `results/18_*`.
 
 ## 4. Decided but not yet done
-
-**Codebook v1.0 revision** (after the pilot human coding, logged in the
-revision log):
-- Quote rule, option 2: one continuous exact passage per evidence field, no
-  added comments, several passages listed separately (replaces the current
-  ellipsis rule in the checks).
-- V3: the 6 items whose V3 quote comes from the prompt need review (4 are
-  F1). The V3 rule only says that F2/F3 prompts name the paper; the F1-C1
-  prompt names it too and should be added.
-- Changes from the disagreements in step 3 above; then freeze and save as v1.0 (codebook section 6, step 2).
 
 **Main experiment after the freeze**, in this order:
 1. `python scripts/15_run_experiment.py main`: 200 papers × 15 calls = 3,000.
@@ -75,17 +83,18 @@ revision log):
 3. `python scripts/16_code_responses.py main`, off-peak, plus V6.
 4. Intra-coder agreement: 100 random responses (seed 2026) coded a second
    time in a separate run. **Not yet implemented.**
-5. Validation sample of about 200 responses (≥ 5 per model × framing ×
-   condition cell, all LLM-coded EXPLICIT / INTEGRITY_CONCERN included),
-   author codes all, second coder 50; agreement statistics and decision rule
-   in codebook section 6. Then the final hand check of all V1 = EXPLICIT /
-   INTEGRITY_CONCERN responses.
+5. Validation sample of about 100 responses (seed 2026), stratified by
+   model × design cell, at least 40 LLM-coded EXPLICIT / INTEGRITY_CONCERN;
+   author codes all; weighted kappa / agreement, V1 precision with a 95%
+   Wilson interval. No separate check of every positive. Second coder 50,
+   or without one the author re-codes 20 a week later (codebook section 6).
+   **Not yet implemented.**
 6. Analysis per `docs/analysis_plan.md` (frozen once the main run starts).
 
 **Budget: total spend cap $95, cumulative over the whole project.**
-- Spent so far: about $8, of which about $5.8 on tested models (pilot and
-  smoke test, estimated from token counts) and ¥14.5 (about $2) on DeepSeek
-  (claims ¥3.6, P1 ¥8.9, pilot coding ¥2.0).
+- Spent so far: about $8.3, of which about $5.8 on tested models (pilot and
+  smoke test, estimated from token counts) and ¥16.4 (about $2.3) on
+  DeepSeek (claims ¥3.6, P1 ¥8.9, pilot coding v0.13 ¥2.0, v1.0 ¥1.9).
 - Projected: main run about $43.5 (Gemini Search grounding is probably free,
   which would save about $3.4), repeats about $8.7, DeepSeek coding of the
   main sample about $4 at pilot rates. Total about $64, leaving about $30.
@@ -110,12 +119,13 @@ revision log):
   the review / coding columns: `claims_review.csv` (approved, edited_*,
   review_note), `p1_review.csv` (p1, p1_source, p1_note) and the coding
   sheets. Before writing new code, Claude explains the plan and waits for OK.
-- **Blinding.** Until the author has finished `human_coding_pilot.xlsx`, the
-  author does not open, and Claude does not show or quote item-level content
-  from: `human_coding_pilot_key.csv`, `data/processed/coding_pilot.csv`,
-  `results/coding_pilot_summary.json`, `outputs/llm_calls/coding_pilot.jsonl`.
-  Aggregate counts over all 300 responses may be reported. The same applies
-  to `practice_key.csv` until the practice round is done.
+- **Blinding.** Until the author has finished `human_coding_round2.xlsx`,
+  the author does not open, and Claude does not show or quote item-level
+  content from: `human_coding_round2_key.csv`, `coding_pilot.csv`,
+  `coding_pilot_v0.13.csv`, `coding_pilot_changes.csv` (all in
+  `data/processed/`), `outputs/llm_calls/coding_pilot.jsonl`. Aggregate
+  counts over all 300 responses may be reported (`results/coding_pilot_summary.json`,
+  `results/19_*`). Round 1 (`human_coding_pilot.xlsx`) is done and unblinded.
 - **Practice sheet** (`practice_coding.xlsx`) is not used in any analysis.
 - Every codebook change gets a version bump and a revision-log row; every
   change to the analysis plan gets a Deviations-log row. The analysis plan
