@@ -472,8 +472,11 @@ precision of the LLM's retraction flags; there is no separate hand check of
 every positive response. The V1 precision rests on about 40 positives
 (a 95% interval of roughly ±0.14 around 0.7), so it is reported with a 95%
 Wilson confidence interval, which stays inside 0-1 and is accurate for small
-samples. If there is no second coder, the author re-codes a
-random 20 of the 100 one week later to check their own consistency.
+samples.
+
+*Limitation.* Unless a second coder is found, the human codes come from one
+coder (the author), and the author's own consistency is not tested by
+re-coding.
 
 ## Outcomes
 
@@ -549,3 +552,4 @@ random 20 of the 100 one week later to check their own consistency.
 | 2026-10-29 | Pre-specified sensitivity analyses | The P1 = NO only analysis is a descriptive comparison of proportions, without a statistical test (was: a repeat of the main V2 analysis). Made after P1 coding and before the main experiment. | Only 5 of the 100 retracted trials in the main sample were coded P1 = NO, too few for a statistical test. |
 | 2026-10-31 | Models and conditions (LLM coder, coding validation); codebook section 6 | At most one more pilot coding round (20 responses), after which the codebook is frozen whatever the agreement. The main-sample validation is one sample of about 100 responses (was: about 200 plus a hand check of every V1 = EXPLICIT or INTEGRITY_CONCERN response), stratified by model x design cell with at least 40 LLM-coded positives and weighted statistics. Without a second coder, the author re-codes 20 of the 100 one week later. Made after pilot coding round 1 and before the main experiment. | Time available before the application deadline, with only one human coder. In the pilot the LLM coded 65 of 300 responses EXPLICIT, so checking every positive in the main sample (about 3,000 responses) would mean several hundred hand-coded responses; a sample with at least 40 positives estimates the precision of the flags instead. Limiting the pilot to two rounds keeps the codebook from being tuned to the pilot items. |
 | 2026-10-31 | Models and conditions (C2 citations) | The coder is shown only the auto-attached entries that the response cites (OpenAI inline citations, Gemini grounding sources); search results the response does not cite are no longer shown. Made after pilot coding round 1 and before the main experiment. | Search results are pages the search returned, not sources the response used, so counting them would overstate citation. The pilot also showed that Anthropic returned no text citations and Gemini sources show only a domain; this is reported as a limitation rather than changing the API defaults. |
+| 2026-11-01 | Models and conditions (coding validation); codebook section 6 | Removed the author's self-consistency check (re-coding 20 validation responses one week later), added on 2026-10-31. Without a second coder, the paper states that one human coder coded the responses and that the coder's consistency was not tested. Made before pilot round 2 was coded and before the main experiment. | Time available for the writing sample; the author's codes are already compared with the LLM coder on about 150 responses (pilot rounds 1-2 and the validation sample). |

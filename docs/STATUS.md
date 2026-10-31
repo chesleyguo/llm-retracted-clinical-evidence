@@ -1,7 +1,7 @@
 # Project status (handover)
 
 Last updated: 2026-11-01. Read this first in a new session, together with
-`CLAUDE.md`, `docs/codebook.md` (now v1.0) and `docs/analysis_plan.md`.
+`CLAUDE.md`, `docs/codebook.md` (now v1.0.1) and `docs/analysis_plan.md`.
 
 ## 1. Where the project is
 
@@ -52,9 +52,9 @@ sources; Gemini titles are domain names only).
 
 The author is hand-coding `data/processed/human_coding_round2.xlsx` (20
 responses, codebook v1.0). This is the last pilot round: afterwards the
-codebook is frozen whatever the agreement (v1.0 if unchanged, otherwise
-v1.1). The second coder is not yet chosen; without one, the author re-codes
-20 validation responses one week later (codebook section 6).
+codebook is frozen whatever the agreement (v1.0.1 if unchanged, otherwise
+v1.1). The second coder is not yet chosen; without one, the paper reports a
+single human coder whose consistency was not tested (no self re-code).
 
 ## 3. Next, once round 2 is coded
 
@@ -86,8 +86,8 @@ Round 1 results (author vs. v0.13 LLM codes, 30 items): kappa V1 0.79, V2
 5. Validation sample of about 100 responses (seed 2026), stratified by
    model × design cell, at least 40 LLM-coded EXPLICIT / INTEGRITY_CONCERN;
    author codes all; weighted kappa / agreement, V1 precision with a 95%
-   Wilson interval. No separate check of every positive. Second coder 50,
-   or without one the author re-codes 20 a week later (codebook section 6).
+   Wilson interval. No separate check of every positive. Second coder 50
+   if one is found; no self-consistency re-code (codebook section 6).
    **Not yet implemented.**
 6. Analysis per `docs/analysis_plan.md` (frozen once the main run starts).
 
