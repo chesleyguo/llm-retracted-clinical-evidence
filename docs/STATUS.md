@@ -24,6 +24,7 @@ All steps below are done and committed (latest commit at the time of writing:
 | Author's pilot coding (30, done 2026-10-31): sheet check, agreement with the LLM coder, disagreement list | `18` | `results/18_sheet_check.csv`, `results/18_agreement.json`, `results/18_disagreements.md` |
 | Codebook v1.0 (2026-10-31); LLM re-coding of the 300 pilot responses with v1.0 | `16`, `19` | `coding_pilot.csv` (v1.0, column codebook_version), `coding_pilot_v0.13.csv` (old codes), `coding_pilot_changes.csv`, `results/19_codebook_v0.13_vs_v1.0.json` |
 | Second pilot coding sheet (20 new responses, 4 per framing × condition cell, seed 2026) | `17 round2` | `human_coding_round2.xlsx` + `human_coding_round2_key.csv` |
+| Author's round 2 coding (20, done 2026-10-31): sheet check, agreement with the v1.0 LLM codes, disagreement list, round 1 vs. round 2 table | `18 round2` | `results/18_round2_sheet_check.csv`, `results/18_round2_agreement.json`, `results/18_round2_disagreements.md`, `results/18_round1_vs_round2.md` |
 
 Analysis numbers fixed so far: V2 main analysis uses 94 retracted trials
 (P1 = NO or UNCLEAR); the P1 = NO analysis (n = 5) is descriptive only.
@@ -50,22 +51,28 @@ sources; Gemini titles are domain names only).
 
 ## 2. Waiting on
 
-The author is hand-coding `data/processed/human_coding_round2.xlsx` (20
-responses, codebook v1.0). This is the last pilot round: afterwards the
-codebook is frozen whatever the agreement (v1.0.1 if unchanged, otherwise
-v1.1). The second coder is not yet chosen; without one, the paper reports a
+The author is reviewing `results/18_round2_disagreements.md` (7 items) and
+then decides: freeze the codebook as it is (v1.0.1; the coder prompt is the
+v1.0 one) or make a last wording clarification and freeze as v1.1. The
+codebook is frozen after this decision whatever the agreement.
+
+Round 2 results (author vs. v1.0 LLM codes, 20 new items): kappa V1 1.00,
+V2 0.66 (5 disagreements), V3 0.73 (2), V3_source 0.74 (2), V4 1.00 (F3
+only, n = 4), V5 0.00 (95% agreement: the author coded NO on all 20, the LLM
+YES on one, so chance agreement is already 95%); V1 sensitivity 1.0 (6/6),
+precision 1.0 (6/6). Sheet check: 1 problem (item 2 V3 evidence is the link
+text from the response, not an entry of the auto-citation list; left
+unchanged). Round 1 vs. round 2 table: `results/18_round1_vs_round2.md`. The second coder is not yet chosen; without one, the paper reports a
 single human coder whose consistency was not tested (no self re-code).
 
-## 3. Next, once round 2 is coded
+## 3. Next, after the author's decision
 
-1. Check the round 2 sheet and compute agreement with the v1.0 LLM codes:
-   give `scripts/18_agreement.py` a round argument (sheet, key and output
-   names; the LLM codes are in `coding_pilot.csv`). Same checks and
-   statistics as round 1; list disagreements without group, model or
-   condition.
-2. The author decides on a last revision (v1.1) or none; then freeze
-   (codebook section 6, step 2), re-code the pilot only if v1.1 changes the
-   prompt, and update this file.
+1. Freeze (codebook section 6, step 2): v1.0.1 as it is, or v1.1 with a
+   version bump and revision-log row. Re-code the pilot only if v1.1 changes
+   the coder prompt (script 16 detects this from the prompt hash).
+2. Do not re-run `scripts/18_agreement.py pilot`: round 1 was compared with
+   the v0.13 codes, which are no longer in `coding_pilot.csv` (the script
+   stops on the version check).
 
 Round 1 results (author vs. v0.13 LLM codes, 30 items): kappa V1 0.79, V2
 0.69, V3 0.61, V3_source 0.52, V4 1.00 (F3 only), V5 0.63; V1 sensitivity
@@ -119,13 +126,9 @@ Round 1 results (author vs. v0.13 LLM codes, 30 items): kappa V1 0.79, V2
   the review / coding columns: `claims_review.csv` (approved, edited_*,
   review_note), `p1_review.csv` (p1, p1_source, p1_note) and the coding
   sheets. Before writing new code, Claude explains the plan and waits for OK.
-- **Blinding.** Until the author has finished `human_coding_round2.xlsx`,
-  the author does not open, and Claude does not show or quote item-level
-  content from: `human_coding_round2_key.csv`, `coding_pilot.csv`,
-  `coding_pilot_v0.13.csv`, `coding_pilot_changes.csv` (all in
-  `data/processed/`), `outputs/llm_calls/coding_pilot.jsonl`. Aggregate
-  counts over all 300 responses may be reported (`results/coding_pilot_summary.json`,
-  `results/19_*`). Round 1 (`human_coding_pilot.xlsx`) is done and unblinded.
+- **Blinding.** Both pilot rounds are coded, so the pilot LLM codes are
+  unblinded. Group, model and condition are still left out of disagreement
+  lists. The rule applies again to the main-sample validation sheet.
 - **Practice sheet** (`practice_coding.xlsx`) is not used in any analysis.
 - Every codebook change gets a version bump and a revision-log row; every
   change to the analysis plan gets a Deviations-log row. The analysis plan

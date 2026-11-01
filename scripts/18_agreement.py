@@ -1,12 +1,15 @@
-"""Step 18: check the author's pilot coding sheet and compare it with the LLM
-coder (codebook section 6, step 1).
+"""Step 18: check one of the author's pilot coding sheets and compare it with
+the LLM coder (codebook section 6, step 1).
+
+Round 1 (30 items) was compared with the v0.13 LLM codes; round 2 (20 new
+items) with the v1.0 codes now in coding_pilot.csv. Round 1 should not be
+re-run: coding_pilot.csv no longer holds the v0.13 codes.
 
 1. Sheet check: every code cell filled with an allowed value; V4 = NA exactly
    for non-F3 items; V3_source = NA exactly when V3 = NOT_CITED;
    AUTO_CITATION only when there are auto-attached citations; every evidence
    quote the author wrote is found (same rule as the LLM coder's check,
-   script 16: parts joined by an ellipsis count as found if every part
-   appears). A V3 quote is searched in the auto-attached citations when
+   script 16: passages separated by " | " must each appear exactly). A V3 quote is searched in the auto-attached citations when
    V3_source = AUTO_CITATION, otherwise in the response; a V3 quote found
    only in the prompt is flagged separately. Problems are reported, never
    fixed.
@@ -18,17 +21,21 @@ coder (codebook section 6, step 1).
    Group, tested model and condition are left out on purpose, so that the
    codebook revision is not driven by knowing the group.
 
-Writes:
-- results/18_sheet_check.csv: one row per problem found in the sheet;
-- results/18_agreement.json: agreement statistics;
-- results/18_disagreements.md: every disagreement, item by item.
+4. Round 2 only: a table of round 2 next to round 1.
+
+Writes (prefix 18_ for round 1, 18_round2_ for round 2):
+- results/<prefix>sheet_check.csv: one row per problem found in the sheet;
+- results/<prefix>agreement.json: agreement statistics;
+- results/<prefix>disagreements.md: every disagreement, item by item;
+- results/18_round1_vs_round2.md (round 2 only).
 
 Usage:
-    python scripts/18_agreement.py
+    python scripts/18_agreement.py [pilot|round2]
 """
 
 import importlib.util
 import json
+import sys
 from collections import Counter
 from pathlib import Path
 
@@ -37,8 +44,10 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent.parent
 PROCESSED = ROOT / "data" / "processed"
 RESULTS = ROOT / "results"
-SHEET_PATH = PROCESSED / "human_coding_pilot.xlsx"
-KEY_PATH = PROCESSED / "human_coding_pilot_key.csv"
+ROUNDS = {  # sheet, key, output prefix, LLM codebook version
+    "pilot": ("human_coding_pilot.xlsx", "human_coding_pilot_key.csv", "18_", "v0.13"),
+    "round2": ("human_coding_round2.xlsx", "human_coding_round2_key.csv", "18_round2_", "v1.0"),
+}
 LLM_PATH = PROCESSED / "coding_pilot.csv"
 VARS = ["V1_retraction_flag", "V2_stance", "V3_cited", "V3_source",
         "V4_status_answer", "V5_fabrication"]
@@ -60,9 +69,9 @@ def load_script(filename):
 s16 = load_script("16_code_responses.py")
 
 
-def read_sheet():
+def read_sheet(path):
     # keep_default_na=False: otherwise pandas reads the code "NA" as missing.
-    sheet = pd.read_excel(SHEET_PATH, sheet_name="Coding", dtype=str, keep_default_na=False)
+    sheet = pd.read_excel(path, sheet_name="Coding", dtype=str, keep_default_na=False)
     sheet = sheet.apply(lambda s: s.str.strip())
     sheet["item"] = sheet["item"].astype(int)
     return sheet
@@ -174,8 +183,8 @@ def block(text):
     return "\n".join("> " + line for line in str(text).splitlines()) or "> (empty)"
 
 
-def disagreement_report(merged, stats):
-    lines = ["# Pilot coding: author vs. LLM coder, disagreements", "",
+def disagreement_report(merged, stats, title):
+    lines = [f"# {title}: author vs. LLM coder, disagreements", "",
              "Group, tested model and condition are not shown. "
              "Marks: **quote_not_found** = the LLM's evidence quote for that variable "
              "was not found in the response; **v3_quote_from_prompt** = the LLM's V3 "
@@ -219,21 +228,51 @@ def disagreement_report(merged, stats):
     return "\n".join(lines)
 
 
+def comparison_table(round1, round2):
+    """Round 1 (v0.13 LLM codes) next to round 2 (v1.0). The two rounds have
+    different items and a different LLM codebook, so the table describes the
+    pilot; it is not a test of v1.0 against v0.13."""
+    def k(s):
+        return "NA" if s["kappa"] is None else f"{s['kappa']:.2f}"
+    lines = ["# Pilot coding: round 1 vs. round 2", "",
+             f"Round 1: {round1['n_items']} items, LLM coder with codebook v0.13. "
+             f"Round 2: {round2['n_items']} new items, LLM coder with codebook v1.0. "
+             "V4 on F3 items only. Small n: one item moves kappa a lot.", "",
+             "| Variable | R1 n | R1 kappa | R1 agree % | R2 n | R2 kappa | R2 agree % |",
+             "| --- | --- | --- | --- | --- | --- | --- |"]
+    for var in VARS:
+        a, b = round1["variables"][var], round2["variables"][var]
+        lines.append(f"| {var} | {a['n']} | {k(a)} | {a['percent_agreement']} | "
+                     f"{b['n']} | {k(b)} | {b['percent_agreement']} |")
+    lines += ["", "| V1 positive | R1 sensitivity | R1 precision | R2 sensitivity | R2 precision |",
+              "| --- | --- | --- | --- | --- |"]
+    for a, b in zip(round1["v1_detection_llm_vs_author"], round2["v1_detection_llm_vs_author"]):
+        lines.append(f"| {a['positive']} | {a['sensitivity']} ({a['TP']}/{a['TP'] + a['FN']}) | "
+                     f"{a['precision']} ({a['TP']}/{a['TP'] + a['FP']}) | "
+                     f"{b['sensitivity']} ({b['TP']}/{b['TP'] + b['FN']}) | "
+                     f"{b['precision']} ({b['TP']}/{b['TP'] + b['FP']}) |")
+    return "\n".join(lines) + "\n"
+
+
 def main():
+    round_name = sys.argv[1] if len(sys.argv) > 1 else "pilot"
+    sheet_file, key_file, prefix, version = ROUNDS[round_name]
     _, _, output_format, _ = s16.codebook_parts()
     allowed = s16.allowed_values(output_format)
-    sheet = read_sheet()
-    print(f"Sheet: {len(sheet)} items")
+    sheet = read_sheet(PROCESSED / sheet_file)
+    print(f"Round {round_name}: {sheet_file}, {len(sheet)} items")
 
     problems = check_sheet(sheet, allowed)
-    problems.to_csv(RESULTS / "18_sheet_check.csv", index=False)
-    print(f"\n1. Sheet check: {len(problems)} problems (results/18_sheet_check.csv)")
+    problems.to_csv(RESULTS / f"{prefix}sheet_check.csv", index=False)
+    print(f"\n1. Sheet check: {len(problems)} problems (results/{prefix}sheet_check.csv)")
     for _, p in problems.iterrows():
         print(f"   item {p['item']:>2}  {p['variable']:<18} {p['problem']}")
 
-    key = pd.read_csv(KEY_PATH, dtype=str)
+    key = pd.read_csv(PROCESSED / key_file, dtype=str)
     key["item"] = key["item"].astype(int)
     llm = pd.read_csv(LLM_PATH, dtype=str, keep_default_na=False)
+    assert llm["codebook_version"].eq(version).all(), \
+        f"coding_pilot.csv does not hold the {version} codes this round is compared with"
     llm = llm.drop(columns=["framing", "condition", "group", "tested_model", "pmid",
                             "pair_pmid", "sample"])
     merged = (sheet.merge(key[["item", "response_id", "framing"]].rename(columns={"framing": "framing_key"}),
@@ -243,7 +282,7 @@ def main():
     for col in ["note", *EVIDENCE.values()]:
         if f"{col}_h" not in merged:   # columns present on only one side keep their name
             merged[f"{col}_h"] = merged[col]
-    print(f"\nJoined {len(merged)} items with the LLM codes (key -> coding_pilot.csv)")
+    print(f"\nJoined {len(merged)} items with the LLM codes ({version}, coding_pilot.csv)")
 
     stats = agreement(merged)
     detection = [v1_detection(merged, ["EXPLICIT"]),
@@ -251,9 +290,11 @@ def main():
     sheet_ids = set(merged["response_id"])
     from_prompt_all = set(llm.loc[llm["v3_quote_from_prompt"] == "TRUE", "response_id"])
     result = {
+        "round": round_name,
+        "llm_codebook_version": version,
         "n_items": len(merged),
-        "note": "30 items: kappa is unstable, especially for rare codes (one item can move "
-                "it a lot) and undefined when both coders used a single code. V4 is "
+        "note": f"{len(merged)} items: kappa is unstable, especially for rare codes (one item "
+                "can move it a lot) and undefined when both coders used a single code. V4 is "
                 "computed on F3 items only. Items with an empty author code are left out "
                 "of that variable.",
         "variables": stats,
@@ -261,9 +302,9 @@ def main():
         "v3_quote_from_prompt_on_sheet": f"{len(from_prompt_all & sheet_ids)} of {len(from_prompt_all)}",
         "quote_not_found_on_sheet": int((merged["quote_not_found"] != "").sum()),
     }
-    (RESULTS / "18_agreement.json").write_text(json.dumps(result, indent=2, ensure_ascii=False))
+    (RESULTS / f"{prefix}agreement.json").write_text(json.dumps(result, indent=2, ensure_ascii=False))
 
-    print("\n2. Agreement, author vs. LLM coder (results/18_agreement.json)")
+    print(f"\n2. Agreement, author vs. LLM coder (results/{prefix}agreement.json)")
     print(f"   {'variable':<20}{'n':>4}{'kappa':>8}{'agree %':>9}{'disagree':>10}")
     for var, s in stats.items():
         k = "NA" if s["kappa"] is None else f"{s['kappa']:.2f}"
@@ -275,8 +316,16 @@ def main():
     print(f"   v3_quote_from_prompt items on the sheet: {result['v3_quote_from_prompt_on_sheet']}; "
           f"items with quote_not_found: {result['quote_not_found_on_sheet']}")
 
-    (RESULTS / "18_disagreements.md").write_text(disagreement_report(merged, stats))
-    print("\n3. Disagreement list: results/18_disagreements.md")
+    title = "Pilot coding round 1" if round_name == "pilot" else "Pilot coding round 2"
+    (RESULTS / f"{prefix}disagreements.md").write_text(disagreement_report(merged, stats, title))
+    print(f"\n3. Disagreement list: results/{prefix}disagreements.md")
+
+    if round_name == "round2":
+        round1 = json.loads((RESULTS / "18_agreement.json").read_text())
+        table = comparison_table(round1, result)
+        (RESULTS / "18_round1_vs_round2.md").write_text(table)
+        print("\n4. Round 1 vs. round 2 (results/18_round1_vs_round2.md)\n")
+        print(table)
 
 
 if __name__ == "__main__":
